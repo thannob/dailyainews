@@ -1,0 +1,21 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Node (in case tooling lands later)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Claude local settings — keep project-wide settings.json, ignore per-user local ones
+.claude/settings.local.json
