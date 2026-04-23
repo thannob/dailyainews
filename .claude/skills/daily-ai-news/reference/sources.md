@@ -3,39 +3,39 @@
 Generated: 2026-04-23 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 
-1. **Google Cloud launches two new AI chips to compete with Nvidia**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/
-   - Published: 2026-04-22 (per search snippet)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch รายงานว่า Google Cloud เปิดตัว TPU รุ่นใหม่ที่ "เร็วกว่าและถูกกว่ารุ่นก่อน" แต่ยังคงใช้ GPU ของ Nvidia คู่กันในบริการคลาวด์ของตัวเอง
-
-2. **Google Releases New AI Agents to Challenge OpenAI and Anthropic**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic
-   - Published: 2026-04-22 (per search snippet)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bloomberg รายงานว่าในงานประจำปีที่ลาสเวกัส ฝ่ายคลาวด์ของ Google เปิดตัวชุดเครื่องมือสร้าง AI agent สำหรับองค์กร ติดตามงานที่เอเจนต์ทำ รวมถึงกล่องข้อความเฉพาะสำหรับให้เอเจนต์แจ้งความคืบหน้า
-
-3. **Introducing workspace agents in ChatGPT**
+1. **Introducing workspace agents in ChatGPT**
    - Publisher: OpenAI
    - URL: https://openai.com/index/introducing-workspace-agents-in-chatgpt/
    - Published: 2026-04-22 (per search snippet)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI เปิดตัว workspace agents ใน ChatGPT เปิดให้ทีมสร้างเอเจนต์ที่ใช้ร่วมกันได้ ขับเคลื่อนด้วย Codex ทำงานในคลาวด์ได้ต่อเนื่อง อยู่ใน research preview บน ChatGPT Business/Enterprise/Edu/Teachers ใช้ฟรีถึง 6 พฤษภาคม 2026 จากนั้นคิดค่าใช้งานแบบเครดิต
+   - Summary: OpenAI launched workspace agents in research preview for ChatGPT Business, Enterprise, Edu, and Teachers. Powered by Codex, the agents are shared across a workspace, handle long-running workflows, and plug into Slack, Google Drive, Microsoft apps, Salesforce, Notion and Atlassian Rovo; free until 2026-05-06, then credit-based.
 
-4. **OpenAI อัปเดต ChatGPT Images 2.0 กำหนดรายละเอียดได้ดีขึ้น ข้อความในภาพแม่นยำ รองรับหลายภาษา**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150318
+2. **Introducing Gemini 3 Flash: Benchmarks, global availability**
+   - Publisher: Google DeepMind
+   - URL: https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/
    - Published: 2026-04-22 (per search snippet)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Blognone รายงานว่า OpenAI เปิดตัว ChatGPT Images 2.0 เพิ่ม Thinking mode สำหรับผู้ใช้ Pro ค้นเว็บแบบเรียลไทม์ขณะสร้างภาพ และสร้างหลายภาพจาก prompt เดียว
+   - Summary: DeepMind rolled out Gemini 3 Flash globally on 2026-04-22 through the Gemini app, AI Mode in Search, the Gemini API, Google AI Studio, Antigravity and Vertex AI, citing frontier performance on PhD-level reasoning benchmarks and gains over Gemini 2.5 Pro.
 
-5. **กูเกิลเปิดตัว TPU รุ่นที่ 8 แยกชิปฝึกโมเดลออกจากชิปรัน**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150325
-   - Published: 2026-04-23 (per search snippet)
+3. **Google Cloud launches two new AI chips to compete with Nvidia**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/
+   - Published: 2026-04-22 (per search snippet)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Blognone สรุปว่า Google เปิดตัว TPU รุ่น 8 แยกเป็น TPU 8t สำหรับฝึกโมเดล และ TPU 8i สำหรับรันโมเดล โดย 8t รองรับ FP4 ผ่าน MXU cores เชื่อมชิปผ่าน Virgo Network ได้สูงสุด 134,000 ชิป แบนด์วิดท์รวม 47 Pb/s ประมวลผล 1.6 ล้าน ExaFLOPS
+   - Summary: At Google Cloud Next, Google unveiled two new TPUs — the TPU 8t for training and TPU 8i for inference. TechCrunch reports the chips are faster and cheaper than the previous generation and that Google has also agreed to co-engineer networking with Nvidia so Nvidia-based systems run more efficiently on Google Cloud.
+
+4. **ทุกอย่างล้วน Gemini — กูเกิลรวบบริการ LLM ฝั่งองค์กรทั้งหมดเป็นชื่อ Gemini Enterprise**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/150324
+   - Published: 2026-04-22 (per search snippet)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Blognone reports Google consolidated its enterprise LLM offerings under the "Gemini Enterprise" brand. The former Google Agentspace becomes the Gemini Enterprise app with an Agent Designer, while Vertex AI is rebranded the Gemini Enterprise Agent Platform with an Agent Studio drag-and-drop tool that emits Google ADK code; prebuilt agents include Deep Research, Data Insights, Notebook LM Enterprise and Gemini Code Assist.
+
+5. **NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI**
+   - Publisher: NVIDIA Blog
+   - URL: https://blogs.nvidia.com/blog/google-cloud-agentic-physical-ai-factories/
+   - Published: 2026-04-22 (per search snippet — "1 day ago")
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: NVIDIA announced an expanded collaboration with Google Cloud at Google Cloud Next, including Google's A5X instances powered by NVIDIA Vera Rubin NVL72 rack-scale systems (claimed up to 10× lower inference cost per token and 10× more throughput per megawatt than the prior generation), NVIDIA Omniverse and Isaac Sim availability on Google Cloud for digital twins and robotics, and CrowdStrike using NVIDIA NeMo on Blackwell GPUs for cybersecurity agents.
 
 > Note: Runtime is WEBFETCH_BLOCKED — all 5 items verified via WebSearch snippets on trusted-source domains. Full-text verification was not possible in this Routine runtime.
