@@ -118,6 +118,22 @@ You can also invoke the skill from a local Claude Code session — same flow, sa
 
 Claude will load [`SKILL.md`](./.claude/skills/daily-ai-news/SKILL.md) and execute the seven steps.
 
+## Diagnosing LINE issues with `line-test`
+
+There's a companion skill at [`.claude/skills/line-test/SKILL.md`](./.claude/skills/line-test/SKILL.md) that does **only** the LINE push — no research, no GitHub. Use it when `daily-ai-news` reports `LINE: skipped` or a non-200 and you need to isolate whether the problem is the env wiring, the token, or the target id.
+
+To run it:
+
+1. In any Claude session with the `ClaudeBot_Line` Cloud Environment attached, say:
+   > run the line-test skill
+2. Watch the output. Success is **all three**:
+   - Env resolution table shows both LINE vars `(source: cloud-env / ClaudeBot_Line)`.
+   - `status = 200` from `api.line.me`.
+   - The test message actually arrives in your LINE client.
+3. If any of those three fails, the skill prints a classification table that maps the failure to the most likely cause (wrong token, wrong `LINE_TO`, bot not added to the group, etc).
+
+If `line-test` passes and `daily-ai-news` still skips LINE, that's a `daily-ai-news` Step 0 bug — file it, don't keep running the full news flow blindly.
+
 ## Troubleshooting
 
 - **"GitHub connector is not connected" on every run.** The connector authorization expired or was scoped to a different repo. Reconnect in **Settings → Connectors** and re-authorize for this repo.

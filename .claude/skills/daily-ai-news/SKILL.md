@@ -16,13 +16,17 @@ End-to-end routine that produces **one Markdown article per day** at `articles/Y
 
 ## Required environment
 
-| Var | Purpose | Required | May live in |
+**Deployment note — Cloud Environment `ClaudeBot_Line`**
+
+In this project's Claude Web Routine deployment, all env vars below are provisioned through the Cloud Environment pack named **`ClaudeBot_Line`**. That pack must be selected on the Routine (bottom-right of the Routine editor — the cloud-icon dropdown) before the run starts. The skill itself doesn't care about the pack name — it only reads variable **names** — but if a run is misconfigured and attaches a different pack (e.g. a generic `Thannob` pack without LINE keys), the LINE vars will resolve to `***missing***` and Step 6 will be skipped. Always confirm the Routine shows `ClaudeBot_Line` as the active Cloud Environment.
+
+| Var | Purpose | Required | Must come from |
 |---|---|---|---|
-| `GITHUB_OWNER` | GitHub account / org owning the target repo | yes | Cloud Env, prompt, defaults.json |
-| `GITHUB_REPO` | Target repo name | yes | Cloud Env, prompt, defaults.json |
-| `GITHUB_BRANCH` | Branch to commit on (default `main`) | no | Cloud Env, prompt, defaults.json |
-| `LINE_CHANNEL_ACCESS_TOKEN` | Messaging API channel token | no (skip LINE if absent) | **Cloud Env or prompt only — never defaults.json** |
-| `LINE_TO` | Target userId / groupId / roomId | no (skip LINE if absent) | **Cloud Env or prompt only — never defaults.json** |
+| `GITHUB_OWNER` | GitHub account / org owning the target repo | yes | `ClaudeBot_Line` (or defaults.json fallback) |
+| `GITHUB_REPO` | Target repo name | yes | `ClaudeBot_Line` (or defaults.json fallback) |
+| `GITHUB_BRANCH` | Branch to commit on (default `main`) | no | `ClaudeBot_Line` (or defaults.json fallback) |
+| `LINE_CHANNEL_ACCESS_TOKEN` | Messaging API channel token | no (skip LINE if absent) | **`ClaudeBot_Line` only — never defaults.json** |
+| `LINE_TO` | Target userId / groupId / roomId | no (skip LINE if absent) | **`ClaudeBot_Line` only — never defaults.json** |
 
 ### Env resolution order (apply per variable, first hit wins)
 
@@ -46,14 +50,14 @@ Do **not** invent values. Do **not** treat literal placeholder strings like `<fr
 2. **Resolve env.** For each variable in the table above, walk the resolution order. `Read` `reference/defaults.json` exactly once and cache it for tier 3.
 3. **Print a resolution table** so failures are obvious:
    ```
-   Env resolution:
-     GITHUB_OWNER   = thannob         (source: defaults.json)
-     GITHUB_REPO    = dailyainews     (source: defaults.json)
-     GITHUB_BRANCH  = main            (source: defaults.json)
-     LINE_CHANNEL_ACCESS_TOKEN = ***set*** (source: cloud-env)
-     LINE_TO        = ***set***       (source: cloud-env)
+   Env resolution (Cloud Environment: ClaudeBot_Line expected):
+     GITHUB_OWNER              = thannob       (source: cloud-env / ClaudeBot_Line)
+     GITHUB_REPO               = dailyainews   (source: cloud-env / ClaudeBot_Line)
+     GITHUB_BRANCH             = main          (source: cloud-env / ClaudeBot_Line)
+     LINE_CHANNEL_ACCESS_TOKEN = ***set***     (source: cloud-env / ClaudeBot_Line)
+     LINE_TO                   = ***set***     (source: cloud-env / ClaudeBot_Line)
    ```
-   For secrets, print `***set***` or `***missing***` — never the actual value.
+   For secrets, print `***set***` or `***missing***` — never the actual value. If a var fell through to `defaults.json`, say so explicitly — that tells the operator the Cloud Env pack didn't inject it.
 4. **LINE gate.** If either LINE var is `***missing***` → `LINE_ENABLED=false`, print `LINE: skipped (env missing)`, continue — the commit step must still run. Otherwise `LINE_ENABLED=true`.
 5. **GitHub gate.** If `GITHUB_OWNER` or `GITHUB_REPO` is `***missing***` → abort with a clear log.
 6. **Date.** Compute `TODAY = YYYY-MM-DD` in `Asia/Bangkok`. Use this string for the filename, commit message, and article body.
