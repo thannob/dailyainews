@@ -1,0 +1,6 @@
+{
+  "_comment": "Non-secret defaults for the daily-ai-news skill. Secrets (LINE_*) must NEVER live here — they come from Cloud Environment or the skill invocation prompt. Committed to git on purpose so the skill has sensible fallbacks when Cloud Env isn't populated.",
+  "GITHUB_OWNER": "thannob",
+  "GITHUB_REPO": "dailyainews",
+  "GITHUB_BRANCH": "main"
+}

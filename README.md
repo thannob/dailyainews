@@ -71,19 +71,27 @@ Without this connector, Step 0 of the skill aborts on purpose.
 
 ### 3. Set environment variables on the Routine
 
-In the Routine editor, add these env vars (names must match exactly):
+The skill resolves each variable through a **3-tier order** (Step 0 in [`SKILL.md`](./.claude/skills/daily-ai-news/SKILL.md)):
 
-| Var | Example | Required |
-|---|---|---|
-| `GITHUB_OWNER` | `thannob` | yes |
-| `GITHUB_REPO` | `dailyainews` | yes |
-| `GITHUB_BRANCH` | `main` | no (default `main`) |
-| `LINE_CHANNEL_ACCESS_TOKEN` | `xxxx...` from [LINE Developers Console](https://developers.line.biz/console/) | no |
-| `LINE_TO` | `Uxxxxxxxxxxxxxxxxxxxxxxx` (a userId from the bot's webhook) | no |
+1. **Cloud Environment** on the Routine — injected system context, template substitution like `{{LINE_TO}}`, or an env-reading MCP tool.
+2. **Inline in the invocation prompt** — e.g. the prompt says `LINE_CHANNEL_ACCESS_TOKEN = xxx` directly.
+3. **`reference/defaults.json`** — committed, **non-secret only** (`GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH`). Secrets MUST NOT go here.
 
-If either LINE var is absent the skill commits but skips the notification — this is intentional so you can roll out the GitHub half first.
+| Var | Example | Required | Best tier |
+|---|---|---|---|
+| `GITHUB_OWNER` | `thannob` | yes | Cloud Env or defaults.json |
+| `GITHUB_REPO` | `dailyainews` | yes | Cloud Env or defaults.json |
+| `GITHUB_BRANCH` | `main` | no (default `main`) | Cloud Env or defaults.json |
+| `LINE_CHANNEL_ACCESS_TOKEN` | `xxxx...` from [LINE Developers Console](https://developers.line.biz/console/) | no | **Cloud Env** (fallback: prompt) |
+| `LINE_TO` | `Uxxxxxxxxxxxxxxxxxxxxxxx` (userId from the bot's webhook) | no | **Cloud Env** (fallback: prompt) |
 
-See [`.env.example`](./.env.example) for the same list with inline notes.
+**Setting Cloud Env for a Routine:** in the Routine editor, open the **Cloud Environment** panel and add each key/value. Save before running. Key names are case-sensitive (`LINE_CHANNEL_ACCESS_TOKEN`, not `line_channel_access_token`).
+
+**Gotcha:** Cloud Env values reach the model differently across Routine platforms — sometimes as injected system context, sometimes via template substitution, sometimes only via shell (which we don't have). Step 0 prints a resolution table showing the actual source each var was resolved from, so you can tell at a glance whether Cloud Env worked or it fell through to defaults.
+
+If either LINE var is absent from all tiers, the skill commits but skips the notification — intentional so you can roll out the GitHub half first.
+
+See [`.env.example`](./.env.example) and [`defaults.json`](./.claude/skills/daily-ai-news/reference/defaults.json) for inline notes.
 
 ### 4. Create the Routine
 

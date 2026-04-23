@@ -14,17 +14,27 @@ End-to-end routine that produces **one Markdown article per day** at `articles/Y
 - **Tools FORBIDDEN:** `Bash`, any shell, any `git` CLI. If you catch yourself reaching for `Bash`, stop — this skill must run on Claude Remote Routine where shell is unavailable.
 - **No fabrication:** every news item MUST have a real, fetched URL from the trusted-source list in `reference/trusted-sources.md`. If you cannot verify a URL via `WebFetch`, drop the item.
 
-## Required environment (read from the Routine env)
+## Required environment
 
-| Var | Purpose | Required |
-|---|---|---|
-| `GITHUB_OWNER` | GitHub account / org owning the target repo | yes |
-| `GITHUB_REPO` | Target repo name | yes |
-| `GITHUB_BRANCH` | Branch to commit on (default `main`) | no |
-| `LINE_CHANNEL_ACCESS_TOKEN` | Messaging API channel token | no (skip LINE if absent) |
-| `LINE_TO` | Target userId / groupId / roomId | no (skip LINE if absent) |
+| Var | Purpose | Required | May live in |
+|---|---|---|---|
+| `GITHUB_OWNER` | GitHub account / org owning the target repo | yes | Cloud Env, prompt, defaults.json |
+| `GITHUB_REPO` | Target repo name | yes | Cloud Env, prompt, defaults.json |
+| `GITHUB_BRANCH` | Branch to commit on (default `main`) | no | Cloud Env, prompt, defaults.json |
+| `LINE_CHANNEL_ACCESS_TOKEN` | Messaging API channel token | no (skip LINE if absent) | **Cloud Env or prompt only — never defaults.json** |
+| `LINE_TO` | Target userId / groupId / roomId | no (skip LINE if absent) | **Cloud Env or prompt only — never defaults.json** |
 
-If env is not directly exposed, ask the caller to paste the values at the top of the run, then proceed.
+### Env resolution order (apply per variable, first hit wins)
+
+1. **Cloud Environment injected into this runtime.** Scan the current context for the variable in any of these shapes:
+   - A system / system-reminder message that declares env (e.g. a block containing `GITHUB_OWNER=...` or JSON with that key).
+   - A template placeholder like `{{GITHUB_OWNER}}` in the invocation prompt that was **substituted** before the model read it — i.e. the prompt now shows a real value where the placeholder was.
+   - An env-reading MCP tool if one is connected (e.g. a tool named like `read_env`, `get_secret`, `env_get`).
+2. **Inline in the skill invocation prompt.** The caller may have written `LINE_CHANNEL_ACCESS_TOKEN = <real token>` directly in the run prompt. Use that.
+3. **`reference/defaults.json`** — read with the `Read` tool. **Only** consult this for `GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH`. Never read secrets from here.
+4. **Missing.** For `GITHUB_*` this is a hard abort. For `LINE_*` it means `LINE_ENABLED=false`.
+
+Do **not** invent values. Do **not** treat literal placeholder strings like `<from Routine env>`, `{{GITHUB_OWNER}}`, `$LINE_TO`, or `PASTE_REAL_TOKEN_HERE` as real values — those are signs substitution failed.
 
 ---
 
@@ -33,9 +43,20 @@ If env is not directly exposed, ask the caller to paste the values at the top of
 1. **GitHub connector check.** Confirm the GitHub MCP connector is connected (look for tools whose names start with `mcp__github` / `mcp__Github` / similar — e.g. `create_or_update_file`, `push_files`, `get_file_contents`). If **none** are available:
    - Print: `ABORT: GitHub connector is not connected. Enable the GitHub MCP connector in Claude settings and re-run.`
    - **Stop immediately.** Do not research, do not write any files.
-2. **LINE env check.** Read `LINE_CHANNEL_ACCESS_TOKEN` and `LINE_TO`.
-   - If either is missing → set `LINE_ENABLED=false`, print `LINE: skipped (env missing)`, but continue — the commit step must still run.
-3. **Date.** Compute `TODAY = YYYY-MM-DD` in `Asia/Bangkok`. Use this string for the filename, commit message, and article body.
+2. **Resolve env.** For each variable in the table above, walk the resolution order. `Read` `reference/defaults.json` exactly once and cache it for tier 3.
+3. **Print a resolution table** so failures are obvious:
+   ```
+   Env resolution:
+     GITHUB_OWNER   = thannob         (source: defaults.json)
+     GITHUB_REPO    = dailyainews     (source: defaults.json)
+     GITHUB_BRANCH  = main            (source: defaults.json)
+     LINE_CHANNEL_ACCESS_TOKEN = ***set*** (source: cloud-env)
+     LINE_TO        = ***set***       (source: cloud-env)
+   ```
+   For secrets, print `***set***` or `***missing***` — never the actual value.
+4. **LINE gate.** If either LINE var is `***missing***` → `LINE_ENABLED=false`, print `LINE: skipped (env missing)`, continue — the commit step must still run. Otherwise `LINE_ENABLED=true`.
+5. **GitHub gate.** If `GITHUB_OWNER` or `GITHUB_REPO` is `***missing***` → abort with a clear log.
+6. **Date.** Compute `TODAY = YYYY-MM-DD` in `Asia/Bangkok`. Use this string for the filename, commit message, and article body.
 
 ---
 
@@ -242,4 +263,4 @@ Print a compact summary to the user / routine log:
 - `reference/perspectives.md` — overwritten each run (working artifact)
 - `articles/{TODAY}-brief.md` — the single committed output
 
-`reference/trusted-sources.md` is **read-only** for this skill.
+`reference/trusted-sources.md` and `reference/defaults.json` are **read-only** for this skill.
