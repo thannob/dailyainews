@@ -16,29 +16,25 @@ End-to-end routine that produces **one Markdown article per day** at `articles/Y
 
 ## Required environment
 
-**Deployment note — Cloud Environment `ClaudeBot_Line`**
+The Routine itself needs very little env now — LINE moved out to GitHub Actions (see Step 6). The skill reads only:
 
-In this project's Claude Web Routine deployment, all env vars below are provisioned through the Cloud Environment pack named **`ClaudeBot_Line`**. That pack must be selected on the Routine (bottom-right of the Routine editor — the cloud-icon dropdown) before the run starts. The skill itself doesn't care about the pack name — it only reads variable **names** — but if a run is misconfigured and attaches a different pack (e.g. a generic `Thannob` pack without LINE keys), the LINE vars will resolve to `***missing***` and Step 6 will be skipped. Always confirm the Routine shows `ClaudeBot_Line` as the active Cloud Environment.
-
-| Var | Purpose | Required | Must come from |
+| Var | Purpose | Required | Source |
 |---|---|---|---|
-| `GITHUB_OWNER` | GitHub account / org owning the target repo | yes | `ClaudeBot_Line` (or defaults.json fallback) |
-| `GITHUB_REPO` | Target repo name | yes | `ClaudeBot_Line` (or defaults.json fallback) |
-| `GITHUB_BRANCH` | Branch to commit on (default `main`) | no | `ClaudeBot_Line` (or defaults.json fallback) |
-| `LINE_CHANNEL_ACCESS_TOKEN` | Messaging API channel token | no (skip LINE if absent) | **`ClaudeBot_Line` only — never defaults.json** |
-| `LINE_TO` | Target userId / groupId / roomId | no (skip LINE if absent) | **`ClaudeBot_Line` only — never defaults.json** |
+| `GITHUB_OWNER` | GitHub account / org owning the target repo | yes | inline prompt, or `reference/defaults.json` fallback |
+| `GITHUB_REPO` | Target repo name | yes | inline prompt, or `reference/defaults.json` fallback |
+| `GITHUB_BRANCH` | Branch to commit on (default `main`) | no | inline prompt, or `reference/defaults.json` fallback |
+
+`LINE_CHANNEL_ACCESS_TOKEN` / `LINE_TO` are **no longer read by the skill** — they live in GitHub repo secrets and are consumed by `.github/workflows/line-notify.yml`. If you still see them in an older prompt, ignore them; the Routine doesn't need them.
+
+Claude Web Routine's Cloud Environment feature does not reliably inject values into the model's prompt context (observed empirically in this deployment). That's fine — GitHub vars have a committed defaults fallback, and LINE secrets now live on a surface (GH secrets) that actually works.
 
 ### Env resolution order (apply per variable, first hit wins)
 
-1. **Cloud Environment injected into this runtime.** Scan the current context for the variable in any of these shapes:
-   - A system / system-reminder message that declares env (e.g. a block containing `GITHUB_OWNER=...` or JSON with that key).
-   - A template placeholder like `{{GITHUB_OWNER}}` in the invocation prompt that was **substituted** before the model read it — i.e. the prompt now shows a real value where the placeholder was.
-   - An env-reading MCP tool if one is connected (e.g. a tool named like `read_env`, `get_secret`, `env_get`).
-2. **Inline in the skill invocation prompt.** The caller may have written `LINE_CHANNEL_ACCESS_TOKEN = <real token>` directly in the run prompt. Use that.
-3. **`reference/defaults.json`** — read with the `Read` tool. **Only** consult this for `GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH`. Never read secrets from here.
-4. **Missing.** For `GITHUB_*` this is a hard abort. For `LINE_*` it means `LINE_ENABLED=false`.
+1. **Inline in the skill invocation prompt.** The caller may have written `GITHUB_OWNER = thannob` directly in the run prompt. Use that.
+2. **`reference/defaults.json`** — read with the `Read` tool. This is the canonical fallback for the three `GITHUB_*` vars.
+3. **Missing** → hard abort.
 
-Do **not** invent values. Do **not** treat literal placeholder strings like `<from Routine env>`, `{{GITHUB_OWNER}}`, `$LINE_TO`, or `PASTE_REAL_TOKEN_HERE` as real values — those are signs substitution failed.
+Do **not** invent values. Do **not** treat literal placeholder strings like `{{GITHUB_OWNER}}` or `$GITHUB_OWNER` as real values — those are signs substitution failed and the caller needs to either paste real values or let the defaults take over.
 
 ---
 
@@ -47,20 +43,16 @@ Do **not** invent values. Do **not** treat literal placeholder strings like `<fr
 1. **GitHub connector check.** Confirm the GitHub MCP connector is connected (look for tools whose names start with `mcp__github` / `mcp__Github` / similar — e.g. `create_or_update_file`, `push_files`, `get_file_contents`). If **none** are available:
    - Print: `ABORT: GitHub connector is not connected. Enable the GitHub MCP connector in Claude settings and re-run.`
    - **Stop immediately.** Do not research, do not write any files.
-2. **Resolve env.** For each variable in the table above, walk the resolution order. `Read` `reference/defaults.json` exactly once and cache it for tier 3.
+2. **Resolve env.** For each variable in the table above, walk the resolution order. `Read` `reference/defaults.json` exactly once and cache it.
 3. **Print a resolution table** so failures are obvious:
    ```
-   Env resolution (Cloud Environment: ClaudeBot_Line expected):
-     GITHUB_OWNER              = thannob       (source: cloud-env / ClaudeBot_Line)
-     GITHUB_REPO               = dailyainews   (source: cloud-env / ClaudeBot_Line)
-     GITHUB_BRANCH             = main          (source: cloud-env / ClaudeBot_Line)
-     LINE_CHANNEL_ACCESS_TOKEN = ***set***     (source: cloud-env / ClaudeBot_Line)
-     LINE_TO                   = ***set***     (source: cloud-env / ClaudeBot_Line)
+   Env resolution:
+     GITHUB_OWNER   = thannob       (source: defaults.json)
+     GITHUB_REPO    = dailyainews   (source: defaults.json)
+     GITHUB_BRANCH  = main          (source: defaults.json)
    ```
-   For secrets, print `***set***` or `***missing***` — never the actual value. If a var fell through to `defaults.json`, say so explicitly — that tells the operator the Cloud Env pack didn't inject it.
-4. **LINE gate.** If either LINE var is `***missing***` → `LINE_ENABLED=false`, print `LINE: skipped (env missing)`, continue — the commit step must still run. Otherwise `LINE_ENABLED=true`.
-5. **GitHub gate.** If `GITHUB_OWNER` or `GITHUB_REPO` is `***missing***` → abort with a clear log.
-6. **Date.** Compute `TODAY = YYYY-MM-DD` in `Asia/Bangkok`. Use this string for the filename, commit message, and article body.
+4. **GitHub gate.** If `GITHUB_OWNER` or `GITHUB_REPO` is `***missing***` → abort with a clear log.
+5. **Date.** Compute `TODAY = YYYY-MM-DD` in `Asia/Bangkok`. Use this string for the filename, commit message, and article body.
 
 ---
 
@@ -244,51 +236,25 @@ Before writing, call the connector's `get_file_contents` (or equivalent) for `ar
 
 ---
 
-## Step 6 — LINE push (optional)
+## Step 6 — LINE push (handled externally)
 
-Skip this step entirely if `LINE_ENABLED=false`.
+**This skill does NOT send to LINE.** The `WebFetch` tool in Claude Web Routine accepts only `(url, prompt)` — no method, no headers, no body — so it cannot POST to `api.line.me/v2/bot/message/push` with a Bearer token. That's a tool-schema limit, not an egress or env issue.
 
-Build the message text:
+LINE dispatch is instead handled by a GitHub Actions workflow at [`.github/workflows/line-notify.yml`](../../../.github/workflows/line-notify.yml) that triggers on every push to `main` affecting `articles/*-brief.md`. The workflow:
 
-```
-📰 สรุปข่าว AI {TODAY}
+- Reads repo secrets `LINE_CHANNEL_ACCESS_TOKEN` and `LINE_TO`.
+- Extracts the title + TL;DR bullets from the newly committed brief.
+- Builds a permalink pinned to the commit SHA.
+- POSTs to `api.line.me` with `curl` (full HTTP capability).
+- Fails loudly in the Actions UI on non-200.
 
-TL;DR
-• {bullet 1}
-• {bullet 2}
-• {bullet 3}
+What the skill does here:
 
-อ่านฉบับเต็ม: {PERMALINK}
-```
+1. Do nothing that talks to LINE directly — no `WebFetch`, no markers, no retries.
+2. Print one line for the operator: `LINE: dispatched by .github/workflows/line-notify.yml (see Actions tab for delivery status)`.
+3. If the commit in Step 5 was a NO-OP (idempotent), the workflow will NOT fire — because no push happened. This is correct: no new content means no new notification.
 
-Send via **`WebFetch` with method POST** (no curl, no shell):
-
-- URL: `https://api.line.me/v2/bot/message/push`
-- Headers:
-  - `Authorization: Bearer {LINE_CHANNEL_ACCESS_TOKEN}`
-  - `Content-Type: application/json`
-- Body (JSON):
-  ```json
-  {
-    "to": "{LINE_TO}",
-    "messages": [{ "type": "text", "text": "<msg>" }]
-  }
-  ```
-
-On response:
-- **HTTP 200:** print `LINE: ok`.
-- **Non-200:** print `LINE ERROR: status={code} body={responseBody}`. **Do not retry.** The commit already landed — a failed notification is surfaced, not swallowed.
-- **Network/egress error** (e.g. `WEBFETCH_BLOCKED` also blocks `api.line.me`, or the runtime rejects POST): print `LINE EGRESS BLOCKED: <error>`. Do not retry.
-
-If LINE failed for any reason, also append a visible marker to the end of the committed article body and **update the commit** (via Step 5b update flow) so readers of the article know the notification didn't go out:
-
-```
-> 🔕 LINE notification for this brief was not delivered ({reason}). See the Routine log for the raw response.
-```
-
-This requires a second commit call — that's fine; do not retry LINE itself.
-
-If `WebFetch` in the current environment doesn't allow POST with custom headers at all, say so explicitly and stop rather than falling back to a GET — never silently degrade.
+If the maintainer wants to force a re-notify for an already-committed brief, they can run the workflow manually via `gh workflow run line-notify.yml -f file=articles/{TODAY}-brief.md` or the GitHub UI.
 
 ---
 
@@ -299,7 +265,14 @@ Print a compact summary to the user / routine log:
 ```
 ✅ Committed: articles/{TODAY}-brief.md @ {COMMIT_SHA_short}
    {PERMALINK}
-{LINE status line}
+LINE: dispatched by .github/workflows/line-notify.yml (see Actions tab for delivery status)
+```
+
+If Step 5a decided NO-OP (identical content already on main), say so instead:
+```
+Run status: NO-OP (idempotent) — today's brief already at {COMMIT_SHA_short}
+   {PERMALINK}
+LINE: not re-notified (no new commit → workflow does not fire)
 ```
 
 ---
@@ -312,12 +285,10 @@ Print a compact summary to the user / routine log:
 | `WEBFETCH_BLOCKED` (whole runtime) | Switch to Tier 2 (WebSearch snippet) for every story; banner at top of article; commit with `[verify=search]`. |
 | <5 verifiable stories | Proceed with what you have; note the shortfall in sources.md. |
 | URL unreachable / paywalled (single story, `WEBFETCH_OK` runtime) | Drop that item; try Tier 2 for it; if both fail, skip it. |
-| GitHub commit fails | Surface the error. Do not continue to LINE. |
-| Today's article already committed, content identical | NO-OP commit; still attempt LINE (it may have been skipped last time). |
-| Today's article already committed, content differs | Update via the returned SHA. |
-| LINE env missing | Skip step 6. Commit is still the success criterion. |
-| LINE API non-200 | Log status + body. Append `🔕 LINE not delivered` marker to article, update commit. No retry. |
-| LINE egress blocked (runtime can't reach api.line.me) | Same as non-200 — log, mark, no retry. |
+| GitHub commit fails | Surface the error. Stop. |
+| Today's article already committed, content identical | NO-OP. LINE workflow does not fire (intentional). |
+| Today's article already committed, content differs | Update via the returned SHA. LINE workflow will fire on the new push. |
+| LINE issues | Not this skill's concern — see `.github/workflows/line-notify.yml` and the Actions tab. |
 
 ## Files this skill touches
 

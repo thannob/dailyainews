@@ -1,0 +1,109 @@
+name: LINE notify on new brief
+
+# Watches main for new daily briefs and pushes a TL;DR to LINE via the
+# Messaging API. This lives outside the Routine because the Routine's
+# WebFetch tool accepts only (url, prompt) and cannot issue POST with
+# Bearer auth — a fundamental tool-schema limitation, not env/egress.
+# GH Actions runners have full curl + repo secrets, so LINE dispatch
+# is reliable here.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'articles/*-brief.md'
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'Path of the brief file to notify for (defaults to most-recent)'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    # Skip if the commit message opts out
+    if: ${{ !contains(github.event.head_commit.message, '[skip line]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Dispatch LINE notification
+        env:
+          LINE_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_TO: ${{ secrets.LINE_TO }}
+          GH_SHA: ${{ github.sha }}
+          GH_REPO: ${{ github.repository }}
+          INPUT_FILE: ${{ github.event.inputs.file }}
+        run: |
+          set -euo pipefail
+
+          # 1. Resolve which article to notify for.
+          if [ -n "${INPUT_FILE:-}" ]; then
+            FILE="$INPUT_FILE"
+          else
+            # Changed files on this commit; works for first commit too.
+            FILE=$(git show --name-only --format= HEAD \
+              | grep -E '^articles/[0-9]{4}-[0-9]{2}-[0-9]{2}-brief\.md$' \
+              | head -1 || true)
+          fi
+
+          if [ -z "${FILE:-}" ] || [ ! -f "$FILE" ]; then
+            echo "No matching brief file — nothing to notify."
+            exit 0
+          fi
+          echo "Brief: $FILE"
+
+          # 2. Guard on secrets — skip (not fail) if not configured yet.
+          if [ -z "${LINE_TOKEN:-}" ] || [ -z "${LINE_TO:-}" ]; then
+            echo "::warning::LINE_CHANNEL_ACCESS_TOKEN or LINE_TO not set — add them in Settings -> Secrets and variables -> Actions. Skipping."
+            exit 0
+          fi
+
+          # 3. Extract title + up to 3 TL;DR bullets.
+          TITLE=$(grep -m1 '^# ' "$FILE" | sed 's/^# *//' || echo "สรุปข่าว AI")
+          TLDR=$(awk '
+            /^> TL;DR/ { flag = 1; next }
+            flag && /^> - / { sub(/^> - /, "• "); print; count++ }
+            flag && $0 !~ /^>/ { flag = 0 }
+            count >= 3 { exit }
+          ' "$FILE")
+
+          PERMALINK="https://github.com/${GH_REPO}/blob/${GH_SHA}/${FILE}"
+
+          MESSAGE=$(printf '📰 %s\n\nTL;DR\n%s\n\nอ่านฉบับเต็ม: %s' \
+            "$TITLE" "$TLDR" "$PERMALINK")
+
+          # 4. Build JSON safely — jq handles escaping.
+          PAYLOAD=$(jq -n \
+            --arg to "$LINE_TO" \
+            --arg text "$MESSAGE" \
+            '{to: $to, messages: [{type: "text", text: $text}]}')
+
+          # Masked preview for the run log.
+          echo "Payload preview (sensitive fields redacted):"
+          echo "$PAYLOAD" | jq '.to = "***" | .messages[0].text = (.messages[0].text | .[0:80] + "...")'
+
+          # 5. POST to LINE. Capture status + body separately.
+          HTTP_STATUS=$(curl -sS -o /tmp/line_resp.txt -w '%{http_code}' \
+            -X POST https://api.line.me/v2/bot/message/push \
+            -H "Authorization: Bearer ${LINE_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD")
+
+          BODY=$(cat /tmp/line_resp.txt)
+          REQID=$(grep -i '^x-line-request-id:' /tmp/line_resp.txt || echo "")
+
+          echo "LINE API status: $HTTP_STATUS"
+          echo "LINE API body:   ${BODY:-(empty)}"
+          [ -n "$REQID" ] && echo "$REQID"
+
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "::error::LINE push failed (status=$HTTP_STATUS). No retry — by design."
+            exit 1
+          fi
+
+          echo "✅ LINE notification delivered."

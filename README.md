@@ -5,7 +5,7 @@ A Claude Code skill that produces **one Thai-language AI news brief per day**, c
 The entire flow is executable from inside Claude — **no shell, no git CLI, no cron on your laptop**. The intended host is [Claude Web Routine](https://claude.ai), so it survives your machine being asleep.
 
 ```
-06:30 Asia/Bangkok  ──▶  Claude Routine fires  ──▶  WebSearch + WebFetch (5 stories)
+07:00 Asia/Bangkok  ──▶  Claude Routine fires  ──▶  WebSearch + WebFetch (5 stories)
                                                         │
                                                         ▼
                                                draft → 3 perspectives → rewrite
@@ -13,10 +13,16 @@ The entire flow is executable from inside Claude — **no shell, no git CLI, no 
                                                         ▼
                                           GitHub MCP connector commits
                                           articles/YYYY-MM-DD-brief.md
+                                                        │                     push to main
+                                                        ▼
+                                        GitHub Actions (.github/workflows/line-notify.yml)
                                                         │
                                                         ▼
-                                     WebFetch POST https://api.line.me/v2/bot/message/push
+                                         curl POST https://api.line.me/v2/bot/message/push
+                                         (using repo secrets LINE_CHANNEL_ACCESS_TOKEN + LINE_TO)
 ```
+
+**Why LINE dispatch lives in GitHub Actions, not the skill:** Claude Web Routine's `WebFetch` tool accepts only `(url, prompt)` — it cannot issue a POST with `Authorization: Bearer`, which LINE requires. Rather than fight a tool-schema limit, we moved LINE to Actions, which has real `curl` and real secrets.
 
 ## Repo layout
 
@@ -71,29 +77,33 @@ In Claude (web): **Settings → Connectors → GitHub → Connect**, then author
 
 Without this connector, Step 0 of the skill aborts on purpose.
 
-### 3. Set environment variables on the Routine
+### 3. Set environment — two surfaces, two purposes
 
-The skill resolves each variable through a **3-tier order** (Step 0 in [`SKILL.md`](./.claude/skills/daily-ai-news/SKILL.md)):
+**A. Routine config (for the skill that writes the brief):**
 
-1. **Cloud Environment** on the Routine — injected system context, template substitution like `{{LINE_TO}}`, or an env-reading MCP tool.
-2. **Inline in the invocation prompt** — e.g. the prompt says `LINE_CHANNEL_ACCESS_TOKEN = xxx` directly.
-3. **`reference/defaults.json`** — committed, **non-secret only** (`GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH`). Secrets MUST NOT go here.
+The skill only needs three GitHub-identity vars. It reads them in this order:
 
-| Var | Example | Required | Best tier |
+1. Inline in the invocation prompt (e.g. `GITHUB_OWNER = thannob`).
+2. [`defaults.json`](./.claude/skills/daily-ai-news/reference/defaults.json) — committed fallback.
+
+| Var | Example | Required | Where |
 |---|---|---|---|
-| `GITHUB_OWNER` | `thannob` | yes | Cloud Env or defaults.json |
-| `GITHUB_REPO` | `dailyainews` | yes | Cloud Env or defaults.json |
-| `GITHUB_BRANCH` | `main` | no (default `main`) | Cloud Env or defaults.json |
-| `LINE_CHANNEL_ACCESS_TOKEN` | `xxxx...` from [LINE Developers Console](https://developers.line.biz/console/) | no | **Cloud Env** (fallback: prompt) |
-| `LINE_TO` | `Uxxxxxxxxxxxxxxxxxxxxxxx` (userId from the bot's webhook) | no | **Cloud Env** (fallback: prompt) |
+| `GITHUB_OWNER` | `thannob` | yes | prompt or `defaults.json` |
+| `GITHUB_REPO` | `dailyainews` | yes | prompt or `defaults.json` |
+| `GITHUB_BRANCH` | `main` | no (default `main`) | prompt or `defaults.json` |
 
-**Setting Cloud Env for a Routine:** in the Routine editor, open the **Cloud Environment** panel and add each key/value. Save before running. Key names are case-sensitive (`LINE_CHANNEL_ACCESS_TOKEN`, not `line_channel_access_token`).
+Cloud Environment on the Routine is **not required** — `defaults.json` covers the fallback. In this deployment we observed Cloud Environment does not inject values into the model's prompt context, so we don't depend on it.
 
-**Gotcha:** Cloud Env values reach the model differently across Routine platforms — sometimes as injected system context, sometimes via template substitution, sometimes only via shell (which we don't have). Step 0 prints a resolution table showing the actual source each var was resolved from, so you can tell at a glance whether Cloud Env worked or it fell through to defaults.
+**B. GitHub repo secrets (for the Actions workflow that sends LINE):**
 
-If either LINE var is absent from all tiers, the skill commits but skips the notification — intentional so you can roll out the GitHub half first.
+| Secret | Example | Where to set |
+|---|---|---|
+| `LINE_CHANNEL_ACCESS_TOKEN` | long-lived channel token from [LINE Developers Console](https://developers.line.biz/console/) | **Repo → Settings → Secrets and variables → Actions → New repository secret** |
+| `LINE_TO` | `Uxxxxxxxxxxxxxxxxxxxxxxx` (userId/groupId/roomId) | same place |
 
-See [`.env.example`](./.env.example) and [`defaults.json`](./.claude/skills/daily-ai-news/reference/defaults.json) for inline notes.
+The workflow at [`.github/workflows/line-notify.yml`](./.github/workflows/line-notify.yml) reads these directly. If either secret is missing, the workflow emits a warning and exits cleanly — commits still land, just no LINE push.
+
+See [`.env.example`](./.env.example) for inline notes on each var.
 
 ### 4. Create the Routine
 
@@ -120,28 +130,28 @@ You can also invoke the skill from a local Claude Code session — same flow, sa
 
 Claude will load [`SKILL.md`](./.claude/skills/daily-ai-news/SKILL.md) and execute the seven steps.
 
-## Diagnosing LINE issues with `line-test`
+## Diagnosing LINE issues
 
-There's a companion skill at [`.claude/skills/line-test/SKILL.md`](./.claude/skills/line-test/SKILL.md) that does **only** the LINE push — no research, no GitHub. Use it when `daily-ai-news` reports `LINE: skipped` or a non-200 and you need to isolate whether the problem is the env wiring, the token, or the target id.
+LINE delivery happens in GitHub Actions, not in Claude, so diagnose it there:
 
-To run it:
+```bash
+# Manually fire the workflow against any existing brief
+gh workflow run line-notify.yml -f file=articles/<YYYY-MM-DD>-brief.md
 
-1. In any Claude session with the `ClaudeBot_Line` Cloud Environment attached, say:
-   > run the line-test skill
-2. Watch the output. Success is **all three**:
-   - Env resolution table shows both LINE vars `(source: cloud-env / ClaudeBot_Line)`.
-   - `status = 200` from `api.line.me`.
-   - The test message actually arrives in your LINE client.
-3. If any of those three fails, the skill prints a classification table that maps the failure to the most likely cause (wrong token, wrong `LINE_TO`, bot not added to the group, etc).
+# Watch / inspect
+gh run list --workflow=line-notify.yml --limit 5
+gh run view <run-id> --log
+```
 
-If `line-test` passes and `daily-ai-news` still skips LINE, that's a `daily-ai-news` Step 0 bug — file it, don't keep running the full news flow blindly.
+The workflow log shows the masked payload, the HTTP status, and the response body. The status-code mapping (`401` = token bad, `400 The property, 'to'` = `LINE_TO` bad, `200` + no message = bot not added to target, etc) is documented in [`.claude/skills/line-test/SKILL.md`](./.claude/skills/line-test/SKILL.md).
 
 ## Troubleshooting
 
 - **"GitHub connector is not connected" on every run.** The connector authorization expired or was scoped to a different repo. Reconnect in **Settings → Connectors** and re-authorize for this repo.
-- **Commit lands but no LINE message.** Check the Routine log — the skill prints `LINE: skipped (env missing)`, `LINE ERROR: status=... body=...`, or `LINE EGRESS BLOCKED: ...` verbatim. No retries happen by design. The committed article will also carry a `🔕 LINE not delivered` marker.
-- **Env resolution table shows `(source: defaults.json)` for GitHub vars and `***missing***` for LINE.** Cloud Environment (`ClaudeBot_Line`) is attached but its values are not reaching the model context — known limitation on the current Routine platform. Paste LINE secrets inline in the invocation prompt as a workaround; see the prompt template in "Running in Claude Web Routine".
-- **Every WebFetch returns 403 (even to `example.com`).** The runtime has no outbound network for `WebFetch`. The skill auto-falls-back to `WEBFETCH_BLOCKED` mode (Tier 2 — WebSearch snippets), commits with `[verify=search]`, and the article carries a banner saying so. If you want fresh Tier-1 articles, the fix is at the Routine platform level (egress policy), not the skill.
+- **Commit lands but no LINE message.** LINE is dispatched by `.github/workflows/line-notify.yml` — check the Actions tab of the repo, not the Routine log. If the workflow didn't even fire, the push may have been a NO-OP (skill detected identical content and skipped the commit — intentional).
+- **Workflow ran but returned non-200.** Look at the run log — it prints the masked payload, status code, body, and `x-line-request-id`. Status-code mapping is in [`.claude/skills/line-test/SKILL.md`](./.claude/skills/line-test/SKILL.md).
+- **Every WebFetch returns 403 from a single Routine run.** May be a transient tool issue; the skill auto-falls-back to `WEBFETCH_BLOCKED` (Tier 2 — WebSearch snippets), commits with `[verify=search]`, and the article carries a banner saying so. If it's persistent across many runs, the fix is at the Routine platform level (egress policy / `WebFetch` schema), not the skill.
+- **`WebFetch` tool signature is `(url, prompt)` only — can't POST.** Not a bug. That's the tool shape in Claude Web Routine. Anything requiring POST with custom headers (like LINE) must live outside the Routine — see the GH Actions workflow.
 - **"No verifiable stories" in sources.md.** Means `WebSearch` returned zero usable snippets from trusted-source domains too. Genuinely quiet news day or search quota issue. Re-run later; don't loosen [`reference/trusted-sources.md`](./.claude/skills/daily-ai-news/reference/trusted-sources.md) just to fill the quota.
 - **The brief repeats yesterday's stories.** Check `Published:` in [`reference/sources.md`](./.claude/skills/daily-ai-news/reference/sources.md). Tier-2 stories derive the date from the search snippet, which can be stale on slow news days.
 
