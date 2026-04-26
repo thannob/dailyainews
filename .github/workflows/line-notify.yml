@@ -63,19 +63,14 @@ jobs:
             exit 0
           fi
 
-          # 3. Extract title + up to 3 TL;DR bullets.
-          TITLE=$(grep -m1 '^# ' "$FILE" | sed 's/^# *//' || echo "สรุปข่าว AI")
-          TLDR=$(awk '
-            /^> TL;DR/ { flag = 1; next }
-            flag && /^> - / { sub(/^> - /, "• "); print; count++ }
-            flag && $0 !~ /^>/ { flag = 0 }
-            count >= 3 { exit }
-          ' "$FILE")
-
+          # 3. Build the LINE message via the Python parser. It produces:
+          #    - title (H1)
+          #    - TL;DR bullets (up to 3)
+          #    - per-story summary block (5 stories × headline + first
+          #      paragraph + publisher: URL)
+          #    - permalink pinned to this commit's SHA
           PERMALINK="https://github.com/${GH_REPO}/blob/${GH_SHA}/${FILE}"
-
-          MESSAGE=$(printf '📰 %s\n\nTL;DR\n%s\n\nอ่านฉบับเต็ม: %s' \
-            "$TITLE" "$TLDR" "$PERMALINK")
+          MESSAGE=$(python3 .github/scripts/build_line_message.py "$FILE" "$PERMALINK")
 
           # 4. Build JSON safely — jq handles escaping.
           PAYLOAD=$(jq -n \
@@ -83,9 +78,13 @@ jobs:
             --arg text "$MESSAGE" \
             '{to: $to, messages: [{type: "text", text: $text}]}')
 
-          # Masked preview for the run log.
+          # Masked preview for the run log — show full text length and
+          # head so we can debug truncation/parser issues without leaking
+          # the LINE_TO target id.
+          MSG_LEN=${#MESSAGE}
+          echo "Message length: ${MSG_LEN} chars (LINE limit: 5000)"
           echo "Payload preview (sensitive fields redacted):"
-          echo "$PAYLOAD" | jq '.to = "***" | .messages[0].text = (.messages[0].text | .[0:80] + "...")'
+          echo "$PAYLOAD" | jq '.to = "***" | .messages[0].text = (.messages[0].text | .[0:200] + "…")'
 
           # 5. POST to LINE. Capture status + body separately.
           HTTP_STATUS=$(curl -sS -o /tmp/line_resp.txt -w '%{http_code}' \
