@@ -143,9 +143,8 @@ Rules:
 - Every story references its source URL at least once via inline markdown link.
 - Do **not** invent quotes, numbers, dates, or names. If the source didn't say it (Tier 1 body) or if the snippet didn't say it (Tier 2), don't write it.
 - Thai-first prose; technical terms can stay in English.
-- **If any story is Tier 2**, add a small italic tag at the end of that story's paragraph:
-  `_(อ้างอิงจาก search snippet — WebFetch ไม่สามารถเข้าถึงหน้าต้นทางใน runtime นี้)_`
-- **Do NOT add a top-of-article banner** when the runtime is `WEBFETCH_BLOCKED`. The verification mode is already surfaced in four other places (commit message `[verify=search]`, `reference/sources.md` `Runtime:` line, per-story italic tags, and the footer `Verification mode:` line) — a top banner adds visual noise without new information. Keep the article body clean for the reader.
+- **Do NOT add per-story italic tags** for Tier 2 sourcing — no `_(อ้างอิงจาก search snippet …)_` blurb at the end of any paragraph. The reader doesn't need it inline.
+- **Do NOT add a top-of-article banner** when the runtime is `WEBFETCH_BLOCKED`. The verification mode is already surfaced in three other places (commit message `[verify=search]`, `reference/sources.md` `Runtime:` line, and the footer `Verification mode:` line) — that's plenty for traceability. Keep the article body clean for the reader.
 
 ---
 

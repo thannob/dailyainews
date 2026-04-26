@@ -43,8 +43,12 @@ MIN_SENTENCES_PER_STORY = 1
 
 H1_RE = re.compile(r"^#\s+(.+?)\s*$")
 TLDR_BULLET_RE = re.compile(r"^>\s*-\s+(.+?)\s*$")
+# Match `### N. Headline — [Publisher](URL)` and optionally allow more
+# trailing content (e.g. ` · [SecondPublisher](URL)` for stories cited
+# from two trusted sources). We only surface the first publisher in the
+# LINE message — the full article links to both.
 STORY_HEAD_RE = re.compile(
-    r"^###\s+(\d+)\.\s+(.+?)\s+—\s+\[([^\]]+)\]\(([^)]+)\)\s*$"
+    r"^###\s+(\d+)\.\s+(.+?)\s+—\s+\[([^\]]+)\]\(([^)]+)\)"
 )
 H2_RE = re.compile(r"^##\s+")
 ITALIC_TAG_RE = re.compile(r"^_\(.*\)_\s*$")
