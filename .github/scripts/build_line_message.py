@@ -6,6 +6,16 @@ Usage:
 
 Prints the message text to stdout. The caller wraps it in the LINE
 push JSON payload.
+
+Sizing strategy:
+    1. First pass: render with each story's full body paragraph.
+    2. If the total fits within LINE's 5000-char text-message limit,
+       emit it verbatim.
+    3. Otherwise, split each body into sentences and keep only the
+       leading whole sentences that fit a per-story budget — never
+       mid-sentence cuts, never "...".
+    4. If even the first-sentence-each version exceeds the budget,
+       drop trailing stories until it fits.
 """
 
 from __future__ import annotations
@@ -16,16 +26,17 @@ from pathlib import Path
 
 # --- knobs ----------------------------------------------------------------
 
-# Per-story body truncation. Thai text is counted by Unicode codepoints,
-# which is what LINE charges against the 5000-char text-message limit.
-BODY_MAX_CHARS = 180
+# Hard ceiling for the LINE Messaging API text-message body.
+LINE_TEXT_MAX = 5000
 
 # How many TL;DR bullets to surface (skill writes 3 by contract).
 TLDR_MAX = 3
 
-# How many stories to surface (skill writes 5 by contract; if ever
-# fewer, we just show what's there).
+# How many stories to surface (skill writes 5 by contract).
 STORIES_MAX = 5
+
+# Minimum sentences to keep per story when budget is tight.
+MIN_SENTENCES_PER_STORY = 1
 
 
 # --- parsing --------------------------------------------------------------
@@ -38,6 +49,12 @@ STORY_HEAD_RE = re.compile(
 H2_RE = re.compile(r"^##\s+")
 ITALIC_TAG_RE = re.compile(r"^_\(.*\)_\s*$")
 
+# Sentence-ending markers we trust. Thai prose often uses spaces rather
+# than periods, so we also fall back to splitting on " — " (em dash with
+# spaces) which the skill uses as a discourse-shift marker.
+SENTENCE_END_RE = re.compile(r"(?<=[\.\?\!…])\s+")
+EM_DASH_SPLIT_RE = re.compile(r"\s+—\s+")
+
 
 def parse_article(text: str):
     """Return (title, tldr_bullets, stories).
@@ -46,7 +63,6 @@ def parse_article(text: str):
     """
     lines = text.split("\n")
 
-    # Title — first H1.
     title = ""
     for line in lines:
         m = H1_RE.match(line)
@@ -54,7 +70,6 @@ def parse_article(text: str):
             title = m.group(1)
             break
 
-    # TL;DR — bullets inside the `> TL;DR` blockquote.
     tldr: list[str] = []
     in_tldr = False
     for line in lines:
@@ -67,14 +82,9 @@ def parse_article(text: str):
         if m:
             tldr.append(m.group(1))
             continue
-        # Stay in the TL;DR block on other `> ...` lines (e.g. blank
-        # quote lines), but break on the first non-quote line.
         if not line.startswith(">"):
             break
 
-    # Stories — H3 headings of the form
-    #   ### N. Headline — [Publisher](URL)
-    # followed by a body paragraph. Stop at the next H2 (e.g. "## Action items").
     stories: list[dict] = []
     current: dict | None = None
     for line in lines:
@@ -114,20 +124,58 @@ def parse_article(text: str):
     return title, tldr, stories
 
 
+# --- sentence splitting / fitting -----------------------------------------
+
+def split_sentences(text: str) -> list[str]:
+    """Split a paragraph into sentences without losing trailing
+    punctuation. Falls back to em-dash splitting for Thai prose that
+    doesn't terminate sentences with periods."""
+    if not text:
+        return []
+    parts = SENTENCE_END_RE.split(text)
+    sentences = [p.strip() for p in parts if p.strip()]
+    # If we ended up with one very long "sentence", probably no
+    # punctuation — try the soft em-dash fallback.
+    if len(sentences) == 1 and len(sentences[0]) > 240:
+        parts = EM_DASH_SPLIT_RE.split(sentences[0])
+        if len(parts) > 1:
+            # Re-attach em dashes to the start of each follow-up part
+            # so the prose still reads naturally.
+            head, *tail = [p.strip() for p in parts if p.strip()]
+            sentences = [head] + [f"— {t}" for t in tail]
+    return sentences
+
+
+def fit_sentences(sentences: list[str], max_chars: int) -> str:
+    """Return as many leading whole sentences as fit within max_chars.
+
+    Guarantees:
+        - Never returns mid-sentence text — only complete sentences.
+        - Never appends '...'; the natural sentence-ending punctuation
+          provides the stop signal.
+        - Always returns at least the first sentence if any exists,
+          even if it exceeds the budget — better one full thought than
+          a truncated one.
+    """
+    if not sentences:
+        return ""
+    out = sentences[0]
+    for s in sentences[1:]:
+        candidate = out + " " + s
+        if len(candidate) > max_chars:
+            break
+        out = candidate
+    return out
+
+
 # --- formatting -----------------------------------------------------------
 
-def truncate(s: str, n: int) -> str:
-    """Codepoint-aware truncation with an ellipsis."""
-    if len(s) <= n:
-        return s
-    # Trim trailing whitespace before adding the ellipsis so we don't
-    # produce odd "word …" gaps.
-    return s[: max(0, n - 1)].rstrip() + "…"
-
-
-def build_message(title: str, tldr: list[str], stories: list[dict], permalink: str) -> str:
+def render(title: str, tldr: list[str], stories: list[dict],
+           permalink: str, body_func) -> str:
+    """Render the full message. `body_func(i, story) -> str` decides
+    how much of each story body to include — full body, sentence-fitted,
+    or empty."""
     parts: list[str] = []
-
     parts.append(f"📰 {title}" if title else "📰 สรุปข่าว AI")
     parts.append("")
 
@@ -140,16 +188,66 @@ def build_message(title: str, tldr: list[str], stories: list[dict], permalink: s
     if stories:
         parts.append("━━━━━━━━━━")
         parts.append("")
-        for s in stories[:STORIES_MAX]:
+        for i, s in enumerate(stories):
             parts.append(f"🔸 {s['n']}. {s['title']}")
-            if s["body"]:
-                parts.append(f"   {truncate(s['body'], BODY_MAX_CHARS)}")
+            body = body_func(i, s)
+            if body:
+                parts.append(f"   {body}")
             if s.get("pub") and s.get("url"):
                 parts.append(f"   📎 {s['pub']}: {s['url']}")
             parts.append("")
 
     parts.append(f"อ่านฉบับเต็ม: {permalink}")
     return "\n".join(parts)
+
+
+def build_message(title: str, tldr: list[str], stories: list[dict],
+                  permalink: str, max_chars: int = LINE_TEXT_MAX) -> str:
+    """Render the message, sentence-fitting bodies if the full version
+    overflows the LINE 5000-char limit."""
+    stories = stories[:STORIES_MAX]
+
+    # Pass 1: full bodies. Common case — message is well under 5000.
+    msg = render(title, tldr, stories, permalink,
+                 body_func=lambda i, s: s.get("body", ""))
+    if len(msg) <= max_chars:
+        return msg
+
+    # Pass 2: per-story budget at sentence granularity.
+    sents_per_story = [split_sentences(s.get("body", "")) for s in stories]
+
+    def fit_to_budget(stories_in: list[dict],
+                      sents_in: list[list[str]]) -> str:
+        if not stories_in:
+            return render(title, tldr, [], permalink, body_func=lambda i, s: "")
+        skeleton = render(title, tldr, stories_in, permalink,
+                          body_func=lambda i, s: "")
+        # +4 per body line accounts for "   " indent and a newline.
+        body_overhead = 4 * len(stories_in)
+        available = max_chars - len(skeleton) - body_overhead
+        if available <= 0:
+            per = 0
+        else:
+            per = available // len(stories_in)
+        return render(title, tldr, stories_in, permalink,
+                      body_func=lambda i, s: fit_sentences(sents_in[i], per))
+
+    msg = fit_to_budget(stories, sents_per_story)
+    if len(msg) <= max_chars:
+        return msg
+
+    # Pass 3: drop stories from the end until it fits.
+    while len(stories) > 1:
+        stories = stories[:-1]
+        sents_per_story = sents_per_story[:-1]
+        msg = fit_to_budget(stories, sents_per_story)
+        if len(msg) <= max_chars:
+            return msg
+
+    # Last resort: return whatever pass 3 produced (may be slightly
+    # over budget if even one story's first sentence is huge — but at
+    # least it's a complete sentence, not a "...").
+    return msg
 
 
 # --- entrypoint -----------------------------------------------------------
