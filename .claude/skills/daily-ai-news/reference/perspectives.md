@@ -1,31 +1,31 @@
-# Perspectives — 2026-04-25
+# Perspectives — 2026-04-26
 
-## 1. DeepSeek-V4 (V4-Pro และ V4-Flash) เปิดตัว เทียบชั้นโมเดลแถวหน้า
+## 1. Anthropic test marketplace for agent-on-agent commerce
 
-**อาจารย์ (มหาวิทยาลัย):** การที่ DeepSeek ดัน context window ไปถึง 1M token เปลี่ยนวิธีตั้งโจทย์ในห้องเรียน — นักเรียนสามารถวางทั้ง codebase หรือเอกสารยาวเข้าโมเดลได้โดยไม่ต้อง chunk เอง สอน prompt engineering ต้องเริ่มถามเรื่อง “เลือกอะไรเข้า context” มากกว่าเรื่อง “ใส่ให้สั้น”
-**ผู้เชี่ยวชาญด้าน AI:** Hybrid Attention Architecture และโครงสร้าง MoE ขนาด 1.6T-A49B (active 49B) พร้อมความแม่นยำ FP4+FP8 เป็นสัญญาณว่า efficient inference ที่ราคาถูกลงกำลังกลายเป็นเส้นแบ่งการแข่งขันมากกว่าตัวเลข benchmark สิ่งที่ต้องตรวจสอบต่อคือคุณภาพงาน agentic ระยะยาว ไม่ใช่แค่ coding benchmark
-**โปรแกรมเมอร์มืออาชีพ:** ราคา V4-Flash ที่ $0.14/$0.28 ต่อ 1M token แทบเป็น order-of-magnitude ถูกกว่าตัวเลือก frontier ที่ใช้อยู่ น่าทดลองสลับงาน batch หรือ summarization ที่ไม่ critical มาใช้รุ่น Flash แต่ยังควรเก็บ Opus 4.7 ไว้ใน path ที่ต้องการ correctness สูง
+**อาจารย์ (มหาวิทยาลัย):** การทดลองนี้เป็นกรณีศึกษาคลาสสิกเรื่อง principal–agent — เมื่อ "ตัวแทน" เป็นโมเดล AI ความไม่สมมาตรของข้อมูลและความสามารถจะส่งผลต่อสวัสดิการของผู้ใช้โดยตรง นักศึกษา econ/CS ควรนำไปเชื่อมโยงทฤษฎีเศรษฐศาสตร์เข้ากับการออกแบบระบบจริง
+**ผู้เชี่ยวชาญด้าน AI:** ข้อสังเกตสำคัญคือ "model ที่แรงกว่า → ผลลัพธ์ดีกว่าอย่างชัดเจน" สะท้อนความเสี่ยงเชิงโครงสร้าง: ตลาด agent อาจกลายเป็นการแข่งขันเรื่องขนาดโมเดล มากกว่าการแข่งขันเรื่องสินค้า — ต้องเฝ้าระวัง collusion และ market manipulation ระหว่าง agent
+**โปรแกรมเมอร์มืออาชีพ:** ระยะนี้คือ research preview ไม่ใช่ API ระดับ production แต่ส่งสัญญาณชัดว่า protocol สำหรับ agent-to-agent payment / negotiation จะถูกผลักดันในปีนี้ ควรเริ่มออกแบบ schema และระบบ audit log สำหรับธุรกรรมที่ agent เป็นผู้สั่งการตั้งแต่ตอนนี้
 
-## 2. Google ทุ่มสูงสุด $40B ใน Anthropic ทั้งเงินสดและ compute
+## 2. Google to invest up to $40B in Anthropic
 
-**อาจารย์ (มหาวิทยาลัย):** ดีลขนาดนี้ทำให้นักเรียนเศรษฐศาสตร์/นโยบายต้องตั้งคำถามเรื่อง market concentration และ compute lock-in ว่าใครเข้าถึง TPU/GPU ระดับ frontier ได้บ้าง การเรียน AI ต้องสอนเรื่องห่วงโซ่อุปทานคู่กับ algorithm
-**ผู้เชี่ยวชาญด้าน AI:** การจ่ายเป็น “เงินสด + compute” ตอกย้ำว่า capacity คือทรัพย์สินที่จับต้องได้พอ ๆ กับเงินสำหรับบริษัท frontier model ส่วนผสมระหว่างผู้ลงทุนและซัพพลายเออร์ compute เดียวกันก็เพิ่มความเสี่ยง coupling ที่ regulator น่าจะจับตา
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีม dev สัญญาณที่ได้คือ Claude น่าจะอยู่กับเรานาน ความเสี่ยง “บริษัทล้ม → API หาย” ลดลง แต่เพดานราคาอาจไม่ลดเร็วเหมือนตลาด open-weight ฝั่งจีน ออกแบบ abstraction layer ระหว่างโค้ดกับ provider ไว้เผื่อสลับยังคุ้ม
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้สะท้อน vertical integration ของอุตสาหกรรม AI — cloud provider ลงทุนในผู้พัฒนาโมเดลเพื่อล็อก demand ของ compute ของตัวเอง เป็นกรณีศึกษาที่ดีของโครงสร้างตลาด oligopoly และความเสี่ยงเชิง regulatory
+**ผู้เชี่ยวชาญด้าน AI:** valuation $350B และ compute 5 GW เป็นตัวเลขที่กำหนดเพดานคาดหวังของวงการ ถ้า Anthropic ต้องไปถึง performance targets เพื่อปลดล็อก $30B ก้อนหลัง คาดว่าจะมีแรงกดดันให้ออกโมเดลใหญ่เร็วขึ้น — ต้องจับตา safety trade-offs
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่อิง Claude อยู่แล้วอุ่นใจได้เรื่อง compute capacity และ roadmap ระยะยาว แต่ต้องระวัง vendor lock-in — สถาปัตยกรรมควรแยก provider ออกจาก business logic ตั้งแต่ต้น
 
-## 3. OpenAI ปล่อย GPT-5.5 / GPT-5.5 Pro เน้น agentic และใช้ token น้อยลง
+## 3. OpenAI ออก GPT-5.5 / GPT-5.5 Pro
 
-**อาจารย์ (มหาวิทยาลัย):** ข้อความจาก OpenAI ที่ว่า “ทำงานหลายขั้นโดยไม่ต้องชี้ทุกขั้น” ต้องสอนคู่กับเรื่อง verification — นักเรียนควรเรียนวิธีตรวจผลของ agent มากกว่าวิธีสั่ง agent อย่างเดียว
-**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข 50–80% token saving บนงานเดียวกันที่ความเร็วเทียบเท่ารุ่นเดิมเป็นเรื่องของ distillation/serving มากกว่า capability บริสุทธิ์ ผลที่จับต้องได้คือต้นทุน agent loop ที่ยาว ๆ ลดลงอย่างมีนัยสำคัญ
-**โปรแกรมเมอร์มืออาชีพ:** ราคา API $5/$30 ต่อ 1M token ใกล้เคียงรุ่นเดิม แต่ถ้าจริงตามที่อ้างเรื่อง token efficiency ค่าใช้จ่ายต่อ task จะลดลงทันทีโดยไม่ต้องแก้โค้ด แค่สลับ model id ก็ได้ผล วาง A/B กับ workflow Codex ที่มีอยู่จะรู้เร็ว
+**อาจารย์ (มหาวิทยาลัย):** จุดเด่นของรุ่นนี้ไม่ใช่แค่ "ฉลาดขึ้น" แต่คือ token efficiency — เป็นโอกาสสอนนักศึกษาว่า cost-per-task สำคัญพอ ๆ กับ accuracy ในการเลือกโมเดลใช้งานจริง
+**ผู้เชี่ยวชาญด้าน AI:** การที่ token usage ใกล้เคียง GPT-5.4 ในงานทั่วไปแต่ "น้อยลง" สำหรับ Codex ชี้ว่ามีการ tune โมเดลให้รัดกุมเฉพาะงาน reasoning เชิงโค้ด — น่าเทียบ benchmark coding กับรุ่นก่อนเพื่อยืนยัน
+**โปรแกรมเมอร์มืออาชีพ:** ก่อน migrate production ควรเทียบ end-to-end cost บน workload จริง ราคา per-token สูงกว่า แต่ถ้าใช้โทเค็นน้อยลงตามคำโฆษณา cost ต่อ task อาจถูกลง ทดสอบบน eval set ของทีมก่อนตัดสินใจ
 
-## 4. Anthropic จับมือ NEC สร้างองค์กรวิศวกรรมแบบ AI-native ในญี่ปุ่น
+## 4. Anthropic + NEC build AI-native engineering org in Japan
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็นตัวอย่างชั้นเรียนของการ adoption ระดับองค์กรขนาดใหญ่ — ครอบคลุมพนักงานราว 30,000 คน เปิดโจทย์เรื่อง change management, การ reskill และ governance ที่นักเรียน MBA/วิศวฯ ควรศึกษา
-**ผู้เชี่ยวชาญด้าน AI:** NEC ในฐานะ “Japan-based global partner” รายแรกของ Anthropic เป็นสัญญาณว่า frontier lab ฝั่งสหรัฐฯ มอง APAC เป็นตลาดเรียลแอปที่ต้องมีพันธมิตร integration เฉพาะถิ่น ไม่ใช่แค่ขาย API
-**โปรแกรมเมอร์มืออาชีพ:** การ deploy ในองค์กรเดียวขนาด 30,000 คนหมายถึง pipeline สำหรับ secrets, logging, fine-tune/policy ที่ต้องสร้างจริง ดีลแบบนี้คือแหล่งบทเรียน reference architecture ที่ทีม enterprise ของไทยน่าตามอ่านเมื่อมีการเปิดเผยรายละเอียด
+**อาจารย์ (มหาวิทยาลัย):** น่าสนใจในมุมนโยบายอุตสาหกรรม — บริษัทใหญ่ของญี่ปุ่นเลือก Claude เป็นโครงสร้างพื้นฐาน หมายความว่า "อธิปไตยทางข้อมูล" ถูก reframe เป็น "อธิปไตยทางสัญญา" แทน เป็นหัวข้อ debate ที่ดีในชั้นเรียน digital policy
+**ผู้เชี่ยวชาญด้าน AI:** การให้พนักงาน 30,000 คนใช้ Claude ในระดับ enterprise พร้อม compliance สำหรับการเงิน manufacturing และภาครัฐ จะเป็น testbed ขนาดใหญ่เรื่อง guardrail ภาษาญี่ปุ่นและข้อมูลเฉพาะอุตสาหกรรม
+**โปรแกรมเมอร์มืออาชีพ:** ดีลแบบนี้มักนำไปสู่ private model variants และ regional residency — ถ้าทีมไทยทำงานข้ามประเทศกับลูกค้าญี่ปุ่นที่ใช้ NEC stack ต้องเตรียมเรื่อง region-pinned API และ data handling agreement ตั้งแต่เนิ่น ๆ
 
-## 5. NVIDIA โชว์ AI-driven manufacturing ที่ Hannover Messe 2026
+## 5. Meta signs deal for millions of Amazon AI CPUs
 
-**อาจารย์ (มหาวิทยาลัย):** การจับคู่ digital twin + software-defined robotics เป็นเนื้อหาที่ควรดึงเข้าวิชา industrial engineering / mechatronics — โจทย์ใหม่ของนักเรียนวิศวฯ ไม่ใช่แค่ออกแบบเครื่อง แต่ออกแบบโมเดลโลกของเครื่องด้วย
-**ผู้เชี่ยวชาญด้าน AI:** การที่ NVIDIA เน้น “sovereign AI platforms” ร่วมกับ Siemens, SAP, Agile Robots, PhysicsX, Wandelbots สะท้อนว่าตลาดอุตสาหกรรมต้องการ stack ที่ deploy on-prem/edge ได้ ไม่ใช่ API เดียวบนคลาวด์เดียว
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ทำ MES/SCADA เริ่มมี API surface ของ Omniverse/Isaac ที่จับต้องได้จริง แต่การ integrate ต้องระวังเส้นแบ่งระหว่าง simulation fidelity กับ control loop ของจริง — ผิดพลาดที่ digital twin ไม่ใช่แค่บั๊กในกราฟ
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้ตอกย้ำว่า "AI compute" ไม่ใช่แค่ GPU อีกต่อไป — Graviton เป็น CPU ARM ของ AWS ใช้งาน inference และ orchestration ได้ เป็นโอกาสสอน supply chain economics ของฮาร์ดแวร์ AI
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Meta หันไปใช้ AWS CPU ระดับหลายล้านตัวสะท้อนว่า inference workload ที่ไม่ต้อง GPU มีปริมาณมหาศาล และเป็นแรงกดดันต่อ NVIDIA ในตลาด inference ที่เคยเป็น default
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำ serving layer ควรเริ่มประเมิน mixed-architecture deployment (GPU สำหรับโมเดลใหญ่ + ARM CPU สำหรับ retrieval, embedding, routing) เพื่อกดต้นทุนต่อ request ให้ต่ำลง
