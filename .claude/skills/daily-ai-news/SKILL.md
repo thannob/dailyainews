@@ -1,6 +1,6 @@
 ---
 name: daily-ai-news
-description: Generate a daily Thai-language AI news brief covering ONLY stories published today in Asia/Bangkok timezone (no rolling 24h window, no yesterday's news), enrich it with three expert perspectives (professor / AI specialist / professional programmer), commit it to this repository via the GitHub connector, and push a TL;DR to LINE. Use this when the user asks for a "daily AI news brief", a "สรุปข่าว AI วันนี้", triggers this skill by name, or when it runs on schedule via Claude Web Routine.
+description: Generate a daily Thai-language AI news brief covering up to 5 stories from the last 24 hours (rolling window, Asia/Bangkok), with URLs deduplicated against yesterday's brief so the same story is never covered twice in a row, enrich it with three expert perspectives (professor / AI specialist / professional programmer), commit it to this repository via the GitHub connector, and push a TL;DR to LINE. Use this when the user asks for a "daily AI news brief", a "สรุปข่าว AI วันนี้", triggers this skill by name, or when it runs on schedule via Claude Web Routine.
 ---
 
 # Daily AI News Brief
@@ -56,15 +56,27 @@ Do **not** invent values. Do **not** treat literal placeholder strings like `{{G
 
 ---
 
-## Step 1 — Research (today only, up to 5 stories)
+## Step 1 — Research (last 24h, deduplicated against yesterday)
 
 Open `reference/trusted-sources.md` and treat it as the allow-list. Prefer sources from that list; do **not** invent outlets.
 
-### 1a. Gather candidates with `WebSearch`
+### 1a. Load yesterday's URLs (so we don't repeat ourselves)
 
-Use `WebSearch` with **today-only** queries:
-- `AI news today` (and Thai: `ข่าว AI วันนี้`, `ปัญญาประดิษฐ์ วันนี้`).
-- Targeted per trusted source: `site:techcrunch.com AI {YYYY-MM-DD}`, `site:blognone.com AI วันนี้`, etc.
+Compute `YESTERDAY = TODAY − 1 day` in Asia/Bangkok.
+
+Use the GitHub connector's `get_file_contents` to read `articles/{YESTERDAY}-brief.md` on `GITHUB_BRANCH`. Three outcomes:
+
+- **File found.** Extract every URL from the body using a regex over inline-link syntax, i.e. all matches of `\[[^\]]+\]\((https?://[^)]+)\)` plus any plain URLs. Build a set `YESTERDAYS_URLS`. Lowercase host for the comparison; preserve the full URL otherwise (don't strip query strings or fragments — different paths are genuinely different stories).
+- **File not found** (first-ever run, or yesterday's run was skipped). Set `YESTERDAYS_URLS = {}` (empty).
+- **Connector error other than 404.** Surface the error and continue with `YESTERDAYS_URLS = {}`. Don't block the run on a stale-dedup-set worry.
+
+Print the size: `Yesterday's URL count: N`.
+
+### 1b. Gather candidates with `WebSearch`
+
+Use `WebSearch` with rolling-24h queries:
+- `AI news` (and Thai: `ข่าว AI`, `ปัญญาประดิษฐ์`). Add a date hint when supported (e.g. `qdr:d` on Google).
+- Targeted per trusted source: `site:techcrunch.com AI`, `site:blognone.com AI`, etc.
 
 Capture for each candidate: URL, title, publisher (inferred from domain vs trusted-sources list), and the **search-result snippet** verbatim — including any timestamp string the search engine surfaces (e.g. "2 hours ago", "April 27, 2026", "วันนี้").
 
@@ -85,69 +97,72 @@ Then for each candidate:
 
 **Never** cite a URL that you could not at least see in a `WebSearch` result for a trusted-source domain. Search engines don't invent URLs, so a URL present in search results is real. The risk is **staleness of the snippet**, not fabrication — mitigate by never asserting more than the snippet says.
 
-### 1b-bis. Today-only freshness check (HARD GATE)
+### 1b-bis. Two filters — last 24h AND not in yesterday's brief
 
-Apply this filter **before** moving to selection. A candidate passes only if its publish timestamp resolves to the same calendar date as `TODAY` in Asia/Bangkok. **Yesterday is not "today" — drop it.** No rolling 24h window, no "close enough", no padding.
+Apply both filters **before** selection. Drop on either failure.
 
-Resolving snippet timestamps:
+**Filter A — Rolling 24h freshness.** A candidate passes only if its publish timestamp falls within `[now − 24h, now]` in Asia/Bangkok.
 
 | What the snippet shows | Pass? |
 |---|---|
-| `วันนี้`, `Today`, `HH:MM today` | ✅ pass |
-| Explicit date `YYYY-MM-DD` or `เม.ย. DD, 2026` matching `TODAY` | ✅ pass |
-| `N hours ago` where `now − N hours ≥ TODAY 00:00 Asia/Bangkok` | ✅ pass |
-| `N hours ago` where the computed time is before `TODAY 00:00 Bangkok` | ❌ drop (it's yesterday-Bangkok even if same UTC date) |
-| `เมื่อวาน`, `Yesterday`, `1 day ago` | ❌ drop |
-| Any explicit date < `TODAY` | ❌ drop |
-| URL slug embeds a date < `TODAY` (e.g. `/2026/04/24/...` when TODAY=`2026-04-25`) | ❌ drop, even if the snippet says otherwise — the slug is a strong signal |
+| `วันนี้`, `Today`, `N hours ago` (any N ≤ 24) | ✅ pass |
+| `เมื่อวาน` / `Yesterday` / `1 day ago` | ✅ pass (still inside the rolling 24h window — Filter B catches the dedup case below) |
+| Explicit date within last 24h | ✅ pass |
+| Anything older than 24h (`2 days ago`, `last week`, explicit older date) | ❌ drop |
+| URL slug embeds a date older than 24h | ❌ drop, even if the snippet looks recent — slugs lie less than snippets |
 | Date ambiguous / not surfaced | ❌ drop (do not guess) |
 
-When in doubt, **drop**. A short brief that's actually about today beats a five-story brief padded with yesterday's news.
+**Filter B — Not in yesterday's brief.** If the candidate's URL is in `YESTERDAYS_URLS` (loaded in Step 1a), drop it — even if it's still trending. We're publishing today's reporting, not re-running yesterday's coverage.
 
-If a story's body in the snippet references a launch/event from a previous day (e.g. "GPT-5.5 launched on April 23" while TODAY is `2026-04-25`), that's a **follow-up commentary** — drop it. We want the day's primary announcements, not retrospectives.
+This is **URL-level dedup**, not topic-level. Different reporting on the same evolving story (e.g. a follow-up on the Google–Anthropic deal at a different URL) is fair game — that's genuinely new content. Same URL = same article = drop.
+
+Edge case: if a story's snippet body references an event from yesterday but the URL itself is fresh-today reporting on it, the URL passes Filter B (URL not in yesterday's set) and Filter A (24h timestamp). Include it. The dedup is precise: the **specific article** wasn't in yesterday's brief, even if the topic was.
 
 ### 1c. Select up to 5
 
-Select **up to 5** stories that passed the today-only gate. Mix: aim for ≥1 Thai-language source and ≥3 international sources when supply allows. Prefer Tier 1 over Tier 2 when both are available for the same candidate. Prefer primary announcements over commentary.
+Select **up to 5** stories that passed both filters (24h fresh AND not in `YESTERDAYS_URLS`). Mix: aim for ≥1 Thai-language source and ≥3 international sources when supply allows. Prefer Tier 1 over Tier 2 when both are available for the same candidate. Prefer primary announcements over commentary.
 
-If fewer than 5 candidates pass the gate, ship what you have — even 1, even 0. Do **not** reach back to yesterday or earlier to fill the count. The brief is "today's news"; on slow days it's short.
+If fewer than 5 candidates pass, ship what you have — even 1, even 0. Do **not** loosen either filter to fill the count.
 
-If **0 stories** pass the gate → write a one-line stub article (per Step 5a NO-OP rules) explaining "no qualifying stories on TODAY" and commit. The empty-day signal is itself information.
+If **0 stories** pass → write a one-line stub article (per Step 5a NO-OP rules) explaining whether the shortfall came from (a) the 24h freshness filter, (b) the dedup filter, or (c) both, and commit. The empty-day signal is itself information.
 
 ### 1d. Write `reference/sources.md`
 
-Overwrite the file with this template — the `Verification` and `TodayCheck` lines are required:
+Overwrite the file with this template — `Verification`, `FreshnessCheck`, and `DedupCheck` lines are all required:
 
 ```markdown
 # Sources — {TODAY}
 
 Generated: {TODAY} (Asia/Bangkok)
 Runtime: {WEBFETCH_OK | WEBFETCH_BLOCKED}
-Freshness gate: today-only (Asia/Bangkok)
+Freshness window: rolling 24h (Asia/Bangkok)
+Dedup against: articles/{YESTERDAY}-brief.md ({N} URLs loaded)
 
 1. **{Headline}**
    - Publisher: {Publisher}
    - URL: {final URL}
    - Published: {explicit timestamp or relative phrase as it appeared}
-   - TodayCheck: ✅ resolves to {TODAY} via {evidence — e.g. "URL slug 2026-04-27", "snippet says 'today'", "'2 hours ago' at 09:00 Bangkok = same calendar day"}
+   - FreshnessCheck: ✅ within last 24h via {evidence — e.g. "snippet '3 hours ago'", "URL slug 2026-04-27", "publishedTime 2026-04-27T08:14"}
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS ({reason — e.g. "domain matches yesterday but path differs", "host not in yesterday at all")
    - Verification: {Tier 1 — WebFetch | Tier 2 — WebSearch snippet}
    - Summary: {1–2 sentences, strictly from fetched body or snippet}
 
 2. ...
 ```
 
-If you saw promising candidates but they failed the today-only gate, list them in a separate block at the bottom for traceability:
+If you saw promising candidates but they failed either filter, list them in a "Dropped" block for traceability:
 ```
-## Dropped (not today)
-- {URL} — {why} — e.g. "URL slug /2026/04/26/... yesterday-Bangkok"
+## Dropped
+- {URL} — Filter A (>24h): "URL slug /2026/04/24/... is 3 days old"
+- {URL} — Filter B (dedup): "appeared in articles/{YESTERDAY}-brief.md"
 ```
 
 If you found <5 items, end with:
 ```
-> Note: only N items passed the today-only gate ({WEBFETCH_OK|WEBFETCH_BLOCKED}).
+> Note: {N} items passed both filters this run. Of {M} candidates, {X} failed Filter A, {Y} failed Filter B.
 ```
 
-If **0 stories** passed the today-only gate → skip Step 2–4, write a minimal article (Step 5 still commits) explaining "no qualifying stories on TODAY". This is intentional: an empty day is itself a signal — not a reason to relax the gate.
+If **0 stories** passed both filters → skip Step 2–4, write a minimal article (Step 5 still commits) explaining whether the shortfall came from (a) Filter A (no fresh news), (b) Filter B (everything available was already covered yesterday), or (c) both. The empty-day signal is itself information.
 
 ---
 
@@ -311,10 +326,12 @@ LINE: not re-notified (no new commit → workflow does not fire)
 |---|---|
 | GitHub connector missing | Abort before any work. Log clearly. |
 | `WEBFETCH_BLOCKED` (whole runtime) | Switch to Tier 2 (WebSearch snippet) for every story; commit with `[verify=search]`. |
-| Story published before TODAY in Asia/Bangkok | DROP — no rolling 24h window, no padding. List in "Dropped (not today)" of sources.md for traceability. |
-| Story timestamp ambiguous / unparseable | DROP — never guess that yesterday's news is today's. |
-| <5 stories pass the today-only gate | Ship fewer (1–4 is fine). Note the shortfall in sources.md. |
-| 0 stories pass the today-only gate | Skip Step 2–4. Write a one-line stub article. Commit. The empty-day signal is intentional. |
+| Story published > 24h ago | DROP (Filter A). List in "Dropped" of sources.md. |
+| Story URL is in YESTERDAYS_URLS | DROP (Filter B) — already covered yesterday. |
+| Story timestamp ambiguous / unparseable | DROP — never guess. |
+| Yesterday's brief file unreadable (404 or other) | Continue with empty dedup set. Log the reason. |
+| <5 stories pass both filters | Ship fewer (1–4 is fine). Note the breakdown (A vs B). |
+| 0 stories pass both filters | Skip Step 2–4. Write a one-line stub explaining whether A, B, or both blocked everything. |
 | URL unreachable / paywalled (single story, `WEBFETCH_OK` runtime) | Drop that item; try Tier 2 for it; if both fail, skip it. |
 | GitHub commit fails | Surface the error. Stop. |
 | Today's article already committed, content identical | NO-OP. LINE workflow does not fire (intentional). |
