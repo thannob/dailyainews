@@ -1,31 +1,19 @@
 # Perspectives — 2026-04-27
 
-## 1. OpenAI ships GPT-5.5 and pitches an AI "super app"
+## 1. Why DeepSeek V4 Impresses Despite Lack of 'Wow' Factor
 
-**อาจารย์ (มหาวิทยาลัย):** การเปลี่ยนวาทกรรมจาก "โมเดลใหม่" มาเป็น "super app" สะท้อนว่า OpenAI อยากให้ผู้ใช้เลิกคิดถึง LLM เดี่ยว และคิดถึงระบบที่รวมเครื่องมือ-หน่วยความจำ-agent loop เข้าด้วยกัน นักศึกษาควรหัดแยกระหว่างความสามารถของ "โมเดลพื้นฐาน" กับความสามารถที่มาจาก "ระบบรอบโมเดล"
-**ผู้เชี่ยวชาญด้าน AI:** จุดน่าจับตาไม่ใช่คะแนน benchmark ที่สูงกว่ารุ่นก่อน แต่คือคำว่า agentic coding และ knowledge work — บอกใบ้ว่า OpenAI ออกแบบให้รันงานหลายขั้นได้นานขึ้นโดยไม่หลุด context ซึ่งเป็นโจทย์ที่ทุกค่ายยังแก้ไม่จบ
-**โปรแกรมเมอร์มืออาชีพ:** ต้องประเมินใหม่ว่า prompt และ tool definitions ที่เคย tune กับ 5.x จะยัง deterministic เท่าเดิมหรือไม่ คาดว่า rate limit ในช่วง launch จะตึง ควรกัน fallback ไปที่รุ่นก่อนหน้าและทำ regression test ก่อน promote เป็น default
+**อาจารย์ (มหาวิทยาลัย):** กรณี DeepSeek V4 เป็นบทเรียนชั้นเรียนเรื่อง "การเลื่อน frontier ลงมาแทน" — เมื่อโมเดลโอเพนซอร์สไล่ทันเชิง benchmark ขณะมีต้นทุนเพียง 1/6 จะเปลี่ยนภูมิทัศน์การสอน ML ในไทย จากที่นักศึกษาเข้าถึงโมเดลระดับ frontier ได้จำกัดเพราะ paywall มาเป็นจัด lab/ทดลองได้จริงในงบมหาวิทยาลัย
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่าจับตามากกว่าตัวเลข benchmark คือสถาปัตยกรรม — DeepSeek V4 Pro 1.6T-A49B แบบ MoE ที่รัน FP4+FP8 และรองรับ context 1M ชี้ว่า efficiency gain ไม่ได้มาจากการลด parameter อย่างเดียว แต่มาจากการ co-design ระหว่าง precision, sparsity และ memory management; ค่าเฉลี่ยที่ "ใกล้แต่ไม่เท่า" Opus 4.7 ก็ยังพอสำหรับ enterprise workload จำนวนมาก
+**โปรแกรมเมอร์มืออาชีพ:** ราคา $1.74 / $3.48 ต่อ M token ของ V4 Pro และ $0.14 / $0.28 ของ V4 Flash หมายความว่า cost-per-task ของระบบที่ทำ retrieval, summarization, agent loop ตัวเล็กจะถูกบีบลงทันทีเมื่อ provider เปิด API; ทีมที่อิง closed model อยู่ควรเขียน eval set กับ V4 ขนานไป เพราะภายในไตรมาสนี้น่าจะเห็นทางเลือกบน Bedrock / Together / Fireworks ที่ลดต้นทุนได้จริงในงาน high-volume
 
-## 2. DeepSeek previews V4 Flash / V4 Pro with 1M-token context
+## 2. Anthropic ทดลองให้ AI Agents เจรจาแลกเปลี่ยนสินค้ากันเอง — Project Deal
 
-**อาจารย์ (มหาวิทยาลัย):** DeepSeek เป็นกรณีศึกษาว่าโมเดลฝั่ง open-source สามารถ "ปิดช่องว่าง" กับ frontier ได้เร็วแค่ไหนหลังจากที่เคยสร้างความฮือฮาเมื่อต้นปี 2025 หัวข้อนี้เหมาะสำหรับวิชา NLP หรือสัมมนาเรื่องภูมิรัฐศาสตร์ AI
-**ผู้เชี่ยวชาญด้าน AI:** "Hybrid Attention Architecture" และ context window 1 ล้าน token เป็นการเดิมพันสองอย่างพร้อมกัน — ลดต้นทุน attention และ unlock use case ที่ป้อน codebase ทั้งโปรเจกต์ได้ในครั้งเดียว ต้องดู eval จริงว่าคุณภาพคงเดิมที่ปลายหน้าต่างหรือไม่
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับงาน RAG ที่ต้องโยน source หลายไฟล์ การมี 1M context อาจคุ้มกว่าการสร้าง pipeline embedding ที่ซับซ้อน — แต่อย่าเพิ่งทิ้ง vector store เพราะ latency และต้นทุนต่อ call ของ context ยาวยังสูง
+**อาจารย์ (มหาวิทยาลัย):** ผลที่ "ผู้ใช้ไม่รู้สึกว่าผลลัพธ์ต่างกัน" ทั้งที่ Opus ทำเงินได้มากกว่า Haiku อย่างมีนัยสำคัญ คือเคสตำราเรียนเรื่อง "asymmetric agent quality" — เป็นโจทย์ตรง ๆ สำหรับวิชาเศรษฐศาสตร์พฤติกรรม / กฎหมายผู้บริโภค ว่าถ้าตลาดอนาคตมี AI agent เป็น default representative การเปิดเผยขีดความสามารถของ agent ตัวเองควรกลายเป็น disclosure requirement หรือไม่
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข 186 ดีล / >$4,000 บนตัวอย่าง 69 คนเล็กเกินจะ generalize แต่สิ่งที่ใช้ได้คือสมมติฐานสำหรับ research design ครั้งต่อไป — ระบบ agent-to-agent เปิดทาง failure mode ใหม่ ทั้ง collusion เชิงราคา, prompt-injection ข้าม agent และข้อมูลรั่วผ่าน negotiation log; การไม่มี protocol มาตรฐานยังเป็นช่องว่างที่ Anthropic เองยอมรับ
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมสาย commerce/SaaS ของไทยเล็งทำ agent-driven procurement/sales หรือ B2B negotiation อย่ารอ protocol สำเร็จรูป — ออกแบบ schema "ความสามารถของ agent" (รุ่นโมเดล, prompt baseline, ข้อจำกัดเรื่องราคา) ให้แสดงและบันทึกไว้ใน audit log ตั้งแต่วันแรก เพื่อให้ตอนเกิด dispute สามารถตอบได้ว่าใครส่ง agent อะไรเข้าตลาด
 
-## 3. Google plans up to $40B investment in Anthropic
+## 3. Auto China 2026 — แบรนด์ EV จีนงัด AI ใต้ธีม "Future of Intelligence"
 
-**อาจารย์ (มหาวิทยาลัย):** ดีลนี้ทำให้นิยาม "คู่แข่ง" และ "พันธมิตร" ในอุตสาหกรรม AI ชัดเจนขึ้นว่าแยกกันไม่ออก เป็นวัตถุดิบดีสำหรับวิชาเศรษฐศาสตร์อุตสาหกรรมหรือ business strategy
-**ผู้เชี่ยวชาญด้าน AI:** $10B ขั้นต้น + อีก $30B เป็นการเข้ามาของทุนระดับ "ซื้อกำลังการผลิต compute" ไม่ใช่แค่การถือหุ้น ผู้ที่ต้องจับตาคือคู่แข่ง (Microsoft/OpenAI, AWS/Anthropic อีกฝั่ง) ว่าจะตอบสนองด้วยการลงทุน compute เพิ่มอีกเท่าไร
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Claude บน Vertex AI หรือ AWS Bedrock ระยะสั้นยังไม่กระทบ แต่ระยะยาวคาดว่า Anthropic จะ optimize โมเดลให้กับ TPU ของ Google มากขึ้น ส่งผลต่อ latency และราคาบนแต่ละ cloud — เผื่อ abstraction layer ระหว่างโค้ดกับ provider ไว้
-
-## 4. Google × Thinking Machines Lab — multibillion-dollar deal
-
-**อาจารย์ (มหาวิทยาลัย):** น่าสนใจที่ Mira Murati อดีต CTO ของ OpenAI กลับมาเป็นลูกค้ารายใหญ่ของ Google Cloud — สะท้อนว่า AI lab เกิดใหม่กำลังเลือก infrastructure ก่อนเลือกฝ่าย
-**ผู้เชี่ยวชาญด้าน AI:** ดีลนี้เด่นเพราะใช้ NVIDIA GB300 บน Google Cloud — ฝั่ง lab ยังต้องการ GPU ของ NVIDIA แม้ Google จะมี TPU ของตัวเอง คำถามคือ Thinking Machines จะ port ไป TPU ภายหลังหรือไม่
-**โปรแกรมเมอร์มืออาชีพ:** การเลือก cloud + accelerator stack กำลังกลายเป็นการตัดสินใจเชิงยุทธศาสตร์ของ AI startups ทีมเล็กที่อยากทำ frontier model ต้องดีลกับทั้ง cloud provider และ chip vendor พร้อมกัน — โครงสร้าง procurement ที่ flexible สำคัญพอ ๆ กับโค้ด
-
-## 5. ส่วนแบ่ง AI องค์กร — Anthropic ทิ้งขาดในกลุ่มลูกค้าใหม่ปี 2026
-
-**อาจารย์ (มหาวิทยาลัย):** ข้อมูลจาก Ramp เป็น proxy ที่น่าสนใจสำหรับงานวิจัยพฤติกรรมการ adopt AI ของบริษัทอเมริกัน เพราะวัดจากใบเสร็จจริงไม่ใช่แบบสำรวจ จุดสอนคือ "ส่วนแบ่งใหม่" กับ "ส่วนแบ่งสะสม" ต่างกันอย่างไรและบอกอะไรเกี่ยวกับโมเมนตัมตลาด
-**ผู้เชี่ยวชาญด้าน AI:** การที่ OpenAI เริ่มเสียส่วนแบ่งกลุ่มลูกค้าใหม่แม้ยอดสะสมยังนำที่ 34.4% สะท้อนว่า lock-in ของ ecosystem ยังแข็งกับลูกค้าเก่า แต่ลูกค้าใหม่กำลังมองหาทางเลือกที่ "ปลอดภัย/ควบคุมได้" มากกว่า ซึ่งเป็นจุดขายของ Anthropic
-**โปรแกรมเมอร์มืออาชีพ:** ทีม engineering ที่เริ่ม project ใหม่ในปี 2026 ควรประเมิน Claude คู่กับ GPT แบบจริงจัง ไม่ใช่ default ไปที่ OpenAI โดยอัตโนมัติเหมือนเมื่อก่อน — โดยเฉพาะงาน tool-use, code review หรือ long-context reasoning ที่ Claude มักได้คะแนนความเสถียรดี
+**อาจารย์ (มหาวิทยาลัย):** การที่ระบบ AI ฝังในรถยนต์ผ่านการสั่งงานแบบ goal-level ("ไปจอดใกล้ทางเข้าศูนย์การค้า") เป็นตัวอย่างชั้นเรียนของ embodied AI / situated reasoning — เหมาะตั้งโจทย์ในชั้นเรียน HCI และ control systems เพื่อให้นักศึกษาเปรียบเทียบ stack ของ XPeng / Xiaomi กับงานวิจัย academic เรื่อง vision-language-action models
+**ผู้เชี่ยวชาญด้าน AI:** ที่ Auto China 2026 ไฮไลต์คือการรวม centralized compute architecture กับ AI-native software stack — ไม่ใช่แค่เอา LLM ใส่ infotainment แต่เปลี่ยนวิธี orchestrate sensor + planning + control บนชิปจีน; แม้ Xpeng/Xiaomi จะนำเสนอจุดเด่นทาง UX แต่คำถามที่ต้องจับตาคือ safety validation pipeline และ data governance สำหรับโมเดลที่ trained บนข้อมูลถนนจีน
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับนักพัฒนาฝั่งไทย โอกาสไม่ได้อยู่ที่การแข่งทำโมเดลขับเคลื่อน แต่อยู่ที่ "edge layer" — แอปและบริการที่เชื่อมรถ AI-native จีนกับ ecosystem ไทย (payment, ที่จอดรถ, ร้านค้า, charging network); ควรเริ่มศึกษา API/SDK ของแบรนด์ที่ประกาศจะเข้าตลาดไทย เพื่อให้มี integration พร้อมตอนรถถึงโชว์รูม
