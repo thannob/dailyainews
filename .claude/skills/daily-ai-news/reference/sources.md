@@ -2,40 +2,32 @@
 
 Generated: 2026-04-27 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
+Freshness gate: today-only (Asia/Bangkok)
 
-1. **OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/
-   - Published: 2026-04-23 (per URL slug + search snippet)
+1. **Announcing our partnership with the Republic of Korea**
+   - Publisher: Google DeepMind
+   - URL: https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/
+   - Published: April 27, 2026
+   - TodayCheck: ✅ resolves to 2026-04-27 — multiple search snippets state "On April 27, 2026, Google DeepMind announced a new partnership with the Republic of Korea's Ministry of Science and ICT (MSIT)"; Reuters wire syndication (933thedrive.com/2026/04/27/...) confirms the same-day Seoul meeting between President Lee Jae Myung and Demis Hassabis.
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI released GPT-5.5, which the company calls its "smartest and most intuitive to use model" yet, positioned for agentic coding, knowledge work, mathematics and scientific research. The article reports that GPT-5.5 consistently scores higher than OpenAI's earlier models and current offerings from Google and Anthropic.
+   - Summary: Google DeepMind signed an MOU with Korea's MSIT to build the company's first-ever "AI Campus" in Seoul, giving SNU, KAIST and the Ministry's three AI Bio Innovation Hubs access to AlphaEvolve, AlphaGenome, AlphaFold, AI co-scientist and WeatherNext, plus internships for Korean talent. The announcement was timed to the 10-year anniversary of the AlphaGo–Lee Sedol match.
 
-2. **DeepSeek previews new AI model that 'closes the gap' with frontier models**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/
-   - Published: 2026-04-24 (per URL slug + search snippet)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: DeepSeek rolled out preview versions of its V4 Flash and V4 Pro flagship models, claiming top-tier coding-benchmark performance and major advances in reasoning and agentic tasks. The piece highlights a new "Hybrid Attention Architecture" technique and a 1-million-token context window enabling whole-codebase prompts.
-
-3. **Google Plans to Invest Up to $40 Billion in Anthropic**
+2. **AI Boom Drives North Asia Stocks Higher as South, Southeast Asia Lag**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
-   - Published: 2026-04-24 (per URL slug + search snippet)
+   - URL: https://www.bloomberg.com/news/articles/2026-04-27/ai-boom-drowns-out-war-fears-to-fuel-asia-s-great-market-divide
+   - Published: April 27, 2026 (URL slug `2026-04-27`)
+   - TodayCheck: ✅ resolves to 2026-04-27 via the URL slug `/news/articles/2026-04-27/...` — Bloomberg slugs are dated to publish date and the snippet describes the divergence as current ("driving equity benchmarks ... to repeated record highs").
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google will invest $10 billion in Anthropic PBC, with another $30 billion potentially to follow, deepening the relationship between two firms that are simultaneously partners and rivals in the race to build advanced AI.
+   - Summary: Enthusiasm for chipmakers and AI companies is driving Korean and Taiwanese benchmarks to repeated record highs even amid Middle East war fears, while higher oil prices send equities in India, Indonesia and the Philippines lower — sharpening a North-vs-South Asia divide built on the AI cycle.
 
-4. **Exclusive: Google deepens Thinking Machines Lab ties with new multibillion-dollar deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/
-   - Published: 2026-04-22 (per URL slug + search snippet)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Mira Murati's Thinking Machines Lab has signed a multibillion-dollar deal with Google Cloud for AI infrastructure powered by NVIDIA's latest GB300 chips, a notable cross-vendor pairing that combines a Google Cloud commitment with NVIDIA silicon.
+> Note: only 2 items passed the today-only gate (WEBFETCH_BLOCKED).
 
-5. **ส่วนแบ่งตลาด AI องค์กร: OpenAI ยังเป็นแชมป์ แต่ Anthropic ทิ้งขาดในกลุ่มลูกค้าใหม่ปี 2026**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150072
-   - Published: per search snippet (อ้างอิงข้อมูล Ramp ประจำเดือนกุมภาพันธ์ 2026)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: รายงานของ Ramp ที่ Blognone หยิบมาเล่าระบุว่า อัตราการใช้ AI ในกลุ่มองค์กรเพิ่มเป็น 47.6% โดย OpenAI ยังเป็นแชมป์ที่ส่วนแบ่งสะสม 34.4% ทว่ากำลังลดลง ขณะที่ Anthropic ไล่ตามมาที่ 24.4% และทิ้งขาดในกลุ่มลูกค้าใหม่ของปี 2026
+## Dropped (not today)
 
-> Note: Tier 2 (WebSearch snippet) was used for every story because the runtime probe to https://example.com returned 403 (WEBFETCH_BLOCKED). Stories were chosen from the freshest items currently indexed on trusted-sources.md domains; the strict 24-hour window could not be guaranteed via search snippets alone, so items from the past several days were included.
+- https://techcrunch.com/2026/04/24/cohere-acquires-merges-with-german-based-startup-to-create-a-transatlantic-ai-powerhouse/ — Cohere/Aleph Alpha merger published 2026-04-24, before TODAY
+- https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough — DeepSeek V4 launch 2026-04-24, before TODAY
+- https://www.bloomberg.com/news/videos/2026-04-27/why-deepseek-v4-impresses-despite-lack-of-wow-factor-video — Same-day Bloomberg video, but it's follow-up commentary on the 2026-04-24 DeepSeek V4 launch (drop per skill rule on retrospectives)
+- https://techcrunch.com/2026/04/25/why-tokyo-is-the-most-important-tech-destination-of-2026/ — TechCrunch slug 2026-04-25, before TODAY
+- OpenAI ChatGPT Business Japan data-residency expansion — search snippets confirm a 2026-04-27 timestamp, but the only URLs surfaced are an OpenAI Help Center release-notes page (not the trusted `openai.com/blog` allow-listed URL) and a third-party (releasebot.io). Drop for trusted-source policy.
+- Microsoft AI capex / 7% workforce buyout — real 2026-04-27 development, but only fxleaders.com surfaced; no Microsoft Research / Microsoft news / Reuters / Bloomberg URL in search results. Drop.
+- https://www.bangkokbiznews.com/tech/ai/1231356 — Thai-language piece dated 27 เมษายน 2569 (=2026-04-27), but bangkokbiznews.com is not on `reference/trusted-sources.md`. Drop.
