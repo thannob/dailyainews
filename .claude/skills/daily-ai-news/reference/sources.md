@@ -1,41 +1,54 @@
-# Sources — 2026-04-27
+# Sources — 2026-04-28
 
-Generated: 2026-04-27 (Asia/Bangkok)
+Generated: 2026-04-28 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
+Freshness window: rolling 24h (Asia/Bangkok)
+Dedup against: articles/2026-04-27-brief.md (3 URLs loaded)
 
-1. **OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/
-   - Published: 2026-04-23 (per URL slug + search snippet)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI released GPT-5.5, which the company calls its "smartest and most intuitive to use model" yet, positioned for agentic coding, knowledge work, mathematics and scientific research. The article reports that GPT-5.5 consistently scores higher than OpenAI's earlier models and current offerings from Google and Anthropic.
-
-2. **DeepSeek previews new AI model that 'closes the gap' with frontier models**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/
-   - Published: 2026-04-24 (per URL slug + search snippet)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: DeepSeek rolled out preview versions of its V4 Flash and V4 Pro flagship models, claiming top-tier coding-benchmark performance and major advances in reasoning and agentic tasks. The piece highlights a new "Hybrid Attention Architecture" technique and a 1-million-token context window enabling whole-codebase prompts.
-
-3. **Google Plans to Invest Up to $40 Billion in Anthropic**
+1. **DeepSeek Slashes Fees for New AI Model in Chinese Price War**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic
-   - Published: 2026-04-24 (per URL slug + search snippet)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google will invest $10 billion in Anthropic PBC, with another $30 billion potentially to follow, deepening the relationship between two firms that are simultaneously partners and rivals in the race to build advanced AI.
+   - URL: https://www.bloomberg.com/news/articles/2026-04-27/deepseek-slashes-fees-for-new-ai-model-in-chinese-price-war
+   - Published: 2026-04-27 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026-04-27` and search snippet describing "75% discount to developers using DeepSeek-V4-Pro" as a fresh action
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday cited `/news/videos/2026-04-27/why-deepseek-v4-impresses-...`; this is `/news/articles/2026-04-27/deepseek-slashes-fees-...` (different path; new pricing news)
+   - Verification: Tier 2 — WebSearch snippet (runtime is WEBFETCH_BLOCKED)
+   - Summary: DeepSeek announced a 75% discount on DeepSeek-V4-Pro for developers and cut fees for input cache hits to one-tenth of original pricing, intensifying the Chinese AI price war.
 
-4. **Exclusive: Google deepens Thinking Machines Lab ties with new multibillion-dollar deal**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/
-   - Published: 2026-04-22 (per URL slug + search snippet)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Mira Murati's Thinking Machines Lab has signed a multibillion-dollar deal with Google Cloud for AI infrastructure powered by NVIDIA's latest GB300 chips, a notable cross-vendor pairing that combines a Google Cloud commitment with NVIDIA silicon.
-
-5. **ส่วนแบ่งตลาด AI องค์กร: OpenAI ยังเป็นแชมป์ แต่ Anthropic ทิ้งขาดในกลุ่มลูกค้าใหม่ปี 2026**
+2. **OpenAI และ Microsoft ลดความผูกพัน เปิดทางให้บริการ GPT บนคลาวด์อื่น**
    - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150072
-   - Published: per search snippet (อ้างอิงข้อมูล Ramp ประจำเดือนกุมภาพันธ์ 2026)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: รายงานของ Ramp ที่ Blognone หยิบมาเล่าระบุว่า อัตราการใช้ AI ในกลุ่มองค์กรเพิ่มเป็น 47.6% โดย OpenAI ยังเป็นแชมป์ที่ส่วนแบ่งสะสม 34.4% ทว่ากำลังลดลง ขณะที่ Anthropic ไล่ตามมาที่ 24.4% และทิ้งขาดในกลุ่มลูกค้าใหม่ของปี 2026
+   - URL: https://www.blognone.com/node/150360
+   - Published: 2026-04-27 (search results show this story under fresh "OpenAI-Microsoft" coverage; Blognone node ID 150360 is 4 nodes after node 150356 from yesterday's brief, consistent with same-day publication)
+   - FreshnessCheck: ✅ within last 24h via search snippet covering the Apr 27 OpenAI-Microsoft contract restructuring; node-id sequence consistent with publication on or near 2026-04-27
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday cited `node/150356`; this is `node/150360` (different article)
+   - Verification: Tier 2 — WebSearch snippet (runtime is WEBFETCH_BLOCKED)
+   - Summary: Blognone reports OpenAI and Microsoft amended their contract: Microsoft loses exclusive sales rights to OpenAI products, OpenAI may now serve its models on other clouds (Azure remains primary), and Microsoft drops the revenue share on resold OpenAI products.
 
-> Note: Tier 2 (WebSearch snippet) was used for every story because the runtime probe to https://example.com returned 403 (WEBFETCH_BLOCKED). Stories were chosen from the freshest items currently indexed on trusted-sources.md domains; the strict 24-hour window could not be guaranteed via search snippets alone, so items from the past several days were included.
+3. **Sydney will become Anthropic's fourth office in Asia-Pacific**
+   - Publisher: Anthropic
+   - URL: https://www.anthropic.com/news/sydney-fourth-office-asia-pacific
+   - Published: 2026-04-27
+   - FreshnessCheck: ✅ within last 24h via search snippet "On April 27, 2026, Anthropic officially opened its Sydney office and named Theo Hourmouzis as General Manager of Australia & New Zealand"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — host anthropic.com not in yesterday's set
+   - Verification: Tier 2 — WebSearch snippet (runtime is WEBFETCH_BLOCKED)
+   - Summary: Anthropic opened its Sydney office — its fourth in Asia-Pacific after Tokyo, Bengaluru, and Seoul — and appointed Theo Hourmouzis as GM for Australia & New Zealand, citing demand from enterprise customers like Canva, Quantium, and Commonwealth Bank.
+
+4. **AI Startup Sereact Raises $110 Million for Robots That Predict Consequences**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-04-27/ai-startup-sereact-raises-110-million-for-robots-that-predict-consequences
+   - Published: 2026-04-27 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026-04-27` and search summary "announced on April 27, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — different path from yesterday's Bloomberg video URL
+   - Verification: Tier 2 — WebSearch snippet (runtime is WEBFETCH_BLOCKED)
+   - Summary: German robotics-software startup Sereact raised $110M in fresh funding to develop AI models that make robots smarter and more adaptable, with an emphasis on predicting consequences of physical actions.
+
+## Dropped
+
+- https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/ — kept Blognone Thai-language coverage of the same story instead, to satisfy the "≥1 Thai source" preference (URL itself was eligible).
+- https://www.technologyreview.com/2026/04/27/1136438/the-download-deepseek-v4-ai-world-models/ — Filter A pass, but topic overlaps DeepSeek pricing story; preferred the primary pricing-news article over the newsletter aggregation.
+- https://www.bloomberg.com/news/articles/2026-04-27/why-china-s-deepseek-qwen-and-moonshot-are-a-worry-for-us-ai-rivals — Filter A pass; dropped to limit the brief to four diverse stories without piling on Bloomberg.
+- https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/ — Filter A drop: search snippets returned conflicting publication dates (one said 2026-04-27, another said 2026-02-12). Date ambiguous → drop per "do not guess" rule.
+- https://openai.com/index/introducing-workspace-agents-in-chatgpt/ — Filter A drop: published 2026-04-22 per snippet, outside the 24h window.
+- https://openai.com/index/gpt-5-2-for-science-and-math/ — Filter A drop: GPT-5.2 was released 2025-12-11.
+- https://openai.com/index/introducing-gpt-5-2-codex/ — Filter A drop: snippet places this in mid-January 2026.
+
+> Note: 4 items passed both filters this run. Of ~10 strong candidates, 4 failed Filter A (out-of-window or ambiguous date), and 0 failed Filter B. Two within-window candidates were de-prioritised for editorial diversity (one TechCrunch URL on the same OpenAI-Microsoft topic as the chosen Thai-language Blognone version; one MIT Tech Review newsletter on the same DeepSeek pricing topic as the chosen Bloomberg article).
