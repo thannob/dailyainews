@@ -118,6 +118,19 @@ This is **URL-level dedup**, not topic-level. Different reporting on the same ev
 
 Edge case: if a story's snippet body references an event from yesterday but the URL itself is fresh-today reporting on it, the URL passes Filter B (URL not in yesterday's set) and Filter A (24h timestamp). Include it. The dedup is precise: the **specific article** wasn't in yesterday's brief, even if the topic was.
 
+### 1b-tris. Hard rule — DO NOT bend the 24h filter
+
+Filter A is a **hard gate**, not a guideline. Forbidden patterns observed in past runs that this rule explicitly prohibits:
+
+- ❌ "I couldn't find 5 stories from today, so I included items from the past several days." → **NO.** Ship fewer; never older.
+- ❌ "Most-recent indexed stories on trusted-sources.md happen to be from 3-5 days ago, so I'll use them." → **NO.** "Most recent on the index" ≠ "within 24h." If indexers haven't crawled today's news yet, that's a search-recency issue — try other queries, other domains, broader Thai sources. If still empty, ship the empty stub.
+- ❌ "The 24-hour window could not be guaranteed via search snippets alone, so older items were included." → **NO.** That note is the sound of the contract breaking. If you can't guarantee freshness, you can't include the item. Period.
+- ❌ Including an item with `Published: per search snippet (อ้างอิงข้อมูล [last quarter / last month])`. The dated content is what's being aggregated, not what's being reported today. Drop.
+
+Before writing `sources.md`, **re-check every selected story's timestamp** against `now − 24h Asia/Bangkok` one more time. Any item that fails this check at the second pass is dropped silently — no apology note, no inclusion-with-caveat. If this leaves you with 0 stories, write the stub and commit.
+
+The empty-day signal is correct output. A padded brief is broken output that erodes trust in every future run.
+
 ### 1c. Select up to 5
 
 Select **up to 5** stories that passed both filters (24h fresh AND not in `YESTERDAYS_URLS`). Mix: aim for ≥1 Thai-language source and ≥3 international sources when supply allows. Prefer Tier 1 over Tier 2 when both are available for the same candidate. Prefer primary announcements over commentary.

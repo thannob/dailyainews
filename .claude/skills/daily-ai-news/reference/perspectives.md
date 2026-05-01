@@ -1,31 +1,31 @@
-# Perspectives — 2026-04-27
+# Perspectives — 2026-05-01
 
-## 1. OpenAI ships GPT-5.5 and pitches an AI "super app"
+## 1. Anthropic เตรียมระดมทุนรอบสุดท้ายก่อน IPO มูลค่ากิจการ ~$900B
 
-**อาจารย์ (มหาวิทยาลัย):** การเปลี่ยนวาทกรรมจาก "โมเดลใหม่" มาเป็น "super app" สะท้อนว่า OpenAI อยากให้ผู้ใช้เลิกคิดถึง LLM เดี่ยว และคิดถึงระบบที่รวมเครื่องมือ-หน่วยความจำ-agent loop เข้าด้วยกัน นักศึกษาควรหัดแยกระหว่างความสามารถของ "โมเดลพื้นฐาน" กับความสามารถที่มาจาก "ระบบรอบโมเดล"
-**ผู้เชี่ยวชาญด้าน AI:** จุดน่าจับตาไม่ใช่คะแนน benchmark ที่สูงกว่ารุ่นก่อน แต่คือคำว่า agentic coding และ knowledge work — บอกใบ้ว่า OpenAI ออกแบบให้รันงานหลายขั้นได้นานขึ้นโดยไม่หลุด context ซึ่งเป็นโจทย์ที่ทุกค่ายยังแก้ไม่จบ
-**โปรแกรมเมอร์มืออาชีพ:** ต้องประเมินใหม่ว่า prompt และ tool definitions ที่เคย tune กับ 5.x จะยัง deterministic เท่าเดิมหรือไม่ คาดว่า rate limit ในช่วง launch จะตึง ควรกัน fallback ไปที่รุ่นก่อนหน้าและทำ regression test ก่อน promote เป็น default
+**อาจารย์ (มหาวิทยาลัย):** การที่ valuation ขยับจาก $380B (ก.พ.) เป็น $900B+ ในเวลาแค่ ~3 เดือน คือ live case ของวิชาเศรษฐศาสตร์การเงิน — สอนเรื่อง venture-stage valuation ที่ "ขับเคลื่อนด้วย compute commitments" มากกว่า revenue multiples ดั้งเดิม
+**ผู้เชี่ยวชาญด้าน AI:** การที่นักลงทุนต้องตัดสินใจ allocation ภายใน 48 ชม.บ่งบอกว่าเป็นรอบ "investor pull" ไม่ใช่ "company push" — สะท้อนความเชื่อมั่นในเส้นทาง compute-scaling ของ Anthropic + ดีล Google $40B ที่เพิ่งปิดเป็นตัวกระตุ้น
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่อิง Claude — runway ของ provider ลึกขึ้นอีกหลายปี ความเสี่ยง "API หาย" แทบเป็นศูนย์ แต่ valuation premium ขนาดนี้จะกดดันให้ราคา API คงเดิมหรือสูงขึ้นในระยะกลาง — เก็บ abstraction layer ไว้สลับ provider ก็ยังคุ้ม
 
-## 2. DeepSeek previews V4 Flash / V4 Pro with 1M-token context
+## 2. OpenAI เปิด Advanced Account Security ใน ChatGPT พร้อมจับมือ Yubico
 
-**อาจารย์ (มหาวิทยาลัย):** DeepSeek เป็นกรณีศึกษาว่าโมเดลฝั่ง open-source สามารถ "ปิดช่องว่าง" กับ frontier ได้เร็วแค่ไหนหลังจากที่เคยสร้างความฮือฮาเมื่อต้นปี 2025 หัวข้อนี้เหมาะสำหรับวิชา NLP หรือสัมมนาเรื่องภูมิรัฐศาสตร์ AI
-**ผู้เชี่ยวชาญด้าน AI:** "Hybrid Attention Architecture" และ context window 1 ล้าน token เป็นการเดิมพันสองอย่างพร้อมกัน — ลดต้นทุน attention และ unlock use case ที่ป้อน codebase ทั้งโปรเจกต์ได้ในครั้งเดียว ต้องดู eval จริงว่าคุณภาพคงเดิมที่ปลายหน้าต่างหรือไม่
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับงาน RAG ที่ต้องโยน source หลายไฟล์ การมี 1M context อาจคุ้มกว่าการสร้าง pipeline embedding ที่ซับซ้อน — แต่อย่าเพิ่งทิ้ง vector store เพราะ latency และต้นทุนต่อ call ของ context ยาวยังสูง
+**อาจารย์ (มหาวิทยาลัย):** บทเรียน security engineering ที่ทันสมัย — สอนได้ทั้งเรื่อง FIDO2/WebAuthn, threat modeling, และ usable security trade-offs (recovery vs. phishing-resistance) เป็นเคสที่ดีในวิชา cybersecurity intro ปี 2026
+**ผู้เชี่ยวชาญด้าน AI:** Target user ที่ชัดเจน (นักการเมืองฝ่ายค้าน, นักข่าว, ทนายความ) สะท้อนว่า OpenAI ยอมรับว่า ChatGPT คือสินทรัพย์ตกเป็นเป้าโจมตี — และ recovery-impossible policy เป็นการเลือกฝั่ง security เหนือ user friction อย่างชัดเจน
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ ChatGPT Enterprise สำหรับงานภายในต้องตัดสินใจ — เปิด AAS แล้วยอม friction หรือไม่ ก่อน rollout ควร pilot กับกลุ่มย่อย, ตั้ง enterprise key vault สำหรับเก็บ backup keys, และซ้อม recovery flow
 
-## 3. Google plans up to $40B investment in Anthropic
+## 3. Google ปล่อย Gemini เข้าระบบในรถ Cadillac/Chevrolet/Buick/GMC ราว 4 ล้านคัน
 
-**อาจารย์ (มหาวิทยาลัย):** ดีลนี้ทำให้นิยาม "คู่แข่ง" และ "พันธมิตร" ในอุตสาหกรรม AI ชัดเจนขึ้นว่าแยกกันไม่ออก เป็นวัตถุดิบดีสำหรับวิชาเศรษฐศาสตร์อุตสาหกรรมหรือ business strategy
-**ผู้เชี่ยวชาญด้าน AI:** $10B ขั้นต้น + อีก $30B เป็นการเข้ามาของทุนระดับ "ซื้อกำลังการผลิต compute" ไม่ใช่แค่การถือหุ้น ผู้ที่ต้องจับตาคือคู่แข่ง (Microsoft/OpenAI, AWS/Anthropic อีกฝั่ง) ว่าจะตอบสนองด้วยการลงทุน compute เพิ่มอีกเท่าไร
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Claude บน Vertex AI หรือ AWS Bedrock ระยะสั้นยังไม่กระทบ แต่ระยะยาวคาดว่า Anthropic จะ optimize โมเดลให้กับ TPU ของ Google มากขึ้น ส่งผลต่อ latency และราคาบนแต่ละ cloud — เผื่อ abstraction layer ระหว่างโค้ดกับ provider ไว้
+**อาจารย์ (มหาวิทยาลัย):** เคสคลาสสิกของ AI ที่ขยายจาก digital surface ไปที่ embedded surface — โจทย์ HCI ใหม่คือ "interaction without eyes" ที่ผสมเสียง+ปุ่มพวงมาลัย เหมาะใช้ในวิชา interaction design และ automotive engineering
+**ผู้เชี่ยวชาญด้าน AI:** การ deploy LLM-grade assistant บน automotive embedded environment เป็นโจทย์ใหม่ของ latency budget, offline fallback, และความเสถียรใต้ thermal/connectivity constraints — ตัวเลขที่ต้องจับตาคือ p99 response time เมื่อ cellular degrade
+**โปรแกรมเมอร์มืออาชีพ:** ทีม mobile/automotive apps ในไทยที่ทำ in-vehicle features ควรเริ่มออกแบบเผื่อให้ Gemini เป็น default assistant — ผู้ใช้จะคาดหวังให้ Gemini "รู้จัก" แอปของเรา ไม่ใช่สลับไปเปิดแอปด้วยตัวเอง
 
-## 4. Google × Thinking Machines Lab — multibillion-dollar deal
+## 4. Meta business AI ทะลุ 10 ล้านบทสนทนา/สัปดาห์ — โต 10 เท่าใน 4 เดือน
 
-**อาจารย์ (มหาวิทยาลัย):** น่าสนใจที่ Mira Murati อดีต CTO ของ OpenAI กลับมาเป็นลูกค้ารายใหญ่ของ Google Cloud — สะท้อนว่า AI lab เกิดใหม่กำลังเลือก infrastructure ก่อนเลือกฝ่าย
-**ผู้เชี่ยวชาญด้าน AI:** ดีลนี้เด่นเพราะใช้ NVIDIA GB300 บน Google Cloud — ฝั่ง lab ยังต้องการ GPU ของ NVIDIA แม้ Google จะมี TPU ของตัวเอง คำถามคือ Thinking Machines จะ port ไป TPU ภายหลังหรือไม่
-**โปรแกรมเมอร์มืออาชีพ:** การเลือก cloud + accelerator stack กำลังกลายเป็นการตัดสินใจเชิงยุทธศาสตร์ของ AI startups ทีมเล็กที่อยากทำ frontier model ต้องดีลกับทั้ง cloud provider และ chip vendor พร้อมกัน — โครงสร้าง procurement ที่ flexible สำคัญพอ ๆ กับโค้ด
+**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างชั้นเรียน business strategy — Meta ใช้ playbook เดียวกับ Facebook ยุคแรก (ขายฟรีจนติดตลาด) บน vertical AI ใหม่ คำถามวิเคราะห์: เมื่อไรและด้วยกลไกไหนที่ Meta จะ flip switch เป็น paid tier โดยไม่ทำลาย adoption
+**ผู้เชี่ยวชาญด้าน AI:** การไต่จาก 1M ไป 10M conversations/wk ใน 4 เดือนแปลว่าโครงสร้าง serving + content moderation + multilingual quality เริ่มเสถียรเชิงวิศวกรรม — โจทย์ต่อไปคือ unit economics ต่อ conversation
+**โปรแกรมเมอร์มืออาชีพ:** SMB ในไทยที่ใช้ WhatsApp/Messenger ให้บริการลูกค้าควรทดลอง Meta business AI ฟรีระยะนี้ — เก็บ prompt template + workflow ไว้ก่อน free tier เริ่มถูกจำกัด คาดว่าน่าจะเริ่มเก็บเงินภายใน 6–12 เดือน
 
-## 5. ส่วนแบ่ง AI องค์กร — Anthropic ทิ้งขาดในกลุ่มลูกค้าใหม่ปี 2026
+## 5. GitHub ขอโทษระบบล่ม — โหลด commit/PR จาก AI พุ่ง 30 เท่า
 
-**อาจารย์ (มหาวิทยาลัย):** ข้อมูลจาก Ramp เป็น proxy ที่น่าสนใจสำหรับงานวิจัยพฤติกรรมการ adopt AI ของบริษัทอเมริกัน เพราะวัดจากใบเสร็จจริงไม่ใช่แบบสำรวจ จุดสอนคือ "ส่วนแบ่งใหม่" กับ "ส่วนแบ่งสะสม" ต่างกันอย่างไรและบอกอะไรเกี่ยวกับโมเมนตัมตลาด
-**ผู้เชี่ยวชาญด้าน AI:** การที่ OpenAI เริ่มเสียส่วนแบ่งกลุ่มลูกค้าใหม่แม้ยอดสะสมยังนำที่ 34.4% สะท้อนว่า lock-in ของ ecosystem ยังแข็งกับลูกค้าเก่า แต่ลูกค้าใหม่กำลังมองหาทางเลือกที่ "ปลอดภัย/ควบคุมได้" มากกว่า ซึ่งเป็นจุดขายของ Anthropic
-**โปรแกรมเมอร์มืออาชีพ:** ทีม engineering ที่เริ่ม project ใหม่ในปี 2026 ควรประเมิน Claude คู่กับ GPT แบบจริงจัง ไม่ใช่ default ไปที่ OpenAI โดยอัตโนมัติเหมือนเมื่อก่อน — โดยเฉพาะงาน tool-use, code review หรือ long-context reasoning ที่ Claude มักได้คะแนนความเสถียรดี
+**อาจารย์ (มหาวิทยาลัย):** บทเรียนที่จับต้องได้ของหัวข้อ "infrastructure scaling under generative load" — สอนได้ในวิชา distributed systems ว่าเมื่อ throughput pattern เปลี่ยนไปจากที่ออกแบบไว้แต่แรก capacity model ทั้งระบบต้อง revisit ใหม่
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข 30× โดยไม่ต้องมี user เพิ่มสะท้อนว่า "AI ในฐานะผู้สร้าง content" คือ load class ใหม่ที่ทุกแพลตฟอร์ม — ไม่ใช่แค่ GitHub — ต้อง re-baseline; user-count ไม่เป็น proxy ของ load อีกต่อไป
+**โปรแกรมเมอร์มืออาชีพ:** ทีม DevOps/SRE ในไทยที่ดูแล Git server ภายใน, CI/CD, code review queue — ระบบที่ scale ตามจำนวน commit จะเจอแบบเดียวกันใน 6–12 เดือน เริ่มประเมิน throughput limit, autoscaling policy, และ rate limiting ตั้งแต่ตอนนี้
