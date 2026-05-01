@@ -1,31 +1,31 @@
 # Perspectives — 2026-05-01
 
-## 1. Anthropic เตรียมระดมทุนรอบสุดท้ายก่อน IPO มูลค่ากิจการ ~$900B
+## 1. Pentagon AI deals with 7 companies on classified networks; Anthropic excluded
 
-**อาจารย์ (มหาวิทยาลัย):** การที่ valuation ขยับจาก $380B (ก.พ.) เป็น $900B+ ในเวลาแค่ ~3 เดือน คือ live case ของวิชาเศรษฐศาสตร์การเงิน — สอนเรื่อง venture-stage valuation ที่ "ขับเคลื่อนด้วย compute commitments" มากกว่า revenue multiples ดั้งเดิม
-**ผู้เชี่ยวชาญด้าน AI:** การที่นักลงทุนต้องตัดสินใจ allocation ภายใน 48 ชม.บ่งบอกว่าเป็นรอบ "investor pull" ไม่ใช่ "company push" — สะท้อนความเชื่อมั่นในเส้นทาง compute-scaling ของ Anthropic + ดีล Google $40B ที่เพิ่งปิดเป็นตัวกระตุ้น
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่อิง Claude — runway ของ provider ลึกขึ้นอีกหลายปี ความเสี่ยง "API หาย" แทบเป็นศูนย์ แต่ valuation premium ขนาดนี้จะกดดันให้ราคา API คงเดิมหรือสูงขึ้นในระยะกลาง — เก็บ abstraction layer ไว้สลับ provider ก็ยังคุ้ม
+**อาจารย์ (มหาวิทยาลัย):** เคสที่นักศึกษานโยบายและ AI ethics ควรอ่านคู่กับเมโม White House (ข่าวที่ 5) — เห็นภาพการเจรจาเงื่อนไข "ขายเครื่องมือให้รัฐ vs ขีดเส้น use-case" เกิดขึ้นจริง ไม่ใช่กรอบทฤษฎี และเห็นต้นทุนของการยืน guardrail ในรูปสัญญาที่หายไป
+**ผู้เชี่ยวชาญด้าน AI:** ความสำคัญเชิงเทคนิคอยู่ที่ deployment 7 ชุดบนเครือข่าย IL6/IL7 ที่มีข้อจำกัด model isolation, audit logging และ supply-chain integrity ต่างจาก commercial cloud อย่างมาก — spec ที่ภาครัฐเปิดเผยอาจกลายเป็น baseline ใหม่ของ secure AI deployment
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ Claude ในงาน compliance สูงต้องประเมินทางเลือกหลายโมเดลตั้งแต่เนิ่นๆ — งานสาย defense/intel จะเข้าถึง Claude ผ่านช่องทาง government-approved ได้ยากขึ้นในระยะกลาง
 
-## 2. OpenAI เปิด Advanced Account Security ใน ChatGPT พร้อมจับมือ Yubico
+## 2. Meta acquires Assured Robot Intelligence (ARI) for humanoid AI
 
-**อาจารย์ (มหาวิทยาลัย):** บทเรียน security engineering ที่ทันสมัย — สอนได้ทั้งเรื่อง FIDO2/WebAuthn, threat modeling, และ usable security trade-offs (recovery vs. phishing-resistance) เป็นเคสที่ดีในวิชา cybersecurity intro ปี 2026
-**ผู้เชี่ยวชาญด้าน AI:** Target user ที่ชัดเจน (นักการเมืองฝ่ายค้าน, นักข่าว, ทนายความ) สะท้อนว่า OpenAI ยอมรับว่า ChatGPT คือสินทรัพย์ตกเป็นเป้าโจมตี — และ recovery-impossible policy เป็นการเลือกฝั่ง security เหนือ user friction อย่างชัดเจน
-**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ใช้ ChatGPT Enterprise สำหรับงานภายในต้องตัดสินใจ — เปิด AAS แล้วยอม friction หรือไม่ ก่อน rollout ควร pilot กับกลุ่มย่อย, ตั้ง enterprise key vault สำหรับเก็บ backup keys, และซ้อม recovery flow
+**อาจารย์ (มหาวิทยาลัย):** ตั้งโจทย์เปรียบเทียบ foundation-model strategy ของ Meta, Boston Dynamics+DeepMind, Tesla, Apptronik ว่าทำไมแต่ละค่ายเลือกเส้นทางต่างกัน และตัวเลือกไหน scale ไปสู่ general-purpose embodiment ได้จริง
+**ผู้เชี่ยวชาญด้าน AI:** จุดน่าจับตาคือ Meta จะดึง multimodal architecture จาก Muse Spark มาผสม robotic-control policy ของ ARI ได้แค่ไหน — sample efficiency บน real-world demonstration ยังเป็น bottleneck ของทั้งวงการ
+**โปรแกรมเมอร์มืออาชีพ:** สายอุตสาหกรรม manufacturing/logistics ในไทยควรเริ่มศึกษา ROS 2, MoveIt และ embodied-AI benchmarks ตั้งแต่ตอนนี้ — ภายใน 18-24 เดือนจะมี humanoid platform ที่ขายเป็น API/SDK ให้ build งานบนตัวหุ่นได้คล้าย mobile dev ในยุคแรก
 
-## 3. Google ปล่อย Gemini เข้าระบบในรถ Cadillac/Chevrolet/Buick/GMC ราว 4 ล้านคัน
+## 3. Anthropic $900B+ valuation round, ~$50B raise
 
-**อาจารย์ (มหาวิทยาลัย):** เคสคลาสสิกของ AI ที่ขยายจาก digital surface ไปที่ embedded surface — โจทย์ HCI ใหม่คือ "interaction without eyes" ที่ผสมเสียง+ปุ่มพวงมาลัย เหมาะใช้ในวิชา interaction design และ automotive engineering
-**ผู้เชี่ยวชาญด้าน AI:** การ deploy LLM-grade assistant บน automotive embedded environment เป็นโจทย์ใหม่ของ latency budget, offline fallback, และความเสถียรใต้ thermal/connectivity constraints — ตัวเลขที่ต้องจับตาคือ p99 response time เมื่อ cellular degrade
-**โปรแกรมเมอร์มืออาชีพ:** ทีม mobile/automotive apps ในไทยที่ทำ in-vehicle features ควรเริ่มออกแบบเผื่อให้ Gemini เป็น default assistant — ผู้ใช้จะคาดหวังให้ Gemini "รู้จัก" แอปของเรา ไม่ใช่สลับไปเปิดแอปด้วยตัวเอง
+**อาจารย์ (มหาวิทยาลัย):** live case ของวิชา finance/strategy ที่สอนการตีมูลค่า venture บริษัท frontier AI ที่ขับเคลื่อนด้วย compute commitments มากกว่า revenue multiples ดั้งเดิม — โดยเฉพาะอ่านคู่กับข่าวที่ Pentagon เพิ่งข้ามตัวไปในวันถัดมา
+**ผู้เชี่ยวชาญด้าน AI:** สัญญาณ "investor pull" ระยะ 48 ชั่วโมงสะท้อนความเชื่อมั่นต่อเส้นทาง compute-scaling และ enterprise revenue growth (Q1 2026 LLM revenue ของ Anthropic ขึ้นนำ OpenAI) แม้ตลาด defense ปิดประตู
+**โปรแกรมเมอร์มืออาชีพ:** runway ของ Anthropic ลึกขึ้นไปอีกหลายปี ความเสี่ยง "API หาย" แทบเป็นศูนย์ — แต่ valuation premium ขนาดนี้ย่อมกดดันให้ราคา API คงเดิมหรือสูงขึ้นในระยะกลาง เก็บ provider abstraction layer ไว้ก็ยังคุ้ม
 
-## 4. Meta business AI ทะลุ 10 ล้านบทสนทนา/สัปดาห์ — โต 10 เท่าใน 4 เดือน
+## 4. OpenAI gates GPT-5.5 Cyber to "critical cyber defenders"
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างชั้นเรียน business strategy — Meta ใช้ playbook เดียวกับ Facebook ยุคแรก (ขายฟรีจนติดตลาด) บน vertical AI ใหม่ คำถามวิเคราะห์: เมื่อไรและด้วยกลไกไหนที่ Meta จะ flip switch เป็น paid tier โดยไม่ทำลาย adoption
-**ผู้เชี่ยวชาญด้าน AI:** การไต่จาก 1M ไป 10M conversations/wk ใน 4 เดือนแปลว่าโครงสร้าง serving + content moderation + multilingual quality เริ่มเสถียรเชิงวิศวกรรม — โจทย์ต่อไปคือ unit economics ต่อ conversation
-**โปรแกรมเมอร์มืออาชีพ:** SMB ในไทยที่ใช้ WhatsApp/Messenger ให้บริการลูกค้าควรทดลอง Meta business AI ฟรีระยะนี้ — เก็บ prompt template + workflow ไว้ก่อน free tier เริ่มถูกจำกัด คาดว่าน่าจะเริ่มเก็บเงินภายใน 6–12 เดือน
+**อาจารย์ (มหาวิทยาลัย):** เคสที่อาจารย์ cybersecurity/ethics ใช้ตั้งโจทย์ได้ตรงประเด็น — เมื่อโมเดลพื้นฐานเดียวกันเป็นได้ทั้ง "ผู้ป้องกัน" และ "ผู้โจมตี" เพดานจริยธรรมของ provider ควรอยู่ที่ไหน และเหตุใด OpenAI จึงเปลี่ยนจุดยืนเดิมที่เคยตีกรอบ Anthropic
+**ผู้เชี่ยวชาญด้าน AI:** สัญญาณ convergence ที่สำคัญ — ทั้งสองค่ายมาถึงจุดเดียวกันคือต้อง gating offensive capability โดยอิงตัวตนผู้ใช้ ไม่ใช่ไว้ใจ system prompt อย่างเดียว แรงกดดันมาจากตัวเลข bug-to-exploit ที่ลดจาก 5 เดือนเหลือ 10 ชั่วโมง
+**โปรแกรมเมอร์มืออาชีพ:** ทีม SecOps ในไทยที่จะใช้ LLM agent ทำ vulnerability scanning ภายในควรเตรียมเอกสาร "critical defender" attestation ไว้ตั้งแต่วันนี้ — provider รายอื่นๆ จะตามมาด้วยเงื่อนไข access ที่ใกล้เคียงกัน
 
-## 5. GitHub ขอโทษระบบล่ม — โหลด commit/PR จาก AI พุ่ง 30 เท่า
+## 5. White House AI memo: middle ground for Anthropic–Pentagon dispute
 
-**อาจารย์ (มหาวิทยาลัย):** บทเรียนที่จับต้องได้ของหัวข้อ "infrastructure scaling under generative load" — สอนได้ในวิชา distributed systems ว่าเมื่อ throughput pattern เปลี่ยนไปจากที่ออกแบบไว้แต่แรก capacity model ทั้งระบบต้อง revisit ใหม่
-**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข 30× โดยไม่ต้องมี user เพิ่มสะท้อนว่า "AI ในฐานะผู้สร้าง content" คือ load class ใหม่ที่ทุกแพลตฟอร์ม — ไม่ใช่แค่ GitHub — ต้อง re-baseline; user-count ไม่เป็น proxy ของ load อีกต่อไป
-**โปรแกรมเมอร์มืออาชีพ:** ทีม DevOps/SRE ในไทยที่ดูแล Git server ภายใน, CI/CD, code review queue — ระบบที่ scale ตามจำนวน commit จะเจอแบบเดียวกันใน 6–12 เดือน เริ่มประเมิน throughput limit, autoscaling policy, และ rate limiting ตั้งแต่ตอนนี้
+**อาจารย์ (มหาวิทยาลัย):** เอกสาร "compromise text" ระดับที่ใช้สอนการร่างนโยบายในข้อพิพาทระหว่าง state กับ frontier-tech ได้ดี — มีทั้ง multi-vendor mandate, chain-of-command clause และข้อยกเว้น use-case อยู่ในฉบับเดียว
+**ผู้เชี่ยวชาญด้าน AI:** เมโมแยก "no model modification without permission" กับ "no ideological bias" ออกจากกัน — สองข้อนี้บังคับด้วย mechanism ที่ต่างกันมาก (cryptographic audit trail vs alignment evaluation) เป็นโจทย์ engineering ที่ต้องคิดต่อ
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ build ระบบ AI ให้หน่วยงานรัฐไทย ติดตามภาษาที่ใช้ในเมโมไว้ — มีโอกาสสูงที่ template เงื่อนไขแบบนี้จะถูกหยิบไปใช้ในสัญญา AI ภาครัฐทั่วโลกในรอบ 12-18 เดือน

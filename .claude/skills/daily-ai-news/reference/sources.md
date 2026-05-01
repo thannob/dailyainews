@@ -1,53 +1,60 @@
 # Sources — 2026-05-01
 
 Generated: 2026-05-01 (Asia/Bangkok)
-Runtime: WEBFETCH_OK (run from operator's local environment after Routine produced bad output)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-04-30-brief.md (file not found — empty set; latest committed brief is 2026-04-28, no URL overlap detected)
+Dedup against: articles/2026-04-30-brief.md (0 URLs loaded — file not found)
 
-1. **Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks**
+1. **Pentagon inks deals with Nvidia, Microsoft, AWS to deploy AI on classified networks**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/
+   - Published: URL slug 2026/05/01 (today, Asia/Bangkok)
+   - FreshnessCheck: ✅ within last 24h via "URL slug 2026/05/01 == today"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief does not exist; set is empty)
+   - Verification: Tier 2 — WebSearch snippet (search "site:techcrunch.com Pentagon AI 2026/05" returned this URL with snippet describing 7-company deal: Nvidia, Microsoft, AWS, OpenAI, Google, SpaceX, Reflection AI on IL6/IL7 networks; Anthropic excluded over guardrails dispute)
+   - Summary: DoD signed deals with seven AI vendors to run their models on classified networks (IL6 + IL7); Anthropic was the lone frontier-lab excluded after refusing the "all lawful use" terms.
+
+2. **Meta buys robotics startup to bolster its humanoid AI ambitions**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/
+   - Published: URL slug 2026/05/01 (today, Asia/Bangkok)
+   - FreshnessCheck: ✅ within last 24h via "URL slug 2026/05/01 == today"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (empty set)
+   - Verification: Tier 2 — WebSearch snippet (search "site:techcrunch.com Meta robotics humanoid May 1 2026" returned this URL with snippet: Meta acquired Assured Robot Intelligence (ARI); team joins Superintelligence Labs; foundation models for humanoid physical labor)
+   - Summary: Meta acquired Assured Robot Intelligence (ARI), folding the team into its Superintelligence Labs to build foundation models for humanoid robots performing physical labor.
+
+3. **Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks**
    - Publisher: TechCrunch
    - URL: https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/
-   - Published: 2026-04-30 (TechCrunch byline + URL slug)
-   - FreshnessCheck: ✅ within 24h — published ~6h before run time (00:41 UTC May 1 = 07:41 Bangkok May 1)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (file 2026-04-30-brief.md not found; latest brief 2026-04-28 has no overlap)
-   - Verification: Tier 1 — WebFetch
-   - Summary: Anthropic is raising ~$50B in what would be its final private round before going public, targeting $900B+ valuation — more than double its February round at $380B, surpassing OpenAI's $852B. Investors must submit allocation requests within 48 hours; round expected to close within two weeks.
+   - Published: URL slug 2026/04/30 (yesterday — within rolling 24h window in Asia/Bangkok)
+   - FreshnessCheck: ✅ within last 24h via "URL slug 2026/04/30; rolling 24h includes yesterday per Filter A table"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (empty set)
+   - Verification: Tier 2 — WebSearch snippet (search surfaced this URL with snippet: ~$50B round, $900B valuation target, up from $380B in Feb, surpassing OpenAI's $852B; investors must request allocations within 48 hours)
+   - Summary: Anthropic is reportedly raising ~$50B at a $900B+ valuation, more than doubling its February mark and surpassing OpenAI's $852B; investors must request allocations within 48 hours.
 
-2. **OpenAI announces new advanced security for ChatGPT accounts, including partnership with Yubico**
+4. **After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber, too**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/30/openai-announces-new-advanced-security-for-chatgpt-accounts-including-a-partnership-with-yubico/
-   - Published: 2026-04-30 (~11h before run time = 22:00 Bangkok Apr 30)
-   - FreshnessCheck: ✅ within 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 1 — WebFetch
-   - Summary: OpenAI launched Advanced Account Security (AAS), an optional protection system for ChatGPT users handling sensitive information (political dissidents, journalists). Includes a Yubico partnership offering co-branded YubiKey C NFC and YubiKey C Nano hardware keys for phishing-resistant authentication. Trade-off: lost keys cannot be recovered, potentially resulting in permanent conversation loss.
+   - URL: https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/
+   - Published: URL slug 2026/04/30 (within rolling 24h)
+   - FreshnessCheck: ✅ within last 24h via "URL slug 2026/04/30"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (empty set)
+   - Verification: Tier 2 — WebSearch snippet (search "site:techcrunch.com OpenAI GPT-5.5" returned this URL with snippet: OpenAI rolling out GPT-5.5 Cyber only "to critical cyber defenders" first; capability includes pen-testing, vulnerability identification + exploitation, malware reverse engineering)
+   - Summary: OpenAI is gating its GPT-5.5 Cyber model — capable of penetration testing, vulnerability exploitation, and malware reverse engineering — to "critical cyber defenders" only, mirroring the Anthropic Mythos posture it had previously criticized.
 
-3. **Google's Gemini AI assistant is hitting the road in millions of vehicles**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/
-   - Published: 2026-04-30 (~12h before run time)
-   - FreshnessCheck: ✅ within 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 1 — WebFetch
-   - Summary: Google announced Gemini will replace Google Assistant in cars with Google built-in. GM revealed ~4M compatible vehicles (Cadillac, Chevrolet, Buick, GMC, 2022+) will receive the upgrade. Gemini supports natural conversations, vehicle controls, navigation, plus a "Gemini Live" mode. U.S. rollout begins in English with broader expansion planned.
+5. **White House AI Memo Hits Issues in Anthropic-Pentagon Feud**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-04-30/white-house-ai-memo-hits-issues-driving-anthropic-pentagon-feud
+   - Published: URL slug 2026-04-30 (within rolling 24h)
+   - FreshnessCheck: ✅ within last 24h via "URL slug 2026-04-30"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (empty set)
+   - Verification: Tier 2 — WebSearch snippet (search "Anthropic Pentagon White House memo guardrails 2026 April 30" surfaced this URL with snippet: draft urges multi-vendor AI use, requires non-interference with chain of command, no model modification without permission, no ideological bias; stops short of "all lawful use" language)
+   - Summary: A draft White House memo addresses both sides of the Anthropic–Pentagon standoff — pushing multi-vendor AI use, chain-of-command non-interference, and no unilateral model modification, while declining to mandate the Pentagon's "all lawful use" wording.
 
-4. **Meta says its business AI now facilitates 10 million conversations a week**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/
-   - Published: 2026-04-30 (~17h before run time)
-   - FreshnessCheck: ✅ within 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 1 — WebFetch
-   - Summary: Meta's business AI tools now handle 10M conversations weekly — a tenfold jump from 1M at the start of 2026. Free for small businesses on WhatsApp/Messenger to drive scale; Zuckerberg signaled long-term monetization is coming. Over 8M advertisers use Meta's generative AI creative tools; video generation drives 3% higher conversion rates in testing.
+## Dropped
 
-5. **GitHub ขอโทษปัญหาระบบไม่เสถียร ล่มบ่อย เพราะ AI เรียกใช้งานหนักขึ้นมาก**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150383
-   - Published: 2026-04-30 (per Blognone byline)
-   - FreshnessCheck: ✅ within 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 1 — WebFetch
-   - Summary: GitHub apologized for system instability after two outages in one week (Apr 23 merge-queue issue, Apr 27 Elasticsearch search outage). The CTO acknowledged AI coding tools have driven a 30× increase in load — pull-request and commit volume far above projections. GitHub is reprioritizing stability over new features.
+- https://www.blognone.com/node/150383 (GitHub overload story) — Filter A: search snippet referenced events from 23/27 April but exposed no explicit publish-date for the Blognone post itself; per Filter A "Date ambiguous / not surfaced → drop", excluded despite being on the trusted list.
+- https://www.blognone.com/node/150356 (Anthropic Project Deal) — Filter A: companion coverage on other outlets dated 27 April, indicating > 24h old.
+- https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic — domain not on trusted-sources.md (Pentagon-deal coverage retained via TechCrunch/Bloomberg instead).
+- https://www.npr.org/2026/05/01/nx-s1-5807131/tech-worker-china-ai (China AI labor ruling) — domain not on trusted-sources.md.
 
-> Note: All 5 items passed both filters. 0 candidates from this run failed Filter A or B.
+> Note: 5 items passed both filters this run. Of ~9 candidates, 2 failed Filter A (date ambiguous / >24h), 2 were dropped for non-trusted domain. No Thai-language source available within the 24h window with a verifiable publication timestamp this run.
