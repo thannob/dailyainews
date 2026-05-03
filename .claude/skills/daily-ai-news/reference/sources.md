@@ -1,53 +1,63 @@
-# Sources — 2026-05-01
+# Sources — 2026-05-03
 
-Generated: 2026-05-01 (Asia/Bangkok)
-Runtime: WEBFETCH_OK (run from operator's local environment after Routine produced bad output)
+Generated: 2026-05-03 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-04-30-brief.md (file not found — empty set; latest committed brief is 2026-04-28, no URL overlap detected)
+Dedup against: articles/2026-05-02-brief.md (4 URLs loaded)
 
-1. **Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks**
+1. **AI Is Coming for Your Job and Your Mind**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/newsletters/2026-05-02/ai-is-coming-for-your-job-and-your-mind
+   - Published: 2026-05-02 (per URL slug, confirmed by search snippet "published on May 2, 2026")
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02 + multiple snippets stating "published on May 2, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were all 2026-05-01 articles; this is a different 2026-05-02 newsletter)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Bloomberg newsletter เน้นมุมที่ "การปรับโครงสร้างครั้งใหญ่ได้เริ่มขึ้นแล้ว และมันไม่ดี" — สำรวจความกังวลเรื่องผลกระทบ AI ต่อ (1) ตลาดแรงงาน, (2) มูลค่าหุ้น, (3) ความต้องการไฟฟ้าและราคาไฟ, (4) โอกาสที่การลงทุน data center มหาศาลจะกลายเป็น "costly miscalculation" และ (5) ความเป็นไปได้ที่ AGI อาจนำไปสู่การสูญพันธุ์ของมนุษย์ในที่สุด
+
+2. **AI-generated actors and scripts are now ineligible for Oscars**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/
-   - Published: 2026-04-30 (TechCrunch byline + URL slug)
-   - FreshnessCheck: ✅ within 24h — published ~6h before run time (00:41 UTC May 1 = 07:41 Bangkok May 1)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (file 2026-04-30-brief.md not found; latest brief 2026-04-28 has no overlap)
-   - Verification: Tier 1 — WebFetch
-   - Summary: Anthropic is raising ~$50B in what would be its final private round before going public, targeting $900B+ valuation — more than double its February round at $380B, surpassing OpenAI's $852B. Investors must submit allocation requests within 48 hours; round expected to close within two weeks.
+   - URL: https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/
+   - Published: 2026-05-02 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02; supporting snippet "The Academy released new Oscar rules on Friday"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not covered yesterday
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Academy ออกกฎใหม่ — เฉพาะการแสดงที่ "credited in the film's legal billing and demonstrably performed by humans with their consent" จึงจะมีสิทธิ์เข้าชิงรางวัลในหมวด acting; บทภาพยนตร์ต้อง "human-authored" จึงจะมีสิทธิ์ได้; Academy สงวนสิทธิ์ขอข้อมูลเพิ่มเติมเรื่องการใช้ AI และ "human authorship"; กฎจะเริ่มกับภาพยนตร์ที่ออกฉายในปี 2026
 
-2. **OpenAI announces new advanced security for ChatGPT accounts, including partnership with Yubico**
+3. **Chinese Court Bars Companies From Firing Workers Solely for AI Replacement**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-05-02/chinese-court-rules-firms-can-t-lay-off-workers-on-ai-grounds
+   - Published: 2026-05-02 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not in yesterday's brief
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: ศาลจีนตัดสินยืนตามศาลล่าง — บริษัทไม่สามารถใช้เหตุ "AI เข้ามาแทน" เพื่อเลิกจ้างพนักงานเพื่อลดต้นทุนได้ คดีต้นเรื่องคือคุณ Zhou อดีต QA supervisor เงินเดือน 25,000 หยวน/เดือน ที่ถูกเสนอตำแหน่งใหม่ลดเงินเดือน 40% แล้วบอกเลิกสัญญาเมื่อปฏิเสธ ศาลกลางชี้ว่าเหตุผลที่บริษัทอ้างไม่เข้าข่าย "major change" และบริษัทไม่ได้แสดงให้เห็นว่าสัญญา "impossible to perform" — ตั้งบรรทัดฐานสำคัญด้านสิทธิแรงงานในยุค automation
+
+4. **Beyond Lovable and Mistral: 21 European startups to watch**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/30/openai-announces-new-advanced-security-for-chatgpt-accounts-including-a-partnership-with-yubico/
-   - Published: 2026-04-30 (~11h before run time = 22:00 Bangkok Apr 30)
-   - FreshnessCheck: ✅ within 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 1 — WebFetch
-   - Summary: OpenAI launched Advanced Account Security (AAS), an optional protection system for ChatGPT users handling sensitive information (political dissidents, journalists). Includes a Yubico partnership offering co-branded YubiKey C NFC and YubiKey C Nano hardware keys for phishing-resistant authentication. Trade-off: lost keys cannot be recovered, potentially resulting in permanent conversation loss.
+   - URL: https://techcrunch.com/2026/05/02/beyond-lovable-and-mistral-21-european-startups-to-watch/
+   - Published: 2026-05-02 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; new feature, not previously covered
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: TechCrunch รวบรวมความเห็นจาก VC ยุโรปและทีมงานเอง คัดเลือก 21 สตาร์ทอัพยุโรปที่ควรจับตา ตัวอย่าง: BottleCap AI (สตาร์ทอัพ AI สัญชาติเช็ก), Alta Ares (counter-drone AI ตอบโจทย์ความต้องการระบบตรวจจับและรับมือโดรนรุกล้ำราคาประหยัดในยุโรปหลังสงครามยูเครน), Apron (จัดการใบกำกับภาษีสำหรับ SMB), Botify (ช่วยแบรนด์เพิ่ม visibility ใน AI search) — ครอบคลุมตั้งแต่ pre-launch ถึง unicorn
 
-3. **Google's Gemini AI assistant is hitting the road in millions of vehicles**
+5. **The best AI dictation apps, tested and ranked**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/
-   - Published: 2026-04-30 (~12h before run time)
-   - FreshnessCheck: ✅ within 24h
+   - URL: https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/
+   - Published: 2026-05-02 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 1 — WebFetch
-   - Summary: Google announced Gemini will replace Google Assistant in cars with Google built-in. GM revealed ~4M compatible vehicles (Cadillac, Chevrolet, Buick, GMC, 2022+) will receive the upgrade. Gemini supports natural conversations, vehicle controls, navigation, plus a "Gemini Live" mode. U.S. rollout begins in English with broader expansion planned.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: TechCrunch ทดสอบและจัดอันดับแอป AI dictation — Wispr Flow มาเป็นตัวเด่น รองรับ custom words/instructions, มีแอป native บน macOS, Windows และ iOS (Android อยู่ระหว่างพัฒนา) ปรับสไตล์ได้ "formal", "casual", "very casual" — มี free tier 2,000 คำ/สัปดาห์บน desktop และ 1,000 คำ/เดือนบน iOS, แพลนจ่ายเริ่ม $15/เดือนสำหรับ unlimited; แอปอื่นที่ติดอันดับได้แก่ Willow, Monologue, Superwhisper, VoiceTypr
 
-4. **Meta says its business AI now facilitates 10 million conversations a week**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/
-   - Published: 2026-04-30 (~17h before run time)
-   - FreshnessCheck: ✅ within 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 1 — WebFetch
-   - Summary: Meta's business AI tools now handle 10M conversations weekly — a tenfold jump from 1M at the start of 2026. Free for small businesses on WhatsApp/Messenger to drive scale; Zuckerberg signaled long-term monetization is coming. Over 8M advertisers use Meta's generative AI creative tools; video generation drives 3% higher conversion rates in testing.
+## Dropped
 
-5. **GitHub ขอโทษปัญหาระบบไม่เสถียร ล่มบ่อย เพราะ AI เรียกใช้งานหนักขึ้นมาก**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/150383
-   - Published: 2026-04-30 (per Blognone byline)
-   - FreshnessCheck: ✅ within 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 1 — WebFetch
-   - Summary: GitHub apologized for system instability after two outages in one week (Apr 23 merge-queue issue, Apr 27 Elasticsearch search outage). The CTO acknowledged AI coding tools have driven a 30× increase in load — pull-request and commit volume far above projections. GitHub is reprioritizing stability over new features.
-
-> Note: All 5 items passed both filters. 0 candidates from this run failed Filter A or B.
+- https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use — Filter B (URL appeared in articles/2026-05-02-brief.md)
+- https://www.bloomberg.com/news/articles/2026-05-01/claude-ai-is-complicating-life-for-people-named-claude — Filter B (URL appeared in articles/2026-05-02-brief.md)
+- https://www.bloomberg.com/news/articles/2026-05-01/ready-or-not-the-ai-phones-are-coming — Filter A (slug 2026-05-01 falls outside the rolling 24h window measured from now on 2026-05-03)
+- https://www.bloomberg.com/news/articles/2026-05-01/meta-acquires-assured-robot-intelligence-to-help-build-humanoid-technology — Filter A (slug 2026-05-01 outside rolling 24h)
+- https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html — Filter A (slug 2026/05/01 outside 24h) and CNBC not on trusted-sources.md
+- https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic — Filter A + CNN not on trusted-sources.md
+- https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html — Filter A (April 14, well outside 24h)
+- https://www.bloomberg.com/news/articles/2026-05-01/mckinsey-plans-to-use-ai-agents-to-help-choose-client-teams — Filter A (slug 2026-05-01 outside 24h)
+- Blognone candidates (e.g. node/150418 about Microsoft Copilot button removal) — dropped: slug doesn't embed publication date and snippet didn't surface explicit "today/yesterday/N hours ago" timestamp; per skill rules, ambiguous timestamps are dropped rather than guessed
