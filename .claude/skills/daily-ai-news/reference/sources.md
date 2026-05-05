@@ -1,63 +1,43 @@
-# Sources — 2026-05-03
+# Sources — 2026-05-05
 
-Generated: 2026-05-03 (Asia/Bangkok)
+Generated: 2026-05-05 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-02-brief.md (4 URLs loaded)
+Dedup against: articles/2026-05-04-brief.md (4 URLs loaded)
 
-1. **AI Is Coming for Your Job and Your Mind**
+1. **Anthropic launches new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ($1.5B JV)**
+   - Publisher: Anthropic
+   - URL: https://www.anthropic.com/news/enterprise-ai-services-company
+   - Published: May 4, 2026 (per multiple snippets confirming the announcement date)
+   - FreshnessCheck: ✅ within last 24h via WebSearch snippets dated "2026-05-04" across Bloomberg, TechCrunch, CNBC, Fortune, all referencing today's (May 4) announcement; Anthropic blog post confirmed as primary source.
+   - DedupCheck: ✅ URL anthropic.com/news/enterprise-ai-services-company not in YESTERDAYS_URLS (yesterday cited only techcrunch.com/2026/05/03/* and bloomberg.com/news/videos/2026-05-03/*; host anthropic.com not present yesterday)
+   - Verification: Tier 2 — WebSearch snippet (URL appeared in results for "site:anthropic.com news enterprise AI services May 2026"; trusted-sources.md lists Anthropic at https://www.anthropic.com/news)
+   - Summary: Anthropic, Blackstone, Hellman & Friedman, and Goldman Sachs launched a $1.5B AI-native enterprise services firm on May 4, 2026. Anchor partners commit $300M each (Anthropic, Blackstone, Hellman & Friedman); Goldman Sachs adds $150M as founding investor. Backed by Apollo, General Atlantic, Leonard Green, GIC, Sequoia. The venture embeds engineers inside customer companies to redesign workflows around Claude rather than acting as a traditional consulting firm; initial focus on PE-owned mid-sized firms in healthcare, manufacturing, financial services, retail, and real estate.
+
+2. **OpenAI finalizes $10 billion "The Deployment Company" joint venture with TPG, Brookfield, Advent, Bain, Goanna**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-05-02/ai-is-coming-for-your-job-and-your-mind
-   - Published: 2026-05-02 (per URL slug, confirmed by search snippet "published on May 2, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02 + multiple snippets stating "published on May 2, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were all 2026-05-01 articles; this is a different 2026-05-02 newsletter)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bloomberg newsletter เน้นมุมที่ "การปรับโครงสร้างครั้งใหญ่ได้เริ่มขึ้นแล้ว และมันไม่ดี" — สำรวจความกังวลเรื่องผลกระทบ AI ต่อ (1) ตลาดแรงงาน, (2) มูลค่าหุ้น, (3) ความต้องการไฟฟ้าและราคาไฟ, (4) โอกาสที่การลงทุน data center มหาศาลจะกลายเป็น "costly miscalculation" และ (5) ความเป็นไปได้ที่ AGI อาจนำไปสู่การสูญพันธุ์ของมนุษย์ในที่สุด
+   - URL: https://www.bloomberg.com/news/articles/2026-05-04/openai-finalizes-10-billion-joint-venture-with-pe-firms-to-deploy-ai
+   - Published: 2026-05-04 (date embedded in URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-05-04/`; multiple corroborating snippets (TechCrunch, SiliconANGLE, Axios, The Next Web) all dated 2026-05-04 confirm same-day announcement.
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's only Bloomberg URL was a video at /news/videos/2026-05-03/...; today's is an article at /news/articles/2026-05-04/...)
+   - Verification: Tier 2 — WebSearch snippet (URL surfaced in Bloomberg site-restricted search; bloomberg.com is on trusted-sources.md as "Bloomberg Technology")
+   - Summary: OpenAI closed a $10B vehicle "DeployCo" anchored by TPG with 19 investors including Brookfield, Bain Capital, Advent International, and Goanna Capital Management. OpenAI commits up to $1.5B (a $500M equity contribution at close, with an option for an additional $1B). The PE backers contributed roughly $4B combined. Reports cite a 17.5% guaranteed annual return over five years and super-voting shares retained by OpenAI. Like Anthropic's same-day venture, DeployCo will embed forward-deployed OpenAI engineers inside client organizations — a pattern long associated with Palantir.
 
-2. **AI-generated actors and scripts are now ineligible for Oscars**
+3. **Geothermal startup Fervo Energy seeks $1.3B IPO at up to $6.5B valuation, riding AI data-center power demand**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02; supporting snippet "The Academy released new Oscar rules on Friday"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not covered yesterday
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Academy ออกกฎใหม่ — เฉพาะการแสดงที่ "credited in the film's legal billing and demonstrably performed by humans with their consent" จึงจะมีสิทธิ์เข้าชิงรางวัลในหมวด acting; บทภาพยนตร์ต้อง "human-authored" จึงจะมีสิทธิ์ได้; Academy สงวนสิทธิ์ขอข้อมูลเพิ่มเติมเรื่องการใช้ AI และ "human authorship"; กฎจะเริ่มกับภาพยนตร์ที่ออกฉายในปี 2026
-
-3. **Chinese Court Bars Companies From Firing Workers Solely for AI Replacement**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-05-02/chinese-court-rules-firms-can-t-lay-off-workers-on-ai-grounds
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: ศาลจีนตัดสินยืนตามศาลล่าง — บริษัทไม่สามารถใช้เหตุ "AI เข้ามาแทน" เพื่อเลิกจ้างพนักงานเพื่อลดต้นทุนได้ คดีต้นเรื่องคือคุณ Zhou อดีต QA supervisor เงินเดือน 25,000 หยวน/เดือน ที่ถูกเสนอตำแหน่งใหม่ลดเงินเดือน 40% แล้วบอกเลิกสัญญาเมื่อปฏิเสธ ศาลกลางชี้ว่าเหตุผลที่บริษัทอ้างไม่เข้าข่าย "major change" และบริษัทไม่ได้แสดงให้เห็นว่าสัญญา "impossible to perform" — ตั้งบรรทัดฐานสำคัญด้านสิทธิแรงงานในยุค automation
-
-4. **Beyond Lovable and Mistral: 21 European startups to watch**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/beyond-lovable-and-mistral-21-european-startups-to-watch/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; new feature, not previously covered
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch รวบรวมความเห็นจาก VC ยุโรปและทีมงานเอง คัดเลือก 21 สตาร์ทอัพยุโรปที่ควรจับตา ตัวอย่าง: BottleCap AI (สตาร์ทอัพ AI สัญชาติเช็ก), Alta Ares (counter-drone AI ตอบโจทย์ความต้องการระบบตรวจจับและรับมือโดรนรุกล้ำราคาประหยัดในยุโรปหลังสงครามยูเครน), Apron (จัดการใบกำกับภาษีสำหรับ SMB), Botify (ช่วยแบรนด์เพิ่ม visibility ใน AI search) — ครอบคลุมตั้งแต่ pre-launch ถึง unicorn
-
-5. **The best AI dictation apps, tested and ranked**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch ทดสอบและจัดอันดับแอป AI dictation — Wispr Flow มาเป็นตัวเด่น รองรับ custom words/instructions, มีแอป native บน macOS, Windows และ iOS (Android อยู่ระหว่างพัฒนา) ปรับสไตล์ได้ "formal", "casual", "very casual" — มี free tier 2,000 คำ/สัปดาห์บน desktop และ 1,000 คำ/เดือนบน iOS, แพลนจ่ายเริ่ม $15/เดือนสำหรับ unlimited; แอปอื่นที่ติดอันดับได้แก่ Willow, Monologue, Superwhisper, VoiceTypr
+   - URL: https://techcrunch.com/2026/05/04/geothermal-startup-fervo-energy-to-raise-up-to-1-3b-in-ipo/
+   - Published: 2026-05-04 (date in URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/04/`; corroborated by Bloomberg (https://www.bloomberg.com/news/articles/2026-05-04/geothermal-energy-developer-fervo-seeks-1-33-billion-in-us-ipo) and Axios snippets all dated 2026-05-04.
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs were three /2026/05/03/... slugs about Harvard ER study, "This is fine" meme, and California DMV robotaxi rule; today's slug is different)
+   - Verification: Tier 2 — WebSearch snippet (URL appeared in techcrunch.com results; techcrunch.com is on trusted-sources.md as "TechCrunch (AI)")
+   - Summary: Fervo Energy announced its IPO terms on May 4, 2026 — pricing range $21–$24/share, raising up to $1.3B at up to $6.5B valuation, listing on Nasdaq under FRVO with pricing expected the week of May 11. Fervo has 3.65 GW under construction or in development (nearly doubling current US geothermal capacity); a 150-MW Nevada site is contracted to supply Google and NV Energy. The IPO frames geothermal as a structural answer to data-center power scarcity driven by AI capex.
 
 ## Dropped
 
-- https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/claude-ai-is-complicating-life-for-people-named-claude — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/ready-or-not-the-ai-phones-are-coming — Filter A (slug 2026-05-01 falls outside the rolling 24h window measured from now on 2026-05-03)
-- https://www.bloomberg.com/news/articles/2026-05-01/meta-acquires-assured-robot-intelligence-to-help-build-humanoid-technology — Filter A (slug 2026-05-01 outside rolling 24h)
-- https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html — Filter A (slug 2026/05/01 outside 24h) and CNBC not on trusted-sources.md
-- https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic — Filter A + CNN not on trusted-sources.md
-- https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html — Filter A (April 14, well outside 24h)
-- https://www.bloomberg.com/news/articles/2026-05-01/mckinsey-plans-to-use-ai-agents-to-help-choose-client-teams — Filter A (slug 2026-05-01 outside 24h)
-- Blognone candidates (e.g. node/150418 about Microsoft Copilot button removal) — dropped: slug doesn't embed publication date and snippet didn't surface explicit "today/yesterday/N hours ago" timestamp; per skill rules, ambiguous timestamps are dropped rather than guessed
+- https://www.ghacks.net/2026/05/04/pentagon-signs-ai-deals-with-openai-google-microsoft-nvidia-and-others-cutting-out-anthropic/ — domain not on trusted-sources.md
+- https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/ — Filter A: URL slug `/2026/05/01/` is 4 days old; the May 4 follow-up coverage from gHacks/Yahoo is on non-trusted domains.
+- https://www.blognone.com/node/150409 (Thai — Pentagon excludes Anthropic) — Filter A: snippet places publication around May 2, 2026, outside the 24h window.
+- https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/ — fresh and trusted, but redundant with stories 1+2 above (same news event from a meta-frame angle); kept items 1 and 2 as primary-source anchors instead.
+- https://www.bloomberg.com/news/articles/2026-05-04/goldman-blackstone-partner-with-anthropic-on-ai-services-firm — fresh and trusted, but redundant with story 1 (same announcement, secondary coverage).
+
+> Note: 3 items passed both filters this run. Of ~10 strong candidates surfaced, ~3 failed Filter A (older than 24h), ~2 failed domain trust (non-trusted publishers), and ~2 were dropped to avoid redundancy with higher-tier primary-source anchors.
