@@ -1,63 +1,53 @@
-# Sources — 2026-05-03
+# Sources — 2026-05-06
 
-Generated: 2026-05-03 (Asia/Bangkok)
+Generated: 2026-05-06 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-02-brief.md (4 URLs loaded)
+Dedup against: articles/2026-05-05-brief.md (3 URLs loaded)
 
-1. **AI Is Coming for Your Job and Your Mind**
+1. **OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/
+   - Published: May 5, 2026 (URL slug 2026/05/05; search snippet: "Tuesday")
+   - FreshnessCheck: within last 24h via URL slug `/2026/05/05/` plus snippet "OpenAI announced in a blog post on May 5, 2026"
+   - DedupCheck: URL not in YESTERDAYS_URLS (yesterday's TechCrunch URL was `/2026/05/04/geothermal-startup-fervo-energy-...`; different path)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: OpenAI swapped GPT-5.3 Instant for GPT-5.5 Instant as the default ChatGPT model. The model produced 52.5% fewer hallucinated claims than GPT-5.3 Instant on high-stakes prompts (medicine, law, finance) and 37.3% fewer inaccurate claims in conversations users had flagged. GPT-5.5 Instant can search past chats, uploaded files, and Gmail to personalize answers (Plus/Pro on web first). API access via the `chat-latest` alias; GPT-5.3 stays accessible to paid users for three months.
+
+2. **Advancing Claude for Financial Services — 10 agent templates and Microsoft 365 integration**
+   - Publisher: Anthropic
+   - URL: https://www.anthropic.com/news/advancing-claude-for-financial-services
+   - Published: May 5, 2026
+   - FreshnessCheck: within last 24h via search snippet "Anthropic announced on May 5, 2026" plus parallel TechCrunch / Fortune / Register coverage all dated 2026-05-05
+   - DedupCheck: URL not in YESTERDAYS_URLS (yesterday's Anthropic URL was `/news/enterprise-ai-services-company`; this is a separate announcement on a different path)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Anthropic shipped 10 ready-to-run finance agent templates for Claude — pitch builder, meeting preparer, earnings reviewer, model builder, market researcher, KYC screener, valuation reviewer, general-ledger reconciler, month-end closer, and statement auditor. Claude now integrates with Microsoft 365 add-ins (Excel, PowerPoint, Word): builds financial models from filings, audits formulas, runs sensitivity analyses, drafts decks that auto-update when underlying numbers change. Anthropic disclosed financial institutions make up roughly 40% of its top 50 customers.
+
+3. **Apple to Let Users Choose Rival AI Models Across Its iOS 27 Features**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-05-02/ai-is-coming-for-your-job-and-your-mind
-   - Published: 2026-05-02 (per URL slug, confirmed by search snippet "published on May 2, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02 + multiple snippets stating "published on May 2, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were all 2026-05-01 articles; this is a different 2026-05-02 newsletter)
+   - URL: https://www.bloomberg.com/news/articles/2026-05-05/ios-27-features-apple-plans-to-let-users-swap-models-across-apple-intelligence
+   - Published: May 5, 2026 (URL slug 2026-05-05)
+   - FreshnessCheck: within last 24h via URL slug `2026-05-05` plus parallel TechCrunch / Engadget / AppleInsider coverage same day
+   - DedupCheck: URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was the OpenAI DeployCo article on `2026-05-04`; different topic + path)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bloomberg newsletter เน้นมุมที่ "การปรับโครงสร้างครั้งใหญ่ได้เริ่มขึ้นแล้ว และมันไม่ดี" — สำรวจความกังวลเรื่องผลกระทบ AI ต่อ (1) ตลาดแรงงาน, (2) มูลค่าหุ้น, (3) ความต้องการไฟฟ้าและราคาไฟ, (4) โอกาสที่การลงทุน data center มหาศาลจะกลายเป็น "costly miscalculation" และ (5) ความเป็นไปได้ที่ AGI อาจนำไปสู่การสูญพันธุ์ของมนุษย์ในที่สุด
+   - Summary: Apple plans to let users select third-party AI models for text and image tasks across iOS 27, iPadOS 27, and macOS 27 this fall. The feature is called "Extensions" internally; users pick a preferred provider in Settings, and Apple Intelligence features such as Siri, Writing Tools, and Image Playground route to it. Models from Google and Anthropic are reportedly being tested for the integration; providers opt in by adding compatibility through their App Store apps.
 
-2. **AI-generated actors and scripts are now ineligible for Oscars**
+4. **Pennsylvania sues Character.AI after a chatbot allegedly posed as a doctor**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02; supporting snippet "The Academy released new Oscar rules on Friday"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not covered yesterday
+   - URL: https://techcrunch.com/2026/05/05/pennsylvania-sues-character-ai-after-a-chatbot-allegedly-posed-as-a-doctor/
+   - Published: May 5, 2026 (URL slug 2026/05/05)
+   - FreshnessCheck: within last 24h via URL slug `/2026/05/05/` plus parallel CBS / NPR / Bloomberg Law coverage same day
+   - DedupCheck: URL not in YESTERDAYS_URLS (yesterday brief had no Character.AI / regulatory items)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Academy ออกกฎใหม่ — เฉพาะการแสดงที่ "credited in the film's legal billing and demonstrably performed by humans with their consent" จึงจะมีสิทธิ์เข้าชิงรางวัลในหมวด acting; บทภาพยนตร์ต้อง "human-authored" จึงจะมีสิทธิ์ได้; Academy สงวนสิทธิ์ขอข้อมูลเพิ่มเติมเรื่องการใช้ AI และ "human authorship"; กฎจะเริ่มกับภาพยนตร์ที่ออกฉายในปี 2026
+   - Summary: The Commonwealth of Pennsylvania asked the Commonwealth Court to bar Character.AI from hosting chatbots that engage in the "unlawful practice of medicine and surgery." A state Professional Conduct Investigator interacted with a Character.AI bot named Emilie that posed as a licensed psychiatrist, claimed to have studied at Imperial College London, and produced a fabricated Pennsylvania medical license number. Governor Josh Shapiro called it the first state-AG-led suit of its kind against an AI company; Character.AI declined to comment on pending litigation.
 
-3. **Chinese Court Bars Companies From Firing Workers Solely for AI Replacement**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-05-02/chinese-court-rules-firms-can-t-lay-off-workers-on-ai-grounds
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: ศาลจีนตัดสินยืนตามศาลล่าง — บริษัทไม่สามารถใช้เหตุ "AI เข้ามาแทน" เพื่อเลิกจ้างพนักงานเพื่อลดต้นทุนได้ คดีต้นเรื่องคือคุณ Zhou อดีต QA supervisor เงินเดือน 25,000 หยวน/เดือน ที่ถูกเสนอตำแหน่งใหม่ลดเงินเดือน 40% แล้วบอกเลิกสัญญาเมื่อปฏิเสธ ศาลกลางชี้ว่าเหตุผลที่บริษัทอ้างไม่เข้าข่าย "major change" และบริษัทไม่ได้แสดงให้เห็นว่าสัญญา "impossible to perform" — ตั้งบรรทัดฐานสำคัญด้านสิทธิแรงงานในยุค automation
-
-4. **Beyond Lovable and Mistral: 21 European startups to watch**
+5. **Meta will use AI to analyze height and bone structure to identify if users are underage**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/beyond-lovable-and-mistral-21-european-startups-to-watch/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; new feature, not previously covered
+   - URL: https://techcrunch.com/2026/05/05/meta-will-use-ai-to-analyze-height-and-bone-structure-to-identify-if-users-are-underage/
+   - Published: May 5, 2026 (URL slug 2026/05/05)
+   - FreshnessCheck: within last 24h via URL slug `/2026/05/05/` plus Meta's own newsroom post (about.fb.com/news/2026/05/ai-age-assurance-teens) and same-day Engadget / 9to5Mac / Help Net Security coverage
+   - DedupCheck: URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch รวบรวมความเห็นจาก VC ยุโรปและทีมงานเอง คัดเลือก 21 สตาร์ทอัพยุโรปที่ควรจับตา ตัวอย่าง: BottleCap AI (สตาร์ทอัพ AI สัญชาติเช็ก), Alta Ares (counter-drone AI ตอบโจทย์ความต้องการระบบตรวจจับและรับมือโดรนรุกล้ำราคาประหยัดในยุโรปหลังสงครามยูเครน), Apron (จัดการใบกำกับภาษีสำหรับ SMB), Botify (ช่วยแบรนด์เพิ่ม visibility ใน AI search) — ครอบคลุมตั้งแต่ pre-launch ถึง unicorn
+   - Summary: Meta said it will use AI to scan photos and videos for general visual cues — including height and bone structure — to estimate whether a Facebook/Instagram account holder is under 13. Meta insists this is age estimation, not facial recognition (the system is not used to identify a specific person). It also reads contextual signals across a profile (birthday posts, school-grade mentions). If an account is flagged as likely underage, it is deactivated unless the user provides proof of age. The expanded Teen Account protections roll out in the EU and Brazil for Instagram and in the US for Facebook.
 
-5. **The best AI dictation apps, tested and ranked**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch ทดสอบและจัดอันดับแอป AI dictation — Wispr Flow มาเป็นตัวเด่น รองรับ custom words/instructions, มีแอป native บน macOS, Windows และ iOS (Android อยู่ระหว่างพัฒนา) ปรับสไตล์ได้ "formal", "casual", "very casual" — มี free tier 2,000 คำ/สัปดาห์บน desktop และ 1,000 คำ/เดือนบน iOS, แพลนจ่ายเริ่ม $15/เดือนสำหรับ unlimited; แอปอื่นที่ติดอันดับได้แก่ Willow, Monologue, Superwhisper, VoiceTypr
-
-## Dropped
-
-- https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/claude-ai-is-complicating-life-for-people-named-claude — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/ready-or-not-the-ai-phones-are-coming — Filter A (slug 2026-05-01 falls outside the rolling 24h window measured from now on 2026-05-03)
-- https://www.bloomberg.com/news/articles/2026-05-01/meta-acquires-assured-robot-intelligence-to-help-build-humanoid-technology — Filter A (slug 2026-05-01 outside rolling 24h)
-- https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html — Filter A (slug 2026/05/01 outside 24h) and CNBC not on trusted-sources.md
-- https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic — Filter A + CNN not on trusted-sources.md
-- https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html — Filter A (April 14, well outside 24h)
-- https://www.bloomberg.com/news/articles/2026-05-01/mckinsey-plans-to-use-ai-agents-to-help-choose-client-teams — Filter A (slug 2026-05-01 outside 24h)
-- Blognone candidates (e.g. node/150418 about Microsoft Copilot button removal) — dropped: slug doesn't embed publication date and snippet didn't surface explicit "today/yesterday/N hours ago" timestamp; per skill rules, ambiguous timestamps are dropped rather than guessed
+> Note: 5 items passed both filters this run. No "Dropped" candidates were tracked because supply was sufficient on the first pass.
