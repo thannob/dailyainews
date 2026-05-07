@@ -1,63 +1,56 @@
-# Sources — 2026-05-03
+# Sources — 2026-05-07
 
-Generated: 2026-05-03 (Asia/Bangkok)
+Generated: 2026-05-07 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-02-brief.md (4 URLs loaded)
+Dedup against: articles/2026-05-06-brief.md (5 URLs loaded)
 
-1. **AI Is Coming for Your Job and Your Mind**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-05-02/ai-is-coming-for-your-job-and-your-mind
-   - Published: 2026-05-02 (per URL slug, confirmed by search snippet "published on May 2, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02 + multiple snippets stating "published on May 2, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were all 2026-05-01 articles; this is a different 2026-05-02 newsletter)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bloomberg newsletter เน้นมุมที่ "การปรับโครงสร้างครั้งใหญ่ได้เริ่มขึ้นแล้ว และมันไม่ดี" — สำรวจความกังวลเรื่องผลกระทบ AI ต่อ (1) ตลาดแรงงาน, (2) มูลค่าหุ้น, (3) ความต้องการไฟฟ้าและราคาไฟ, (4) โอกาสที่การลงทุน data center มหาศาลจะกลายเป็น "costly miscalculation" และ (5) ความเป็นไปได้ที่ AGI อาจนำไปสู่การสูญพันธุ์ของมนุษย์ในที่สุด
+1. **Anthropic ทำข้อตกลงเช่าศูนย์ข้อมูล Colossus 1 ของ SpaceX/xAI ทั้งหมด — เพิ่มโควต้า Claude Pro/Max**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/150457
+   - Published: 2026-05-06 (announcement day; mirrors TechCrunch /2026/05/06/ "Is xAI a neocloud now?")
+   - FreshnessCheck: ✅ within last 24h via Blognone snippet describing the same May 6 announcement (300 MW + 220,000 NVIDIA GPUs effective "this month") which other trusted-source slugs date to 2026-05-06
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief had no Blognone entries; topic was not covered)
+   - Verification: Tier 2 — WebSearch snippet (Blognone)
+   - Summary: Anthropic ทำข้อตกลงใช้กำลังประมวลผลทั้งหมดของศูนย์ข้อมูล Colossus 1 ของ SpaceX/xAI — กว่า 300 MW และ NVIDIA GPU มากกว่า 220,000 ตัว (H100, H200, GB200) เริ่มภายในเดือนนี้ เพื่อขยายโควต้าผู้ใช้ Claude Pro และ Claude Max; SpaceX/xAI จะย้ายโมเดลตัวเองไปรันบน Colossus 2 แทน
 
-2. **AI-generated actors and scripts are now ineligible for Oscars**
+2. **Apple to pay $250M to settle lawsuit over Siri's delayed AI features**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02; supporting snippet "The Academy released new Oscar rules on Friday"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not covered yesterday
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Academy ออกกฎใหม่ — เฉพาะการแสดงที่ "credited in the film's legal billing and demonstrably performed by humans with their consent" จึงจะมีสิทธิ์เข้าชิงรางวัลในหมวด acting; บทภาพยนตร์ต้อง "human-authored" จึงจะมีสิทธิ์ได้; Academy สงวนสิทธิ์ขอข้อมูลเพิ่มเติมเรื่องการใช้ AI และ "human authorship"; กฎจะเริ่มกับภาพยนตร์ที่ออกฉายในปี 2026
+   - URL: https://techcrunch.com/2026/05/06/apple-to-pay-250m-to-settle-lawsuit-over-siris-delayed-ai-features/
+   - Published: 2026-05-06 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/06/` (TechCrunch publishes by US Pacific Time; May 6 PT = May 6 evening → May 7 afternoon Asia/Bangkok)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Apple story was a different URL — Bloomberg "iOS 27 Extensions"; this is a separate class-action settlement story)
+   - Verification: Tier 2 — WebSearch snippet (TechCrunch)
+   - Summary: Apple ตกลงจ่าย $250M ระงับคดีความแบบ class-action ที่กล่าวหาว่าโฆษณาเกินจริงเรื่องฟีเจอร์ Apple Intelligence / Siri ที่ประกาศใน WWDC 2024 — ครอบคลุมเครื่อง Apple Intelligence-capable ที่ซื้อระหว่าง 10 มิ.ย. 2024 ถึง 29 มี.ค. 2025 ในสหรัฐ จ่ายราว $25 ต่อเครื่อง สูงสุด $95 ต่อเครื่อง
 
-3. **Chinese Court Bars Companies From Firing Workers Solely for AI Replacement**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-05-02/chinese-court-rules-firms-can-t-lay-off-workers-on-ai-grounds
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: ศาลจีนตัดสินยืนตามศาลล่าง — บริษัทไม่สามารถใช้เหตุ "AI เข้ามาแทน" เพื่อเลิกจ้างพนักงานเพื่อลดต้นทุนได้ คดีต้นเรื่องคือคุณ Zhou อดีต QA supervisor เงินเดือน 25,000 หยวน/เดือน ที่ถูกเสนอตำแหน่งใหม่ลดเงินเดือน 40% แล้วบอกเลิกสัญญาเมื่อปฏิเสธ ศาลกลางชี้ว่าเหตุผลที่บริษัทอ้างไม่เข้าข่าย "major change" และบริษัทไม่ได้แสดงให้เห็นว่าสัญญา "impossible to perform" — ตั้งบรรทัดฐานสำคัญด้านสิทธิแรงงานในยุค automation
-
-4. **Beyond Lovable and Mistral: 21 European startups to watch**
+3. **Khosla-backed Genesis AI unveils GENE-26.5, goes full-stack robotics**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/beyond-lovable-and-mistral-21-european-startups-to-watch/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; new feature, not previously covered
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch รวบรวมความเห็นจาก VC ยุโรปและทีมงานเอง คัดเลือก 21 สตาร์ทอัพยุโรปที่ควรจับตา ตัวอย่าง: BottleCap AI (สตาร์ทอัพ AI สัญชาติเช็ก), Alta Ares (counter-drone AI ตอบโจทย์ความต้องการระบบตรวจจับและรับมือโดรนรุกล้ำราคาประหยัดในยุโรปหลังสงครามยูเครน), Apron (จัดการใบกำกับภาษีสำหรับ SMB), Botify (ช่วยแบรนด์เพิ่ม visibility ใน AI search) — ครอบคลุมตั้งแต่ pre-launch ถึง unicorn
+   - URL: https://techcrunch.com/2026/05/06/khosla-backed-robotics-startup-genesis-ai-has-gone-full-stack-demo-shows/
+   - Published: 2026-05-06 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/06/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (new story; topic not in yesterday's brief)
+   - Verification: Tier 2 — WebSearch snippet (TechCrunch + corroborating snippets from PR Newswire / The Robot Report)
+   - Summary: Genesis AI สตาร์ตอัพหุ่นยนต์ที่รับเงิน seed $105M เปิดตัว GENE-26.5 — โมเดล foundational AI สำหรับ robot manipulation พร้อมเดโมมือหุ่นยนต์ทำอาหาร, ห้องแล็บ, Rubik's cube, ปั่นสมูทตี้, จัด wire harness, เล่นเปียโน — ใช้ model + hardware + data pipeline ตัวเดียว และทำเอง (full stack)
 
-5. **The best AI dictation apps, tested and ranked**
+4. **Google AI Search adds "Expert Advice" — quotes from Reddit, forums, social media**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch ทดสอบและจัดอันดับแอป AI dictation — Wispr Flow มาเป็นตัวเด่น รองรับ custom words/instructions, มีแอป native บน macOS, Windows และ iOS (Android อยู่ระหว่างพัฒนา) ปรับสไตล์ได้ "formal", "casual", "very casual" — มี free tier 2,000 คำ/สัปดาห์บน desktop และ 1,000 คำ/เดือนบน iOS, แพลนจ่ายเริ่ม $15/เดือนสำหรับ unlimited; แอปอื่นที่ติดอันดับได้แก่ Willow, Monologue, Superwhisper, VoiceTypr
+   - URL: https://techcrunch.com/2026/05/06/google-updates-ai-search-to-include-expert-advice-from-reddit-and-other-web-forums/
+   - Published: 2026-05-06 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/06/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (new story; topic not covered yesterday)
+   - Verification: Tier 2 — WebSearch snippet (TechCrunch + Engadget + Slashdot corroboration)
+   - Summary: Google อัปเดต AI Overviews และ AI Mode ให้แสดงกล่อง "Expert Advice" ที่ดึง quote จาก Reddit, ฟอรัม, WordPress blog และ social media พร้อมแสดงชื่อผู้สร้าง / community / handle เพื่อให้ผู้ใช้ตัดสินใจคลิกต่อ; ปลายคำตอบ AI จะมีลิงก์ in-depth article ให้อ่านต่อด้วย
+
+5. **DeepSeek targets $45B valuation in first VC round, led by China's "Big Fund"**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/06/deepseek-could-hit-45b-valuation-from-its-first-investment-round/
+   - Published: 2026-05-06 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/06/` (corroborated by Bloomberg /2026-05-06/ same day)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (new story; not covered yesterday)
+   - Verification: Tier 2 — WebSearch snippet (TechCrunch + Bloomberg + FT corroboration)
+   - Summary: DeepSeek กำลังเจรจา VC round แรก โดยมี China Integrated Circuit Industry Investment Fund ("Big Fund") ของรัฐนำการลงทุน มูลค่ากิจการพุ่งจาก ~$20B เป็น ~$45B ภายในไม่กี่สัปดาห์; รายงานระบุว่าจะระดมไม่ต่ำกว่า $300M และมี Tencent กับ Alibaba อยู่ในการเจรจาด้วย
 
 ## Dropped
+- (none) — all 5 selected candidates passed Filter A and Filter B on second pass.
 
-- https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/claude-ai-is-complicating-life-for-people-named-claude — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/ready-or-not-the-ai-phones-are-coming — Filter A (slug 2026-05-01 falls outside the rolling 24h window measured from now on 2026-05-03)
-- https://www.bloomberg.com/news/articles/2026-05-01/meta-acquires-assured-robot-intelligence-to-help-build-humanoid-technology — Filter A (slug 2026-05-01 outside rolling 24h)
-- https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html — Filter A (slug 2026/05/01 outside 24h) and CNBC not on trusted-sources.md
-- https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic — Filter A + CNN not on trusted-sources.md
-- https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html — Filter A (April 14, well outside 24h)
-- https://www.bloomberg.com/news/articles/2026-05-01/mckinsey-plans-to-use-ai-agents-to-help-choose-client-teams — Filter A (slug 2026-05-01 outside 24h)
-- Blognone candidates (e.g. node/150418 about Microsoft Copilot button removal) — dropped: slug doesn't embed publication date and snippet didn't surface explicit "today/yesterday/N hours ago" timestamp; per skill rules, ambiguous timestamps are dropped rather than guessed
+> Note: 5 items passed both filters this run. Of 6 surfaced TechCrunch candidates with `/2026/05/06/` slugs, 1 (SpaceX "Terafab" Texas chip-fab story) was deprioritised in selection to keep AI-application focus over semiconductor capex; 0 failed Filter A; 0 failed Filter B.
