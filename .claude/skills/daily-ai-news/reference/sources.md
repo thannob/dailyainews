@@ -1,63 +1,53 @@
-# Sources — 2026-05-03
+# Sources — 2026-05-08
 
-Generated: 2026-05-03 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-05-08 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe https://example.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-02-brief.md (4 URLs loaded)
+Dedup against: articles/2026-05-07-brief.md (5 URLs loaded)
 
-1. **AI Is Coming for Your Job and Your Mind**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-05-02/ai-is-coming-for-your-job-and-your-mind
-   - Published: 2026-05-02 (per URL slug, confirmed by search snippet "published on May 2, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02 + multiple snippets stating "published on May 2, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were all 2026-05-01 articles; this is a different 2026-05-02 newsletter)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bloomberg newsletter เน้นมุมที่ "การปรับโครงสร้างครั้งใหญ่ได้เริ่มขึ้นแล้ว และมันไม่ดี" — สำรวจความกังวลเรื่องผลกระทบ AI ต่อ (1) ตลาดแรงงาน, (2) มูลค่าหุ้น, (3) ความต้องการไฟฟ้าและราคาไฟ, (4) โอกาสที่การลงทุน data center มหาศาลจะกลายเป็น "costly miscalculation" และ (5) ความเป็นไปได้ที่ AGI อาจนำไปสู่การสูญพันธุ์ของมนุษย์ในที่สุด
-
-2. **AI-generated actors and scripts are now ineligible for Oscars**
+1. **OpenAI launches new voice intelligence features in its API**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02; supporting snippet "The Academy released new Oscar rules on Friday"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not covered yesterday
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Academy ออกกฎใหม่ — เฉพาะการแสดงที่ "credited in the film's legal billing and demonstrably performed by humans with their consent" จึงจะมีสิทธิ์เข้าชิงรางวัลในหมวด acting; บทภาพยนตร์ต้อง "human-authored" จึงจะมีสิทธิ์ได้; Academy สงวนสิทธิ์ขอข้อมูลเพิ่มเติมเรื่องการใช้ AI และ "human authorship"; กฎจะเริ่มกับภาพยนตร์ที่ออกฉายในปี 2026
+   - URL: https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/
+   - Published: 2026-05-07 (per URL slug + search snippet "On May 7, 2026, Greg Brockman… shared via Twitter that developers can now build advanced voice agents using the new GPT-Realtime-2 reasoning model")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/07/` and corroborating snippet date "May 7, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs were all `/2026/05/06/...`)
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources allow-list)
+   - Summary: OpenAI rolled out three new realtime audio models — GPT-Realtime-2 (voice with GPT-5-class reasoning, 128k context), GPT-Realtime-Translate (live speech translation, 70+ input → 13 output languages), and GPT-Realtime-Whisper (streaming speech-to-text). Pricing: GPT-Realtime-2 at $32/1M audio input ($0.40 cached) and $64/1M audio output tokens; Translate $0.034/min; Whisper $0.017/min.
 
-3. **Chinese Court Bars Companies From Firing Workers Solely for AI Replacement**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-05-02/chinese-court-rules-firms-can-t-lay-off-workers-on-ai-grounds
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: ศาลจีนตัดสินยืนตามศาลล่าง — บริษัทไม่สามารถใช้เหตุ "AI เข้ามาแทน" เพื่อเลิกจ้างพนักงานเพื่อลดต้นทุนได้ คดีต้นเรื่องคือคุณ Zhou อดีต QA supervisor เงินเดือน 25,000 หยวน/เดือน ที่ถูกเสนอตำแหน่งใหม่ลดเงินเดือน 40% แล้วบอกเลิกสัญญาเมื่อปฏิเสธ ศาลกลางชี้ว่าเหตุผลที่บริษัทอ้างไม่เข้าข่าย "major change" และบริษัทไม่ได้แสดงให้เห็นว่าสัญญา "impossible to perform" — ตั้งบรรทัดฐานสำคัญด้านสิทธิแรงงานในยุค automation
-
-4. **Beyond Lovable and Mistral: 21 European startups to watch**
+2. **OpenAI introduces new "Trusted Contact" safeguard for cases of possible self-harm**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/beyond-lovable-and-mistral-21-european-startups-to-watch/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; new feature, not previously covered
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch รวบรวมความเห็นจาก VC ยุโรปและทีมงานเอง คัดเลือก 21 สตาร์ทอัพยุโรปที่ควรจับตา ตัวอย่าง: BottleCap AI (สตาร์ทอัพ AI สัญชาติเช็ก), Alta Ares (counter-drone AI ตอบโจทย์ความต้องการระบบตรวจจับและรับมือโดรนรุกล้ำราคาประหยัดในยุโรปหลังสงครามยูเครน), Apron (จัดการใบกำกับภาษีสำหรับ SMB), Botify (ช่วยแบรนด์เพิ่ม visibility ใน AI search) — ครอบคลุมตั้งแต่ pre-launch ถึง unicorn
-
-5. **The best AI dictation apps, tested and ranked**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
+   - URL: https://techcrunch.com/2026/05/07/openai-introduces-new-trusted-contact-safeguard-for-cases-of-possible-self-harm/
+   - Published: 2026-05-07 (per URL slug + snippet "OpenAI announced a new feature called Trusted Contact")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/07/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch ทดสอบและจัดอันดับแอป AI dictation — Wispr Flow มาเป็นตัวเด่น รองรับ custom words/instructions, มีแอป native บน macOS, Windows และ iOS (Android อยู่ระหว่างพัฒนา) ปรับสไตล์ได้ "formal", "casual", "very casual" — มี free tier 2,000 คำ/สัปดาห์บน desktop และ 1,000 คำ/เดือนบน iOS, แพลนจ่ายเริ่ม $15/เดือนสำหรับ unlimited; แอปอื่นที่ติดอันดับได้แก่ Willow, Monologue, Superwhisper, VoiceTypr
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com)
+   - Summary: OpenAI announced Trusted Contact, a feature that lets adult ChatGPT users designate a third party who is alerted with an automated message if mentions of self-harm appear in a conversation. Designed as a safety escalation channel rather than an emergency-services trigger.
+
+3. **Spotify wants to become the home for AI-generated personal audio**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/07/spotify-wants-to-become-the-home-for-ai-generated-personal-audio/
+   - Published: 2026-05-07 (per URL slug + snippet "Spotify is now letting users access AI-generated podcasts based on existing material within its app")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/07/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com)
+   - Summary: Spotify launched a CLI tool that lets users generate personal podcasts via OpenAI Codex, Anthropic Claude Code, or "OpenClaw" and import them into the Spotify app. The move positions Spotify as a distribution surface for AI-generated personal audio rather than just licensed/creator content.
+
+4. **Google's $9.99-per-month AI health coach launches May 19**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/
+   - Published: 2026-05-07 (per URL slug + snippet "Google rebranded its Fitbit app as Google Health and launched an AI-powered health coach as a subscription service")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/07/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com)
+   - Summary: Google rebranded the Fitbit app to "Google Health" and bundled an AI-powered fitness coach into a new Google Health Premium subscription priced at $9.99/month or $99/year, going globally available May 19, 2026.
 
 ## Dropped
 
-- https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/claude-ai-is-complicating-life-for-people-named-claude — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/ready-or-not-the-ai-phones-are-coming — Filter A (slug 2026-05-01 falls outside the rolling 24h window measured from now on 2026-05-03)
-- https://www.bloomberg.com/news/articles/2026-05-01/meta-acquires-assured-robot-intelligence-to-help-build-humanoid-technology — Filter A (slug 2026-05-01 outside rolling 24h)
-- https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html — Filter A (slug 2026/05/01 outside 24h) and CNBC not on trusted-sources.md
-- https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic — Filter A + CNN not on trusted-sources.md
-- https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html — Filter A (April 14, well outside 24h)
-- https://www.bloomberg.com/news/articles/2026-05-01/mckinsey-plans-to-use-ai-agents-to-help-choose-client-teams — Filter A (slug 2026-05-01 outside 24h)
-- Blognone candidates (e.g. node/150418 about Microsoft Copilot button removal) — dropped: slug doesn't embed publication date and snippet didn't surface explicit "today/yesterday/N hours ago" timestamp; per skill rules, ambiguous timestamps are dropped rather than guessed
+- https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/ — domain not on trusted-sources.md (only `microsoft.com/en-us/research/blog/` is allow-listed; `blogs.microsoft.com/on-the-issues` is not)
+- https://asia.nikkei.com/business/technology/artificial-intelligence/softbank-in-talks-with-nvidia-to-build-made-in-japan-ai-servers — Nikkei not on trusted-sources.md; could not locate a verified Reuters URL in search results, only syndicators (Yahoo Finance, MarketScreener)
+- https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/ — Filter A (>24h): URL slug 2026-05-04
+- https://techcrunch.com/2026/05/05/meta-will-use-ai-to-analyze-height-and-bone-structure-to-identify-if-users-are-underage/ — Filter A (>24h): URL slug 2026-05-05
+- https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/ — Filter A (>24h) AND Fortune not on trusted-sources allow-list
+- https://www.aljazeera.com/economy/2026/5/6/spacex-backs-anthropic-with-data-centre-deal-amidst-musks-openai-lawsuit — Al Jazeera not on trusted-sources allow-list AND topic was already in YESTERDAYS_URLS via Blognone
+
+> Note: 4 items passed both filters this run. Of ~10 candidates surveyed, 4 failed Filter A (>24h), 0 failed Filter B (URL dedup), 2 were dropped because the publisher domain is not on trusted-sources.md.
