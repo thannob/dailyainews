@@ -1,31 +1,25 @@
-# Perspectives — 2026-05-03
+# Perspectives — 2026-05-09
 
-## 1. AI Is Coming for Your Job and Your Mind (Bloomberg newsletter, 2026-05-02)
+## 1. Airbnb says AI now writes 60% of its new code
 
-**อาจารย์ (มหาวิทยาลัย):** บทความนี้ดีในแง่เป็น "synoptic view" ที่นักศึกษาควรอ่านครั้งเดียวให้เห็น 5 ความเสี่ยงพร้อมกัน — ตลาดแรงงาน, valuation ของหุ้นเทค, demand ไฟฟ้า, ความเสี่ยงที่ capex data center จะ misallocate และ existential risk ของ AGI; ใช้เป็น case study สำหรับวิชา technology policy ได้ทันที
-**ผู้เชี่ยวชาญด้าน AI:** น่าสังเกตว่า Bloomberg วาง 5 ประเด็นนี้ในระดับเดียวกัน — ในเชิงเทคนิค ความเสี่ยง 4 ข้อแรก (jobs / stocks / power / capex) มีหลักฐานเชิงปริมาณตรวจสอบได้ ส่วน existential risk ของ AGI ยังเป็น speculative; ต้องระวังไม่ให้เนื้อหาของสองชั้นนี้ปนเป็นข้อสรุปเดียวกัน
-**โปรแกรมเมอร์มืออาชีพ:** ประเด็น compute capex ที่อาจกลายเป็น "costly miscalculation" สำคัญมากสำหรับคนทำ infra — ถ้า hyperscaler ลด capex ปีหน้า ราคา GPU/TPU rental และ rate limit ของ API จะแกว่งหนักทันที ควรล็อคสัญญาราคาในแอปที่ขึ้นกับ inference cost ตั้งแต่ตอนนี้
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลข 60% เป็นจุดดีในการสอนเรื่อง "metric ที่บอกอะไร / ไม่บอกอะไร" — มันคือ proportion ของบรรทัดที่ผ่าน AI tool, ไม่ใช่ measure ของ design judgement; นักศึกษาควรเข้าใจว่าการ "เขียนโค้ดได้ผ่าน LLM" กับ "ออกแบบระบบที่ถูกต้องและรับผิดชอบได้" เป็นสองทักษะที่แตกต่างกันชัดเจน
+**ผู้เชี่ยวชาญด้าน AI:** ที่ Airbnb พูดสอดคล้องกับ Google (>30%) และ Microsoft (~30%) — สิ่งใหม่ไม่ใช่ตัวเลข แต่คือการที่ engineering manager กลับมาเขียนโค้ด เพราะ Claude Code/Codex ลด context-switching cost ระหว่าง "review" กับ "implement"; นี่เปลี่ยน org structure มากกว่า productivity metric
+**โปรแกรมเมอร์มืออาชีพ:** practical takeaway — ถ้าทีมยังให้ junior engineer "เขียนโค้ดเอง" อย่างเดียวเพื่อฝึกพื้นฐาน เริ่มหลงยุค; ควรย้ายไปฝึก review skill, debugging AI-generated code, และการเขียน prompt/spec ที่ชัดเจนแทน เพราะ baseline workflow ของบริษัทระดับ Airbnb เปลี่ยนไปแล้ว
 
-## 2. AI-generated actors and scripts ineligible for Oscars (TechCrunch, 2026-05-02)
+## 2. Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high
 
-**อาจารย์ (มหาวิทยาลัย):** กฎใหม่ของ Academy เป็นกรณีศึกษาชั้นดีสำหรับวิชา media law / IP / professional ethics — เพราะวาง "human authorship" และ "demonstrably performed by humans with consent" เป็นเกณฑ์เชิงสถาบัน ไม่ใช่แค่ใน abstract
-**ผู้เชี่ยวชาญด้าน AI:** ปัญหาเชิง enforcement น่าสนใจ — Academy บอกว่ามีสิทธิ์ขอข้อมูลเพิ่มเติมเรื่องการใช้ AI แต่ในทางปฏิบัติการพิสูจน์ว่าฉากใดผ่าน generative AI หรือผ่าน "AI-assisted" tool ไม่เหมือนกัน ต้องมี audit trail / provenance technology (เช่น C2PA) มาเสริม
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับคนทำ pipeline ตัดต่อ-VFX กฎใหม่นี้แปลตรงๆ เป็น requirement ใหม่ในเครื่องมือ — ต้อง log การใช้ AI tool ทุกขั้น, ฝัง metadata ของ provenance, และ surface ใน UI ให้ทีม legal ตรวจง่าย ก่อนรอให้ลูกค้าระดับสตูดิโอเรียกร้อง
+**อาจารย์ (มหาวิทยาลัย):** กรณี Cloudflare เป็น case study ทองสำหรับ labor economics — บริษัทมีรายได้สูงสุดเป็นประวัติการณ์ (+34% YoY) พร้อมๆ กับเลิกจ้าง 20% ของพนักงาน ซึ่งสวนทางกับ Solow paradox ที่เคยใช้สอนกัน; ควรชวนนักศึกษาวิเคราะห์ว่ามันคือ productivity gain ที่แท้จริง หรือ rationalization narrative สำหรับการ restructuring
+**ผู้เชี่ยวชาญด้าน AI:** Matthew Prince อ้าง "AI usage โต 600% ใน 3 เดือน" เป็นสัญญาณที่ต้อง interpret ระวัง — usage กับ value creation ไม่ใช่อันเดียวกัน; ที่น่าสนใจกว่าคือ severance package (full base pay ถึงสิ้นปี + healthcare) ที่ส่งสัญญาณว่าบริษัทกลัว talent backlash ในตลาด AI engineering ที่ยังหิว
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับ engineer ที่ทำงานในตำแหน่ง support / ops / customer success — เริ่ม audit งานตัวเองว่ามีกี่ % เป็น repetitive task ที่ AI agent ทำได้แล้ว; เริ่ม build portfolio ในส่วนที่ AI ยังอ่อน (ambiguous root-cause analysis, customer trust, escalation judgement) ภายใน 6 เดือน — Cloudflare เป็นตัวอย่างแรก ไม่ใช่ตัวอย่างสุดท้าย
 
-## 3. Chinese Court Bars Firing for AI Replacement (Bloomberg, 2026-05-02)
+## 3. The biggest US power grid is under strain from AI — and no one is happy
 
-**อาจารย์ (มหาวิทยาลัย):** คำพิพากษากรณีคุณ Zhou ตั้งบรรทัดฐานว่า "การที่ AI เข้ามาแทน" ไม่ใช่เหตุที่ทำให้ "สัญญาจ้างไม่อาจปฏิบัติได้" ตามกฎหมายแรงงานจีน — เป็นจุดอ้างอิงที่อาจารย์กฎหมายแรงงาน/HR ควรนำเข้า syllabus ทันที เพื่อเปรียบเทียบกับสถานการณ์ในประเทศอื่นรวมถึงไทย
-**ผู้เชี่ยวชาญด้าน AI:** ในเชิง deployment การตีความว่า role ที่ "AI ทำได้" ไม่เท่ากับ "บริษัทยุติ role นี้" คือสัญญาณว่ารัฐจะกำหนดนิยาม "human-in-the-loop" ในเชิงกฎหมายขั้นต่ำ ไม่ใช่แค่เลือกใช้แบบสมัครใจอย่างที่หลายบริษัททำกัน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ build automation/agent ที่ทำงานแทนคน ต้องคิดเรื่อง role redesign ตั้งแต่ต้น — ออกแบบให้คนยังมี oversight ที่จับต้องได้ (review, audit, override) ไม่ใช่แค่ rubber stamp; ลด exposure ทางกฎหมายของลูกค้าเอง
+**อาจารย์ (มหาวิทยาลัย):** การที่ capacity price กระโดดจาก $28.92 → $329.17/MW-day ในเวลา 2 ปี เป็นเคสคลาสสิกของ externality — ต้นทุนการเทรน LLM ที่ดูเหมือนถูกในระดับ corporate กลับ pass-through ไปยังผู้ใช้ไฟฟ้าทั่วประเทศ; ควรใช้สอนเรื่อง infrastructure economics ของ AI ที่ไม่ได้จบที่ค่า GPU
+**ผู้เชี่ยวชาญด้าน AI:** PJM ส่งสัญญาณว่ามี "years, not decades" ก่อน grid พัง — ผลกระทบจริงคือ training run ขนาดใหญ่กำลังจะถูก gate โดย power availability มากกว่า GPU supply; AEP ขู่ออกจาก PJM แปลว่า hyperscaler ต้องเริ่มมอง self-supply (nuclear SMR, behind-the-meter solar+storage) ไม่ใช่ option แต่เป็น default
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ทำ inference workload ในไทย/อาเซียน นี่คือสัญญาณให้เริ่ม optimize cost per token จริงจัง — model distillation, quantization, KV-cache reuse, batched inference; ค่าไฟ datacenter ของ provider จะขึ้นในรอบ contract ถัดไป และ vendor pass-through จะไม่กรุณา
 
-## 4. Beyond Lovable and Mistral: 21 European startups (TechCrunch, 2026-05-02)
+## 4. Anthropic Inks $1.8 Billion Computing Deal With Akamai
 
-**อาจารย์ (มหาวิทยาลัย):** รายชื่อนี้สะท้อนว่ายุโรปเริ่มสร้าง AI ecosystem ที่หลากหลายเชิง vertical (defense, SMB finance, search visibility) ไม่ใช่แค่ frontier model — ใช้ในวิชา innovation/entrepreneurship เพื่อชี้ความแตกต่างของ ecosystem ระหว่างยุโรป-อเมริกา-จีน
-**ผู้เชี่ยวชาญด้าน AI:** Alta Ares (counter-drone AI) สะท้อนภาพชัดว่า defense AI ในยุโรปขยับเร็วหลังสงครามยูเครน; ขณะที่ Botify (เพิ่ม visibility ใน AI search) เปิดตลาดใหม่ AEO (AI Engine Optimization) — เริ่มเป็น category ทางการแทน SEO เดิม
-**โปรแกรมเมอร์มืออาชีพ:** สามตัวที่น่าจับตาในเชิง integration คือ Apron (invoice management สำหรับ SMB), BottleCap AI (Czech startup) และ Botify — ถ้าทำ B2B SaaS ในตลาดไทยที่ขายลูกค้า SMB คล้ายกัน คุ้มค่าไปดู product surface ของ Apron เพื่อเปรียบเทียบ feature-set โดยตรง
-
-## 5. Best AI dictation apps ranked (TechCrunch, 2026-05-02)
-
-**อาจารย์ (มหาวิทยาลัย):** เครื่องมือ AI dictation มีผลโดยตรงต่อ assistive technology ในห้องเรียน — โดยเฉพาะนักศึกษาที่มีข้อจำกัดในการพิมพ์; แต่ต้องสอนเรื่อง privacy ไปด้วย เพราะหลายแอปส่ง audio ขึ้น cloud
-**ผู้เชี่ยวชาญด้าน AI:** ความสามารถของ Wispr Flow ที่รองรับ "custom words/instructions" และโหมด formal/casual/very casual คือสัญญาณว่าตลาด dictation เริ่มขยับจาก raw transcription ไปเป็น context-aware writing assistant — โมเดล base คือ Whisper/Whisper-derivatives แต่ value เพิ่มอยู่ที่ post-processing layer
-**โปรแกรมเมอร์มืออาชีพ:** ราคา $15/เดือน unlimited คือ benchmark ที่ทำให้ทีมพัฒนาควรประเมินใหม่ว่าจะ build เองหรือเรียก SDK; สำหรับโปรแกรมเมอร์ที่เขียน docstring/comment เยอะหรือเขียน markdown เป็นหลัก dictation ลดเวลาได้ 30-50% เมื่อ workflow โดน tune ดี
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้สำคัญในแง่ academic เพราะมันแสดงว่า "compute provider" ไม่จำเป็นต้องเป็น hyperscaler ดั้งเดิม (AWS/Azure/GCP) อีกต่อไป — Akamai (เดิม CDN) กำลังกลายเป็น compute supplier; เป็นวัตถุดิบดีในการสอน industry structure ของ cloud ในยุค AI
+**ผู้เชี่ยวชาญด้าน AI:** Anthropic กระจายความเสี่ยง compute ไปยัง 4 พาร์ทเนอร์ใน 2 สัปดาห์ — Google ($200B / 5 ปี), SpaceX Colossus 1 (300MW), Akamai ($1.8B / 7 ปี), AWS เดิม; เป็น textbook supply diversification เพื่อรับ 80x QoQ revenue growth ที่ Dario Amodei รายงาน — และเป็นสัญญาณว่า Anthropic ไม่ยอมล็อกตัวเองกับ Google เพียงรายเดียวแม้จะเป็น strategic investor
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Claude API ในการ production — ดีลแบบนี้ลด latency risk และ outage risk ระยะกลาง แต่ก็แปลว่าราคา API จะ stable หรือลดลงช้ากว่าที่คาด เพราะ Anthropic ต้อง amortize compute commitment $200B+; ถ้าทำ multi-LLM router ไว้ก่อน (Claude / GPT-5.5 / Gemini) อย่างน้อยมี optionality ที่ Anthropic เองยังเลือกใช้กับ compute supplier
