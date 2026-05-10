@@ -1,63 +1,40 @@
-# Sources — 2026-05-03
+# Sources — 2026-05-10
 
-Generated: 2026-05-03 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-05-10 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-02-brief.md (4 URLs loaded)
+Dedup against: articles/2026-05-09-brief.md (4 URLs loaded)
 
-1. **AI Is Coming for Your Job and Your Mind**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-05-02/ai-is-coming-for-your-job-and-your-mind
-   - Published: 2026-05-02 (per URL slug, confirmed by search snippet "published on May 2, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02 + multiple snippets stating "published on May 2, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were all 2026-05-01 articles; this is a different 2026-05-02 newsletter)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bloomberg newsletter เน้นมุมที่ "การปรับโครงสร้างครั้งใหญ่ได้เริ่มขึ้นแล้ว และมันไม่ดี" — สำรวจความกังวลเรื่องผลกระทบ AI ต่อ (1) ตลาดแรงงาน, (2) มูลค่าหุ้น, (3) ความต้องการไฟฟ้าและราคาไฟ, (4) โอกาสที่การลงทุน data center มหาศาลจะกลายเป็น "costly miscalculation" และ (5) ความเป็นไปได้ที่ AGI อาจนำไปสู่การสูญพันธุ์ของมนุษย์ในที่สุด
-
-2. **AI-generated actors and scripts are now ineligible for Oscars**
+1. **Nvidia has already committed $40B to equity AI deals this year**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02; supporting snippet "The Academy released new Oscar rules on Friday"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not covered yesterday
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Academy ออกกฎใหม่ — เฉพาะการแสดงที่ "credited in the film's legal billing and demonstrably performed by humans with their consent" จึงจะมีสิทธิ์เข้าชิงรางวัลในหมวด acting; บทภาพยนตร์ต้อง "human-authored" จึงจะมีสิทธิ์ได้; Academy สงวนสิทธิ์ขอข้อมูลเพิ่มเติมเรื่องการใช้ AI และ "human authorship"; กฎจะเริ่มกับภาพยนตร์ที่ออกฉายในปี 2026
+   - URL: https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/
+   - Published: 2026-05-09 (URL slug); search snippet "TechCrunch on May 9, 2026 (9 hours ago from the search result timestamp)"
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/09/` AND snippet "9 hours ago"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs were /2026/05/08/airbnb..., /2026/05/08/cloudflare..., /2026/05/08/the-biggest-u-s-power-grid... — different paths)
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED)
+   - Summary: Per CNBC reporting referenced by TechCrunch, Nvidia has committed more than $40B to equity investments in AI companies in the early months of 2026. Major commitments include up to $100B in OpenAI staged per gigawatt of deployment, $2.1B in data-center developer IREN announced May 7, and $2B each in optics firms Lumentum and Coherent announced March. Nvidia participated in ~67 venture deals in 2025, surpassing 54 in all of 2024.
 
-3. **Chinese Court Bars Companies From Firing Workers Solely for AI Replacement**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-05-02/chinese-court-rules-firms-can-t-lay-off-workers-on-ai-grounds
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; topic not in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: ศาลจีนตัดสินยืนตามศาลล่าง — บริษัทไม่สามารถใช้เหตุ "AI เข้ามาแทน" เพื่อเลิกจ้างพนักงานเพื่อลดต้นทุนได้ คดีต้นเรื่องคือคุณ Zhou อดีต QA supervisor เงินเดือน 25,000 หยวน/เดือน ที่ถูกเสนอตำแหน่งใหม่ลดเงินเดือน 40% แล้วบอกเลิกสัญญาเมื่อปฏิเสธ ศาลกลางชี้ว่าเหตุผลที่บริษัทอ้างไม่เข้าข่าย "major change" และบริษัทไม่ได้แสดงให้เห็นว่าสัญญา "impossible to perform" — ตั้งบรรทัดฐานสำคัญด้านสิทธิแรงงานในยุค automation
-
-4. **Beyond Lovable and Mistral: 21 European startups to watch**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/beyond-lovable-and-mistral-21-european-startups-to-watch/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; new feature, not previously covered
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch รวบรวมความเห็นจาก VC ยุโรปและทีมงานเอง คัดเลือก 21 สตาร์ทอัพยุโรปที่ควรจับตา ตัวอย่าง: BottleCap AI (สตาร์ทอัพ AI สัญชาติเช็ก), Alta Ares (counter-drone AI ตอบโจทย์ความต้องการระบบตรวจจับและรับมือโดรนรุกล้ำราคาประหยัดในยุโรปหลังสงครามยูเครน), Apron (จัดการใบกำกับภาษีสำหรับ SMB), Botify (ช่วยแบรนด์เพิ่ม visibility ใน AI search) — ครอบคลุมตั้งแต่ pre-launch ถึง unicorn
-
-5. **The best AI dictation apps, tested and ranked**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/
-   - Published: 2026-05-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/02
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch ทดสอบและจัดอันดับแอป AI dictation — Wispr Flow มาเป็นตัวเด่น รองรับ custom words/instructions, มีแอป native บน macOS, Windows และ iOS (Android อยู่ระหว่างพัฒนา) ปรับสไตล์ได้ "formal", "casual", "very casual" — มี free tier 2,000 คำ/สัปดาห์บน desktop และ 1,000 คำ/เดือนบน iOS, แพลนจ่ายเริ่ม $15/เดือนสำหรับ unlimited; แอปอื่นที่ติดอันดับได้แก่ Willow, Monologue, Superwhisper, VoiceTypr
+2. **บลูมเบิร์กเผย สหรัฐฯ สงสัยไทยเป็นทางผ่านลักลอบส่งชิป Nvidia ให้ Alibaba ในจีน**
+   - Publisher: Thairath (ไทยรัฐออนไลน์)
+   - URL: https://www.thairath.co.th/news/foreign/2931581
+   - Published: 2026-05-09 (search snippet: "สำนักข่าวบลูมเบิร์ก รายงานเมื่อวันที่ 9 พฤษภาคม 2569"); ranked #1 for query "ข่าว AI วันนี้ 9 พฤษภาคม 2026"
+   - FreshnessCheck: ✅ within last 24h via snippet "รายงานเมื่อวันที่ 9 พฤษภาคม 2569" (= 2026-05-09)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had no Thai-source URLs and no OBON/chip-smuggling story)
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED)
+   - Summary: Bloomberg-sourced reporting that the U.S. suspects a Thai company tied to Thailand's national AI initiative helped ship Super Micro servers containing advanced Nvidia chips to China, with Alibaba as one of multiple end customers. The intermediary, called "Company-1" by U.S. prosecutors, has been identified by Bloomberg as Bangkok-based OBON Corp; total value of servers forwarded to Alibaba reportedly ~$2.5B (~80,000 ล้านบาท). Super Micro's co-founder and a contractor have been indicted for conspiring to divert servers containing Nvidia chips to China. Alibaba denies any business relationship with Super Micro, OBON, or any third-party brokers in the indictment, and says it has never used banned Nvidia chips in its data centers. OBON is the supplier of servers to Siam AI Cloud, Thailand's first NVIDIA Cloud Partner.
 
 ## Dropped
 
-- https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/claude-ai-is-complicating-life-for-people-named-claude — Filter B (URL appeared in articles/2026-05-02-brief.md)
-- https://www.bloomberg.com/news/articles/2026-05-01/ready-or-not-the-ai-phones-are-coming — Filter A (slug 2026-05-01 falls outside the rolling 24h window measured from now on 2026-05-03)
-- https://www.bloomberg.com/news/articles/2026-05-01/meta-acquires-assured-robot-intelligence-to-help-build-humanoid-technology — Filter A (slug 2026-05-01 outside rolling 24h)
-- https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html — Filter A (slug 2026/05/01 outside 24h) and CNBC not on trusted-sources.md
-- https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic — Filter A + CNN not on trusted-sources.md
-- https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html — Filter A (April 14, well outside 24h)
-- https://www.bloomberg.com/news/articles/2026-05-01/mckinsey-plans-to-use-ai-agents-to-help-choose-client-teams — Filter A (slug 2026-05-01 outside 24h)
-- Blognone candidates (e.g. node/150418 about Microsoft Copilot button removal) — dropped: slug doesn't embed publication date and snippet didn't surface explicit "today/yesterday/N hours ago" timestamp; per skill rules, ambiguous timestamps are dropped rather than guessed
+- https://www.bloomberg.com/news/articles/2026-05-08/us-said-to-suspect-nvidia-chips-smuggled-to-alibaba-via-thailand — Filter A (URL slug 2026-05-08 = ~36–48h, beyond 24h). Same story is covered via Thairath (item 2 above) which has a 2026-05-09 timestamp.
+- https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai — Filter B (this exact URL was in articles/2026-05-09-brief.md as Story #4)
+- https://www.bloomberg.com/news/newsletters/2026-05-08/ai-power-use-risks-blowing-up-for-governments — Filter A (slug 2026-05-08 + topical overlap with yesterday's PJM grid story)
+- https://www.bloomberg.com/news/articles/2026-05-07/nvidia-to-invest-up-to-2-1-billion-in-data-center-firm-iren — Filter A (slug 2026-05-07 = ~3 days)
+- https://www.bloomberg.com/news/articles/2026-05-07/anthropic-is-making-claude-chatbot-more-appealing-to-consumers — Filter A (slug 2026-05-07)
+- https://www.bloomberg.com/news/articles/2026-05-06/anthropic-inks-computing-deal-with-spacex-to-meet-ai-demand — Filter A (slug 2026-05-06)
+- https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/ — Filter A (slug 2026-05-05)
+- https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/ — Filter A (slug 2026-05-04)
+- https://www.bloomberg.com/news/videos/2026-05-08/bloomberg-tech-5-8-2026-video — Filter A (slug 2026-05-08)
+- https://www.blognone.com/node/150485 (Thai OBON coverage) — date not surfaced in any snippet (numeric node ID, no slug date); to avoid guessing, used Thairath instead which has explicit "9 พฤษภาคม 2569" in the snippet.
+- https://www.prachachat.net/ict/news-2004475 (อิสริยะ ตั้ง 6 คำถามถึง OBON) — date not surfaced in snippet; same reason as above.
+
+> Note: 2 items passed both filters this run. Of ~12 candidates evaluated, 9 failed Filter A (publish date > 24h, mostly slugs 2026-05-04 to 2026-05-08), 1 failed Filter B (Akamai-Anthropic URL was already in yesterday's brief), and 2 were dropped due to ambiguous timestamps in the snippets even though the underlying story was timely.
