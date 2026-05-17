@@ -1,31 +1,31 @@
-# Perspectives — 2026-05-16
+# Perspectives — 2026-05-17
 
-## 1. OpenAI เปิด ChatGPT Personal Finance เชื่อมบัญชีธนาคารผ่าน Plaid
+## 1. The haves and have nots of the AI gold rush (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นตัวอย่างที่ดีในห้องเรียนเรื่อง "ขอบเขตของข้อมูลส่วนบุคคล" — เมื่อ LLM เห็นยอดเงิน รายจ่าย และพอร์ตการลงทุนพร้อมกัน ผู้เรียนต้องเข้าใจว่าการให้สิทธิ์อ่านอย่างเดียวยังไม่เท่ากับการคุ้มครองความเป็นส่วนตัว เพราะข้อมูลถูกประมวลผลและสรุปออกไปก่อนผู้ใช้จะตรวจสอบ
-**ผู้เชี่ยวชาญด้าน AI:** สิ่งที่น่าสนใจทางเทคนิคคือ Plaid เป็น aggregation layer ที่ทำให้ ChatGPT ไม่ต้องสร้าง integration กับธนาคารแต่ละแห่ง และทาง OpenAI ระบุว่า GPT-5.5 ปรับให้ "ใช้เหตุผลกับ context ยาว" ได้ดีขึ้น ซึ่งเป็นเงื่อนไขจำเป็นเมื่อต้องอ่าน transaction history ทั้งปี
-**โปรแกรมเมอร์มืออาชีพ:** ข้อจำกัด read-only เป็นเรื่องดีในมุมมองความปลอดภัย แต่ workflow ที่จะตามมาคือผู้ใช้จะคัดลอกคำแนะนำของ ChatGPT ไปทำธุรกรรมเอง ซึ่งเปิดช่องให้เกิด prompt injection ผ่านชื่อ merchant หรือ memo — ทีมที่ทำ fintech ควรเตรียม guardrail ก่อนของจริงมาถึงไทย
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้คือเคสคลาสสิกของ winner-take-most economy ในอุตสาหกรรมที่ network effects + compute moat รวมศูนย์ — ตัวเลข "~10,000 คน เกิน US$20M" สอนวิชา labor economics ได้ดีกว่าตำราเรียน เพราะมันแสดง wealth concentration ที่ระดับ workforce ไม่ใช่แค่ระดับ shareholder
+**ผู้เชี่ยวชาญด้าน AI:** น่าจับตาว่าวลี "vibes อยู่ในจุดแย่ที่สุด" ของ Deedy Das ไม่ใช่เรื่อง bubble — แต่เป็นเรื่อง opportunity asymmetry ที่ talent ไหลไปอยู่ 3 บริษัทเดียว ทำให้บริษัทเล็กแย่งทีมยากขึ้นและ R&D นอกวง frontier ช้าลง
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับ dev ที่ไม่ได้อยู่ใน frontier lab ข้อสรุปไม่ใช่ "จะรวยหรือไม่รวย" แต่คือ "อย่าเทียบ comp กับเพื่อนที่อยู่ใน frontier lab" — focus กลับไปที่งานที่ value ของเราถูกวัดจาก deliverable จริง ไม่ใช่ paper wealth ของหุ้น pre-IPO
 
-## 2. CFO OpenAI Sarah Friar: บริษัทอาจระดมทุนเพิ่ม เปิดทาง public market
+## 2. Cerebras IPO US$60B (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลข $122B ที่เพิ่งระดมแล้วยังไม่พอเป็นบทเรียนวิชาเศรษฐศาสตร์อุตสาหกรรมที่ดี — เมื่อ marginal cost ของ inference ยังไม่ลดลงตามที่ทฤษฎี learning curve คาด ผลคือบริษัทต้อง burn capital เพื่อรักษาส่วนแบ่ง ไม่ใช่เพื่อสร้างกำไร
-**ผู้เชี่ยวชาญด้าน AI:** วลี "vertical wall of demand" สะท้อนว่าคอขวดยังเป็น compute supply ไม่ใช่ความต้องการของผู้ใช้ การที่ CFO เปิดทาง public market แสดงว่ารอบ private อาจถึงเพดานความเสี่ยงที่ฝั่ง LP รับได้ — อนาคต IPO ของ OpenAI จึงไม่ใช่คำถามว่าจะเกิดหรือไม่ แต่จะเกิดเมื่อใด
-**โปรแกรมเมอร์มืออาชีพ:** ผลกระทบโดยตรงต่อทีม dev คือราคา token จะไม่ลดเร็วเท่าที่ planning roadmap เคยคาด เมื่อ supplier ของเรายังขาด compute การ optimize prompt และ caching จึงไม่ใช่ optimization ระดับ "nice to have" อีกต่อไป แต่เป็น cost control
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้ดีสำหรับสอนวิชา hardware-software co-design — wafer-scale chip คือ bet ว่า memory bandwidth คือคอขวดจริงของ inference ไม่ใช่ FLOPS ทฤษฎีนี้ถูกพิสูจน์ตลาดในวันที่ Cerebras IPO ทะลุ US$60B
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Cerebras ขายชิปให้ OpenAI และ AWS แปลว่า inference ที่ใหญ่จริงๆ ในตลาดเริ่มแยกออกจาก training stack แล้ว — NVIDIA ยังครอง training แต่ inference เริ่ม fragmented Cerebras + Groq + Trainium ฯลฯ แข่งกันใน latency/throughput per dollar
+**โปรแกรมเมอร์มืออาชีพ:** ผลตรงกับงานเราคือ "vendor neutrality ที่ inference layer" จะเริ่มจ่ายคืน — ถ้าทีมเรา hard-code OpenAI API ไว้ทั่วระบบ ตอนนี้คือเวลาเริ่ม abstract ผ่าน LiteLLM/OpenRouter/vLLM-compatible เพื่อจะสลับไปยัง inference provider ที่ Cerebras-powered ได้เมื่อราคาเหมาะ
 
-## 3. Bloomberg: สหรัฐเริ่มเห็นการเลิกจ้างในกลุ่มงานเสี่ยงต่อ AI ชัดเจน
+## 3. Greg Brockman คุม product strategy ที่ OpenAI (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลขลดลง 0.2% อาจดูเล็ก แต่ความสำคัญอยู่ที่มันต่อเนื่องเป็นปีที่สอง และเกิดเฉพาะกลุ่มอาชีพที่ AI ทำแทนได้ — งานวิจัยตลาดแรงงานของเรามักวัด aggregate และพลาดสัญญาณแบบนี้ ผู้เรียนเศรษฐศาสตร์/สังคมวิทยาควรเข้าใจวิธีอ่าน occupation-level data
-**ผู้เชี่ยวชาญด้าน AI:** การที่ผลกระทบโผล่มาที่ customer service และเลขานุการก่อน เป็น empirical confirmation ของกรอบ "exposure score" ที่ OpenAI/OECD เคยทำไว้เมื่อสองปีก่อน — งานที่เป็น routine knowledge work ถูกแทนที่เร็วกว่างานที่ต้องมี physical presence
-**โปรแกรมเมอร์มืออาชีพ:** ข่าวนี้ไม่ใช่ "AI จะแย่งงานโปรแกรมเมอร์" แต่เป็นข้อเตือนใจว่าโปรแกรมเมอร์ระดับ junior ที่งานส่วนใหญ่เป็น CRUD/integration อาจเข้าโซนเสี่ยงในรอบถัดไป ทักษะที่ยังปลอดภัยคือการออกแบบระบบ การ debug ของจริง และการสื่อสารกับ stakeholder
+**อาจารย์ (มหาวิทยาลัย):** การที่ผู้ร่วมก่อตั้งกลับมาคุม product ช่วงที่ CEO of AGI Deployment ลาป่วย เป็นกรณีศึกษา succession risk ของบริษัทที่ valuation พึ่ง key person สูงมาก — นักศึกษา MBA ควรใช้เคสนี้ดู governance ของบริษัท frontier AI
+**ผู้เชี่ยวชาญด้าน AI:** Brockman เป็น engineer-founder ที่เคยขับ product direction ของ GPT-3/4 era — การที่เขาย้อนกลับมาคุม product strategy ในช่วงที่ OpenAI กำลังขยายไปทาง consulting/finance/agents บอกว่าทิศของ product อาจจะ rebalance กลับไปทาง core API/model มากกว่า vertical SaaS
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมคุณ ship feature ที่อ้างอิง roadmap ของ OpenAI (เช่น Codex CLI, Operator, Agents API) — เตรียม diff scenarios เพราะ product direction ใต้ leadership ใหม่อาจปรับ priority และ deprecation timeline ในไตรมาสหน้า
 
-## 4. Runway ระดม $315M ตามล่า "world models" — ท้าชน Google/OpenAI ด้าน video
+## 4. arXiv จะ ban นักเขียนที่ปล่อยให้ AI ทำทั้งหมด (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** คำว่า "world model" ในบริบทนี้กลับมาใกล้รากเดิมของ AI ยุค 1990 (Schmidhuber/Sutton) มากกว่าที่หลายคนคิด — Runway เดิมพันว่าวิดีโอเป็น modality ที่บีบให้โมเดลเรียนรู้ฟิสิกส์และเหตุผลเชิงพื้นที่โดยอัตโนมัติ น่าเอามาเป็น case study ในวิชา deep learning
-**ผู้เชี่ยวชาญด้าน AI:** การที่ Nvidia, AMD Ventures, Adobe Ventures เข้าร่วมรอบเดียวกันบอกว่านี่ไม่ใช่แค่เรื่อง creative tooling แต่เป็น strategic position ของซัพพลายเชน compute และ content — ที่น่าจับตาคือคำอ้างว่า Gen-4.5 เอาชนะ Veo และ Sora ในเบนช์มาร์กบางตัว ซึ่งต้องรอเปเปอร์อิสระยืนยัน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับงาน production จริง model ขนาดเฉพาะทางที่มี API พร้อมและราคาคงที่อย่าง Runway ยังใช้ง่ายกว่า frontier model อเนกประสงค์ — แต่ต้องคำนึงถึง vendor lock-in และ inference cost ที่อิงตามวินาทีของวิดีโอ ทำ budgeting ให้ละเอียดก่อน scale
+**อาจารย์ (มหาวิทยาลัย):** นี่คือ policy ที่ใกล้กับห้องเรียนที่สุดในรายการวันนี้ — arXiv ไม่ได้แบน LLM ในงานเขียน แต่แบน "ปล่อยให้ AI ทำทั้งหมด" ขีดเส้นแบบนี้ใช้เป็น template ให้มหาวิทยาลัยร่าง policy ของตัวเองได้: ห้ามแบบ blanket จะ unenforceable; ห้ามที่ "no human substantive contribution" ปฏิบัติได้จริงกว่า
+**ผู้เชี่ยวชาญด้าน AI:** ปัญหาทาง technical คือการ detect "AI ทำทั้งหมด" ทำได้ยากเมื่อ paraphrasing tool เก่งขึ้น — arXiv น่าจะใช้ moderation signal หลายชั้น (referee report, statistical fingerprint, author behavior) มากกว่า detector ตัวเดียว เป็น case study ดีของ AI governance ที่อาศัย process ไม่ใช่ tool
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ LLM ช่วยเขียน technical doc/RFC/PR description — บทเรียนคือ keep your fingerprint บนงาน: structure ที่เป็นของเรา, ตัวอย่างจาก codebase จริง, decision log ที่ traceable ถ้า output ของคุณ "AI-only" ก็แปลว่ามูลค่าของคุณคือ prompt ไม่ใช่ knowledge — ตำแหน่งเสี่ยงต่อ replacement สูงสุด
 
-## 5. Kraken ปลด 150 พนักงานหลังใช้ AI ทดแทน — IPO อาจเลื่อนเป็น 2027
+## 5. Stripe John Collison: Agentic Commerce จะเปลี่ยน e-commerce (Bloomberg)
 
-**อาจารย์ (มหาวิทยาลัย):** น่าเอามาเป็นโจทย์ในวิชา business ethics — บริษัทประกาศการเลิกจ้างเชื่อมโยงกับ "การใช้ AI ปรับ efficiency" อย่างเปิดเผย ต่างจากบริษัทอื่นที่ปกปิดเหตุผล นี่เป็นจุดเริ่มของ corporate norm ใหม่หรือเป็นแค่ข้ออ้างก่อน IPO?
-**ผู้เชี่ยวชาญด้าน AI:** จุดสำคัญทางเทคนิคคืองาน compliance/AML และ customer support ของ exchange เป็นพื้นที่ที่ LLM + RAG + structured output ทำงานดีจริง เพราะมีข้อมูลครบและ context ชัด ไม่ใช่ทุกอุตสาหกรรมจะเลียนแบบได้ทันที — แต่ fintech ไทยน่าจะเห็นแบบเดียวกันใน 12–18 เดือน
-**โปรแกรมเมอร์มืออาชีพ:** อ่านแล้วต้องประเมินสองเรื่อง — งานของเราเป็น "routine knowledge work" ที่ LLM ครอบคลุมได้ระดับ 80%+ ไหม และนายจ้างใช้ AI เป็นเครื่องมือเสริมหรือเป็นเหตุผลตัด headcount ทักษะ AI-augmentation จะกลายเป็น baseline ในการสัมภาษณ์งานปีนี้
+**อาจารย์ (มหาวิทยาลัย):** ครั้งแรกที่ผู้บริหาร payments-infra ระดับ Stripe พูดเปิดเผยว่า "keyword search อาจไม่ใช่วิธีหาของอีกต่อไป" — ใช้สอนวิชา business model evolution: ถ้า discovery layer ของ commerce เปลี่ยนจาก SEO เป็น agent-to-agent บทบาทของ retailer/ad network/aggregator จะถูก rewrite ทั้งหมด
+**ผู้เชี่ยวชาญด้าน AI:** ใจกลางของ agentic commerce คือ AI agent ต้อง authenticate, authorize, และ pay แทนผู้ใช้ — Stripe เป็นบริษัทเดียวที่มี infrastructure ครบทั้ง 3 ชั้นในวันนี้ การที่ Collison พูดเองแปลว่า Stripe กำลัง position ตัวเองเป็น "Plaid ของ agent payments"
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำ e-commerce/marketplace ต้องเริ่มเปิด structured product feed (schema.org/Product + price/availability ที่ machine-readable) เพราะ agent shopping จะใช้ feed ก่อน HTML scrape เรื่อง checkout ฝั่ง backend ต้องเตรียม idempotency key + agent-friendly OAuth scope เพื่อรองรับ payment flow ที่ trigger โดย agent ไม่ใช่ human click
