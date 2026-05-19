@@ -1,31 +1,31 @@
-# Perspectives — 2026-05-17
+# Perspectives — 2026-05-19
 
-## 1. The haves and have nots of the AI gold rush (TechCrunch)
+## 1. ลูกขุนยกฟ้อง Musk vs OpenAI
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้คือเคสคลาสสิกของ winner-take-most economy ในอุตสาหกรรมที่ network effects + compute moat รวมศูนย์ — ตัวเลข "~10,000 คน เกิน US$20M" สอนวิชา labor economics ได้ดีกว่าตำราเรียน เพราะมันแสดง wealth concentration ที่ระดับ workforce ไม่ใช่แค่ระดับ shareholder
-**ผู้เชี่ยวชาญด้าน AI:** น่าจับตาว่าวลี "vibes อยู่ในจุดแย่ที่สุด" ของ Deedy Das ไม่ใช่เรื่อง bubble — แต่เป็นเรื่อง opportunity asymmetry ที่ talent ไหลไปอยู่ 3 บริษัทเดียว ทำให้บริษัทเล็กแย่งทีมยากขึ้นและ R&D นอกวง frontier ช้าลง
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับ dev ที่ไม่ได้อยู่ใน frontier lab ข้อสรุปไม่ใช่ "จะรวยหรือไม่รวย" แต่คือ "อย่าเทียบ comp กับเพื่อนที่อยู่ใน frontier lab" — focus กลับไปที่งานที่ value ของเราถูกวัดจาก deliverable จริง ไม่ใช่ paper wealth ของหุ้น pre-IPO
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้ใช้สอน statute of limitations ในวิชา corporate law ได้ตรง ๆ — ศาลไม่ได้ตัดสินว่า "OpenAI ทำผิดหรือเปล่า" เพียงแค่ตัดสินว่า "Musk ฟ้องช้าเกินไป" สองอย่างนี้คนละเรื่องและคนทั่วไปมักสับสน
+**ผู้เชี่ยวชาญด้าน AI:** สิ่งที่ผลคดีนี้ปลดออกจริงไม่ใช่ "ความเห็นเชิงจริยธรรม" แต่คือ legal optionality ของฝ่ายที่ต้องการบล็อก for-profit conversion ของ OpenAI — เส้นทาง IPO/restructuring ของ OpenAI เปิดกว้างขึ้นทันที และนั่นกระทบ valuation ของ frontier-lab ทุกเจ้าโดยปริยาย
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับคนที่สร้าง product บน OpenAI API — risk ทาง corporate-restructuring ที่ค้างมา 2 ปีถูกลดลงไปหนึ่งชั้น แต่ Musk บอกจะอุทธรณ์อยู่ดี ความเสี่ยงเชิงสัญญา/ความต่อเนื่องของ pricing tier ยังควรอยู่ใน risk register ของทีม
 
-## 2. Cerebras IPO US$60B (TechCrunch)
+## 2. Google I/O 2026 เปิดวันนี้
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้ดีสำหรับสอนวิชา hardware-software co-design — wafer-scale chip คือ bet ว่า memory bandwidth คือคอขวดจริงของ inference ไม่ใช่ FLOPS ทฤษฎีนี้ถูกพิสูจน์ตลาดในวันที่ Cerebras IPO ทะลุ US$60B
-**ผู้เชี่ยวชาญด้าน AI:** การที่ Cerebras ขายชิปให้ OpenAI และ AWS แปลว่า inference ที่ใหญ่จริงๆ ในตลาดเริ่มแยกออกจาก training stack แล้ว — NVIDIA ยังครอง training แต่ inference เริ่ม fragmented Cerebras + Groq + Trainium ฯลฯ แข่งกันใน latency/throughput per dollar
-**โปรแกรมเมอร์มืออาชีพ:** ผลตรงกับงานเราคือ "vendor neutrality ที่ inference layer" จะเริ่มจ่ายคืน — ถ้าทีมเรา hard-code OpenAI API ไว้ทั่วระบบ ตอนนี้คือเวลาเริ่ม abstract ผ่าน LiteLLM/OpenRouter/vLLM-compatible เพื่อจะสลับไปยัง inference provider ที่ Cerebras-powered ได้เมื่อราคาเหมาะ
+**อาจารย์ (มหาวิทยาลัย):** keynote ของ tech vendor เป็น primary source ชั้นดีสำหรับ teaching technology adoption — แต่ต้องระวัง marketing layer; การให้ student เปรียบเทียบ pre-event preview (เช่นชิ้นนี้ของ MIT Tech Review) กับสิ่งที่ประกาศจริงในวันที่ 19 ฝึก critical reading ได้ดีกว่าอ่าน press release ตรง ๆ
+**ผู้เชี่ยวชาญด้าน AI:** สัญญาณที่น่าจับตาไม่ใช่ชื่อรุ่น Gemini ใหม่ (จะ 3.x หรือ 4) แต่คือ (1) Gemini Intelligence บน Android ที่ขยายจาก S26/Pixel 10 → ทุก flagship และ (2) Gemma 4 open-weights ที่จะกำหนด open-source baseline ของปลายปี 2026 — สองอย่างหลังเปลี่ยน developer surface area มากกว่า frontier model
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำงาน Android/Chrome dev ให้ดู AppFunctions API + Gemini Intelligence integration เป็นอันดับแรก — มันคือจุดที่ app ของคุณจะถูก agent ของ Google เรียกโดยตรง อย่ารอประกาศแล้วค่อยรีบ ดู doc ตอน keynote จบทันที
 
-## 3. Greg Brockman คุม product strategy ที่ OpenAI (TechCrunch)
+## 3. Anduril × Meta — Smart Glasses สำหรับสมรภูมิรบ
 
-**อาจารย์ (มหาวิทยาลัย):** การที่ผู้ร่วมก่อตั้งกลับมาคุม product ช่วงที่ CEO of AGI Deployment ลาป่วย เป็นกรณีศึกษา succession risk ของบริษัทที่ valuation พึ่ง key person สูงมาก — นักศึกษา MBA ควรใช้เคสนี้ดู governance ของบริษัท frontier AI
-**ผู้เชี่ยวชาญด้าน AI:** Brockman เป็น engineer-founder ที่เคยขับ product direction ของ GPT-3/4 era — การที่เขาย้อนกลับมาคุม product strategy ในช่วงที่ OpenAI กำลังขยายไปทาง consulting/finance/agents บอกว่าทิศของ product อาจจะ rebalance กลับไปทาง core API/model มากกว่า vertical SaaS
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมคุณ ship feature ที่อ้างอิง roadmap ของ OpenAI (เช่น Codex CLI, Operator, Agents API) — เตรียม diff scenarios เพราะ product direction ใต้ leadership ใหม่อาจปรับ priority และ deprecation timeline ในไตรมาสหน้า
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้สอน dual-use technology ได้สมบูรณ์ — บริษัทที่เรารู้จักในฐานะ consumer XR (Meta) จับมือกับ defense prime (Anduril) ทำให้เส้นแบ่งระหว่าง civilian และ military AI ในงาน computer-vision เริ่มลบเลือน คำถามจริยธรรมในวิชา tech-ethics เปลี่ยนจาก "ควร build หรือไม่" เป็น "ใครคุมการใช้งาน"
+**ผู้เชี่ยวชาญด้าน AI:** เทคนิคที่ขับ smart glasses ฝั่งทหารคือ on-device perception + low-latency multi-modal model — เป็นโดเมนเดียวที่ Meta มี comparative advantage ทั้ง Llama / SAM stack และ Anduril มี deployment surface; น่าสนใจว่า model ของ Meta จะถูก fine-tune/distill ขนาดไหนเพื่อรันบน optics edge
+**โปรแกรมเมอร์มืออาชีพ:** สาย defense-tech เปิดงาน edge inference ระดับ optics สูงขึ้น และ vendor ใหญ่ของ commercial AI กำลังเข้ามาแข่ง — ใครทำ TensorRT, vLLM, edge optimization จะเริ่มเห็นโอกาสที่ pay scale ต่างจาก consumer SaaS ชัดเจน
 
-## 4. arXiv จะ ban นักเขียนที่ปล่อยให้ AI ทำทั้งหมด (TechCrunch)
+## 4. Pope Leo XIV — Encyclical แรกเรื่อง AI
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือ policy ที่ใกล้กับห้องเรียนที่สุดในรายการวันนี้ — arXiv ไม่ได้แบน LLM ในงานเขียน แต่แบน "ปล่อยให้ AI ทำทั้งหมด" ขีดเส้นแบบนี้ใช้เป็น template ให้มหาวิทยาลัยร่าง policy ของตัวเองได้: ห้ามแบบ blanket จะ unenforceable; ห้ามที่ "no human substantive contribution" ปฏิบัติได้จริงกว่า
-**ผู้เชี่ยวชาญด้าน AI:** ปัญหาทาง technical คือการ detect "AI ทำทั้งหมด" ทำได้ยากเมื่อ paraphrasing tool เก่งขึ้น — arXiv น่าจะใช้ moderation signal หลายชั้น (referee report, statistical fingerprint, author behavior) มากกว่า detector ตัวเดียว เป็น case study ดีของ AI governance ที่อาศัย process ไม่ใช่ tool
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ LLM ช่วยเขียน technical doc/RFC/PR description — บทเรียนคือ keep your fingerprint บนงาน: structure ที่เป็นของเรา, ตัวอย่างจาก codebase จริง, decision log ที่ traceable ถ้า output ของคุณ "AI-only" ก็แปลว่ามูลค่าของคุณคือ prompt ไม่ใช่ knowledge — ตำแหน่งเสี่ยงต่อ replacement สูงสุด
+**อาจารย์ (มหาวิทยาลัย):** encyclical เป็น "เอกสารระดับสูงสุด" ของศาสนจักรคาทอลิก การที่ Vatican ออกชิ้นนี้ และเชิญ co-founder ของ Anthropic ร่วมเวที สะท้อนว่า AI ethics กำลังเลื่อนจาก academic + tech-policy เข้าสู่ public moral discourse ระดับสถาบันศาสนาแล้ว — น่าใส่ในคอร์ส tech-ethics ปีนี้
+**ผู้เชี่ยวชาญด้าน AI:** การเลือก Christopher Olah (interpretability lead เดิมของ Anthropic) ไม่ใช่บังเอิญ — Vatican เลือกเสียงจากฝั่ง "alignment + interpretability" มากกว่าฝั่ง commercial/CEO ซึ่งเป็น framing signal ว่า encyclical น่าจะเอนไปทาง "ทำให้ AI เข้าใจได้และควบคุมได้" มากกว่าทาง "ห้าม"
+**โปรแกรมเมอร์มืออาชีพ:** ไม่กระทบเทคนิคโดยตรง แต่เป็น narrative signal สำคัญต่อ buyer-side compliance — องค์กรที่ตอบ regulator/ภาคประชาสังคมเรื่อง AI usage ปีหน้าน่าจะอ้าง encyclical นี้ ทีม policy/legal ของคุณควรอ่านวันที่ 25 พ.ค.
 
-## 5. Stripe John Collison: Agentic Commerce จะเปลี่ยน e-commerce (Bloomberg)
+## 5. Huang × Dell — Agentic AI, Memory, China
 
-**อาจารย์ (มหาวิทยาลัย):** ครั้งแรกที่ผู้บริหาร payments-infra ระดับ Stripe พูดเปิดเผยว่า "keyword search อาจไม่ใช่วิธีหาของอีกต่อไป" — ใช้สอนวิชา business model evolution: ถ้า discovery layer ของ commerce เปลี่ยนจาก SEO เป็น agent-to-agent บทบาทของ retailer/ad network/aggregator จะถูก rewrite ทั้งหมด
-**ผู้เชี่ยวชาญด้าน AI:** ใจกลางของ agentic commerce คือ AI agent ต้อง authenticate, authorize, และ pay แทนผู้ใช้ — Stripe เป็นบริษัทเดียวที่มี infrastructure ครบทั้ง 3 ชั้นในวันนี้ การที่ Collison พูดเองแปลว่า Stripe กำลัง position ตัวเองเป็น "Plaid ของ agent payments"
-**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำ e-commerce/marketplace ต้องเริ่มเปิด structured product feed (schema.org/Product + price/availability ที่ machine-readable) เพราะ agent shopping จะใช้ feed ก่อน HTML scrape เรื่อง checkout ฝั่ง backend ต้องเตรียม idempotency key + agent-friendly OAuth scope เพื่อรองรับ payment flow ที่ trigger โดย agent ไม่ใช่ human click
+**อาจารย์ (มหาวิทยาลัย):** การที่ CEO ของ chip designer + system integrator คุยกันบน sideline งาน enterprise เป็น primary source สำหรับ "current bottleneck ของ AI infrastructure" — ปีนี้ keyword คือ memory bandwidth และ China access ไม่ใช่ FLOPS อย่างที่ตำราเขียนไว้ 2 ปีก่อน
+**ผู้เชี่ยวชาญด้าน AI:** ที่ Huang บอกว่าตลาด AI semiconductor จีน "จะถูกเปิด" เป็น corporate diplomacy ไม่ใช่ technical forecast — แต่ถ้าเกิดจริงจะเปลี่ยน supply-demand ของ HBM และ training capacity ทั่วโลก เพราะ demand ฝั่งจีนถูก suppress มา 3 ปี
+**โปรแกรมเมอร์มืออาชีพ:** สอง take-away: (1) ดีไซน์ inference stack ให้ memory-bandwidth-aware ไม่ใช่ compute-aware อย่างเดียว — quantization + KV-cache compression + speculative decoding กลับมามีค่ามาก (2) ถ้าทำงานกับ vendor จีน (ByteDance, Alibaba Cloud, MoonShot) จับตา policy ของ US ปลายปี — supply chain อาจปลดล็อก
