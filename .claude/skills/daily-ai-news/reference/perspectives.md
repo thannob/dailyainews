@@ -1,31 +1,31 @@
-# Perspectives — 2026-05-17
+# Perspectives — 2026-05-20
 
-## 1. The haves and have nots of the AI gold rush (TechCrunch)
+## 1. Gemini 3.5 Flash — Google เดิมพันคลื่นลูกใหม่ที่ "agent" ไม่ใช่ chatbot (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้คือเคสคลาสสิกของ winner-take-most economy ในอุตสาหกรรมที่ network effects + compute moat รวมศูนย์ — ตัวเลข "~10,000 คน เกิน US$20M" สอนวิชา labor economics ได้ดีกว่าตำราเรียน เพราะมันแสดง wealth concentration ที่ระดับ workforce ไม่ใช่แค่ระดับ shareholder
-**ผู้เชี่ยวชาญด้าน AI:** น่าจับตาว่าวลี "vibes อยู่ในจุดแย่ที่สุด" ของ Deedy Das ไม่ใช่เรื่อง bubble — แต่เป็นเรื่อง opportunity asymmetry ที่ talent ไหลไปอยู่ 3 บริษัทเดียว ทำให้บริษัทเล็กแย่งทีมยากขึ้นและ R&D นอกวง frontier ช้าลง
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับ dev ที่ไม่ได้อยู่ใน frontier lab ข้อสรุปไม่ใช่ "จะรวยหรือไม่รวย" แต่คือ "อย่าเทียบ comp กับเพื่อนที่อยู่ใน frontier lab" — focus กลับไปที่งานที่ value ของเราถูกวัดจาก deliverable จริง ไม่ใช่ paper wealth ของหุ้น pre-IPO
+**อาจารย์ (มหาวิทยาลัย):** ชื่อรุ่นที่ขึ้นต้นด้วย "Flash" เคยหมายถึงรุ่นเล็ก-เร็ว-ถูก แต่ครั้งนี้ Google เคลม coding/agentic เป็นจุดขายหลัก — เป็นโอกาสสอนนักศึกษาว่าการตั้งชื่อรุ่นโมเดลคือ marketing taxonomy ไม่ใช่ spec ให้ดู benchmark จริงก่อนเชื่อป้ายชื่อ
+**ผู้เชี่ยวชาญด้าน AI:** สัญญาณที่สำคัญคือ Google วาง agentic capability ลงในรุ่น Flash (รุ่นที่ตั้งใจให้ราคา/latency ต่ำ) ไม่ใช่เฉพาะรุ่น Pro — ถ้าทำได้จริงตามเคลม นั่นแปลว่า cost-per-agent-task กำลังถูกบีบลง และ economics ของการ deploy agent จำนวนมากเปลี่ยนไป
+**โปรแกรมเมอร์มืออาชีพ:** โมเดลทยอยเปิดใน Gemini app, Search และ Gemini API วันเดียวกับงาน — ถ้าทีมใช้ Gemini API อยู่แล้ว ให้ตั้ง eval harness ของตัวเองรันเทียบ 3.5 Flash กับรุ่นเดิมบน task จริงก่อนสลับ production อย่าเชื่อ benchmark ของ vendor ตรงๆ
 
-## 2. Cerebras IPO US$60B (TechCrunch)
+## 2. Gemini Spark — ผู้ช่วย agentic 24/7 ผูกกับ Gmail (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้ดีสำหรับสอนวิชา hardware-software co-design — wafer-scale chip คือ bet ว่า memory bandwidth คือคอขวดจริงของ inference ไม่ใช่ FLOPS ทฤษฎีนี้ถูกพิสูจน์ตลาดในวันที่ Cerebras IPO ทะลุ US$60B
-**ผู้เชี่ยวชาญด้าน AI:** การที่ Cerebras ขายชิปให้ OpenAI และ AWS แปลว่า inference ที่ใหญ่จริงๆ ในตลาดเริ่มแยกออกจาก training stack แล้ว — NVIDIA ยังครอง training แต่ inference เริ่ม fragmented Cerebras + Groq + Trainium ฯลฯ แข่งกันใน latency/throughput per dollar
-**โปรแกรมเมอร์มืออาชีพ:** ผลตรงกับงานเราคือ "vendor neutrality ที่ inference layer" จะเริ่มจ่ายคืน — ถ้าทีมเรา hard-code OpenAI API ไว้ทั่วระบบ ตอนนี้คือเวลาเริ่ม abstract ผ่าน LiteLLM/OpenRouter/vLLM-compatible เพื่อจะสลับไปยัง inference provider ที่ Cerebras-powered ได้เมื่อราคาเหมาะ
+**อาจารย์ (มหาวิทยาลัย):** Spark ถูกอธิบายว่า "reason ข้ามแอปที่เชื่อมต่อกัน" — ใช้สอนเรื่องขอบเขตของ AI agent ในห้องเรียนได้ดี เพราะคำถามที่ตามมาทันทีคือ ผู้ใช้มอบสิทธิ์เข้าถึงข้อมูลส่วนตัว (อีเมล ปฏิทิน ไฟล์) ให้ agent มากแค่ไหนจึงจะพอดีระหว่างประโยชน์กับความเสี่ยง
+**ผู้เชี่ยวชาญด้าน AI:** จุดที่น่าสนใจคือ Spark สร้างจากโมเดลฐาน Gemini บวก agentic harness จาก Google Antigravity — สถาปัตยกรรม "โมเดล + harness" แยกชั้นกันชัดเจน บอกว่าความสามารถ agentic ส่วนใหญ่อยู่ที่ orchestration layer ไม่ใช่ตัวโมเดลล้วน
+**โปรแกรมเมอร์มืออาชีพ:** ปล่อยให้ trusted testers และสมาชิก Google AI Ultra ก่อน แปลว่ายังไม่ใช่ surface ที่พึ่งได้ใน production — แต่ถ้าแอปของคุณมีข้อมูลที่ agent ควรอ่าน/เขียน ให้เริ่มคิดเรื่อง connector ที่ machine-readable และ OAuth scope แบบ least-privilege ตั้งแต่ตอนนี้
 
-## 3. Greg Brockman คุม product strategy ที่ OpenAI (TechCrunch)
+## 3. Andrej Karpathy ย้ายเข้า Anthropic ทีม pre-training (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** การที่ผู้ร่วมก่อตั้งกลับมาคุม product ช่วงที่ CEO of AGI Deployment ลาป่วย เป็นกรณีศึกษา succession risk ของบริษัทที่ valuation พึ่ง key person สูงมาก — นักศึกษา MBA ควรใช้เคสนี้ดู governance ของบริษัท frontier AI
-**ผู้เชี่ยวชาญด้าน AI:** Brockman เป็น engineer-founder ที่เคยขับ product direction ของ GPT-3/4 era — การที่เขาย้อนกลับมาคุม product strategy ในช่วงที่ OpenAI กำลังขยายไปทาง consulting/finance/agents บอกว่าทิศของ product อาจจะ rebalance กลับไปทาง core API/model มากกว่า vertical SaaS
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมคุณ ship feature ที่อ้างอิง roadmap ของ OpenAI (เช่น Codex CLI, Operator, Agents API) — เตรียม diff scenarios เพราะ product direction ใต้ leadership ใหม่อาจปรับ priority และ deprecation timeline ในไตรมาสหน้า
+**อาจารย์ (มหาวิทยาลัย):** Karpathy เป็นที่รู้จักในวงกว้างจากงานสอน/อธิบาย deep learning — การที่เขาเลือกทีม pre-training เป็นกรณีศึกษาว่า "frontier" ของวงการยังอยู่ที่ขั้นตอนพื้นฐานที่สุด ไม่ใช่แค่ชั้น product
+**ผู้เชี่ยวชาญด้าน AI:** ทีมใหม่ของเขาโฟกัส "ใช้ Claude เร่งงานวิจัย pre-training" — นี่คือ recursive loop ที่น่าจับตา: ใช้โมเดลปัจจุบันช่วยออกแบบ/วิเคราะห์การเทรนโมเดลรุ่นถัดไป pre-training ยังเป็นเฟสที่แพงและกินคอมพิวต์มากที่สุด การลดต้นทุนตรงนี้คือ leverage จริง
+**โปรแกรมเมอร์มืออาชีพ:** ดีลนี้ไม่กระทบโค้ดของคุณวันนี้ แต่เป็น talent signal: คนระดับ founding member ของ OpenAI ย้ายข้างในตลาดที่ระดมทุนกันดุเดือด — สำหรับ dev คือเครื่องเตือนว่า ecosystem รอบ Claude กำลังได้แรงลงทุนด้านวิจัยเพิ่ม คุ้มที่จะ track release ของ Anthropic ใกล้ขึ้น
 
-## 4. arXiv จะ ban นักเขียนที่ปล่อยให้ AI ทำทั้งหมด (TechCrunch)
+## 4. OpenAI ทำเครื่องมือเช็กว่าภาพถูกสร้างด้วยโมเดลของตัวเอง (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือ policy ที่ใกล้กับห้องเรียนที่สุดในรายการวันนี้ — arXiv ไม่ได้แบน LLM ในงานเขียน แต่แบน "ปล่อยให้ AI ทำทั้งหมด" ขีดเส้นแบบนี้ใช้เป็น template ให้มหาวิทยาลัยร่าง policy ของตัวเองได้: ห้ามแบบ blanket จะ unenforceable; ห้ามที่ "no human substantive contribution" ปฏิบัติได้จริงกว่า
-**ผู้เชี่ยวชาญด้าน AI:** ปัญหาทาง technical คือการ detect "AI ทำทั้งหมด" ทำได้ยากเมื่อ paraphrasing tool เก่งขึ้น — arXiv น่าจะใช้ moderation signal หลายชั้น (referee report, statistical fingerprint, author behavior) มากกว่า detector ตัวเดียว เป็น case study ดีของ AI governance ที่อาศัย process ไม่ใช่ tool
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ LLM ช่วยเขียน technical doc/RFC/PR description — บทเรียนคือ keep your fingerprint บนงาน: structure ที่เป็นของเรา, ตัวอย่างจาก codebase จริง, decision log ที่ traceable ถ้า output ของคุณ "AI-only" ก็แปลว่ามูลค่าของคุณคือ prompt ไม่ใช่ knowledge — ตำแหน่งเสี่ยงต่อ replacement สูงสุด
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้สอน media literacy ได้ตรงประเด็น — provenance ของภาพแยกเป็นสองชั้น: metadata ที่เปิดเผย (C2PA) กับ watermark ที่มองไม่เห็น (SynthID) นักศึกษาควรเข้าใจว่า metadata ลบง่าย ส่วน watermark ฝังลึกกว่า แต่ไม่มีอันไหนกันได้ 100%
+**ผู้เชี่ยวชาญด้าน AI:** การที่ OpenAI จับมือ Google ใช้ SynthID ร่วมกัน คือก้าวสำคัญสู่มาตรฐานข้าม vendor — provenance จะได้ผลก็ต่อเมื่อหลายค่ายฝัง signal แบบเดียวกัน ความท้าทายที่เหลือคือฝั่ง verifier และการรับมือผู้ที่จงใจลบ signal
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าผลิตภัณฑ์ของคุณรับอัปโหลดภาพหรือแสดงภาพที่ผู้ใช้สร้าง ให้เริ่มวางแผนอ่าน C2PA metadata และเรียกเครื่องมือ verification ที่ OpenAI กำลังพรีวิว — อย่าถือว่า "ไม่มี watermark = ภาพจริง" เพราะ signal ถูกลบได้ ใช้เป็นสัญญาณประกอบ ไม่ใช่คำตัดสิน
 
-## 5. Stripe John Collison: Agentic Commerce จะเปลี่ยน e-commerce (Bloomberg)
+## 5. ศาลอุทธรณ์ไม่เชื่อ Anthropic จะล้มป้าย "supply-risk" ของกระทรวงกลาโหมได้ (Bloomberg)
 
-**อาจารย์ (มหาวิทยาลัย):** ครั้งแรกที่ผู้บริหาร payments-infra ระดับ Stripe พูดเปิดเผยว่า "keyword search อาจไม่ใช่วิธีหาของอีกต่อไป" — ใช้สอนวิชา business model evolution: ถ้า discovery layer ของ commerce เปลี่ยนจาก SEO เป็น agent-to-agent บทบาทของ retailer/ad network/aggregator จะถูก rewrite ทั้งหมด
-**ผู้เชี่ยวชาญด้าน AI:** ใจกลางของ agentic commerce คือ AI agent ต้อง authenticate, authorize, และ pay แทนผู้ใช้ — Stripe เป็นบริษัทเดียวที่มี infrastructure ครบทั้ง 3 ชั้นในวันนี้ การที่ Collison พูดเองแปลว่า Stripe กำลัง position ตัวเองเป็น "Plaid ของ agent payments"
-**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำ e-commerce/marketplace ต้องเริ่มเปิด structured product feed (schema.org/Product + price/availability ที่ machine-readable) เพราะ agent shopping จะใช้ feed ก่อน HTML scrape เรื่อง checkout ฝั่ง backend ต้องเตรียม idempotency key + agent-friendly OAuth scope เพื่อรองรับ payment flow ที่ trigger โดย agent ไม่ใช่ human click
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้ดีสำหรับวิชา law & technology — ประเด็นไม่ใช่ "Claude ปลอดภัยไหม" แต่เป็น "ฝ่ายบริหารมีอำนาจประกาศบริษัทเป็นความเสี่ยง supply chain โดยชอบด้วยกฎหมายหรือไม่" สอนให้นักศึกษาแยกคำถามเชิงเทคนิคออกจากคำถามเชิงอำนาจรัฐ
+**ผู้เชี่ยวชาญด้าน AI:** ป้าย supply-risk นำไปสู่การห้ามหน่วยงานรัฐใช้ AI ของ Anthropic — แสดงว่า government procurement กลายเป็นสมรภูมิควบคุม AI ที่จับต้องได้ ไม่ใช่แค่ debate เรื่อง regulation ลอยๆ การจัดซื้อภาครัฐคือ leverage จริง
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าระบบของคุณ — โดยเฉพาะงานที่ขายภาครัฐ — ผูกกับ vendor เดียว ความเสี่ยงไม่ใช่แค่ราคา/uptime แต่รวมถึงความเสี่ยงเชิงนโยบายที่ vendor อาจถูกห้ามใช้ในบางบริบท ออกแบบให้สลับโมเดลได้ และเก็บ abstraction layer ไว้
