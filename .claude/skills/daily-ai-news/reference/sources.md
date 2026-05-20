@@ -1,62 +1,56 @@
-# Sources — 2026-05-17
+# Sources — 2026-05-20
 
-Generated: 2026-05-17 (Asia/Bangkok)
+Generated: 2026-05-20 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned HTTP 403; all stories verified via WebSearch snippet from trusted-source domains)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-16-brief.md (7 URLs loaded)
+Dedup against: articles/2026-05-19-brief.md (5 URLs loaded)
 
-1. **The haves and have nots of the AI gold rush**
+1. **Gemini 3.5 Flash — Google bets its next AI wave on agents, not chatbots**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/
-   - Published: URL slug `2026/05/16` (TechCrunch listing on `site:techcrunch.com 2026/05/16`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/16` (= "yesterday" in TC's PT timezone; surfaced on TC's 2026/05/16 archive)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TC URL was /2026/05/15/runway-..., different path)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Menlo Ventures partner Deedy Das says the divide in AI-boom outcomes is the worst he has ever seen — ~10,000 staff at OpenAI, Anthropic, and Nvidia have crossed "retirement wealth above US$20M" while the rest of the industry worries about career prospects.
+   - URL: https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/
+   - Published: May 19, 2026 (Google I/O 2026, day 1)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/19` and snippet "rolling out today in the Gemini app, Search, and Gemini API"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's TechCrunch link was `/2026/05/18/`, path differs
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: Google launched Gemini 3.5 Flash, which it calls its strongest model yet for coding and autonomous agents; it can independently run coding pipelines and manage research projects, and in benchmarks surpasses 3.1 Pro on coding, agentic and multimodal tasks.
 
-2. **$60B AI chip darling Cerebras almost died early on, burning $8M a month**
+2. **Google introduces Gemini Spark — a 24/7 agentic assistant with Gmail integration**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/16/60b-ai-chip-darling-cerebras-almost-died-early-on-burning-8m-a-month/
-   - Published: URL slug `2026/05/16` (TechCrunch listing on `site:techcrunch.com 2026/05/16`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/16`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (Cerebras/IPO not covered yesterday)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Cerebras Systems — which sells wafer-scale AI inference chips to OpenAI and AWS — held a blockbuster IPO this week with both co-founders becoming billionaires and the company ending the week worth about US$60 billion, after burning US$8M/month early on and nearly going under.
+   - URL: https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration/
+   - Published: May 19, 2026 (Google I/O 2026, day 1)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/19` and snippet "available first to trusted testers and Google AI Ultra subscribers starting next week"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — host matches yesterday but path differs
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md; corroborated by blognone.com)
+   - Summary: Gemini Spark is a new general-purpose AI agent built from Gemini base models plus an agentic harness from Google Antigravity; it reasons across connected apps to help users navigate their digital life, rolling out first to trusted testers and Google AI Ultra subscribers.
 
-3. **OpenAI co-founder Greg Brockman takes charge of product strategy**
+3. **OpenAI co-founder Andrej Karpathy joins Anthropic's pre-training team**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/
-   - Published: URL slug `2026/05/16` (TechCrunch listing on `site:techcrunch.com 2026/05/16`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/16`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (no Brockman/Simo coverage yesterday)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI co-founder and president Greg Brockman is officially taking the reins of the company's product strategy while CEO of AGI deployment Fidji Simo is out on medical leave.
+   - URL: https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/
+   - Published: May 19, 2026 (Tuesday)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/19` and snippet "announced Tuesday that he's joining rival AI lab Anthropic ... started this week"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: Andrej Karpathy, an OpenAI founding member and former Tesla AI lead, joined Anthropic this week to work on pre-training under team lead Nick Joseph; he will start a team focused on using Claude to accelerate pre-training research.
 
-4. **Research repository ArXiv will ban authors for a year if they let AI do all the work**
+4. **OpenAI makes it easier to check if an image was made by its models**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/
-   - Published: URL slug `2026/05/16` (TechCrunch listing on `site:techcrunch.com 2026/05/16`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/16`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (arXiv policy not covered yesterday)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: ArXiv — the widely used open repository for preprint research — is cracking down on careless use of large language models in scientific papers and will ban offending authors for a year.
+   - URL: https://techcrunch.com/2026/05/19/openai-is-making-it-easier-to-check-if-an-image-was-made-by-their-models/
+   - Published: May 19, 2026
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/19`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: OpenAI committed to the open C2PA metadata standard to flag AI-generated images, partnered with Google to embed the harder-to-erase invisible SynthID watermark, and is previewing a public verification tool that checks for both signals.
 
-5. **Stripe's John Collison on AI Shopping and Agentic Commerce**
+5. **Appeals court skeptical Anthropic can block US "supply-risk" label**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-05-16/stripe-s-john-collison-on-ai-shopping-and-agentic-commerce
-   - Published: URL slug `2026-05-16` (Bloomberg listing on `site:bloomberg.com AI news 2026-05-16`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026-05-16`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were `/2026-05-15/...`; different date path)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Stripe co-founder John Collison argues agentic commerce — AI agents shopping on consumers' behalf — will transform online shopping and questions whether keyword search remains an effective way to find things to buy.
+   - URL: https://www.bloomberg.com/news/articles/2026-05-19/appeals-court-skeptical-anthropic-can-block-us-supply-risk-label
+   - Published: May 19, 2026 (hearing Tuesday)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026-05-19` and snippet "At a hearing Tuesday in Washington"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Bloomberg links were `/2026-05-18/`, path differs
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted-sources.md)
+   - Summary: A federal appeals court appeared skeptical of Anthropic's bid to overturn a Pentagon declaration that the company is a supply-chain risk to US national security; two of three judges questioned the claim that Defense Secretary Pete Hegseth issued the March declaration illegally.
 
 ## Dropped
-- https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/ — Filter A (>24h): URL slug `2026/05/15` is ≥2 days old by Asia/Bangkok
-- https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/ — Filter B (dedup): appeared in articles/2026-05-16-brief.md
-- https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/ — Filter A (>24h): URL slug `2026/05/14`
-- https://www.bloomberg.com/news/articles/2026-05-14/fanuc-shares-surge-after-partnership-with-google-on-physical-ai — Filter A (>24h): URL slug `2026-05-14`
-- https://www.blognone.com/node/150505 (OpenAI Daybreak) — Filter A (ambiguous): Blognone uses numeric node IDs without date; no explicit timestamp in snippets, so per Step 1b-tris cannot guarantee 24h freshness
-- https://www.blognone.com/node/150518 (JetBrains IDE) — Filter A (ambiguous): same — no date in URL or snippet
-- https://www.blognone.com/node/150085 (Manus My Computer) — Filter A (ambiguous): same — no date in URL or snippet
+- Various beartai.com / blognone.com Google I/O 2026 items — Filter A (ambiguous): no explicit date in URL slug or search snippet, so per Step 1b-tris freshness within 24h could not be guaranteed; not guessed.
 
-> Note: 5 items passed both filters this run. Of ~12 candidates, ~4 failed Filter A (older slug), ~1 failed Filter B (Runway already in yesterday), and ~3 Thai-source candidates were dropped because timestamps could not be resolved to today (per Step 1b-tris: never guess).
+> Note: 5 items passed both filters this run. All five are May 19 international stories; no date-verified Thai-language story surfaced in search this run, so the ≥1-Thai target was not met (Thai-source snippets lacked resolvable timestamps). No candidates were dropped on Filter A (>24h) or Filter B (dedup).
