@@ -1,56 +1,58 @@
-# Sources — 2026-05-20
+# Sources — 2026-05-21
 
-Generated: 2026-05-20 (Asia/Bangkok)
+Generated: 2026-05-21 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned HTTP 403; all stories verified via WebSearch snippet from trusted-source domains)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-19-brief.md (5 URLs loaded)
+Dedup against: articles/2026-05-20-brief.md (5 URLs loaded)
 
-1. **Gemini 3.5 Flash — Google bets its next AI wave on agents, not chatbots**
+1. **Anthropic will pay xAI $1.25B per month for compute**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/
-   - Published: May 19, 2026 (Google I/O 2026, day 1)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/19` and snippet "rolling out today in the Gemini app, Search, and Gemini API"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's TechCrunch link was `/2026/05/18/`, path differs
+   - URL: https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/
+   - Published: May 20, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and snippet "The financial details were disclosed in SpaceX's IPO filing earlier this week"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's TechCrunch links were all `/2026/05/19/` slugs, path differs
    - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Google launched Gemini 3.5 Flash, which it calls its strongest model yet for coding and autonomous agents; it can independently run coding pipelines and manage research projects, and in benchmarks surpasses 3.1 Pro on coding, agentic and multimodal tasks.
+   - Summary: Anthropic agreed to pay xAI $1.25B per month through May 2029 for compute, gaining full access to xAI's Colossus 1 data center in Memphis (300+ MW, 220,000+ NVIDIA GPUs); the deal could bring xAI over $40B in revenue.
 
-2. **Google introduces Gemini Spark — a 24/7 agentic assistant with Gmail integration**
+2. **Intuit to lay off over 3,000 employees to refocus on AI**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration/
-   - Published: May 19, 2026 (Google I/O 2026, day 1)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/19` and snippet "available first to trusted testers and Google AI Ultra subscribers starting next week"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — host matches yesterday but path differs
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md; corroborated by blognone.com)
-   - Summary: Gemini Spark is a new general-purpose AI agent built from Gemini base models plus an agentic harness from Google Antigravity; it reasons across connected apps to help users navigate their digital life, rolling out first to trusted testers and Google AI Ultra subscribers.
-
-3. **OpenAI co-founder Andrej Karpathy joins Anthropic's pre-training team**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/
-   - Published: May 19, 2026 (Tuesday)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/19` and snippet "announced Tuesday that he's joining rival AI lab Anthropic ... started this week"
+   - URL: https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/
+   - Published: May 20, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and same-day reporting across multiple outlets
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
    - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Andrej Karpathy, an OpenAI founding member and former Tesla AI lead, joined Anthropic this week to work on pre-training under team lead Nick Joseph; he will start a team focused on using Claude to accelerate pre-training research.
+   - Summary: Intuit will cut about 3,000 jobs (~17% of its global workforce) to sharpen its focus on AI; impacted U.S. staff leave on July 31, 2026, and the company has separate multi-year partnerships with Anthropic and OpenAI.
 
-4. **OpenAI makes it easier to check if an image was made by its models**
+3. **Stability AI releases a new audio model that can create 6-minute songs**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/19/openai-is-making-it-easier-to-check-if-an-image-was-made-by-their-models/
-   - Published: May 19, 2026
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/19`
+   - URL: https://techcrunch.com/2026/05/20/stability-ai-release-a-new-audio-model-that-can-create-six-minute-songs/
+   - Published: May 20, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and same-day coverage on multiple outlets
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
    - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: OpenAI committed to the open C2PA metadata standard to flag AI-generated images, partnered with Google to embed the harder-to-erase invisible SynthID watermark, and is previewing a public verification tool that checks for both signals.
+   - Summary: Stability AI released Stable Audio 3.0, a model family that can generate full ~6-minute (6:20) tracks from text prompts — more than double Stable Audio 2.0 — built on fully licensed data, with a small model that runs on-device.
 
-5. **Appeals court skeptical Anthropic can block US "supply-risk" label**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-05-19/appeals-court-skeptical-anthropic-can-block-us-supply-risk-label
-   - Published: May 19, 2026 (hearing Tuesday)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026-05-19` and snippet "At a hearing Tuesday in Washington"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Bloomberg links were `/2026-05-18/`, path differs
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted-sources.md)
-   - Summary: A federal appeals court appeared skeptical of Anthropic's bid to overturn a Pentagon declaration that the company is a supply-chain risk to US national security; two of three judges questioned the claim that Defense Secretary Pete Hegseth issued the March declaration illegally.
+4. **Figma adds an AI assistant to its collaborative canvas**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/20/figma-adds-an-ai-assistant-to-its-collaborative-canvas/
+   - Published: May 20, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and same-day coverage on multiple outlets
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: Figma launched its own AI agent that designs directly on the Figma canvas via natural-language prompts, can run multiple agents in parallel, and is free during beta before becoming a usage-based paid feature.
+
+5. **AI search startups are blowing up (Exa Labs raises $250M)**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/
+   - Published: May 20, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and corroborating Bloomberg report (slug `2026-05-20`)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: Exa Labs raised $250M at a $2.2B valuation (round led by Andreessen Horowitz), more than tripling its valuation since last fall, as startups race to build search infrastructure purpose-built for AI systems.
 
 ## Dropped
-- Various beartai.com / blognone.com Google I/O 2026 items — Filter A (ambiguous): no explicit date in URL slug or search snippet, so per Step 1b-tris freshness within 24h could not be guaranteed; not guessed.
+- https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html — Filter A (>24h): URL slug `/2026/05/19/` is ~2 days old; topic also already covered in articles/2026-05-20-brief.md
+- https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/ — Filter A (>24h): URL slug `/2026/05/19/`
+- Blognone Gemini Omni / Gemini compute-limit / Gemini-CLI-into-Antigravity nodes (150613 / 150614 / 150608) — dropped: no publish timestamp surfaced in search snippets, freshness within 24h could not be confirmed (per Step 1b-tris, not guessed)
 
-> Note: 5 items passed both filters this run. All five are May 19 international stories; no date-verified Thai-language story surfaced in search this run, so the ≥1-Thai target was not met (Thai-source snippets lacked resolvable timestamps). No candidates were dropped on Filter A (>24h) or Filter B (dedup).
+> Note: 5 items passed both filters this run. All five are May 20 international stories (TechCrunch). No Thai-language source could have its publish timestamp resolved to within 24h via search snippets, so the ≥1-Thai target was not met — none were included rather than guessing freshness. No candidates were dropped on Filter B (dedup).
