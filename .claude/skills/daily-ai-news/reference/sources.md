@@ -1,58 +1,53 @@
-# Sources — 2026-05-21
+# Sources — 2026-05-22
 
-Generated: 2026-05-21 (Asia/Bangkok)
+Generated: 2026-05-22 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned HTTP 403; all stories verified via WebSearch snippet from trusted-source domains)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-20-brief.md (5 URLs loaded)
+Dedup against: articles/2026-05-21-brief.md (5 URLs loaded)
 
-1. **Anthropic will pay xAI $1.25B per month for compute**
+1. **Trump delays AI security executive order**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/
-   - Published: May 20, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and snippet "The financial details were disclosed in SpaceX's IPO filing earlier this week"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's TechCrunch links were all `/2026/05/19/` slugs, path differs
+   - URL: https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/
+   - Published: May 21, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/21` and presence in `site:techcrunch.com 2026/05/21` archive search
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's TechCrunch links were all `/2026/05/20/` slugs, path differs
    - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Anthropic agreed to pay xAI $1.25B per month through May 2029 for compute, gaining full access to xAI's Colossus 1 data center in Memphis (300+ MW, 220,000+ NVIDIA GPUs); the deal could bring xAI over $40B in revenue.
+   - Summary: Trump delayed signing an executive order that would let the government evaluate frontier AI models (up to 90 days before release), saying he disliked parts of the language and worried it could be a "blocker" to U.S. AI leadership.
 
-2. **Intuit to lay off over 3,000 employees to refocus on AI**
+2. **Google is pitching an AI agent ecosystem to consumers who may not buy it**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/
-   - Published: May 20, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and same-day reporting across multiple outlets
+   - URL: https://techcrunch.com/2026/05/21/google-is-pitching-an-ai-agent-ecosystem-to-consumers-who-may-not-buy-it/
+   - Published: May 21, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/21` and presence in `site:techcrunch.com 2026/05/21` archive search
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
    - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Intuit will cut about 3,000 jobs (~17% of its global workforce) to sharpen its focus on AI; impacted U.S. staff leave on July 31, 2026, and the company has separate multi-year partnerships with Anthropic and OpenAI.
+   - Summary: A post-I/O analysis arguing Google is pushing an AI-agent ecosystem onto consumers — "information agents" that monitor topics 24/7 and Gemini Spark, a personal assistant tied into Gmail and Docs — while it remains unclear whether everyday users want it.
 
-3. **Stability AI releases a new audio model that can create 6-minute songs**
+3. **The Path, founded by Tony Robbins and Calm alums, wants to offer safer AI therapy**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/20/stability-ai-release-a-new-audio-model-that-can-create-six-minute-songs/
-   - Published: May 20, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and same-day coverage on multiple outlets
+   - URL: https://techcrunch.com/2026/05/21/the-path-founded-by-tony-robbins-and-calm-alums-wants-to-offer-safer-ai-therapy/
+   - Published: May 21, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/21` and presence in `site:techcrunch.com 2026/05/21` archive search
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
    - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Stability AI released Stable Audio 3.0, a model family that can generate full ~6-minute (6:20) tracks from text prompts — more than double Stable Audio 2.0 — built on fully licensed data, with a small model that runs on-device.
+   - Summary: The Path, an AI mental-health app co-founded by Tony Robbins and ex-Calm leaders, raised $14.3M in seed funding; it uses an "anti-validation" design built to challenge users rather than agree with them, and scored 95 on the Vera-MH mental-health safety benchmark.
 
-4. **Figma adds an AI assistant to its collaborative canvas**
+4. **Spotify launches an ElevenLabs-powered audiobook creation tool**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/20/figma-adds-an-ai-assistant-to-its-collaborative-canvas/
-   - Published: May 20, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and same-day coverage on multiple outlets
+   - URL: https://techcrunch.com/2026/05/21/spotify-launches-an-elevenlabs-powered-audiobook-creation-tool/
+   - Published: May 21, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/21` and presence in `site:techcrunch.com 2026/05/21` archive search
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
    - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Figma launched its own AI agent that designs directly on the Figma canvas via natural-language prompts, can run multiple agents in parallel, and is free during beta before becoming a usage-based paid feature.
-
-5. **AI search startups are blowing up (Exa Labs raises $250M)**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/
-   - Published: May 20, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/20` and corroborating Bloomberg report (slug `2026-05-20`)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Exa Labs raised $250M at a $2.2B valuation (round led by Andreessen Horowitz), more than tripling its valuation since last fall, as startups race to build search infrastructure purpose-built for AI systems.
+   - Summary: Spotify launched an ElevenLabs-powered AI audiobook creation tool inside Spotify for Authors; it enters invite-only beta in June (English first), and authors who generate audiobooks are not locked into an exclusive contract.
 
 ## Dropped
-- https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html — Filter A (>24h): URL slug `/2026/05/19/` is ~2 days old; topic also already covered in articles/2026-05-20-brief.md
-- https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/ — Filter A (>24h): URL slug `/2026/05/19/`
-- Blognone Gemini Omni / Gemini compute-limit / Gemini-CLI-into-Antigravity nodes (150613 / 150614 / 150608) — dropped: no publish timestamp surfaced in search snippets, freshness within 24h could not be confirmed (per Step 1b-tris, not guessed)
+- https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/ — Filter A (>24h): URL slug `/2026/05/20/` is ~2 days old on a 2026-05-22 run
+- https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-problem-for-real-this-time/ — Filter A (>24h): URL slug `/2026/05/20/` is ~2 days old
+- https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/ — Filter A (>24h): URL slug `/2026/05/19/` is ~3 days old
+- techcrunch.com/2026/05/19/* Google I/O 2026 coverage — Filter A (>24h): event was May 19, slugs `/2026/05/19/`
+- https://www.bloomberg.com/news/articles/2026-05-20/openai-preparing-for-ipo-filing-in-days-or-weeks-wsj-reports — Filter A (>24h): dated 2026-05-20
+- https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/ — Filter A (>24h): URL slug `/2026/05/08/`
+- NVIDIA Nemotron 3 (blogs.nvidia.com) — Filter A (>24h): Nemotron 3 Nano Omni unveiled ~2026-04-29; Super ~2026-03-11
 
-> Note: 5 items passed both filters this run. All five are May 20 international stories (TechCrunch). No Thai-language source could have its publish timestamp resolved to within 24h via search snippets, so the ≥1-Thai target was not met — none were included rather than guessing freshness. No candidates were dropped on Filter B (dedup).
+> Note: 4 items passed both filters this run. Of the broader candidate pool, the dominant news cycle (Google I/O 2026, Anthropic's profitable-quarter projection, OpenAI's geometry-conjecture result, the OpenAI IPO filing) was concentrated on May 19–20 and failed Filter A (>24h). No candidate failed Filter B — nothing fresh-and-trusted overlapped yesterday's brief. No Thai-language source carried a story with a 24h-resolvable timestamp, so the ≥1-Thai target was not met; none were included rather than guessing freshness.
