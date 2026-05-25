@@ -1,53 +1,56 @@
-# Sources — 2026-05-22
+# Sources — 2026-05-25
 
-Generated: 2026-05-22 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned HTTP 403; all stories verified via WebSearch snippet from trusted-source domains)
+Generated: 2026-05-25 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe https://example.com returned 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-21-brief.md (5 URLs loaded)
+Dedup against: articles/2026-05-24-brief.md (4 URLs loaded)
 
-1. **Trump delays AI security executive order**
+1. **I tried Amazon's Bee wearable and am both intrigued and slightly creeped out**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/
-   - Published: May 21, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/21` and presence in `site:techcrunch.com 2026/05/21` archive search
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's TechCrunch links were all `/2026/05/20/` slugs, path differs
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Trump delayed signing an executive order that would let the government evaluate frontier AI models (up to 90 days before release), saying he disliked parts of the language and worried it could be a "blocker" to U.S. AI leadership.
+   - URL: https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/
+   - Published: 2026-05-24 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links were 2026/05/23 slugs)
+   - Verification: Tier 2 — WebSearch snippet (runtime is WEBFETCH_BLOCKED)
+   - Summary: Bee is a $49.99 AI pendant + $19/month app subscription; records, transcribes, and summarizes the wearer's conversations all day. Recent updates let it draft emails or create calendar events from what it hears. Reviewer praises summarization but flags transcript quality, flimsy strap, and a broad data access footprint (location, photos, contacts, calendar, notifications) that makes it feel invasive for personal use.
 
-2. **Google is pitching an AI agent ecosystem to consumers who may not buy it**
+2. **Everyone is navigating AI security in real time — even Google**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/21/google-is-pitching-an-ai-agent-ecosystem-to-consumers-who-may-not-buy-it/
-   - Published: May 21, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/21` and presence in `site:techcrunch.com 2026/05/21` archive search
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: A post-I/O analysis arguing Google is pushing an AI-agent ecosystem onto consumers — "information agents" that monitor topics 24/7 and Gemini Spark, a personal assistant tied into Gmail and Docs — while it remains unclear whether everyday users want it.
+   - URL: https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/
+   - Published: 2026-05-24 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Google Cloud COO Francis de Souza tells TechCrunch enterprise AI is in a transition period where security can't be bolted on later. Snippet cites concrete recent incidents: Google Cloud developers receiving five-figure bills from unauthorized Gemini API calls they never enabled, and research from Aikido finding that deleted compromised keys remain usable for up to 23 minutes because Google's revocation propagates gradually across its infrastructure. He warns specifically about "shadow AI" — employees using consumer LLM tools without IT review.
 
-3. **The Path, founded by Tony Robbins and Calm alums, wants to offer safer AI therapy**
+3. **Xreal, Google's smartglasses partner, thinks it has finally mastered this notoriously tricky industry**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/21/the-path-founded-by-tony-robbins-and-calm-alums-wants-to-offer-safer-ai-therapy/
-   - Published: May 21, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/21` and presence in `site:techcrunch.com 2026/05/21` archive search
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: The Path, an AI mental-health app co-founded by Tony Robbins and ex-Calm leaders, raised $14.3M in seed funding; it uses an "anti-validation" design built to challenge users rather than agree with them, and scored 95 on the Vera-MH mental-health safety benchmark.
+   - URL: https://techcrunch.com/2026/05/24/xreal-googles-smartglasses-partner-thinks-it-has-finally-mastered-this-notoriously-tricky-industry/
+   - Published: 2026-05-24 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Xreal — Google's hardware partner for Android XR — is shipping Project Aura, wired smart glasses with a 70-degree field of view and embedded OLED displays, tethered to a phone-shaped "puck." Demos include an immersive Google Maps app, VR YouTube, and a hand-tracked painting app. Currently developer-only; commercial launch planned later in 2026. Xreal is also working on an IPO targeted before year-end.
 
-4. **Spotify launches an ElevenLabs-powered audiobook creation tool**
+4. **Why Are College Students Booing AI?**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/newsletters/2026-05-24/why-are-college-students-booing-ai
+   - Published: 2026-05-24 (Bloomberg URL date)
+   - FreshnessCheck: ✅ within last 24h via URL date segment `2026-05-24`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was a 2026-05-23 DeepSeek story)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: A Bloomberg newsletter piece on a wave of US campus pushback against AI: protests, petitions, and booing at graduation ceremonies. Underlying anxiety is concrete — 43% of US graduates aged 22–27 are underemployed (highest since pandemic). A student quoted: "We're not excited to see these advancements in AI if it means it's going to pollute our environment, spread misinformation, track us and take our jobs," calling ChatGPT a "cheating machine." Universities are emerging as a crucible for organized anti-AI resistance.
+
+5. **TechCrunch Mobility: Robotaxi reality check**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/21/spotify-launches-an-elevenlabs-powered-audiobook-creation-tool/
-   - Published: May 21, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/05/21` and presence in `site:techcrunch.com 2026/05/21` archive search
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — not present in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Spotify launched an ElevenLabs-powered AI audiobook creation tool inside Spotify for Authors; it enters invite-only beta in June (English first), and authors who generate audiobooks are not locked into an exclusive contract.
+   - URL: https://techcrunch.com/2026/05/24/techcrunch-mobility-robotaxi-reality-check/
+   - Published: 2026-05-24 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Waymo paused commercial operations in Atlanta, Dallas, Houston, San Antonio, Austin, and Nashville because its robotaxis struggle to identify when not to enter heavy rain and flooded roads. The newsletter's framing: "launching commercially is not mission accomplished" — every new city or capability unlocks a new edge case, so robotaxi presence remains conditional even for the category leader.
 
-## Dropped
-- https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/ — Filter A (>24h): URL slug `/2026/05/20/` is ~2 days old on a 2026-05-22 run
-- https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-problem-for-real-this-time/ — Filter A (>24h): URL slug `/2026/05/20/` is ~2 days old
-- https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/ — Filter A (>24h): URL slug `/2026/05/19/` is ~3 days old
-- techcrunch.com/2026/05/19/* Google I/O 2026 coverage — Filter A (>24h): event was May 19, slugs `/2026/05/19/`
-- https://www.bloomberg.com/news/articles/2026-05-20/openai-preparing-for-ipo-filing-in-days-or-weeks-wsj-reports — Filter A (>24h): dated 2026-05-20
-- https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/ — Filter A (>24h): URL slug `/2026/05/08/`
-- NVIDIA Nemotron 3 (blogs.nvidia.com) — Filter A (>24h): Nemotron 3 Nano Omni unveiled ~2026-04-29; Super ~2026-03-11
+## Notes
 
-> Note: 4 items passed both filters this run. Of the broader candidate pool, the dominant news cycle (Google I/O 2026, Anthropic's profitable-quarter projection, OpenAI's geometry-conjecture result, the OpenAI IPO filing) was concentrated on May 19–20 and failed Filter A (>24h). No candidate failed Filter B — nothing fresh-and-trusted overlapped yesterday's brief. No Thai-language source carried a story with a 24h-resolvable timestamp, so the ≥1-Thai target was not met; none were included rather than guessing freshness.
+- No Thai-language source within the 24h window passed verification this run. Searches against Blognone, Beartai, Thairath, Matichon, Prachachat, and The Standard surfaced index pages and older items (latest Thai-specific items found dated 2026-05-19 and earlier). Shipping 5 international stories rather than padding with stale Thai content.
+- All 5 sources have URL slugs explicitly dated 2026-05-24 → unambiguous Filter A pass without timestamp guessing.
