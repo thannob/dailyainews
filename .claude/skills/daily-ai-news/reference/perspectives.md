@@ -1,31 +1,25 @@
-# Perspectives — 2026-05-25
+# Perspectives — 2026-05-26
 
-## 1. Amazon Bee — AI pendant that records everything you say (TechCrunch)
+## 1. Pope Leo XIV's encyclical "Magnifica Humanitas" — AI as a question about power, not technology (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** Bee เป็นกรณีศึกษาที่ดีของ HCI/Privacy ที่ควรหยิบมาในวิชา ethics — บทเรียนหลักคือ "ราคาฮาร์ดแวร์ + ค่าสมาชิก" สื่อว่าโมเดลธุรกิจของ AI ผู้ช่วยเปลี่ยนจาก "ขายอุปกรณ์" เป็น "ขายข้อมูลพฤติกรรมที่ต่อเนื่อง" และนักศึกษาควรฝึกอ่าน data permission กับ retention policy เป็น default ก่อนทดลองสินค้า
-**ผู้เชี่ยวชาญด้าน AI:** ปัญหาเชิงเทคนิคที่รีวิวเตือนคือ speaker diarization และ context discontinuity — Bee สรุปเป็นกอง แต่ยัง map ชื่อผู้พูดเองไม่ได้และตัดบทสนทนาบางช่วงหายไป สะท้อนว่า on-device long-context audio pipeline ยังไม่นิ่ง และการที่ต้องดึง location, contacts, calendar, photos เพิ่มเข้ามาคือการชดเชย context ด้วย metadata นอกเสียง
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่อยากสร้าง always-listening assistant เอง บทเรียนตรง ๆ คืออย่าเริ่มจาก ASR + LLM แต่เริ่มจากออกแบบ data lifecycle ก่อน: เก็บอะไร, นานแค่ไหน, encrypt ที่ไหน, ลบยังไง, ใครเห็นบ้าง — เพราะ Bee โดนสับเรื่อง "เข้าถึงเยอะ" ไม่ใช่เรื่องสรุปไม่ดี
+**อาจารย์ (มหาวิทยาลัย):** เอกสารระดับ encyclical ของพระสันตปาปาเป็นข้อความระดับสูงสุดของหลักธรรมคาทอลิก — เลือก AI เป็นหัวข้อแรกของพระสันตปาปาองค์ใหม่ คือสัญญาณว่าศาสนาจัดให้ AI อยู่ในฐานะ "moral question of the era" เทียบเท่าการปฏิวัติอุตสาหกรรม น่าหยิบมาสอนวิชา ethics ของ tech ในคู่กับ Rerum Novarum ของ 135 ปีก่อน
+**ผู้เชี่ยวชาญด้าน AI:** TechCrunch ชี้ตรง ๆ ว่าเอกสาร "ไม่ได้พูดถึง AI โดยตรง" — แต่พูดถึง inequality, war, erosion ของประชาธิปไตย และการกระจุก power เป็นการตีกรอบให้ AI เป็น "instrument ของอำนาจ" ไม่ใช่ "เทคโนโลยีกลาง ๆ ที่ใครเอาไปใช้ก็เหมือนกัน" ซึ่งเป็นกรอบที่ academic AI ethics ใช้กันมานานแต่เพิ่งดังขึ้นในวงประชาชน
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับวิศวกรในบริษัท AI ขนาดใหญ่ encyclical นี้แปลว่าแรงกดดันด้าน policy / external scrutiny จะมาจากผู้มีอิทธิพลที่ไม่ใช่รัฐและไม่ใช่ academia ด้วย — แปลว่าโครงสร้าง compliance / red-teaming ขององค์กรต้องเตรียมรับ stakeholder ที่ใช้ language ของ human dignity ไม่ใช่แค่ technical metrics
 
-## 2. Everyone is navigating AI security in real time — even Google (TechCrunch)
+## 2. Anthropic ส่ง Chris Olah ขึ้นเวที Vatican — เลือกข้างชัดเจนใน AI ethics (Anthropic)
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เหมาะใช้ในวิชา system security เพื่อสอนหลัก "least privilege" และ "fail-safe defaults" — เห็นได้ชัดว่าแม้แต่ Google ที่ออกแบบ infra ระดับโลกก็ยังมี blind spot เช่น key revocation propagation 23 นาทีและ unauthorized Gemini billing บอกว่าทฤษฎี security ที่ดี ต้องผ่านการทดสอบบน production scale จริง ไม่ใช่แค่บนกระดาน
-**ผู้เชี่ยวชาญด้าน AI:** ประเด็น "shadow AI" คือ insider risk ใหม่ที่ corporate security ยังไม่มี framework รับมือ — พนักงาน paste เอกสารลับเข้า consumer LLM แล้ว provider ใช้ฝึกโมเดลต่อ ทำให้ข้อมูลรั่วผ่าน prompt completion ของบริษัทอื่นได้ องค์กรต้องวาง gateway/proxy ที่บังคับทุกการเรียก LLM ผ่าน path ที่ตรวจ DLP ได้
-**โปรแกรมเมอร์มืออาชีพ:** เรื่อง "deleted key ยังใช้ได้ 23 นาที" สอนตรง ๆ ว่าการ rotate key ไม่ใช่ atomic operation — design ของคุณต้องสมมุติว่ามี grace window ที่ key เก่ายัง valid และเขียน audit log เพื่อจับการใช้งานหลัง revoke ส่วนเรื่อง billing ที่อยู่ ๆ ก็โผล่ ตอกย้ำว่า budget alert + spend cap ระดับ project ใน Cloud ต้องตั้งเป็นมาตรฐาน ไม่ใช่ optional
+**อาจารย์ (มหาวิทยาลัย):** การที่ Vatican เลือก Anthropic แทน Google หรือ OpenAI สำหรับ encyclical แรกของพระสันตปาปาองค์ใหม่ คือ case study ระดับ MBA ของ "narrative positioning" — Anthropic ใช้เวลาสามปีสะสมภาพลักษณ์ "ethical lab" ผ่าน Constitutional AI / interpretability research และวันนี้เก็บผลตอบแทนเป็น brand differentiation ที่ขนาดเงินซื้อไม่ได้
+**ผู้เชี่ยวชาญด้าน AI:** Chris Olah ในฐานะหัวหน้า interpretability เป็นตัวเลือกที่ฉลาด — เพราะ interpretability คือ subfield ของ AI safety ที่อธิบายให้ผู้ฟังนอกวงเข้าใจได้ง่ายที่สุด (ทำให้ AI "อ่านได้" จาก inside) ตรงกับ frame ของ Vatican ที่ต้องการ "human-friendly AI" — ไม่ใช่ alignment คณิตศาสตร์ดุ ๆ
+**โปรแกรมเมอร์มืออาชีพ:** ข้อความของ Olah ที่ว่า "AI development cannot be left solely to tech companies" เป็น signal ให้วิศวกรในบริษัท AI ลงทุนเวลากับ public-facing communication / explainability documentation มากขึ้น — เพราะถ้าผู้กำกับศาสนา/รัฐ/ประชาคมต้องร่วมตัดสินใจ พวกเขาต้องเข้าใจ output ของระบบก่อน
 
-## 3. Xreal Project Aura — Google's smartglasses partner (TechCrunch)
+## 3. ClickUp ปลดพนักงาน 22% และตั้ง $1M salary band ของ "100x org" (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** Xreal เป็นตัวอย่างที่ดีของ "platform partner strategy" — Google ไม่ได้สร้างฮาร์ดแวร์เอง แต่ปั้น Android XR เป็น OS แล้วให้พาร์ตเนอร์รับความเสี่ยงด้าน hardware ในวิชา business strategy นี่คือกลยุทธ์ที่ Google เคยใช้กับ Android สมัยเริ่มต้นแล้วได้ผล — เหมาะให้นักเรียนวิเคราะห์ว่าโครงสร้างนี้จะ scale ได้ในตลาด smartglasses หรือไม่
-**ผู้เชี่ยวชาญด้าน AI:** Field of view 70 องศาและ "OLED ฝังในเลนส์ + puck ภายนอก" คือทางลัด engineering ที่แลก form factor เพื่อแก้ปัญหาความร้อน/แบตเตอรี่ — แต่ยังไม่ใช่ "AI glasses" ในความหมายของ multimodal real-time agent บนใบหน้าแบบที่ Meta Ray-Ban ทำ ดังนั้นจุดวัดความสำเร็จไม่ใช่ specs แต่คือ killer use case ที่ดึงคนใช้ทุกวัน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับนักพัฒนา app ที่อยากลงแพลตฟอร์มนี้ ขั้นแรกคือทดสอบบน Android XR emulator ก่อนซื้อฮาร์ดแวร์ และต้องคิดเรื่อง input modalities ใหม่: ไม่มีคีย์บอร์ด, ไม่มีจอ touch — ต้องออกแบบ gesture/voice/eye-tracking ตั้งแต่ wireframe
+**อาจารย์ (มหาวิทยาลัย):** ใน strategic management การ "rebrand layoff เป็น AI restructuring" และ pivot ค่าตอบแทนไปสู่ทอป-เพอร์ฟอร์เมอร์ คือ tournament theory ในเชิงปฏิบัติ — น่าหยิบมาวิเคราะห์คู่กับ Netflix's "keeper test" และ Amazon's PIP เพื่อให้นักศึกษา HR/Strategy เห็นว่า labor market สำหรับ knowledge worker กำลัง bifurcate
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข "3,000 internal AI agents = 3:1 agent-per-employee" คืออ้างจาก CEO เอง — ต้องตั้งคำถามทันทีว่านิยาม "agent" ของ ClickUp คืออะไร (workflow script? LangChain instance? ChatGPT-wrapper?) ก่อนจะเชื่อตัวเลข เพราะ "agent count" ที่ไม่มี definition เป็น metric ที่ทำขึ้นเพื่อข่าวได้ง่ายมาก
+**โปรแกรมเมอร์มืออาชีพ:** ข้อความ "if you create outsized impact using AI, you'll be paid outside of traditional bands" คือคำเตือนต่อ mid-level engineer ทั่วโลก — บริษัทเริ่มมองว่าผลผลิตของวิศวกรหนึ่งคนที่ใช้ AI เก่ง = ผลผลิตของทีม 5 คน และจะจ่ายตามนั้น ใครยังไม่ได้ติด AI ในกล่องเครื่องมือทุกวัน ควรเริ่มวันนี้
 
-## 4. Why Are College Students Booing AI? (Bloomberg)
+## 4. Lucra Sports ได้ $20M จาก Cathie Wood ทั้งที่ไม่ใช่ AI — pitch trick ที่ใช้ AI เป็นข้ออ้าง (TechCrunch)
 
-**อาจารย์ (มหาวิทยาลัย):** สถิติ 43% ของบัณฑิตอเมริกันอายุ 22–27 ทำงานต่ำกว่าวุฒิ — สูงสุดนับตั้งแต่ pandemic — เป็นข้อมูลที่อาจารย์มหาวิทยาลัยทุกคนต้องเอามาคุยกับนักศึกษา ไม่ใช่ปฏิเสธ AI แต่สอนให้แยกระหว่าง "skill ที่ AI ทดแทน" กับ "skill ที่ AI ทำให้แพงขึ้น" และปรับ curriculum ให้นักศึกษาออกไปจาก gate ของมหาวิทยาลัยพร้อมตัวอย่างผลงานที่ AI โคลนยาก
-**ผู้เชี่ยวชาญด้าน AI:** การที่ผู้ใช้กลุ่มหนึ่ง — โดยเฉพาะนักศึกษาที่จะเป็นแรงงาน 5–10 ปีข้างหน้า — booing AI ในงาน graduation คือ social-cost signal ที่ผู้พัฒนาโมเดลควรจริงจัง ไม่ใช่ปัด ปัญหาเรื่องพลังงาน, misinformation, surveillance ที่นักศึกษาหยิบมาเป็นข้อกล่าวหา ทุกข้อมีข้อมูลรองรับ — และคนทำ AI policy ต้องตอบเป็นรูปธรรม ไม่ใช่ marketing
-**โปรแกรมเมอร์มืออาชีพ:** ในมุมแรงงาน entry-level dev ปี 2026 ทักษะที่อยู่รอดไม่ใช่ "เขียนโค้ดได้" แต่คือ "ออกแบบระบบที่ใช้ AI ได้อย่างปลอดภัย, ทดสอบมันได้, debug ได้เมื่อมันพัง" ใช้เวลาที่ AI ประหยัดให้ ไปฝึก system design, code review, observability — เพราะนั่นคือสิ่งที่ทำให้บริษัทยังจ้างคนได้แม้ AI เก่งขึ้นทุกเดือน
-
-## 5. Waymo Robotaxi reality check — pauses in 6 cities (TechCrunch)
-
-**อาจารย์ (มหาวิทยาลัย):** ใช้กรณีนี้ในวิชา robotics/safety เพื่อสอนหลัก "ODD" (Operational Design Domain) — Waymo ไม่ได้ "ขับไม่ได้" แต่ "ขับใน ODD ที่ฝนตกหนัก/น้ำท่วม ยังไม่ได้" และการ pause = decision making ที่ถูก ไม่ใช่ความล้มเหลว นักเรียนควรเข้าใจว่า autonomous = bounded autonomous เสมอ
-**ผู้เชี่ยวชาญด้าน AI:** การ pause ใน 6 เมืองพร้อมกันบ่งบอกว่า rule-based fallback ของ Waymo สำหรับสภาพอากาศ shipped ตอน scale ไม่ทันการขยายเมือง — long tail ของ edge case จะใหญ่ขึ้นแบบ super-linear กับ geography coverage ไม่ใช่ linear นี่คือเหตุผลที่ผู้พัฒนา AV รายอื่นยัง limit ตัวเองอยู่ในไม่กี่เมือง
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับ ML engineer ที่ทำ safety-critical system บทเรียนคือ feature flag/region kill-switch ต้องอยู่ใน design phase ตั้งแต่ต้น — Waymo สามารถ pause ทั้งเมืองได้ในเวลาไม่กี่ชั่วโมง คือ infrastructure win ไม่ใช่ embarrassment ใครก็ตามที่ออกแบบ AI ใน production ควรเลียนแบบความสามารถนี้
+**อาจารย์ (มหาวิทยาลัย):** สถิติ "1 ใน 3 ของ VC call จบทันทีเมื่อรู้ว่าไม่ใช่ AI" คือ data point ที่ดีสำหรับสอน VC dynamics — เป็นภาวะที่ Howard Marks เรียกว่า "single-narrative market" ที่ทุกคนไล่ตามธีมเดียวกันจนตลาดส่วนอื่นเหี่ยว และคือ signal ของ late-stage bubble ที่นักศึกษาควรอ่านออก
+**ผู้เชี่ยวชาญด้าน AI:** pitch ของ Lucra ที่ใช้ AI เป็น "macro hedge" — ถ้า AI ดีจริงคนมีเวลาว่างมากขึ้น เล่นเกมมากขึ้น = win; ถ้า AI ไม่ดีจริง พวกเขาก็เป็น diversification ที่ดี — สะท้อนความจริงที่นักลงทุนสาย AI ปฏิเสธอยากรับว่า: AI revenue ใน 18 เดือนข้างหน้ามี downside ที่ไม่มีใครพูดถึง
+**โปรแกรมเมอร์มืออาชีพ:** บทเรียนเชิงปฏิบัติ — ถ้าโปรเจกต์ไม่ใช่ AI native แต่ใช้ AI เป็นเครื่องมือเพื่อ unlock business model อื่น การ frame ผลงานด้วยภาษา AI macro (productivity uplift, free-time creation, automation savings) จะช่วยให้ผู้บริหารและ funder เข้าใจคุณค่าได้ไวขึ้น — ไม่ใช่การหลอก แต่เป็นการพูดภาษาที่ตลาดฟัง

@@ -1,56 +1,51 @@
-# Sources — 2026-05-25
+# Sources — 2026-05-26
 
-Generated: 2026-05-25 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe https://example.com returned 403)
+Generated: 2026-05-26 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe `https://example.com` → 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-24-brief.md (4 URLs loaded)
+Dedup against: articles/2026-05-25-brief.md (5 URLs loaded)
 
-1. **I tried Amazon's Bee wearable and am both intrigued and slightly creeped out**
+1. **The pope's AI encyclical isn't really about AI**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links were 2026/05/23 slugs)
-   - Verification: Tier 2 — WebSearch snippet (runtime is WEBFETCH_BLOCKED)
-   - Summary: Bee is a $49.99 AI pendant + $19/month app subscription; records, transcribes, and summarizes the wearer's conversations all day. Recent updates let it draft emails or create calendar events from what it hears. Reviewer praises summarization but flags transcript quality, flimsy strap, and a broad data access footprint (location, photos, contacts, calendar, notifications) that makes it feel invasive for personal use.
+   - URL: https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/
+   - Published: May 25, 2026 (per URL slug + snippet "Pope Leo XIV published his first encyclical titled Magnifica Humanitas")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/25/` and snippet "Pope Leo XIV published his first encyclical titled Magnifica Humanitas, addressing 'safeguarding the human person in the time of artificial intelligence'"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TC URLs were all `/2026/05/24/*`; this path is distinct)
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources allow-list)
+   - Summary: Pope Leo XIV published his first encyclical "Magnifica Humanitas" on May 25, 2026, addressing "the protection of the human person in the time of artificial intelligence" — focusing on inequality, war, the erosion of democracy, and the concentration of power rather than AI itself.
 
-2. **Everyone is navigating AI security in real time — even Google**
+2. **Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical "Magnifica humanitas"**
+   - Publisher: Anthropic (primary source)
+   - URL: https://www.anthropic.com/news/chris-olah-pope-leo-encyclical
+   - Published: May 25, 2026 (snippet ties to Pope's May 25 presentation at Vatican Synod Hall)
+   - FreshnessCheck: ✅ within last 24h via search snippet "Christopher Olah, co-founder of Anthropic... at the formal launch event" on May 25, and "spoke at the Vatican presentation"
+   - DedupCheck: ✅ host anthropic.com not in YESTERDAYS_URLS at all
+   - Verification: Tier 2 — WebSearch snippet (anthropic.com on trusted-sources allow-list as primary research source)
+   - Summary: Chris Olah, co-founder of Anthropic and head of AI interpretability research, posted his remarks delivered at the Vatican on May 25 — urging that AI development cannot be left solely to tech companies and calling for greater oversight from religious leaders, governments, and civil society.
+
+3. **What ClickUp's mass layoff tells us about the future of work**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - URL: https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/
+   - Published: May 25, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/25/` and snippet "ClickUp CEO Zeb Evans announced on May 25, 2026 that the company had laid off 22% of its workforce"
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google Cloud COO Francis de Souza tells TechCrunch enterprise AI is in a transition period where security can't be bolted on later. Snippet cites concrete recent incidents: Google Cloud developers receiving five-figure bills from unauthorized Gemini API calls they never enabled, and research from Aikido finding that deleted compromised keys remain usable for up to 23 minutes because Google's revocation propagates gradually across its infrastructure. He warns specifically about "shadow AI" — employees using consumer LLM tools without IT review.
+   - Summary: ClickUp cut 22% of its workforce and introduced $1M salary bands for a "100x org" where AI agents outnumber employees 3:1 — running ~3,000 internal AI agents across departments. CEO Zeb Evans framed it as a radical embrace of AI rather than cost-cutting.
 
-3. **Xreal, Google's smartglasses partner, thinks it has finally mastered this notoriously tricky industry**
+4. **The pitch trick that helped an eSports startup raise $20M when VCs only wanted AI**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/xreal-googles-smartglasses-partner-thinks-it-has-finally-mastered-this-notoriously-tricky-industry/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - URL: https://techcrunch.com/2026/05/25/the-pitch-trick-that-helped-an-esports-startup-raise-20m-when-vcs-only-wanted-ai/
+   - Published: May 25, 2026 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/25/` and snippet "Lucra Sports' CEO landed Cathie Wood and her ARK Invest Venture Fund as a lead in a $20 million Series B"
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Xreal — Google's hardware partner for Android XR — is shipping Project Aura, wired smart glasses with a 70-degree field of view and embedded OLED displays, tethered to a phone-shaped "puck." Demos include an immersive Google Maps app, VR YouTube, and a hand-tracked painting app. Currently developer-only; commercial launch planned later in 2026. Xreal is also working on an IPO targeted before year-end.
+   - Summary: Lucra Sports founder Dylan Robbins raised $20M Series B led by Cathie Wood's ARK Venture Fund despite the company not being AI — by reframing the pitch as "if AI works, free time grows so games win; if AI doesn't, non-AI bets are smart diversification." During Q4 2025 fundraising, 1 in 3 VC calls ended immediately on hearing he wasn't building AI.
 
-4. **Why Are College Students Booing AI?**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-05-24/why-are-college-students-booing-ai
-   - Published: 2026-05-24 (Bloomberg URL date)
-   - FreshnessCheck: ✅ within last 24h via URL date segment `2026-05-24`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was a 2026-05-23 DeepSeek story)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: A Bloomberg newsletter piece on a wave of US campus pushback against AI: protests, petitions, and booing at graduation ceremonies. Underlying anxiety is concrete — 43% of US graduates aged 22–27 are underemployed (highest since pandemic). A student quoted: "We're not excited to see these advancements in AI if it means it's going to pollute our environment, spread misinformation, track us and take our jobs," calling ChatGPT a "cheating machine." Universities are emerging as a crucible for organized anti-AI resistance.
+## Dropped
 
-5. **TechCrunch Mobility: Robotaxi reality check**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/techcrunch-mobility-robotaxi-reality-check/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Waymo paused commercial operations in Atlanta, Dallas, Houston, San Antonio, Austin, and Nashville because its robotaxis struggle to identify when not to enter heavy rain and flooded roads. The newsletter's framing: "launching commercially is not mission accomplished" — every new city or capability unlocks a new edge case, so robotaxi presence remains conditional even for the category leader.
+- https://www.bloomberg.com/news/articles/2026-05-25/pope-leo-warns-ai-should-be-prevented-from-dominating-humanity — topic-duplicate of #1 / #2 (same Pope encyclical event); kept TC + Anthropic primary instead.
+- https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/ — Filter A (>24h): URL slug `/2026/05/19/` is 6 days old.
+- https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/ — Filter B (dedup): appeared in articles/2026-05-25-brief.md.
+- https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/ — Filter B (dedup): appeared in articles/2026-05-25-brief.md.
 
-## Notes
-
-- No Thai-language source within the 24h window passed verification this run. Searches against Blognone, Beartai, Thairath, Matichon, Prachachat, and The Standard surfaced index pages and older items (latest Thai-specific items found dated 2026-05-19 and earlier). Shipping 5 international stories rather than padding with stale Thai content.
-- All 5 sources have URL slugs explicitly dated 2026-05-24 → unambiguous Filter A pass without timestamp guessing.
+> Note: 4 items passed both filters this run. Of 8+ candidates considered, 3 failed Filter A (too old: Karpathy May 19, Maia chip May 21, Anthropic-SpaceX May 20), 2 failed Filter B (in yesterday's brief), 1 dropped as topic-duplicate within today's set.
