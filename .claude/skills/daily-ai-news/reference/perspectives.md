@@ -1,31 +1,19 @@
-# Perspectives — 2026-05-25
+# Perspectives — 2026-05-27
 
-## 1. Amazon Bee — AI pendant that records everything you say (TechCrunch)
+## 1. DuckDuckGo installs +30% as users reject Google's AI Search
 
-**อาจารย์ (มหาวิทยาลัย):** Bee เป็นกรณีศึกษาที่ดีของ HCI/Privacy ที่ควรหยิบมาในวิชา ethics — บทเรียนหลักคือ "ราคาฮาร์ดแวร์ + ค่าสมาชิก" สื่อว่าโมเดลธุรกิจของ AI ผู้ช่วยเปลี่ยนจาก "ขายอุปกรณ์" เป็น "ขายข้อมูลพฤติกรรมที่ต่อเนื่อง" และนักศึกษาควรฝึกอ่าน data permission กับ retention policy เป็น default ก่อนทดลองสินค้า
-**ผู้เชี่ยวชาญด้าน AI:** ปัญหาเชิงเทคนิคที่รีวิวเตือนคือ speaker diarization และ context discontinuity — Bee สรุปเป็นกอง แต่ยัง map ชื่อผู้พูดเองไม่ได้และตัดบทสนทนาบางช่วงหายไป สะท้อนว่า on-device long-context audio pipeline ยังไม่นิ่ง และการที่ต้องดึง location, contacts, calendar, photos เพิ่มเข้ามาคือการชดเชย context ด้วย metadata นอกเสียง
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่อยากสร้าง always-listening assistant เอง บทเรียนตรง ๆ คืออย่าเริ่มจาก ASR + LLM แต่เริ่มจากออกแบบ data lifecycle ก่อน: เก็บอะไร, นานแค่ไหน, encrypt ที่ไหน, ลบยังไง, ใครเห็นบ้าง — เพราะ Bee โดนสับเรื่อง "เข้าถึงเยอะ" ไม่ใช่เรื่องสรุปไม่ดี
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้คือ live experiment ของ Hirschman's *Exit, Voice, and Loyalty* — ผู้ใช้ที่ไม่ชอบ AI Search ของ Google ไม่ออกมา voice ในแบบสอบถาม แต่ exit ด้วยเท้า (install คู่แข่ง) ซึ่งวัดผลได้แน่นกว่ามาก น่าหยิบไปสอนวิชา product strategy / consumer behavior ว่าเหตุใด default-on AI feature จึงเสี่ยงต่อ brand เมื่อไม่มี opt-out
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข noai.duckduckgo.com +22.7% WoW น่าสนใจกว่าตัวเลขรวม — มันบอกว่าผู้ใช้กลุ่มหนึ่งต้องการ search ที่ "ปิด AI by default" ไม่ใช่แค่เปลี่ยน vendor นี่คือ market signal ว่ามี non-trivial segment ที่ AI summarization ทำให้คุณภาพการค้นหาแย่ลงสำหรับงานของเขา (เช่น verification, primary-source hunting)
+**โปรแกรมเมอร์มืออาชีพ:** ผู้พัฒนาที่พึ่ง organic search ในการกระจาย docs/blog content ควรเฝ้าดู referral traffic จาก Google ใน 30 วันข้างหน้า — AI agents ของ Google I/O 2026 อาจตอบคำถามจาก content ของคุณโดยไม่ส่ง click กลับมา ถ้าเห็น drop เกิน 20% ต้อง diversify ช่องทาง (newsletter, Hacker News, DuckDuckGo SEO, RSS) ตั้งแต่ตอนนี้
 
-## 2. Everyone is navigating AI security in real time — even Google (TechCrunch)
+## 2. Human Archive — India's gig economy training the world's robots
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เหมาะใช้ในวิชา system security เพื่อสอนหลัก "least privilege" และ "fail-safe defaults" — เห็นได้ชัดว่าแม้แต่ Google ที่ออกแบบ infra ระดับโลกก็ยังมี blind spot เช่น key revocation propagation 23 นาทีและ unauthorized Gemini billing บอกว่าทฤษฎี security ที่ดี ต้องผ่านการทดสอบบน production scale จริง ไม่ใช่แค่บนกระดาน
-**ผู้เชี่ยวชาญด้าน AI:** ประเด็น "shadow AI" คือ insider risk ใหม่ที่ corporate security ยังไม่มี framework รับมือ — พนักงาน paste เอกสารลับเข้า consumer LLM แล้ว provider ใช้ฝึกโมเดลต่อ ทำให้ข้อมูลรั่วผ่าน prompt completion ของบริษัทอื่นได้ องค์กรต้องวาง gateway/proxy ที่บังคับทุกการเรียก LLM ผ่าน path ที่ตรวจ DLP ได้
-**โปรแกรมเมอร์มืออาชีพ:** เรื่อง "deleted key ยังใช้ได้ 23 นาที" สอนตรง ๆ ว่าการ rotate key ไม่ใช่ atomic operation — design ของคุณต้องสมมุติว่ามี grace window ที่ key เก่ายัง valid และเขียน audit log เพื่อจับการใช้งานหลัง revoke ส่วนเรื่อง billing ที่อยู่ ๆ ก็โผล่ ตอกย้ำว่า budget alert + spend cap ระดับ project ใน Cloud ต้องตั้งเป็นมาตรฐาน ไม่ใช่ optional
+**อาจารย์ (มหาวิทยาลัย):** ตำแหน่งของ Human Archive อยู่ใน geography of AI labor ที่ Mary L. Gray เรียกว่า *ghost work* — งานที่ทำให้ AI ทำงานได้ แต่ถูกซ่อนจากผู้ใช้ปลายทาง น่าใช้เป็น case study คู่กับ Scale AI/Sama เพื่อสอนว่า supply chain ของ frontier AI ไม่ใช่แค่ compute และ data center แต่รวมถึงแรงงานในประเทศกำลังพัฒนา และตั้งคำถามเรื่องการกระจายผลตอบแทน
+**ผู้เชี่ยวชาญด้าน AI:** จุดเทคนิคที่น่าสนใจคือการ synchronize headset RGB-D + force feedback + full-body mocap + chest/wrist video พร้อมกัน — modality alignment ใน physical AI เป็น bottleneck จริง การมี dataset multi-modal sync ขนาดใหญ่จาก scenarios ที่ฝึกในแล็บไม่ได้ (เช่น แม่บ้าน, คนทำอาหาร, ช่างซ่อม) จะเป็น input ที่ humanoid foundation models ใช้งานได้จริง คำถามที่ยังไม่มีคำตอบคือ data licensing — บริษัทใดเป็นเจ้าของหลังจากนำไปเทรน
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำงานสาย robotics / embodied AI ตัวเลขนี้บอกว่า real-world data ราคา ~$15/ชม. ในอินเดียถูกกว่าหลายเท่าเทียบกับ synthetic data ระดับเดียวกัน — แต่ก็เป็นสัญญาณว่ายุค "synthetic everything" ของ frontier robotics กำลังจบ และ pipeline ที่ผสม real + sim จะกลายเป็นมาตรฐาน ใครออกแบบ data infra อยู่ ควรเริ่มคิดเรื่อง ingestion ของ multi-sensor real-world stream ตั้งแต่ตอนนี้
 
-## 3. Xreal Project Aura — Google's smartglasses partner (TechCrunch)
+## 3. UMG–TikTok renew, with AI music protections at the center
 
-**อาจารย์ (มหาวิทยาลัย):** Xreal เป็นตัวอย่างที่ดีของ "platform partner strategy" — Google ไม่ได้สร้างฮาร์ดแวร์เอง แต่ปั้น Android XR เป็น OS แล้วให้พาร์ตเนอร์รับความเสี่ยงด้าน hardware ในวิชา business strategy นี่คือกลยุทธ์ที่ Google เคยใช้กับ Android สมัยเริ่มต้นแล้วได้ผล — เหมาะให้นักเรียนวิเคราะห์ว่าโครงสร้างนี้จะ scale ได้ในตลาด smartglasses หรือไม่
-**ผู้เชี่ยวชาญด้าน AI:** Field of view 70 องศาและ "OLED ฝังในเลนส์ + puck ภายนอก" คือทางลัด engineering ที่แลก form factor เพื่อแก้ปัญหาความร้อน/แบตเตอรี่ — แต่ยังไม่ใช่ "AI glasses" ในความหมายของ multimodal real-time agent บนใบหน้าแบบที่ Meta Ray-Ban ทำ ดังนั้นจุดวัดความสำเร็จไม่ใช่ specs แต่คือ killer use case ที่ดึงคนใช้ทุกวัน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับนักพัฒนา app ที่อยากลงแพลตฟอร์มนี้ ขั้นแรกคือทดสอบบน Android XR emulator ก่อนซื้อฮาร์ดแวร์ และต้องคิดเรื่อง input modalities ใหม่: ไม่มีคีย์บอร์ด, ไม่มีจอ touch — ต้องออกแบบ gesture/voice/eye-tracking ตั้งแต่ wireframe
-
-## 4. Why Are College Students Booing AI? (Bloomberg)
-
-**อาจารย์ (มหาวิทยาลัย):** สถิติ 43% ของบัณฑิตอเมริกันอายุ 22–27 ทำงานต่ำกว่าวุฒิ — สูงสุดนับตั้งแต่ pandemic — เป็นข้อมูลที่อาจารย์มหาวิทยาลัยทุกคนต้องเอามาคุยกับนักศึกษา ไม่ใช่ปฏิเสธ AI แต่สอนให้แยกระหว่าง "skill ที่ AI ทดแทน" กับ "skill ที่ AI ทำให้แพงขึ้น" และปรับ curriculum ให้นักศึกษาออกไปจาก gate ของมหาวิทยาลัยพร้อมตัวอย่างผลงานที่ AI โคลนยาก
-**ผู้เชี่ยวชาญด้าน AI:** การที่ผู้ใช้กลุ่มหนึ่ง — โดยเฉพาะนักศึกษาที่จะเป็นแรงงาน 5–10 ปีข้างหน้า — booing AI ในงาน graduation คือ social-cost signal ที่ผู้พัฒนาโมเดลควรจริงจัง ไม่ใช่ปัด ปัญหาเรื่องพลังงาน, misinformation, surveillance ที่นักศึกษาหยิบมาเป็นข้อกล่าวหา ทุกข้อมีข้อมูลรองรับ — และคนทำ AI policy ต้องตอบเป็นรูปธรรม ไม่ใช่ marketing
-**โปรแกรมเมอร์มืออาชีพ:** ในมุมแรงงาน entry-level dev ปี 2026 ทักษะที่อยู่รอดไม่ใช่ "เขียนโค้ดได้" แต่คือ "ออกแบบระบบที่ใช้ AI ได้อย่างปลอดภัย, ทดสอบมันได้, debug ได้เมื่อมันพัง" ใช้เวลาที่ AI ประหยัดให้ ไปฝึก system design, code review, observability — เพราะนั่นคือสิ่งที่ทำให้บริษัทยังจ้างคนได้แม้ AI เก่งขึ้นทุกเดือน
-
-## 5. Waymo Robotaxi reality check — pauses in 6 cities (TechCrunch)
-
-**อาจารย์ (มหาวิทยาลัย):** ใช้กรณีนี้ในวิชา robotics/safety เพื่อสอนหลัก "ODD" (Operational Design Domain) — Waymo ไม่ได้ "ขับไม่ได้" แต่ "ขับใน ODD ที่ฝนตกหนัก/น้ำท่วม ยังไม่ได้" และการ pause = decision making ที่ถูก ไม่ใช่ความล้มเหลว นักเรียนควรเข้าใจว่า autonomous = bounded autonomous เสมอ
-**ผู้เชี่ยวชาญด้าน AI:** การ pause ใน 6 เมืองพร้อมกันบ่งบอกว่า rule-based fallback ของ Waymo สำหรับสภาพอากาศ shipped ตอน scale ไม่ทันการขยายเมือง — long tail ของ edge case จะใหญ่ขึ้นแบบ super-linear กับ geography coverage ไม่ใช่ linear นี่คือเหตุผลที่ผู้พัฒนา AV รายอื่นยัง limit ตัวเองอยู่ในไม่กี่เมือง
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับ ML engineer ที่ทำ safety-critical system บทเรียนคือ feature flag/region kill-switch ต้องอยู่ใน design phase ตั้งแต่ต้น — Waymo สามารถ pause ทั้งเมืองได้ในเวลาไม่กี่ชั่วโมง คือ infrastructure win ไม่ใช่ embarrassment ใครก็ตามที่ออกแบบ AI ใน production ควรเลียนแบบความสามารถนี้
+**อาจารย์ (มหาวิทยาลัย):** ปี 2024 UMG ดึงเพลงทั้งหมดออกจาก TikTok ในข้อพิพาทเรื่อง royalty + AI; ปี 2026 กลับมา renew พร้อมเงื่อนไข AI ที่ชัด — นี่คือ pattern คลาสสิกของ collective bargaining ในอุตสาหกรรมความรู้: ฝ่ายเจ้าของ IP ใช้การ "ถอนของ" เป็น leverage จนแพลตฟอร์มยอมเจรจาเงื่อนไขใหม่ น่าเทียบกับการเจรจา WGA-AMPTP เรื่อง AI ใน Hollywood
+**ผู้เชี่ยวชาญด้าน AI:** ดีลนี้ทำให้ AI music กลายเป็น *licensing problem* แทน *litigation problem* — ซึ่งสำคัญเพราะ litigation ต้องการนิยาม "training infringes" ที่ศาลยังไม่ตกลงกัน ส่วน licensing ทำงานได้ทันทีถ้าทั้งสองฝ่ายตกลงนิยาม "unauthorized AI music" และเครื่องมือ detection — งาน detection ที่ TikTok ต้อง implement คือ MIR (music information retrieval) ขนาดใหญ่ มี false-positive risk สำหรับศิลปินที่ใช้ AI tool legitimately
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่สร้าง AI music tools (Suno, Udio, open-source models) ต้องเตรียม artist-attribution metadata และ provenance signature ตั้งแต่ขั้น generation — เพราะแพลตฟอร์มใหญ่อย่าง TikTok จะเริ่มใช้ provenance check เป็นเงื่อนไข upload ถ้าไม่ฝัง watermark/metadata มาตั้งแต่ต้น content ของผู้ใช้จะถูก takedown แบบไม่มีคำเตือน

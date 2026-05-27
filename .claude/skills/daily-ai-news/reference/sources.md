@@ -1,56 +1,41 @@
-# Sources — 2026-05-25
+# Sources — 2026-05-27
 
-Generated: 2026-05-25 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe https://example.com returned 403)
+Generated: 2026-05-27 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe to https://example.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-24-brief.md (4 URLs loaded)
+Dedup against: articles/2026-05-26-brief.md (4 URLs loaded)
 
-1. **I tried Amazon's Bee wearable and am both intrigued and slightly creeped out**
+1. **DuckDuckGo installs are up 30% as users reject being 'force-fed' Google's AI Search**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links were 2026/05/23 slugs)
-   - Verification: Tier 2 — WebSearch snippet (runtime is WEBFETCH_BLOCKED)
-   - Summary: Bee is a $49.99 AI pendant + $19/month app subscription; records, transcribes, and summarizes the wearer's conversations all day. Recent updates let it draft emails or create calendar events from what it hears. Reviewer praises summarization but flags transcript quality, flimsy strap, and a broad data access footprint (location, photos, contacts, calendar, notifications) that makes it feel invasive for personal use.
+   - URL: https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/
+   - Published: per URL slug 2026/05/26; snippet references "peaking at 30.5% on May 25"
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-26 (yesterday in Asia/Bangkok) + snippet citing May 20–25 install data as "this week"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links were all dated 2026/05/25; this is a different path)
+   - Verification: Tier 2 — WebSearch snippet (trusted domain techcrunch.com, present in two independent search results)
+   - Summary: DuckDuckGo reports US app installs +18.1% week-over-week on average May 20–25 vs. May 13–18, peaking at 30.5% on May 25; iOS install growth peaked at 69.9%; visits to noai.duckduckgo.com (AI-off page) +22.7% WoW. CEO frames it as backlash to Google's I/O 2026 swap of blue links for AI agents — "Google is force-feeding AI with no way to opt out."
 
-2. **Everyone is navigating AI security in real time — even Google**
+2. **This startup is betting India's gig economy can train the world's robots**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google Cloud COO Francis de Souza tells TechCrunch enterprise AI is in a transition period where security can't be bolted on later. Snippet cites concrete recent incidents: Google Cloud developers receiving five-figure bills from unauthorized Gemini API calls they never enabled, and research from Aikido finding that deleted compromised keys remain usable for up to 23 minutes because Google's revocation propagates gradually across its infrastructure. He warns specifically about "shadow AI" — employees using consumer LLM tools without IT review.
+   - URL: https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/
+   - Published: per URL slug 2026/05/26
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-26 (yesterday in Asia/Bangkok); snippet describes funding round announcement as current
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host present yesterday but path is different — distinct article)
+   - Verification: Tier 2 — WebSearch snippet (trusted domain techcrunch.com, corroborated by Inc42, Silicon Canals, KuCoin)
+   - Summary: Human Archive (founded by Berkeley/Stanford researchers, YC-backed) raised $8.2M from Wing Venture Capital, NVP Capital, Y Combinator, and angels from OpenAI, Nvidia, Google, Mercor, Meta. It pays gig workers in India ~$15/hr to wear camera-equipped caps and >50 sensor devices, capturing synchronized headset RGB-D, force feedback, full-body motion capture, and chest/wrist video — to train humanoid robots. Compliance under India's DPDP Act; data anonymized and faces blurred. Expanding into Southeast Asia and the US.
 
-3. **Xreal, Google's smartglasses partner, thinks it has finally mastered this notoriously tricky industry**
+3. **Universal Music Group and TikTok renew agreement to combat unauthorized AI music**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/xreal-googles-smartglasses-partner-thinks-it-has-finally-mastered-this-notoriously-tricky-industry/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Xreal — Google's hardware partner for Android XR — is shipping Project Aura, wired smart glasses with a 70-degree field of view and embedded OLED displays, tethered to a phone-shaped "puck." Demos include an immersive Google Maps app, VR YouTube, and a hand-tracked painting app. Currently developer-only; commercial launch planned later in 2026. Xreal is also working on an IPO targeted before year-end.
+   - URL: https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/
+   - Published: per URL slug 2026/05/26 (TechCrunch's coverage of the May 22 UMG–TikTok announcement)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-26 — TechCrunch's article itself is dated yesterday in Asia/Bangkok, even though the underlying announcement is from May 22
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (different path from yesterday's TechCrunch items)
+   - Verification: Tier 2 — WebSearch snippet (trusted domain techcrunch.com, corroborated by PR Newswire, Music Business Worldwide, Digital Music News)
+   - Summary: Multi-year global licensing renewal between UMG and TikTok extending their May-2024 partnership. Headline AI provision: both parties commit to remove unauthorized AI-generated music from TikTok and improve artist/songwriter attribution; deal also expands marketing and ecommerce surfaces for UMG artists. Frames AI music as a licensing problem rather than a litigation problem.
 
-4. **Why Are College Students Booing AI?**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-05-24/why-are-college-students-booing-ai
-   - Published: 2026-05-24 (Bloomberg URL date)
-   - FreshnessCheck: ✅ within last 24h via URL date segment `2026-05-24`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was a 2026-05-23 DeepSeek story)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: A Bloomberg newsletter piece on a wave of US campus pushback against AI: protests, petitions, and booing at graduation ceremonies. Underlying anxiety is concrete — 43% of US graduates aged 22–27 are underemployed (highest since pandemic). A student quoted: "We're not excited to see these advancements in AI if it means it's going to pollute our environment, spread misinformation, track us and take our jobs," calling ChatGPT a "cheating machine." Universities are emerging as a crucible for organized anti-AI resistance.
+## Dropped
 
-5. **TechCrunch Mobility: Robotaxi reality check**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/techcrunch-mobility-robotaxi-reality-check/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Waymo paused commercial operations in Atlanta, Dallas, Houston, San Antonio, Austin, and Nashville because its robotaxis struggle to identify when not to enter heavy rain and flooded roads. The newsletter's framing: "launching commercially is not mission accomplished" — every new city or capability unlocks a new edge case, so robotaxi presence remains conditional even for the category leader.
+- https://techcrunch.com/2026/05/26/spotify-now-lets-you-stream-narrated-magazine-articles-too/ — kept by TechCrunch's AI tag, but the snippet only namechecks "AI audio" as part of a broader Spotify audio expansion; narrated articles themselves aren't described as AI-generated, so the AI angle is too thin to anchor a story today.
+- Anthropic acquires Stainless (https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/) — Filter A (>24h): URL slug 2026-05-18 is ~9 days old.
+- Andrej Karpathy joining Anthropic (Blognone node/150617) — Filter A: cannot resolve a precise date from the search snippet (Blognone node IDs aren't dated). Drop rather than guess.
 
-## Notes
-
-- No Thai-language source within the 24h window passed verification this run. Searches against Blognone, Beartai, Thairath, Matichon, Prachachat, and The Standard surfaced index pages and older items (latest Thai-specific items found dated 2026-05-19 and earlier). Shipping 5 international stories rather than padding with stale Thai content.
-- All 5 sources have URL slugs explicitly dated 2026-05-24 → unambiguous Filter A pass without timestamp guessing.
+> Note: 3 items passed both filters this run. Of ~7 candidates considered, 2 failed Filter A (>24h old), 1 failed AI-relevance / snippet thinness, 1 had unresolvable date. 0 failed Filter B (yesterday's brief covered Pope-Leo/Anthropic-Vatican/ClickUp/Lucra — disjoint themes from today).
