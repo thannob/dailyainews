@@ -1,56 +1,61 @@
-# Sources — 2026-05-25
+# Sources — 2026-05-28
 
-Generated: 2026-05-25 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe https://example.com returned 403)
+Generated: 2026-05-28 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned HTTP 403 — every story below is Tier 2 — WebSearch snippet from a trusted-source domain)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-24-brief.md (4 URLs loaded)
+Dedup against: articles/2026-05-27-brief.md (3 URLs loaded — all under techcrunch.com/2026/05/26/)
 
-1. **I tried Amazon's Bee wearable and am both intrigued and slightly creeped out**
+1. **AI coding startup Cognition raises $1B at $25B pre-money valuation**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links were 2026/05/23 slugs)
-   - Verification: Tier 2 — WebSearch snippet (runtime is WEBFETCH_BLOCKED)
-   - Summary: Bee is a $49.99 AI pendant + $19/month app subscription; records, transcribes, and summarizes the wearer's conversations all day. Recent updates let it draft emails or create calendar events from what it hears. Reviewer praises summarization but flags transcript quality, flimsy strap, and a broad data access footprint (location, photos, contacts, calendar, notifications) that makes it feel invasive for personal use.
+   - URL: https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/
+   - Published: 2026-05-27 (per URL slug + multiple parallel reports — Bloomberg 2026-05-27, The Tech Portal 2026-05-27)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/05/27/` = 1 day ago Asia/Bangkok; multiple independent outlets corroborate same publish date
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's three URLs all under `/2026/05/26/` on the same host — different days, different stories)
+   - Verification: Tier 2 — WebSearch snippet (WebFetch blocked runtime-wide)
+   - Summary: Cognition (maker of autonomous AI software engineer Devin) raised more than $1B at a $25B pre-money / $26B post-money valuation, led by Lux Capital and General Catalyst. Existing investors Founders Fund and 8VC participated; Ribbit Capital, Atreides and Layer Global are new investors. ARR is reportedly $492M and the company cites Mercedes-Benz, NASA, Goldman Sachs, and Santander as customers. Valuation more than doubled from $10.2B post-money (Sept 2025 round, $400M).
 
-2. **Everyone is navigating AI security in real time — even Google**
+2. **Meta officially launches Instagram, Facebook, and WhatsApp subscriptions, with more to come, including AI plans**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - URL: https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/
+   - Published: 2026-05-27 (URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/05/27/`; parallel BLK Alerts, Engadget snippet timestamps match
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google Cloud COO Francis de Souza tells TechCrunch enterprise AI is in a transition period where security can't be bolted on later. Snippet cites concrete recent incidents: Google Cloud developers receiving five-figure bills from unauthorized Gemini API calls they never enabled, and research from Aikido finding that deleted compromised keys remain usable for up to 23 minutes because Google's revocation propagates gradually across its infrastructure. He warns specifically about "shadow AI" — employees using consumer LLM tools without IT review.
+   - Summary: Meta head of product Naomi Gleit announced global rollout of Facebook Plus, Instagram Plus and WhatsApp Plus. Pricing: Instagram Plus / Facebook Plus $3.99/mo, WhatsApp Plus $2.99/mo. Features include better analytics, story rewatch stats, wider reach, profile customization, premium stickers, custom ringtones, app themes. Meta says additional subscription tiers are coming for its AI, business and creator accounts — the company is calling this monthly-payment proving ground "Meta One."
 
-3. **Xreal, Google's smartglasses partner, thinks it has finally mastered this notoriously tricky industry**
+3. **Robinhood now lets your AI agents trade stocks**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/xreal-googles-smartglasses-partner-thinks-it-has-finally-mastered-this-notoriously-tricky-industry/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - URL: https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/
+   - Published: 2026-05-27 (URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/05/27/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Xreal — Google's hardware partner for Android XR — is shipping Project Aura, wired smart glasses with a 70-degree field of view and embedded OLED displays, tethered to a phone-shaped "puck." Demos include an immersive Google Maps app, VR YouTube, and a hand-tracked painting app. Currently developer-only; commercial launch planned later in 2026. Xreal is also working on an IPO targeted before year-end.
+   - Summary: Robinhood users can now create a separate account for their AI agents and connect them to a dedicated wallet. The agents can read and analyze the user's portfolio to formulate strategies and suggest trades, but can only place orders against the pre-loaded balance in the dedicated wallet. Robinhood is also rolling out a new agentic credit card. Framed as part of the broader push to let AI agents act on users' behalf in financial workflows.
 
-4. **Why Are College Students Booing AI?**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-05-24/why-are-college-students-booing-ai
-   - Published: 2026-05-24 (Bloomberg URL date)
-   - FreshnessCheck: ✅ within last 24h via URL date segment `2026-05-24`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was a 2026-05-23 DeepSeek story)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: A Bloomberg newsletter piece on a wave of US campus pushback against AI: protests, petitions, and booing at graduation ceremonies. Underlying anxiety is concrete — 43% of US graduates aged 22–27 are underemployed (highest since pandemic). A student quoted: "We're not excited to see these advancements in AI if it means it's going to pollute our environment, spread misinformation, track us and take our jobs," calling ChatGPT a "cheating machine." Universities are emerging as a crucible for organized anti-AI resistance.
-
-5. **TechCrunch Mobility: Robotaxi reality check**
+4. **China is increasingly keeping its best AI talent to itself**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/24/techcrunch-mobility-robotaxi-reality-check/
-   - Published: 2026-05-24 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/05/24/`
+   - URL: https://techcrunch.com/2026/05/27/china-is-increasingly-keeping-its-best-ai-talent-to-itself/
+   - Published: 2026-05-27 (URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/05/27/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Waymo paused commercial operations in Atlanta, Dallas, Houston, San Antonio, Austin, and Nashville because its robotaxis struggle to identify when not to enter heavy rain and flooded roads. The newsletter's framing: "launching commercially is not mission accomplished" — every new city or capability unlocks a new edge case, so robotaxi presence remains conditional even for the category leader.
+   - Summary: Researchers, startup founders and executives at private Chinese AI firms are reportedly under travel restrictions; some prominent figures must seek government approval before heading abroad. Stanford's latest index puts the performance gap between top U.S. and Chinese AI models at just 2.7% as of March 2026, down from about 31% in 2023.
 
-## Notes
+5. **Tech CEOs are apparently suffering from AI psychosis**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/
+   - Published: 2026-05-27 (URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/05/27/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Box founder Aaron Levie argues that CEOs are uniquely prone to "AI psychosis" — over-confident expectations about what AI agents can do — because they're far from the last-mile work that actually generates value with AI. TechCrunch ties this to the layoff context: the first five months of 2026 have already produced nearly as many tech layoffs as all of 2025, with most companies pointing to AI as the rationale.
 
-- No Thai-language source within the 24h window passed verification this run. Searches against Blognone, Beartai, Thairath, Matichon, Prachachat, and The Standard surfaced index pages and older items (latest Thai-specific items found dated 2026-05-19 and earlier). Shipping 5 international stories rather than padding with stale Thai content.
-- All 5 sources have URL slugs explicitly dated 2026-05-24 → unambiguous Filter A pass without timestamp guessing.
+## Dropped
+
+- techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/ — Filter A (>24h): publish slug `/2026/05/25/` is 3 days old
+- techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/ — Filter A: 4 days old
+- techcrunch.com/2026/05/21/hark-raises-700m-series-a-* — Filter A: 7 days old
+- 933thedrive.com/2026/05/27/synopsys-raises-annual-forecast-on-demand-for-ai-chip-design-software/ — domain not on trusted-sources.md (would have been on Reuters but Reuters URL not surfaced in search results)
+- blognone.com Anthropic-Stainless story — Filter A: published 2026-05-18, 10 days old
+
+> Note: 5 items passed both filters this run. No Thai-language source appeared in search results for the rolling 24h window — the freshest Blognone / Beartai stories indexed by search were >5 days old. Shipping with 5 international (all TechCrunch).
