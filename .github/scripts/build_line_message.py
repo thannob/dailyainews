@@ -26,8 +26,19 @@ from pathlib import Path
 
 # --- knobs ----------------------------------------------------------------
 
-# Hard ceiling for the LINE Messaging API text-message body.
+# Hard ceiling for the LINE Messaging API text-message body. LINE counts
+# length in UTF-16 code units (matches JS String.length), NOT codepoints.
+# Emoji outside the BMP (📰 🔸 📎 etc.) are surrogate pairs = 2 units each
+# but Python's len() counts them as 1 codepoint, so a naive len() check
+# can pass a payload that LINE then rejects with HTTP 400 "Length must
+# be between 0 and 5000". Always use utf16_len() below for budget checks.
 LINE_TEXT_MAX = 5000
+
+
+def utf16_len(s: str) -> int:
+    """Length in UTF-16 code units — matches how LINE Messaging API
+    measures `messages[0].text`. Surrogate pairs count as 2."""
+    return len(s.encode("utf-16-le")) // 2
 
 # How many TL;DR bullets to surface (skill writes 3 by contract).
 TLDR_MAX = 3
@@ -166,7 +177,7 @@ def fit_sentences(sentences: list[str], max_chars: int) -> str:
     out = sentences[0]
     for s in sentences[1:]:
         candidate = out + " " + s
-        if len(candidate) > max_chars:
+        if utf16_len(candidate) > max_chars:
             break
         out = candidate
     return out
@@ -214,7 +225,7 @@ def build_message(title: str, tldr: list[str], stories: list[dict],
     # Pass 1: full bodies. Common case — message is well under 5000.
     msg = render(title, tldr, stories, permalink,
                  body_func=lambda i, s: s.get("body", ""))
-    if len(msg) <= max_chars:
+    if utf16_len(msg) <= max_chars:
         return msg
 
     # Pass 2: per-story budget at sentence granularity.
@@ -228,7 +239,7 @@ def build_message(title: str, tldr: list[str], stories: list[dict],
                           body_func=lambda i, s: "")
         # +4 per body line accounts for "   " indent and a newline.
         body_overhead = 4 * len(stories_in)
-        available = max_chars - len(skeleton) - body_overhead
+        available = max_chars - utf16_len(skeleton) - body_overhead
         if available <= 0:
             per = 0
         else:
@@ -237,7 +248,7 @@ def build_message(title: str, tldr: list[str], stories: list[dict],
                       body_func=lambda i, s: fit_sentences(sents_in[i], per))
 
     msg = fit_to_budget(stories, sents_per_story)
-    if len(msg) <= max_chars:
+    if utf16_len(msg) <= max_chars:
         return msg
 
     # Pass 3: drop stories from the end until it fits.
@@ -245,7 +256,7 @@ def build_message(title: str, tldr: list[str], stories: list[dict],
         stories = stories[:-1]
         sents_per_story = sents_per_story[:-1]
         msg = fit_to_budget(stories, sents_per_story)
-        if len(msg) <= max_chars:
+        if utf16_len(msg) <= max_chars:
             return msg
 
     # Last resort: return whatever pass 3 produced (may be slightly
