@@ -1,31 +1,31 @@
-# Perspectives — 2026-05-29
+# Perspectives — 2026-05-30
 
-## 1. Sesame เปิดตัว iOS app เอเจนต์สนทนา (Oculus founders)
+## 1. OpenAI Rosalind Biodefense Program
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้ใช้สอน HCI ได้ตรง — แทนที่จะวัดคุณภาพ chatbot ด้วย answer accuracy เพียงอย่างเดียว Sesame เลือกออกแบบให้บทสนทนา "ไหล" ต่อแม้ AI ต้องคิด ซึ่งเปลี่ยนเมตริกจาก latency-to-answer ไปสู่ conversational continuity ที่ยังไม่มี standard benchmark
-**ผู้เชี่ยวชาญด้าน AI:** การมี 4 personas (Maya, Miles, Simone, Charlie) ที่มี memory แยกกันคือ design choice ที่น่าจับตา — แทนที่จะรวมเป็น universal assistant แบบ ChatGPT ทีมเลือก fragment ตัวตน ซึ่งช่วยทั้งเรื่อง alignment (เห็นบทบาทชัด, evaluation ทำได้ตรง persona) และเรื่อง engagement (user สัมพันธ์กับตัวละครได้)
-**โปรแกรมเมอร์มืออาชีพ:** ปล่อยฟรีใน 39 ประเทศตั้งแต่ day-one แปลว่าทีม backend รับ load ระดับล้านได้แล้ว — ถ้าทำ voice/chat app ส่วนตัว ไปลองใช้ App Store เพื่อ benchmark p95 latency, turn-taking และ memory recall ของจริงก่อนตัดสินใจ stack ตัวเอง
+**อาจารย์ (มหาวิทยาลัย):** การที่ OpenAI ปล่อย GPT‑Rosalind ในกรอบ "trusted developer" แทนการเปิดสาธารณะ คือเคสที่นักศึกษาวิชาจริยธรรม AI / public-policy ควรอ่าน — model ที่เข้าใจโมเลกุล โปรตีน และยีนเป็น dual-use technology โดยธรรมชาติ การ gate ผ่าน partner list (LLNL, JHU APL, CEPI) คือคำตอบเชิง governance ไม่ใช่เชิงเทคนิค
+**ผู้เชี่ยวชาญด้าน AI:** น่าสนใจที่ scope ถูกตีกรอบรอบ "preparedness/response" ชัด — epidemiological modeling, early detection, screening, NPIs — แทนที่จะปล่อยเป็น generic life-sciences API; นี่คือ pattern ที่ frontier lab อื่นน่าจะตามเพื่อจัดการ misuse risk ของ bio‑model โดยไม่ต้อง freeze การวิจัย
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่จะเข้าโครงการ ขอ document ของ access tier และ revocation policy ตั้งแต่ kickoff — frontier life-sciences model เป็น regulated workload คนละชั้นกับ general-purpose LLM; กำหนด audit log + data residency + breakglass procedure เป็น minimum bar
 
-## 2. AWS เปิด OpenSearch Serverless รุ่น agentic — internet กำลังถูกออกแบบใหม่เพื่อ machine
+## 2. NVIDIA GTC Taipei / MGX AI Factory Showcase
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลข bots = 31% ของ HTTP traffic 6 เดือนล่าสุด และคาดว่า non-human traffic จะแซง human ใน 1H 2027 ต้องเข้าหลักสูตร internet/distributed systems ทันที — อีก 18 เดือน "ผู้ใช้ส่วนใหญ่" ของอินเทอร์เน็ตจะไม่ใช่มนุษย์อีกต่อไป
-**ผู้เชี่ยวชาญด้าน AI:** การ decouple compute จาก storage และ scale ลงถึง zero ($0 ตอน idle) คือ business model สำหรับ agentic workload โดยเฉพาะ — agent burst เกิดเป็นวินาที spawn sub-agent หลายสิบตัวพร้อม query DB หลายร้อย table แล้วหายไป pricing เดิมที่คิดตามชั่วโมงไม่ work
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าระบบของคุณมี API endpoint ที่ agent เรียกได้ ทำ rate-limit + cost-cap แยกระหว่าง human user vs agent token ตั้งแต่ตอนนี้ — bill shock จะมาจาก agent ที่ spin up sub-agent หลายสิบตัวพร้อมกัน ไม่ใช่จาก user คนเดียว
+**อาจารย์ (มหาวิทยาลัย):** วลีของ Jensen ที่ว่า "AI has transformed the computer industry into infrastructure" สรุปการเปลี่ยน paradigm จาก compute-as-product เป็น compute-as-utility ที่อาจารย์ economics of technology หยิบไปสอน rent-extraction layer ของอุตสาหกรรมได้ตรง — ไต้หวันกำลังกลายเป็น "ผู้สร้างโรงไฟฟ้า" ของยุค AI
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Vera Rubin ถูกเรียกว่า "the largest product launch in the history of Taiwan" บวก roadmap Grace Blackwell + surprise product H2'26 บอกว่า NVIDIA จงใจกองโหลด supply ในครึ่งหลัง — implication ต่อ availability/lead time ของ GPU ในตลาดรองคือ pricing pressure จะมาช้ากว่าที่หวัง
+**โปรแกรมเมอร์มืออาชีพ:** ทีม inference ที่วางแผน capacity ปี 2027 ต้องสมมุติว่า Vera Rubin จะเป็น default platform — เริ่ม smoke-test pipeline บน Grace Blackwell ตอนนี้และเปิดข้อมูล kernel-level perf เพื่อ port; ใครรอ "ของถูกลง" ก่อนแล้วค่อยอัปเกรด มักได้ของแพงขึ้นแทน
 
-## 3. RSI = AGI ตัวใหม่ของวงการ AI — แต่นิยามยังไม่ชัด
+## 3. Groq ระดม $650M สำหรับ inference neocloud
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้คู่กับ "AGI" ในวิชา philosophy of mind หรือ AI safety ได้ดี — RSI (Recursive Self-Improvement) ถูกผูกกับ takeoff scenario ของ Bostrom และ Yudkowsky มานาน นี่คือครั้งแรกที่ VC term sheet เริ่มใส่ RSI เป็น milestone จริง
-**ผู้เชี่ยวชาญด้าน AI:** Recursive Superintelligence ของ Richard Socher และโครงการ Auto-Research ที่ใช้ agent swarm train LLM เป็น signal ว่า self-improving loop กำลังถูก operationalize เป็น engineering target — แต่ตามที่ TechCrunch ระบุ industry ยังห่างจาก closed loop ที่ meaningful อยู่มาก
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมเริ่มทำ AutoML/agent ที่ "ปรับปรุงตัวเอง" ออกแบบ feedback signal + stop condition ตั้งแต่ design doc — RSI ที่ไม่มี kill switch + bounded compute budget คือ classic chaos engineering disaster ที่รออยู่
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้เป็น case study ที่หาได้ยากสำหรับวิชา corporate strategy — "not-an-acquisition" $20B กับ NVIDIA แล้วบริษัทเดิมยังเดินหน้าต่อในชื่อ Groq 2.0 คือ structure ที่ตัดผู้บริหารระดับสูงออกพร้อม license เทคโนโลยี โดยไม่ทำให้ entity หายไป — เป็น new playbook ของ "talent + IP carve-out" ที่ regulators ยังไม่มี framework รับมือ
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Groq pivot ไป inference neocloud อย่างเต็มตัว ยืนยัน thesis ที่ TechCrunch ระบุชัด — "inference is currently a much bigger need than training" — และ economics ของ inference ต่อ token ตอนนี้คือสนามแข่งจริง ไม่ใช่ benchmark ของ pre-training อีกต่อไป
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ serve LLM-backed product ในงบสูงควรเขียน abstraction ที่สลับ provider ได้ใน config ไม่ใช่ใน code path — เมื่อ Groq, SambaNova (จากบรีฟเมื่อวาน), Cerebras และ GPU แข่งกัน price/perf จะขยับเร็วทุกไตรมาส; provider lock-in ที่กิน 2 sprint ในการเปลี่ยน = bug ของสถาปัตยกรรม
 
-## 4. General Compute สั่ง $300M ของ SambaNova SN50 — สงคราม inference compute ยกใหม่
+## 4. Anthropic แตะ $965B valuation, ผู้ก่อตั้ง $8B ต่อคน, แซง OpenAI
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้เป็น case study เปรียบเทียบ GPU vs ASIC architecture ในวิชา computer architecture ได้ตรง — 600–700 tokens/sec vs 250 tokens/sec ของ GPU + air-cooled คือตัวเลขที่นักศึกษาวิศวะคำนวณ TCO ได้
-**ผู้เชี่ยวชาญด้าน AI:** จุดที่แหลมที่สุดไม่ใช่ throughput แต่คือ "air-cooled, ติดตั้งใน existing DC ได้โดยไม่ต้องลงทุน infra ใหม่" — barrier ในการ swap GPU → SN50 ต่ำมากในสายตา neocloud และ enterprise ที่ไม่อยากสร้าง data center ใหม่
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีม serve inference budget สูง ลอง quote SambaNova/Groq/Cerebras พร้อม GPU ใน RFP รอบหน้า — pricing competition กำลังเปิดและ vendor lock-in กับ CUDA ไม่ใช่ default ที่ปลอดภัยสำหรับ inference workload อีกต่อไป
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลข $965B post-money + co-founder net worth $8B ต่อคน เป็น dataset สดสำหรับวิชา venture finance ที่ฝึกนักศึกษาคำนวณ dilution path ของ Series H, post-money math และ implied multiple ของ revenue $47B run-rate — และสำหรับวิชา media/society ใช้คุยเรื่อง concentration ของ wealth ในผู้สร้าง frontier model ได้โดยตรง
+**ผู้เชี่ยวชาญด้าน AI:** การ "eclipse OpenAI ครั้งแรก" ที่ valuation level มีความหมายมากกว่าตัวเลข — Altimeter, Dragoneer, Greenoaks, Sequoia ใส่ลีดละ $2B+ บอกว่ามุมมอง enterprise demand ของ Claude ตอนนี้ underwrite ได้ในระดับ public-market-ready แล้ว; pre-IPO narrative ถูกล็อก
+**โปรแกรมเมอร์มืออาชีพ:** ฝั่ง builder ที่ใช้ Claude API ในระบบ production ต้องเตรียม contingency เรื่อง pricing/term ของ post-IPO Anthropic — เมื่อบริษัทเป็น public listed ตัว pricing power จะถูก discipline โดยตลาดต่างจาก private phase; lock multi-provider fallback (Anthropic, OpenAI, open-weight) ไว้แต่เนิ่น
 
-## 5. YouTube เพิ่ม AI podcast features ให้ Premium — แนะนำ podcast, Auto Speed, on-the-go mode
+## 5. Cognition ระดม $1B ที่ $26B valuation — "Devin ไม่ใช่ตัวแทนมนุษย์"
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลข 800 ล้านชั่วโมง podcast/เดือนใน April 2026 + 1 พันล้าน MAU คือ data ที่ใช้สอน digital media economics ได้ — YouTube กำลังกลายเป็น podcast platform ที่ใหญ่ที่สุดในโลกอย่างเงียบ ๆ
-**ผู้เชี่ยวชาญด้าน AI:** "AI recommendation by genre, mood, shows you enjoy" คือ contextual bandit / collaborative filtering แบบ Netflix ที่นำมาใช้กับ long-form audio — ความท้าทายอยู่ที่ feature representation ของ audio (transcript, prosody, topic shift) มากกว่าตัวโมเดล
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ podcast หรือ video content รื้อ metadata strategy รอบใหม่ — เมื่อ recommendation algo อ่าน mood/genre/topic แล้ว tag ของคุณคือ feature ตรงที่ส่งผลกับ surface area ไม่ใช่แค่ title/description optimization แบบ SEO เดิม
+**อาจารย์ (มหาวิทยาลัย):** Scott Wu วาง position ของ Devin เป็น "ตัวขยายความสามารถมนุษย์ ไม่ใช่ replacement" — ข้อความ PR แบบนี้เป็นวัตถุดิบที่อาจารย์วิชา philosophy of work / future of labor ใช้เปรียบเทียบกับวิเคราะห์ของ Mustafa Suleyman ที่ FT (18 เดือน white-collar automation) ได้ตรง; สองมุมนี้คือ frame การถกในห้องเรียน
+**ผู้เชี่ยวชาญด้าน AI:** Cognition ระดม $1B ที่ $26B valuation ในช่วงที่ AI coding agent ยังต้อง prove cost-per-task ที่ต่ำกว่า human + senior reviewer — นั่นแปลว่านักลงทุนเชื่อใน defensible distribution / data flywheel ของ agent run ไม่ใช่แค่ benchmark; ดู metric ของ enterprise stickiness มากกว่า SWE-bench
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ลอง Devin หรือ coding agent อื่น ๆ ในงาน production จริง วาง guardrail สามชั้น — (1) agent เขียน PR, มนุษย์ review, (2) cost ceiling ต่อ task เป็น hard stop, (3) revert button + audit trail ของทุก commit ที่ agent สร้าง — ทีมที่กระโดดข้าม shield เหล่านี้คือทีมที่จะมี incident ภายในไตรมาส
