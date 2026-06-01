@@ -1,66 +1,63 @@
-# Sources — 2026-05-30
+# Sources — 2026-06-01
 
-Generated: 2026-05-30 (Asia/Bangkok)
+Generated: 2026-06-01 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-05-29-brief.md (5 URLs loaded)
+Dedup against: articles/2026-05-31-brief.md (5 URLs loaded)
 
-1. **OpenAI เปิด Rosalind Biodefense Program ปล่อย GPT‑Rosalind ให้พันธมิตรหน่วยงานสาธารณสุข**
-   - Publisher: OpenAI
-   - URL: https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/
-   - Published: 2026-05-29 (per multiple confirming snippets: "The announcement was made on May 29, 2026"; the-decoder, Seeking Alpha, Axios `/2026/05/29/...` URLs all dated same day)
-   - FreshnessCheck: ✅ within last 24h — multiple search snippets explicitly state announced on May 29, 2026; corroborating Axios URL slug 2026/05/29
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief was entirely TechCrunch 2026/05/28 paths)
-   - Verification: Tier 2 — WebSearch snippet (multiple snippets via search query `OpenAI Rosalind biodefense` and `OpenAI announcement May 29 2026`)
-   - Summary: OpenAI launched the Rosalind Biodefense Program on May 29, 2026, offering its life-sciences model GPT‑Rosalind to "trusted developers" working on biodefense and pandemic preparedness; early partners include Lawrence Livermore National Laboratory, Johns Hopkins Applied Physics Laboratory, and vaccine initiative CEPI; sponsored use cases span epidemiological modeling, early detection, screening, preparedness, and non‑pharmaceutical interventions.
-
-2. **NVIDIA GTC Taipei เปิด MGX AI Factory Ecosystem Showcase — Vera Rubin คือ "การเปิดตัวที่ใหญ่ที่สุดในประวัติศาสตร์ไต้หวัน"**
-   - Publisher: NVIDIA Blog
-   - URL: https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/
-   - Published: 2026-05-29 (per snippet: "On Friday, May 29 at 2:30 a.m. PT, NVIDIA founder and CEO Jensen Huang gathered with MGX ecosystem partners...")
-   - FreshnessCheck: ✅ within last 24h — explicit "Friday, May 29 at 2:30 a.m. PT" timestamp in NVIDIA's own live-blog snippet
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (blogs.nvidia.com domain not in yesterday at all)
-   - Verification: Tier 2 — WebSearch snippet (queries `site:nvidia.com blog May 29 2026` and `Jensen Huang Computex MGX AI factory May 29 2026`)
-   - Summary: At NVIDIA GTC Taipei at COMPUTEX, on May 29 Jensen Huang hosted the MGX AI Factory Ecosystem Showcase celebrating partners building AI factories; he previewed a "very, very busy" second half of 2026 with Grace Blackwell, Vera Rubin, and an unannounced "surprise new product," and called Vera Rubin "the largest product launch, probably in the history of Taiwan."
-
-3. **Groq ระดม $650M เพื่อ inference neocloud — หลังดีล $20B "not-acqui-hire" กับ NVIDIA**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/
-   - Published: 2026-05-29 (URL slug)
-   - FreshnessCheck: ✅ within last 24h — TechCrunch URL slug `2026/05/29/...`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch paths were all 2026/05/28)
-   - Verification: Tier 2 — WebSearch snippet (queries `AI startup funding May 29 2026` and `Blognone Groq 650 ล้าน inference chip funding`)
-   - Summary: After Groq's reported $20 billion "not-an-acquisition" deal with NVIDIA in December (which involved senior Groq staff moving to NVIDIA and Groq licensing hardware tech to it), Groq is now raising $650 million from existing investors to scale its inference neocloud business; existing backers Disruptive and Infinitum have agreed to backstop the round if it does not fill, with "Groq 2.0" led by company veterans Adam Winter (CEO) and Matt Eng (CFO).
-
-4. **Anthropic แตะ $965B valuation — ผู้ก่อตั้งกลายเป็นพันล้านระดับ $8B ต่อคน, แซง OpenAI ครั้งแรก**
+1. **SpaceX, OpenAI Windfall Fuels Bets on Next-Wave Asian AI Winners**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-05-29/anthropic-co-founders-worth-8-billion-each-after-funding-round
-   - Published: 2026-05-29 (URL slug)
-   - FreshnessCheck: ✅ within last 24h — Bloomberg URL slug `2026-05-29`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (queries `Anthropic Claude news May 29 2026` and `site:bloomberg.com Anthropic 965 billion May 29 2026 video`)
-   - Summary: Bloomberg reported on May 29 that Anthropic's co-founders are each worth roughly $8 billion following the Series H funding round that valued the company at $965 billion (post-money), eclipsing OpenAI's valuation for the first time; the round (led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital with each lead putting in over $2 billion) is widely expected to be Anthropic's last private fundraise before an IPO.
+   - URL: https://www.bloomberg.com/news/articles/2026-05-31/spacex-openai-windfall-fuels-bets-on-next-wave-asian-ai-winners
+   - Published: 2026-05-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-31 (Bloomberg news/articles ISO date)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday cited a different Bloomberg article on /2026-05-30/softbank-... and /videos/2026-05-30/can-ai-grow-... — different slugs)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Investors hunt for Asian supply-chain firms (server parts, cooling, power) that could benefit from a fresh wave of US AI capital raises — SpaceX, Anthropic and OpenAI listings could add $70B AI spending on top of $750B already committed by hyperscalers. Samsung Electro-Mechanics and Japan's Ibiden are cited among MSCI Asia top performers.
 
-5. **Cognition ระดม $1B ที่ valuation $26B — CEO Scott Wu ย้ำ "Devin ไม่ได้ออกแบบมาแทนมนุษย์"**
+2. **'This is fine' artist KC Green reaches agreement with AI startup Artisan**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/
-   - Published: 2026-05-29 (URL slug)
-   - FreshnessCheck: ✅ within last 24h — TechCrunch URL slug `2026/05/29/...`
+   - URL: https://techcrunch.com/2026/05/31/this-is-fine-artist-kc-green-reaches-agreement-with-ai-startup-artisan/
+   - Published: 2026-05-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/31
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host overlaps but path is new)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: KC Green — creator of the "This is fine" cartoon — says he has reached an agreement with AI sales startup Artisan after the company ran bus and subway ads using a variant of his art ("My pipeline is on fire") to promote its AI BDR "Ava". Artisan has taken down the ads. The dispute traces to a May 3 TechCrunch story where Green accused Artisan of stealing his art "like AI steals."
+
+3. **Erin Brockovich takes aim at data center secrecy**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/
+   - Published: 2026-05-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/31
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query `site:techcrunch.com 2026/05/29 AI`)
-   - Summary: Cognition (สตาร์ตอัพอายุสองปีหลังโมเดล Devin AI coding agent) ได้ระดมทุน $1 billion ที่ valuation $26 billion; ในการสัมภาษณ์กับ TechCrunch CEO Scott Wu ระบุว่าทีม "ไม่เคยคิดเรื่อง Devin ในฐานะตัวแทนมนุษย์" สวนกระแสที่ AI coding agent กำลังกดดันงานวิศวกรซอฟต์แวร์.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Environmental activist Erin Brockovich launched a public map of US data centers to surface community concerns, after receiving nearly 4,000 submissions in the first month following an April call for reports. Brockovich is explicit that she isn't making a "blanket argument against data centers" or AI, but against the pattern of "projects announced after permits are already secured, developers who don't return calls, local officials who signed NDAs before their neighbors knew." The site doubles as evidence-gathering that could support class-action litigation.
+
+4. **Making sense of the debate over AI psychosis**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/
+   - Published: 2026-05-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/05/31
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: TechCrunch unpacks the term "AI psychosis" popularized by Box founder Aaron Levie, who argues CEOs are uniquely prone to it because they sit far from the last-mile work needed to ship AI-assisted output and only see the happy-path demo. A cited Gartner survey of 350 global executives reports 80% of those who piloted AI or autonomous tech cut headcount — regardless of whether the tech was actually generating returns. The piece debates whether "organizational blindness" is a better frame than "psychosis."
+
+5. **Major Companies Reconsider AI Costs (video)**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/videos/2026-05-31/major-companies-reconsider-ai-costs-video
+   - Published: 2026-05-31 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-05-31
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday cited a different Bloomberg video on /2026-05-30/can-ai-grow-...)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Bloomberg This Weekend hosts David Gura and Christina Ruffini interview Harvard Kennedy School's Gautam Mukunda about whether the chipmaker stock surge reflects a genuine AI productivity wave or an inflating bubble. Major companies are described as reconsidering AI compute spend amid this debate.
 
 ## Dropped
+- https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/ — Filter A (>24h): URL slug 2026/05/28 is ~3 days old
+- https://www.bloomberg.com/news/articles/2026-05-28/anthropic-raises-at-965-billion-valuation-eclipsing-openai — Filter A (>24h): slug 2026-05-28
+- https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/ — Filter A (>24h): slug 2026/05/27
+- https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/ — Filter A (borderline): slug 2026/05/29, ~48h+ outside rolling 24h
+- https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/ — Filter A (>24h): slug 2026/05/27 (original Levie piece; superseded by the May 31 analysis which IS in the brief)
+- https://www.bloomberg.com/news/articles/2026-05-30/minimax-plans-china-ipo-as-it-eyes-local-rivals-like-deepseek — Filter A (borderline >24h): slug 2026-05-30, likely outside [now−24h, now] in Asia/Bangkok
+- https://www.theregister.com/ai-ml/2026/05/29/aws-reportedly-to-tuck-elon-musks-grok-into-bedrock-despite-zero-enterprise-demand/5248832 — Trusted-source: theregister.com is not on reference/trusted-sources.md
+- https://www.blognone.com/node/150617 (Karpathy → Anthropic) — Filter A (>24h): May 19 story
 
-- https://www.anthropic.com/news/claude-opus-4-8 — Filter A (>24h): Opus 4.8 release dated May 28, 2026 per TechCrunch URL `/2026/05/28/...` and corroborating search confirmation; outside rolling 24h window from May 30
-- https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/ — Filter A (>24h): URL slug `2026/05/28`
-- https://www.bloomberg.com/news/articles/2026-05-28/anthropic-raises-at-965-billion-valuation-eclipsing-openai — Filter A (>24h): URL slug `2026-05-28`
-- https://www.bloomberg.com/news/articles/2026-05-28/apollo-shops-36-billion-debt-deal-to-buy-google-chips-for-anthropic — Filter A (>24h): URL slug `2026-05-28`
-- https://www.washingtonpost.com/business/2026/05/28/anthropic-ai-claude-openai-valuation/... — Filter A (>24h): URL slug `2026/05/28` (also: WaPo not on trusted-sources)
-- https://www.blognone.com/node/150716 (Blognone — Claude Opus 4.8) — Date ambiguous (URL slug carries no date; search snippet does not surface publish timestamp). Underlying event is May 28 → drop per "do not guess" rule
-- https://openai.com/index/personal-finance-chatgpt/ — Date ambiguous (one snippet says May 29, another says May 15 — conflict, no URL date hint). Drop per "do not guess"
-- https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html — Publisher CNBC not on `reference/trusted-sources.md`
-- https://www.axios.com/2026/05/29/openai-biodefense-program — Publisher Axios not on `reference/trusted-sources.md` (covered the same OpenAI Rosalind story via the primary openai.com URL instead)
-- https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/ — Date ambiguous (no May 29 timestamp surfaced); blog.youtube not in trusted list
-
-> Note: 5 items passed both filters this run. Of ~15 inspected candidates, the majority of "fresh-feeling" stories failed Filter A because the actual primary event landed on May 28 (Anthropic Series H, Opus 4.8, Apollo–Blackstone $36B debt) and we are reporting on May 30. No Thai-language source produced a confirmable May 29 story this cycle — Blognone's Opus 4.8 article and other Thai outlets all dropped on date ambiguity. Brief proceeds with five international items.
+> Note: 5 items passed both filters. Of ~25 candidates considered, ~18 failed Filter A (older than 24h), 0 failed Filter B (no URL collisions with yesterday's brief), and a handful failed the trusted-domain check (e.g. The Register, Tom's Hardware, windowsforum.com).
