@@ -1,59 +1,59 @@
-# Sources — 2026-06-02
+# Sources — 2026-06-03
 
-Generated: 2026-06-02 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned 403; all stories verified via Tier 2 — WebSearch snippet from trusted-sources.md domains)
+Generated: 2026-06-03 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (example.com probe → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-01-brief.md (5 URLs loaded — 2 Bloomberg dated 2026-05-31, 3 TechCrunch dated 2026/05/31)
+Dedup against: articles/2026-06-02-brief.md (5 URLs loaded)
 
-1. **Anthropic confidentially files for IPO at $965B valuation, beating OpenAI to the gate**
+1. **Microsoft launches Scout, an OpenClaw-inspired personal assistant at Build 2026**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/
-   - Published: 2026-06-01 (per URL slug and search snippet)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "Anthropic ... has filed confidentially for an initial public offering, and the company is valued at close to $1 trillion. The filing comes less than a week after Anthropic raised $65 billion in a Series H funding round that pushed its valuation to $965 billion."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links all dated 2026/05/31; this one is 2026/06/01 — different article)
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md → "International — press / analysis")
-   - Summary: Anthropic, the AI lab behind Claude, has confidentially filed a draft S-1 with the SEC on June 1, 2026, valuing the company at close to $1 trillion. The filing comes less than a week after Anthropic raised $65 billion in a Series H round at a $965 billion post-money valuation, pulling it ahead of OpenAI in the race to public markets.
+   - URL: https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/
+   - Published: per search snippet, listed under TechCrunch's June 2, 2026 announcements
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/02` (today is 2026-06-03 Asia/Bangkok) + snippet "launched at its annual Build developer conference" on June 2
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (path `/microsoft-launches-scout-...` distinct from yesterday's `/anthropic-files-to-go-public/`, `/nvidia-chases-200b-cpu-market...`, `/this-ai-weather-startup...`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Microsoft unveiled Scout at Build 2026 — a new always-on personal AI agent built on the OpenClaw framework. Scout works across cloud, desktop, and web browser, connecting to inbox, calendar, Teams, Outlook, OneDrive, and SharePoint; users name their own Scout instance and give it ongoing feedback. Available via the Frontier program, requires a GitHub Copilot subscription.
 
-2. **Nvidia's Vera CPU goes into full production with Anthropic, OpenAI, SpaceX as first big customers**
+2. **OpenAI frontier models and Codex now generally available on AWS**
+   - Publisher: OpenAI
+   - URL: https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/
+   - Published: per search snippet, OpenAI news page lists the post under June 2, 2026
+   - FreshnessCheck: ✅ within last 24h via OpenAI news index dated June 2, 2026 + corroborating coverage on multiple outlets dated 2026/06/02
+   - DedupCheck: ✅ URL host `openai.com` not in YESTERDAYS_URLS at all
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: OpenAI announced general availability of GPT-5.5, GPT-5.4, and Codex on Amazon Bedrock through the Responses API at the same per-token rates as OpenAI's direct pricing. Codex (used by more than 5 million people weekly) is accessible via the Codex App, CLI, and IDE integrations (VS Code, JetBrains, Xcode). Inference routes through Bedrock infrastructure; AWS credentials, IAM, VPC isolation, and AWS spend commitments all apply.
+
+3. **Alphabet's $80B equity raise lands $10B Berkshire anchor for AI spending**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip
-   - Published: 2026-06-01 (per URL slug and search snippet from Jensen Huang's Computex 2026 keynote)
-   - FreshnessCheck: ✅ within last 24h via URL slug `bloomberg.com/news/articles/2026-06-01/...` and snippet "Nvidia announced that Anthropic, OpenAI and SpaceX are among the first big users of its upcoming Vera microprocessor… The new product will go into full production in the third quarter of this year."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg links dated 2026-05-31; this is a different article from 2026-06-01)
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md → "International — press / analysis")
-   - Summary: At Computex 2026 in Taipei on June 1, Nvidia CEO Jensen Huang announced that the new Arm-based Vera CPU — purpose-built to coordinate AI models, storage and large-scale compute clusters in data centers — is now in full production. Anthropic, OpenAI, and SpaceX are confirmed as the first big customers, with general availability slated for Q3 2026.
+   - URL: https://www.bloomberg.com/news/articles/2026-06-02/goldman-s-weekend-call-to-berkshire-spurs-alphabet-s-80-billion-ai-deal
+   - Published: per search snippet, URL slug 2026-06-02
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026-06-02` + snippet "rapid signoff from new boss Greg Abel landed a $10 billion anchor investor"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were Vera-chip and IPO-expectations; this is the $80B equity raise)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Alphabet is raising $80 billion through a package of equity offerings to fund AI capex — $40B at-the-market program (starting Q3), $30B in underwritten share + mandatory-convertible-preferred offerings, and a $10B Berkshire Hathaway anchor brokered via a weekend Goldman Sachs call to Greg Abel. Bloomberg flags it as set to become "the biggest equity capital markets transaction of all time."
 
-3. **Nvidia chases the $200B CPU market with RTX Spark "superchip" for AI agent PCs from Microsoft, Dell, HP**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/
-   - Published: 2026-06-01 (per URL slug; same Jensen Huang Computex keynote, consumer-PC track)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "Nvidia opened Taipei's Computex trade show with the unveiling of a new PC CPU called the RTX Spark, which it dubbed a 'superchip'… RTX Spark Windows PCs will be available this fall from ASUS, Dell, HP, Lenovo, Microsoft Surface, and MSI"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com — trusted)
-   - Summary: The 1-petaflop RTX Spark superchip targets the consumer side of the same Computex announcement — Windows laptops and desktops built around a sandboxed local-agent runtime co-developed with Microsoft, intended to run AI agents (e.g. OpenClaw, Hermes Agent) directly on the device. Hardware partners ASUS, Dell, HP, Lenovo, Microsoft Surface and MSI will ship machines in fall 2026.
-
-4. **WindBorne Systems' WeatherMesh AI now out-forecasts ECMWF on key variables**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/
-   - Published: 2026-06-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "A new AI weather forecasting tool released by the startup WindBorne Systems offers more frequent and accurate predictions on key variables than the world-leading system developed by European governments, with the company releasing the sixth version of their model, WeatherMesh."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com — trusted)
-   - Summary: WindBorne Systems shipped WeatherMesh v6, an AI weather model that the company claims beats the ECMWF (the European agency long considered the gold standard) on several key variables and updates more frequently. A concrete win for vertical AI inside a domain where physics-based models have dominated for decades.
-
-5. **Bloomberg analysis: Can OpenAI and Anthropic IPOs live up to expectations?**
+4. **OpenAI extends Codex into finance, legal, banking, sales — challenging Anthropic for enterprise**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-01/can-openai-and-anthropic-ipos-live-up-to-expectations
-   - Published: 2026-06-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `bloomberg.com/news/articles/2026-06-01/...` and snippet context (companion analysis to the same-day Anthropic S-1 news, discussing market expectations and revenue scaling)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (different article path from yesterday's Bloomberg pieces)
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com — trusted)
-   - Summary: Bloomberg frames the open question from June 1: with Anthropic's $965B private valuation already eclipsing OpenAI's $852B March mark, and revenue run-rates of ~$47B at Anthropic vs OpenAI's pending S-1 disclosures, the question shifts from "will they go public" to "will the public market price them at private-round multiples or apply a discount." A meta-story about how aggressively Wall Street prices the AI build-out.
+   - URL: https://www.bloomberg.com/news/articles/2026-06-02/openai-plans-ai-tools-for-finance-legal-in-race-with-anthropic
+   - Published: per search snippet, URL slug 2026-06-02
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026-06-02` + snippet "The ChatGPT maker on Tuesday unveiled a series of new tools, or plugins, for its Codex agent"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: OpenAI unveiled new Codex plugins targeting public-equity investment, banking, and sales workflows, with legal and corporate-finance plugins to follow — an explicit play to compete with Anthropic Claude in non-software-engineering enterprise verticals. Lands the same day OpenAI announces Codex GA on AWS.
+
+5. **VivaTech 2026 to spotlight Europe's industrial-AI counter-strategy to Silicon Valley**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/
+   - Published: per search snippet, URL slug 2026/06/02
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/02`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: TechCrunch frames VivaTech 2026 (June 17-20, Paris) as the showcase of Europe's "industrial competitiveness and technological sovereignty" approach to AI — applying AI to regulated systems (manufacturing, logistics, healthcare, cybersecurity, energy infrastructure) — as deliberate counter-positioning to Silicon Valley's scale-and-dominance posture.
 
 ## Dropped
 
-- Microsoft Build 2026 / Project Polaris (June 2 keynote) — covered widely on windowsforum, windowsnews.ai, chatforest, Tom's Guide, Engadget, Dataconomy, Notebookcheck, but **no URL surfaced in WebSearch results for any trusted-sources.md domain** (no TechCrunch, Verge, Reuters, Bloomberg, Ars Technica, MIT Tech Review, Wired, FT, The Information, Blognone, Beartai, or vendor blog hit). Dropped per "Never cite a URL that's not in search results for a trusted-source domain."
-- Blognone /node/150724 "Elon Musk บอกสัญญา Anthropic เช่าศูนย์ข้อมูล SpaceX เป็นแบบระยะสั้น…" — domain trusted, but exact publish date not surfaced unambiguously in search snippets. Underlying Musk-vs-SpaceX-S-1 contradiction was actively reported May 28–30, 2026, making this candidate likely outside the 24h window. Dropped under "Date ambiguous / not surfaced → DROP — never guess."
-- CNBC June-1 piece "Microsoft and Google take on Anthropic and OpenAI in AI coding models" — CNBC not on trusted-sources.md allow-list. Dropped.
+- Anthropic $50B American AI infrastructure (anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure) — Filter A (>24h): announcement dated November 12, 2025 per CNBC / HPCwire snippets.
+- Bloomberg — Microsoft Scout executive-assistant angle (https://www.bloomberg.com/news/articles/2026-06-02/microsoft-launches-ai-that-works-like-an-executive-assistant) — same Scout story as TechCrunch (Story 1); dropped at selection to avoid duplicate-topic coverage.
+- Bloomberg — China lab-grown diamonds AI angle (2026-06-02) — Tangential to AI proper; dropped in favor of higher-density AI infrastructure stories.
 
-> Note: 5 items passed both filters this run. ≥3 international, 0 Thai (no Thai-language candidate could be timestamp-verified within the 24h window). Runtime is WEBFETCH_BLOCKED so all entries are Tier 2 (search snippet) — commit will carry `[verify=search]`.
+> Note: 5 items passed both filters this run. Of 8 candidates evaluated, 1 failed Filter A (Anthropic $50B, dated Nov-2025), 0 failed Filter B, 2 were dropped at selection as same-story duplicates or lower-density topics.
