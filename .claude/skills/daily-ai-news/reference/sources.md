@@ -1,59 +1,57 @@
-# Sources — 2026-06-02
+# Sources — 2026-06-04
 
-Generated: 2026-06-02 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned 403; all stories verified via Tier 2 — WebSearch snippet from trusted-sources.md domains)
+Generated: 2026-06-04 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-01-brief.md (5 URLs loaded — 2 Bloomberg dated 2026-05-31, 3 TechCrunch dated 2026/05/31)
+Dedup against: articles/2026-06-03-brief.md (5 URLs loaded)
 
-1. **Anthropic confidentially files for IPO at $965B valuation, beating OpenAI to the gate**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/
-   - Published: 2026-06-01 (per URL slug and search snippet)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "Anthropic ... has filed confidentially for an initial public offering, and the company is valued at close to $1 trillion. The filing comes less than a week after Anthropic raised $65 billion in a Series H funding round that pushed its valuation to $965 billion."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links all dated 2026/05/31; this one is 2026/06/01 — different article)
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md → "International — press / analysis")
-   - Summary: Anthropic, the AI lab behind Claude, has confidentially filed a draft S-1 with the SEC on June 1, 2026, valuing the company at close to $1 trillion. The filing comes less than a week after Anthropic raised $65 billion in a Series H round at a $965 billion post-money valuation, pulling it ahead of OpenAI in the race to public markets.
+1. **Anthropic ออก Services Track + Partner Hub บน Claude Partner Network**
+   - Publisher: Anthropic
+   - URL: https://www.anthropic.com/news/services-track-partner-hub
+   - Published: 3 มิ.ย. 2026 (per WebSearch snippet "On June 3")
+   - FreshnessCheck: ✅ within last 24h — snippet "On June 3, Anthropic announced two updates to its three-month-old Claude Partner Network"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (slug `services-track-partner-hub` not in yesterday)
+   - Verification: Tier 2 — WebSearch snippet (corroborated by PYMNTS, Yahoo Finance, QZ, Investing.com all citing June 3 launch)
+   - Summary: Anthropic เปิดตัว Services Track (3 tiers: Select / Preferred / Global Premier) และ Claude Partner Hub portal เพื่อจัดอันดับและให้ลูกค้าค้นหา consultant ที่ certified กับ Claude — โปรแกรมเปิดมา 3 เดือน มี firm สมัครแล้ว >40,000 และ consultant certified >10,000
 
-2. **Nvidia's Vera CPU goes into full production with Anthropic, OpenAI, SpaceX as first big customers**
+2. **Bloomberg: Alphabet upsizes equity raise เป็น $84.75B จากเดิม $80B**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip
-   - Published: 2026-06-01 (per URL slug and search snippet from Jensen Huang's Computex 2026 keynote)
-   - FreshnessCheck: ✅ within last 24h via URL slug `bloomberg.com/news/articles/2026-06-01/...` and snippet "Nvidia announced that Anthropic, OpenAI and SpaceX are among the first big users of its upcoming Vera microprocessor… The new product will go into full production in the third quarter of this year."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg links dated 2026-05-31; this is a different article from 2026-06-01)
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md → "International — press / analysis")
-   - Summary: At Computex 2026 in Taipei on June 1, Nvidia CEO Jensen Huang announced that the new Arm-based Vera CPU — purpose-built to coordinate AI models, storage and large-scale compute clusters in data centers — is now in full production. Anthropic, OpenAI, and SpaceX are confirmed as the first big customers, with general availability slated for Q3 2026.
+   - URL: https://www.bloomberg.com/news/articles/2026-06-03/alphabet-upsizes-equity-offering-to-85-billion-for-ai-spending
+   - Published: 3 มิ.ย. 2026 (URL slug 2026-06-03)
+   - FreshnessCheck: ✅ within last 24h — URL slug `2026-06-03`; snippet "On June 3, 2026, Google parent Alphabet Inc. upsized its equity raise to $84.75 billion"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday cited a different Bloomberg URL about the original $80B raise (`/goldman-s-weekend-call-to-berkshire-spurs-alphabet-s-80-billion-ai-deal`); this is follow-up reporting on the upsize at a distinct URL
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Alphabet เพิ่มยอด equity raise จาก $80B เป็น $84.75B หลัง demand ล้นในเวลา 2 วัน — แบ่งเป็น $40B ATM, $10B Berkshire, $18B common stock, $16.75B depositary shares ทำลายสถิติเดิม Petrobras $70B ปี 2010
 
-3. **Nvidia chases the $200B CPU market with RTX Spark "superchip" for AI agent PCs from Microsoft, Dell, HP**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/
-   - Published: 2026-06-01 (per URL slug; same Jensen Huang Computex keynote, consumer-PC track)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "Nvidia opened Taipei's Computex trade show with the unveiling of a new PC CPU called the RTX Spark, which it dubbed a 'superchip'… RTX Spark Windows PCs will be available this fall from ASUS, Dell, HP, Lenovo, Microsoft Surface, and MSI"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com — trusted)
-   - Summary: The 1-petaflop RTX Spark superchip targets the consumer side of the same Computex announcement — Windows laptops and desktops built around a sandboxed local-agent runtime co-developed with Microsoft, intended to run AI agents (e.g. OpenClaw, Hermes Agent) directly on the device. Hardware partners ASUS, Dell, HP, Lenovo, Microsoft Surface and MSI will ship machines in fall 2026.
-
-4. **WindBorne Systems' WeatherMesh AI now out-forecasts ECMWF on key variables**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/
-   - Published: 2026-06-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "A new AI weather forecasting tool released by the startup WindBorne Systems offers more frequent and accurate predictions on key variables than the world-leading system developed by European governments, with the company releasing the sixth version of their model, WeatherMesh."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com — trusted)
-   - Summary: WindBorne Systems shipped WeatherMesh v6, an AI weather model that the company claims beats the ECMWF (the European agency long considered the gold standard) on several key variables and updates more frequently. A concrete win for vertical AI inside a domain where physics-based models have dominated for decades.
-
-5. **Bloomberg analysis: Can OpenAI and Anthropic IPOs live up to expectations?**
+3. **Bloomberg: Brookfield เปิด AI infrastructure fund $50B**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-01/can-openai-and-anthropic-ipos-live-up-to-expectations
-   - Published: 2026-06-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `bloomberg.com/news/articles/2026-06-01/...` and snippet context (companion analysis to the same-day Anthropic S-1 news, discussing market expectations and revenue scaling)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (different article path from yesterday's Bloomberg pieces)
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com — trusted)
-   - Summary: Bloomberg frames the open question from June 1: with Anthropic's $965B private valuation already eclipsing OpenAI's $852B March mark, and revenue run-rates of ~$47B at Anthropic vs OpenAI's pending S-1 disclosures, the question shifts from "will they go public" to "will the public market price them at private-round multiples or apply a discount." A meta-story about how aggressively Wall Street prices the AI build-out.
+   - URL: https://www.bloomberg.com/news/articles/2026-06-03/brookfield-rolls-out-new-ai-infrastructure-playbook
+   - Published: 3 มิ.ย. 2026 (URL slug 2026-06-03)
+   - FreshnessCheck: ✅ within last 24h — URL slug `2026-06-03`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Brookfield Asset Management เปิดแคมเปญรวมทุน $50B สำหรับ AI infrastructure (grid, transportation, physical data center) — first deployment เป็นดีล $5B กับ Bloom Energy ใช้ fuel cell power AI data center
+
+4. **Anthropic: ผลวิเคราะห์ 1 ปี AI-enabled cyber threats แมปกับ MITRE ATT&CK**
+   - Publisher: Anthropic
+   - URL: https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack
+   - Published: 3 มิ.ย. 2026 (per snippet "Anthropic released a comprehensive analysis on June 3 covering a full year")
+   - FreshnessCheck: ✅ within last 24h — snippet confirms June 3 publication; secondary snippets show "today / 3-14 hours ago" relative to current date
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (corroborated by Anthropic newsroom + cryptobriefing + Industrial Cyber + StartupHub)
+   - Summary: Anthropic วิเคราะห์ 832 บัญชี malicious activity (มี.ค. 2025 – มี.ค. 2026) แมปเข้า MITRE ATT&CK — พบ 67.3% ของ actor ใช้ AI ใน initial recon + malware writing; medium/high-risk actor ที่ใช้ AI เพิ่มจาก 33% → 56% (1.7x); ออก interactive Navigator ผ่าน red.anthropic.com; งานนี้ partner กับ Verizon ลงใน 2026 DBIR
+
+5. **Blognone: Microsoft เปิดตัวโมเดลตระกูล MAI 7 ตัว ครั้งแรกที่มี reasoning model**
+   - Publisher: Blognone (Thai)
+   - URL: https://www.blognone.com/node/150781
+   - Published: 3 มิ.ย. 2026 (per WebSearch snippet "posted about 1 day ago or 18 hours ago" relative to 4 มิ.ย.)
+   - FreshnessCheck: ✅ within last 24h — snippet "1 day ago / 18 hours ago" timestamps; corroborated by Republic World URL slug `2026-06-03`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Microsoft story was about Scout on a TechCrunch URL — different story, different URL)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Microsoft AI เปิดตัวโมเดลตระกูล MAI 7 ตัวที่ Build 2026 พระเอกคือ MAI-Thinking-1 — reasoning model ขนาดกลาง 35B active params / ~1T total ใน MoE / 256K context — เทรนจากศูนย์ด้วย commercially licensed data ไม่มี distillation จาก 3rd party; ทดสอบ blind ชนะ Claude Sonnet 4.6 และเสมอ Opus 4.6 บน coding benchmark (SWE Bench Pro)
 
 ## Dropped
 
-- Microsoft Build 2026 / Project Polaris (June 2 keynote) — covered widely on windowsforum, windowsnews.ai, chatforest, Tom's Guide, Engadget, Dataconomy, Notebookcheck, but **no URL surfaced in WebSearch results for any trusted-sources.md domain** (no TechCrunch, Verge, Reuters, Bloomberg, Ars Technica, MIT Tech Review, Wired, FT, The Information, Blognone, Beartai, or vendor blog hit). Dropped per "Never cite a URL that's not in search results for a trusted-source domain."
-- Blognone /node/150724 "Elon Musk บอกสัญญา Anthropic เช่าศูนย์ข้อมูล SpaceX เป็นแบบระยะสั้น…" — domain trusted, but exact publish date not surfaced unambiguously in search snippets. Underlying Musk-vs-SpaceX-S-1 contradiction was actively reported May 28–30, 2026, making this candidate likely outside the 24h window. Dropped under "Date ambiguous / not surfaced → DROP — never guess."
-- CNBC June-1 piece "Microsoft and Google take on Anthropic and OpenAI in AI coding models" — CNBC not on trusted-sources.md allow-list. Dropped.
+- None — all 5 selected candidates passed both filters.
 
-> Note: 5 items passed both filters this run. ≥3 international, 0 Thai (no Thai-language candidate could be timestamp-verified within the 24h window). Runtime is WEBFETCH_BLOCKED so all entries are Tier 2 (search snippet) — commit will carry `[verify=search]`.
+> Note: 5 items passed both filters this run. Coverage mix: 4 international (Anthropic x2, Bloomberg x2) + 1 Thai-language (Blognone).
