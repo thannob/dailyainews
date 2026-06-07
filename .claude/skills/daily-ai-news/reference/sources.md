@@ -1,59 +1,48 @@
-# Sources — 2026-06-02
+# Sources — 2026-06-07
 
-Generated: 2026-06-02 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned 403; all stories verified via Tier 2 — WebSearch snippet from trusted-sources.md domains)
+Generated: 2026-06-07 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe https://example.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-01-brief.md (5 URLs loaded — 2 Bloomberg dated 2026-05-31, 3 TechCrunch dated 2026/05/31)
+Dedup against: articles/2026-06-06-brief.md (5 URLs loaded — all bloomberg.com /2026-06-05/ paths)
 
-1. **Anthropic confidentially files for IPO at $965B valuation, beating OpenAI to the gate**
+1. **OpenAI rolls out "Lockdown Mode" — optional security setting to defend ChatGPT users from prompt-injection / data-exfiltration**
+   - Publisher: OpenAI (primary announcement)
+   - URL: https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/
+   - Published: announcement covered as June 6 news (TechCrunch dateline `2026/06/06`); Simon Willison mirror dated `2026/Jun/5`; both inside the rolling 24h Asia/Bangkok window from now
+   - FreshnessCheck: ✅ within last 24h via TechCrunch URL slug `2026/06/06`, Engadget + Cybersecuritynews + TechTimes coverage all dated 2026-06-06; the OpenAI primary URL has no date in slug but coverage anchors the announcement to June 5–6 (Asia/Bangkok still inside 24h from 2026-06-07)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's set was 5 bloomberg.com paths; openai.com host not present)
+   - Verification: Tier 2 — WebSearch snippet (multiple trusted-source aggregators confirm the launch); openai.com is on trusted-sources.md (International — primary / research)
+   - Summary: OpenAI launched **Lockdown Mode**, an opt-in security setting for ChatGPT that limits web access, image responses, Deep Research, Agent Mode, Canvas networking, live connectors and file downloads, narrowing the surface for prompt-injection-driven data exfiltration. Intended for users/orgs handling sensitive data; available across all personal accounts including free tier. OpenAI also explicitly cautions that Lockdown Mode does **not** make ChatGPT immune — cached pages and uploaded files can still carry injected instructions.
+
+2. **Sriram Krishnan is leaving his role as White House AI advisor**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/
-   - Published: 2026-06-01 (per URL slug and search snippet)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "Anthropic ... has filed confidentially for an initial public offering, and the company is valued at close to $1 trillion. The filing comes less than a week after Anthropic raised $65 billion in a Series H funding round that pushed its valuation to $965 billion."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links all dated 2026/05/31; this one is 2026/06/01 — different article)
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md → "International — press / analysis")
-   - Summary: Anthropic, the AI lab behind Claude, has confidentially filed a draft S-1 with the SEC on June 1, 2026, valuing the company at close to $1 trillion. The filing comes less than a week after Anthropic raised $65 billion in a Series H round at a $965 billion post-money valuation, pulling it ahead of OpenAI in the race to public markets.
+   - URL: https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/
+   - Published: June 6, 2026 (URL slug; corroborated by Bloomberg /2026-06-06/ and Washington Post /2026/06/06/)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/06` + Bloomberg companion article `bloomberg.com/news/articles/2026-06-06/trump-ai-policy-adviser-krishnan-is-giving-up-white-house-role`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (techcrunch.com host not present in yesterday's set)
+   - Verification: Tier 2 — WebSearch snippet from TechCrunch; techcrunch.com is on trusted-sources.md (International — press / analysis)
+   - Summary: White House senior policy adviser for AI **Sriram Krishnan** announced on Saturday, June 6 that he will leave his post at the end of June to start an **outside institution** focused on shaping US technology policy. Krishnan — formerly a partner at Andreessen Horowitz and a product exec at Microsoft, Twitter, Yahoo, Facebook and Snap — was a key author of the Trump administration's AI action plan. He gave no specific reason for the departure; Washington Post reported the outside institution will still keep him involved in shaping the administration's AI policy.
 
-2. **Nvidia's Vera CPU goes into full production with Anthropic, OpenAI, SpaceX as first big customers**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip
-   - Published: 2026-06-01 (per URL slug and search snippet from Jensen Huang's Computex 2026 keynote)
-   - FreshnessCheck: ✅ within last 24h via URL slug `bloomberg.com/news/articles/2026-06-01/...` and snippet "Nvidia announced that Anthropic, OpenAI and SpaceX are among the first big users of its upcoming Vera microprocessor… The new product will go into full production in the third quarter of this year."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg links dated 2026-05-31; this is a different article from 2026-06-01)
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md → "International — press / analysis")
-   - Summary: At Computex 2026 in Taipei on June 1, Nvidia CEO Jensen Huang announced that the new Arm-based Vera CPU — purpose-built to coordinate AI models, storage and large-scale compute clusters in data centers — is now in full production. Anthropic, OpenAI, and SpaceX are confirmed as the first big customers, with general availability slated for Q3 2026.
-
-3. **Nvidia chases the $200B CPU market with RTX Spark "superchip" for AI agent PCs from Microsoft, Dell, HP**
+3. **Trump administration in discussions to take an equity stake in OpenAI; Sanders, Altman, and Trump now all talking public ownership in AI**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/
-   - Published: 2026-06-01 (per URL slug; same Jensen Huang Computex keynote, consumer-PC track)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "Nvidia opened Taipei's Computex trade show with the unveiling of a new PC CPU called the RTX Spark, which it dubbed a 'superchip'… RTX Spark Windows PCs will be available this fall from ASUS, Dell, HP, Lenovo, Microsoft Surface, and MSI"
+   - URL: https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/
+   - Published: June 6, 2026 (URL slug; corroborated by AP wire pickup at KSAT, Washington Times, Boston Globe all dated `2026/06/06` or `2026/jun/6`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/06`; the Trump-Sanders convergence broke June 5 (Fortune URL `/2026/06/05/`), with the equity-stake reporting hitting June 6
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com — trusted)
-   - Summary: The 1-petaflop RTX Spark superchip targets the consumer side of the same Computex announcement — Windows laptops and desktops built around a sandboxed local-agent runtime co-developed with Microsoft, intended to run AI agents (e.g. OpenClaw, Hermes Agent) directly on the device. Hardware partners ASUS, Dell, HP, Lenovo, Microsoft Surface and MSI will ship machines in fall 2026.
-
-4. **WindBorne Systems' WeatherMesh AI now out-forecasts ECMWF on key variables**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/01/this-ai-weather-startup-is-out-forecasting-government-agencies/
-   - Published: 2026-06-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `techcrunch.com/2026/06/01/...` and snippet "A new AI weather forecasting tool released by the startup WindBorne Systems offers more frequent and accurate predictions on key variables than the world-leading system developed by European governments, with the company releasing the sixth version of their model, WeatherMesh."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com — trusted)
-   - Summary: WindBorne Systems shipped WeatherMesh v6, an AI weather model that the company claims beats the ECMWF (the European agency long considered the gold standard) on several key variables and updates more frequently. A concrete win for vertical AI inside a domain where physics-based models have dominated for decades.
-
-5. **Bloomberg analysis: Can OpenAI and Anthropic IPOs live up to expectations?**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-01/can-openai-and-anthropic-ipos-live-up-to-expectations
-   - Published: 2026-06-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `bloomberg.com/news/articles/2026-06-01/...` and snippet context (companion analysis to the same-day Anthropic S-1 news, discussing market expectations and revenue scaling)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (different article path from yesterday's Bloomberg pieces)
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com — trusted)
-   - Summary: Bloomberg frames the open question from June 1: with Anthropic's $965B private valuation already eclipsing OpenAI's $852B March mark, and revenue run-rates of ~$47B at Anthropic vs OpenAI's pending S-1 disclosures, the question shifts from "will they go public" to "will the public market price them at private-round multiples or apply a discount." A meta-story about how aggressively Wall Street prices the AI build-out.
+   - Verification: Tier 2 — WebSearch snippet from TechCrunch + multiple AP-wire corroboration; techcrunch.com is on trusted-sources.md
+   - Summary: TechCrunch reports the **Trump administration is in discussions with OpenAI** about the US government taking an **equity stake** in the company. This follows Sen. Bernie Sanders' June 2 **American AI Sovereign Wealth Fund Act** proposal — a one-time 50% equity tax on the largest AI firms (paid in stock, not cash), routing proceeds to a public fund with citizen voting rights and dividends. CEO Sam Altman met privately with Sanders, agreed in principle that the public should hold equity in AI companies, but rejected Sanders' 50% threshold. Trump publicly endorsed the broad logic on Friday. CNBC reports some of that equity could seed a "Public Wealth Fund" recently floated by OpenAI itself.
 
 ## Dropped
 
-- Microsoft Build 2026 / Project Polaris (June 2 keynote) — covered widely on windowsforum, windowsnews.ai, chatforest, Tom's Guide, Engadget, Dataconomy, Notebookcheck, but **no URL surfaced in WebSearch results for any trusted-sources.md domain** (no TechCrunch, Verge, Reuters, Bloomberg, Ars Technica, MIT Tech Review, Wired, FT, The Information, Blognone, Beartai, or vendor blog hit). Dropped per "Never cite a URL that's not in search results for a trusted-source domain."
-- Blognone /node/150724 "Elon Musk บอกสัญญา Anthropic เช่าศูนย์ข้อมูล SpaceX เป็นแบบระยะสั้น…" — domain trusted, but exact publish date not surfaced unambiguously in search snippets. Underlying Musk-vs-SpaceX-S-1 contradiction was actively reported May 28–30, 2026, making this candidate likely outside the 24h window. Dropped under "Date ambiguous / not surfaced → DROP — never guess."
-- CNBC June-1 piece "Microsoft and Google take on Anthropic and OpenAI in AI coding models" — CNBC not on trusted-sources.md allow-list. Dropped.
+- https://techcrunch.com/2026/06/04/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/ — Filter A (URL slug `2026/06/04` is 3 days old; an alternate `2026/06/06` variant surfaced in one query but URL provenance is ambiguous — slug-lies-less-than-snippets rule applies → DROP both)
+- https://techcrunch.com/2026/06/03/googles-dreambeans-its-weirdest-named-ai-tool-to-date-will-turn-your-life-into-a-cartoon/ — Filter A (4 days old per slug)
+- https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/ — Filter A (3 days old)
+- https://www.bloomberg.com/news/articles/2026-06-05/us-exploring-government-partnerships-with-ai-firms-trump-says — Filter A (2 days old per slug)
+- https://www.bloomberg.com/news/articles/2026-06-05/trump-signs-ai-memo-addressing-issues-in-anthropic-pentagon-feud — Filter A (2 days old per slug)
+- https://www.bloomberg.com/news/newsletters/2026-06-04/microsoft-says-anthropic-models-are-too-expensive — Filter A (3 days old)
+- https://www.bangkokbiznews.com/tech/gadget/1159397 — Domain not on trusted-sources.md (bangkokbiznews.com not in allow-list; even though snippet says "วันเสาร์ที่ 6 มิถุนายน 2569")
+- https://www.blognone.com/node/150617 (Karpathy joins Anthropic) — Date ambiguous in snippet; TechCrunch source URL is `2026/05/19` → outside 24h
+- https://www.blognone.com/node/150781 (Microsoft MAI lineup) — Date ambiguous; corroborating coverage points to June 3 → outside 24h
+- https://www.bloomberg.com/news/videos/2026-06-06/trump-announces-ai-leaders-white-house-visit-video — Filter A would pass (slug `2026-06-06`) but story is a thin announcement of a future meeting and substantively overlaps with item #3; dropped for content overlap to avoid double-counting Trump-AI-policy news
 
-> Note: 5 items passed both filters this run. ≥3 international, 0 Thai (no Thai-language candidate could be timestamp-verified within the 24h window). Runtime is WEBFETCH_BLOCKED so all entries are Tier 2 (search snippet) — commit will carry `[verify=search]`.
+> Note: 3 items passed both filters this run. Thai-language trusted sources (Blognone, Beartai, Thairath-Tech, Matichon-IT, Prachachat-ICT, The Standard-Tech, NECTEC, depa) yielded **0** items inside the rolling 24h window — none of the surfaced Thai stories carried an explicit timestamp resolvable to 2026-06-06 or 2026-06-07. Per the hard rule, ambiguous-date items are dropped rather than included with caveat. Of ~14 candidates examined: 8 failed Filter A (older than 24h per URL slug or corroborating dateline), 0 failed Filter B (yesterday's set was all `bloomberg.com/2026-06-05/` paths and today's candidates avoided that prefix), 3 failed domain check (not on trusted-sources.md or date-ambiguous Thai sources).
