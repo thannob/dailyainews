@@ -1,45 +1,43 @@
-# Sources — 2026-06-08
+# Sources — 2026-06-09
 
-Generated: 2026-06-08 (Asia/Bangkok)
+Generated: 2026-06-09 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-07-brief.md (3 URLs loaded)
+Dedup against: articles/2026-06-08-brief.md (3 URLs loaded)
 
-1. **OpenAI ทำ ChatGPT เป็น "Superapp" ก่อน IPO — FT รายงาน**
+1. **Apple's long-awaited AI Siri overhaul is finally here**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/
-   - Published: 2026-06-07 (per URL slug `/2026/06/07/`)
-   - FreshnessCheck: ✅ within last 24h — URL slug embeds 2026-06-07; cross-confirmed by Bloomberg (`bloomberg.com/news/articles/2026-06-07/openai-plans-superapp-pivot-...`), Fortune (2026/06/07), and US News (2026-06-07) all reporting the FT scoop on the same date
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday only had TechCrunch URLs dated `/2026/06/06/`; today's URL is `/2026/06/07/`
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED at runtime; trusted-source domain `techcrunch.com`)
-   - Summary: Per FT report referenced by TechCrunch, OpenAI is preparing the largest ChatGPT overhaul since launch — turning the chatbot into a "superapp" with coding tools, AI agents, image generation, and third-party apps (Canva, Booking.com) — to compete with Anthropic for enterprise customers and boost revenue ahead of a planned IPO. One senior employee told FT "Chat is dead." Codex gets elevated; rollout begins "in coming weeks" via website/mobile app updates.
+   - URL: https://techcrunch.com/2026/06/08/apples-long-awaited-ai-siri-overhaul-is-finally-here/
+   - Published: 2026-06-08 (per URL slug; keynote Monday Jun 8 10:00 PT → midnight Jun 9 Asia/Bangkok)
+   - FreshnessCheck: ✅ within last 24h via "URL slug 2026/06/08" + snippet "Apple unveiled its overhauled AI-powered assistant at its Worldwide Developers Conference, WWDC 2026, on Monday"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URL was /2026/06/07/openai-is-still-working-on-that-super-app/ — different path, different story)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Apple ประกาศโฉม Siri ใหม่ที่งาน WWDC 2026 วันจันทร์ — เปลี่ยนจากผู้ช่วยสั่งงานด้วยเสียงเป็น AI companion ที่ทำงานหลายขั้นได้, มี Siri app แยก, ดึงข้อมูลจาก calendar/contacts/email/หน้าจอปัจจุบัน, ใช้ความรู้จากเว็บมาตอบ, เปิด beta ปลายปีนี้
 
-2. **WWDC 2026: Bloomberg-Gurman รายงาน "ห้องประชุมลับ" ของ Apple ก่อนคีย์โน้ตคืนนี้**
-   - Publisher: Bloomberg Technology
-   - URL: https://www.bloomberg.com/news/newsletters/2026-06-07/wwdc-2026-apple-s-secret-meeting-that-led-it-to-take-ai-seriously-ios-27
-   - Published: 2026-06-07 (per URL slug `/newsletters/2026-06-07/`)
-   - FreshnessCheck: ✅ within last 24h — URL slug embeds 2026-06-07; Mark Gurman's Power On newsletter publishes Sunday — June 7 Sunday US Pacific = within 24h of 2026-06-08 Asia/Bangkok
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — host `bloomberg.com` not present in yesterday's brief at all
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED; trusted-source domain `bloomberg.com`)
-   - Summary: Bloomberg's Mark Gurman newsletter previews the WWDC 2026 keynote (Monday 10:00 a.m. PT = 12:00 น. ของวันอังคารที่ 9 มิ.ย. Asia/Bangkok). Reports a "top secret meeting" that finally pushed Apple to confront its AI crisis seriously, sets up the rebuilt Siri (powered by a custom ~1.2T-parameter Google Gemini model under a ~$1B/year deal), iOS 27 / watchOS 27 / macOS 27 reveals, and frames the event as Tim Cook's final WWDC keynote as CEO before stepping down on September 1.
+2. **Apple plays catch-up at WWDC**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/08/apple-plays-catch-up-at-wwdc/
+   - Published: 2026-06-08 (per URL slug; same WWDC keynote day)
+   - FreshnessCheck: ✅ within last 24h via "URL slug 2026/06/08" + snippet ปรากฏใน cluster ผลค้น WWDC วันเดียวกัน
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg Power On preview was different URL; this is fresh TC analysis post-keynote)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: บทวิเคราะห์ของ TechCrunch ว่า WWDC 2026 เป็นจังหวะ Apple "เล่นเกมไล่ตาม" หลังจาก OpenAI / Anthropic / Google ทิ้งห่างใน frontier model ปีที่ผ่านมา — โดย Apple collaborate กับ Google ใช้ Gemini เป็นแกนของ Apple Foundation Models รุ่นใหม่ที่ขับเคลื่อน Apple Intelligence
 
-3. **UK เตรียมประกาศแผนซื้อชิป AI จากบริษัทอังกฤษเอง — Telegraph รายงาน**
-   - Publisher: Bloomberg Technology
-   - URL: https://www.bloomberg.com/news/articles/2026-06-07/uk-to-buy-ai-chips-from-british-tech-firms-telegraph-reports
-   - Published: 2026-06-07 (per URL slug `/articles/2026-06-07/`)
-   - FreshnessCheck: ✅ within last 24h — URL slug embeds 2026-06-07; cross-confirmed by TheNextWeb + The Edge Malaysia same-day reuploads
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — host `bloomberg.com` and topic (UK industrial policy) absent from yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED; trusted-source domain `bloomberg.com`)
-   - Summary: Per Telegraph (relayed by Bloomberg), UK Technology Secretary Liz Kendall will outline at London Tech Week this week a plan for "strategic purchases" of AI semiconductor equipment from UK-based companies. Target: build a £37B domestic chip industry with ~5% global share; the state becomes a guaranteed customer (not just regulator) to stop British AI hardware firms (e.g. inference-chip startup Fractile) from being acquired by US giants or relocating. Builds on prior £100M ARIA scaling-compute commitment.
+3. **UK to Purchase £400 Million of AI Chips as London Tech Week Begins** (Bloomberg TV / Narayan interview)
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/videos/2026-06-08/uk-ai-minister-narayan-on-bloomberg-tv-video
+   - Published: 2026-06-08 (per URL slug, London Tech Week kickoff)
+   - FreshnessCheck: ✅ within last 24h via "URL slug 2026-06-08" + snippet "UK Plans to Purchase £400 Million of AI Chips as London Tech Week Begins" with AI Minister Kanishka Narayan
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg UK chip story was /news/articles/2026-06-07/uk-to-buy-ai-chips-from-british-tech-firms-telegraph-reports — preview/Telegraph-cited; today's URL is a different path with actual £400M number and Minister Narayan on camera at London Tech Week)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: รัฐมนตรี AI ของอังกฤษ Kanishka Narayan ประกาศบน Bloomberg TV ที่งาน London Tech Week เปิดวันแรก ว่ารัฐบาลอังกฤษจะซื้อชิป AI มูลค่า £400 ล้าน — ขยายแผนที่ Telegraph รายงานล่วงหน้าเมื่อวันก่อน ให้กลายเป็นตัวเลข commitment ที่ชัดเจน
 
 ## Dropped
 
-- https://www.blognone.com/node/150087 (OpenAI Superapp, Thai) — Filter A: WebSearch result attributed publish date "March 21, 2026", >75 days old. Dropped to avoid staleness even though topic matches today's news (the article appears to be Blognone's older coverage of the Superapp strategy, not the June 7 FT scoop).
-- https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/ — Filter B (dedup): in YESTERDAYS_URLS.
-- https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/ — Filter B (dedup): in YESTERDAYS_URLS.
-- https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/ — Filter A: URL slug `/2026/06/06/`, ~2 days old at 2026-06-08 Asia/Bangkok.
-- Anthropic "brake pedal" / Mythos warning (multiple URLs) — Filter A: dated 2026-06-04 / 2026-06-05, outside the 24h window.
-- OpenAI Rosalind Biodefense (axios.com, openai.com) — Filter A: dated 2026-05-29 / 2026-06-03, outside window; plus axios.com not on trusted-sources list.
-- Apple WWDC actual keynote announcements — has not yet occurred at the time of this run (keynote = 2026-06-09 00:00 Asia/Bangkok = 2026-06-08 10:00 PT). No post-keynote reporting exists.
+- https://www.bloomberg.com/news/articles/2026-06-08/key-takeaways-from-apple-wwdc-2026-toplive — Filter (diversity / dedupe-by-event): ข่าวเหตุการณ์ WWDC เดียวกัน เลือก TechCrunch coverage แทน
+- https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/ — Filter (diversity / dedupe-by-event): roundup เดียวกัน เลือกบทเฉพาะ Siri + บทวิเคราะห์ catch-up แทน
+- https://www.bloomberg.com/news/articles/2026-06-07/nvidia-sk-hynix-sign-multi-year-pact-to-develop-next-gen-chips — Filter A (>24h): URL slug 2026-06-07 = 2 วันก่อน
+- https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/ — Filter A (>24h): URL slug 2026-06-01 = 8 วันก่อน
+- https://www.bloomberg.com/news/articles/2026-06-01/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd — Filter A (>24h): URL slug 2026-06-01 = 8 วันก่อน
 
-> Note: 3 items passed both filters this run. Of ~10 candidates examined, 1 failed Filter A (date >24h), 2 failed Filter B (dedup), plus several outside trusted-sources entirely or with ambiguous dates.
+> Note: 3 items passed both filters this run. Of ~10 candidates, 4 failed Filter A (>24h old), 2 dropped by event-dedup diversity, 0 failed Filter B (URL-level dedup against yesterday). No Thai-language source surfaced today-fresh coverage of these stories yet — search engine indexing of Thai outlets on the WWDC keynote was still catching up at run time.
