@@ -1,58 +1,60 @@
-# Sources — 2026-06-10
+# Sources — 2026-06-12
 
-Generated: 2026-06-10 (Asia/Bangkok)
+Generated: 2026-06-12 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-09-brief.md (3 URLs loaded)
+Dedup against: articles/2026-06-11-brief.md (5 URLs loaded)
 
-1. **Anthropic เปิดตัว Claude Fable 5 (Mythos-class) ให้ใช้สาธารณะเป็นรุ่นแรก**
-   - Publisher: Anthropic (primary)
-   - URL: https://www.anthropic.com/news/claude-fable-5-mythos-5
-   - Published: 9 มิ.ย. 2026 ("On June 9, Anthropic launched Claude Fable 5")
-   - FreshnessCheck: ✅ within last 24h via search snippet from anthropic.com primary blog + corroborating TechCrunch/CNBC/9to5Mac slugs `2026/06/09`
-   - DedupCheck: ✅ URL host anthropic.com not in YESTERDAYS_URLS at all (yesterday: techcrunch.com×2 + bloomberg.com)
-   - Verification: Tier 2 — WebSearch snippet from primary domain
-   - Summary: Anthropic released **Claude Fable 5** เป็นรุ่นแรกของ Mythos-class model ที่เปิดให้ใช้สาธารณะ — เก่งด้าน software engineering / knowledge work / vision / scientific research; ราคา $10/M input + $50/M output tokens (2 เท่าของ Opus 4.8); ฟรีบนแพ็กเกจ Pro/Max/Team/Enterprise ถึง 22 มิ.ย. แล้ว 23 มิ.ย. ต้องเริ่มซื้อ credits; ใน high-risk areas (cybersecurity / biology / chemistry / distillation) โมเดลจะ block แล้ว fall back ไป Opus 4.8 — early data: ≥95% sessions วิ่งบน Fable เอง; พร้อมกันนั้น Anthropic ปล่อย **Mythos 5** ให้พาร์ตเนอร์ที่ผ่าน approval แล้ว (เช่น Apple ใน Project Glasswing)
-
-2. **OpenAI launches Economic Research Exchange — privacy-protected platform for external researchers**
-   - Publisher: OpenAI (primary)
-   - URL: https://openai.com/index/economic-research-exchange/
-   - Published: 9 มิ.ย. 2026 ("OpenAI launched the OpenAI Economic Research Exchange on June 9, 2026")
-   - FreshnessCheck: ✅ within last 24h via WebSearch snippet citing explicit date "June 9, 2026"; corroborated by Reuters via TradingView listing
-   - DedupCheck: ✅ URL host openai.com not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet from primary openai.com domain
-   - Summary: OpenAI เปิดแพลตฟอร์ม **Economic Research Exchange** ให้นักวิจัยภายนอกศึกษา economic effects ของ AI ผ่าน project-based collaboration ที่ privacy-protected ร่วมกับ OpenAI Economic Research; applications เปิดถึง 5 ก.ค. 2026 และจะแจ้งผู้ได้รับเลือกภายใน 31 ก.ค.; ต่อยอดจาก OpenAI Signals — ตั้งใจสร้าง "credible, independent evidence" ว่า AI กระทบ workers / firms / institutions / เศรษฐกิจอย่างไร
-
-3. **Sandstone ปิด $30M Series A — Legal AI สำหรับ in-house legal teams**
+1. **Anthropic taps TCS to scale its enterprise AI deployments**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/09/sandstone-raises-30m-to-bring-ai-to-in-house-legal-teams/
-   - Published: 9 มิ.ย. 2026 ("announced $30 million in Series A funding on Tuesday")
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/09` + snippet phrase "on Tuesday"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TC URLs are `/2026/06/08/...` slugs, different articles)
-   - Verification: Tier 2 — WebSearch snippet from techcrunch.com
-   - Summary: Sandstone (legal-AI startup) ปิด **Series A $30 ล้านดอลลาร์** — โฟกัสที่ in-house legal teams ขององค์กร (ไม่ใช่ law firm) ที่ต้องรับมือ "tangle of overlapping tasks and systems" ของงาน contract / compliance / policy — เป็น niche ที่ยัง underserved เทียบกับ AI for big-law
+   - URL: https://techcrunch.com/2026/06/11/anthropic-taps-tcs-to-scale-its-enterprise-ai-deployments/
+   - Published: 2026-06-11 (per URL date slug; confirmed by multiple syndication snippets dated "June 11, 2026")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and snippet "Tata Consultancy Services (TCS) announced a global strategic partnership with Anthropic on June 11, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs all carry the `/2026/06/10/` slug; this one is `/2026/06/11/`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: TCS will set up a dedicated Business Unit for Claude-based enterprise solutions, equip 50,000 associates with Claude under enterprise-wide licensing, and jointly go to market across regulated industries (financial services, public services, life sciences, healthcare, aviation, telecom, medtech).
 
-4. **GM กระโดดเข้าตลาด battery สำหรับ AI data center + grid**
+2. **DoorDash's new AI chatbot lets you order with prompts and photos**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/09/gm-bets-big-on-energy-storage-for-data-centers-and-the-grid/
-   - Published: 9 มิ.ย. 2026
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/09` ในผลค้นหา site:techcrunch.com June 9 2026
+   - URL: https://techcrunch.com/2026/06/11/doordashs-new-ai-chatbot-lets-you-order-with-prompts-and-photos/
+   - Published: 2026-06-11 (per URL date slug; confirmed by Bloomberg and CNBC syndication dated 2026-06-11)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and Bloomberg snippet "2026-06-11"
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet from techcrunch.com
-   - Summary: General Motors เข้าแข่งสร้าง **battery storage สำหรับ AI data center และโครงข่ายไฟฟ้า** — automaker หันความสามารถด้าน energy storage (ที่สะสมมาจากธุรกิจ EV) มาตอบ AI infrastructure demand ที่กำลังบีบ grid capacity
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: DoorDash launched "Ask DoorDash," a chatbot accessible via the search bar that accepts voice, text, and photo input. It can build grocery carts from a recipe photo or grocery list, suggest restaurants matching prompts like "filling dinner for a family of 4," and surface reservation availability. Early testing showed carts ~35% larger and ~50% of restaurant orders went to first-time merchants.
 
-5. **TechCrunch: อุตสาหกรรม AI กำลังเริ่มทดสอบสมมติฐาน "bigger = better"**
+3. **Meta's Edits app is getting an AI assistant and a desktop version**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models/
-   - Published: 9 มิ.ย. 2026
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/09` ในผลค้นหา site:techcrunch.com June 9 2026
+   - URL: https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/
+   - Published: 2026-06-11 (per URL date slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and snippet "At a private event in Los Angeles, Meta unveiled major upcoming updates for its Edits video editing app... The AI assistant announced today is currently in testing with attendees of Thursday's creator event"
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet from techcrunch.com
-   - Summary: บทวิเคราะห์ TechCrunch: AI boom สร้างบนสมมติฐานพื้นฐาน — "Bigger models are more powerful, and the most powerful models win" — ตอนนี้อุตสาหกรรมกำลังจะรู้ว่าเกิดอะไรขึ้นถ้าสมมติฐานนั้นเริ่มแตก เมื่อ cheaper / smaller model ขึ้นมาแข่งจริงจัง
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: At an invite-only creator event in L.A., Meta previewed an AI assistant inside Edits that analyzes Instagram view/retention insights to suggest trending audio and topic ideas, plus a desktop version of the previously mobile-only video editor — a play to keep creators on Meta's stack against TikTok and YouTube.
+
+4. **Deezer's new tool can identify AI music from Spotify, Apple Music, and others**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/
+   - Published: 2026-06-11 (per URL date slug; MacRumors and iPhone in Canada syndication dated 2026-06-11)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and MacRumors snippet dated 2026-06-11
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Deezer launched a free web tool that imports playlists from Spotify, Apple Music, SoundCloud, YouTube Music and ~20 other platforms and flags AI-generated tracks. Built on Deezer's in-house detector (used since early 2025), it claims >99% accuracy on Suno and Udio outputs across 27 languages. Internal stats: 43% of users switching to Deezer already had AI songs in their libraries.
+
+5. **Coinbase's new tool can help agents trade and pay for premium research**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/06/11/coinbase-debuts-ai-agent-that-can-trade-and-pay-for-premium-research/
+   - Published: 2026-06-11 (per URL date slug; CoinDesk and SiliconANGLE syndication dated 2026-06-11)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and CoinDesk URL `/2026/06/11/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: "Coinbase for Agents" lets third-party AI assistants (e.g., ChatGPT, Claude) connect to Coinbase accounts to trade crypto and make payments. It pairs with the x402 machine-to-machine payment protocol — built with AWS, Anthropic, Circle, and Near — so agents can pay for premium research, data APIs and compute without subscriptions or human checkout. Agents run in isolated portfolios; spending caps and trade limits are on the roadmap.
 
 ## Dropped
 
-- https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/ — topic-overlap with yesterday's WWDC coverage (URL passes Filter B but reporting is redundant with `articles/2026-06-09-brief.md`); preferred Anthropic + OpenAI primary sources instead
-- https://techcrunch.com/2026/06/09/hey-siri-heres-what-i-actually-want-from-ai/ — opinion piece, low news value; dropped for original news
+- Multiple Blognone candidates (e.g., `blognone.com/node/150530`, `/node/150870`) — Filter A: surface snippets did not include a clear "within 24h" timestamp and the `/node/N` URL slug embeds no date — per "Date ambiguous / not surfaced → drop", not bending the filter.
+- https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/ — Filter A: URL slug `/2026/06/09/` is ~3 days old, outside rolling 24h window.
+- https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/ — Filter A: same, `/2026/06/09/` outside window.
+- https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/ — Filter A: `/2026/06/10/` is outside the rolling 24h window (>24h before today's run timestamp Asia/Bangkok).
 
-> Note: 5 items passed both filters this run. No Thai-language source from `reference/trusted-sources.md` had a 24h-fresh story on these topics — Blognone / Beartai / Thairath indexers had not picked up June 9 Anthropic/OpenAI coverage at search time. Ship without Thai source (target was "aim for ≥1 when supply allows" — supply did not allow today).
+> Note: 5 items passed both filters this run. International supply (TechCrunch on 2026-06-11) was strong enough to fill 5 slots without a Thai-language inclusion this cycle; mix tilted international.
