@@ -1,60 +1,61 @@
-# Sources — 2026-06-12
+# Sources — 2026-06-13
 
-Generated: 2026-06-12 (Asia/Bangkok)
+Generated: 2026-06-13 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-11-brief.md (5 URLs loaded)
+Dedup against: articles/2026-06-12-brief.md (5 URLs loaded)
 
-1. **Anthropic taps TCS to scale its enterprise AI deployments**
+1. **SpaceX IPO: Live updates on everything you need to know — Google $920M/เดือนค่า compute, xAI/Grok ผูกกับ SpaceX**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/anthropic-taps-tcs-to-scale-its-enterprise-ai-deployments/
-   - Published: 2026-06-11 (per URL date slug; confirmed by multiple syndication snippets dated "June 11, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and snippet "Tata Consultancy Services (TCS) announced a global strategic partnership with Anthropic on June 11, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs all carry the `/2026/06/10/` slug; this one is `/2026/06/11/`)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TCS will set up a dedicated Business Unit for Claude-based enterprise solutions, equip 50,000 associates with Claude under enterprise-wide licensing, and jointly go to market across regulated industries (financial services, public services, life sciences, healthcare, aviation, telecom, medtech).
+   - URL: https://techcrunch.com/2026/06/12/spacex-ipo-live-updates-on-everything-you-need-to-know/
+   - Published: 2026-06-12 (URL slug); "originally published at 10 am ET, June 12, 2026" (search snippet)
+   - FreshnessCheck: ✅ within last 24h — URL slug 2026/06/12 + snippet "originally published at 10 am ET, June 12, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's TechCrunch URLs all dated 2026/06/11
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: SpaceX เริ่มเทรดวันแรกบน Nasdaq ราคา IPO 135 ดอลลาร์/หุ้น ระดมทุน 75,000 ล้านดอลลาร์ ทำให้กลายเป็น IPO ใหญ่ที่สุดในประวัติศาสตร์; snippet ระบุชัดว่า Google จะจ่ายให้ SpaceX 920 ล้านดอลลาร์/เดือน สำหรับ compute โดย Google ระบุว่าเป็นดีลระยะสั้นรองรับ demand ที่เกินคาดจาก AI products ที่เพิ่งเปิดตัว; SpaceX ผนึก xAI ของ Musk เข้ามาเมื่อกุมภาพันธ์ 2026 ทำให้ data center, โมเดล Grok และ X (เดิม Twitter) อยู่ใต้ร่ม SpaceX
 
-2. **DoorDash's new AI chatbot lets you order with prompts and photos**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/doordashs-new-ai-chatbot-lets-you-order-with-prompts-and-photos/
-   - Published: 2026-06-11 (per URL date slug; confirmed by Bloomberg and CNBC syndication dated 2026-06-11)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and Bloomberg snippet "2026-06-11"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: DoorDash launched "Ask DoorDash," a chatbot accessible via the search bar that accepts voice, text, and photo input. It can build grocery carts from a recipe photo or grocery list, suggest restaurants matching prompts like "filling dinner for a family of 4," and surface reservation availability. Early testing showed carts ~35% larger and ~50% of restaurant orders went to first-time merchants.
+2. **Anthropic, OpenAI, Google Executives to Join G7 Summit in France**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-06-12/anthropic-openai-google-executives-plan-to-attend-g7-summit
+   - Published: 2026-06-12 (URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug 2026-06-12
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — bloomberg.com ไม่ถูกอ้างใน brief เมื่อวาน
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: ผู้บริหารระดับสูงของ Anthropic, OpenAI และ Google DeepMind — Dario Amodei, Sam Altman และ Demis Hassabis — ยืนยันเข้าร่วมประชุมสุดยอด G7 ที่ Évian-les-Bains ฝรั่งเศส 15–17 มิ.ย. 2026; รายชื่อจากทำเนียบประธานาธิบดีฝรั่งเศสยังรวม CEO Mistral (Arthur Mensch), Cohere (Aidan Gomez), Black Forest Labs (Robin Rombach), Sarvam AI (Pratyush Kumar), Synthesia (Victor Riparbelli), Meta Superintelligence Labs (Alex Wang), Salesforce (Marc Benioff) และ Sakana AI (Ren Ito); วาระ working lunch กับผู้นำการเมืองครอบคลุม AI infrastructure, networks และ regulation
 
-3. **Meta's Edits app is getting an AI assistant and a desktop version**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/
-   - Published: 2026-06-11 (per URL date slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and snippet "At a private event in Los Angeles, Meta unveiled major upcoming updates for its Edits video editing app... The AI assistant announced today is currently in testing with attendees of Thursday's creator event"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: At an invite-only creator event in L.A., Meta previewed an AI assistant inside Edits that analyzes Instagram view/retention insights to suggest trending audio and topic ideas, plus a desktop version of the previously mobile-only video editor — a play to keep creators on Meta's stack against TikTok and YouTube.
+3. **Kioxia Surpasses Toyota as Japan's Most Valuable Company on AI Chip Demand**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-06-12/kioxia-becomes-japan-s-most-valuable-firm-as-ai-mania-goes-on
+   - Published: 2026-06-12 (URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug 2026-06-12
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — bloomberg.com ไม่ปรากฏใน brief เมื่อวาน
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: หุ้น Kioxia ผู้ผลิต NAND flash memory ของญี่ปุ่นที่ถูกแยกออกจาก Toshiba ปี 2018 พุ่ง 7.6% วันศุกร์ ดัน market cap ทะลุ 44 ล้านล้านเยน (~274,000 ล้านดอลลาร์) แซง Toyota Motor ขึ้นเป็นบริษัทมูลค่าสูงสุดในตลาดหุ้นญี่ปุ่นชั่วคราวเมื่อ 12 มิ.ย. — ราคาหุ้น Kioxia บวกไปแล้วกว่า 660% ปีนี้ ทำให้เป็นหุ้นที่ให้ผลตอบแทนสูงสุดใน MSCI World Index จากเรื่อง AI memory demand ที่ Kioxia เป็น choke point เพราะมีผู้ผลิต NAND ระดับอุตสาหกรรมแค่ไม่กี่ราย
 
-4. **Deezer's new tool can identify AI music from Spotify, Apple Music, and others**
+4. **Chinese cybercrime operation that used AI to scam 'hundreds of thousands of victims' sued by Google**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/
-   - Published: 2026-06-11 (per URL date slug; MacRumors and iPhone in Canada syndication dated 2026-06-11)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and MacRumors snippet dated 2026-06-11
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Deezer launched a free web tool that imports playlists from Spotify, Apple Music, SoundCloud, YouTube Music and ~20 other platforms and flags AI-generated tracks. Built on Deezer's in-house detector (used since early 2025), it claims >99% accuracy on Suno and Udio outputs across 27 languages. Internal stats: 43% of users switching to Deezer already had AI songs in their libraries.
+   - URL: https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/
+   - Published: 2026-06-12 (URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug 2026/06/12
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — slug ใหม่ ไม่ซ้ำกับ TechCrunch URLs ของเมื่อวาน
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Google ฟ้องเครือข่ายอาชญากรไซเบอร์จากจีนชื่อ "Outsider Enterprise" ที่ขาย phishing-as-a-service (PhaaS) ผ่าน Telegram โดยใช้ Gemini สร้างโค้ดและเว็บปลอมเลียนแบบ Google, YouTube, U.S. Postal Service, สถาบันการเงิน, DMV รัฐต่าง ๆ และระบบเก็บค่าผ่านทาง E-ZPass มีเทมเพลตพร้อมใช้ >290 แบบ; ผู้พิพากษานิวยอร์กอนุมัติคำร้องฉุกเฉินให้สั่งยึดโดเมนและบัญชี Shopify ของเครือข่าย; snippet ระบุว่ามีเหยื่อรวมหลายแสนคน; FBI ร่วมกับ Google และ Black Lotus Labs ของ Lumen ในปฏิบัติการยึดโดเมน
 
-5. **Coinbase's new tool can help agents trade and pay for premium research**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/coinbase-debuts-ai-agent-that-can-trade-and-pay-for-premium-research/
-   - Published: 2026-06-11 (per URL date slug; CoinDesk and SiliconANGLE syndication dated 2026-06-11)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and CoinDesk URL `/2026/06/11/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: "Coinbase for Agents" lets third-party AI assistants (e.g., ChatGPT, Claude) connect to Coinbase accounts to trade crypto and make payments. It pairs with the x402 machine-to-machine payment protocol — built with AWS, Anthropic, Circle, and Near — so agents can pay for premium research, data APIs and compute without subscriptions or human checkout. Agents run in isolated portfolios; spending caps and trade limits are on the roadmap.
+5. **HayWire Newsletter Using AI to Monitor Hay Markets**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-06-12/haywire-newsletter-using-ai-to-monitor-hay-markets
+   - Published: 2026-06-12 (URL slug); "published … on June 12, 2026 at 8:00 AM UTC" (search snippet)
+   - FreshnessCheck: ✅ within last 24h — URL slug 2026-06-12 + snippet ระบุเวลา 8:00 AM UTC วันเดียวกัน
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — story ใหม่ที่ไม่อยู่ใน brief เมื่อวาน
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: HayWire เป็น newsletter ที่ใช้ AI ขุดข้อมูลสาธารณะอย่าง USDA auction reports เพื่อจัดทำสรุปตลาด hay (หญ้าแห้งสำหรับเลี้ยงปศุสัตว์) มูลค่า ~15,000 ล้านดอลลาร์รายสัปดาห์ส่งฟรีทุกเช้าวันอังคาร; ก่อตั้งโดย Aiden Johnson (CEO) และ Cole Glasgow; ตลาด hay เคยถูกขับเคลื่อนด้วย word-of-mouth เพราะแยกย่อยตามชนิด (alfalfa, clover) และต้นทุนขนส่ง; บทความตีพิมพ์ภายใต้ Bloomberg + Odd Lots podcast โดย Tracy Alloway และ Joe Weisenthal เมื่อ 12 มิ.ย. 2026 เวลา 8:00 UTC
 
 ## Dropped
 
-- Multiple Blognone candidates (e.g., `blognone.com/node/150530`, `/node/150870`) — Filter A: surface snippets did not include a clear "within 24h" timestamp and the `/node/N` URL slug embeds no date — per "Date ambiguous / not surfaced → drop", not bending the filter.
-- https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/ — Filter A: URL slug `/2026/06/09/` is ~3 days old, outside rolling 24h window.
-- https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/ — Filter A: same, `/2026/06/09/` outside window.
-- https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/ — Filter A: `/2026/06/10/` is outside the rolling 24h window (>24h before today's run timestamp Asia/Bangkok).
+- https://www.bloomberg.com/news/articles/2026-06-11/openai-to-acquire-cloud-platform-ona-to-support-ai-agents — Filter A (>24h): URL slug 2026-06-11 (วันที่ 11 มิ.ย. = นอกหน้าต่าง 24 ชม. เมื่อนับจาก 13 มิ.ย. Asia/Bangkok)
+- https://www.bloomberg.com/news/articles/2026-06-09/asia-s-largest-outsourcer-to-slow-hiring-as-ai-reshapes-industry — Filter A (>24h): URL slug 2026-06-09 (4 วันเก่า)
+- https://www.bloomberg.com/news/articles/2026-06-09/crusoe-touts-5-gigawatts-worth-of-data-centers-deals-pauses-wyoming-site — Filter A (>24h): URL slug 2026-06-09
+- https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/ — Filter A (>24h): URL slug 2026/06/11 (>24 ชม.)
+- https://www.blognone.com/node/150852 (Google AI Plus storage upgrade) — Filter A (>24h): snippet ระบุ "4 วันที่แล้ว"
 
-> Note: 5 items passed both filters this run. International supply (TechCrunch on 2026-06-11) was strong enough to fill 5 slots without a Thai-language inclusion this cycle; mix tilted international.
+> Note: 5 รายการผ่านทั้ง Filter A และ Filter B ในรอบนี้ การไล่ดู candidate รวมประมาณ 10 ราย โดย ≥5 ราย fail Filter A (เกินหน้าต่าง 24 ชม.) และ 0 ราย fail Filter B; ไม่มีแหล่งภาษาไทยใน trusted-sources ที่มี URL slug 2026-06-12 หรือ 2026-06-13 รอบนี้จึงเป็นข่าวต่างประเทศทั้งหมด
