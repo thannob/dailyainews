@@ -1,60 +1,49 @@
-# Sources — 2026-06-12
+# Sources — 2026-06-16
 
-Generated: 2026-06-12 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-06-16 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe https://example.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-11-brief.md (5 URLs loaded)
+Dedup against: articles/2026-06-15-brief.md (4 URLs loaded)
 
-1. **Anthropic taps TCS to scale its enterprise AI deployments**
+1. **SpaceX's biggest-ever IPO just grew to $85.7 billion raised**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/anthropic-taps-tcs-to-scale-its-enterprise-ai-deployments/
-   - Published: 2026-06-11 (per URL date slug; confirmed by multiple syndication snippets dated "June 11, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and snippet "Tata Consultancy Services (TCS) announced a global strategic partnership with Anthropic on June 11, 2026"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs all carry the `/2026/06/10/` slug; this one is `/2026/06/11/`)
+   - URL: https://techcrunch.com/2026/06/15/spacexs-biggest-ever-ipo-just-grew-to-85-7-billion-raised/
+   - Published: 2026-06-15 (per URL slug; corroborated by CNBC, Reuters/Investing.com, Yahoo Finance dated 2026-06-15)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/15/` + multi-source snippet confirming greenshoe exercise on June 15, 2026
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday cited TechCrunch `/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/`; this is a different article on the IPO finalization
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: TCS will set up a dedicated Business Unit for Claude-based enterprise solutions, equip 50,000 associates with Claude under enterprise-wide licensing, and jointly go to market across regulated industries (financial services, public services, life sciences, healthcare, aviation, telecom, medtech).
+   - Summary: SpaceX completed its IPO at 638,888,888 Class A shares × $135, raising ~$85.7B after underwriters exercised the greenshoe overallotment (extra 83,333,333 shares); post-IPO market cap ~$2.28T; ~$20B of proceeds earmarked to extinguish legacy debt tied to X and xAI, with the rest to AI compute, launch infra, and Starlink.
 
-2. **DoorDash's new AI chatbot lets you order with prompts and photos**
+2. **Salesforce acquires AI customer service platform Fin for $3.6B**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/doordashs-new-ai-chatbot-lets-you-order-with-prompts-and-photos/
-   - Published: 2026-06-11 (per URL date slug; confirmed by Bloomberg and CNBC syndication dated 2026-06-11)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and Bloomberg snippet "2026-06-11"
+   - URL: https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/
+   - Published: 2026-06-15 (per URL slug; corroborated by CNBC, Yahoo Finance, Irish Times, Salesforce press release dated 2026-06-15)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/15/` + Salesforce press release timestamp 2026-06-15
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: DoorDash launched "Ask DoorDash," a chatbot accessible via the search bar that accepts voice, text, and photo input. It can build grocery carts from a recipe photo or grocery list, suggest restaurants matching prompts like "filling dinner for a family of 4," and surface reservation availability. Early testing showed carts ~35% larger and ~50% of restaurant orders went to first-time merchants.
+   - Summary: Salesforce signed a definitive agreement to acquire Fin (formerly Intercom) for ~$3.6B to complement Agentforce; Fin's AI Agent — built on a custom model "Apex" — resolves ~76% of incoming support tickets end-to-end across chat, email, WhatsApp, SMS, phone, and Slack with no human handoff. Expected to close in Q4 FY27.
 
-3. **Meta's Edits app is getting an AI assistant and a desktop version**
+3. **Meta's new 'AI Mode' on Facebook pulls from public info across its platforms**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/metas-edits-app-is-getting-an-ai-assistant-and-a-desktop-version/
-   - Published: 2026-06-11 (per URL date slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and snippet "At a private event in Los Angeles, Meta unveiled major upcoming updates for its Edits video editing app... The AI assistant announced today is currently in testing with attendees of Thursday's creator event"
+   - URL: https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/
+   - Published: 2026-06-15 (per URL slug; corroborated by Engadget, Android Headlines, Mezha, Zamin.uz dated 2026-06-15)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/15/` + multi-source snippets confirming US rollout on June 15
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: At an invite-only creator event in L.A., Meta previewed an AI assistant inside Edits that analyzes Instagram view/retention insights to suggest trending audio and topic ideas, plus a desktop version of the previously mobile-only video editor — a play to keep creators on Meta's stack against TikTok and YouTube.
+   - Summary: Meta launched "AI Mode" for Facebook US, converting the search bar into a conversational interface powered by "Muse Spark" that synthesizes answers from public posts in Groups, Reels, and Marketplace. Critics flag data-privacy and accuracy concerns over crowd-sourced AI summaries.
 
-4. **Deezer's new tool can identify AI music from Spotify, Apple Music, and others**
+4. **As AI agents become employees, NewCore emerges with $66M to give them identities**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/
-   - Published: 2026-06-11 (per URL date slug; MacRumors and iPhone in Canada syndication dated 2026-06-11)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and MacRumors snippet dated 2026-06-11
+   - URL: https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/
+   - Published: 2026-06-15 (per URL slug; corroborated by SiliconANGLE, MSSP Alert, Jerusalem Post, PR Newswire dated 2026-06-15)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/15/` + Identiverse 2026 timing (Las Vegas June 15–18, 2026)
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Deezer launched a free web tool that imports playlists from Spotify, Apple Music, SoundCloud, YouTube Music and ~20 other platforms and flags AI-generated tracks. Built on Deezer's in-house detector (used since early 2025), it claims >99% accuracy on Suno and Udio outputs across 27 languages. Internal stats: 43% of users switching to Deezer already had AI songs in their libraries.
-
-5. **Coinbase's new tool can help agents trade and pay for premium research**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/11/coinbase-debuts-ai-agent-that-can-trade-and-pay-for-premium-research/
-   - Published: 2026-06-11 (per URL date slug; CoinDesk and SiliconANGLE syndication dated 2026-06-11)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/11/` and CoinDesk URL `/2026/06/11/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: "Coinbase for Agents" lets third-party AI assistants (e.g., ChatGPT, Claude) connect to Coinbase accounts to trade crypto and make payments. It pairs with the x402 machine-to-machine payment protocol — built with AWS, Anthropic, Circle, and Near — so agents can pay for premium research, data APIs and compute without subscriptions or human checkout. Agents run in isolated portfolios; spending caps and trade limits are on the roadmap.
+   - Summary: NewCore exited stealth with a $66M seed round (Cyberstarts, Index Ventures, Evolution Equity) at a $300M post valuation, launching an identity platform built for human users, machine identities, and AI agents. Features include identity discovery, AI-agent governance, phishing-resistant authentication, hardware-bound credentials, split-key architecture, and an integration package for Claude Code, Codex, and Cursor.
 
 ## Dropped
 
-- Multiple Blognone candidates (e.g., `blognone.com/node/150530`, `/node/150870`) — Filter A: surface snippets did not include a clear "within 24h" timestamp and the `/node/N` URL slug embeds no date — per "Date ambiguous / not surfaced → drop", not bending the filter.
-- https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/ — Filter A: URL slug `/2026/06/09/` is ~3 days old, outside rolling 24h window.
-- https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/ — Filter A: same, `/2026/06/09/` outside window.
-- https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/ — Filter A: `/2026/06/10/` is outside the rolling 24h window (>24h before today's run timestamp Asia/Bangkok).
+- https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/ — topic overlap with yesterday's London AI-led job-loss coverage; URL would have passed both filters but skipped to keep mix diverse
+- Blognone / Beartai (Thai sources) — no candidate surfaced with a snippet whose timestamp resolves to 2026-06-15/16; nearest beartai SpaceX IPO Thai-language item is ~6 days old (fails Filter A)
 
-> Note: 5 items passed both filters this run. International supply (TechCrunch on 2026-06-11) was strong enough to fill 5 slots without a Thai-language inclusion this cycle; mix tilted international.
+> Note: 4 items passed both filters this run. International supply was strong (5 candidates from TechCrunch, all 2026-06-15 dated); Thai-source supply was empty for the 24h window.
