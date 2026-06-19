@@ -1,31 +1,31 @@
-# Perspectives — 2026-06-12
+# Perspectives — 2026-06-19
 
-## 1. Anthropic จับมือ TCS ขยาย Claude สู่ enterprise — ติดอาวุธพนักงาน 50,000 คน
+## 1. Amazon hopes to challenge Nvidia more directly by selling its AI chips
 
-**อาจารย์ (มหาวิทยาลัย):** ดีลนี้สอนนักศึกษา MIS / business strategy ว่าทำไม "system integrator + foundation model" เป็น formation ที่จะ dominate การขาย AI ระดับองค์กรในอุตสาหกรรม regulated — foundation model lab ขายได้แค่ API ส่วน customer success ต้องการคนเดินเข้าไปที่ data center ของลูกค้า แก้ของจริง
-**ผู้เชี่ยวชาญด้าน AI:** การที่ partnership พุ่งเป้าที่ financial services, healthcare, aviation, telecom สะท้อนว่า bottleneck ของ enterprise AI ไม่ใช่ model capability อีกต่อไป — เป็น governance, audit trail, และ permission inheritance ที่ TCS มี playbook อยู่แล้วและ Anthropic ไม่มี
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าคุณ build product แข่งกับ TCS ในตลาด enterprise — ราคา/ความเร็วของ Claude ไม่ใช่ moat แล้ว ต้องคิดต่อว่าจะแข่งใน niche industry ใดที่ TCS เข้าไม่ถึง หรือออกแบบ deployment ให้ลูกค้า DIY ได้เร็วกว่าโครงการ TCS แบบเดิม
+**อาจารย์ (มหาวิทยาลัย):** น่าสอนเป็นบทเรียนวงจรชีวิตของ vertical integration — AWS เริ่มจากใช้ Trainium ภายใน แล้วเปลี่ยนเป็นสินค้าขายภายนอกเมื่อ scale และ ecosystem พร้อม นักศึกษาควรเข้าใจว่า "AI sovereignty" เป็น demand-side driver ที่เปลี่ยนกลยุทธ์ของผู้ผลิตชิปได้
+**ผู้เชี่ยวชาญด้าน AI:** การที่ DeSantis พูดถึง "underconsumption in AI" สะท้อนว่า AWS เชื่อว่าตลาด inference ยังเปิดกว้างพอที่ Trainium จะแทรกได้โดยไม่เบียดกับ AWS เอง คำถามทางเทคนิคที่ค้างคือ software stack — CUDA ของ Nvidia ครองพื้นที่นี้มานาน และ Trainium ต้องพิสูจน์ว่า toolchain (Neuron SDK) ใช้งานได้สะดวกพอกับโมเดล open-source ที่หลากหลาย
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ทำ inference จริง สัญญาณนี้แปลว่ามี option ที่สามที่ไม่ใช่ Nvidia หรือ Google TPU อีกใน 6–12 เดือน วางแผน abstraction ของ inference layer (vLLM, TensorRT-LLM, Neuron) เพื่อให้สลับ accelerator ได้โดยไม่ต้อง rewrite จะลด vendor lock-in ได้จริงเมื่อ option นี้พร้อม
 
-## 2. DoorDash เปิด "Ask DoorDash" — สั่งอาหาร/ของชำด้วย prompt + รูป
+## 2. AI data centers just got a government-mandated fast lane to the grid
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้เป็น case study วิชา HCI / consumer behavior ว่าทำไม "พิมพ์ความต้องการ" ดีกว่า "browse menu" — multimodal interface ลด cognitive load ในการเลือก แต่ก็เปิดช่องให้แพลตฟอร์ม steer พฤติกรรมผ่าน ranking ที่ผู้ใช้มองไม่เห็น
-**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข "carts สูงกว่า 35%" และ "50% ของออเดอร์ไปร้านใหม่" บอกว่า discovery layer ที่ขับด้วย LLM เปลี่ยน distribution ของ supply-side ในแพลตฟอร์มได้จริง — ร้านเล็กที่ไม่เคย rank ใน traditional search อาจได้ traffic เพิ่ม แต่ก็แปลว่าผู้บริโภคถูก nudge ไป option ที่ไม่ได้ตั้งใจหา
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าคุณทำ marketplace / e-commerce ใน TH — pattern "ปุ่ม Ask ในแถบค้นหา" เป็น UX ที่ลอกได้ทันที แต่ของจริงอยู่ใน ranking + reranker หลังบ้านที่ต้องอ่าน intent + inventory ไม่ใช่แค่ embed query แล้วทำ vector search
+**อาจารย์ (มหาวิทยาลัย):** เป็นกรณีศึกษาที่ดีของการที่ AI infrastructure ไม่ใช่เรื่องเทคโนโลยีอย่างเดียว แต่เป็นเรื่องพลังงานและการเมืองระดับรัฐบาลกลาง สอนเชื่อมโยงระหว่างเทคโนโลยี นโยบายพลังงาน และความขัดแย้งระหว่างรัฐบาลกลางกับรัฐ
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลขจริงที่ต้องจับตา: 100 MW ขึ้นไป และ $500M ขึ้นไป เป็น threshold ที่กำหนด data center ที่อยู่ใน scope ของคำสั่ง — ระดับนี้คือ hyperscaler/frontier-lab tier เท่านั้น ผลทางอ้อมคือต้นทุนของ training run ขนาดใหญ่จะถูกล็อกอยู่กับผู้เล่นไม่กี่รายที่ได้ priority interconnection
+**โปรแกรมเมอร์มืออาชีพ:** ในเชิงปฏิบัติ สิ่งนี้แปลว่า inference cost ของโมเดล frontier น่าจะลงเร็วขึ้นในระยะกลาง เพราะ capacity จะเพิ่ม ทีมที่ build บน LLM API ภายนอกควรเริ่มจำลอง cost curve ของ inference ที่ลดลง 30–50% ในรอบ 18 เดือน เพื่อจัดทำ budget plan ได้สอดคล้องกับโลกจริง
 
-## 3. Meta ติดผู้ช่วย AI ใน Edits + เปิดเวอร์ชัน desktop — ดึง creator ให้อยู่ใน ecosystem
+## 3. AI inference startup Baseten reportedly raising $1.5B months after its last mega-round
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้เป็น case study วิชา platform competition — Meta สู้ TikTok/YouTube ด้วยการลด friction ของ creator (AI ช่วยวิเคราะห์ retention, desktop ให้ตัดงานยาวได้) แทนการแย่ง audience ตรง ๆ ซึ่งคือกลยุทธ์ "supply-side defense" คลาสสิก
-**ผู้เชี่ยวชาญด้าน AI:** การที่ AI assistant ดึง view/retention data ของผู้ใช้เองมาแนะนำ trending audio + topic แปลว่าโมเดลทำงานบน first-party data ของ creator คนนั้นโดยเฉพาะ — ไม่ใช่ generic LLM advice; ถ้าคิดในเชิง personalization นี่คือ "RAG over your own analytics" ที่ scale ไป creator หลักล้านคนได้
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมคุณทำ tooling ให้ creator ใน TH — Meta เพิ่ง raise the bar สำหรับ "free AI assistant ที่ผูกกับข้อมูล analytics" คุณจะแข่งใน feature นี้ลำบาก แต่ Meta ยังไม่ครอบ workflow ของ multi-platform creator (โพสต์พร้อมกัน TikTok/YT/IG) — ช่องว่างนี้ยังเปิด
+**อาจารย์ (มหาวิทยาลัย):** การที่ valuation พุ่ง 160% ใน 6 เดือนเหมาะใช้สอนเรื่อง venture pricing in fast-moving markets และ split-tier valuation ($11B vs $13B) เป็นกลไกที่นักศึกษา finance มักไม่ได้เจอใน textbook — ให้ลองวิเคราะห์ดูว่ามันคืออะไรและเกิดเมื่อไหร่
+**ผู้เชี่ยวชาญด้าน AI:** AI infra layer ที่อยู่ระหว่าง model API กับ hardware กำลังเป็น category แยกที่ได้ funding ใหญ่กว่า model lab บางราย — Baseten จับ inference orchestration บน open-source models ซึ่งเป็น thesis ที่บ่งบอกว่า "หางยาว" ของโมเดล open-weights จะใหญ่กว่าที่หลายคนคิดในช่วงต้นปี
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่กำลังเลือกระหว่าง host เองกับใช้ managed inference การมี Baseten ระดับ unicorn ของ unicorn แปลว่ามี SLA, cost optimization และ multi-cloud abstraction ที่ enterprise-grade ให้ใช้แล้ว ลองทำ POC เปรียบเทียบ cost-per-token กับ self-hosted vLLM บน GPU spot ดูก่อนตัดสินใจ build infra เอง
 
-## 4. Deezer ปล่อยเครื่องมือสแกน AI music ในเพลย์ลิสต์ Spotify / Apple Music
+## 4. General Intuition in talks to raise $300M at around $2B valuation
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้สอนวิชา media studies + IP ได้ตรงประเด็น — เมื่อ supply ของเพลง AI ล้นตลาด ผู้เล่นที่ออก detector ก่อน (Deezer) จะ position ตัวเองเป็น "curator ที่ไว้ใจได้" ในขณะที่ Spotify/Apple Music เลือก "tag" เฉย ๆ ความต่างเชิง editorial policy นี้คือคำตอบเชิงธุรกิจของคำถาม "AI สร้างได้แต่เราเล่นได้แค่ไหน"
-**ผู้เชี่ยวชาญด้าน AI:** การอ้าง >99% accuracy บน Suno + Udio ใน 27 ภาษา เป็น claim ที่แข็งแต่ต้องระวัง — detector เหล่านี้มักทำงานดีกับ generative model รุ่นที่เห็นมาก่อน และ degrade เมื่อ model ใหม่ออกหรือมี fine-tune จาก open source; arms race ระหว่าง generator vs detector ยังไม่จบ
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าคุณทำผลิตภัณฑ์ที่มี user-generated audio (podcast, voice note, beat marketplace) — รูปแบบ "import จากหลาย DSP แล้ว flag AI" เริ่มเป็นมาตรฐานใหม่ที่ผู้ใช้คาดหวัง คิดล่วงหน้าว่าจะ integrate detector อย่างไรก่อนที่ regulator ใน EU/UK จะมาบังคับ
+**อาจารย์ (มหาวิทยาลัย):** Spatial-temporal reasoning เป็นหัวข้อที่กำลังย้ายจาก lab paper มาเป็น venture-backed product — เหมาะเชื่อมโยงในวิชา reinforcement learning, robotics และ embodied AI ให้เห็นว่า dataset จากเกม (ที่มี ground truth ของ physics) กลายเป็น training signal ที่ scarce
+**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคคือการเลือกใช้ video-game footage เป็น source — มันเป็น proxy ที่ใกล้เคียง simulation แต่มี diversity ของ environment ที่ procedural generation ทำไม่ได้ ถ้าโมเดล General Intuition transfer ไปสู่ robotics โลกจริงได้แม้บางส่วน นี่จะเป็น proof-point ที่สำคัญของ sim-to-real ที่ผ่าน gaming
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับ developer สาย game/sim/robotics ติดตามว่า General Intuition เปิด API หรือ weights อะไรก่อนสิ้นฤดูใบไม้ร่วง — model ที่เข้าใจ space-time จะเป็น primitive ใหม่สำหรับ agent ที่ต้องวางแผน sequence ของ action ที่มี physics constraint โดยไม่ต้อง train เอง
 
-## 5. Coinbase for Agents + x402 — AI agent เทรดและจ่ายเงินซื้อ premium content ได้เอง
+## 5. A tech worker-backed PAC is bringing a $5M knife to Big Tech's $100M gunfight
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้สอนวิชา financial regulation + AI ethics — ครั้งแรกที่มี payment rails ออกแบบให้ "non-human entity" เป็น principal ของบัญชี คำถามทางกฎหมายที่ตามมาเพียบ: ใครรับผิดเมื่อ agent ทำผิด, สัญญาที่ agent เซ็นมี enforceability ไหม, กฎ KYC ปัจจุบันรับ entity ที่ไม่ใช่คนได้หรือ
-**ผู้เชี่ยวชาญด้าน AI:** x402 เป็น primitive ที่ขาดมานานในวงจร AI agent — "small payment per request" ที่ไม่ต้องผ่าน Stripe Checkout จะปลดล็อก business model ใหม่ของ data API + premium research; แต่ก็จะเร่ง failure mode ของ agent ที่ใช้เงินเกินงบเพราะตีความ task ผิด — spending cap + isolation portfolio ที่ Coinbase ขายต้องพิสูจน์ในของจริง
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าคุณทำ data API หรือ premium content — รองรับ x402 endpoint ตั้งแต่วันนี้คือการเปิดช่องทางขายให้ลูกค้าใหม่ที่เป็น agent (ไม่ใช่คน) ส่วนถ้าคุณ build agent — เริ่มออกแบบ guardrail ระดับ "งบรายวัน + allow-list ของ counterparty" ตั้งแต่ก่อนเขียน prompt
+**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างชั้นเรียนของ political economy ของ technology — นักศึกษาควรวิเคราะห์ว่าการระดมทุนระดับ $140M จาก founder ของ OpenAI/Palantir/a16z เทียบกับ $5M จาก labor coalition สะท้อน asymmetry ของ resources อย่างไร และผลต่อ policy outcome จะเป็นอย่างไรในระบบเลือกตั้งสหรัฐ
+**ผู้เชี่ยวชาญด้าน AI:** ในมุมนโยบาย ความตึงเครียดที่จะออกมาในรูป regulation จริงคือ liability, compute thresholds, และ pre-deployment evaluation — ดู ad buy ของ Guardrails Alliance ใน NY-12 ว่ามีผลแค่ไหน เพราะ Bores เป็นผู้เสนอกฎหมาย AI safety ระดับรัฐที่อาจกลายเป็น template
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับวิศวกรในบริษัท AI เรื่องนี้กระทบกับ compliance burden ที่จะเพิ่มขึ้นในอีก 12–24 เดือนไม่ว่า PAC ฝั่งไหนชนะ — เริ่มทำ audit log, model-card, eval pipeline ให้มี trail ที่ตรวจสอบได้ตั้งแต่วันนี้ เพราะ requirement ของกฎหมายระดับรัฐกำลังกลายเป็น baseline แทน federal regulation
