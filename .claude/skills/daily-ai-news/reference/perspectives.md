@@ -1,31 +1,31 @@
-# Perspectives — 2026-06-19
+# Perspectives — 2026-06-20
 
-## 1. Amazon hopes to challenge Nvidia more directly by selling its AI chips
+## 1. Nobel Winner John Jumper to Leave Google DeepMind for Anthropic
 
-**อาจารย์ (มหาวิทยาลัย):** น่าสอนเป็นบทเรียนวงจรชีวิตของ vertical integration — AWS เริ่มจากใช้ Trainium ภายใน แล้วเปลี่ยนเป็นสินค้าขายภายนอกเมื่อ scale และ ecosystem พร้อม นักศึกษาควรเข้าใจว่า "AI sovereignty" เป็น demand-side driver ที่เปลี่ยนกลยุทธ์ของผู้ผลิตชิปได้
-**ผู้เชี่ยวชาญด้าน AI:** การที่ DeSantis พูดถึง "underconsumption in AI" สะท้อนว่า AWS เชื่อว่าตลาด inference ยังเปิดกว้างพอที่ Trainium จะแทรกได้โดยไม่เบียดกับ AWS เอง คำถามทางเทคนิคที่ค้างคือ software stack — CUDA ของ Nvidia ครองพื้นที่นี้มานาน และ Trainium ต้องพิสูจน์ว่า toolchain (Neuron SDK) ใช้งานได้สะดวกพอกับโมเดล open-source ที่หลากหลาย
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ทำ inference จริง สัญญาณนี้แปลว่ามี option ที่สามที่ไม่ใช่ Nvidia หรือ Google TPU อีกใน 6–12 เดือน วางแผน abstraction ของ inference layer (vLLM, TensorRT-LLM, Neuron) เพื่อให้สลับ accelerator ได้โดยไม่ต้อง rewrite จะลด vendor lock-in ได้จริงเมื่อ option นี้พร้อม
+**อาจารย์ (มหาวิทยาลัย):** ในเชิง history of science นี่คือบทเรียนว่าผู้ชนะรางวัลโนเบลด้าน AI (จาก AlphaFold) ไม่ผูกติดกับสถาบันใดสถาบันหนึ่ง — talent ในแนวหน้าเคลื่อนตามทิศทางวิจัย ไม่ใช่ตามชื่อบริษัท นักศึกษาควรเข้าใจว่า "ผู้ก่อตั้งงานคลาสสิก" ไม่จำเป็นต้องอยู่ที่เดียวกับงานนั้นตลอด
+**ผู้เชี่ยวชาญด้าน AI:** Jumper เป็นแกนงาน AlphaFold ที่เปลี่ยนภาพ structural biology — การย้ายไป Anthropic ส่งสัญญาณว่า bio/scientific reasoning เป็นแนวที่ Anthropic เห็นมูลค่าระยะยาว ไม่ใช่แค่ general-purpose chat การสูญเสียคน tier นี้ทำให้ DeepMind ต้อง re-prioritize portfolio วิจัยตัวเองด้วย
+**โปรแกรมเมอร์มืออาชีพ:** ผลในระยะ 6–12 เดือนคือ Anthropic น่าจะออก feature/eval ที่เน้น scientific & structured reasoning มากขึ้น — ทีมที่ build บน Claude ควรจับตา release ใหม่ที่อาจมี domain primitives สำหรับ molecular/biological tasks ก่อนคู่แข่ง
 
-## 2. AI data centers just got a government-mandated fast lane to the grid
+## 2. Howard Lutnick's Anthropic Crackdown Claims New Power Over AI Models
 
-**อาจารย์ (มหาวิทยาลัย):** เป็นกรณีศึกษาที่ดีของการที่ AI infrastructure ไม่ใช่เรื่องเทคโนโลยีอย่างเดียว แต่เป็นเรื่องพลังงานและการเมืองระดับรัฐบาลกลาง สอนเชื่อมโยงระหว่างเทคโนโลยี นโยบายพลังงาน และความขัดแย้งระหว่างรัฐบาลกลางกับรัฐ
-**ผู้เชี่ยวชาญด้าน AI:** ตัวเลขจริงที่ต้องจับตา: 100 MW ขึ้นไป และ $500M ขึ้นไป เป็น threshold ที่กำหนด data center ที่อยู่ใน scope ของคำสั่ง — ระดับนี้คือ hyperscaler/frontier-lab tier เท่านั้น ผลทางอ้อมคือต้นทุนของ training run ขนาดใหญ่จะถูกล็อกอยู่กับผู้เล่นไม่กี่รายที่ได้ priority interconnection
-**โปรแกรมเมอร์มืออาชีพ:** ในเชิงปฏิบัติ สิ่งนี้แปลว่า inference cost ของโมเดล frontier น่าจะลงเร็วขึ้นในระยะกลาง เพราะ capacity จะเพิ่ม ทีมที่ build บน LLM API ภายนอกควรเริ่มจำลอง cost curve ของ inference ที่ลดลง 30–50% ในรอบ 18 เดือน เพื่อจัดทำ budget plan ได้สอดคล้องกับโลกจริง
+**อาจารย์ (มหาวิทยาลัย):** เป็น case study ที่หาได้ยากในวิชา technology policy & export control law — รัฐบาลขยาย Export Administration Regulations ไปครอบคลุม "การใช้งาน" (mere usage) ของโมเดล ไม่ใช่แค่การส่งออก binary ซึ่งจะกลายเป็น precedent สำคัญหากศาลรับฟ้องและตัดสิน
+**ผู้เชี่ยวชาญด้าน AI:** ขอบเขตของคำสั่งคลุมเครือมาก — "การใช้งาน" model API ของ foreign national ทั่วโลกตีความได้กว้างจนแทบบังคับใช้จริงไม่ได้ Anthropic อาจต้องสร้าง KYC layer ใหม่ ขณะที่คู่แข่ง open-weights (DeepSeek, Qwen, Kimi) ได้ประโยชน์โดยตรงเพราะรัฐบาลสหรัฐฯ คุมโมเดลที่ host ในประเทศตัวเองไม่ใช่โมเดล open-weights ที่ผู้ใช้ดาวน์โหลดมารัน
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมรัน production บน Claude Fable 5 / Mythos 5 ในเอเชีย ควรเตรียม fallback ทันที — ไม่ว่าจะเป็น dual-vendor (เพิ่ม Gemini หรือ GPT) หรือเตรียม self-host บน open-weight model เผื่อ access ถูกตัดอีกครั้ง ความเสี่ยง compliance เริ่มกระทบ uptime แล้ว ไม่ใช่แค่ legal risk
 
-## 3. AI inference startup Baseten reportedly raising $1.5B months after its last mega-round
+## 3. Billionaire Ambani Wants AI in Every Call, App, and Home
 
-**อาจารย์ (มหาวิทยาลัย):** การที่ valuation พุ่ง 160% ใน 6 เดือนเหมาะใช้สอนเรื่อง venture pricing in fast-moving markets และ split-tier valuation ($11B vs $13B) เป็นกลไกที่นักศึกษา finance มักไม่ได้เจอใน textbook — ให้ลองวิเคราะห์ดูว่ามันคืออะไรและเกิดเมื่อไหร่
-**ผู้เชี่ยวชาญด้าน AI:** AI infra layer ที่อยู่ระหว่าง model API กับ hardware กำลังเป็น category แยกที่ได้ funding ใหญ่กว่า model lab บางราย — Baseten จับ inference orchestration บน open-source models ซึ่งเป็น thesis ที่บ่งบอกว่า "หางยาว" ของโมเดล open-weights จะใหญ่กว่าที่หลายคนคิดในช่วงต้นปี
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่กำลังเลือกระหว่าง host เองกับใช้ managed inference การมี Baseten ระดับ unicorn ของ unicorn แปลว่ามี SLA, cost optimization และ multi-cloud abstraction ที่ enterprise-grade ให้ใช้แล้ว ลองทำ POC เปรียบเทียบ cost-per-token กับ self-hosted vLLM บน GPU spot ดูก่อนตัดสินใจ build infra เอง
+**อาจารย์ (มหาวิทยาลัย):** ข่าวนี้เหมาะสอนเรื่อง distribution-first AI — Jio มีฐานผู้ใช้ 500M+ คนพร้อมใช้ AI ทันทีที่ activate ในเครือข่าย โดยไม่ต้องดาวน์โหลดแอป เป็นบทเรียนว่า "ใครคุม distribution คุม AI adoption" — สำคัญกว่าใครมี model ที่เก่งกว่า
+**ผู้เชี่ยวชาญด้าน AI:** การ run AI ใน telecom network layer (ไม่ใช่บน app) เป็น architecture ใหม่ — voice transcription real-time แยก speaker ได้ถึง 10 คน + action execution (จองรถ/อาหาร) บนภาษาท้องถิ่นทั่วอินเดียต้องการ infra หนาแน่นและ latency ต่ำมาก สเกลนี้บังคับให้ใช้ specialized inference (น่าจะ on-prem หรือ edge) ไม่ใช่แค่เรียก API ของ frontier lab
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับนักพัฒนาในเอเชียใต้ ข่าวนี้แปลว่า "voice + action agent" จะเป็น default ของผู้ใช้ภายในปีนี้ — ถ้า build app ที่มี call/voice flow ควรออกแบบให้ทำงานคู่กับ in-network agent ได้ (เช่น expose deep-link หรือ public API) แทนการพยายามแข่งเอง สำหรับ enterprise ในไทยที่ใช้ telecom partner เริ่มถามว่า roadmap voice-agent ของ operator คืออะไรในไตรมาสถัดไป
 
-## 4. General Intuition in talks to raise $300M at around $2B valuation
+## 4. The CEO of Allbirds' New AI Biz Has a Plan, But No Employees
 
-**อาจารย์ (มหาวิทยาลัย):** Spatial-temporal reasoning เป็นหัวข้อที่กำลังย้ายจาก lab paper มาเป็น venture-backed product — เหมาะเชื่อมโยงในวิชา reinforcement learning, robotics และ embodied AI ให้เห็นว่า dataset จากเกม (ที่มี ground truth ของ physics) กลายเป็น training signal ที่ scarce
-**ผู้เชี่ยวชาญด้าน AI:** ความน่าสนใจทางเทคนิคคือการเลือกใช้ video-game footage เป็น source — มันเป็น proxy ที่ใกล้เคียง simulation แต่มี diversity ของ environment ที่ procedural generation ทำไม่ได้ ถ้าโมเดล General Intuition transfer ไปสู่ robotics โลกจริงได้แม้บางส่วน นี่จะเป็น proof-point ที่สำคัญของ sim-to-real ที่ผ่าน gaming
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับ developer สาย game/sim/robotics ติดตามว่า General Intuition เปิด API หรือ weights อะไรก่อนสิ้นฤดูใบไม้ร่วง — model ที่เข้าใจ space-time จะเป็น primitive ใหม่สำหรับ agent ที่ต้องวางแผน sequence ของ action ที่มี physics constraint โดยไม่ต้อง train เอง
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้เป็นตัวอย่างสด ๆ ของ corporate finance + identity transformation — บริษัทรองเท้าที่เป็น public ขายธุรกิจหลัก, ระดมทุนเพิ่ม, เปลี่ยนชื่อ, เปลี่ยน CEO เป็น AI infrastructure veteran — ทั้งหมดในไม่กี่เดือน เหมาะใช้ในวิชา strategic management ที่สอนว่า public listing สามารถใช้เป็น vehicle เร่ง pivot เข้าตลาดร้อน
+**ผู้เชี่ยวชาญด้าน AI:** Carlsten มาจาก DCAI ที่รัน Gefion (Nvidia-partnered supercomputer) — สัญญาณว่า Smartbird จะเล่นตลาด sovereign / single-tenant compute ที่ลูกค้าต้อง data residency และ control ระดับ hardware ตลาดนี้กำลังร้อน (Anthropic-Lutnick episode ก็ตอกย้ำ) แต่ moat ของ Smartbird ยังคลุมเครือ — ยังไม่มี deployed infra ใด ๆ ตอนนี้
+**โปรแกรมเมอร์มืออาชีพ:** ในเชิง buy decision ทีม enterprise ที่กำลังเลือก inference partner ควรรอเห็น Smartbird ส่งของจริงก่อนเซ็นสัญญา — "no employees yet" คือ red flag แม้ผู้บริหารจะมีโปรไฟล์ดี ส่วนทีมที่อยู่ในตลาดงาน infra/MLOps น่าจับตา hiring wave ที่จะตามมาในไตรมาสถัดไป
 
-## 5. A tech worker-backed PAC is bringing a $5M knife to Big Tech's $100M gunfight
+## 5. Valeo Shares Surge as Investors Bet on AI Data Center Opportunity
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างชั้นเรียนของ political economy ของ technology — นักศึกษาควรวิเคราะห์ว่าการระดมทุนระดับ $140M จาก founder ของ OpenAI/Palantir/a16z เทียบกับ $5M จาก labor coalition สะท้อน asymmetry ของ resources อย่างไร และผลต่อ policy outcome จะเป็นอย่างไรในระบบเลือกตั้งสหรัฐ
-**ผู้เชี่ยวชาญด้าน AI:** ในมุมนโยบาย ความตึงเครียดที่จะออกมาในรูป regulation จริงคือ liability, compute thresholds, และ pre-deployment evaluation — ดู ad buy ของ Guardrails Alliance ใน NY-12 ว่ามีผลแค่ไหน เพราะ Bores เป็นผู้เสนอกฎหมาย AI safety ระดับรัฐที่อาจกลายเป็น template
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับวิศวกรในบริษัท AI เรื่องนี้กระทบกับ compliance burden ที่จะเพิ่มขึ้นในอีก 12–24 เดือนไม่ว่า PAC ฝั่งไหนชนะ — เริ่มทำ audit log, model-card, eval pipeline ให้มี trail ที่ตรวจสอบได้ตั้งแต่วันนี้ เพราะ requirement ของกฎหมายระดับรัฐกำลังกลายเป็น baseline แทน federal regulation
+**อาจารย์ (มหาวิทยาลัย):** เป็นตัวอย่างชั้นดีของ "AI-adjacent re-rating" — ตลาดทุนนำ valuation ของบริษัทเดิม ๆ มา re-price ตามความสามารถเสริมในห่วงโซ่ AI (thermal management, components) ก่อนรายได้จริงจะเปลี่ยน ใช้สอนเรื่อง expectation-driven asset pricing ในวิชา finance
+**ผู้เชี่ยวชาญด้าน AI:** signal ที่จริงคือ data center ใหม่ ๆ ต้องการ cooling/thermal-management แบบใหม่ — automotive supplier ที่มี know-how เรื่อง heat dissipation, fluid systems, electrical components สามารถ pivot ไปขายให้ hyperscaler ได้ ตลาดนี้กำลังขาด supplier ที่ scale ได้เร็ว
+**โปรแกรมเมอร์มืออาชีพ:** ผลทางอ้อมในระยะ 12–24 เดือน: ถ้า supply ของ data-center capacity ขยายเร็วกว่าคาด (เพราะ supplier เก่าเข้ามาเสริม) inference cost ต่อ token น่าจะลงต่อเนื่อง — ปรับ cost model ใน budgeting ให้ยืดหยุ่นกับ scenario "30–50% cheaper compute" ภายในสองปี
