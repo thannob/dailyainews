@@ -1,60 +1,61 @@
-# Sources — 2026-06-19
+# Sources — 2026-06-20
 
-Generated: 2026-06-19 (Asia/Bangkok)
+Generated: 2026-06-20 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-18-brief.md (5 URLs loaded)
+Dedup against: articles/2026-06-19-brief.md (5 URLs loaded)
 
-1. **Amazon hopes to challenge Nvidia more directly by selling its AI chips**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/
-   - Published: 2026-06-18 (per URL slug + multiple corroborating snippets)
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/06/18/` = yesterday relative to 2026-06-19 Asia/Bangkok; multiple cross-sources also tag it 2026-06-18
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief covered only 2026/06/17 URLs)
-   - Verification: Tier 2 — WebSearch snippet (trusted domain: techcrunch.com)
-   - Summary: AWS senior executive Peter DeSantis confirmed Amazon is in talks to sell its Trainium AI chips and full server racks to third-party clients beyond AWS, citing "underconsumption in AI" and rising international demand for sovereign computing — a direct challenge to Nvidia's dominance.
+1. **Nobel Winner John Jumper to Leave Google DeepMind for Anthropic**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-06-19/nobel-winner-john-jumper-to-leave-google-deepmind-for-anthropic
+   - Published: 2026-06-19 (per search index)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-06-19/` and search-result title timestamp matching today's index date
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host bloomberg.com not in yesterday's set at all)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: John Jumper, Google DeepMind VP and 2024 Nobel Prize in Chemistry co-winner for AlphaFold, is leaving DeepMind after nearly nine years to join Anthropic — a notable talent shift straining Google's race against Anthropic, OpenAI and xAI on frontier models.
 
-2. **AI data centers just got a government-mandated fast lane to the grid**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/
-   - Published: 2026-06-18 (per URL slug + corroborating Washington Post / CNBC / KSAT same-day coverage)
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/06/18/`; multiple wire-service mirrors confirm Thursday 2026-06-18
+2. **Howard Lutnick's Anthropic Crackdown Claims New Power Over AI Models**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-06-19/lutnick-s-anthropic-crackdown-claims-new-power-over-ai-models
+   - Published: 2026-06-19 (per search index)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-06-19/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (trusted domain: techcrunch.com)
-   - Summary: Federal regulators on Thursday ordered regional grid operators to fast-track power connections for AI data centers, backing Energy Secretary Chris Wright and the Trump administration's push to outpace China; utilities and states warn the directive strips them of grid-management authority, while data centers must shoulder full upgrade costs.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: By ordering Anthropic to obtain US approval before foreign nationals can use its Fable 5 and Mythos 5 models, Commerce Secretary Howard Lutnick expanded the boundaries of export-control law to target mere usage of frontier AI models — raising new legal questions for the AI industry.
 
-3. **AI inference startup Baseten reportedly raising $1.5B months after its last mega-round**
+3. **Billionaire Ambani Wants AI in Every Call, App, and Home**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/
-   - Published: 2026-06-18 (per URL slug + WSJ / SiliconAngle same-day coverage)
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/06/18/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (trusted domain: techcrunch.com)
-   - Summary: AI-inference platform Baseten is closing a dual-tier $1.5B round co-led by Spark Capital, Sands Capital, Altimeter, Wellington, and Conviction at $11B–$13B — a 160% valuation jump in under six months. Annualized run-rate has climbed from ~$200M to ~$600M.
+   - URL: https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/
+   - Published: 2026-06-19 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/19/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday was all `/2026/06/18/`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: At Reliance Industries' 49th AGM, Akash Ambani unveiled Jio Call Agent — an in-network AI assistant activated by "Hey Jio" that can join calls, transcribe in real time across up to 10 speakers, summarize, and execute tasks (book cabs, order food, set reminders). Service is built directly into the Jio telecom network — no separate app — and will reach Jio's 500M+ subscribers when it rolls out later this year.
 
-4. **General Intuition in talks to raise $300M at around $2B valuation**
+4. **The CEO of Allbirds' New AI Biz Has a Plan, But No Employees**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/
-   - Published: 2026-06-18 (per URL slug + The Next Web same-day coverage)
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/06/18/`
+   - URL: https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/
+   - Published: 2026-06-19 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/19/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (trusted domain: techcrunch.com)
-   - Summary: NYC-based General Intuition — a Medal spin-out building foundation models for spatial-temporal reasoning trained on video-game footage — is in talks to raise ~$300M at a ~$2B valuation. Backers include Jeff Bezos, Eric Schmidt, Khosla Ventures, and General Catalyst; proceeds will scale compute for a product launch in late summer/early fall.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Allbirds' rebrand to Smartbird (after selling its shoe business for $43M and raising $100M from the public market) installs Nadia Carlsten — ex-AWS quantum lead and most recently CEO of DCAI (home of the Gefion supercomputer, Nvidia-partnered) — as CEO. She inherits a listed shell focused on single-tenant managed compute for enterprises that need data-sovereignty, but no employees, no office, and no deployed infrastructure yet.
 
-5. **A tech worker-backed PAC is bringing a $5M knife to Big Tech's $100M gunfight**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/18/a-tech-worker-backed-pac-is-bringing-a-5m-knife-to-big-techs-100m-gunfight/
-   - Published: 2026-06-18 (per URL slug + Techmeme / The Hill / NYT cross-reference, dated Thursday)
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/06/18/`
+5. **Valeo Shares Surge as Investors Bet on AI Data Center Opportunity**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-06-19/traders-latest-ai-related-play-is-a-struggling-car-parts-stock
+   - Published: 2026-06-19 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-06-19/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (trusted domain: techcrunch.com)
-   - Summary: Democratic operatives Shaunna Thomas and Leah Hunt-Hendrix launched Guardrails Alliance, a $5M super-PAC backed by tech workers and labor unions, to counter the $140M Leading the Future PAC funded by OpenAI, Palantir, and Andreessen Horowitz founders. First $250K ad buy supports NY Assembly member Alex Bores.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Traders' latest AI-related play is the struggling French auto-parts maker Valeo, whose shares surged as investors bet the company's components and thermal-management know-how can be repositioned for AI data-center supply chains — the latest case of the AI capex boom reshaping non-tech equities.
 
 ## Dropped
-- https://techcrunch.com/2026/06/18/waymo-recalls-nearly-4000-robotaxis-to-stop-them-driving-into-highway-construction-zones/ — off-topic (autonomous vehicle recall, not core AI news)
-- https://techcrunch.com/2026/06/18/texas-government-data-breach-allowed-hackers-to-steal-3-million-drivers-licenses-and-passports/ — off-topic (security breach, not AI)
-- https://techcrunch.com/2026/06/18/the-smartphone-era-created-an-attention-crisis-slowtech-is-fixing-it/ — opinion/feature, not breaking AI news
-- https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/ — consumer AR app, low signal vs. selected stories
-- Thai-language candidates from blognone.com / beartai.com / thairath.co.th — no items with explicit 2026-06-18 / 2026-06-19 timestamps surfaced in snippets; all returned candidates were from earlier in June. Dropped under Filter A.
 
-> Note: 5 items passed both filters this run. Runtime was WEBFETCH_BLOCKED; all verification done via Tier 2 (WebSearch snippets) on trusted domains.
+- Bloomberg opinion piece `/opinion/articles/2026-06-19/anthropic-has-nvidia-template-for-fixing-its-mythos-fable-nightmare` — overlapping topic with story #2 (Lutnick crackdown); de-prioritized in favor of the news article.
+- Bloomberg `/2026-06-19/kotak-mahindra-bank-s-profit-push-carries-an-ai-warning-on-jobs` — passes both filters but trimmed to keep the top 5 mix balanced across regulation / talent / scale / corporate / markets.
+- Bloomberg `/2026-06-18/tech-workers-who-don-t-embrace-ai-face-triple-the-layoff-risk-gallup-finds` — Filter A: URL slug 2026-06-18 → outside rolling 24h.
+- TechCrunch `/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it/` — Filter A: >24h old (June 17).
+- Thai-language sources (Blognone, Beartai, Thairath, The Standard) — no qualifying article surfaced for 2026-06-19/20 in WebSearch results. All Thai-source candidates that appeared in search were either dated >24h ago or were evergreen trend/feature pieces with no timestamp resolvable to today.
+
+> Note: 5 items passed both filters this run. Thai-language quota (≥1) could not be met — no Thai-source article surfaced with a verifiable 24h timestamp. International quota (≥3) exceeded (5 of 5).
