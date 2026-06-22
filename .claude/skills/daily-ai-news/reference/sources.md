@@ -1,42 +1,53 @@
-# Sources — 2026-06-21
+# Sources — 2026-06-22
 
-Generated: 2026-06-21 (Asia/Bangkok)
+Generated: 2026-06-22 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-20-brief.md (5 URLs loaded)
+Dedup against: articles/2026-06-21-brief.md (3 URLs loaded)
 
-1. **In the Weights — เว็บใหม่ที่ให้คุณค้นหา "ตัวเอง" ในน้ำหนักของโมเดล AI**
+1. **When the Trump administration cracks down on Anthropic, who benefits?**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/
-   - Published: 2026-06-20 (จาก URL slug)
-   - FreshnessCheck: ✅ within last 24h via "URL slug techcrunch.com/2026/06/20/..."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host matches yesterday's TechCrunch entries แต่ path ต่างกันโดยสิ้นเชิง)
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com domain ใน trusted-sources)
-   - Summary: เว็บ In the Weights สร้างโดย Thomas Dimson และ Joey Flynn (อดีต OpenAI) ทดสอบว่าโมเดล AI หลายตัว (Grok, Gemini, GPT, Claude, Llama) "จำ" คุณได้หรือไม่ โดยไม่ใช้ web search แล้วให้คะแนนความแรงของตัวตนคุณใน weights ของโมเดล Dimson ระบุว่า "Google vanity searches เป็นเป้าหมายที่ผิดแล้วในปี 2026 เพราะ traffic ย้ายไปอยู่ที่ LLM" และ "reception แรงเกินคาด"
+   - URL: https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/
+   - Published: June 21, 2026 (per URL slug `/2026/06/21/`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/21`; TODAY is 2026-06-22
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs were all `/2026/06/20/`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: TechCrunch podcast discusses fallout after Anthropic took its two newest AI models offline due to an export control order from the Trump administration, asking who benefits from the move.
 
-2. **Meredith Whittaker (Signal): "AI chatbot ไม่ใช่เพื่อนของคุณ"**
+2. **Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/
-   - Published: 2026-06-20 (จาก URL slug)
-   - FreshnessCheck: ✅ within last 24h via "URL slug techcrunch.com/2026/06/20/..."
+   - URL: https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/
+   - Published: June 21, 2026 (per URL slug `/2026/06/21/`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/21`; TODAY is 2026-06-22
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com domain ใน trusted-sources)
-   - Summary: Meredith Whittaker ประธาน Signal ให้สัมภาษณ์ Bloomberg ย้ำว่า chatbot อย่าง ChatGPT/Claude "ไม่ใช่เพื่อนของคุณ ไม่ใช่สิ่งมีสติ ไม่ใช่คู่สนทนาที่มีจิต" เธอเล่าว่าใช้ AI แค่จัดฟอร์แมตเอกสาร แต่ "ไม่ถามคำถาม" เพราะไม่อยากให้ความคิดและการเขียนของตัวเองถูก "บดบังโดยระบบที่หาค่าเฉลี่ยจากของที่มีอยู่แล้ว" และเตือนว่า AI ที่เข้าถึงข้อมูลส่วนตัวระดับลึก จะกลายเป็น "backdoor" รูปแบบใหม่ที่กระทบความเป็นส่วนตัว
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Apple is weaving AI into apps and services people already use — splitting restaurant bills, securing passwords after data breaches, automating tasks, and organising information with less manual effort — rather than shipping a single headline assistant.
 
-3. **Founders Fund นำ Series A ให้ Shinkei Systems — หุ่นยนต์ AI เชือดปลาด้วย ike jime แบบญี่ปุ่น**
+3. **TechCrunch Mobility: A new robotaxi scorecard shows China's dominance**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/20/founders-funds-outlier-bet-on-humanely-killed-fish/
-   - Published: 2026-06-20 (จาก URL slug)
-   - FreshnessCheck: ✅ within last 24h via "URL slug techcrunch.com/2026/06/20/..."
+   - URL: https://techcrunch.com/2026/06/21/techcrunch-mobility-a-new-robotaxi-scorecard-shows-chinas-dominance/
+   - Published: June 21, 2026 (per URL slug `/2026/06/21/`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/21`; TODAY is 2026-06-22
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com domain ใน trusted-sources)
-   - Summary: Shinkei Systems ระดมทุน Series A 22 ล้านดอลลาร์ นำโดย Founders Fund และ Interlagos รวมเงินทุนสะสม 30 ล้านดอลลาร์ เครื่อง Poseidon ของบริษัทขนาดเท่าตู้เย็น ฝังบนเรือประมง ใช้ computer vision สแกนปลา ระบุชนิด หา "สมอง" แล้วเชือดด้วยวิธี ikejime ของญี่ปุ่น (แทงสมองให้ตายทันที) ทำให้เนื้อปลามีอายุนานขึ้นถึง 3 เท่าและคงรสได้ดีขึ้น Shinkei ติดตั้งเครื่องให้ฟรี ซื้อปลากลับในราคาพรีเมียม แล้วขายต่อใต้แบรนด์ Seremoni
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: A new benchmarking system for evaluating autonomous-vehicle companies shows Chinese robotaxi operators leading the global field.
 
-## Dropped
+4. **"ภราดร" ป้อง TH-AI Passport ต้องตรวจสอบบนข้อเท็จจริง ก่อนตัดสิน**
+   - Publisher: Thairath
+   - URL: https://www.thairath.co.th/news/politic/2941024
+   - Published: 21 มิถุนายน 2569 (per WebSearch result tagged "21 มิถุนายน 2569")
+   - FreshnessCheck: ✅ within last 24h via search-result tag "21 มิถุนายน 2569" and snippet "On June 21, 2569, Deputy Prime Minister Phradhon Priosanan responded to opposition calls"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had no thairath URLs)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: รองนายกฯ ภราดร พฤฒิสาณ ตอบโต้ฝ่ายค้านที่เรียกร้องให้ยกเลิกโครงการ TH-AI Passport ย้ำว่าสังคมต้องแยกระหว่าง "ตรวจสอบ" กับ "สั่งยกเลิก" และการตรวจสอบต้องอยู่บนข้อเท็จจริงและกระบวนการที่เป็นธรรม ไม่ใช่ตัดสินล่วงหน้าโดยไม่รอข้อสรุปจากหน่วยงานที่เกี่ยวข้อง
 
-- https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/ — บรรณาธิการ: URL ผ่าน Filter B (URL ต่างจาก Bloomberg ใน YESTERDAYS_URLS) แต่เป็นการรายงานเรื่องเดียวกัน (Jumper ย้าย DeepMind→Anthropic) ที่เพิ่งเป็นข่าวเอกในฉบับเมื่อวาน — เลี่ยงเพื่อไม่ให้ผู้อ่านได้ข่าวซ้ำ
-- https://techcrunch.com/2026/06/20/every-new-ios-27-feature-thats-worth-knowing-about/ — บรรณาธิการ: เป็นข่าว iOS ทั่วไป มี Apple Intelligence แทรกเป็นองค์ประกอบเท่านั้น ไม่ใช่ AI-first story
-- หลายรายการจาก bloomberg.com/news/articles/2026-06-20/* — Filter A ผ่าน แต่เนื้อหาเป็น geopolitics/พลังงาน (Iran/Hormuz, Ukraine, Iraq, UK politics) ไม่เกี่ยวกับ AI
-- techcrunch.com/2026/06/17/*, /2026/06/18/* — Filter A ตก (>24h)
+5. **The 'Mass Affluent' Are Losing Their Allure for Wealth Managers Navigating AI**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-06-21/mass-affluent-lose-allure-for-wealth-managers-navigating-ai
+   - Published: June 21, 2026 (per URL slug `/2026-06-21/`)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026-06-21`; TODAY is 2026-06-22
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Wealth managers focused on staying relevant in the age of AI may soon find that clients with merely $1M in liquid assets are no longer worth human hours; per a McKinsey senior partner, "mass-affluent clients now get something close to private-banking quality from AI," which strips value from advisers whose role was standardised advice.
 
-> Note: 3 items passed both filters this run. ของ 8+ candidates ตรวจ, 4 failed Filter A (>24h), 0 failed Filter B (URL-level), อีกหลายรายการตกเพราะนอก scope AI หรือไม่ใช่ trusted-source
+> Note: 5 items passed both filters this run. Runtime was WEBFETCH_BLOCKED so all verification is Tier 2 against trusted-sources domains.
