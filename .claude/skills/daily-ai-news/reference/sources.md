@@ -1,53 +1,56 @@
-# Sources — 2026-06-22
+# Sources — 2026-06-23
 
-Generated: 2026-06-22 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-06-23 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe https://example.com returned 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-21-brief.md (3 URLs loaded)
+Dedup against: articles/2026-06-22-brief.md (5 URLs loaded)
 
-1. **When the Trump administration cracks down on Anthropic, who benefits?**
+1. **The AI world is getting 'loopy' — Boris Cherny on agents prompting agents**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/
-   - Published: June 21, 2026 (per URL slug `/2026/06/21/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/21`; TODAY is 2026-06-22
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs were all `/2026/06/20/`)
+   - URL: https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/
+   - Published: 2026-06-22 (per URL slug; story refers to Meta @Scale conference earlier in the week)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/22/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TC URLs were /2026/06/21/ slugs, different paths)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch podcast discusses fallout after Anthropic took its two newest AI models offline due to an export control order from the Trump administration, asking who benefits from the move.
+   - Summary: Claude Code creator Boris Cherny appeared at Meta's @Scale conference and said agent "loops" — where agents prompt other agents that then write code — are "for real" and as significant a step as the transition from source code to agents. He runs loops in his own work to find duplicated abstractions and improve code architecture.
 
-2. **Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27**
+2. **Google DeepMind bets $75M on AI's future in Hollywood with A24 deal**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/
-   - Published: June 21, 2026 (per URL slug `/2026/06/21/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/21`; TODAY is 2026-06-22
+   - URL: https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/
+   - Published: 2026-06-22 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/22/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Apple is weaving AI into apps and services people already use — splitting restaurant bills, securing passwords after data breaches, automating tasks, and organising information with less manual effort — rather than shipping a single headline assistant.
+   - Summary: Google DeepMind invested $75M into indie studio A24 in a "first-of-its-kind" partnership to build AI tools for filmmaking. Both companies will collaborate on AI features for "authentic, meaningful storytelling," with DeepMind receiving feedback from A24's artists.
 
-3. **TechCrunch Mobility: A new robotaxi scorecard shows China's dominance**
+3. **SpaceX inks $6.3B compute deal with Reflection AI (open-source lab)**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/21/techcrunch-mobility-a-new-robotaxi-scorecard-shows-chinas-dominance/
-   - Published: June 21, 2026 (per URL slug `/2026/06/21/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026/06/21`; TODAY is 2026-06-22
+   - URL: https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/
+   - Published: 2026-06-22 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/06/22/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: A new benchmarking system for evaluating autonomous-vehicle companies shows Chinese robotaxi operators leading the global field.
+   - Summary: Open-source AI lab Reflection AI will pay $150M/month starting July 1, 2026 through 2029 for access to Nvidia GB300 chips at SpaceX's Colossus 2 data center near Memphis. Total deal value up to $6.3B. Either party may terminate with 90 days' notice after the first three months. The deal cements SpaceXAI as a serious AI infrastructure provider.
 
-4. **"ภราดร" ป้อง TH-AI Passport ต้องตรวจสอบบนข้อเท็จจริง ก่อนตัดสิน**
-   - Publisher: Thairath
-   - URL: https://www.thairath.co.th/news/politic/2941024
-   - Published: 21 มิถุนายน 2569 (per WebSearch result tagged "21 มิถุนายน 2569")
-   - FreshnessCheck: ✅ within last 24h via search-result tag "21 มิถุนายน 2569" and snippet "On June 21, 2569, Deputy Prime Minister Phradhon Priosanan responded to opposition calls"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had no thairath URLs)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: รองนายกฯ ภราดร พฤฒิสาณ ตอบโต้ฝ่ายค้านที่เรียกร้องให้ยกเลิกโครงการ TH-AI Passport ย้ำว่าสังคมต้องแยกระหว่าง "ตรวจสอบ" กับ "สั่งยกเลิก" และการตรวจสอบต้องอยู่บนข้อเท็จจริงและกระบวนการที่เป็นธรรม ไม่ใช่ตัดสินล่วงหน้าโดยไม่รอข้อสรุปจากหน่วยงานที่เกี่ยวข้อง
-
-5. **The 'Mass Affluent' Are Losing Their Allure for Wealth Managers Navigating AI**
+4. **Nvidia Seeks to Make Humanoid AI Robots Safer Around Humans**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-21/mass-affluent-lose-allure-for-wealth-managers-navigating-ai
-   - Published: June 21, 2026 (per URL slug `/2026-06-21/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug `2026-06-21`; TODAY is 2026-06-22
+   - URL: https://www.bloomberg.com/news/articles/2026-06-22/nvidia-seeks-to-make-humanoid-ai-robots-safer-around-humans
+   - Published: 2026-06-22 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-06-22/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (cross-verified with NVIDIA blog Halos coverage)
+   - Summary: Nvidia is extending its Halos safety stack — originally designed for self-driving vehicles — to humanoid robots. The software gives robots better awareness of their surroundings so they can handle split-second decisions before working closely with humans. Real-world deployments include Agility and Hexagon Robotics on IGX Thor, and AEON performing assembly at a BMW plant in Leipzig.
+
+5. **Qualcomm Near Deal to Acquire AI Chip Startup Modular for ~$4B**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-06-22/qualcomm-is-said-to-near-deal-for-ai-chip-startup-modular
+   - Published: 2026-06-22 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-06-22/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Wealth managers focused on staying relevant in the age of AI may soon find that clients with merely $1M in liquid assets are no longer worth human hours; per a McKinsey senior partner, "mass-affluent clients now get something close to private-banking quality from AI," which strips value from advisers whose role was standardised advice.
+   - Summary: Qualcomm is in advanced talks to acquire Modular Inc. in a deal valuing the AI chip software startup at about $4 billion — a major bet on AI inference and compiler tooling beyond its mobile-chip core.
 
-> Note: 5 items passed both filters this run. Runtime was WEBFETCH_BLOCKED so all verification is Tier 2 against trusted-sources domains.
+## Dropped
+- (none surfaced from Thai sources with confirmable June 22-23 timestamps; Blognone/Thairath/Prachachat/Beartai tag listings returned older or undated stories — Filter A unverifiable, so excluded)
+
+> Note: 5 items passed both filters this run. Goal of ≥1 Thai source not met because no Thai-language article on a trusted-sources.md domain surfaced with a verifiable 2026-06-22 or 2026-06-23 timestamp in WebSearch results. Per SKILL.md "do not loosen either filter to fill the count" — shipped 5 international stories.

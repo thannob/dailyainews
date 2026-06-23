@@ -1,31 +1,31 @@
-# Perspectives — 2026-06-22
+# Perspectives — 2026-06-23
 
-## 1. When the Trump administration cracks down on Anthropic, who benefits?
+## 1. The AI world is getting 'loopy' — agents prompting agents
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้เป็นกรณีศึกษาเรื่อง "การกำกับเทคโนโลยีเชิงภูมิรัฐศาสตร์" — เมื่อ export control ทำให้โมเดล AI กลายเป็นสินค้าควบคุมเหมือนชิปและเทคโนโลยีนิวเคลียร์ คำถามที่ควรถามต่อในห้องเรียนคือ "การปราบบริษัทผู้นำในประเทศเดียวกัน จะทำให้คู่แข่งจีนเร่งช่องว่างได้เร็วขึ้นแค่ไหน"
-**ผู้เชี่ยวชาญด้าน AI:** ประเด็นทางเทคนิคจริง ๆ อยู่ที่ "ใครจะอุดช่องว่างของ Mythos/Fable 5 ในตลาด" — โดยเฉพาะงาน defensive security ที่ Project Glasswing เคยทำได้ คู่แข่งที่ได้ประโยชน์เร็วสุดคือทีมที่มีโมเดลใกล้เคียงและสายสัมพันธ์รัฐบาลแน่นอยู่แล้ว
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมของคุณพึ่ง Claude สำหรับ production workload — เตรียม fallback plan ทันที สลับ provider ระดับ API ผ่าน OpenRouter / Vercel AI / LangChain หรืออะไรก็ตามที่ทีมคุ้น และทดสอบ regression ของ prompt ที่สำคัญที่สุดบนโมเดลทดแทนภายในสัปดาห์นี้
+**อาจารย์ (มหาวิทยาลัย):** นี่คือก้าวที่สามของการเขียนโปรแกรม — จากมนุษย์เขียนโค้ด → agent เขียนโค้ดให้มนุษย์ → agent สั่ง agent เขียนโค้ดเอง ควรชวนนักเรียนสะท้อนว่า "การกำกับคุณภาพ" เปลี่ยนหน้าตาอย่างไรเมื่อมนุษย์ห่างจาก keyboard อีกขั้นหนึ่ง
+**ผู้เชี่ยวชาญด้าน AI:** Cherny ไม่ได้พูดเล่น — meta-loop ที่ "agent หา duplicated abstraction แล้วรวมให้" คือ continuous refactor ที่ทำได้จริงในงาน production ปัจจุบัน แต่ค่าใช้จ่าย token และความเสี่ยง regression จะกระโดด ต้องมี evaluation harness และ guardrail ที่แน่นกว่ารอบก่อน ๆ
+**โปรแกรมเมอร์มืออาชีพ:** ถึงเวลา audit ว่าทีมเรามี "loop budget" หรือยัง — กำหนดเพดาน token ต่อ loop, ขั้นต่ำ test coverage ก่อน merge, และ rollback กลไกที่ทำงานอัตโนมัติ ไม่งั้น Friday night จะมี PR ปลายเปิด 200 ฉบับรอ review
 
-## 2. Beyond Siri: Practical AI features in iOS 27
+## 2. Google DeepMind + A24 $75M Hollywood deal
 
-**อาจารย์ (มหาวิทยาลัย):** เป็นตัวอย่างชั้นดีของ "AI ที่ฝังในงานประจำวัน" — ไม่ใช่ chatbot ที่ผู้ใช้ต้องเรียกใช้ แต่เป็นฟีเจอร์ที่ทำงานเงียบ ๆ เมื่อผู้ใช้กำลังทำสิ่งอื่นอยู่ ใช้สอน UX ของ ambient computing ได้
-**ผู้เชี่ยวชาญด้าน AI:** Apple เลือกเดิมพันกับ "small models on-device + targeted use cases" แทนที่จะแข่ง general-purpose assistant กับ OpenAI/Google — เป็นกลยุทธ์ที่สมเหตุสมผลกับฮาร์ดแวร์ Apple Silicon และคุ้มกว่าในแง่ privacy/latency
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับนักพัฒนาแอป iOS — Apple Intelligence APIs ใหม่ใน iOS 27 (Foundation Models framework + App Intents) เปิดให้คุณ "ขายฟีเจอร์ AI" โดยไม่ต้องเสีย token cost ของ OpenAI/Anthropic เลย ถ้ารายได้แอปอยู่บน iOS อยู่แล้ว ค่า inference จะลดลงทันทีถ้าย้ายมาที่ on-device
+**อาจารย์ (มหาวิทยาลัย):** นี่คือกรณีศึกษา "AI พบศิลปะ" ที่ดีกว่า text-to-video เพราะมี artist guidance อยู่ใน loop — สอนได้ว่าทำไม "tool ที่นักสร้างต้องการจริง" ต่างจาก "tool ที่ vendor คิดว่านักสร้างต้องการ" ลึกเพียงใด
+**ผู้เชี่ยวชาญด้าน AI:** $75M ไม่ใหญ่สำหรับ DeepMind แต่ใหญ่สำหรับ A24 — สิ่งที่ DeepMind ได้กลับมามีค่ามากกว่าเงินคือ "ground-truth feedback" จากนักสร้างที่มีรสนิยมระดับโลก ซึ่งเป็นสิ่งที่ benchmark สังเคราะห์ไม่เคยสะท้อนได้
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ creative-tools / video-gen อยู่ — โอกาสที่ DeepMind จะ open-source ส่วนของ pipeline ที่ผ่านการ co-design กับ A24 มีพอควรใน 12-18 เดือนข้างหน้า ติดตาม research blog และเตรียม integrate ใน workflow ของ creator ที่คุณ service อยู่
 
-## 3. New robotaxi scorecard shows China's dominance
+## 3. SpaceX + Reflection AI $6.3B compute deal
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้เป็นข้อมูลตอบโจทย์ "เหตุใดงานวิจัย AV ในจีนถึงนำหน้า" — ปัจจัยที่ควรชี้ให้นักเรียนเห็น คือ regulatory sandbox ที่อนุญาตให้ทดสอบบนถนนจริงได้กว้างขวางกว่า รวมถึงข้อมูลถนนเมืองหนาแน่นที่จีนมีอย่างมหาศาล
-**ผู้เชี่ยวชาญด้าน AI:** scorecard แบบนี้ต้องอ่านอย่างระวัง — metric อะไรที่ใช้ "นำหน้า" (miles driven? safety incidents? city coverage? cost per ride?) มีน้ำหนักต่างกัน Waymo อาจจะยัง lead บางมิติแม้ scoreboard รวมจะเอนเอียงไปจีน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ทำ perception / motion-planning open-source — ดูว่าค่าย Pony.ai, WeRide, Baidu Apollo ปล่อย model/dataset อะไรออกมาบ้างในรอบนี้ จีน publish เร็วและบ่อยกว่าสหรัฐในช่วง 18 เดือนที่ผ่านมา — เป็นโอกาสฝึกซ้อมกับข้อมูล real-world ที่หาได้ยาก
+**อาจารย์ (มหาวิทยาลัย):** น่าสอนเรื่อง "compute เป็น new oil" — โดยเฉพาะข้อเท็จจริงที่ open-source lab อย่าง Reflection ต้องจ่าย $150M/month เพื่ออยู่ในเกม แม้ตัวเองไม่ได้ขายโมเดลแบบ closed-API ความสัมพันธ์ระหว่าง infrastructure capital กับ open ecosystem เปลี่ยนไปแล้ว
+**ผู้เชี่ยวชาญด้าน AI:** Colossus 2 + GB300 หมายความว่า Reflection ได้ training cluster ระดับเดียวกับ frontier labs — คำถามคือพวกเขาจะใช้ scale นี้กับ research agenda แบบไหน ถ้าเป็น open-weight model ขนาดใหญ่ก็จะกระทบ landscape ทั้งหมด ถ้าเป็น narrow research ก็จะเป็น cost ที่ตอบแทนช้ากว่าคู่แข่ง closed
+**โปรแกรมเมอร์มืออาชีพ:** การที่ SpaceXAI กลายเป็น compute provider ที่ third-party เลือกใช้ หมายถึง ecosystem ของ "ทางเลือกอื่นนอก AWS/Azure/GCP" เริ่มมีจริง — ถ้าทีมต้องการ negotiation leverage กับ hyperscaler ปัจจุบัน นี่คือ data point ใช้กดดันได้
 
-## 4. ภราดร ป้อง TH-AI Passport
+## 4. Nvidia Halos for humanoid robots
 
-**อาจารย์ (มหาวิทยาลัย):** ดราม่าโครงการ 1,600 ล้านบาทนี้เป็นบทเรียน policy communication ที่หายาก — ใช้ในวิชา public administration / digital policy ได้ทันที ประเด็นการสอนที่สำคัญคือ "ทำไมการมีโครงการที่ดีกับการสื่อสารได้ดีถึงเป็นคนละเรื่องกัน" — ผลกระทบของช่องโหว่ในการสื่อสารต่อความเชื่อมั่นสาธารณะ
-**ผู้เชี่ยวชาญด้าน AI:** แนวคิด AI Passport ที่ให้ Thai 5 ล้านคนเข้าถึง premium-tier AI tools มีข้อดีเชิงเป้าหมาย แต่คำถามที่ควรตอบคือ "ทำไมต้อง pay-per-seat ปีละ" แทนที่จะลงทุนกับโครงสร้าง compute ภายในประเทศหรือ open-model fine-tuning ที่ Thai ใช้ต่อเนื่องได้ — มูลค่า 1.6 พันล้านบาทควรซื้อ infrastructure ระยะยาว ไม่ใช่ subscription หมดอายุ
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าโครงการเดินหน้าจริง — คาดว่าจะมี procurement spec ออกมาในไตรมาสนี้ ทีม dev ที่ตั้งใจจะเสนอเครื่องมือ AI สำหรับ Thai SMEs ควรเตรียม proposal ที่มาพร้อม "ใช้ภาษาไทยได้ดีกว่า ChatGPT/Claude default" เป็น differentiator หลัก เพราะนั่นคือช่องว่างที่โมเดลใหญ่จากต่างประเทศไม่ได้ทุ่ม
+**อาจารย์ (มหาวิทยาลัย):** กรณีนี้สอน "transfer learning ระดับ industry" ได้ดี — Halos ที่พัฒนาเพื่อ autonomous vehicle ถูกย้ายมาใช้กับ humanoid robot โดยใช้ core safety pattern เดียวกัน ชวนถามว่า "อะไรคือ invariants ของระบบ safety-critical ข้าม domain"
+**ผู้เชี่ยวชาญด้าน AI:** safety stack ที่ผ่าน ANAB accreditation ของ Halos = differentiator จริงในวันที่ humanoid วิ่งใน factory floor มีคนจริงรอบตัว functional safety certification เป็น barrier to entry ที่ใหญ่กว่า perception accuracy ของโมเดลในมุมการ commercialize
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีม robotics ที่ใช้ ROS 2 + Isaac อยู่แล้ว — IGX Thor + Halos OS จะกลายเป็น stack มาตรฐานสำหรับ humanoid ในปีหน้า ถ้ารายได้อยู่กับ industrial robotics ควรเริ่มทดสอบ Halos integration ก่อนคู่แข่งใช้เป็น procurement requirement
 
-## 5. Mass affluent losing allure for wealth managers (AI angle)
+## 5. Qualcomm to acquire Modular for ~$4B
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวอย่าง "AI กินงานที่เคยถูกมองว่าต้องใช้ human judgment" ที่ตรงไปตรงมาที่สุด — สอนได้ในวิชา labor economics และ AI ethics เรื่อง "การกระจุกตัวของบริการคุณภาพสูงกลับสู่เฉพาะ ultra-wealthy" เมื่อ AI ช่วยให้ mass-affluent ได้บริการระดับเดียวกัน advisers เลือกที่จะไปจับ ultra-wealthy แทน
-**ผู้เชี่ยวชาญด้าน AI:** McKinsey บอกว่า "mass-affluent clients now get something close to private-banking quality from AI" — คำว่า "close to" สำคัญมาก สิ่งที่ AI ยังให้ไม่ได้คือ trust-network ระดับมนุษย์, deal flow ของ private placement, และการตัดสินใจในสถานการณ์ unusual ที่ training data ไม่ครอบคลุม จุดอ่อนตรงนี้คือพื้นที่ของ human advisor รุ่นต่อไป
-**โปรแกรมเมอร์มืออาชีพ:** fintech / wealthtech ที่กำลัง build product ควรอ่านข่าวนี้เป็นสัญญาณ go-to-market — segment "$200k–$2M liquid assets" กำลังถูกบริษัทใหญ่ทอดทิ้ง เป็นโอกาสของผลิตภัณฑ์ใหม่ที่ใช้ LLM-driven advice + cheap operating model จับ segment กลางที่เริ่มไม่มีตัวเลือกในตลาด
+**อาจารย์ (มหาวิทยาลัย):** ใช้สอนเรื่อง "compiler และ developer tooling เป็นชั้นที่มูลค่าสูง" — Modular ไม่ได้ทำชิป แต่ทำ stack ที่ทำให้ workload AI วิ่งบนหลายชิปได้ Qualcomm ยอมจ่าย $4B เพื่อชั้นนี้บอกอะไรเกี่ยวกับโครงสร้างมูลค่าของ AI infrastructure
+**ผู้เชี่ยวชาญด้าน AI:** Mojo + MAX engine ของ Modular เป็นเดิมพันว่า "portable AI compute" จะแทนที่ CUDA-lock-in ในระดับ inference Qualcomm ได้สิ่งที่ขาดมานานคือ developer story ที่แข่งกับ Nvidia ได้บน on-device และ edge — แต่จะ integrate กับ Snapdragon stack ได้เร็วแค่ไหนเป็นคำถามใหญ่
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมพัฒนา AI workload บน device หลายแพลตฟอร์ม (iOS/Android/laptop) — Mojo จะมี backing organization ที่ใหญ่และมั่นคงขึ้น คุ้มลงทุนทดลองใน research project ตอนนี้ ถ้า toolchain โต Qualcomm มีอำนาจ push ให้เป็น default บน Snapdragon ในปีหน้า
