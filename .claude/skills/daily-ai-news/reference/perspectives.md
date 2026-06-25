@@ -1,31 +1,31 @@
-# Perspectives — 2026-06-23
+# Perspectives — 2026-06-25
 
-## 1. The AI world is getting 'loopy' — agents prompting agents
+## 1. OpenAI unveils first custom chip "Jalapeño" built with Broadcom for LLM inference
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือก้าวที่สามของการเขียนโปรแกรม — จากมนุษย์เขียนโค้ด → agent เขียนโค้ดให้มนุษย์ → agent สั่ง agent เขียนโค้ดเอง ควรชวนนักเรียนสะท้อนว่า "การกำกับคุณภาพ" เปลี่ยนหน้าตาอย่างไรเมื่อมนุษย์ห่างจาก keyboard อีกขั้นหนึ่ง
-**ผู้เชี่ยวชาญด้าน AI:** Cherny ไม่ได้พูดเล่น — meta-loop ที่ "agent หา duplicated abstraction แล้วรวมให้" คือ continuous refactor ที่ทำได้จริงในงาน production ปัจจุบัน แต่ค่าใช้จ่าย token และความเสี่ยง regression จะกระโดด ต้องมี evaluation harness และ guardrail ที่แน่นกว่ารอบก่อน ๆ
-**โปรแกรมเมอร์มืออาชีพ:** ถึงเวลา audit ว่าทีมเรามี "loop budget" หรือยัง — กำหนดเพดาน token ต่อ loop, ขั้นต่ำ test coverage ก่อน merge, และ rollback กลไกที่ทำงานอัตโนมัติ ไม่งั้น Friday night จะมี PR ปลายเปิด 200 ฉบับรอ review
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้สอนเรื่อง vertical integration — ผู้ผลิตซอฟต์แวร์ทำชิปเอง คล้ายที่ Apple ออก M1 — แต่สิ่งที่น่าสอนคือ "ใช้โมเดลของตัวเองช่วยออกแบบชิป" ปิดวงจร AI-designs-AI-hardware ที่ตำราเรียนจะเริ่มต้องเขียนใหม่
+**ผู้เชี่ยวชาญด้าน AI:** เก้าเดือนจาก design ถึง tape-out ผิดปกติเร็วมากสำหรับ ASIC ระดับนี้ — ของจริงคือ inference cost ต่อ token ที่ OpenAI คุมได้เอง ไม่ใช่แค่ NVIDIA margin ที่หายไป ถ้า Jalapeño ส่งของได้ปลายปีจริง pricing ของ ChatGPT/API จะกดลงได้อีกครั้ง
+**โปรแกรมเมอร์มืออาชีพ:** ฝั่ง backend ที่ใช้ OpenAI API เริ่มวางแผนได้ว่าตั้งแต่ Q1 2027 token rate น่าจะถูกลงและ throughput สูงขึ้น แต่ระวัง vendor lock-in ที่จะลึกขึ้น — feature ใหม่ ๆ บางอย่างอาจ optimize เฉพาะ Jalapeño จน fallback ไป model อื่นได้ผลต่างกัน
 
-## 2. Google DeepMind + A24 $75M Hollywood deal
+## 2. Google poised to lose two more high-profile Gemini researchers — Jonas Adler and Alexander Pritzel — to Anthropic
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือกรณีศึกษา "AI พบศิลปะ" ที่ดีกว่า text-to-video เพราะมี artist guidance อยู่ใน loop — สอนได้ว่าทำไม "tool ที่นักสร้างต้องการจริง" ต่างจาก "tool ที่ vendor คิดว่านักสร้างต้องการ" ลึกเพียงใด
-**ผู้เชี่ยวชาญด้าน AI:** $75M ไม่ใหญ่สำหรับ DeepMind แต่ใหญ่สำหรับ A24 — สิ่งที่ DeepMind ได้กลับมามีค่ามากกว่าเงินคือ "ground-truth feedback" จากนักสร้างที่มีรสนิยมระดับโลก ซึ่งเป็นสิ่งที่ benchmark สังเคราะห์ไม่เคยสะท้อนได้
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ creative-tools / video-gen อยู่ — โอกาสที่ DeepMind จะ open-source ส่วนของ pipeline ที่ผ่านการ co-design กับ A24 มีพอควรใน 12-18 เดือนข้างหน้า ติดตาม research blog และเตรียม integrate ใน workflow ของ creator ที่คุณ service อยู่
+**อาจารย์ (มหาวิทยาลัย):** กรณีศึกษา "talent flight" คลาสสิก — ทำไม top researcher ยอมทิ้ง compensation ของ Big Tech ไป startup ใกล้ IPO เรื่อง pre-IPO equity vs cash compensation เป็นบทเรียน organizational economics ที่สอนได้ทันที
+**ผู้เชี่ยวชาญด้าน AI:** Adler ดูแล AI coding ส่วน Pritzel อยู่ที่ training infra ของ Gemini — สองด้านที่ Anthropic ขาดแคลนน้อยที่สุดในเชิง headline แต่ขาดแคลนมากที่สุดในเชิง depth การได้คนระดับนี้พร้อมกันสองคน หมายความว่า Gemini 3/4 อาจช้าลงและ Claude Opus 4.9/5.0 อาจมาเร็วขึ้น
+**โปรแกรมเมอร์มืออาชีพ:** หกวันก่อนหน้านี้ Jumper ออก Shazeer ออก ตอนนี้ Adler+Pritzel ออก — โมเมนตัมของ Google ในการรักษาคนพังเป็นรูปแบบ ถ้าทีมพึ่ง Gemini เป็น primary model อยู่ ต้องเริ่มตั้งคำถามว่ารุ่นถัดไปจะมาทันคู่แข่งหรือไม่ และเตรียม fallback ที่ทดสอบจริงไว้ในมือ
 
-## 3. SpaceX + Reflection AI $6.3B compute deal
+## 3. Anthropic accuses Alibaba of "illicitly" accessing Claude via 25,000 fraudulent accounts in distillation campaign
 
-**อาจารย์ (มหาวิทยาลัย):** น่าสอนเรื่อง "compute เป็น new oil" — โดยเฉพาะข้อเท็จจริงที่ open-source lab อย่าง Reflection ต้องจ่าย $150M/month เพื่ออยู่ในเกม แม้ตัวเองไม่ได้ขายโมเดลแบบ closed-API ความสัมพันธ์ระหว่าง infrastructure capital กับ open ecosystem เปลี่ยนไปแล้ว
-**ผู้เชี่ยวชาญด้าน AI:** Colossus 2 + GB300 หมายความว่า Reflection ได้ training cluster ระดับเดียวกับ frontier labs — คำถามคือพวกเขาจะใช้ scale นี้กับ research agenda แบบไหน ถ้าเป็น open-weight model ขนาดใหญ่ก็จะกระทบ landscape ทั้งหมด ถ้าเป็น narrow research ก็จะเป็น cost ที่ตอบแทนช้ากว่าคู่แข่ง closed
-**โปรแกรมเมอร์มืออาชีพ:** การที่ SpaceXAI กลายเป็น compute provider ที่ third-party เลือกใช้ หมายถึง ecosystem ของ "ทางเลือกอื่นนอก AWS/Azure/GCP" เริ่มมีจริง — ถ้าทีมต้องการ negotiation leverage กับ hyperscaler ปัจจุบัน นี่คือ data point ใช้กดดันได้
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้คือตำราเรียน "trade secret meets ML" — distillation attack คือการสกัด capability จาก model เก่งไปสอน model เล็ก คำถามทางจริยธรรมและกฎหมายคือ output ที่ลูกค้าจ่ายเงินซื้อ ผู้ขายห้ามนำไป retrain ของตัวเองได้ไหม กฎหมายลิขสิทธิ์ปัจจุบันยังตอบไม่ชัด
+**ผู้เชี่ยวชาญด้าน AI:** 28.8 ล้าน exchange จาก 25,000 บัญชีในช่วง 6 สัปดาห์ — เลขนี้บอกว่า fraud-detection layer ของ Anthropic ตอบสนองช้ากว่าที่ควร ในเชิงเทคนิค การตรวจ distillation pattern แบบ real-time ต้องใช้ behavioral signature ของ traffic ไม่ใช่แค่ rate limit ต่อ account — เหตุนี้ Anthropic ถึงพึ่ง remediation ทางการเมือง (จดหมายถึง Senate) แทนการตรวจจับเอง
+**โปรแกรมเมอร์มืออาชีพ:** ผลกระทบเชิงปฏิบัติ — ToS ของ vendor frontier-model จะเข้มขึ้นทันที ทีมที่ใช้ Claude output ใน synthetic data pipeline สำหรับ fine-tune model ของตัวเอง ต้องอ่าน ToS ฉบับล่าสุดให้ละเอียด และเก็บ audit log ของการใช้งาน ก่อนที่ Anthropic จะ flag account โดย proactive
 
-## 4. Nvidia Halos for humanoid robots
+## 4. Engineering jobs proved the most resilient role across Tech Majors — 55% of 2025 new hires
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้สอน "transfer learning ระดับ industry" ได้ดี — Halos ที่พัฒนาเพื่อ autonomous vehicle ถูกย้ายมาใช้กับ humanoid robot โดยใช้ core safety pattern เดียวกัน ชวนถามว่า "อะไรคือ invariants ของระบบ safety-critical ข้าม domain"
-**ผู้เชี่ยวชาญด้าน AI:** safety stack ที่ผ่าน ANAB accreditation ของ Halos = differentiator จริงในวันที่ humanoid วิ่งใน factory floor มีคนจริงรอบตัว functional safety certification เป็น barrier to entry ที่ใหญ่กว่า perception accuracy ของโมเดลในมุมการ commercialize
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีม robotics ที่ใช้ ROS 2 + Isaac อยู่แล้ว — IGX Thor + Halos OS จะกลายเป็น stack มาตรฐานสำหรับ humanoid ในปีหน้า ถ้ารายได้อยู่กับ industrial robotics ควรเริ่มทดสอบ Halos integration ก่อนคู่แข่งใช้เป็น procurement requirement
+**อาจารย์ (มหาวิทยาลัย):** ข้อมูลนี้ขัดกับ narrative กระแสหลัก — สอนนักศึกษาให้แยก hype จาก data ได้จริงคือทักษะอันดับหนึ่งของยุคนี้ ใช้กราฟ 2019 vs 2025 ของ SignalFire เปิดคาบเรียนพรุ่งนี้
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลขนี้ไม่ได้แปลว่า AI ไม่กิน engineer แต่หมายความว่าตำแหน่งที่ AI ทำแทนได้ — ตำแหน่ง junior/repetitive — ถูก absorb เข้าไปในตำแหน่ง engineer ที่ใช้ AI ทำงานต่อ องค์ประกอบของงานเปลี่ยน ปริมาณงานไม่ลด
+**โปรแกรมเมอร์มืออาชีพ:** ข่าวดีคืออาชีพยังอยู่ ข่าวร้ายคือ leverage ต่อหัวเพิ่มขึ้นชัดเจน — ถ้าวันนี้ทีมยังเขียน boilerplate เองโดยไม่ใช้ AI tooling จริงจัง จะเสียเปรียบใน performance review รอบหน้า เร่งฝึก agentic workflow กับ Codex/Claude/Cursor ให้ default ของทีมเปลี่ยน
 
-## 5. Qualcomm to acquire Modular for ~$4B
+## 5. Micron stock at record high as memory-chip crunch turns into AI tailwind
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้สอนเรื่อง "compiler และ developer tooling เป็นชั้นที่มูลค่าสูง" — Modular ไม่ได้ทำชิป แต่ทำ stack ที่ทำให้ workload AI วิ่งบนหลายชิปได้ Qualcomm ยอมจ่าย $4B เพื่อชั้นนี้บอกอะไรเกี่ยวกับโครงสร้างมูลค่าของ AI infrastructure
-**ผู้เชี่ยวชาญด้าน AI:** Mojo + MAX engine ของ Modular เป็นเดิมพันว่า "portable AI compute" จะแทนที่ CUDA-lock-in ในระดับ inference Qualcomm ได้สิ่งที่ขาดมานานคือ developer story ที่แข่งกับ Nvidia ได้บน on-device และ edge — แต่จะ integrate กับ Snapdragon stack ได้เร็วแค่ไหนเป็นคำถามใหญ่
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมพัฒนา AI workload บน device หลายแพลตฟอร์ม (iOS/Android/laptop) — Mojo จะมี backing organization ที่ใหญ่และมั่นคงขึ้น คุ้มลงทุนทดลองใน research project ตอนนี้ ถ้า toolchain โต Qualcomm มีอำนาจ push ให้เป็น default บน Snapdragon ในปีหน้า
+**อาจารย์ (มหาวิทยาลัย):** เคสคลาสสิก "shortage of complement" — เมื่อสินค้า A (GPU) ต้องคู่กับสินค้า B (HBM/DRAM) supply ของ B กลายเป็น constraint ทันที สอน Porter's value chain ได้ตรง ๆ ราคา HBM ในปี 2026 น่าจะเป็นกรณีศึกษาเศรษฐศาสตร์อุตสาหกรรมของหลายปี
+**ผู้เชี่ยวชาญด้าน AI:** HBM scarcity คือ "next GPU shortage" — บริษัทที่ training/inference scale ใหญ่จะแย่งกันล็อก supply ระยะยาว ดีลที่ Anthropic-Micron-Series H lock supply ไว้คือ template ใหม่ — vendor หน่วยความจำกลายเป็น strategic partner ไม่ใช่ commodity supplier
+**โปรแกรมเมอร์มืออาชีพ:** ผลทางอ้อมต่องาน engineer — cloud GPU instance ที่ HBM แรงและพอ จะหา reservation ยากขึ้นเรื่อย ๆ โดยเฉพาะ A100/H100/H200 และ Blackwell ใหม่ ถ้าทีม training/fine-tune ของตัวเอง วางแผน capacity ล่วงหน้า 6-9 เดือนแทนรายเดือน ไม่งั้นจะติด queue
