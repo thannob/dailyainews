@@ -1,31 +1,31 @@
-# Perspectives — 2026-06-23
+# Perspectives — 2026-06-27
 
-## 1. The AI world is getting 'loopy' — agents prompting agents
+## 1. OpenAI ปล่อย GPT-5.6 (Sol / Terra / Luna) ในรอบ limited preview ตามแผน stagger ของรัฐบาลสหรัฐ
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือก้าวที่สามของการเขียนโปรแกรม — จากมนุษย์เขียนโค้ด → agent เขียนโค้ดให้มนุษย์ → agent สั่ง agent เขียนโค้ดเอง ควรชวนนักเรียนสะท้อนว่า "การกำกับคุณภาพ" เปลี่ยนหน้าตาอย่างไรเมื่อมนุษย์ห่างจาก keyboard อีกขั้นหนึ่ง
-**ผู้เชี่ยวชาญด้าน AI:** Cherny ไม่ได้พูดเล่น — meta-loop ที่ "agent หา duplicated abstraction แล้วรวมให้" คือ continuous refactor ที่ทำได้จริงในงาน production ปัจจุบัน แต่ค่าใช้จ่าย token และความเสี่ยง regression จะกระโดด ต้องมี evaluation harness และ guardrail ที่แน่นกว่ารอบก่อน ๆ
-**โปรแกรมเมอร์มืออาชีพ:** ถึงเวลา audit ว่าทีมเรามี "loop budget" หรือยัง — กำหนดเพดาน token ต่อ loop, ขั้นต่ำ test coverage ก่อน merge, และ rollback กลไกที่ทำงานอัตโนมัติ ไม่งั้น Friday night จะมี PR ปลายเปิด 200 ฉบับรอ review
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้สอนได้สดในห้องเรียน Tech Policy — เมื่อ frontier lab ที่ใหญ่ที่สุดยอมส่ง release plan ให้รัฐดูก่อนเปิดตัวจริง โครงสร้าง "model GA" จึงเปลี่ยนจาก engineering milestone กลายเป็น political event ที่ต้องอ่านคู่กับ executive order เรื่อง security testing
+**ผู้เชี่ยวชาญด้าน AI:** การ stratify เป็น Sol/Terra/Luna ตามราคา ($5/$2.50/$1 input) แทนการเปิด flagship เดี่ยว สะท้อนว่า OpenAI ยอมรับว่า "GPT-5.5 ราคาครึ่งเดียว" คือสิ่งที่ enterprise จ่ายจริง — และทำให้ Sol เปิดวงแคบได้โดยไม่กระทบ revenue base
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมเรามีแผนพึ่ง GPT-5.6 ใน production ใน 4–8 สัปดาห์ — ไม่ได้ เริ่มออกแบบ feature ให้พึ่ง Terra เป็น default ก่อน, แล้วใช้ Sol เป็น optional escalation tier; อย่า lock UX กับ Sol จนกว่า GA จริงจะมาถึง ราคา Luna ($1 input) เปิด use case batch processing ที่ก่อนหน้านี้ไม่คุ้ม
 
-## 2. Google DeepMind + A24 $75M Hollywood deal
+## 2. US เปิดทาง Mythos 5 ให้ "trusted partners" — Anthropic ทยอยปลดล็อก export curb
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือกรณีศึกษา "AI พบศิลปะ" ที่ดีกว่า text-to-video เพราะมี artist guidance อยู่ใน loop — สอนได้ว่าทำไม "tool ที่นักสร้างต้องการจริง" ต่างจาก "tool ที่ vendor คิดว่านักสร้างต้องการ" ลึกเพียงใด
-**ผู้เชี่ยวชาญด้าน AI:** $75M ไม่ใหญ่สำหรับ DeepMind แต่ใหญ่สำหรับ A24 — สิ่งที่ DeepMind ได้กลับมามีค่ามากกว่าเงินคือ "ground-truth feedback" จากนักสร้างที่มีรสนิยมระดับโลก ซึ่งเป็นสิ่งที่ benchmark สังเคราะห์ไม่เคยสะท้อนได้
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ creative-tools / video-gen อยู่ — โอกาสที่ DeepMind จะ open-source ส่วนของ pipeline ที่ผ่านการ co-design กับ A24 มีพอควรใน 12-18 เดือนข้างหน้า ติดตาม research blog และเตรียม integrate ใน workflow ของ creator ที่คุณ service อยู่
+**อาจารย์ (มหาวิทยาลัย):** กรอบ "trusted partner" ของ Commerce Department คือ taxonomy ใหม่ที่ระดับ International Relations ต้องบรรจุในหลักสูตร — ไม่ใช่ binary allow/deny แต่เป็น list-based access control ระดับชาติ ซึ่งเลียนรูปแบบ ITAR-style เดิม แต่ apply กับ software capability
+**ผู้เชี่ยวชาญด้าน AI:** การปลดล็อกเฉพาะ trusted partner หมายความว่า frontier model จะใช้งานเป็น tier ตาม jurisdiction เป็น default ใหม่ — และเป็นสัญญาณว่า capability gating เริ่มมี mechanism กลางที่ใช้ซ้ำกับ OpenAI/Anthropic/Google ในรอบหน้า; ไม่ใช่ ad-hoc อีกต่อไป
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมเป็นลูกค้า Anthropic ในประเทศที่ไม่ใช่ US ตรวจกับ account team ตอนนี้เลยว่าองค์กรเราอยู่ใน trusted partner list หรือไม่ — และถ้าไม่ ออกแบบ failover ไป Sonnet 4.6 หรือ open-weight (GLM-5.2, MAI-Thinking-1) ใน CI test ทันที อย่ารอเอกสารทางการ
 
-## 3. SpaceX + Reflection AI $6.3B compute deal
+## 3. Apple Vision Pro / smart-glasses chief Paul Meade ย้ายไป OpenAI
 
-**อาจารย์ (มหาวิทยาลัย):** น่าสอนเรื่อง "compute เป็น new oil" — โดยเฉพาะข้อเท็จจริงที่ open-source lab อย่าง Reflection ต้องจ่าย $150M/month เพื่ออยู่ในเกม แม้ตัวเองไม่ได้ขายโมเดลแบบ closed-API ความสัมพันธ์ระหว่าง infrastructure capital กับ open ecosystem เปลี่ยนไปแล้ว
-**ผู้เชี่ยวชาญด้าน AI:** Colossus 2 + GB300 หมายความว่า Reflection ได้ training cluster ระดับเดียวกับ frontier labs — คำถามคือพวกเขาจะใช้ scale นี้กับ research agenda แบบไหน ถ้าเป็น open-weight model ขนาดใหญ่ก็จะกระทบ landscape ทั้งหมด ถ้าเป็น narrow research ก็จะเป็น cost ที่ตอบแทนช้ากว่าคู่แข่ง closed
-**โปรแกรมเมอร์มืออาชีพ:** การที่ SpaceXAI กลายเป็น compute provider ที่ third-party เลือกใช้ หมายถึง ecosystem ของ "ทางเลือกอื่นนอก AWS/Azure/GCP" เริ่มมีจริง — ถ้าทีมต้องการ negotiation leverage กับ hyperscaler ปัจจุบัน นี่คือ data point ใช้กดดันได้
+**อาจารย์ (มหาวิทยาลัย):** เคสคลาสสิคของ talent movement ที่นักศึกษา MBA ควรเขียน case study — เมื่อ structural reshuffle ในองค์กรใหญ่ (Srouji กินอำนาจ hardware ทั้งหมด) ทำให้ key contributor หลายคนรู้สึก demoted; OpenAI ก็เก็บเกี่ยวได้ฟรี
+**ผู้เชี่ยวชาญด้าน AI:** Meade ดูแล Vision Pro 7 ปี แปลว่า OpenAI ได้คนที่เข้าใจ thermal, optics และ display integration ระดับ shipping product — นี่คือ skill set ที่ Jony Ive's team (ที่ OpenAI ซื้อมา $6.5B) ขาด พวกเขาเก่ง industrial design แต่ไม่เคย ship hardware ที่ scale ใหญ่
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับเดเวลอปเปอร์ที่ลงทุนกับ visionOS หรือ Apple smart-glasses platform ที่ยังไม่ shipped — เริ่มเก็บ contingency plan; ถ้า hardware roadmap ของ Apple slow ลงเพราะ talent flight นี้ AR/spatial app strategy ควรเขียนให้ port ข้าม platform ได้ตั้งแต่วันแรก
 
-## 4. Nvidia Halos for humanoid robots
+## 4. Hedge fund manager จีนเตือน AI "super bubble" ใกล้แตก
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้สอน "transfer learning ระดับ industry" ได้ดี — Halos ที่พัฒนาเพื่อ autonomous vehicle ถูกย้ายมาใช้กับ humanoid robot โดยใช้ core safety pattern เดียวกัน ชวนถามว่า "อะไรคือ invariants ของระบบ safety-critical ข้าม domain"
-**ผู้เชี่ยวชาญด้าน AI:** safety stack ที่ผ่าน ANAB accreditation ของ Halos = differentiator จริงในวันที่ humanoid วิ่งใน factory floor มีคนจริงรอบตัว functional safety certification เป็น barrier to entry ที่ใหญ่กว่า perception accuracy ของโมเดลในมุมการ commercialize
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีม robotics ที่ใช้ ROS 2 + Isaac อยู่แล้ว — IGX Thor + Halos OS จะกลายเป็น stack มาตรฐานสำหรับ humanoid ในปีหน้า ถ้ารายได้อยู่กับ industrial robotics ควรเริ่มทดสอบ Halos integration ก่อนคู่แข่งใช้เป็น procurement requirement
+**อาจารย์ (มหาวิทยาลัย):** สอนวิชา Finance / Behavioral Economics ได้ทันที — เมื่อ hedge fund manager จากตลาดที่ไม่ได้ถือ NVIDIA/MSFT/GOOGL หนักออกมาส่งสัญญาณ bubble แสดงว่าทัศนะของ outsider เห็นความผิดปกติที่ insider US เห็นไม่ได้แล้ว เป็น case ของ epistemic distance ใน asset bubble theory
+**ผู้เชี่ยวชาญด้าน AI:** สัญญาณนี้ไม่ใช่ judgement เรื่อง AI technology — เป็น judgement เรื่อง valuation gap; รายได้จริงจาก inference revenue ยัง grow ต่อ แต่ multiples ของ chip-maker และ hyperscaler หลุดจาก fundamental ที่ ML practitioner สังเกตได้ผ่าน inference cost ที่ลดเร็วกว่า revenue growth
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีม startup เราพึ่ง Series B/C funding ตั้งเป้า next round 2027 — ใส่ scenario "AI valuation correct 40% ใน 6 เดือน" เข้า financial model; ความน่าจะเป็นที่ valuation downround เป็น base case ไม่ใช่ tail risk แล้ว และอย่ายึด ARR multiple ของรอบ 2025 เป็น benchmark
 
-## 5. Qualcomm to acquire Modular for ~$4B
+## 5. AI กลายเป็นแกนของการเลือกตั้งสหรัฐ 2026 — เงิน Silicon Valley, deepfake, data center backlash
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้สอนเรื่อง "compiler และ developer tooling เป็นชั้นที่มูลค่าสูง" — Modular ไม่ได้ทำชิป แต่ทำ stack ที่ทำให้ workload AI วิ่งบนหลายชิปได้ Qualcomm ยอมจ่าย $4B เพื่อชั้นนี้บอกอะไรเกี่ยวกับโครงสร้างมูลค่าของ AI infrastructure
-**ผู้เชี่ยวชาญด้าน AI:** Mojo + MAX engine ของ Modular เป็นเดิมพันว่า "portable AI compute" จะแทนที่ CUDA-lock-in ในระดับ inference Qualcomm ได้สิ่งที่ขาดมานานคือ developer story ที่แข่งกับ Nvidia ได้บน on-device และ edge — แต่จะ integrate กับ Snapdragon stack ได้เร็วแค่ไหนเป็นคำถามใหญ่
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมพัฒนา AI workload บน device หลายแพลตฟอร์ม (iOS/Android/laptop) — Mojo จะมี backing organization ที่ใหญ่และมั่นคงขึ้น คุ้มลงทุนทดลองใน research project ตอนนี้ ถ้า toolchain โต Qualcomm มีอำนาจ push ให้เป็น default บน Snapdragon ในปีหน้า
+**อาจารย์ (มหาวิทยาลัย):** สอน Political Science / Media Studies คาบเดียวรวมหลายเลเยอร์ — เงิน tech billionaire, ภัย deepfaked ad, และ community backlash ต่อ data center เป็นสามแรงที่มาบรรจบ ทำให้ AI กลายเป็น issue หลักของรอบเลือกตั้งกลางเทอม ไม่ใช่แค่ tech story
+**ผู้เชี่ยวชาญด้าน AI:** สิ่งที่น่าจับตาคือ deepfake detection ใน production ตอนนี้ — provenance standard อย่าง C2PA ยังไม่ ubiquitous บน social platform; ทำให้ media literacy ของ voter เป็น defense layer หลัก แทนที่จะเป็น technical safeguard
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมเราทำ product สำหรับ content publisher (CMS, social tool, video platform) ฝัง C2PA signing pipeline ตั้งแต่ตอนนี้ — ผู้ใช้ที่ตื่นเรื่อง deepfake จะถามหา provenance badge เป็น differentiator; รออีก 6 เดือน feature นี้กลายเป็น table stakes
