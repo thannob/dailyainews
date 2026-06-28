@@ -1,31 +1,31 @@
-# Perspectives — 2026-06-23
+# Perspectives — 2026-06-28
 
-## 1. The AI world is getting 'loopy' — agents prompting agents
+## 1. Sakana เปิดตัว Fugu, 360 จีนเปิดตัว Tulongfeng — Asia ตอบโต้ Mythos export ban
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือก้าวที่สามของการเขียนโปรแกรม — จากมนุษย์เขียนโค้ด → agent เขียนโค้ดให้มนุษย์ → agent สั่ง agent เขียนโค้ดเอง ควรชวนนักเรียนสะท้อนว่า "การกำกับคุณภาพ" เปลี่ยนหน้าตาอย่างไรเมื่อมนุษย์ห่างจาก keyboard อีกขั้นหนึ่ง
-**ผู้เชี่ยวชาญด้าน AI:** Cherny ไม่ได้พูดเล่น — meta-loop ที่ "agent หา duplicated abstraction แล้วรวมให้" คือ continuous refactor ที่ทำได้จริงในงาน production ปัจจุบัน แต่ค่าใช้จ่าย token และความเสี่ยง regression จะกระโดด ต้องมี evaluation harness และ guardrail ที่แน่นกว่ารอบก่อน ๆ
-**โปรแกรมเมอร์มืออาชีพ:** ถึงเวลา audit ว่าทีมเรามี "loop budget" หรือยัง — กำหนดเพดาน token ต่อ loop, ขั้นต่ำ test coverage ก่อน merge, และ rollback กลไกที่ทำงานอัตโนมัติ ไม่งั้น Friday night จะมี PR ปลายเปิด 200 ฉบับรอ review
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้คือ live demonstration ของ Christensen Innovation Theory — เมื่อ regulatory barrier ปิด market ของ incumbent ผู้แข่งระดับ regional ที่เคยถูกมองว่าตามหลัง ได้พื้นที่ทดสอบและ ship ผลิตภัณฑ์ของตัวเองโดยไม่ต้องเทียบกับ leader โดยตรง บรรจุในซิลลาบัส Strategic Management รอบหน้าได้เลย
+**ผู้เชี่ยวชาญด้าน AI:** สถาปัตยกรรม multi-agent ของ Fugu น่าสนใจกว่าตัวเลข benchmark — มันยอมรับว่า monolithic frontier model ไม่ใช่คำตอบเดียว orchestration ของ specialized model ขนาดกลางก็ scale performance ใกล้ frontier ได้ เป็น paradigm shift ที่ frontier lab ของสหรัฐยังหวงทิศทาง single-model
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า production stack ตอนนี้ default ที่ Claude เริ่มเปิด evaluation track สำหรับ Fugu, DeepSeek V4, MiMo V2.5 บน eval set ภายในทันที — ลูกค้า Asia จะเริ่มถามหาทางเลือกที่ไม่ผ่าน export license ของสหรัฐภายในสัปดาห์นี้ ไม่ใช่ Q4
 
-## 2. Google DeepMind + A24 $75M Hollywood deal
+## 2. ผู้ก่อตั้งสตาร์ทอัพใช้ Claude วิเคราะห์ภาพสแกนมะเร็ง
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือกรณีศึกษา "AI พบศิลปะ" ที่ดีกว่า text-to-video เพราะมี artist guidance อยู่ใน loop — สอนได้ว่าทำไม "tool ที่นักสร้างต้องการจริง" ต่างจาก "tool ที่ vendor คิดว่านักสร้างต้องการ" ลึกเพียงใด
-**ผู้เชี่ยวชาญด้าน AI:** $75M ไม่ใหญ่สำหรับ DeepMind แต่ใหญ่สำหรับ A24 — สิ่งที่ DeepMind ได้กลับมามีค่ามากกว่าเงินคือ "ground-truth feedback" จากนักสร้างที่มีรสนิยมระดับโลก ซึ่งเป็นสิ่งที่ benchmark สังเคราะห์ไม่เคยสะท้อนได้
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ creative-tools / video-gen อยู่ — โอกาสที่ DeepMind จะ open-source ส่วนของ pipeline ที่ผ่านการ co-design กับ A24 มีพอควรใน 12-18 เดือนข้างหน้า ติดตาม research blog และเตรียม integrate ใน workflow ของ creator ที่คุณ service อยู่
+**อาจารย์ (มหาวิทยาลัย):** ประเด็นไม่ใช่ AI replace doctor แต่เป็น patient-as-second-reader — ผู้ป่วยที่ลงทุนเวลาเป็นชั่วโมงกับ AI ที่อ่าน case literature เป็นพันเคส กำลังกลายเป็น layer ใหม่ใน clinical workflow ที่ medical curriculum ยังไม่ได้สอนหมอให้รับมือ
+**ผู้เชี่ยวชาญด้าน AI:** Claude แสดง pattern recognition จาก post-treatment phenomenon ที่ subspecialist รู้แต่ general radiologist อาจไม่ได้ฝึกพอ — สอนว่า LLM aggregate specialist knowledge ได้ดีกว่าที่หลายคนคิด แต่ก็มี risk เรื่อง confident-but-wrong ในเคสที่ literature น้อย
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำ healthcare product จะเริ่มเห็น user behavior pattern ที่ผู้ป่วยใช้ Claude/ChatGPT vet recommendation จากหมอ ออกแบบ product ให้รองรับ pattern นี้แทนที่จะมองเป็น threat — ทำให้ chain-of-thought ของ AI กลายเป็นเครื่องมือสื่อสารระหว่างหมอกับผู้ป่วย
 
-## 3. SpaceX + Reflection AI $6.3B compute deal
+## 3. Wall Street เทเงิน $11.6B ใส่ power IPO
 
-**อาจารย์ (มหาวิทยาลัย):** น่าสอนเรื่อง "compute เป็น new oil" — โดยเฉพาะข้อเท็จจริงที่ open-source lab อย่าง Reflection ต้องจ่าย $150M/month เพื่ออยู่ในเกม แม้ตัวเองไม่ได้ขายโมเดลแบบ closed-API ความสัมพันธ์ระหว่าง infrastructure capital กับ open ecosystem เปลี่ยนไปแล้ว
-**ผู้เชี่ยวชาญด้าน AI:** Colossus 2 + GB300 หมายความว่า Reflection ได้ training cluster ระดับเดียวกับ frontier labs — คำถามคือพวกเขาจะใช้ scale นี้กับ research agenda แบบไหน ถ้าเป็น open-weight model ขนาดใหญ่ก็จะกระทบ landscape ทั้งหมด ถ้าเป็น narrow research ก็จะเป็น cost ที่ตอบแทนช้ากว่าคู่แข่ง closed
-**โปรแกรมเมอร์มืออาชีพ:** การที่ SpaceXAI กลายเป็น compute provider ที่ third-party เลือกใช้ หมายถึง ecosystem ของ "ทางเลือกอื่นนอก AWS/Azure/GCP" เริ่มมีจริง — ถ้าทีมต้องการ negotiation leverage กับ hyperscaler ปัจจุบัน นี่คือ data point ใช้กดดันได้
+**อาจารย์ (มหาวิทยาลัย):** Asset class ใหม่ก่อตัวจาก demand shock — power infrastructure เคยเป็น regulated monopoly ที่ valuation ขึ้นกับ rate-of-return formula แต่เมื่อ data center ต้องการ peaker plant และ behind-the-meter generation flexible capacity provider กลายเป็น growth equity บรรจุใน Energy Economics กับ Industrial Organization
+**ผู้เชี่ยวชาญด้าน AI:** คอขวดของ frontier training ไม่ได้อยู่ที่ chip อีกต่อไป มันอยู่ที่ interconnect queue (3-7 ปีต่อ project) และ transformer shortage — pure-play AI investor ที่ไม่ดู power stack กำลัง underestimate cost curve ของ frontier model ใน 18 เดือนข้างหน้าอย่างหนัก
+**โปรแกรมเมอร์มืออาชีพ:** ออกแบบ pipeline ที่ separate train vs inference budget แยกชัด เพราะ power-per-FLOP จะไม่ลดเร็วเท่า compute-per-FLOP — assumption ที่ใช้ปีที่แล้วว่า GPU จะถูกลง อาจไม่ holds สำหรับ training cost
 
-## 4. Nvidia Halos for humanoid robots
+## 4. Apple-Microsoft ขึ้นราคา iPad/Mac/Xbox — memory chip shortage จาก AI
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้สอน "transfer learning ระดับ industry" ได้ดี — Halos ที่พัฒนาเพื่อ autonomous vehicle ถูกย้ายมาใช้กับ humanoid robot โดยใช้ core safety pattern เดียวกัน ชวนถามว่า "อะไรคือ invariants ของระบบ safety-critical ข้าม domain"
-**ผู้เชี่ยวชาญด้าน AI:** safety stack ที่ผ่าน ANAB accreditation ของ Halos = differentiator จริงในวันที่ humanoid วิ่งใน factory floor มีคนจริงรอบตัว functional safety certification เป็น barrier to entry ที่ใหญ่กว่า perception accuracy ของโมเดลในมุมการ commercialize
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีม robotics ที่ใช้ ROS 2 + Isaac อยู่แล้ว — IGX Thor + Halos OS จะกลายเป็น stack มาตรฐานสำหรับ humanoid ในปีหน้า ถ้ารายได้อยู่กับ industrial robotics ควรเริ่มทดสอบ Halos integration ก่อนคู่แข่งใช้เป็น procurement requirement
+**อาจารย์ (มหาวิทยาลัย):** Cross-market demand spillover คลาสสิก — supply ของ commodity เดียวกัน (DRAM wafer capacity) ถูก reallocate ไปทาง high-margin market (AI HBM) จน mass-market consumer pricing โดน hit เคยเกิดกับ TSMC 3nm capacity ตอนนี้กับ memory chip — สอน Supply Chain Economics ได้เป็นคาบ
+**ผู้เชี่ยวชาญด้าน AI:** HBM3E กำลังเพิ่ม capacity แต่ HBM4 ที่มาในกลางปี 2027 จะดูดทรัพยากร engineering และ wafer capacity เพิ่มอีก — DDR5 shortage ในตลาด consumer จะลากไปอีก 12-18 เดือนเป็นอย่างน้อย
+**โปรแกรมเมอร์มืออาชีพ:** ถ้า ship app ที่ทำ on-device inference สมมุติว่า user fleet ที่ upgrade ในปี 2026-2027 จะมี RAM น้อยกว่า roadmap เดิม 1 ปี — ออกแบบ feature ให้ degrade gracefully และเก็บ telemetry RAM distribution ใน base ของตัวเอง อย่าใช้ Apple benchmark เป็น working assumption
 
-## 5. Qualcomm to acquire Modular for ~$4B
+## 5. "AI Burnout Era" ใน Silicon Valley
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้สอนเรื่อง "compiler และ developer tooling เป็นชั้นที่มูลค่าสูง" — Modular ไม่ได้ทำชิป แต่ทำ stack ที่ทำให้ workload AI วิ่งบนหลายชิปได้ Qualcomm ยอมจ่าย $4B เพื่อชั้นนี้บอกอะไรเกี่ยวกับโครงสร้างมูลค่าของ AI infrastructure
-**ผู้เชี่ยวชาญด้าน AI:** Mojo + MAX engine ของ Modular เป็นเดิมพันว่า "portable AI compute" จะแทนที่ CUDA-lock-in ในระดับ inference Qualcomm ได้สิ่งที่ขาดมานานคือ developer story ที่แข่งกับ Nvidia ได้บน on-device และ edge — แต่จะ integrate กับ Snapdragon stack ได้เร็วแค่ไหนเป็นคำถามใหญ่
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมพัฒนา AI workload บน device หลายแพลตฟอร์ม (iOS/Android/laptop) — Mojo จะมี backing organization ที่ใหญ่และมั่นคงขึ้น คุ้มลงทุนทดลองใน research project ตอนนี้ ถ้า toolchain โต Qualcomm มีอำนาจ push ให้เป็น default บน Snapdragon ในปีหน้า
+**อาจารย์ (มหาวิทยาลัย):** $850B lease commitment ไม่ใช่ตัวเลขทางการเงินอย่างเดียว แต่เป็น governance signal ที่บอกพนักงานว่า "ไม่มี optionality ในการชะลอ" — บรรจุใน Organizational Behavior คาบเรื่อง culture-as-financial-output ได้
+**ผู้เชี่ยวชาญด้าน AI:** Burnout cycle ส่งผลตรงต่อ code quality — team ที่เครียดยาวมัก ship feature ที่ทดสอบไม่พอ และ tech debt สะสมเร็วกว่าที่ velocity dashboard บอก เป็นปัจจัย hidden ที่ frontier safety ของ industry ทั้งหมดจะได้รับผลกระทบ
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำงานใน frontier lab หรือ vendor ที่ขายให้ lab ลงทุนเรื่อง async communication, on-call rotation ที่จริงจัง, documentation ที่ทำงานได้แม้ author offline — burnout cycle นี้ไม่หายในไตรมาสเดียว ทีมที่ทำ resilience structure ตอนนี้จะ outlast ทีมที่ run flat-out จนแตก
