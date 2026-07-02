@@ -1,60 +1,60 @@
-# Sources — 2026-07-01
+# Sources — 2026-07-02
 
-Generated: 2026-07-01 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-07-02 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe example.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-06-30-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-01-brief.md (5 URLs loaded)
 
-1. **Introducing Claude Sonnet 5**
+1. **Redeploying Claude Fable 5**
    - Publisher: Anthropic
-   - URL: https://www.anthropic.com/news/claude-sonnet-5
-   - Published: 2026-06-30 (corroborated by 9to5Mac, TechCrunch and MacRumors URL slugs `/2026/06/30/`)
-   - FreshnessCheck: ✅ within last 24h via multiple snippets — "Anthropic announced Claude Sonnet 5 on June 30, 2026"; system-card page titled "Claude Sonnet 5 June 30, 2026"; corroborating URL slugs `techcrunch.com/2026/06/30/...` and `macrumors.com/2026/06/30/...`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host anthropic.com absent from yesterday's brief)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Anthropic released Claude Sonnet 5 on June 30, 2026 as the most agentic Sonnet model — plans, uses browsers/terminals, runs autonomously at a level that just months ago required larger and more expensive models. Default for Free and Pro; available to Max/Team/Enterprise. Introductory pricing $2/M input, $10/M output through Aug 31, 2026; then $3/$15. Performance close to Opus 4.8 at ~60% lower per-token cost. Safety assessments show lower rate of undesirable behaviors than Sonnet 4.6.
+   - URL: https://www.anthropic.com/news/redeploying-fable-5
+   - Published: 2026-07-01 (per search snippet: "Anthropic is redeploying Claude Fable 5 starting July 1")
+   - FreshnessCheck: ✅ within last 24h via snippet "Fable 5 will be available starting July 1 to users globally on the Claude Platform, Claude.ai, Claude Code, and Claude Cowork"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Anthropic URL was `/news/claude-sonnet-5`; this is `/news/redeploying-fable-5` (different path)
+   - Verification: Tier 2 — WebSearch snippet (anthropic.com on trusted allow-list)
+   - Summary: Anthropic ประกาศเปิดใช้ Claude Fable 5 อีกครั้งตั้งแต่ 1 ก.ค. 2026 บน Claude Platform / Claude.ai / Claude Code / Claude Cowork หลังกระทรวงพาณิชย์สหรัฐยกเลิก export control ที่ออกเมื่อ 12 มิ.ย.; รอบใหม่มี cybersecurity safeguard ปรับปรุง + industry jailbreak framework ใหม่ และ classifier ที่หากตรวจเจอ prompt กลุ่ม cybersecurity / biology / chemistry / distillation จะโยนให้ Claude Opus 4.8 ตอบแทน
 
-2. **Claude Science is Anthropic's newest flagship product**
-   - Publisher: MIT Technology Review
-   - URL: https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/
-   - Published: 2026-06-30 (per URL slug and corroborating Bloomberg/TechCrunch coverage same date)
-   - FreshnessCheck: ✅ within last 24h — URL slug `technologyreview.com/2026/06/30/...`; multiple snippets say "Claude Science launched on Tuesday, June 30, 2026" and "Anthropic announced the release of Claude Science"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (technologyreview.com host not present in yesterday's brief)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Anthropic launched Claude Science on June 30, 2026 — an AI workbench (not a new model) that integrates 60+ scientific databases and computational tools in one workplace. Runs on existing Claude models. Aimed at computational biology and drug development: predicting protein structures, analyzing large research datasets, reviewing papers, interpreting biological data, managing complex workflows, and generating research hypotheses. Available to all paid Claude subscribers. Anthropic also introduced an AI for Science support program with up to 50 projects receiving up to $30,000 in computing credits each. CEO Dario Amodei framed it as an analog of Claude Code for life sciences and a response to OpenAI's GPT-Rosalind.
+2. **เธอกลับมาพร้อมเงื่อนไข — Fable 5 ไม่รับคำสั่งเขียนโค้ดหรือแก้บั๊ก เรียก Opus 4.8 ทำแทน**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/151036
+   - Published: 2026-07-01 (Blognone follow-up to Fable 5 redeploy of the same date)
+   - FreshnessCheck: ✅ within last 24h — snippet headline directly follows the 1 ก.ค. Fable 5 redeploy wave; sibling node 151025 also from the same launch day
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — no Blognone URL in yesterday's brief; node/151036 is a new page
+   - Verification: Tier 2 — WebSearch snippet (blognone.com on trusted allow-list)
+   - Summary: Blognone รายงานว่ารอบ redeploy Fable 5 มาพร้อมข้อจำกัดใหม่ — คำสั่งเขียนโค้ด/แก้บั๊กถูก route ไปยัง Claude Opus 4.8 แทน; classifier ใหม่ตรวจ prompt กลุ่ม coding / cybersecurity / biology / chemistry / distillation แล้วยกให้โมเดล tier บนดูแล ทำให้ Fable 5 ถึงจะเปิดกว้างสำหรับผู้ใช้ทั่วไปแต่ scope งานถูกจำกัดชัดเจน
 
-3. **BOE's Breeden Warns AI Agents Risk Triggering Market Meltdowns**
+3. **Wall Street's AI race is fueling new fears of crowded trading (AI Race May Cut Trading Edges From Seven Years to 18 Months)**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-30/boe-s-breeden-warns-ai-agents-risk-triggering-market-meltdowns
-   - Published: 2026-06-30 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h — URL slug `bloomberg.com/news/articles/2026-06-30/...`; snippet confirms Bank of England Deputy Governor Sarah Breeden made the warning speaking in Sintra, Portugal
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs covered different topics: German AI rollout and G7 opinion)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bank of England Deputy Governor Sarah Breeden warned that autonomous AI agents could cause a "market meltdown" — not by acting irrationally, but by all responding identically to the same signal at the same moment, amplifying volatility during stress. Speaking at the ECB Forum on Central Banking in Sintra, Portugal, she said existing frameworks weren't built for autonomous agents and that "relying on a human in the loop for all agent actions is unlikely to be realistic." Measures under consideration include guardrails, circuit breakers, and kill switches that could stop market-wide trading if faulty AI models cause a meltdown. Distinguishes agentic systems from classical algorithmic trading.
+   - URL: https://www.bloomberg.com/news/articles/2026-07-01/wall-street-s-ai-race-is-fueling-new-fears-of-crowded-trading
+   - Published: 2026-07-01 (per URL slug — Bloomberg slugs use publish date)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026-07-01`; corroborated by snippet "widespread adoption could shorten the lifespan of profitable trading signals as investors converge on the same opportunities"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Bloomberg URLs were BOE-Breeden and Schneider-Cognite (different paths, different topics)
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted allow-list)
+   - Summary: งานวิจัยหลายชิ้นชี้ว่า Wall Street ที่เร่งใช้ AI หา trading edge กำลังเข้าสู่ปรากฏการณ์ "crowded trading" — เมื่อ investor หลายเจ้าใช้โมเดลใกล้เคียงกัน จะซื้อหุ้นตัวเดียวกัน react กับข่าวเดียวกัน และผิดพลาดเหมือนกัน; ผลกระทบเชิงตลาดคือ profitable signal ที่เคยอยู่ 7 ปีอาจหดสั้นลงเหลือ 18 เดือน
 
-4. **Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip**
+4. **Nvidia AI Chip Gets Power From Valar's Nuclear Reactor**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-01/nvidia-ai-chip-gets-power-from-valar-s-nuclear-reactor
+   - Published: 2026-07-01 (per URL slug + snippet)
+   - FreshnessCheck: ✅ within last 24h via snippet "Valar Atomics Inc., a California-based nuclear startup, generated power from an advanced reactor to run an Nvidia AI chip on July 1, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — no Valar / nuclear coverage in yesterday's brief
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted allow-list)
+   - Summary: Valar Atomics ใช้ advanced reactor รุ่น Ward 250 ป้อนไฟให้ Nvidia Blackwell chip ในการสาธิตที่รัฐยูทาห์เมื่อ 1 ก.ค. 2026 — เป็นครั้งแรกที่ next-gen reactor รันชิป AI ในสหรัฐ; ทั้งสองบริษัทประกาศข้อตกลงร่วมพัฒนา nuclear-powered AI systems
+
+5. **Neocloud Together AI raises $800M, leaps to $8.3B valuation**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/
-   - Published: 2026-06-30 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h — URL slug `techcrunch.com/2026/06/30/...`; snippet confirms Etched emerged from stealth June 30, 2026, with a working chip; Bloomberg URL slug `bloomberg.com/news/articles/2026-06-30/...` corroborates the raise announcement
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs covered different topics: Gemini Nano Banana, TIDAL, and Omen AI)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: AI chip startup Etched emerged from stealth on June 30, 2026 with a working chip, $800M raised across multiple unannounced rounds (the latest $500M at a $5B post-money valuation), and over $1B in signed customer contracts. Investors include Jane Street, a VC linked to Taiwan Semiconductor Manufacturing (VentureTech Alliance), Peter Thiel, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum, and AI luminaries Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Stanley Druckenmiller, Arthur Mensch, and Scott Wu. Positioned as an Nvidia competitor for inference; plans to start shipping to some customers this summer.
-
-5. **Schneider to Buy Industrial AI Firm Cognite for $3.1 Billion**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-06-30/schneider-to-buy-industrial-ai-firm-cognite-for-3-1-billion
-   - Published: 2026-06-30 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h — URL slug `bloomberg.com/news/articles/2026-06-30/...`; snippet confirms "Schneider Electric agreed to buy Cognite in a $3.1 billion transaction"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (different Bloomberg article path from yesterday's German-labor and G7-opinion pieces)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Schneider Electric agreed to buy Norway-headquartered industrial AI firm Cognite in a $3.1 billion transaction to expand its industrial data and AI software business.
+   - URL: https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/
+   - Published: 2026-07-01 (per URL slug + snippet "announced on Wednesday, July 1, 2026")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/01/` + snippet explicit date
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's TechCrunch URL was Etched (different startup, different path)
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted allow-list)
+   - Summary: Together AI — neocloud ที่ให้เช่า Nvidia GPU cluster สำหรับ workload AI — ปิด Series C มูลค่า $800 ล้าน ที่ valuation $8.3 พันล้าน ประกาศ 1 ก.ค. 2026; นำโดย Aramco Ventures ร่วมด้วย Vista Equity Partners, General Catalyst, Emergence Capital, Nvidia, March Capital, Pegatron, S Ventures ของ SentinelOne; valuation ก้าวจาก $3.3B Series B เมื่อ ~16 เดือนก่อน
 
 ## Dropped
 
-- Colorado AI Act "takes effect June 30, 2026" — Filter A: the underlying event (SB 189 signing that delays the effective date to Jan 1, 2027) was on May 14, 2026 — the news is older than 24h even though the calendar date matches; the coverage repeats a stale headline. Also mostly analysis/opinion, not primary reporting today.
-- techcrunch.com/2026/06/22 (SpaceX–Reflection AI compute deal) — Filter A: URL slug 2026/06/22 is 9 days old.
-- Bloomberg 2026-06-30 SAP AI oversight reshuffle, StanChart AI chief joins Accenture, South Korea $880B AI bet, call-center stocks fall, chip-stocks quarter — all pass Filter A and Filter B; deprioritized to keep the brief within 5 items focused on the biggest AI-shaping stories of the day (model launches + regulator warning + chip startup emergence + industrial-AI M&A).
-- Blognone / Beartai coverage of Sonnet 5 and Claude Science — Filter A: Thai outlets had not published within the rolling 24h window at time of writing (their most recent Anthropic pieces are on Sonnet 4.6 and Opus 4.8). Zero Thai-language items met the freshness gate; ship 5 international items rather than pad.
+- techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/ — Filter A: URL slug 2026-06-30 is >24h old at time of run (2026-07-02 Asia/Bangkok). The follow-on Anthropic and Bloomberg pieces on 2026-07-01 cover the same event and were preferred.
+- bloomberg.com/news/articles/2026-06-30/us-government-lifts-restrictions-on-anthropic-s-fable-5-model — Filter A: URL slug 2026-06-30 is >24h old. Same event covered by 2026-07-01 Anthropic redeploy note.
+- openai.com/index/previewing-gpt-5-6-sol/ — Filter A: preview announced 2026-06-26 (>24h old per search snippet "GPT-5.6 Preview System Card 2026-06-25"). No fresh news of the launch itself within 24h.
+- bloomberg.com/opinion/articles/2026-07-01/anthropic-s-fable-deal-with-the-us-government-shouldn-t-be-secret — Passes both filters but deprioritized (opinion piece, thematic overlap with story 1) to keep the brief diverse.
 
-> Note: 5 items passed both filters this run. Of ~15 candidates surveyed, 3 failed Filter A (Colorado AI Act stale event, June 22 Reflection AI deal, Thai coverage lag) and 0 failed Filter B (all shortlisted URLs new relative to 2026-06-30 brief); 5 additional 24h-fresh candidates were deprioritized on relevance to keep the brief tight.
+> Note: 5 items passed both filters this run. Of ~10 surveyed candidates, 3 failed Filter A (June 30 Fable/US-government pieces; June 26 GPT-5.6 preview) and 0 failed Filter B; 1 additional Filter-A/B pass was deprioritized on thematic diversity.
