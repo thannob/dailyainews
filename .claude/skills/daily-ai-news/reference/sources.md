@@ -1,54 +1,52 @@
-# Sources — 2026-07-03
+# Sources — 2026-07-04
 
-Generated: 2026-07-03 (Asia/Bangkok)
+Generated: 2026-07-04 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED (probe example.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-02-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-03-brief.md (4 URLs loaded)
 
-1. **Microsoft launches its own AI deployment company with $2.5 billion commitment**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/
-   - Published: 2026-07-02 (Thursday, per URL slug + search snippet "On Thursday, Microsoft announced")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/02/`; snippet confirms "On Thursday" (2 ก.ค. BKK)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch story was `/2026/07/01/neocloud-together-ai-...`, different path)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: Microsoft ประกาศตั้ง Microsoft Frontier Company ทุ่ม $2.5B + วิศวกร 6,000 คน "ฝัง" ในลูกค้าองค์กร (forward-deployed engineering) เพื่อขับเคลื่อน enterprise AI deployment; นำโดย Rodrigo Kede Lima; ลูกค้าเบื้องต้น London Stock Exchange Group, Unilever, Land O'Lakes, Accenture; ประกาศ 2 วันหลัง AWS วาง $1B รูปแบบเดียวกัน.
+1. **Nine and Microsoft announce Australian-first AI agreement for news media content**
+   - Publisher: Microsoft (Source Asia)
+   - URL: https://news.microsoft.com/source/asia/2026/07/03/nine-microsoft-copilot-agreement/
+   - Published: 2026-07-03 (URL slug + snippet "On July 3, 2026, Nine Entertainment Co and Microsoft announced an agreement…")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/source/asia/2026/07/03/` + snippet "Nine and Microsoft announced" (present-tense on July 3)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host `news.microsoft.com` never appeared in yesterday's set — yesterday was all techcrunch.com)
+   - Verification: Tier 2 — WebSearch snippet from trusted domain `microsoft.com` (news.microsoft.com subdomain)
+   - Summary: Nine Entertainment (Australia's largest media group) and Microsoft signed a first-of-its-kind AI content-licensing pact allowing Microsoft Copilot to reference Nine's journalism during AI searches — Copilot will surface snippets/headlines/summaries and route users back to Nine's mastheads for the full story. Described as Microsoft's first such deal in Asia-Pacific.
 
-2. **Anthropic is discussing a new custom chip with Samsung**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/
-   - Published: 2026-07-02 (per URL slug); เรื่องยืนยันซ้ำที่ The Information (theinformation.com/articles/anthropic-talks-samsung-manufacture-custom-ai-chip) เป็น primary source
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/02/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Anthropic story was anthropic.com/news/redeploying-fable-5, different host+path)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: Anthropic เริ่ม early-stage development ชิป AI ของตัวเอง และคุย Samsung Foundry เรื่องกระบวนการ 2nm รุ่นใหม่; ยังไม่ระบุว่าจะเน้น training/inference; ตอกย้ำแนว "diversify away from Nvidia"; รอบทุน Series H ล่าสุดมี Samsung, SK hynix, Micron ร่วมลง.
+2. **AI Productivity Hopes Show 'Exuberance,' Allianz's Subran Says**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-03/ai-productivity-hopes-show-exuberance-allianz-s-subran-says
+   - Published: 2026-07-03 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/news/articles/2026-07-03/` (Bloomberg article-date convention)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (bloomberg.com not in yesterday's set)
+   - Verification: Tier 2 — WebSearch snippet from trusted domain `bloomberg.com`
+   - Summary: Allianz Chief Economist Ludovic Subran, speaking at the Aix-en-Provence Economic Forum, warned that AI's economic impact will be less even than market hype suggests and flagged "psychology" concerns around the AI trade; declined to call it a bubble but said Europe risks failing to reap the "AI dividend" while emerging-market equities look more attractive due to semiconductor demand.
 
-3. **A warning sign about AI's real cost, courtesy of Google and Amazon**
+3. **The only AI glossary you'll need this year**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/02/a-warning-sign-about-ais-real-cost-courtesy-of-google-and-amazon/
-   - Published: 2026-07-02 (per URL slug); ต่อเนื่องรายงาน environmental ของ Google (blog.google/.../2026-environmental-report/) และ Amazon sustainability report
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/02/`; corroborated by insurancejournal.com/news/national/2026/07/02/876142.htm
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: Google carbon emission +25% YoY, Amazon +16% — sustainability report 2026 ยอมรับตรงว่าการใช้พลังงานเพิ่มขึ้นมากจาก AI workload ใน data center; net-zero target 2030 (Google) / 2040 (Amazon) เริ่มถูกกดดันหนัก.
+   - URL: https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
+   - Published: 2026-07-03 (URL slug + snippet "TechCrunch published … on July 3, 2026")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/03/` (TechCrunch date convention)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (path differs from yesterday's four TechCrunch URLs)
+   - Verification: Tier 2 — WebSearch snippet from trusted domain `techcrunch.com`
+   - Summary: TechCrunch published a plain-English glossary covering the AI vocabulary that has escaped the labs and colonised meetings, pitches, and panels — LLMs, RAG, RLHF, hallucinations, and the rest — aimed at readers who build with, invest in, or simply need to keep up with AI without being trapped by jargon.
 
-4. **Meta quietly launches vibe-coded gaming app Pocket**
+4. **The browser wars aren't about search anymore — here are the best alternatives to Chrome and Safari**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/
-   - Published: 2026-07-02 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/02/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: Meta ปล่อยแอป Pocket ให้ผู้ใช้สร้างเกม/แอปเล็กๆ ผ่าน text prompt (vibe-coded); เป็นผลจากการซื้อทีม Gizmo (vibe-coded gaming platform) เมื่อต้นปี; วางเป็น experimental consumer AI app.
+   - URL: https://techcrunch.com/2026/07/03/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/
+   - Published: 2026-07-03 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/03/` (TechCrunch date convention — a July-3 update/republish of the running roundup)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (path differs from yesterday's four TechCrunch URLs)
+   - Verification: Tier 2 — WebSearch snippet from trusted domain `techcrunch.com`
+   - Summary: TechCrunch updated its running roundup of AI-native browsers competing to unseat Chrome/Safari — the fight has shifted from "whose search results" to "whose AI agent acts on your behalf inside the browser," with Perplexity's Comet, The Browser Company's Dia, Opera's Neon, OpenAI's ChatGPT Atlas, and Ladybird all vying for a slice; Google is responding by welding Gemini deeper into Chrome.
 
 ## Dropped
 
-- https://www.blognone.com/node/151040 — Filter A (ambiguous): Blognone รายงานเรื่อง Meta cloud/Meta Compute ตามหลัง Bloomberg แต่ WebSearch snippet ไม่ยืนยัน publish timestamp; SKILL ห้าม guess. Node number sequential (151040 หลัง 151036 ซึ่งเป็น 2 ก.ค.) → น่าจะ 2 ก.ค. แต่ไม่แน่ใจพอ.
-- https://www.blognone.com/node/151023 — Filter A (>24h): Blognone snippet บอก "published 2 days ago" = ~1 ก.ค., เกินหน้าต่าง 24h.
-- https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/ — Filter A (>24h): URL slug 2026/07/01 → เกินหน้าต่าง 24h (BKK 3 ก.ค. — ห่างเกิน 24 ชม.).
-- https://www.bloomberg.com/news/articles/2026-07-01/big-tech-s-carbon-emissions-spike-with-runaway-growth-of-ai — Filter A (>24h): URL slug 2026-07-01.
-- https://openai.com/index/openai-broadcom-jalapeno-inference-chip/ — Filter A (>24h): ประกาศ 24 มิ.ย. 2026 (>1 สัปดาห์).
-- https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/ — Filter A (>24h): URL slug 2026/06/30.
-- https://investor.qualcomm.com/.../2026/Qualcomm-to-Acquire-Modular/ — Filter A (>24h): ประกาศ 24 มิ.ย. 2026.
+- https://www.bloomberg.com/news/articles/2026-07-02/elevenlabs-in-talks-for-tender-offer-at-22-billion-valuation — Filter A (>24h): URL slug 2026-07-02 places the article outside the rolling 24h window from 2026-07-04.
+- https://www.bloomberg.com/news/articles/2026-07-02/china-s-kling-ai-raises-2-billion-to-expand-ai-video-operations — Filter A (>24h): URL slug 2026-07-02 is ~48h old.
+- https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/ — Filter A (>24h): URL slug 2026/07/02 places it outside the rolling window.
+- https://www.theinformation.com/articles/tesla-caps-employee-ai-spend-200-per-week-adoption-push — Filter A ambiguous: date not surfaced in URL slug or snippet timestamp; per SKILL.md 1b-tris ("Date ambiguous / not surfaced → DROP — do not guess"), dropped.
+- https://openai.com/index/previewing-gpt-5-6-sol/ — Filter A ambiguous: URL slug carries no date; "launching … in July" is a month-scale phrase, not a 24h timestamp. Dropped rather than guessed.
 
-> Note: 4 items passed both filters this run. Of 11 candidates, 6 failed Filter A (>24h) and 1 failed Filter A (ambiguous timestamp). 0 failed Filter B (dedup). ไม่มี Thai-language source ผ่านการตรวจ timestamp อย่างเข้มงวดในรอบนี้ — supply-side issue ไม่ใช่ selection bias.
+> Note: 4 items passed both filters this run. Of 9 candidates, 3 failed Filter A (older-than-24h URL slugs), 2 failed Filter A on ambiguous dating, and 0 failed Filter B (yesterday's brief was four TechCrunch URLs; none of today's candidates matched any of them).
