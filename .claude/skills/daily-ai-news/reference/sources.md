@@ -1,52 +1,62 @@
-# Sources — 2026-07-04
+# Sources — 2026-07-05
 
-Generated: 2026-07-04 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe example.com → HTTP 403)
+Generated: 2026-07-05 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (example.com probe returned 403 → all verification via WebSearch snippets, Tier 2 only)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-03-brief.md (4 URLs loaded)
+Dedup against: articles/2026-07-04-brief.md (4 URLs loaded)
 
-1. **Nine and Microsoft announce Australian-first AI agreement for news media content**
-   - Publisher: Microsoft (Source Asia)
-   - URL: https://news.microsoft.com/source/asia/2026/07/03/nine-microsoft-copilot-agreement/
-   - Published: 2026-07-03 (URL slug + snippet "On July 3, 2026, Nine Entertainment Co and Microsoft announced an agreement…")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/source/asia/2026/07/03/` + snippet "Nine and Microsoft announced" (present-tense on July 3)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host `news.microsoft.com` never appeared in yesterday's set — yesterday was all techcrunch.com)
-   - Verification: Tier 2 — WebSearch snippet from trusted domain `microsoft.com` (news.microsoft.com subdomain)
-   - Summary: Nine Entertainment (Australia's largest media group) and Microsoft signed a first-of-its-kind AI content-licensing pact allowing Microsoft Copilot to reference Nine's journalism during AI searches — Copilot will surface snippets/headlines/summaries and route users back to Nine's mastheads for the full story. Described as Microsoft's first such deal in Asia-Pacific.
+1. **Alibaba reportedly bans employees from using Claude Code**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/
+   - Published: 2026-07-04 (URL slug + search snippet: "reports published on July 4, 2026")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/04/` + snippet "reports published on July 4, 2026"; SCMP + newscord parallel coverage timestamped 2026-07-04/2026-07-05
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday covered Nine × Microsoft licensing, Allianz exuberance, TC glossary, and browser wars — no Alibaba/Claude coverage)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Alibaba is banning employees from using Anthropic's Claude Code starting July 10, ordering deletion of Claude models from company machines. Reports cite a security researcher's claim that Anthropic's tooling contained code for detecting users from China (via timezone + Chinese domains); Anthropic already prohibits Chinese companies from using its models. Alibaba is pushing employees to Qoder / Qwen-based coding tools instead.
 
-2. **AI Productivity Hopes Show 'Exuberance,' Allianz's Subran Says**
+2. **New Google commercial imagines a Declaration of Independence written with help from AI**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/
+   - Published: 2026-07-04 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/04/` — a July-4th tie-in ad naturally lands on the holiday
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; yesterday's TechCrunch stories were glossary + browser wars, unrelated
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Google released a July-4th commercial asking "What if the Founding Fathers had access to Google Workspace?" with the tagline "Group project, but make it 1776." The fictionalised founders use Google's "help me visualize" tool to try out national-seal animals, Gemini takes meeting notes, and the founders consult the chatbot for advice — a marketing signal that Google wants Workspace + Gemini positioned as the everyday collaboration substrate.
+
+3. **Midjourney wants Hollywood studios to reveal the details of their AI usage**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/
+   - Published: 2026-07-04 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/04/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: In the ongoing copyright case brought by Disney, Universal and Warner Bros., Midjourney is now moving to compel the studios themselves to disclose how they internally use AI — flipping the discovery direction of the dispute and turning studios' own AI adoption into potential evidence about industry norms.
+
+4. **Micron Breaks Ground on $9 Billion Plant Expansion in Japan**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-03/ai-productivity-hopes-show-exuberance-allianz-s-subran-says
-   - Published: 2026-07-03 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/news/articles/2026-07-03/` (Bloomberg article-date convention)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (bloomberg.com not in yesterday's set)
-   - Verification: Tier 2 — WebSearch snippet from trusted domain `bloomberg.com`
-   - Summary: Allianz Chief Economist Ludovic Subran, speaking at the Aix-en-Provence Economic Forum, warned that AI's economic impact will be less even than market hype suggests and flagged "psychology" concerns around the AI trade; declined to call it a bubble but said Europe risks failing to reap the "AI dividend" while emerging-market equities look more attractive due to semiconductor demand.
+   - URL: https://www.bloomberg.com/news/articles/2026-07-04/micron-breaks-ground-on-9-billion-western-japan-plant-expansion
+   - Published: 2026-07-04 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-04/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Micron broke ground on a ¥1.5 trillion (~$9.3B) expansion of its Hiroshima-area fab to produce advanced memory including HBM — the high-bandwidth memory that stacks on top of Nvidia AI accelerators. First shipments are expected around summer 2028, tying Japan more deeply into the AI supply chain and signalling that the memory bottleneck is being addressed with multi-year capex, not spot-market fixes.
 
-3. **The only AI glossary you'll need this year**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
-   - Published: 2026-07-03 (URL slug + snippet "TechCrunch published … on July 3, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/03/` (TechCrunch date convention)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (path differs from yesterday's four TechCrunch URLs)
-   - Verification: Tier 2 — WebSearch snippet from trusted domain `techcrunch.com`
-   - Summary: TechCrunch published a plain-English glossary covering the AI vocabulary that has escaped the labs and colonised meetings, pitches, and panels — LLMs, RAG, RLHF, hallucinations, and the rest — aimed at readers who build with, invest in, or simply need to keep up with AI without being trapped by jargon.
-
-4. **The browser wars aren't about search anymore — here are the best alternatives to Chrome and Safari**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/03/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/
-   - Published: 2026-07-03 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/03/` (TechCrunch date convention — a July-3 update/republish of the running roundup)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (path differs from yesterday's four TechCrunch URLs)
-   - Verification: Tier 2 — WebSearch snippet from trusted domain `techcrunch.com`
-   - Summary: TechCrunch updated its running roundup of AI-native browsers competing to unseat Chrome/Safari — the fight has shifted from "whose search results" to "whose AI agent acts on your behalf inside the browser," with Perplexity's Comet, The Browser Company's Dia, Opera's Neon, OpenAI's ChatGPT Atlas, and Ladybird all vying for a slice; Google is responding by welding Gemini deeper into Chrome.
+5. **China Envisions AI, Karaoke and Coffee at Cinemas**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-04/china-envisions-ai-karaoke-and-coffee-at-cinemas
+   - Published: 2026-07-04 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-04/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: New Chinese government guidelines encourage cinemas to move beyond film screenings and add AI agents, karaoke rooms, coffee shops, merchandise stores and licensed products, art exhibitions and pop-ups — a state-level push to fold "AI as physical experience" into the entertainment estate as ticket sales soften.
 
 ## Dropped
 
-- https://www.bloomberg.com/news/articles/2026-07-02/elevenlabs-in-talks-for-tender-offer-at-22-billion-valuation — Filter A (>24h): URL slug 2026-07-02 places the article outside the rolling 24h window from 2026-07-04.
-- https://www.bloomberg.com/news/articles/2026-07-02/china-s-kling-ai-raises-2-billion-to-expand-ai-video-operations — Filter A (>24h): URL slug 2026-07-02 is ~48h old.
-- https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/ — Filter A (>24h): URL slug 2026/07/02 places it outside the rolling window.
-- https://www.theinformation.com/articles/tesla-caps-employee-ai-spend-200-per-week-adoption-push — Filter A ambiguous: date not surfaced in URL slug or snippet timestamp; per SKILL.md 1b-tris ("Date ambiguous / not surfaced → DROP — do not guess"), dropped.
-- https://openai.com/index/previewing-gpt-5-6-sol/ — Filter A ambiguous: URL slug carries no date; "launching … in July" is a month-scale phrase, not a 24h timestamp. Dropped rather than guessed.
+- https://www.blognone.com/node/151060 (โลกกลับทิศ ลือ Alibaba สั่งห้ามพนักงานใช้ Claude Code) — Filter A ambiguous: Blognone URLs don't embed dates, and no explicit timestamp surfaced in search snippet. Content matches the TechCrunch 07/04 Alibaba story (which is included instead), so the topic is not lost.
+- https://www.anthropic.com/news/google-broadcom-partnership-compute — Filter A (>24h): announcement was 2026-04-07 per multiple parallel coverage (CNBC, TechCrunch, Tom's Hardware) — the vendor page shows up on searches but is not fresh reporting.
+- https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/ — Filter A (>24h): 2026-07-02, outside rolling 24h window.
+- https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/ — Filter A (>24h): 2026-07-02.
+- https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/ — Filter A (>24h): 2026-07-02.
+- https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/ — Passed both filters but deprioritised: evergreen "everything to know" explainer, not fresh reporting. Held in reserve.
 
-> Note: 4 items passed both filters this run. Of 9 candidates, 3 failed Filter A (older-than-24h URL slugs), 2 failed Filter A on ambiguous dating, and 0 failed Filter B (yesterday's brief was four TechCrunch URLs; none of today's candidates matched any of them).
+> Note: 5 items passed both filters and were selected. All-international mix this run — no Thai-language source cleared the timestamp bar (Blognone's timestamp was not surfaced in snippets; other Thai outlets returned only 2025 or evergreen 2026 content). Runtime WEBFETCH_BLOCKED, so all verification is Tier 2.
