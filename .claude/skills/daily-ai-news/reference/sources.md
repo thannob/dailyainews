@@ -1,61 +1,68 @@
-# Sources — 2026-07-06
+# Sources — 2026-07-07
 
-Generated: 2026-07-06 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe openai.com → HTTP 403)
+Generated: 2026-07-07 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (WebFetch probe to https://openai.com/blog returned HTTP 403 → Tier 2 only)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-05-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-06-brief.md (5 URLs loaded)
 
-1. **AWS ประกาศหยุดรับลูกค้าใหม่บริการ Mechanical Turk (มีผล 30 ก.ค. 2026)**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151066
-   - Published: per WebSearch snippet dated within last 24h (Blognone node 151066 published alongside a cluster of 2026-07-05 stories; TechCrunch cross-referenced the same story under `/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/`)
-   - FreshnessCheck: ✅ within last 24h — same-day Thai coverage of a story TechCrunch dated 2026-07-05 (URL slug); Blognone node ordinal (151066) sits between 151036 and 151069, matching the July-5 publish cluster
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host blognone.com does not appear in yesterday's set at all)
-   - Verification: Tier 2 — WebSearch snippet (query: `site:blognone.com AI กรกฎาคม 2026`)
-   - Summary: AWS ประกาศหยุดรับลูกค้าใหม่ของ Amazon Mechanical Turk (รวมส่วนที่เชื่อมกับ SageMaker AI) มีผล 30 ก.ค. 2026 — ลูกค้าเดิมใช้งานต่อได้ ไม่มี feature ใหม่ แต่ AWS ระบุว่าจะยังลงทุนด้าน security/availability.
+YESTERDAYS_URLS:
+- https://www.blognone.com/node/151066
+- https://www.bloomberg.com/news/articles/2026-07-05/ai-poses-biggest-security-challenge-of-decade-uk-s-cooper-warns
+- https://www.bloomberg.com/news/articles/2026-07-05/sk-hynix-seeks-access-to-ai-investors-in-29-billion-us-listing
+- https://www.bloomberg.com/news/articles/2026-07-05/nvidia-supplier-hon-hai-reports-surging-sales-on-solid-ai-demand
+- https://www.bloomberg.com/news/articles/2026-07-05/hyundai-motor-showcases-humanoid-at-world-cup-in-robotics-push
 
-2. **AI Poses Biggest Security Challenge of Decade, UK's Cooper Warns**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/ai-poses-biggest-security-challenge-of-decade-uk-s-cooper-warns
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were `/2026-07-04/micron-...` and `/2026-07-04/china-...` — both different date and different story)
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Yvette Cooper รัฐมนตรีต่างประเทศสหราชอาณาจักร เตือนว่า AI อาจกลายเป็น "greatest security challenge of the next decade" และเรียกร้องความร่วมมือระหว่างประเทศเพื่อสร้าง guardrails ควบคุมความเสี่ยง.
+1. **Microsoft lays off nearly 5,000 employees across Xbox, commercial sales — AI capex pivot**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/
+   - Published: 2026-07-06 (URL slug + WebSearch snippet: "Microsoft cut around 4,800 roles, or 2.1% of its global workforce, on Monday (July 6, 2026)")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/06/` + snippet "on Monday (July 6, 2026)"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host techcrunch.com not in yesterday's set)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Microsoft announced 4,800 layoffs (~2.1% of global workforce) on July 6, 2026. Xbox division hit hardest with ~1,600 immediate cuts and ~3,200 total through FY27. The move is explicitly tied to redirecting spending toward AI infrastructure — including the new "Frontier Company" business unit backed by a $2.5B investment focused on enterprise AI deployments with forward-deployed engineers. Xbox CEO Asha Sharma called it "the most significant restructure in Xbox history."
 
-3. **SK Hynix Seeks Access to AI Investors in $29 Billion US Listing**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/sk-hynix-seeks-access-to-ai-investors-in-29-billion-us-listing
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+2. **Vercel CEO Guillermo Rauch on the fight to split off models from agents**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/
+   - Published: 2026-07-06 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/06/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: SK Hynix เตรียม US listing มูลค่า ~$29B ซึ่งอาจกลายเป็น first-time share sale ต่างประเทศที่ใหญ่สุดในประวัติศาสตร์ — มุ่งเข้าถึง AI investors ที่ไล่ล่า memory chips (โดยเฉพาะ HBM) สำหรับ AI compute.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: In a post-ShipNYC interview on July 6, 2026, Vercel CEO Guillermo Rauch discussed a framework called "Eve" where agents are described via natural-language instructions and skills, and Vercel Sandbox which policy-cages agents from unauthorized data access. Vercel now sees 6 million deployments per day (half triggered by coding agents) and more than 1 trillion tokens flowing through its AI gateway daily. Rauch framed the industry direction as decoupling models from agents.
 
-4. **Nvidia Supplier Hon Hai's Sales Beat on Continued AI Demand**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/nvidia-supplier-hon-hai-reports-surging-sales-on-solid-ai-demand
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+3. **Reddit is using LLMs to solve a problem LLMs largely created**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created/
+   - Published: 2026-07-06 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/06/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Hon Hai (Foxconn) พาร์ทเนอร์ประกอบเซิร์ฟเวอร์ Nvidia รายงานยอดขายไตรมาสเพิ่มขึ้น 40% สูงกว่าคาด และระบุว่า AI demand ยังเติบโตต่อเนื่อง — สัญญาณต่อเนื่องกับ HBM/AI hardware supply.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Reddit deployed LLM-based tooling to detect subtle coordinated patterns of fake behaviour and artificial hype that older rule-based systems missed. The platform now blocks 23 million spam views per day, catches ~25,000 new spam posts and comments per day, and reduced user exposure to spam by 20% Q1-over-prior-Q. Industry framing: platforms fighting AI-generated content with AI-based detection, but experts warn human moderation remains essential.
 
-5. **Hyundai Motor Showcases Humanoid at World Cup in Robotics Push**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/hyundai-motor-showcases-humanoid-at-world-cup-in-robotics-push
-   - Published: 2026-07-05 (per URL slug; snippet ระบุ event ที่ FIFA World Cup 2026 Round of 16 Brazil vs Norway วันที่ 5 ก.ค.)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+4. **If you use Google, you're training its AI. Here's how to opt out.**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out/
+   - Published: 2026-07-06 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/06/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Hyundai Atlas humanoid ส่งลูกบอล FIFA World Cup 2026 ให้ผู้ตัดสิน Ismail Elfath ก่อนครึ่งหลังนัด Brazil vs Norway (Round of 16) ที่ New York New Jersey Stadium 5 ก.ค. 2026 — แสดง embodied AI/robotics ต่อสาธารณะระดับ World Cup.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: A recent under-the-radar change to Google Search privacy settings (announced June via customer email) means images, files, audio, and video recordings uploaded via Google Lens, Search, and Gemini Live are used to train Google AI models by default. The update introduced two new settings — "Search Services History" and "Personalized Recommendations" — split off from the previous Web & App Activity control, so users who opted out earlier no longer have that opt-out apply. Users must navigate multiple settings locations to fully opt out.
+
+5. **AI Promises to Transform Robotics, Just Not Yet — Bloomberg Opinion**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/opinion/articles/2026-07-06/ai-promises-to-transform-robotics-just-not-yet
+   - Published: 2026-07-06 (URL slug + snippet "On July 6, 2026, Bloomberg published an opinion piece by Thomas Black")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-06/` + snippet date confirmation
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (this URL is opinion column; yesterday's Bloomberg URLs were all `/news/articles/2026-07-05/…`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Bloomberg Opinion columnist Thomas Black argues that AI holds out real hope for reviving the low-growth US industrial robot industry — especially collaborative robots that can safely work around humans — but the productivity inflection has not yet arrived. Framing: hype has run ahead of factory-floor deployment; the software and hardware co-evolution is still catching up to what press releases promised.
 
 ## Dropped
+- https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/ — Filter A (>24h): URL slug `/2026/07/02/` is 5 days old
+- https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/ — Filter A (>24h): URL slug `/2026/07/04/` is 3 days old
+- https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/ — Filter A (>24h): URL slug `/2026/07/04/` is 3 days old
+- https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/ — passes both filters technically, but same topic as yesterday's SK Hynix Bloomberg piece; skipped to preserve topic diversity
+- https://www.blognone.com/node/151060 (Blognone Alibaba/Claude Code) — Filter A (ambiguous/likely >24h): node ID 151060 is lower than yesterday's node/151066 which was published July 6, suggesting this article predates that; date not surfaced explicitly in search snippet
+- https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/ — passes both filters but topically subsumed by story #1 (Microsoft); skipped to avoid double-coverage
 
-- https://www.blognone.com/node/151036 — Filter A (>24h): "Fable 5 restoration story dated ~1 ก.ค. per snippet, outside rolling 24h from 2026-07-06"
-- https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/ — passed both filters; deprioritized in favor of Blognone Thai coverage of the same event (item #1) to satisfy the Thai-source mix
-- https://www.bloomberg.com/news/features/2026-07-05/samsung-s-ai-bonus-deal-a-short-lived-victory-for-millennial-union-leader — passed both filters; labor/HR angle deprioritized for angle diversity
-- https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/ — passed both filters; deprioritized to keep 5 stories clean on angle diversity
-- https://techcrunch.com/2026/07/05/what-is-bending-spoons-everything-to-know-about-aols-acquirer/ — AI-adjacent (revenue-per-employee lift driven by AI) but the story itself is primarily IPO/M&A; deprioritized
-
-> Note: 5 items selected this run. Of 10 candidates that passed both filters, 5 were dropped for angle-diversity / Thai-source-mix reasons. 1 additional candidate failed Filter A (>24h). 0 failed Filter B — yesterday's 5 URLs (4× TechCrunch 2026-07-04 slugs + 2× Bloomberg 2026-07-04 slugs) did not overlap with any of today's 2026-07-05-slug candidates.
+> Note: 5 items passed both filters this run. Of ~9 candidates surfaced, 3 failed Filter A (older than 24h), 1 failed Filter B via topic-overlap (SK Hynix), 1 was date-ambiguous (Blognone Alibaba), 1 was subsumed by another selected story (running layoff list).
