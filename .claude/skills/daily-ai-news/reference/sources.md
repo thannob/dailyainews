@@ -1,61 +1,57 @@
-# Sources — 2026-07-06
+# Sources — 2026-07-08
 
-Generated: 2026-07-06 (Asia/Bangkok)
+Generated: 2026-07-08 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED (probe openai.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-05-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-07-brief.md (5 URLs loaded)
 
-1. **AWS ประกาศหยุดรับลูกค้าใหม่บริการ Mechanical Turk (มีผล 30 ก.ค. 2026)**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151066
-   - Published: per WebSearch snippet dated within last 24h (Blognone node 151066 published alongside a cluster of 2026-07-05 stories; TechCrunch cross-referenced the same story under `/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/`)
-   - FreshnessCheck: ✅ within last 24h — same-day Thai coverage of a story TechCrunch dated 2026-07-05 (URL slug); Blognone node ordinal (151066) sits between 151036 and 151069, matching the July-5 publish cluster
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host blognone.com does not appear in yesterday's set at all)
-   - Verification: Tier 2 — WebSearch snippet (query: `site:blognone.com AI กรกฎาคม 2026`)
-   - Summary: AWS ประกาศหยุดรับลูกค้าใหม่ของ Amazon Mechanical Turk (รวมส่วนที่เชื่อมกับ SageMaker AI) มีผล 30 ก.ค. 2026 — ลูกค้าเดิมใช้งานต่อได้ ไม่มี feature ใหม่ แต่ AWS ระบุว่าจะยังลงทุนด้าน security/availability.
+1. **Claude Cowork expands to mobile and web — coding-agent wars spill into the office**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/
+   - Published: 2026-07-07 (URL slug + snippet "starting Tuesday" — July 7 was Tuesday)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/07/` and snippet "starting Tuesday it is available on web and mobile for Max subscribers"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday cited different TechCrunch slugs — all dated `/2026/07/06/`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Anthropic's Claude Cowork — a Claude Code-style agent for general knowledge work that launched as a desktop app in January — is now available on web and mobile for Max subscribers, with cloud-based background processing so tasks continue running when devices are offline. Anthropic released usage data showing more than 90% of Cowork work is not software development; about half is business operations or content creation.
 
-2. **AI Poses Biggest Security Challenge of Decade, UK's Cooper Warns**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/ai-poses-biggest-security-challenge-of-decade-uk-s-cooper-warns
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were `/2026-07-04/micron-...` and `/2026-07-04/china-...` — both different date and different story)
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Yvette Cooper รัฐมนตรีต่างประเทศสหราชอาณาจักร เตือนว่า AI อาจกลายเป็น "greatest security challenge of the next decade" และเรียกร้องความร่วมมือระหว่างประเทศเพื่อสร้าง guardrails ควบคุมความเสี่ยง.
+2. **Microsoft joins AI cost-cutting trend by relying more on its own MAI models**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/
+   - Published: 2026-07-07 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/07/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday covered Microsoft layoffs + Frontier Company from `/2026/07/06/` — this is a distinct story about MAI in-house models in Excel/Word)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Microsoft has begun deploying a cost-savings strategy by relying less on software from OpenAI and Anthropic and instead deploying its own in-house models. Microsoft has begun using its homemade MAI models to respond to a certain percentage of user prompts in Excel and Word.
 
-3. **SK Hynix Seeks Access to AI Investors in $29 Billion US Listing**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/sk-hynix-seeks-access-to-ai-investors-in-29-billion-us-listing
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+3. **AI law startup Norm raises $120M, hits $1.2B unicorn valuation**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/
+   - Published: 2026-07-07 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/07/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: SK Hynix เตรียม US listing มูลค่า ~$29B ซึ่งอาจกลายเป็น first-time share sale ต่างประเทศที่ใหญ่สุดในประวัติศาสตร์ — มุ่งเข้าถึง AI investors ที่ไล่ล่า memory chips (โดยเฉพาะ HBM) สำหรับ AI compute.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: AI law startup Norm has raised $120 million in a Series C funding round led by Khosla Ventures, valuing the almost three-year-old startup at $1.2 billion.
 
-4. **Nvidia Supplier Hon Hai's Sales Beat on Continued AI Demand**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/nvidia-supplier-hon-hai-reports-surging-sales-on-solid-ai-demand
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+4. **Why the rise of open source AI isn't hurting Anthropic ... yet**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/
+   - Published: 2026-07-07 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/07/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Hon Hai (Foxconn) พาร์ทเนอร์ประกอบเซิร์ฟเวอร์ Nvidia รายงานยอดขายไตรมาสเพิ่มขึ้น 40% สูงกว่าคาด และระบุว่า AI demand ยังเติบโตต่อเนื่อง — สัญญาณต่อเนื่องกับ HBM/AI hardware supply.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Anthropic still accounts for more than half of the overall AI spend on Vercel's platform, despite the rise of open source models like DeepSeek. Related color from the same reporting cluster: GLM 5.2 landed within a percentage point of Anthropic's Opus 4.8 on a closely watched agentic benchmark at roughly a fifth of the cost; the share of tokens U.S. companies use on Chinese AI models via OpenRouter has sat above 30% each week since Feb. 8 and has run as high as 46%.
 
-5. **Hyundai Motor Showcases Humanoid at World Cup in Robotics Push**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/hyundai-motor-showcases-humanoid-at-world-cup-in-robotics-push
-   - Published: 2026-07-05 (per URL slug; snippet ระบุ event ที่ FIFA World Cup 2026 Round of 16 Brazil vs Norway วันที่ 5 ก.ค.)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+5. **Meta rolls out Muse Image — an agentic AI image generator built by Meta Superintelligence Labs**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/
+   - Published: 2026-07-07 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/07/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Hyundai Atlas humanoid ส่งลูกบอล FIFA World Cup 2026 ให้ผู้ตัดสิน Ismail Elfath ก่อนครึ่งหลังนัด Brazil vs Norway (Round of 16) ที่ New York New Jersey Stadium 5 ก.ค. 2026 — แสดง embodied AI/robotics ต่อสาธารณะระดับ World Cup.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Meta has unveiled Muse Image (code-named Mango), produced by Meta Superintelligence Labs — described as its most advanced image generation model yet. Instead of directly mapping prompts to images, Muse Image operates as an agent: it invokes search and coding tools to improve accuracy, self-refines its generations, and improves through test-time compute scaling. Rolling out free via the Meta AI app, Instagram Stories, and WhatsApp; opening to advertisers via Advantage+ in the coming weeks. Muse Video is being previewed.
 
 ## Dropped
+- https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html — Publisher (CNBC) not on trusted-sources.md allow-list. The same GLM 5.2 / DeepSeek data was captured via the TechCrunch open-source-vs-Anthropic story instead.
+- Blognone Copilot Cowork / Fable 5 items — URL slugs are node IDs (no date), and no snippet timestamp resolvable to the 24h window was surfaced; can't verify freshness precisely enough to include.
 
-- https://www.blognone.com/node/151036 — Filter A (>24h): "Fable 5 restoration story dated ~1 ก.ค. per snippet, outside rolling 24h from 2026-07-06"
-- https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/ — passed both filters; deprioritized in favor of Blognone Thai coverage of the same event (item #1) to satisfy the Thai-source mix
-- https://www.bloomberg.com/news/features/2026-07-05/samsung-s-ai-bonus-deal-a-short-lived-victory-for-millennial-union-leader — passed both filters; labor/HR angle deprioritized for angle diversity
-- https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/ — passed both filters; deprioritized to keep 5 stories clean on angle diversity
-- https://techcrunch.com/2026/07/05/what-is-bending-spoons-everything-to-know-about-aols-acquirer/ — AI-adjacent (revenue-per-employee lift driven by AI) but the story itself is primarily IPO/M&A; deprioritized
-
-> Note: 5 items selected this run. Of 10 candidates that passed both filters, 5 were dropped for angle-diversity / Thai-source-mix reasons. 1 additional candidate failed Filter A (>24h). 0 failed Filter B — yesterday's 5 URLs (4× TechCrunch 2026-07-04 slugs + 2× Bloomberg 2026-07-04 slugs) did not overlap with any of today's 2026-07-05-slug candidates.
+> Note: 5 items passed both filters this run. Of 6 candidates, 0 failed Filter A, 0 failed Filter B, and 1 was dropped because its publisher is not on the trusted-sources allow-list. All 5 selected are TechCrunch — Filter B passed because yesterday's TechCrunch URLs were all `/2026/07/06/` slugs; today's are all `/2026/07/07/` slugs (different articles).
