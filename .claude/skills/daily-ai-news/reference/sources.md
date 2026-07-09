@@ -1,61 +1,60 @@
-# Sources — 2026-07-06
+# Sources — 2026-07-09
 
-Generated: 2026-07-06 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe openai.com → HTTP 403)
+Generated: 2026-07-09 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (example.com probe → 403; all verification via WebSearch snippets from trusted-source domains)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-05-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-08-brief.md (5 URLs loaded)
 
-1. **AWS ประกาศหยุดรับลูกค้าใหม่บริการ Mechanical Turk (มีผล 30 ก.ค. 2026)**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151066
-   - Published: per WebSearch snippet dated within last 24h (Blognone node 151066 published alongside a cluster of 2026-07-05 stories; TechCrunch cross-referenced the same story under `/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/`)
-   - FreshnessCheck: ✅ within last 24h — same-day Thai coverage of a story TechCrunch dated 2026-07-05 (URL slug); Blognone node ordinal (151066) sits between 151036 and 151069, matching the July-5 publish cluster
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host blognone.com does not appear in yesterday's set at all)
-   - Verification: Tier 2 — WebSearch snippet (query: `site:blognone.com AI กรกฎาคม 2026`)
-   - Summary: AWS ประกาศหยุดรับลูกค้าใหม่ของ Amazon Mechanical Turk (รวมส่วนที่เชื่อมกับ SageMaker AI) มีผล 30 ก.ค. 2026 — ลูกค้าเดิมใช้งานต่อได้ ไม่มี feature ใหม่ แต่ AWS ระบุว่าจะยังลงทุนด้าน security/availability.
+1. **OpenAI เปิดตัว GPT-Live โมเดลเสียงรุ่นใหม่แบบ full-duplex**
+   - Publisher: OpenAI / TechCrunch
+   - URL: https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/
+   - Published: 2026-07-08 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/07/08/` matches Asia/Bangkok 24h window
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (path is different from 2026-07-07 TechCrunch pieces)
+   - Verification: Tier 2 — WebSearch snippet from techcrunch.com (allow-listed) + companion OpenAI blog https://openai.com/index/introducing-gpt-live/
+   - Summary: OpenAI released GPT-Live-1 and GPT-Live-1 mini — full-duplex voice models that can listen and speak simultaneously, use backchanneling ("mhmm", "yeah") and handle turn-taking; GPT-Live-1 mini replaces the default Advanced Voice Mode in ChatGPT, with GPT-Live-1 available to paid tiers.
 
-2. **AI Poses Biggest Security Challenge of Decade, UK's Cooper Warns**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/ai-poses-biggest-security-challenge-of-decade-uk-s-cooper-warns
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were `/2026-07-04/micron-...` and `/2026-07-04/china-...` — both different date and different story)
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Yvette Cooper รัฐมนตรีต่างประเทศสหราชอาณาจักร เตือนว่า AI อาจกลายเป็น "greatest security challenge of the next decade" และเรียกร้องความร่วมมือระหว่างประเทศเพื่อสร้าง guardrails ควบคุมความเสี่ยง.
-
-3. **SK Hynix Seeks Access to AI Investors in $29 Billion US Listing**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/sk-hynix-seeks-access-to-ai-investors-in-29-billion-us-listing
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+2. **SpaceXAI x Cursor เปิดตัว Grok 4.5 — โมเดลร่วมสาย finance / legal / coding**
+   - Publisher: TechCrunch / Bloomberg
+   - URL: https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/
+   - Published: 2026-07-08 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/07/08/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: SK Hynix เตรียม US listing มูลค่า ~$29B ซึ่งอาจกลายเป็น first-time share sale ต่างประเทศที่ใหญ่สุดในประวัติศาสตร์ — มุ่งเข้าถึง AI investors ที่ไล่ล่า memory chips (โดยเฉพาะ HBM) สำหรับ AI compute.
+   - Verification: Tier 2 — WebSearch snippet from techcrunch.com + Bloomberg https://www.bloomberg.com/news/articles/2026-07-08/spacexai-cursor-unveil-grok-ai-model-for-legal-finance-tasks
+   - Summary: SpaceXAI released Grok 4.5, described by Musk as an "Opus-class" workhorse for coding, app-building, office/clerical work, research and writing; it's the first joint SpaceXAI × Cursor model since SpaceX's $60B acquisition of Cursor, positioned against Anthropic and OpenAI; claim: "twice greater token efficiency" vs. other leading models.
 
-4. **Nvidia Supplier Hon Hai's Sales Beat on Continued AI Demand**
+3. **Mistral AI ปล่อย Robostral Navigate — โมเดลนำทางหุ่นยนต์จากกล้องตัวเดียว**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/nvidia-supplier-hon-hai-reports-surging-sales-on-solid-ai-demand
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+   - URL: https://www.bloomberg.com/news/articles/2026-07-08/mistral-ai-releases-robotics-model-to-support-physical-ai-push
+   - Published: 2026-07-08 (per URL slug `/2026-07-08/`)
+   - FreshnessCheck: ✅ within last 24h — URL slug 2026-07-08
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Hon Hai (Foxconn) พาร์ทเนอร์ประกอบเซิร์ฟเวอร์ Nvidia รายงานยอดขายไตรมาสเพิ่มขึ้น 40% สูงกว่าคาด และระบุว่า AI demand ยังเติบโตต่อเนื่อง — สัญญาณต่อเนื่องกับ HBM/AI hardware supply.
+   - Verification: Tier 2 — WebSearch snippet from bloomberg.com (allow-listed)
+   - Summary: Mistral AI released Robostral Navigate, a robotics navigation model that lets robots move through complex environments using a single camera and basic natural-language prompts — part of Mistral's push into physical/embodied AI.
 
-5. **Hyundai Motor Showcases Humanoid at World Cup in Robotics Push**
+4. **จีนอนุมัติให้บริษัท AI ในประเทศซื้อชิป Nvidia H200 ได้ในจำนวนจำกัด**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/hyundai-motor-showcases-humanoid-at-world-cup-in-robotics-push
-   - Published: 2026-07-05 (per URL slug; snippet ระบุ event ที่ FIFA World Cup 2026 Round of 16 Brazil vs Norway วันที่ 5 ก.ค.)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+   - URL: https://www.bloomberg.com/news/articles/2026-07-08/china-to-let-ai-firms-buy-nvidia-h200-chips-information-says
+   - Published: 2026-07-08 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug 2026-07-08
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Hyundai Atlas humanoid ส่งลูกบอล FIFA World Cup 2026 ให้ผู้ตัดสิน Ismail Elfath ก่อนครึ่งหลังนัด Brazil vs Norway (Round of 16) ที่ New York New Jersey Stadium 5 ก.ค. 2026 — แสดง embodied AI/robotics ต่อสาธารณะระดับ World Cup.
+   - Verification: Tier 2 — WebSearch snippet from bloomberg.com (allow-listed)
+   - Summary: Chinese officials informed top AI companies — Alibaba, ByteDance, DeepSeek — that they'll be allowed to purchase limited quantities of Nvidia H200 chips; firms must justify quantity and use case for approval. Follows the earlier Trump-era 25% surcharge deal and the ~75,000-unit-per-customer cap discussion.
+
+5. **Tencent เปิด Xiaowei — AI agent วิ่งงานข้ามหลายล้านแอปในระบบ WeChat**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-08/tencent-wechat-ai-agent-shows-promise-in-super-app-fight-review
+   - Published: 2026-07-08 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug 2026-07-08
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet from bloomberg.com (allow-listed)
+   - Summary: Tencent unveiled Xiaowei, a prototype AI agent designed to run errands across the WeChat ecosystem — spanning millions of mini-apps — positioning it in the super-app-agent race against ByteDance/Doubao and Alibaba/Qwen.
 
 ## Dropped
+- https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/ — passed both filters but selected 5 already; strong runner-up (Series A funding, agent infrastructure).
+- https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/ — passed both filters; also runner-up (AI chip funding).
+- https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/ — passed both filters; runner-up (AI-glasses privacy).
+- https://www.blognone.com/node/151093 — Thai coverage of OpenAI GPT-5.6 general rollout; DROPPED because Blognone URLs use numeric node ids and snippet did not surface a machine-readable timestamp within 24h — cannot satisfy Filter A hard rule without guessing.
+- https://www.blognone.com/node/151076 — Thai coverage of TeraWulf–Anthropic 401MW/20-year lease; DROPPED for same reason (numeric node id, no dated snippet).
 
-- https://www.blognone.com/node/151036 — Filter A (>24h): "Fable 5 restoration story dated ~1 ก.ค. per snippet, outside rolling 24h from 2026-07-06"
-- https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/ — passed both filters; deprioritized in favor of Blognone Thai coverage of the same event (item #1) to satisfy the Thai-source mix
-- https://www.bloomberg.com/news/features/2026-07-05/samsung-s-ai-bonus-deal-a-short-lived-victory-for-millennial-union-leader — passed both filters; labor/HR angle deprioritized for angle diversity
-- https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/ — passed both filters; deprioritized to keep 5 stories clean on angle diversity
-- https://techcrunch.com/2026/07/05/what-is-bending-spoons-everything-to-know-about-aols-acquirer/ — AI-adjacent (revenue-per-employee lift driven by AI) but the story itself is primarily IPO/M&A; deprioritized
-
-> Note: 5 items selected this run. Of 10 candidates that passed both filters, 5 were dropped for angle-diversity / Thai-source-mix reasons. 1 additional candidate failed Filter A (>24h). 0 failed Filter B — yesterday's 5 URLs (4× TechCrunch 2026-07-04 slugs + 2× Bloomberg 2026-07-04 slugs) did not overlap with any of today's 2026-07-05-slug candidates.
+> Note: 5 items passed both filters this run. Of ~9 fresh (24h) candidates surfaced, 0 failed Filter A, 0 failed Filter B; 2 Thai candidates dropped because snippets lacked verifiable 24h timestamps (URL slug format is opaque). Runtime WEBFETCH_BLOCKED forced Tier 2 for all items.
