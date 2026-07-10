@@ -1,61 +1,59 @@
-# Sources — 2026-07-06
+# Sources — 2026-07-10
 
-Generated: 2026-07-06 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe openai.com → HTTP 403)
+Generated: 2026-07-10 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-05-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-09-brief.md (5 URLs loaded)
 
-1. **AWS ประกาศหยุดรับลูกค้าใหม่บริการ Mechanical Turk (มีผล 30 ก.ค. 2026)**
+1. **OpenAI เปิดใช้งานทั่วไป GPT-5.6 (Sol / Terra / Luna) หลัง 13 วันของ preview ที่รัฐบาลสหรัฐคุม**
    - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151066
-   - Published: per WebSearch snippet dated within last 24h (Blognone node 151066 published alongside a cluster of 2026-07-05 stories; TechCrunch cross-referenced the same story under `/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/`)
-   - FreshnessCheck: ✅ within last 24h — same-day Thai coverage of a story TechCrunch dated 2026-07-05 (URL slug); Blognone node ordinal (151066) sits between 151036 and 151069, matching the July-5 publish cluster
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host blognone.com does not appear in yesterday's set at all)
-   - Verification: Tier 2 — WebSearch snippet (query: `site:blognone.com AI กรกฎาคม 2026`)
-   - Summary: AWS ประกาศหยุดรับลูกค้าใหม่ของ Amazon Mechanical Turk (รวมส่วนที่เชื่อมกับ SageMaker AI) มีผล 30 ก.ค. 2026 — ลูกค้าเดิมใช้งานต่อได้ ไม่มี feature ใหม่ แต่ AWS ระบุว่าจะยังลงทุนด้าน security/availability.
+   - URL: https://www.blognone.com/node/151093
+   - Published: 2026-07-09 (Thai coverage of same-day US GA)
+   - FreshnessCheck: ✅ within last 24h — search result explicitly confirms "OpenAI made GPT-5.6 generally available on July 9, 2026" and Blognone headline confirms Thursday GA
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's OpenAI story was TechCrunch GPT-Live voice model, not GPT-5.6)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: OpenAI ปล่อยตระกูล GPT-5.6 สู่การใช้งานทั่วไปในวันพฤหัสบดี 9 ก.ค. 2026 หลัง 13 วันของ preview ที่จำกัดกลุ่ม 20 องค์กรที่รัฐบาลสหรัฐอนุมัติ. 3 รุ่นแบ่งตามภาระงาน: Sol (flagship) / Terra (intermediate) / Luna (budget). GPT-5.6 Sol Ultra นำ Terminal-Bench 2.1 ที่ 91.9%
 
-2. **AI Poses Biggest Security Challenge of Decade, UK's Cooper Warns**
+2. **Meta เปิดตัว Muse Spark 1.1 พร้อม API แบบเสียเงินครั้งแรก — เข้าตลาด agentic coding**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/ai-poses-biggest-security-challenge-of-decade-uk-s-cooper-warns
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were `/2026-07-04/micron-...` and `/2026-07-04/china-...` — both different date and different story)
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Yvette Cooper รัฐมนตรีต่างประเทศสหราชอาณาจักร เตือนว่า AI อาจกลายเป็น "greatest security challenge of the next decade" และเรียกร้องความร่วมมือระหว่างประเทศเพื่อสร้าง guardrails ควบคุมความเสี่ยง.
+   - URL: https://www.bloomberg.com/news/articles/2026-07-09/meta-starts-charging-for-ai-with-muse-spark-1-1-agentic-model
+   - Published: 2026-07-09
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026-07-09/` + Bloomberg confirmed July 9 launch
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (no Meta story yesterday)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Meta เปิดตัว Muse Spark 1.1 เป็น multimodal agentic-coding model แบบ closed-weights ตัวแรกที่ Meta เก็บเงินนักพัฒนา. ราคา $1.25/M input + $4.25/M output tokens (ต่ำกว่า Claude Opus 4.8 และ GPT-5.5 มาก) พร้อม $20 free credit. API รองรับทั้ง OpenAI SDK และ Anthropic Messages format, base URL `api.meta.ai/v1`, model name `muse-spark-1.1`. Public preview US-only
 
-3. **SK Hynix Seeks Access to AI Investors in $29 Billion US Listing**
+3. **OpenAI เปิด ChatGPT Work — agent ทำ document/spreadsheet/slide/web-app หลายชั่วโมงต่อเนื่อง**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/sk-hynix-seeks-access-to-ai-investors-in-29-billion-us-listing
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+   - URL: https://www.bloomberg.com/news/articles/2026-07-09/openai-unveils-chatgpt-work-agent-to-field-tasks-for-hours
+   - Published: 2026-07-09
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026-07-09/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's OpenAI story was GPT-Live voice)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: OpenAI เปิด ChatGPT Work — agent ที่ออกแบบให้จัดการงาน document, spreadsheet, presentation, และ web application ต่อเนื่องหลายชั่วโมง เจาะกลุ่ม knowledge worker/enterprise. Launch พร้อม GPT-5.6 GA
+
+4. **Google เริ่มแสดง disclosure "ad นี้ทำด้วย AI" ในทุกโฆษณาที่ใช้ AI สร้าง/แก้ไข**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/
+   - Published: 2026-07-09
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/07/09/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: SK Hynix เตรียม US listing มูลค่า ~$29B ซึ่งอาจกลายเป็น first-time share sale ต่างประเทศที่ใหญ่สุดในประวัติศาสตร์ — มุ่งเข้าถึง AI investors ที่ไล่ล่า memory chips (โดยเฉพาะ HBM) สำหรับ AI compute.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Google เพิ่มเมนู "How this ad was made" ในโฆษณาบนแพลตฟอร์ม เพื่อระบุว่าโฆษณาถูก **สร้างหรือแก้ไขด้วย AI** หรือไม่. เป็นระบบ transparency ครั้งใหญ่ระดับ ad network ท่ามกลางกระแส generative-ad ปี 2026
 
-4. **Nvidia Supplier Hon Hai's Sales Beat on Continued AI Demand**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/nvidia-supplier-hon-hai-reports-surging-sales-on-solid-ai-demand
-   - Published: 2026-07-05 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
+5. **Ollama ระดมทุน Series B $65M — 8.9M developers ต่อเดือน, ใช้ใน 85% ของ Fortune 500**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/
+   - Published: 2026-07-09
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/07/09/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Hon Hai (Foxconn) พาร์ทเนอร์ประกอบเซิร์ฟเวอร์ Nvidia รายงานยอดขายไตรมาสเพิ่มขึ้น 40% สูงกว่าคาด และระบุว่า AI demand ยังเติบโตต่อเนื่อง — สัญญาณต่อเนื่องกับ HBM/AI hardware supply.
-
-5. **Hyundai Motor Showcases Humanoid at World Cup in Robotics Push**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-05/hyundai-motor-showcases-humanoid-at-world-cup-in-robotics-push
-   - Published: 2026-07-05 (per URL slug; snippet ระบุ event ที่ FIFA World Cup 2026 Round of 16 Brazil vs Norway วันที่ 5 ก.ค.)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-05/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (query: `site:bloomberg.com AI July 5 2026`)
-   - Summary: Hyundai Atlas humanoid ส่งลูกบอล FIFA World Cup 2026 ให้ผู้ตัดสิน Ismail Elfath ก่อนครึ่งหลังนัด Brazil vs Norway (Round of 16) ที่ New York New Jersey Stadium 5 ก.ค. 2026 — แสดง embodied AI/robotics ต่อสาธารณะระดับ World Cup.
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Ollama ปิดรอบ Series B $65M นำโดย Theory Ventures (ร่วมโดย Benchmark, 8VC, Y Combinator, Pace Capital, 49 Palms, GTMFund). Total raised = $88M. 8.9M developers/เดือน, 67,000+ integrations, ใช้งานใน 85% ของ Fortune 500 (รวม gov / healthcare / finance) ด้วยทีมเพียง 14 คน. ผู้ก่อตั้ง (Michael Chiang, Jeffrey Morgan) เคยสร้าง Kitematic ที่กลายเป็น Docker Desktop
 
 ## Dropped
 
-- https://www.blognone.com/node/151036 — Filter A (>24h): "Fable 5 restoration story dated ~1 ก.ค. per snippet, outside rolling 24h from 2026-07-06"
-- https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/ — passed both filters; deprioritized in favor of Blognone Thai coverage of the same event (item #1) to satisfy the Thai-source mix
-- https://www.bloomberg.com/news/features/2026-07-05/samsung-s-ai-bonus-deal-a-short-lived-victory-for-millennial-union-leader — passed both filters; labor/HR angle deprioritized for angle diversity
-- https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/ — passed both filters; deprioritized to keep 5 stories clean on angle diversity
-- https://techcrunch.com/2026/07/05/what-is-bending-spoons-everything-to-know-about-aols-acquirer/ — AI-adjacent (revenue-per-employee lift driven by AI) but the story itself is primarily IPO/M&A; deprioritized
+- https://www.anthropic.com/news/google-broadcom-partnership-compute — Filter A (>24h): Search results explicitly say partnership was "announced in early April 2026 (not July 9)" — 3-month-old news being re-surfaced by search. Drop.
+- https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/ — considered but deprioritized in favor of product/market moves for the 5 slots.
+- https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/ — deprioritized in favor of the two OpenAI product announcements already selected.
 
-> Note: 5 items selected this run. Of 10 candidates that passed both filters, 5 were dropped for angle-diversity / Thai-source-mix reasons. 1 additional candidate failed Filter A (>24h). 0 failed Filter B — yesterday's 5 URLs (4× TechCrunch 2026-07-04 slugs + 2× Bloomberg 2026-07-04 slugs) did not overlap with any of today's 2026-07-05-slug candidates.
+> Note: 5 items passed both filters this run. Anthropic-Broadcom partnership failed Filter A (April 2026 story). No candidates failed Filter B (yesterday covered a distinct set of stories).
