@@ -1,59 +1,57 @@
-# Sources — 2026-07-10
+# Sources — 2026-07-11
 
-Generated: 2026-07-10 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-07-11 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe https://example.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-09-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-10-brief.md (5 URLs loaded)
 
-1. **OpenAI เปิดใช้งานทั่วไป GPT-5.6 (Sol / Terra / Luna) หลัง 13 วันของ preview ที่รัฐบาลสหรัฐคุม**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151093
-   - Published: 2026-07-09 (Thai coverage of same-day US GA)
-   - FreshnessCheck: ✅ within last 24h — search result explicitly confirms "OpenAI made GPT-5.6 generally available on July 9, 2026" and Blognone headline confirms Thursday GA
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's OpenAI story was TechCrunch GPT-Live voice model, not GPT-5.6)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI ปล่อยตระกูล GPT-5.6 สู่การใช้งานทั่วไปในวันพฤหัสบดี 9 ก.ค. 2026 หลัง 13 วันของ preview ที่จำกัดกลุ่ม 20 องค์กรที่รัฐบาลสหรัฐอนุมัติ. 3 รุ่นแบ่งตามภาระงาน: Sol (flagship) / Terra (intermediate) / Luna (budget). GPT-5.6 Sol Ultra นำ Terminal-Bench 2.1 ที่ 91.9%
-
-2. **Meta เปิดตัว Muse Spark 1.1 พร้อม API แบบเสียเงินครั้งแรก — เข้าตลาด agentic coding**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-09/meta-starts-charging-for-ai-with-muse-spark-1-1-agentic-model
-   - Published: 2026-07-09
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026-07-09/` + Bloomberg confirmed July 9 launch
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (no Meta story yesterday)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Meta เปิดตัว Muse Spark 1.1 เป็น multimodal agentic-coding model แบบ closed-weights ตัวแรกที่ Meta เก็บเงินนักพัฒนา. ราคา $1.25/M input + $4.25/M output tokens (ต่ำกว่า Claude Opus 4.8 และ GPT-5.5 มาก) พร้อม $20 free credit. API รองรับทั้ง OpenAI SDK และ Anthropic Messages format, base URL `api.meta.ai/v1`, model name `muse-spark-1.1`. Public preview US-only
-
-3. **OpenAI เปิด ChatGPT Work — agent ทำ document/spreadsheet/slide/web-app หลายชั่วโมงต่อเนื่อง**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-09/openai-unveils-chatgpt-work-agent-to-field-tasks-for-hours
-   - Published: 2026-07-09
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026-07-09/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's OpenAI story was GPT-Live voice)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI เปิด ChatGPT Work — agent ที่ออกแบบให้จัดการงาน document, spreadsheet, presentation, และ web application ต่อเนื่องหลายชั่วโมง เจาะกลุ่ม knowledge worker/enterprise. Launch พร้อม GPT-5.6 GA
-
-4. **Google เริ่มแสดง disclosure "ad นี้ทำด้วย AI" ในทุกโฆษณาที่ใช้ AI สร้าง/แก้ไข**
+1. **Apple sues OpenAI over alleged trade secret theft**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/
-   - Published: 2026-07-09
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/07/09/`
+   - URL: https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/
+   - Published: 2026-07-10 (URL slug), corroborated by Bloomberg, CNBC, CNN same-day
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/10/` and same-day parallel coverage across Bloomberg/CNBC/Axios
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch hits were `/2026/07/09/google-will-now-disclose-...` and `/2026/07/09/popular-open-source-ai-developer-tool-ollama-...`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Apple filed suit in N.D. Cal. against OpenAI (and io Products), naming Chief Hardware Officer Tang Tan (24-year Apple vet, ex-VP product design for iPhone/Watch) and former Apple engineer Chang Liu, alleging coordinated theft of confidential hardware info to accelerate OpenAI's upcoming AI device.
+
+2. **SK Hynix raises $26.5B in the biggest foreign IPO in US history**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/
+   - Published: 2026-07-10 (URL slug); Nasdaq debut same day
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/10/`, corroborated by Bloomberg 2026-07-10 and Al Jazeera 2026-07-10
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS; SK Hynix wasn't in yesterday's brief at all
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: SK Hynix sold 177.9M ADRs at $149 to raise $26.5B, topping Alibaba's 2014 record ($25B) for largest US IPO by a non-US company. Traded on Nasdaq under temporary ticker SKHYV on July 10, closing ~13% up. The offering was ~7× oversubscribed on AI HBM-memory demand; US lawmakers publicly urged SK Hynix to build new US fabs.
+
+3. **Meta pulls Muse Image AI feature on Instagram after backlash**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/
+   - Published: 2026-07-10 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/10/`, corroborated by Variety 2026-07-10 and TheWrap 2026-07-10
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google เพิ่มเมนู "How this ad was made" ในโฆษณาบนแพลตฟอร์ม เพื่อระบุว่าโฆษณาถูก **สร้างหรือแก้ไขด้วย AI** หรือไม่. เป็นระบบ transparency ครั้งใหญ่ระดับ ad network ท่ามกลางกระแส generative-ad ปี 2026
+   - Summary: Meta removed Muse Image, a Superintelligence-Labs image generator that let anyone @-mention public Instagram accounts to generate AI images from their photos. The feature rolled out earlier this week with no consent notification and drew rapid backlash from users, CAA, and SAG-AFTRA. Meta says the feature "missed the mark" and is no longer available.
 
-5. **Ollama ระดมทุน Series B $65M — 8.9M developers ต่อเดือน, ใช้ใน 85% ของ Fortune 500**
+4. **Hugging Face CEO Clem Delangue: companies are done renting their AI**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/
-   - Published: 2026-07-09
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/07/09/`
+   - URL: https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/
+   - Published: 2026-07-10 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/10/`, corroborated by Yahoo Finance 2026-07-10 and Zamin.uz 2026-07-10
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Ollama ปิดรอบ Series B $65M นำโดย Theory Ventures (ร่วมโดย Benchmark, 8VC, Y Combinator, Pace Capital, 49 Palms, GTMFund). Total raised = $88M. 8.9M developers/เดือน, 67,000+ integrations, ใช้งานใน 85% ของ Fortune 500 (รวม gov / healthcare / finance) ด้วยทีมเพียง 14 คน. ผู้ก่อตั้ง (Michael Chiang, Jeffrey Morgan) เคยสร้าง Kitematic ที่กลายเป็น Docker Desktop
+   - Summary: In a TechCrunch Equity podcast, Delangue argued enterprises are moving off proprietary "rented" APIs because per-token costs become unsustainable at scale, and towards open-weights. He noted Hugging Face is now used by ~50% of the Fortune 500 and warned that concentration of frontier AI in a handful of labs is a systemic risk.
+
+5. **Big Tech doubles debt load to $350B in the AI spending spree**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-10/big-tech-doubles-debt-load-to-350-billion-in-ai-spending-spree
+   - Published: 2026-07-10 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-10/`, sits in a same-day Bloomberg AI cluster (SK Hynix, Apple v OpenAI, Big Tech debt)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg hits were `/2026-07-09/meta-starts-charging-...` and `/2026-07-09/openai-unveils-chatgpt-work-...`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Alphabet, Amazon, Meta, Microsoft, and Oracle have collectively added ~$350B in debt over the last five years — roughly doubling their combined debt load — to fund AI data-center buildouts. Bloomberg frames the shift as a structural change in Big Tech balance-sheet composition, historically debt-light.
 
 ## Dropped
+- Anthropic Claude Sonnet 5 launch — Filter A: launched 2026-06-30, well outside 24h
+- Blognone-specific Thai coverage of the day's events — Filter A: no Blognone article on the July 10 stories surfaced with a verifiable 24h timestamp in search results
 
-- https://www.anthropic.com/news/google-broadcom-partnership-compute — Filter A (>24h): Search results explicitly say partnership was "announced in early April 2026 (not July 9)" — 3-month-old news being re-surfaced by search. Drop.
-- https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/ — considered but deprioritized in favor of product/market moves for the 5 slots.
-- https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/ — deprioritized in favor of the two OpenAI product announcements already selected.
-
-> Note: 5 items passed both filters this run. Anthropic-Broadcom partnership failed Filter A (April 2026 story). No candidates failed Filter B (yesterday covered a distinct set of stories).
+> Note: 5 items passed both filters this run. All Tier 2 (WEBFETCH_BLOCKED). No Thai-language source verified for today — the Thai desks hadn't syndicated any of today's TechCrunch/Bloomberg stories in a form the search index could confirm within 24h. Better to ship international-only than fabricate a Blognone URL.
