@@ -1,31 +1,31 @@
-# Perspectives — 2026-07-10
+# Perspectives — 2026-07-11
 
-## 1. OpenAI GPT-5.6 (Sol / Terra / Luna) GA
+## 1. Apple sues OpenAI over alleged trade secret theft
 
-**อาจารย์ (มหาวิทยาลัย):** เคสสอน **AI governance in practice** — 13 วัน limited preview ที่ประสานกับรัฐบาลสหรัฐก่อน general availability คือรูปแบบใหม่ของ "responsible release" ที่ห่างจากรุ่นก่อนของ GPT-4/5 มาก. ให้เด็กเปรียบเทียบ 3 tier (Sol/Terra/Luna) ในแง่ cost × capability curve — model routing decision framework
-**ผู้เชี่ยวชาญด้าน AI:** จุดสังเกต 2 อย่าง: (1) Terminal-Bench 2.1 ที่ 91.9% ของ Sol Ultra เป็นเลข head-to-head สำคัญกับ Claude/Grok ที่ต้อง cross-check ด้วย SWE-bench Verified และ LiveCodeBench, (2) การ tier ออกเป็น 3 รุ่นในวัน GA แสดงว่า OpenAI ยอมรับว่า one-size-fits-all จบแล้ว — เข้าสู่ยุค router-first design
-**โปรแกรมเมอร์มืออาชีพ:** ต้อง update routing rules ทันที — Luna แทนที่ GPT-5.5 mini สำหรับงาน bulk/summary, Terra สำหรับงาน day-to-day, Sol เก็บไว้ให้ task ที่คุ้ม price. Latency profile ของ Sol น่าจะสูงกว่าเดิม — ทดสอบ p95 บน endpoint จริงก่อน rollout production
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้จะเป็นวัตถุดิบชั้นดีของวิชา tech law และ innovation policy ไปอีกหลายปี — ประเด็นคือเส้นแบ่งระหว่าง "ความรู้ที่พนักงานพาไปด้วย" กับ "ความลับทางการค้า" กำลังถูกทดสอบใหม่ในยุคที่ product roadmap ของบริษัทหนึ่งกลายเป็น starting point ของอีกบริษัท.
+**ผู้เชี่ยวชาญด้าน AI:** ที่น่าสังเกตคือ Apple ไม่ได้ฟ้องเรื่องโมเดลหรือ weights แต่ฟ้องเรื่อง **hardware design** — สะท้อนว่า race ของ AI ปี 2026 เคลื่อนไปสู่ device layer แล้ว, และ Jony Ive/OpenAI hardware team คือคู่ต่อกรตรงของ Apple มากกว่า ChatGPT-vs-Siri.
+**โปรแกรมเมอร์มืออาชีพ:** ผลกระทบระยะสั้นสำหรับ engineer ที่ย้ายระหว่างบริษัท AI คือ NDA และ non-solicit clause จะถูกเขียนใหม่ให้เข้มขึ้น — ถ้าอยู่ FAANG แล้วมองย้ายไป lab AI ให้เตรียมล่วงหน้าเรื่อง garden leave, laptop return, และห้ามใช้ personal email รับ work document; hygiene เหล่านี้จะกลายเป็นเรื่องปกติ.
 
-## 2. Meta Muse Spark 1.1 (paid agentic coding model)
+## 2. SK Hynix raises $26.5B in the biggest foreign IPO in US history
 
-**อาจารย์ (มหาวิทยาลัย):** เคส **strategy shift** ของ Meta — จาก open-weights (Llama) ที่เป็นแรงต่อรอง ecosystem ไปสู่ paid closed-weights ที่แข่งกับ Anthropic/OpenAI ตรง ๆ. คำถามชั้นเรียน: ทำไม Meta คิดว่าตลาด paid API มี room อีก 4th competitor หลัง OpenAI/Anthropic/Google?
-**ผู้เชี่ยวชาญด้าน AI:** ราคา $1.25/$4.25 per M tokens เป็น aggressive ประมาณ 1/4 ของ Claude Opus 4.8 และ GPT-5.5. คำถามคือ **quality gap** เท่าไหร่ — agentic coding benchmark, SWE-bench, tool-calling reliability ยังไม่มี independent eval; รอ 1–2 สัปดาห์. การรองรับทั้ง OpenAI SDK + Anthropic Messages format ลด switching cost อย่างชาญฉลาด — Meta ตั้งใจให้ทีมที่ใช้ Claude/GPT swap เพียง base URL
-**โปรแกรมเมอร์มืออาชีพ:** ถ้ามี agent workload ที่ token-heavy (long-running task, RAG pipelines) และ US-only ok เตรียมสร้าง A/B test คู่ Muse Spark 1.1 vs. current model — ราคาต่างมากพอจะเปลี่ยน unit economics. Watch out: closed-weights + preview status = ToS เปลี่ยนได้; อย่า migrate production critical path จนกว่าจะเห็น GA และ SLA
+**อาจารย์ (มหาวิทยาลัย):** IPO ระดับนี้เป็น teaching moment ของ macro-finance × industrial policy — ทำไม memory-chip vendor จากเกาหลีถึงเลือก Nasdaq มากกว่า KOSPI และทำไม US ถึงกดดันให้ SK Hynix สร้าง fab ในสหรัฐ; คำตอบเชื่อมโยง CHIPS Act, geopolitical risk premium, และ HBM supply chain ที่เข้มข้นในไม่กี่ราย.
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข 7× oversubscribed บอกว่าตลาดยังเชื่อว่า HBM demand จะไม่ collapse ใน cycle นี้ — แต่ประวัติศาสตร์ chip cycle เตือนว่า boom ทุกครั้งจบด้วย glut; risk indicator ที่ควรจับตาคือ (1) HBM inventory day ของ NVIDIA/AMD, (2) ราคา DDR5 spot vs. contract, (3) capex guidance ของ hyperscaler ปีหน้า.
+**โปรแกรมเมอร์มืออาชีพ:** ไม่กระทบ workflow ตรง ๆ แต่กระทบราคา cloud GPU ทางอ้อม — ถ้า HBM supply ยังตึงต่อ, on-prem inference บน commodity GPU และ open-weight model (Ollama pattern จากเมื่อวาน) จะยิ่งคุ้มกว่า renting frontier API สำหรับ workload token-heavy.
 
-## 3. OpenAI ChatGPT Work (long-running agent)
+## 3. Meta pulls Muse Image AI feature on Instagram after backlash
 
-**อาจารย์ (มหาวิทยาลัย):** ให้ปิดคำถาม "agent จะทำงานยาวได้แค่ไหน" — ChatGPT Work ประกาศตัวเองว่ารัน "for hours" คือ signal ว่า OpenAI คิดว่า **task horizon** ของ agent ขยายจาก 5–30 นาที เป็นระดับชั่วโมง. Assignment: ออกแบบ evaluation ที่วัด task completion ระดับ multi-hour (ไม่ใช่แค่ single-turn accuracy)
-**ผู้เชี่ยวชาญด้าน AI:** จับตา (1) **failure mode** ในงาน multi-hour — memory drift, context poisoning, tool errors สะสม, (2) **cost per completed task** เทียบกับ human baseline. OpenAI ปล่อยพร้อม GPT-5.6 GA แสดงว่า ChatGPT Work น่าจะรันบน Sol เป็นหลัก — cost model ต้องแรง
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมมี workflow ที่ทำ document/spreadsheet/slide/web-app แบบ semi-repeat ให้ทดสอบ ChatGPT Work บน task ที่ **ประเมินผลลัพธ์ได้ชัด** (export ได้, มี ground truth) ก่อน. อย่าปล่อย agent รันหลายชั่วโมงบน task ที่ประเมิน quality ไม่ได้ — คุณจะจ่ายเงินโดยไม่รู้ว่าได้อะไรกลับ
+**อาจารย์ (มหาวิทยาลัย):** case study ตรงตัวสำหรับวิชา AI ethics / product-launch decision — Meta มี internal review เป็นเดือน ๆ แต่ยังปล่อยฟีเจอร์ที่ไม่แจ้งเจ้าของภาพว่าถูกใช้; สะท้อนช่องว่างระหว่าง legal-compliance ("public account = fair use") กับ social contract ที่ user คาดหวัง.
+**ผู้เชี่ยวชาญด้าน AI:** ปัญหาที่แท้จริงไม่ใช่โมเดล แต่คือ **default consent architecture** — เมื่อ image generator เข้าถึง reference image ของบุคคลจริงได้แบบ programmatic, ทุกภาพในบัญชี public จะกลายเป็น "training-time reference" โดย opt-out ล่าช้าเสมอ; SAG-AFTRA เจอเรื่อง likeness ก่อนหน้านี้แล้ว, รอบนี้แค่ scale ใหญ่ขึ้น.
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่สร้าง generative feature ควรเช็ค checklist ก่อน launch: (1) ถ้า model ใช้ user content เป็น input, มี explicit opt-in ต่อผู้ถูก reference ไหม, (2) มี inbound signal (notify/audit log) ให้เจ้าของ content เห็นการ use ไหม, (3) rate-limit + abuse pipeline พร้อมไหม; ข้ามข้อไหนข้อหนึ่ง = ready to be pulled ภายในสัปดาห์.
 
-## 4. Google AI-ad disclosure
+## 4. Hugging Face CEO: companies are done renting their AI
 
-**อาจารย์ (มหาวิทยาลัย):** เคสสอน **platform governance** — Google เป็น ad network ใหญ่ที่สุดในโลก, disclosure "made with AI" คือ policy signal ที่จะเป็น de-facto standard. เชื่อมกับ FTC endorsement rules, EU AI Act disclosure requirements, และ Thailand PDPA/AI regulatory drafts
-**ผู้เชี่ยวชาญด้าน AI:** จุดที่ต้องระวังคือ **นิยาม "made with AI"** — Photoshop generative fill นับหรือไม่, upscaler นับหรือไม่, script generated โดย LLM แต่ voice จริงล่ะ? Google ยังไม่ประกาศเกณฑ์ชัด. Watermark & C2PA-style provenance chain น่าจะเป็นทางออกเทคนิค — จับตา metadata standard ที่ Google จะยอมรับ
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมทำ ad tech / creative tool ต้องเตรียม pipeline **tag content ที่ถูก AI สร้าง/แก้ไข** ตั้งแต่ต้นทาง. ระยะสั้น: audit ทุก creative workflow ที่ส่ง ad ให้ Google. ระยะกลาง: ผสาน C2PA content credentials เข้ากับ export pipeline
+**อาจารย์ (มหาวิทยาลัย):** เป็นเคส classic "unbundling → rebundling" ของ platform economics — ยุคแรก API ชนะเพราะ integration cost ต่ำ, ยุคต่อไป open-weights ชนะเพราะ scale cost ต่ำ; แต่คำถามที่ยังไม่ชัดคือ enterprise มี **skill** ทั้ง MLOps และ security-hardening สำหรับ self-host หรือไม่.
+**ผู้เชี่ยวชาญด้าน AI:** Delangue ไม่ได้พูดผิด — cost curve ของ frontier API สำหรับ workload token-heavy (agent, RAG, batch summarization) โตเร็วกว่า on-prem inference อย่างเห็นได้ชัด; แต่ควรระวัง narrative bias เพราะ Hugging Face เป็นเจ้าของ distribution ของ open-weights; **eval quality gap** ระหว่าง open และ frontier ยังมีอยู่จริงในหลาย task (long-context reasoning, tool-calling reliability).
+**โปรแกรมเมอร์มืออาชีพ:** ทำ **cost model จริง** สัปดาห์นี้: token throughput ต่อเดือน × ราคา frontier API vs. TCO ของ on-prem GPU + engineer time. ถ้า workload อยู่ในช่วง 10-500B token/เดือน, break-even ของ self-host มักมาถึงเร็วกว่าที่คิด — เริ่มด้วย hybrid: frontier สำหรับงานยาก, open-weight บน Ollama/vLLM สำหรับ bulk.
 
-## 5. Ollama $65M Series B
+## 5. Big Tech doubles debt load to $350B in the AI spending spree
 
-**อาจารย์ (มหาวิทยาลัย):** เคส **open source × commercialization** ที่งาม — 14 พนักงาน, 8.9M dev, 85% Fortune 500 = ratio revenue-per-employee ที่แทบไม่มี startup ใดทำได้. วิเคราะห์ทำไม Ollama ชนะที่ layer local model runner แต่ Docker Desktop ที่ผู้ก่อตั้งเดียวกันสร้างต้อง monetize นานกว่าจะสำเร็จ
-**ผู้เชี่ยวชาญด้าน AI:** signal สำคัญคือ **on-prem/local inference** ยังโตอยู่ในยุค frontier-cloud — ผลจาก data-residency regulation (finance/healthcare/gov) + cost pressure ของ 24/7 inference. 67,000 integrations = network effect แข็ง; Ollama กลายเป็น distribution channel ของ open-weight model ที่ Meta, DeepSeek, Mistral ต้องผ่าน. ตัวชี้วัดต่อไป: Ollama Cloud (managed inference) จะแข่ง Together/Fireworks/Groq ได้แค่ไหน
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมยังไม่ใช้ Ollama บน dev machine หรือ CI ให้ pilot ทันที — เร็วกว่า docker-compose LLM. ถ้าออกแบบ product ที่ต้อง embed local LLM (privacy-first app, offline mode) Ollama runtime + model catalog + multi-OS binary คือ shortcut ที่ประหยัด 2–3 เดือน. ระวัง: Ollama Cloud เป็น product แยก, pricing อาจเปลี่ยน — อย่า lock-in
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลข $350B บ่งชี้การเปลี่ยน capital structure ครั้งใหญ่ — Big Tech เคยเป็นบริษัท debt-light แคช-หนัก, ตอนนี้กลายเป็น capital-intensive builder แบบ utility/telco เก่า; หัวข้อ finance-class ที่ควรสอนคือ AI capex ยังนับเป็น "growth investment" หรือกลายเป็น "recurring maintenance cost" ที่กด margin ระยะยาว.
+**ผู้เชี่ยวชาญด้าน AI:** สัญญาณสำคัญคือ debt-fund ถูกใช้กับ **data-center + power + interconnect** ไม่ใช่ R&D — ยืนยันว่า scale bottleneck ปี 2026-2027 คือไฟฟ้าและ HBM supply, ไม่ใช่ algorithm; ทีมที่วางกลยุทธ์ compute ควร lock capacity commitment ล่วงหน้าอย่างน้อย 12-18 เดือน.
+**โปรแกรมเมอร์มืออาชีพ:** ผลกระทบทางอ้อม — cloud AI service ราคาจะ **ไม่ลง** เร็วเท่าที่คาด เพราะ hyperscaler ต้อง service debt ก้อนใหญ่; workload ที่ตั้งงบไว้ตาม assumption "AI ราคาลด 50% ทุก 12 เดือน" ต้องรีวิว; hedge ด้วย open-weight fallback path ในทุก production critical path.
