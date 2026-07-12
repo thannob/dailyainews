@@ -19,3 +19,6 @@ __pycache__/
 
 # Claude local settings — keep project-wide settings.json, ignore per-user local ones
 .claude/settings.local.json
+
+# Skill working scratch (intermediate drafts, not committed)
+.claude/skills/*/scratch/
