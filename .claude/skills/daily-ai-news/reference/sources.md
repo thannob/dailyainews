@@ -1,42 +1,61 @@
-# Sources — 2026-07-12
+# Sources — 2026-07-13
 
-Generated: 2026-07-12 (Asia/Bangkok)
+Generated: 2026-07-13 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED (probe https://example.com → HTTP 403)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-11-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-12-brief.md (0 URLs loaded — yesterday was an empty stub)
 
-> **0 stories** passed both filters this run. The gate was Filter A (rolling 24h freshness) — the target window (2026-07-11 → 2026-07-12) falls on Saturday–Sunday in Bangkok and AI-news activity from trusted sources during that window was silent. The bulk of the week's material clusters between 2026-07-01 and 2026-07-10, all of which is now >24h old. Filter B also blocks five candidates that overlap with yesterday's brief. See "Dropped" below.
+1. **OpenAI, Meta, SpaceX Compete for More Cost-Efficient AI Models**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-12/openai-meta-spacexai-compete-for-more-cost-efficient-ai-models
+   - Published: per URL slug 2026-07-12 (≈ 1 วันก่อน)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-07-12 (= yesterday, still inside rolling 24h)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief carried 0 URLs)
+   - Verification: Tier 2 — WebSearch snippet from bloomberg.com (trusted-sources.md)
+   - Summary: Bloomberg reports that three prominent AI developers (OpenAI, Meta, SpaceX/xAI) released new models over the past week, with their biggest immediate selling point being not what they can do but how little they charge to do it — a shift toward cost efficiency as the primary competitive axis.
+
+2. **Funds Fret Over $4.4 Trillion AI Trio's Grip on Emerging Markets**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-12/funds-fret-over-4-4-trillion-ai-trio-s-grip-on-emerging-markets
+   - Published: per URL slug 2026-07-12 (≈ 1 วันก่อน)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-07-12
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (empty)
+   - Verification: Tier 2 — WebSearch snippet from bloomberg.com (trusted-sources.md)
+   - Summary: Investors are rotating beyond AI winners in emerging markets, where just three technology stocks worth $4.4 trillion drive an outsized share of returns. Funds including JPMorgan Asset Management and Grantham Mayo Van Otterloo & Co. are turning to bets on the broader economy — such as gaming, energy, and even a Vietnamese milk company.
+
+3. **Options Brokers With Niche Expertise Defy Automation, AI Shift**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-12/options-brokers-with-niche-expertise-defy-automation-ai-shift
+   - Published: per URL slug 2026-07-12 (≈ 1 วันก่อน)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-07-12
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (empty)
+   - Verification: Tier 2 — WebSearch snippet from bloomberg.com (trusted-sources.md)
+   - Summary: In an equity market increasingly shaped by automation and artificial intelligence, some options brokers are still thriving — with industry veterans including former hedge fund portfolio managers bringing niche expertise to the job. A counter-narrative to the "AI takes all white-collar work" thesis.
+
+4. **TechCrunch Mobility: A robotaxi ultimatum**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/12/techcrunch-mobility-a-robotaxi-ultimatum/
+   - Published: per URL slug 2026-07-12 (≈ 1 วันก่อน)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-07-12
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (empty)
+   - Verification: Tier 2 — WebSearch snippet from techcrunch.com (trusted-sources.md)
+   - Summary: TechCrunch's mobility newsletter covers the end of the Uber–Waymo robotaxi partnership in Phoenix (partnerships still standing in Atlanta and Austin), plus proposed changes to Federal Motor Vehicle Safety Standards (FMVSS) that could clear the path for AV companies like Tesla and Zoox to ship vehicles without steering wheels or pedals.
 
 ## Dropped
 
-- https://openai.com/index/gpt-5-6/ — Filter A (>24h): "OpenAI GPT-5.6 Sol/Terra/Luna GA on 2026-07-09"
-- https://openai.com/index/introducing-gpt-live/ — Filter A (>24h): "OpenAI GPT-Live launched 2026-07-08"
-- https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/ — Filter A (>24h): "URL slug 2026-07-09"
-- https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/ — Filter A (>24h): "URL slug 2026-07-09 (Muse Spark 1.1)"
-- https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/09/openai-launches-chatgpt-work/ — Filter A (>24h): "ChatGPT Work launched 2026-07-09"
-- https://www.axios.com/2026/07/09/spacexai-grok-new-model — Filter A (>24h): "Grok 4.5 launched 2026-07-08 (Axios URL 2026-07-09)"
-- https://www.axios.com/2026/07/09/fed-warsh-task-force-andreessen — Filter A (>24h): "Fed Warsh AI task force / Andreessen announced 2026-07-09"
-- https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/ — Filter A (>24h): "same story, WaPo URL 2026-07-09"
-- https://www.anthropic.com/news/reflect-with-claude — Filter A (>24h): "Claude reflection dashboard beta 2026-07-09"
-- https://www.anthropic.com/news/claude-corps — Filter A (>24h): "Claude Corps fellowship 2026-06-12"
-- https://claude.com/blog/bringing-claude-code-and-claude-cowork-to-government — Filter A (>24h): "Claude for Government Desktop 2026-07-07"
-- https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/ — Filter A (>24h): "URL slug 2026-07-07 (Claude Cowork mobile/web)"
-- https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/ — Filter A (>24h): "URL slug 2026-07-06 (JADEPUFFER coverage)"
-- https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion — Filter A (>24h): "Sysdig JADEPUFFER blog 2026-07-01"
-- https://www.usnews.com/news/top-news/articles/2026-07-06/exclusive-us-cyber-agency-is-using-anthropics-mythos-to-audit-government-code-sources-say — Filter A (>24h): "Reuters/USNews CISA-Mythos 2026-07-06"
-- https://www.securityweek.com/cisa-reportedly-using-anthropics-mythos-to-scan-government-software-for-flaws/ — Filter A (>24h): "same story, 2026-07-06/07"
-- https://labs.google/aifuturesfund/africaailab — Filter A (>24h): "Google Africa Applied AI Lab launched 2026-07-01"
-- https://the-decoder.com/mistrals-open-source-leanstral-1-5-aces-formal-math-benchmarks-and-catches-real-bugs-in-code/ — Filter A (>24h): "Mistral Leanstral 1.5 released 2026-07-02/04"
-- https://www.anthropic.com/glasswing — Filter A (>24h): "Claude Mythos / Project Glasswing / CVE-2026-47729 disclosed 2026-06"
-- https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html — Filter A (>24h): "URL slug 2026-06 (Squidbleed)"
-- https://www.bloomberg.com/news/articles/2026-07-10/ai-could-affect-millions-in-asean-as-ilo-sees-no-big-job-cuts — Filter A (>24h): "URL slug 2026-07-10, ambiguous timestamp — do not guess into 24h window"
-- https://www.bloomberg.com/news/articles/2026-07-09/tencent-manus-meta-unwind — Filter A (>24h): "URL slug 2026-07-09 (Tencent to lead $2B Manus buyback)"
-- https://www.bloomberg.com/news/articles/2026-07-07/chinese-ai-startup-deepseek-developing-own-ai-chip-reuters-says — Filter A (>24h): "URL slug 2026-07-07"
-- https://gov-pritzker-newsroom.prezly.com/gov-pritzker-signs-nation-leading-artificial-intelligence-safety-law — Filter A (>24h): "Illinois SB 315 AI Safety Measures Act signed 2026-07-06"
-- https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/ — Filter B (dedup): "URL appears in articles/2026-07-11-brief.md"
-- https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/ — Filter B (dedup): "URL appears in articles/2026-07-11-brief.md"
-- https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/ — Filter B (dedup): "URL appears in articles/2026-07-11-brief.md"
-- https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/ — Filter B (dedup): "URL appears in articles/2026-07-11-brief.md"
-- https://www.bloomberg.com/news/articles/2026-07-10/big-tech-doubles-debt-load-to-350-billion-in-ai-spending-spree — Filter B (dedup): "URL appears in articles/2026-07-11-brief.md"
+- techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/ — Filter A (>24h): URL slug 2026-07-10 = 3 วันก่อน
+- techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/ — Filter A: slug 2026-07-10
+- techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/ — Filter A: slug 2026-07-09 = 4 วันก่อน
+- techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/ — Filter A: slug 2026-07-09
+- techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/ — Filter A: slug 2026-07-10
+- techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/ — Filter A: slug 2026-07-09
+- techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/ — Filter A: slug 2026-07-09
+- bloomberg.com/news/articles/2026-07-10/morgan-stanley-sees-pressure-rising-on-chipmakers-pricing-power — Filter A: slug 2026-07-10
+- bloomberg.com/news/articles/2026-07-07/microsoft-replaces-openai-anthropic-with-own-ai-in-some-apps — Filter A: slug 2026-07-07
+- finance.biggo.com/news/6f0c6bb2-.../ (Gemini 3.5 Pro delay coverage) — Domain not in trusted-sources.md
+- buildfastwithai.com/blogs/ai-news-today-july-12-2026 — Domain not in trusted-sources.md (aggregator)
+- medium.com/@davidakpovi/... — Domain not in trusted-sources.md (aggregator)
+- cnbc.com/... — Domain not in trusted-sources.md
+- bloomberg.com/news/articles/2026-07-12/china-is-supercharging-a-rooftop-solar-boom-in-the-philippines — Not AI-related
 
-> Note: 0 items passed both filters this run. Of ~29 candidates surveyed across international trusted publishers (TechCrunch, Bloomberg, Reuters/USNews, Axios, Washington Post, OpenAI, Anthropic, Google DeepMind, Sysdig) and Thai trusted sources (Blognone, Thairath, Prachachat), 24 failed Filter A (all published between 2026-07-01 and 2026-07-10; the 2026-07-11 → 2026-07-12 weekend window turned up no fresh trusted-source publications during this crawl) and 5 failed Filter B (URLs already in yesterday's brief).
+> Note: 4 items passed both filters this run. Of ~14+ candidates surveyed on trusted-source domains, ~9 failed Filter A (URL slug older than 24h) and 0 failed Filter B (yesterday's brief carried no URLs to dedup against). Additional candidates were dropped because the publisher is not on `reference/trusted-sources.md` or because the story was not AI-related.
