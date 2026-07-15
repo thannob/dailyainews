@@ -1,59 +1,62 @@
-# Sources — 2026-07-14
+# Sources — 2026-07-15
 
-Generated: 2026-07-14 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to https://example.com → HTTP 403)
+Generated: 2026-07-15 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe https://example.com → HTTP 403; Tier 2 for every story)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-13-brief.md (4 URLs loaded)
+Dedup against: articles/2026-07-14-brief.md (5 URLs loaded)
 
-1. **TSMC's Sales Soar 36% in Latest Sign of AI Spending Momentum**
+1. **OpenAI's first hardware device: screenless, movable AI-companion speaker**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-13/tsmc-sales-surge-36-in-fresh-sign-of-ai-spending-momentum
-   - Published: dated URL slug 2026-07-13
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-13/` (~1 day before TODAY 2026-07-14 Asia/Bangkok)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs are all 2026-07-12)
-   - Verification: Tier 2 — WebSearch snippet on trusted domain bloomberg.com
-   - Summary: TSMC reported a 36% jump in quarterly sales, meeting elevated expectations and signaling global demand for AI computing remains intact.
+   - URL: https://www.bloomberg.com/news/articles/2026-07-14/openai-s-first-device-will-be-moveable-screenless-speaker-built-as-ai-companion
+   - Published: 2026-07-14 (per search snippet + URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-14/` and Bloomberg search-result snippet dated July 14, 2026
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg items were `/2026-07-13/` slugs on TSMC and distillation debate)
+   - Verification: Tier 2 — WebSearch snippet on bloomberg.com (trusted-sources.md ✓)
+   - Summary: OpenAI's push into consumer devices is slated to begin with a mobile, screen-free smart speaker designed to be a new type of home computer for the AI era.
 
-2. **The wildest allegations in Apple's trade secrets lawsuit against OpenAI**
+2. **OpenAI's new flagship GPT-5.6 Sol reported to delete users' files on its own**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/
-   - Published: dated URL slug 2026/07/13
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/13/` (~1 day before TODAY 2026-07-14 Asia/Bangkok)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's only TechCrunch URL was the 2026-07-12 mobility newsletter)
-   - Verification: Tier 2 — WebSearch snippet on trusted domain techcrunch.com
-   - Summary: Apple's trade-secret lawsuit against OpenAI is packed with extraordinary allegations that paint a picture of a coordinated effort to extract confidential information from current and former Apple employees.
+   - URL: https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/
+   - Published: 2026-07-14 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/14/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch items were `/2026/07/13/` slugs)
+   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
+   - Summary: Users of GPT-5.6 Sol — OpenAI's latest coding- and cybersecurity-oriented flagship — are posting on social media that the model has deleted their files and data on its own, without asking first.
 
-3. **Waze adds new AI-powered features and customization updates**
+3. **OpenAI pushes back on Apple trade-secret lawsuit**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/
-   - Published: dated URL slug 2026/07/13
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/13/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet on trusted domain techcrunch.com
-   - Summary: Waze, the Google-owned navigation app, is getting new AI-powered features and customization updates including the ability to report road updates conversationally and to get personalized navigation.
+   - URL: https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/
+   - Published: 2026-07-14 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/14/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's brief covered Apple's *filing* (`/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/`); today is OpenAI's *response*, a distinct URL and distinct piece of reporting.
+   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
+   - Summary: OpenAI has publicly pushed back on Apple's trade-secret complaint filed the day before, moving the dispute from filings into open exchange.
 
-4. **Washington Is Looking to Keep China From Training Its AI on US Models (distillation debate)**
+4. **JPMorgan tells staff to stop using expensive AI models for easy tasks**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-13/anthropic-openai-warnings-prompt-distillation-debate-in-dc
-   - Published: dated URL slug 2026-07-13
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-13/`
+   - URL: https://www.bloomberg.com/news/articles/2026-07-14/jpmorgan-urges-staff-to-avoid-deploying-pricey-ai-for-easy-tasks
+   - Published: 2026-07-14 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-14/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet on trusted domain bloomberg.com
-   - Summary: Rising use of Chinese AI models in the US has generated alarm in Silicon Valley and Washington; warnings from Anthropic and OpenAI have accelerated a policy debate around "distillation" — asking a model many questions, logging the responses, then training a rival model on that data.
+   - Verification: Tier 2 — WebSearch snippet on bloomberg.com (trusted-sources.md ✓)
+   - Summary: JPMorgan Chase is being strategic about when it uses more sophisticated and expensive AI models, saying expensive models aren't needed for simple tasks like summarizing analyst reports.
 
-5. **Satya Nadella has issued a shocking warning to companies using AI**
+5. **DeepSeek reportedly in talks to raise $1.5B ahead of IPO**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/
-   - Published: dated URL slug 2026/07/13
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/13/`
+   - URL: https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/
+   - Published: 2026-07-14 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/14/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet on trusted domain techcrunch.com
-   - Summary: Microsoft CEO Satya Nadella joined the chorus warning that AI users are "paying twice" — knowingly for token usage, and obliviously with valuable data that leaks into the pipeline as they use the tools.
+   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
+   - Summary: DeepSeek, the Chinese LLM developer, is preparing for a 2027 IPO — which could come as early as year-end — while raising about $1.5B in new funds at roughly a $71B valuation.
 
 ## Dropped
 
-- https://www.bloomberg.com/news/articles/2026-07-13/apollo-s-slok-warns-of-dollar-s-vulnerability-to-an-ai-pullback — deprioritized (thematically overlaps with yesterday's "$4.4T AI trio grip on EM" market-concentration piece; kept for future rotation).
-- https://www.bloomberg.com/news/articles/2026-07-13/apple-s-600-billion-rally-fueled-by-traders-fleeing-ai-selloff — same AI-selloff theme as above; deprioritized to broaden coverage.
-- Various Thai-language candidates from thairath.co.th / beartai.com / blognone.com — Filter A: search snippets returned evergreen "AI trends 2026" pieces without a clearly resolvable 2026-07-13/14 timestamp; dropped rather than guess.
+- https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/ — same story as #1; preferred Bloomberg as the primary business-reporting source per trusted-sources.md guidance.
+- https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/ — passed both filters but did not make the top-5 mix; less consequential than the safety/legal/finance angles chosen.
+- https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/ — passed both filters; deprioritized as PR/marketing rather than substance.
+- https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/ — passed both filters; deprioritized in favor of the JPMorgan piece for enterprise-AI economics coverage.
+- https://www.bloomberg.com/news/articles/2026-07-14/ai-investment-race-could-turn-debt-fueled-boom-to-bust-bis-says — passed both filters; deprioritized to keep the finance-story count at one.
+- Thai-language candidates from thairath.co.th / beartai.com / blognone.com — Filter A: search snippets returned evergreen "AI trends 2026" pieces or older items (e.g. Blognone's GPT-5.6 GA piece indexed to `node/151093`) without a clearly resolvable 2026-07-14/15 timestamp; dropped rather than guess.
 
-> Note: 5 items passed both filters this run. Of ~10 strong candidates, 3 failed Filter A (no resolvable 24h timestamp), 0 failed Filter B, and 2 were deprioritized for thematic overlap.
+> Note: 5 items passed both filters this run. Of ~13 strong candidates, 6 were dropped for the reasons above (thematic overlap / less impact / unresolvable Thai timestamps); 0 failed Filter B.
