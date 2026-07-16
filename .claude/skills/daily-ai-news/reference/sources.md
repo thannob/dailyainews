@@ -1,62 +1,60 @@
-# Sources — 2026-07-15
+# Sources — 2026-07-16
 
-Generated: 2026-07-15 (Asia/Bangkok)
+Generated: 2026-07-16 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED (probe https://example.com → HTTP 403; Tier 2 for every story)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-14-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-15-brief.md (5 URLs loaded)
 
-1. **OpenAI's first hardware device: screenless, movable AI-companion speaker**
+1. **Thinking Machines เปิดตัวโมเดลแรก "Inkling" — MoE 975B open-weight**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-14/openai-s-first-device-will-be-moveable-screenless-speaker-built-as-ai-companion
-   - Published: 2026-07-14 (per search snippet + URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-14/` and Bloomberg search-result snippet dated July 14, 2026
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg items were `/2026-07-13/` slugs on TSMC and distillation debate)
+   - URL: https://www.bloomberg.com/news/articles/2026-07-15/murati-s-thinking-machines-releases-first-ai-model-for-broad-use
+   - Published: 2026-07-15 (per URL slug + cross-confirmed via Fortune, SiliconANGLE, Axios, TechCrunch on same date)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-15/` (rolling window from 2026-07-16 Asia/Bangkok)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was `/2026-07-14/openai-s-first-device...` — different article, different day)
    - Verification: Tier 2 — WebSearch snippet on bloomberg.com (trusted-sources.md ✓)
-   - Summary: OpenAI's push into consumer devices is slated to begin with a mobile, screen-free smart speaker designed to be a new type of home computer for the AI era.
+   - Summary: Mira Murati's Thinking Machines released its first model, Inkling — MoE 975B params / ~41B active on a typical prompt, trained on ~45T tokens across text/image/audio/video, open-weight; positioning: customizability + cost, not leaderboard rank.
 
-2. **OpenAI's new flagship GPT-5.6 Sol reported to delete users' files on its own**
+2. **Anthropic + Blackstone launch Ode with Anthropic — $1.5B enterprise AI implementation firm**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/
-   - Published: 2026-07-14 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/14/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch items were `/2026/07/13/` slugs)
+   - URL: https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/
+   - Published: 2026-07-15 (URL slug + press-release cross-confirmation via Yahoo Finance, HPCWire, ode.com same date)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/15/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs all dated `/2026/07/14/`)
    - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
-   - Summary: Users of GPT-5.6 Sol — OpenAI's latest coding- and cybersecurity-oriented flagship — are posting on social media that the model has deleted their files and data on its own, without asking first.
+   - Summary: $1.5B joint venture — Anthropic / Blackstone / Hellman & Friedman ~$300M each + Goldman Sachs ~$150M + General Atlantic, Apollo, GIC, Sequoia. 100 engineers. CEO Chris Taylor called a "trillion-dollar Ode" as "quite feasible." Thesis: implementation, not models, is the next trillion-dollar AI category.
 
-3. **OpenAI pushes back on Apple trade-secret lawsuit**
+3. **China approves Apple Intelligence — Alibaba Qwen primary, Baidu secondary**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/
-   - Published: 2026-07-14 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/14/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's brief covered Apple's *filing* (`/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/`); today is OpenAI's *response*, a distinct URL and distinct piece of reporting.
-   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
-   - Summary: OpenAI has publicly pushed back on Apple's trade-secret complaint filed the day before, moving the dispute from filings into open exchange.
-
-4. **JPMorgan tells staff to stop using expensive AI models for easy tasks**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-14/jpmorgan-urges-staff-to-avoid-deploying-pricey-ai-for-easy-tasks
-   - Published: 2026-07-14 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-14/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet on bloomberg.com (trusted-sources.md ✓)
-   - Summary: JPMorgan Chase is being strategic about when it uses more sophisticated and expensive AI models, saying expensive models aren't needed for simple tasks like summarizing analyst reports.
-
-5. **DeepSeek reportedly in talks to raise $1.5B ahead of IPO**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/
-   - Published: 2026-07-14 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/14/`
+   - URL: https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/
+   - Published: 2026-07-15 (URL slug + cross-confirmed via SCMP, MacRumors, Bloomberg same date)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/15/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
-   - Summary: DeepSeek, the Chinese LLM developer, is preparing for a 2027 IPO — which could come as early as year-end — while raising about $1.5B in new funds at roughly a $71B valuation.
+   - Summary: Cyberspace Administration of China added Apple Intelligence to its approved-provider list; Alibaba Qwen becomes primary model, Baidu contributes on smaller scale, across iOS/iPadOS/macOS/visionOS. No specific launch date given.
+
+4. **Microsoft Patch Tuesday July 2026 — record 570 flaws, AI-assisted discovery (MDASH)**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/
+   - Published: 2026-07-15 (URL slug + cross-confirmed via BleepingComputer, Krebs, gHacks same date)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/15/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
+   - Summary: 570 patches (316% up y/y from 137 in July 2025); 2 zero-days actively exploited (AD FS CVE-2026-56155, SharePoint CVE-2026-56164) + 1 publicly disclosed; 59 Critical. Microsoft credits internal AI system MDASH for scaling bug discovery.
+
+5. **Suno hack reveals training data scraped from YouTube Music, Deezer, Genius**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/
+   - Published: 2026-07-15 (URL slug + cross-confirmed via 404 Media, Variety, Engadget same date)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/15/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
+   - Summary: Supply-chain attack via Shai-Hulud worm on employee credentials in November 2025, revealed now via 404 Media. Source code showed ~2,013,545 clips from YouTube Music (113,879 hrs), plus Deezer (12,287 hrs), Genius HQ (17,615 hrs), and podcast RSS feeds; also exposed hundreds of thousands of customer records + Stripe payment info.
 
 ## Dropped
 
-- https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/ — same story as #1; preferred Bloomberg as the primary business-reporting source per trusted-sources.md guidance.
-- https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/ — passed both filters but did not make the top-5 mix; less consequential than the safety/legal/finance angles chosen.
-- https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/ — passed both filters; deprioritized as PR/marketing rather than substance.
-- https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/ — passed both filters; deprioritized in favor of the JPMorgan piece for enterprise-AI economics coverage.
-- https://www.bloomberg.com/news/articles/2026-07-14/ai-investment-race-could-turn-debt-fueled-boom-to-bust-bis-says — passed both filters; deprioritized to keep the finance-story count at one.
-- Thai-language candidates from thairath.co.th / beartai.com / blognone.com — Filter A: search snippets returned evergreen "AI trends 2026" pieces or older items (e.g. Blognone's GPT-5.6 GA piece indexed to `node/151093`) without a clearly resolvable 2026-07-14/15 timestamp; dropped rather than guess.
+- https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/ — passed both filters, but OpenAI itself described the Codex Micro as a "limited-run collaboration" / novelty item; five higher-impact stories crowded it out.
+- https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/ — same story as #1; preferred Bloomberg as the primary business-reporting angle to keep the publisher mix off a TechCrunch monoculture.
+- https://www.blognone.com/node/151146 (Google Gemini Thailand stats) — Filter A (>24h): could not confirm publish date within rolling 24h from snippet ("เมื่อวานนี้" against uncertain reference date + no dated URL slug).
+- https://www.blognone.com/node/151151 (OpenAI hardware speaker) — Filter B (dedup): same Bloomberg story already covered in yesterday's brief.
 
-> Note: 5 items passed both filters this run. Of ~13 strong candidates, 6 were dropped for the reasons above (thematic overlap / less impact / unresolvable Thai timestamps); 0 failed Filter B.
+> Note: 5 items passed both filters this run. Of ~9 strong candidates, 4 were dropped for the reasons above; 0 items were flagged for stale timestamps at the second pass.
