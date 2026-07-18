@@ -1,31 +1,31 @@
-# Perspectives — 2026-07-16
+# Perspectives — 2026-07-18
 
-## 1. Thinking Machines เปิดตัว Inkling (MoE 975B open-weight)
+## 1. Moonshot AI เปิดตัว Kimi K3
 
-**อาจารย์ (มหาวิทยาลัย):** สอนคลาส LLM architecture ครั้งต่อไปให้ใช้คู่ตัวเลข "975B params vs. 41B active" นี้เป็นตัวอย่างเปิด — อธิบายว่าทำไม MoE เปลี่ยนวิธีอ่านตัวเลข "ขนาดโมเดล" ที่นักข่าวชอบพาดหัว และเปิดคำถามให้นักเรียนเทียบกับ dense model รุ่นเดียวกัน.
-**ผู้เชี่ยวชาญด้าน AI:** จุดน่าสนใจของ Inkling ไม่ใช่ SOTA (Thinking Machines ประกาศเองว่าไม่ใช่) แต่คือ open-weight + multimodal 4-modal native ที่ยัง customizable ระดับนี้ — ถ้า routing/serving stack ทำได้จริง เป็นแนวรบใหม่กับ Qwen/DeepSeek ทันที.
-**โปรแกรมเมอร์มืออาชีพ:** ก่อนตัดสินใจ swap production workload ให้ benchmark cost-per-1M tokens เทียบ Claude/GPT ที่ใช้อยู่ — MoE ประหยัดในทฤษฎี แต่ latency variance + memory footprint มักทำ TCO จริงไม่เป็นดังคาด.
+**อาจารย์ (มหาวิทยาลัย):** สอนนักศึกษาว่าเรากำลังเข้าสู่ยุคที่ open-weight model จีนไม่ได้ตามหลังอีกต่อไป — Kimi K3 ระดับ Opus 4.8 ที่ราคา Sonnet เปลี่ยนสูตร "closed frontier คือมาตรฐาน" ให้กลายเป็นสมมติฐานที่ต้องตรวจสอบใหม่ทุกไตรมาส. เหมาะเป็นเคสสอนวิชา AI economics และ open-source strategy คู่ DeepSeek R1.
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข 2.8T พร้อมสถาปัตยกรรม KDA + AttnRes และ MoE 896/16 experts น่าสนใจแต่ต้องดู throughput inference จริงและ agent workload real-world ก่อนตัดสิน; benchmark DeepSWE / Terminal Bench / SWE Marathon เป็น proxy ที่ดีสำหรับ coding แต่ไม่ครอบคลุม tool-use loop กับ multi-step reasoning ที่ enterprise ใช้จริง. เตรียม eval harness ภายในไว้ swap-test วัน weights ปล่อย 27 ก.ค.
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าราคา $3/$15 ต่อล้านโทเค็นจริงตามที่ประกาศ นี่คือ Opus-class ที่ Sonnet-price — ให้เตรียม fork ของ pipeline production ไว้ 1 branch, benchmark กับ workload ของทีมเอง (ไม่เชื่อพาดหัว), และคำนวณ break-even จุดสลับผู้ให้บริการ. รอวันดาวน์โหลด 27 ก.ค. เพื่อทดสอบ self-hosted บน H100/GB200 ในกรณีที่ latency กับ cost per request สำคัญ.
 
-## 2. Anthropic + Blackstone Ode ($1.5B enterprise implementation)
+## 2. Xi Jinping ขึ้นเวที WAIC ครั้งแรก — "AI for All"
 
-**อาจารย์ (มหาวิทยาลัย):** เอาไปสอน business strategy — บริษัทเทคที่เชื่อ "product-led growth" หันมาเล่น services-heavy ครั้งใหญ่; นี่คือ moment ที่ AI-as-service model ถูกยอมรับอย่างเป็นทางการโดย frontier lab.
-**ผู้เชี่ยวชาญด้าน AI:** trillion-dollar target ของ Chris Taylor ไม่ใช่ hype เดี่ยว — Fortune 500 CFO กำลังต่อรอง discount API ก็จริง แต่ต้องจ่าย $300–500/ชม. ให้ engineer มา spec workload; Ode คือ arbitrage ระหว่างสองราคานี้.
-**โปรแกรมเมอร์มืออาชีพ:** ทักษะที่ตลาด AI-implementation ต้องการเร็ว ๆ นี้ = การเขียน eval harness + observability + prompt-migration script — ไม่ใช่ prompt-engineering โชว์เดี่ยว; ถ้าคุณ ship stuff แบบนี้ให้ enterprise ได้ resume จะ liquid.
+**อาจารย์ (มหาวิทยาลัย):** สุนทรพจน์ Xi ยกระดับจากปีที่แล้วชัดเจน — เมื่อผู้นำจีนยืนยันบทบาท rule-maker ระดับโลก คลาสสอนนโยบายเทคโนโลยีต้องขยาย framework จากสองขั้ว (US/EU) เป็นสามขั้ว (US/EU/China) ทันที; วาทกรรม "symphony of international cooperation" เป็นตัวอย่างวาทศิลป์ diplomatic ที่ควรมองคู่กับการกระทำจริง (WAICO membership, model export control).
+**ผู้เชี่ยวชาญด้าน AI:** ประโยค "safety risks must be contained" ที่ Xi พูดเป็นครั้งแรกในระดับนี้เปิดช่องให้ engagement กับ safety community ตะวันตกได้จริงขึ้น — จับตาว่ามีข้อเสนอ concrete เช่น shared eval, red-teaming มาตรฐาน หรือแค่ rhetorical position; ถ้ามี agreement ระดับ working group จริง ๆ นั่นคือ turning point.
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ deploy หลายเขตอำนาจ นี่คือสัญญาณว่า compliance layer ต้องเตรียม third bucket — จีน — เพิ่มจาก US NIST / EU AI Act; ระบบ audit log ควรเก็บ metadata ว่าข้อมูล/โมเดลผ่านการตรวจตามชุดกฎใด. อย่ารอให้กฎออกก่อนถึงเริ่ม refactor architecture.
 
-## 3. Apple Intelligence จีนไฟเขียว (Qwen หลัก, Baidu เสริม)
+## 3. อนุทิน เสนอ 3 หลักธรรมาภิบาล AI ที่ WAIC
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีศึกษา sovereign AI stack — สอนตอนพูดเรื่อง trade policy + technology localization; ค่า "one model for the whole world" ที่เคยเป็น default assumption ของนักเรียน 2 ปีก่อน กำลังจบลงเงียบ ๆ.
-**ผู้เชี่ยวชาญด้าน AI:** interesting engineering — Apple ต้อง route foundation model calls ไปให้ Qwen ในภูมิภาคจีน แต่ยังคง on-device model เดิม; UX consistency ระหว่าง 2 backend เป็นโจทย์ที่ยากกว่า launch ปกติ.
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ product ที่ต้อง ship CN/UAE/RU: อย่า hard-code single AI backend — ออกแบบ interface layer + prompt-portability tests ตั้งแต่ sprint แรก แม้ตอนนี้ยังไม่ต้อง.
+**อาจารย์ (มหาวิทยาลัย):** การที่ผู้นำไทยขึ้นเวที WAIC พร้อม framework 3P (Protection / Potential / Prosperity) เป็นวัสดุการสอนชั้นดีในวิชานโยบาย — ควรวิเคราะห์คู่กับ AI Act ของ EU และ AI Bill of Rights ของสหรัฐ เพื่อให้นักศึกษาเห็นว่าแต่ละประเทศเลือก "ค่านิยมนำ" ต่างกันอย่างไร; และ SHIELD platform ร่วม UNODC เป็นตัวอย่าง multilateral tech cooperation ที่ทำจริง.
+**ผู้เชี่ยวชาญด้าน AI:** 3P framework ยังเป็นระดับ high-level principle — คำถามที่ต้องกดต่อคือ implementation: หน่วยงานไทยใดจะเป็น regulator, มี sandbox หรือไม่, เกณฑ์ risk-classification จะสอดคล้อง EU/NIST อย่างไร. SHIELD platform ที่ร่วม UNODC น่าจับตาเพราะเน้น cross-border crime data — เกี่ยวข้อง fraud detection, deepfake enforcement โดยตรง.
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ทำผลิตภัณฑ์ตลาดไทยควรเริ่มออกแบบ product ให้เข้ากับ 3P — โดยเฉพาะ "Protection" ที่แปลว่าต้องมี privacy-by-design, consent flow ที่ชัด, และ audit trail; ถ้าธุรกิจเกี่ยวกับ financial fraud หรือ online safety ให้ติดตามการเปิดตัว SHIELD เพื่อพิจารณา integration โดยเร็ว.
 
-## 4. Microsoft Patch Tuesday 570 flaws (MDASH AI-assisted)
+## 4. Kimi K3 ทำหุ้น AI / เซมิคอนดักเตอร์ร่วงทั่วโลก
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลข "570 vs 137 ปีก่อน" คือ empirical evidence ที่จับต้องได้ที่สุดในปีนี้ว่า AI เปลี่ยน software security economy จริง — เอามาสอน SecOps + software engineering ethics คู่กัน.
-**ผู้เชี่ยวชาญด้าน AI:** MDASH ที่ Microsoft ปล่อยชื่อออกมาเป็น bet เชิง defender scaling — แต่ attacker ก็ใช้ AI patch-diff เพื่อ reverse-engineer 1-day exploit ได้เร็วเท่ากัน; net effect ต่อ risk window ยังไม่ชัดว่าดีขึ้นสำหรับ end-user หรือไม่.
-**โปรแกรมเมอร์มืออาชีพ:** เร่ง patch cycle ทันที — โดยเฉพาะ AD FS (CVE-2026-56155) และ SharePoint (CVE-2026-56164) ที่ zero-day ถูก exploit จริง; อย่ารอ monthly maintenance window ปกติ.
+**อาจารย์ (มหาวิทยาลัย):** เคสตลาดตอบสนอง Kimi K3 คู่กับ DeepSeek shock (มกราคม 2025) เป็นเนื้อหาชั้นดีสำหรับวิชา financial markets & innovation — สอนว่า disruption ที่ประกาศจาก non-US lab กระทบ NVIDIA/Broadcom multiple ทันที ไม่ใช่ในเวลาไตรมาส; และ "reflexivity" ของนักลงทุน AI แคปเอ็กซ์กับ demand curve.
+**ผู้เชี่ยวชาญด้าน AI:** market rout ไม่ใช่ verdict ทางเทคนิค — ราคาหุ้นเคลื่อนจากคำ narrative "gap closed" ไม่ใช่จาก benchmark ที่นักวิเคราะห์รัน; ผู้เชี่ยวชาญควรเตือนสาธารณะให้แยก "โมเดลนี้ทำอะไรได้จริง" ออกจาก "นักลงทุนคิดว่ามันหมายถึงอะไร" ระหว่างสัปดาห์นี้.
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมพึ่ง cloud GPU บน hyperscaler ให้ล็อค reserved capacity ล่วงหน้า — market shock แบบนี้บางครั้งทำให้ราคา spot GPU ผันผวน; และถ้าทีมเป็น NVIDIA-heavy อย่าง reactive เกินไปกับ headline: hardware demand จริงไม่ได้ลด, แค่ demand ระดับ inference-focused vs training-focused กำลัง rebalance.
 
-## 5. Suno hack เปิดโปง training data ที่ scrape จาก YouTube/Deezer/Genius
+## 5. Zoom "Don't record me" hack ต่อต้าน AI transcription
 
-**อาจารย์ (มหาวิทยาลัย):** perfect case study สำหรับ data-ethics คลาส — training corpus 113,879 ชม. YouTube Music ที่ระบุใน source code แสดงให้เห็นว่า "โมเดลที่มี clean provenance" คือ minority ในตลาดจริง.
-**ผู้เชี่ยวชาญด้าน AI:** DMCA circumvention เป็นข้อกล่าวหาที่หนักกว่า copyright infringement เดี่ยว ๆ — คดี Suno ครั้งนี้เป็น test case ว่าค่ายเพลงจะได้ injunction ระงับใช้โมเดลได้ทันหรือไม่.
-**โปรแกรมเมอร์มืออาชีพ:** enforce data lineage tracking บน training pipeline (source URL, license, consent status) เดี๋ยวนี้ — enterprise CFO/legal จะถาม audit ภายในปีนี้ และไม่มีคำตอบ = ปิดดีลไม่ได้.
+**อาจารย์ (มหาวิทยาลัย):** เคสง่าย ๆ ที่สอนได้ในคาบเรียนเดียว — พูดถึง consent, notice-and-consent framework, และช่องว่างของกฎหมาย wiretapping ในยุค AI note-taker; ให้นักเรียนออกแบบ interaction design ที่ AI recording ต้อง opt-in ทุกฝ่าย และเปรียบเทียบกับ GDPR / PDPA.
+**ผู้เชี่ยวชาญด้าน AI:** ปรากฏการณ์นี้ชี้ว่า always-on transcription กำลังกลายเป็น default ที่ไม่มี consent layer ทำ — vendor อย่าง Zoom, Google Meet, Otter, Fireflies ควรมี machine-readable "no-record" signal (คล้าย robots.txt สำหรับ meeting participants) เพื่อไม่ต้องพึ่ง social hack แบบเปลี่ยนชื่อ display.
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมทำ note-taker หรือ agent ที่ observe meeting ให้เพิ่ม parser ที่ตรวจ display name / bio field แล้ว honor เจตนา "do not record" ทันที; และเก็บ audit log ว่ามี participant opt-out หรือไม่ — เพราะการเพิกเฉยต่อสัญญาณนี้จะกลายเป็น liability ก่อนที่กฎหมายจะบัญญัติทัน.
