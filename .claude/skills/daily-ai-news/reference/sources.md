@@ -1,60 +1,58 @@
-# Sources — 2026-07-16
+# Sources — 2026-07-18
 
-Generated: 2026-07-16 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe https://example.com → HTTP 403; Tier 2 for every story)
+Generated: 2026-07-18 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-15-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-17-brief.md (5 URLs loaded)
 
-1. **Thinking Machines เปิดตัวโมเดลแรก "Inkling" — MoE 975B open-weight**
+1. **Moonshot AI เปิดตัว Kimi K3 ฉลาดระดับ Claude Opus 4.8 ราคาเท่า Sonnet**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/151161
+   - Published: per WebSearch snippet — เปิดตัววันศุกร์ 17 กรกฎาคม 2569; weights ให้ดาวน์โหลด 27 ก.ค.
+   - FreshnessCheck: ✅ within last 24h — snippet confirms Friday 17 July launch; today is 18 July → within rolling 24h
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday cited a TechCrunch preview at `techcrunch.com/2026/07/16/...` (host blognone.com absent yesterday entirely)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Moonshot AI เปิดตัว Kimi K3 โมเดล MoE ขนาด 2.8T พารามิเตอร์ (896 experts / 16 active), รองรับ 1M context, มี vision ในตัว, ราคา $3/$15 ต่อล้านโทเค็น (cache $0.3) เท่าคลาส Claude Sonnet; ชนะ Claude Opus 4.8 ในเบนช์มาร์คเขียนโค้ด DeepSWE, Terminal Bench, SWE Marathon; เปิดให้ดาวน์โหลด weights 27 กรกฎาคม.
+
+2. **Xi Vows to Make AI for All in Debut at China's Top Tech Summit**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-15/murati-s-thinking-machines-releases-first-ai-model-for-broad-use
-   - Published: 2026-07-15 (per URL slug + cross-confirmed via Fortune, SiliconANGLE, Axios, TechCrunch on same date)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-15/` (rolling window from 2026-07-16 Asia/Bangkok)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was `/2026-07-14/openai-s-first-device...` — different article, different day)
-   - Verification: Tier 2 — WebSearch snippet on bloomberg.com (trusted-sources.md ✓)
-   - Summary: Mira Murati's Thinking Machines released its first model, Inkling — MoE 975B params / ~41B active on a typical prompt, trained on ~45T tokens across text/image/audio/video, open-weight; positioning: customizability + cost, not leaderboard rank.
+   - URL: https://www.bloomberg.com/news/articles/2026-07-17/xi-vows-to-make-ai-for-all-in-debut-at-china-s-top-tech-summit
+   - Published: per URL slug — 2026-07-17
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-17/` (Asia/Bangkok today 2026-07-18)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Bloomberg URL was `/2026-07-16/china-led-ai-body-enlists-global-south-states-to-rival-us`, distinct path
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Xi Jinping ขึ้นเวที WAIC เป็นครั้งแรก กล่าวว่า "AI development should not be a solo performance by a single country, but a symphony of international cooperation" ประกาศจุดยืน AI for All และย้ำว่าต้องควบคุมความเสี่ยงด้านความปลอดภัย.
 
-2. **Anthropic + Blackstone launch Ode with Anthropic — $1.5B enterprise AI implementation firm**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/
-   - Published: 2026-07-15 (URL slug + press-release cross-confirmation via Yahoo Finance, HPCWire, ode.com same date)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/15/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs all dated `/2026/07/14/`)
-   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
-   - Summary: $1.5B joint venture — Anthropic / Blackstone / Hellman & Friedman ~$300M each + Goldman Sachs ~$150M + General Atlantic, Apollo, GIC, Sequoia. 100 engineers. CEO Chris Taylor called a "trillion-dollar Ode" as "quite feasible." Thesis: implementation, not models, is the next trillion-dollar AI category.
+3. **นายกฯ อนุทิน เสนอ 3 หลักธรรมาภิบาล AI บนเวที WAIC**
+   - Publisher: The Standard
+   - URL: https://thestandard.co/pm-ai-world-governance-principles/
+   - Published: per WebSearch snippet — ถ้อยแถลง 17 กรกฎาคม 2569 พิธีเปิด WAIC (แผนเยือน 16-20 ก.ค.)
+   - FreshnessCheck: ✅ within last 24h — snippet ระบุการกล่าวสุนทรพจน์ 17 ก.ค. ที่พิธีเปิด WAIC
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — host thestandard.co ไม่ปรากฏในสรุปเมื่อวาน
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: อนุทิน ชาญวีรกูล นายกรัฐมนตรี กล่าวถ้อยแถลงในพิธีเปิด WAIC 2026 เซี่ยงไฮ้ ภายใต้หัวข้อ "AI Partnership for a Brighter Future" เสนอ 3 หลักธรรมาภิบาล AI — Protection (คุ้มครองประชาชน), Potential (ปลดล็อกศักยภาพ), Prosperity (สร้างความเจริญรุ่งเรืองร่วมกัน) พร้อมประกาศแพลตฟอร์ม SHIELD ร่วม UNODC สำหรับแลกเปลี่ยนข้อมูลอาชญากรรมออนไลน์ข้ามพรมแดน.
 
-3. **China approves Apple Intelligence — Alibaba Qwen primary, Baidu secondary**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/
-   - Published: 2026-07-15 (URL slug + cross-confirmed via SCMP, MacRumors, Bloomberg same date)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/15/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
-   - Summary: Cyberspace Administration of China added Apple Intelligence to its approved-provider list; Alibaba Qwen becomes primary model, Baidu contributes on smaller scale, across iOS/iPadOS/macOS/visionOS. No specific launch date given.
+4. **China's Powerful New AI Surprises Investors, Fueling Tech Rout**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-ai-surprises-investors-fueling-tech-rout-mroxm71p
+   - Published: per URL slug — 2026-07-17
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-17/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — distinct path; not in yesterday's Bloomberg URL
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: การเปิดตัว Kimi K3 ของ Moonshot ทำให้หุ้น AI และเซมิคอนดักเตอร์ทั่วโลกร่วงลงในวันศุกร์ Bloomberg บรรยายว่าเป็น "surprise breakthrough" ที่ทำให้นักลงทุนตอบสนองเชิงลบต่อสัญญาณที่ห้องแล็บจีนไล่ทันคู่แข่งสหรัฐ.
 
-4. **Microsoft Patch Tuesday July 2026 — record 570 flaws, AI-assisted discovery (MDASH)**
+5. **The Zoom hack that says, 'Don't record me'**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/
-   - Published: 2026-07-15 (URL slug + cross-confirmed via BleepingComputer, Krebs, gHacks same date)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/15/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
-   - Summary: 570 patches (316% up y/y from 137 in July 2025); 2 zero-days actively exploited (AD FS CVE-2026-56155, SharePoint CVE-2026-56164) + 1 publicly disclosed; 59 Critical. Microsoft credits internal AI system MDASH for scaling bug discovery.
-
-5. **Suno hack reveals training data scraped from YouTube Music, Deezer, Genius**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/
-   - Published: 2026-07-15 (URL slug + cross-confirmed via 404 Media, Variety, Engadget same date)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/15/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet on techcrunch.com (trusted-sources.md ✓)
-   - Summary: Supply-chain attack via Shai-Hulud worm on employee credentials in November 2025, revealed now via 404 Media. Source code showed ~2,013,545 clips from YouTube Music (113,879 hrs), plus Deezer (12,287 hrs), Genius HQ (17,615 hrs), and podcast RSS feeds; also exposed hundreds of thousands of customer records + Stripe payment info.
+   - URL: https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/
+   - Published: per URL slug — 2026-07-17
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/17/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — distinct path from yesterday's TechCrunch URLs (all `/2026/07/16/...`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: TechCrunch รายงานว่า VC Jeremy Levine เปลี่ยนชื่อในแอป Zoom เป็น "Jeremy Levine I do not consent to transcribing or recording" เพื่อยืนยันการไม่ยินยอมให้ AI note-taking apps และ transcription tools บันทึก/transcribe การสนทนา — สะท้อนความกังวลเรื่อง always-on AI recording ที่กำลังกลายเป็น default ในระบบประชุมออนไลน์.
 
 ## Dropped
 
-- https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/ — passed both filters, but OpenAI itself described the Codex Micro as a "limited-run collaboration" / novelty item; five higher-impact stories crowded it out.
-- https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/ — same story as #1; preferred Bloomberg as the primary business-reporting angle to keep the publisher mix off a TechCrunch monoculture.
-- https://www.blognone.com/node/151146 (Google Gemini Thailand stats) — Filter A (>24h): could not confirm publish date within rolling 24h from snippet ("เมื่อวานนี้" against uncertain reference date + no dated URL slug).
-- https://www.blognone.com/node/151151 (OpenAI hardware speaker) — Filter B (dedup): same Bloomberg story already covered in yesterday's brief.
-
-> Note: 5 items passed both filters this run. Of ~9 strong candidates, 4 were dropped for the reasons above; 0 items were flagged for stale timestamps at the second pass.
+- https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/ — Filter A (>24h): URL slug 2026-07-13 = 5 days old
+- https://openai.com/index/openai-nvidia-systems-partnership/ — Filter A: no fresh timestamp; deal announced earlier this year
+- https://thestandard.co/china-ai-diplomacy-global-leader/ — Filter A: timestamp not resolvable from snippet
+- https://www.prachachat.net/world/news-2039027 — Filter A: timestamp not resolvable from snippet (candidate for future coverage if fresh)
