@@ -1,58 +1,60 @@
-# Sources — 2026-07-18
+# Sources — 2026-07-19
 
-Generated: 2026-07-18 (Asia/Bangkok)
+Generated: 2026-07-19 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-17-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-18-brief.md (5 URLs loaded)
 
-1. **Moonshot AI เปิดตัว Kimi K3 ฉลาดระดับ Claude Opus 4.8 ราคาเท่า Sonnet**
+1. **Moonshot's Kimi Upends Conventional Wisdom on US Lead Over China**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-18/moonshot-s-kimi-upends-conventional-wisdom-on-us-lead-over-china
+   - Published: 2026-07-18 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug "/2026-07-18/" — trusted-source date-embedded slug
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — different path from yesterday's Bloomberg 07-17 links
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
+   - Summary: Bloomberg reports Kimi K3's launch challenges the assumption that US firms (Anthropic, OpenAI) hold a durable 6–12-month lead over Chinese labs; an Anthropic executive had this week stated Claude was "roughly six to 12 months ahead of Chinese rivals," a claim now under active challenge. K3 outperforms all rivals except Claude Fable 5 and GPT-5.6 on overall capability per Moonshot's own numbers.
+
+2. **China Joins Rush to Rethink the Smartphone for the AI Era**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-18/china-joins-rush-to-rethink-the-smartphone-for-the-ai-era
+   - Published: 2026-07-18 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug "/2026-07-18/"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
+   - Summary: ZTE Corp. demonstrated the Nubia NaviX Ultra at WAIC 2026 in Shanghai — described as "the world's first agentic AI smartphone" — with no traditional home screen or app store, built around the Doubao voice assistant that plans and executes task sequences autonomously. The device won the 2026 SAIL (Super AI Leader) Award ahead of WAIC 2026's official debut; specifications, pricing, and availability were not confirmed.
+
+3. **China Dismisses Claim that It Illicitly Extracts Foreign AI Tech**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-18/china-dismisses-claim-that-it-illicitly-extracts-foreign-ai-tech
+   - Published: 2026-07-18 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug "/2026-07-18/"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
+   - Summary: China brushed off allegations from US firms — including Anthropic PBC — that Chinese rivals illicitly extract results from top American models to advance their own capabilities. The dispute lands while Kimi K3 dominates the AI news cycle and while WAICO's 29-country signing (16 July) is reshaping the global-governance conversation.
+
+4. **Can AI Predict the World Cup? We Tested Claude Against Humans**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-18/can-ai-predict-the-world-cup-we-tested-claude-against-humans
+   - Published: 2026-07-18 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug "/2026-07-18/"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
+   - Summary: Bloomberg reports on the first World Cup of the AI era, in which celebrity-animal prognosticators have been largely replaced by machines. In China alone, more than 20 million people submitted predictions in a contest turned into a reality show called "Human Versus Machine: Who's the World Cup Prophet?"; Bloomberg tested Claude against humans on its own predictions.
+
+5. **[ลือ] Anthropic เจรจาขอเช่าศูนย์ข้อมูลของ Meta มารัน AI**
    - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151161
-   - Published: per WebSearch snippet — เปิดตัววันศุกร์ 17 กรกฎาคม 2569; weights ให้ดาวน์โหลด 27 ก.ค.
-   - FreshnessCheck: ✅ within last 24h — snippet confirms Friday 17 July launch; today is 18 July → within rolling 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday cited a TechCrunch preview at `techcrunch.com/2026/07/16/...` (host blognone.com absent yesterday entirely)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Moonshot AI เปิดตัว Kimi K3 โมเดล MoE ขนาด 2.8T พารามิเตอร์ (896 experts / 16 active), รองรับ 1M context, มี vision ในตัว, ราคา $3/$15 ต่อล้านโทเค็น (cache $0.3) เท่าคลาส Claude Sonnet; ชนะ Claude Opus 4.8 ในเบนช์มาร์คเขียนโค้ด DeepSWE, Terminal Bench, SWE Marathon; เปิดให้ดาวน์โหลด weights 27 กรกฎาคม.
-
-2. **Xi Vows to Make AI for All in Debut at China's Top Tech Summit**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-17/xi-vows-to-make-ai-for-all-in-debut-at-china-s-top-tech-summit
-   - Published: per URL slug — 2026-07-17
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-17/` (Asia/Bangkok today 2026-07-18)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Bloomberg URL was `/2026-07-16/china-led-ai-body-enlists-global-south-states-to-rival-us`, distinct path
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Xi Jinping ขึ้นเวที WAIC เป็นครั้งแรก กล่าวว่า "AI development should not be a solo performance by a single country, but a symphony of international cooperation" ประกาศจุดยืน AI for All และย้ำว่าต้องควบคุมความเสี่ยงด้านความปลอดภัย.
-
-3. **นายกฯ อนุทิน เสนอ 3 หลักธรรมาภิบาล AI บนเวที WAIC**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/pm-ai-world-governance-principles/
-   - Published: per WebSearch snippet — ถ้อยแถลง 17 กรกฎาคม 2569 พิธีเปิด WAIC (แผนเยือน 16-20 ก.ค.)
-   - FreshnessCheck: ✅ within last 24h — snippet ระบุการกล่าวสุนทรพจน์ 17 ก.ค. ที่พิธีเปิด WAIC
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — host thestandard.co ไม่ปรากฏในสรุปเมื่อวาน
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: อนุทิน ชาญวีรกูล นายกรัฐมนตรี กล่าวถ้อยแถลงในพิธีเปิด WAIC 2026 เซี่ยงไฮ้ ภายใต้หัวข้อ "AI Partnership for a Brighter Future" เสนอ 3 หลักธรรมาภิบาล AI — Protection (คุ้มครองประชาชน), Potential (ปลดล็อกศักยภาพ), Prosperity (สร้างความเจริญรุ่งเรืองร่วมกัน) พร้อมประกาศแพลตฟอร์ม SHIELD ร่วม UNODC สำหรับแลกเปลี่ยนข้อมูลอาชญากรรมออนไลน์ข้ามพรมแดน.
-
-4. **China's Powerful New AI Surprises Investors, Fueling Tech Rout**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-ai-surprises-investors-fueling-tech-rout-mroxm71p
-   - Published: per URL slug — 2026-07-17
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-17/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — distinct path; not in yesterday's Bloomberg URL
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: การเปิดตัว Kimi K3 ของ Moonshot ทำให้หุ้น AI และเซมิคอนดักเตอร์ทั่วโลกร่วงลงในวันศุกร์ Bloomberg บรรยายว่าเป็น "surprise breakthrough" ที่ทำให้นักลงทุนตอบสนองเชิงลบต่อสัญญาณที่ห้องแล็บจีนไล่ทันคู่แข่งสหรัฐ.
-
-5. **The Zoom hack that says, 'Don't record me'**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/
-   - Published: per URL slug — 2026-07-17
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/17/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — distinct path from yesterday's TechCrunch URLs (all `/2026/07/16/...`)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch รายงานว่า VC Jeremy Levine เปลี่ยนชื่อในแอป Zoom เป็น "Jeremy Levine I do not consent to transcribing or recording" เพื่อยืนยันการไม่ยินยอมให้ AI note-taking apps และ transcription tools บันทึก/transcribe การสนทนา — สะท้อนความกังวลเรื่อง always-on AI recording ที่กำลังกลายเป็น default ในระบบประชุมออนไลน์.
+   - URL: https://www.blognone.com/node/151182
+   - Published: 2026-07-18 (inferred — Blognone node 151182 sits 21 higher than yesterday-cited node 151161; a confirmed 06:47 07-18 Bethesda post was Blognone node ~151173, placing 151182 later on 07-18)
+   - FreshnessCheck: ✅ within last 24h — Blognone node number sequence places this post after the confirmed 06:47 07-18 morning post on the same site
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — new node not previously cited
+   - Verification: Tier 2 — WebSearch snippet (blognone.com is on trusted-sources.md)
+   - Summary: Blognone รายงาน (อ้าง New York Times ผ่านแหล่งข่าว 3 ราย) ว่า Anthropic เจรจาขอเช่าศูนย์ข้อมูลของ Meta เพื่อรัน AI มูลค่าดีลอาจสูงถึง 10 พันล้านดอลลาร์ ในช่วง 2 ปี Anthropic จ่ายเป็นรายเดือน; ข้อเสนอมาจากฝั่ง Anthropic ในเดือน มิ.ย. และ Meta กำลังพิจารณา; เป็นดีลที่คล้ายกับที่ Anthropic เพิ่งเซ็นกับ SpaceX เมื่อเดือน พ.ค.
 
 ## Dropped
+- https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals — Filter A (>24h): slug "/2026-07-17/" is ~48h old
+- https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html — Filter A (>24h): slug "/2026/07/17/" is ~48h old
+- https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/ — Filter A (>24h): slug "/2026/07/16/" is ~72h old
+- https://9to5google.com/2026/07/17/google-3d-emoji-design/ — Filter A (>24h): slug "/2026/07/17/" is ~48h old; also 9to5google not on trusted list
+- https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en — Filter A (>24h): dated 2026-07-16
 
-- https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/ — Filter A (>24h): URL slug 2026-07-13 = 5 days old
-- https://openai.com/index/openai-nvidia-systems-partnership/ — Filter A: no fresh timestamp; deal announced earlier this year
-- https://thestandard.co/china-ai-diplomacy-global-leader/ — Filter A: timestamp not resolvable from snippet
-- https://www.prachachat.net/world/news-2039027 — Filter A: timestamp not resolvable from snippet (candidate for future coverage if fresh)
+> Note: 5 items passed both filters this run. Runtime is WEBFETCH_BLOCKED; verification is Tier 2 across all items via WebSearch snippets on trusted-source domains (Bloomberg × 4, Blognone × 1).
