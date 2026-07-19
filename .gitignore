@@ -22,3 +22,6 @@ __pycache__/
 
 # Skill working scratch (intermediate drafts, not committed)
 .claude/skills/*/scratch/
+
+# Claude Code session scratchpad (ephemeral per-session working files)
+scratchpad/
