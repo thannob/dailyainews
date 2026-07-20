@@ -1,58 +1,64 @@
-# Sources — 2026-07-18
+# Sources — 2026-07-20
 
-Generated: 2026-07-18 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-07-20 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe of https://example.com returned 403 — Tier 2 only)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-17-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-19-brief.md (5 URLs loaded)
 
-1. **Moonshot AI เปิดตัว Kimi K3 ฉลาดระดับ Claude Opus 4.8 ราคาเท่า Sonnet**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151161
-   - Published: per WebSearch snippet — เปิดตัววันศุกร์ 17 กรกฎาคม 2569; weights ให้ดาวน์โหลด 27 ก.ค.
-   - FreshnessCheck: ✅ within last 24h — snippet confirms Friday 17 July launch; today is 18 July → within rolling 24h
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday cited a TechCrunch preview at `techcrunch.com/2026/07/16/...` (host blognone.com absent yesterday entirely)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Moonshot AI เปิดตัว Kimi K3 โมเดล MoE ขนาด 2.8T พารามิเตอร์ (896 experts / 16 active), รองรับ 1M context, มี vision ในตัว, ราคา $3/$15 ต่อล้านโทเค็น (cache $0.3) เท่าคลาส Claude Sonnet; ชนะ Claude Opus 4.8 ในเบนช์มาร์คเขียนโค้ด DeepSWE, Terminal Bench, SWE Marathon; เปิดให้ดาวน์โหลด weights 27 กรกฎาคม.
+YESTERDAYS_URLS (loaded from articles/2026-07-19-brief.md):
+- https://www.bloomberg.com/news/articles/2026-07-18/moonshot-s-kimi-upends-conventional-wisdom-on-us-lead-over-china
+- https://www.bloomberg.com/news/articles/2026-07-18/china-joins-rush-to-rethink-the-smartphone-for-the-ai-era
+- https://www.bloomberg.com/news/articles/2026-07-18/china-dismisses-claim-that-it-illicitly-extracts-foreign-ai-tech
+- https://www.bloomberg.com/news/articles/2026-07-18/can-ai-predict-the-world-cup-we-tested-claude-against-humans
+- https://www.blognone.com/node/151182
 
-2. **Xi Vows to Make AI for All in Debut at China's Top Tech Summit**
+1. **Alibaba's Qwen Unveils Preview of Flagship AI Model**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-17/xi-vows-to-make-ai-for-all-in-debut-at-china-s-top-tech-summit
-   - Published: per URL slug — 2026-07-17
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-17/` (Asia/Bangkok today 2026-07-18)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Bloomberg URL was `/2026-07-16/china-led-ai-body-enlists-global-south-states-to-rival-us`, distinct path
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Xi Jinping ขึ้นเวที WAIC เป็นครั้งแรก กล่าวว่า "AI development should not be a solo performance by a single country, but a symphony of international cooperation" ประกาศจุดยืน AI for All และย้ำว่าต้องควบคุมความเสี่ยงด้านความปลอดภัย.
+   - URL: https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model
+   - Published: 2026-07-19 (per URL slug and search snippet — "The Sunday release came only days after Chinese startup Moonshot AI unveiled a powerful offering")
+   - FreshnessCheck: ✅ within last 24h — URL slug "2026-07-19" + Bloomberg snippet identifies release as "Sunday" (2026-07-19)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs are all "2026-07-18"; this path is different)
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Alibaba launched a preview of its flagship Qwen3.8-Max model — 2.4T parameters, first Qwen model above 1T to natively process images/video/documents alongside text. Alibaba described it as comparable to leading frontier AI models and "second only to Anthropic PBC's Fable 5", though it offered no benchmark scores and no independent evaluation has verified the ranking. Developers can access it now via Alibaba's coding platforms (including Qoder); open weights are promised but with no date or license announced.
 
-3. **นายกฯ อนุทิน เสนอ 3 หลักธรรมาภิบาล AI บนเวที WAIC**
-   - Publisher: The Standard
-   - URL: https://thestandard.co/pm-ai-world-governance-principles/
-   - Published: per WebSearch snippet — ถ้อยแถลง 17 กรกฎาคม 2569 พิธีเปิด WAIC (แผนเยือน 16-20 ก.ค.)
-   - FreshnessCheck: ✅ within last 24h — snippet ระบุการกล่าวสุนทรพจน์ 17 ก.ค. ที่พิธีเปิด WAIC
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — host thestandard.co ไม่ปรากฏในสรุปเมื่อวาน
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: อนุทิน ชาญวีรกูล นายกรัฐมนตรี กล่าวถ้อยแถลงในพิธีเปิด WAIC 2026 เซี่ยงไฮ้ ภายใต้หัวข้อ "AI Partnership for a Brighter Future" เสนอ 3 หลักธรรมาภิบาล AI — Protection (คุ้มครองประชาชน), Potential (ปลดล็อกศักยภาพ), Prosperity (สร้างความเจริญรุ่งเรืองร่วมกัน) พร้อมประกาศแพลตฟอร์ม SHIELD ร่วม UNODC สำหรับแลกเปลี่ยนข้อมูลอาชญากรรมออนไลน์ข้ามพรมแดน.
-
-4. **China's Powerful New AI Surprises Investors, Fueling Tech Rout**
+2. **Moonshot Plans IPO in Six Months After China AI Breakthrough**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-ai-surprises-investors-fueling-tech-rout-mroxm71p
-   - Published: per URL slug — 2026-07-17
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-17/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — distinct path; not in yesterday's Bloomberg URL
+   - URL: https://www.bloomberg.com/news/articles/2026-07-19/china-s-moonshot-plans-ipo-in-six-months-after-ai-breakthrough
+   - Published: 2026-07-19 (per URL slug — also carried by The Japan Times on same 2026/07/19 path)
+   - FreshnessCheck: ✅ within last 24h — URL slug "2026-07-19" corroborated by Japan Times "2026/07/19/tech/china-moonshot-ai-ipo" reprint
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday covered the Kimi K3 model release story; this is the follow-up IPO news)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: การเปิดตัว Kimi K3 ของ Moonshot ทำให้หุ้น AI และเซมิคอนดักเตอร์ทั่วโลกร่วงลงในวันศุกร์ Bloomberg บรรยายว่าเป็น "surprise breakthrough" ที่ทำให้นักลงทุนตอบสนองเชิงลบต่อสัญญาณที่ห้องแล็บจีนไล่ทันคู่แข่งสหรัฐ.
+   - Summary: Moonshot AI has told investors it is preparing to list in Hong Kong in as early as six months, riding the wave of Kimi K3's launch that "sent tech stocks reeling". The company distributed a shareholder resolution seeking approval for the offering; CICC and Goldman Sachs are in talks to work on the deal. A concurrent fundraising round may value the three-year-old startup at more than $30 billion, and annual recurring revenue reportedly hit $300 million in June, up from $200 million in April.
 
-5. **The Zoom hack that says, 'Don't record me'**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/
-   - Published: per URL slug — 2026-07-17
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/17/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — distinct path from yesterday's TechCrunch URLs (all `/2026/07/16/...`)
+3. **Big Tech Needs to Justify AI Spending as Investors Dump Stocks**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-19/big-tech-needs-to-justify-ai-spending-as-investors-dump-stocks
+   - Published: 2026-07-19 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug "2026-07-19" + snippet references "last week's wipeout in chips" (the immediately preceding week)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (no macro-market story in yesterday's brief)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch รายงานว่า VC Jeremy Levine เปลี่ยนชื่อในแอป Zoom เป็น "Jeremy Levine I do not consent to transcribing or recording" เพื่อยืนยันการไม่ยินยอมให้ AI note-taking apps และ transcription tools บันทึก/transcribe การสนทนา — สะท้อนความกังวลเรื่อง always-on AI recording ที่กำลังกลายเป็น default ในระบบประชุมออนไลน์.
+   - Summary: After last week's chip wipeout and broader tech selloff, pressure is building for the biggest AI spenders to justify their expenditures. Information tech was the worst-performing S&P 500 group, the Nasdaq 100 lost 4.1%, and the Philadelphia Semiconductor Index sank 10% — its worst week since April 2025. The market's question is shifting from "How much are you spending?" (rewarded in 2024–25) to "What return are you earning on that spending?"
+
+4. **Why Apple's OpenAI Lawsuit Doesn't Mention Jony Ive; AI Recording at Genius Bar**
+   - Publisher: Bloomberg (Power On newsletter)
+   - URL: https://www.bloomberg.com/news/newsletters/2026-07-19/why-apple-s-openai-lawsuit-doesn-t-mention-jony-ive-ai-recording-at-genius-bar-mrrv4mix
+   - Published: 2026-07-19 (per URL slug — corroborated by AppleInsider companion URL dated "26/07/19")
+   - FreshnessCheck: ✅ within last 24h — URL slug "2026-07-19" + AppleInsider same-day companion article
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Bloomberg's Power On newsletter analyses why Apple's trade-secret lawsuit against OpenAI — which names former Apple execs Tang Yew Tan (now OpenAI CHO) and engineer Chang Liu (who allegedly exploited an authentication bug to access confidential network storage) — does NOT name Jony Ive despite him being the face of OpenAI's hardware push. The analysis concludes Ive was not operationally involved in the alleged misconduct. The same edition reports Apple is testing a Live Notes AI tool in retail stores to record and transcribe Genius Bar appointments; employees are concerned about how the tool could be used against them.
+
+5. **How AI Could Create a Fiscal Crisis (Bloomberg "The Forecast")**
+   - Publisher: Bloomberg (The Forecast newsletter)
+   - URL: https://www.bloomberg.com/news/newsletters/2026-07-19/how-ai-could-create-a-fiscal-crisis
+   - Published: 2026-07-19 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug "2026-07-19" + surfaced as the lead newsletter story of 2026-07-19 in search results
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Bloomberg's "The Forecast" newsletter frames AI's fiscal threat as a leading concern for 2026-07-19 — pairing the corporate-capex pressure story (see item 3) with a public-finance angle: if the AI capex cycle disappoints or triggers a broader tech drawdown, government tax receipts (heavily concentrated in tech-sector capital gains and payroll) could take a coordinated hit alongside corporate balance sheets.
 
 ## Dropped
 
-- https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/ — Filter A (>24h): URL slug 2026-07-13 = 5 days old
-- https://openai.com/index/openai-nvidia-systems-partnership/ — Filter A: no fresh timestamp; deal announced earlier this year
-- https://thestandard.co/china-ai-diplomacy-global-leader/ — Filter A: timestamp not resolvable from snippet
-- https://www.prachachat.net/world/news-2039027 — Filter A: timestamp not resolvable from snippet (candidate for future coverage if fresh)
+- (none identified — all trusted-source candidates surfaced this run were dated 2026-07-19)
+
+> Note: 5 items passed both filters this run. Of 6+ 2026-07-19-dated Bloomberg candidates surfaced, 5 selected; the CFOs-AI-token-costs newsletter (same date) was set aside as thematically overlapping with item 3 to preserve diversity. No Thai-language 2026-07-19/20 source turned up in trusted-domain search results — Blognone's search index did not show a fresh AI post inside the 24h window that wasn't already in yesterday's brief; all Thai coverage of PM Anutin @ WAIC dated 2026-07-17 which fails Filter A.
