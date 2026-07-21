@@ -1,31 +1,41 @@
-# Perspectives — 2026-07-20
+# Perspectives — 2026-07-21
 
-## 1. Alibaba Qwen 3.8 Max preview — 2.4T param, "second only to Fable 5"
+## 1. Google "Frozen v2" chip for Gemini
 
-**อาจารย์ (มหาวิทยาลัย):** เคสสอนความแตกต่างระหว่าง "self-reported ranking" กับ "independent benchmark" — ให้นักศึกษาลิสต์ข้ออ้างของ Alibaba (second only to Fable 5, near-frontier) เทียบกับหลักฐานที่มี (0 benchmark เปิดเผย, 0 third-party eval) แล้วอภิปรายว่านักข่าวและนักลงทุนควรถ่วงน้ำหนักคำกล่าวประเภทนี้อย่างไรโดยไม่ตกหลุม hype cycle.
-**ผู้เชี่ยวชาญด้าน AI:** ข่าวนี้อ่านสองชั้น — ชั้นแรก 2.4T total params + multimodal เข้าไปในสายเดียวกับ Qwen 3.7 คือ scaling incremental มากกว่า architectural breakthrough; ชั้นสองคือ **การชิงเปิดตัวห่างจาก Kimi K3 แค่ 3 วัน** สะท้อนว่าทีมจีนทั้งคู่ (Moonshot + Alibaba) เข้าสู่ **release cadence ที่ห่างกันเป็นวันไม่ใช่ไตรมาส** — moat "6–12 เดือน lead" ของค่ายอเมริกันในกรอบข่าววานนี้ยิ่งดูสั่นคลอน; แต่จนกว่า MoE active-param count และผล eval อิสระออก อย่ารีบสรุปว่าใครแรงจริง.
-**โปรแกรมเมอร์มืออาชีพ:** ประโยชน์เชิงปฏิบัติวันนี้จำกัด — preview อยู่บน Qoder / Alibaba Token Plan (subscription tier $6 Lite ถึง $68 Pro) แต่ยังไม่มี open weights, ไม่มี license, ไม่มี Hugging Face repo; ทีมที่จริงจังกับ agent workload ควรรอ open-weight release แล้วรัน eval เทียบกับ K3 + Fable 5 บน real workload ของตัวเอง (coding, RAG, tool-use) ก่อนตัดสินใจ swap; อย่าเปลี่ยน production เพราะ marketing pitch.
+**อาจารย์ (มหาวิทยาลัย):** เคสสอนคลาส systems / computer architecture ได้ดี — Google เลือก "แช่แข็ง" (freeze) โมเดล-specific ops เข้าซิลิคอนแลกกับความยืดหยุ่น เพื่อลด token-per-watt ให้ต่ำลงหลายเท่า; ให้นักศึกษาถกเปรียบ ASIC/TPU generation กับ GPGPU ในมิติ flexibility vs efficiency.
 
-## 2. Moonshot AI เตรียม IPO ฮ่องกงใน 6 เดือน — valuation กว่า $30B
+**ผู้เชี่ยวชาญด้าน AI:** 6–10× efficiency เทียบกับ TPU ปัจจุบันเป็นตัวเลข The Information — ยังไม่มี independent bench, และการฝัง architecture ลง silicon แปลว่า chip ล็อกกับ Gemini generation ที่ตายตัว; ถ้า Gemini architecture ปรับใหญ่ใน 2 ปี Frozen v2 อาจไม่คุ้มก่อนที่จะออก 2028.
 
-**อาจารย์ (มหาวิทยาลัย):** เคสสอน "ทำไม timing สำคัญ" — Moonshot ใช้ momentum จาก K3 (เพียง 3 วันหลังเปิดตัว) เร่งเข้าตลาดทุน; ให้นักศึกษาวิเคราะห์ trade-off ระหว่าง (ก) ระดมทุนตอน narrative ยัง hot vs (ข) รอพิสูจน์ ARR ยั่งยืน — โมเดล ARR $200M เม.ย. → $300M มิ.ย. คือ signal ที่ต้อง unpack ให้ลึกว่าเป็น organic growth หรือ pricing gimmick.
-**ผู้เชี่ยวชาญด้าน AI:** ARR growth ระดับนี้ (+50% ใน 2 เดือน) ในบริษัท 3 ปีที่แข่งกับ US labs ที่ ARR หลายพันล้าน คือ signal จริง — ไม่ใช่แค่กระแส K3; แต่ต้องดูโครงสร้างรายได้ (API vs consumer app vs enterprise contract) เพราะ margin กับ retention ต่างกันมาก; ถ้า Moonshot IPO สำเร็จที่ $30B valuation จะเป็น pricing anchor ให้ Anthropic / OpenAI / DeepSeek ในรอบต่อไป — public market ยอมรับ China frontier lab ในราคาที่จับต้องได้.
-**โปรแกรมเมอร์มืออาชีพ:** สัญญาณสำหรับทีม engineering คือ Moonshot จะมี capital ยาวขึ้นและ commit ต่อ open-weights ได้มั่นคงกว่า (public company มีแรงกดดันให้ทำตามที่ประกาศ) — วางแผน infra ที่รองรับ K3 + K4 ในอีก 12–18 เดือนได้; ถ้าใช้ Kimi API ใน production ให้เตรียม due diligence สำหรับ IPO period (rate-limit เปลี่ยน, T&C เปลี่ยน, service tier แยกใหม่เป็นเรื่องปกติในช่วงหลัง listing).
+**โปรแกรมเมอร์มืออาชีพ:** ผลกระทบระยะสั้นยังไม่มี — chip มาปี 2028 — แต่ signal สำหรับทีม infrastructure คือ Google Cloud ยังตึงเรื่อง compute จนต้องปฏิเสธลูกค้าภายนอก; ทีมที่ผูกกับ Vertex/Gemini API ต้องมี fallback vendor และประเมิน rate-limit / quota shock ในระยะ 12–18 เดือน.
 
-## 3. Big Tech ต้องพิสูจน์การลงทุน AI — chip stocks -10% สัปดาห์แย่ที่สุดตั้งแต่ เม.ย. 2025
+## 2. MCP 2026-07-28 spec update
 
-**อาจารย์ (มหาวิทยาลัย):** สอนคลาส finance หรือ tech policy ได้ตรงคำถาม — Nasdaq 100 -4.1% ในสัปดาห์เดียว, SOX -10%; ให้นักศึกษาแยกสาเหตุ 3 ชั้น (ก) valuation compression, (ข) doubt ต่อ AI ROI ที่ concrete, (ค) rotation ออกจาก mega-cap tech ไป defensives; นี่ไม่ใช่ AI winter แต่คือ **first serious repricing** ของ AI capex cycle — บทเรียนที่เทียบได้กับ dot-com correction ปี 2000.
-**ผู้เชี่ยวชาญด้าน AI:** คำถามของนักลงทุนเปลี่ยนจาก "spend เท่าไหร่" เป็น "ได้อะไรกลับ" — สำหรับ frontier lab นี่คือ **existential pivot**: ต้องพิสูจน์ tangible enterprise ROI (agent, coding, doc processing) ในไตรมาสหน้า ไม่ใช่แค่ benchmark score; วิธีที่แต่ละค่ายตอบสนอง (Anthropic เร่ง Cowork/enterprise, OpenAI เร่ง IPO prep + product line, Google เร่ง Gemini enterprise) จะกำหนดว่าใครรอด repricing รอบนี้.
-**โปรแกรมเมอร์มืออาชีพ:** ในองค์กร CFO จะเริ่มถาม "AI token cost เดือนนี้เท่าไหร่ ได้อะไรกลับ" — ทีม engineering ควรเตรียม dashboard ที่ track cost per successful task (ไม่ใช่แค่ token count) และ ROI proxy (time saved, deflection rate, revenue attributed); ถ้าไม่มีตัวเลขเหล่านี้ตอนถูกถาม budget จะโดนตัดก่อน; และ diversify vendor (Claude + GPT + Kimi + local open-weight) เพื่อรับมือ pricing shock จาก vendor ใด vendor หนึ่ง.
+**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างที่สอน distributed-systems 101 — จาก sticky-session ที่ตัดขวาง horizontal scale ไปสู่ stateless HTTP + client-side caching; MCP กำลังทำสิ่งที่ REST เคยทำในยุค 2000s ให้ agent tooling. ใช้เป็นเคสสอน API design + protocol evolution ได้ตรง.
 
-## 4. Apple ฟ้อง OpenAI trade secret — ไม่รวม Jony Ive; Genius Bar ทดสอบ AI transcription "Live Notes"
+**ผู้เชี่ยวชาญด้าน AI:** ประเด็นจริงไม่ใช่ session token — แต่คือ MCP เริ่มยอมรับว่ามันคือ standard ระดับโปรดักชัน ต้องรองรับ OAuth/OIDC, deprecation policy, extensions (Apps, Tasks); เท่ากับปิด gap ให้ enterprise adopt ได้จริงหลังจาก 12 เดือนของการทดลองในสาย OSS.
 
-**อาจารย์ (มหาวิทยาลัย):** สอน IP law + labour law พร้อมกัน — (ก) เคสฟ้อง Tang Yew Tan (อดีต Apple ปัจจุบัน CHO ของ OpenAI) และ Chang Liu (ที่ถูกกล่าวหาว่าใช้ authentication bug เข้าถึง confidential storage) เป็นตัวอย่าง trade-secret misappropriation ที่ยากพิสูจน์เพราะต้องแสดงว่า "ข้อมูลออกจริง + ถูกนำไปใช้จริง"; (ข) Live Notes ที่บันทึกบทสนทนาระหว่างพนักงาน–ลูกค้าเปิดคำถาม employee surveillance vs customer service quality — ให้นักศึกษาถกว่ากรอบกฎหมายไทย/สหรัฐจัดการอย่างไร.
-**ผู้เชี่ยวชาญด้าน AI:** ข้อสังเกตเชิงเทคนิคของ Bloomberg (Ive ไม่อยู่ในคำฟ้องเพราะไม่ได้อยู่ตรง alleged conduct) บอกว่าฝ่ายกฎหมาย Apple **เลือก target ที่มี paper trail ชัด** ไม่ใช่ target ที่มี PR value; นี่คือ signal ว่าคดีนี้ Apple ตั้งใจชนะไม่ใช่แค่กดดัน; สำหรับ Live Notes ถ้าเป็นโมเดล on-device (บนสาย Apple Intelligence) จะเปลี่ยน conversation-AI จาก cloud-mediated → edge processing และตอบโจทย์ privacy ที่ Apple โฆษณา — แต่ปัญหาทางเทคนิคคือ model size + accuracy ที่ยังทำ Whisper-class transcription บน iPad/Mac Genius Bar ให้ครบ 100% ในสภาพ noisy retail floor ไม่ง่าย.
-**โปรแกรมเมอร์มืออาชีพ:** สองข้อคิด — (ก) ทีม engineering ที่รับพนักงานจาก big-tech ต้องมี **onboarding process ป้องกัน trade-secret contamination** (email เก่าไม่นำเข้า, doc เก่าไม่ upload, ไม่พูดถึงงานเก่าใน design review ช่วง 90 วันแรก); (ข) ถ้าทำ voice UI ในธุรกิจ B2B ต้องเตรียม transcript logging ที่ compliant กับกฎหมายท้องถิ่น (PDPA / GDPR) มี opt-out ให้ลูกค้าและพนักงาน — เพราะ Apple ที่มี resource ระดับ trillion ยังจะโดนถาม case นี้ ทีมเล็กยิ่งต้องระวัง.
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมรัน MCP server ใน production วางแผน migration ก่อน 28 ก.ค. — plain round-robin load balancer + `Mcp-Method` routing แทน sticky session, `tools/list` cacheable ตาม `ttlMs` ที่ server ส่ง; ประหยัด infra cost + ลด latency แต่ต้องทดสอบ auth flow ใหม่ที่ผูกกับ OAuth resource server.
 
-## 5. AI Fiscal Crisis — Bloomberg "The Forecast" ยก AI's fiscal threat เป็นเรื่องเด่นวันนี้
+## 3. Moonshot Kimi K3 — winners/losers ในตลาด
 
-**อาจารย์ (มหาวิทยาลัย):** เคสสอนวิชา public finance + macro — ถ้า AI capex boom กลายเป็น bubble, การชะลอตัวจะส่งผลผ่าน (ก) tax receipt จาก capital gain ในหุ้น tech ที่คิดเป็นสัดส่วนใหญ่ของ IRS collection, (ข) payroll tax จากพนักงาน tech เงินเดือนสูง, (ค) corporate tax จาก mega-cap; ให้นักศึกษาประเมินว่า budget federal / รัฐ California (Silicon Valley) ต้องปรับตัวอย่างไร; เชื่อมโยงกับกรณี Ireland ที่เศรษฐกิจพึ่ง corporate tax ของ tech ต่างชาติ.
-**ผู้เชี่ยวชาญด้าน AI:** ประเด็นนี้สำคัญเพราะเชื่อม 3 ระบบ — private capital allocation, capital markets, และ government fiscal position — เข้าเป็น loop เดียวที่กระทบ AI research funding รอบต่อไป; ถ้ารัฐบาลสหรัฐเจอ fiscal shock จาก tech drawdown, งบ NIH / NSF / DoE ที่หนุน foundational AI research (compute grants, dataset access) จะโดนตัดตามได้ — ห้อง lab ที่พึ่ง grant มากกว่า corporate money (มหาวิทยาลัย, non-profit) จะเสียเปรียบ.
-**โปรแกรมเมอร์มืออาชีพ:** ในระยะ 12–18 เดือน ถ้าเห็น sign ของ fiscal tightening (Fed policy shift, tax code change กระทบ stock-based comp) เตรียม (ก) diversify job risk (อย่าให้ทุกอย่างขึ้นกับ mega-cap tech single employer), (ข) skill portfolio ที่ยืดหยุ่นข้าม stack (ไม่ใช่แค่ prompt engineer สำหรับค่าย A), (ค) ประเมินสถานะการเงินส่วนตัวเผื่อ hiring freeze หรือ RSU vesting ที่ underwater — ตลาดที่ Bloomberg เตือนวันนี้ไม่ใช่ noise แต่เป็น scenario ที่ผู้บริหารทั้งวงการอ่านซ้ำในสัปดาห์นี้.
+**อาจารย์ (มหาวิทยาลัย):** เคสสอน finance + strategy คู่กับ Bloomberg เมื่อวานเรื่อง Moonshot IPO — ตอนนี้เห็น "second-order effect" ของ K3 ผ่าน market repricing: memory-chip vendor (SK Hynix, Samsung) ได้อานิสงส์เพราะการแข่งโมเดลต้อง HBM มากขึ้น, IBM ที่เน้น enterprise software โดน sell-off ตามสมมติฐาน disruption; ให้นักศึกษาลิสต์ transmission channel 3 ชั้น (model → chip demand → equity).
+
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข $314B wiped จาก valuation ของสองบริษัท US AI ไม่ใช่ fundamental — เป็น analyst-model repricing บน narrative; แต่การที่ SMIC เด้ง 5.4% ในวันเดียวสะท้อนว่า market เชื่อว่า China frontier lab จะเร่ง localise supply chain แล้วเสริม indigenous foundry — ผลกระทบภูมิรัฐศาสตร์ใหญ่กว่า benchmark.
+
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ evaluate vendor cost ตอนนี้เป็นเวลาที่ Kimi K3 API "ราคาต่อผลลัพธ์" น่าดึงเข้าห้อง lab: benchmark กับ workload จริง (agent, coding, RAG) ก่อนสิ้นเดือน; แต่ระวังว่า Moonshot กำลังชนกำแพง GPU capacity (จากรายงานอื่นวันเดียวกัน) — ถ้าจะพึ่งพา ให้ mux กับ vendor ที่ SLA ยั่งยืน.
+
+## 4. Natural — $30M Series A สำหรับ payment rail ของ AI agent
+
+**อาจารย์ (มหาวิทยาลัย):** เปิดคำถาม "AI agent จะจ่ายเงินอย่างไรโดยไม่ต้องให้มนุษย์เซ็น" — เชื่อมโยงกับ payment law, KYC/AML, principal-agent theory; นักศึกษาที่เรียน fintech ควรอ่านคู่กับ AP2 (Agent Payments Protocol) ที่ Visa/Stripe/Google ประกาศเมื่อ 16 ก.ค. เพื่อเห็น standard war กำลังก่อตัว.
+
+**ผู้เชี่ยวชาญด้าน AI:** เดิมพันของ Natural คือ "reinvent payment rail from scratch for agents" — เป็นเดิมพันสูง เพราะ Stripe ก็ทำอยู่ + Visa/Mastercard มีบัญชีทุกใบในโลก; ข้อได้เปรียบเดียวคือ speed ของ startup 193 วัน แต่ payment rail ที่ scale ต้องผ่าน compliance ที่ startup ไม่มี moat มาก่อน.
+
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมกำลังสร้าง agent ที่ต้องซื้อของ / จ้าง service — วันนี้ยังยากที่จะให้ agent จ่ายเงินโดยไม่ผ่าน human confirmation; ติดตาม Stripe Agent Payments + AP2 protocol ก่อน commit กับ vendor ใหม่ที่ยังไม่มี audit trail; วางสถาปัตยกรรม abstraction ที่แลก payment provider ได้ง่าย เพราะ 12 เดือนข้างหน้าตลาดนี้จะเดือด.
+
+## 5. YouTube ชี้แจงนโยบาย AI slop
+
+**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างสอน content policy + platform governance — YouTube ยืนยัน "tool-agnostic" (ใช้ AI ได้ ไม่ demonetise เพราะเครื่องมือ) แต่ตัดสินที่ "authenticity + original insight"; เปิดคำถามว่าใครเป็นผู้ตัดสินและ criteria วัดอย่างไร ใช้ในคลาส media studies หรือกฎหมายเทคโนโลยีได้.
+
+**ผู้เชี่ยวชาญด้าน AI:** 3 bucket ที่ห้าม monetise (generic/repetitive, unsatisfying/off-putting, AI persona บน health/legal/finance/political) มีแค่ bucket 3 ที่ evaluable แบบ deterministic; bucket 1 และ 2 พึ่ง classifier ที่ subjective — เป็น governance gap ใหญ่ที่ creator กลุ่ม borderline จะโดน false-positive.
+
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ product ที่ generate video ให้ creator — เพิ่ม guard rail ตั้งแต่ pipeline: ห้าม deploy AI persona อธิบาย health/finance ไม่ว่ากรณีใด, เพิ่ม "editorial layer" ให้ creator ใส่ voice/insight ก่อน publish; และเก็บ metadata (prompt, model version, edit history) เพื่อ appeal ได้ถ้า channel โดน demonetise พลาด.
