@@ -1,58 +1,59 @@
-# Sources — 2026-07-21
+# Sources — 2026-07-22
 
-Generated: 2026-07-21 (Asia/Bangkok)
+Generated: 2026-07-22 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-20-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-21-brief.md (5 URLs loaded)
 
-1. **Google is working on a new AI chip designed to make Gemini more efficient — "Frozen v2"**
+1. **Google releases three new Gemini models — Gemini 3.6 Flash, 3.5 Flash-Lite, 3.5 Flash Cyber (no 3.5 Pro)**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/
-   - Published: 2026-07-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/20/` and corroborating same-day CNBC report ("Alphabet stock pops on report", 2026-07-20)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host techcrunch.com absent from 2026-07-20 brief)
+   - URL: https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/
+   - Published: 2026-07-21 (per URL slug and search snippet "on Tuesday")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/21/` + snippet "on Tuesday, Google DeepMind released Gemini 3.6 Flash…"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TC slugs were all `/2026/07/20/`)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Per The Information (via TechCrunch), Alphabet is designing a server chip internally dubbed "Frozen v2," slated for release in 2028, that bakes parts of Gemini's architecture directly into silicon. TechCrunch's snippet says the chip could be 6–10× more efficient than Google's existing AI chips (tokens per watt), and that the project aims to ease an internal compute shortage that has reportedly forced Google Cloud to turn outside business away.
+   - Summary: Google DeepMind shipped Gemini 3.6 Flash + 3.5 Flash-Lite + 3.5 Flash Cyber; workhorse Flash uses ~17% fewer output tokens and drops to $1.50/$7.50 per 1M input/output; knowledge cutoff advances to March 2026; team has started pre-training Gemini 4.
 
-2. **AI's most important protocol is getting a little bit easier to use — MCP 2026-07-28 spec revision**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/
-   - Published: 2026-07-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/20/`; independently confirmed by Model Context Protocol Blog post "The 2026-07-28 MCP Specification Release Candidate"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch reports that MCP — the standard AI models use to reach external data sources and tools — is changing how it handles session IDs so servers can scale more easily. The upcoming 2026-07-28 release is the largest revision since launch: a stateless core that runs on ordinary HTTP infrastructure, extensions for server-rendered UI (MCP Apps) and long-running work (Tasks), and OAuth/OIDC-aligned authorization. Snippet notes remote MCP servers that used to need sticky sessions can now run behind a plain round-robin load balancer.
-
-3. **Moonshot Is Creating New Winners and Losers in the AI Trade**
+2. **OpenAI's Codex + ChatGPT Work agents reach 10 million users**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-20/moonshot-ai-is-creating-new-winners-and-losers-in-the-ai-trade
-   - Published: 2026-07-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-20/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday cited a different Bloomberg piece about Moonshot's IPO plan and a separate one about Big Tech having to justify AI spending; this is a distinct article on Monday's market impact)
+   - URL: https://www.bloomberg.com/news/articles/2026-07-21/openai-s-agents-reach-10-million-users-after-chatgpt-work-debut
+   - Published: 2026-07-21 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-21/` + snippet "OpenAI is set to announce Tuesday…"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg slug was `/2026-07-20/moonshot-ai-…`)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Bloomberg reports Moonshot's Kimi K3 launch has produced clear market winners and losers. Snippet cites IG analyst Tony Sycamore saying $314B has been wiped from valuation estimates for two unlisted US AI firms; SMIC rose as much as 5.4% in Shanghai and SK Hynix / Samsung Electronics are among positioning beneficiaries, while IBM tumbled and SpaceX slipped below its IPO price.
+   - Summary: OpenAI announced 10M combined users on Codex (coding agent) and ChatGPT Work (broader task agent launched 9 Jul), nearly doubling from earlier in the month; company-reported, not audited, and the "active" definition (DAU/WAU) is not disclosed.
 
-4. **Natural raises $30M Series A to reinvent payments for AI agents — and take on Stripe**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/
-   - Published: 2026-07-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/20/`; corroborated by PRNewswire release dated the same day
+3. **Nvidia says Vera Rubin design shipping to customers; OpenAI to deploy at scale in Q3**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-07-21/nvidia-touts-progress-getting-new-rubin-design-to-customers
+   - Published: 2026-07-21 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-07-21/` + corroborating snippet "systems now shipping…"
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Natural announced a $30M Series A led by Kirsten Green at Forerunner. TechCrunch's snippet says the round closed when Natural was 193 days old, bringing total funding above $40M. Positioning: AI agents can already scout vendors, compare prices, and coordinate shipments — but still hand off to a human at payment. Natural is rebuilding rails to close that gap and pitches itself in direct competition with Stripe, which is also chasing agent-native payments.
+   - Summary: Nvidia confirmed Vera Rubin is in full production; VR200 samples shipping to OpenAI, CoreWeave, Google Cloud, Microsoft Azure, Meta, Dell; CoreWeave says NVL72 racks deliver ~10× the token throughput of prior generation; OpenAI plans at-scale Q3 deployment.
 
-5. **YouTube clarifies policies around AI slop and upsetting videos**
+4. **US threatens sanctions against Chinese AI models over IP theft**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/
-   - Published: 2026-07-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/20/`
+   - URL: https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/
+   - Published: 2026-07-21 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/21/` + Bloomberg mirror on same date "Bessent Says US to Scrutinize Chinese AI Models for IP Theft"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TC slugs were all `/2026/07/20/`; yesterday's Moonshot Bloomberg piece was a market-repricing story, not a policy story — different URL, different reporting angle)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Treasury Secretary Scott Bessent said the US will scrutinize open-weight Chinese AI models (including Moonshot's Kimi K3) for signs of IP theft, and floated the possibility of sanctions against models developed with allegedly stolen weights or research; part of a broader Washington push as low-cost Chinese frontier models gain traction.
+
+5. **Jack Dorsey (Block) launches Buzz — group chat for teams AND their AI agents, model-neutral and open-source**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/
+   - Published: 2026-07-21 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/21/` + snippet "introduced Buzz on July 21, 2026"
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: YouTube is clarifying (not changing) how its inauthentic-content policy applies to AI-heavy channels. Snippet lists three buckets that cannot be monetised: (a) "generic or repetitive" content — templated slideshows, mass-produced AI output without original insight; (b) "unsatisfying or off-putting" content; (c) AI-generated personas delivering information on health, legal, financial, or political topics. YouTube keeps a tool-agnostic stance — AI use alone doesn't disqualify a channel.
+   - Summary: Block unveiled Buzz — a Slack-lookalike where humans and AI agents share the same conversation window, with built-in GitHub project management; Dorsey framed it as "model-neutral, decentralised, self-sovereign, open source"; free desktop apps out today for macOS/Windows/Linux; code on GitHub; product still self-described as "early stage".
 
 ## Dropped
-- https://www.blognone.com/node/151192 (Blognone — Qwen 3.8 / GLM-5.2 price cut) — Filter A: publication date not surfaced with 24h precision in search results; node-ID adjacency suggests July 19 but not verifiable to the required standard. Drop rather than guess.
-- https://dataconomy.com/2026/07/20/eu-orders-google-open-android-search-data-ai-services/ (EU Android AI opening) — Filter A: underlying Commission decision dated July 16; also publisher not on trusted-sources.md.
-- https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/ — passes both filters; deprioritised to keep story mix diverse (Moonshot/Kimi angle already covered by story 3).
+- https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-own-pre-release-models/ — pool overflow (kept to 5; still fresh, could pick up next cycle if follow-up appears)
+- https://techcrunch.com/2026/07/21/music-streamer-deezer-says-more-than-50-of-daily-uploads-are-ai-generated/ — pool overflow
+- https://techcrunch.com/2026/07/21/ai-music-generator-suno-breach-affects-55m-users-per-have-i-been-pwned/ — pool overflow
+- https://www.blognone.com/node/151199 — Filter A (>24h): Kimi Work Blognone piece is ~2 days old (node ID pre-dates the July 21 news wave)
 
-> Note: 5 items passed both filters this run. Of 8 candidates, 1 failed Filter A (Blognone GLM-5.2, ambiguous date), 1 failed Filter A + publisher (EU/Dataconomy), 1 was deprioritised for topical overlap (TechCrunch OpenAI/open-weight commentary).
+> Note: 5 items passed both filters this run. No Thai-language source landed within the rolling-24h window on trusted-sources.md this cycle — shipping 5 international.
