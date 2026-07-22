@@ -1,41 +1,31 @@
-# Perspectives — 2026-07-21
+# Perspectives — 2026-07-22
 
-## 1. Google "Frozen v2" chip for Gemini
+## 1. Google releases Gemini 3.6 Flash + 3.5 Flash-Lite + 3.5 Flash Cyber
 
-**อาจารย์ (มหาวิทยาลัย):** เคสสอนคลาส systems / computer architecture ได้ดี — Google เลือก "แช่แข็ง" (freeze) โมเดล-specific ops เข้าซิลิคอนแลกกับความยืดหยุ่น เพื่อลด token-per-watt ให้ต่ำลงหลายเท่า; ให้นักศึกษาถกเปรียบ ASIC/TPU generation กับ GPGPU ในมิติ flexibility vs efficiency.
+**อาจารย์ (มหาวิทยาลัย):** เคสตัวอย่างที่ดีของ product-line segmentation — Google แตก Flash tier ออกเป็น 3 แขนง (workhorse / cheapest / cyber-specialised) ใน launch เดียว; ให้นักศึกษาถกว่าเมื่อไรควรมีหลาย SKU และเมื่อไรกลายเป็น cannibalisation.
+**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข "17% fewer output tokens" น่าสนใจกว่าราคา — สื่อว่า Google กำลัง compress reasoning trace ให้สั้นลงโดยไม่ลด quality; ถ้าจริง นี่คือ efficiency win ที่ transfer ไปยัง Gemini 4 (ซึ่งเริ่ม pre-training แล้ว) ได้ ประเด็นที่ต้องระวังคือ 3.5 Pro ยัง delay — ช่องว่างระหว่าง Flash และ Pro tier เริ่มกว้างขึ้น.
+**โปรแกรมเมอร์มืออาชีพ:** ราคาลงจาก $9 → $7.50 ต่อ 1M output token ช่วยลด bill ทันทีสำหรับ agent workflow ที่หมุน tool-call เยอะ; ให้ swap 3.5 Flash → 3.6 Flash ใน eval harness ภายในสัปดาห์นี้ก่อน promote to production — 17% token saving คูณ volume จริงคือประหยัดจริง ไม่ใช่แค่ marketing.
 
-**ผู้เชี่ยวชาญด้าน AI:** 6–10× efficiency เทียบกับ TPU ปัจจุบันเป็นตัวเลข The Information — ยังไม่มี independent bench, และการฝัง architecture ลง silicon แปลว่า chip ล็อกกับ Gemini generation ที่ตายตัว; ถ้า Gemini architecture ปรับใหญ่ใน 2 ปี Frozen v2 อาจไม่คุ้มก่อนที่จะออก 2028.
+## 2. OpenAI Codex + ChatGPT Work agents reach 10M users
 
-**โปรแกรมเมอร์มืออาชีพ:** ผลกระทบระยะสั้นยังไม่มี — chip มาปี 2028 — แต่ signal สำหรับทีม infrastructure คือ Google Cloud ยังตึงเรื่อง compute จนต้องปฏิเสธลูกค้าภายนอก; ทีมที่ผูกกับ Vertex/Gemini API ต้องมี fallback vendor และประเมิน rate-limit / quota shock ในระยะ 12–18 เดือน.
+**อาจารย์ (มหาวิทยาลัย):** เป็น datapoint สอน metric literacy ได้ตรง — "10M users" ที่ไม่ระบุ DAU/WAU/point-in-time คือ metric ที่ audit ไม่ได้; ให้นักศึกษาลิสต์คำถามที่ analyst ควรถามก่อน quote ตัวเลขต่อ.
+**ผู้เชี่ยวชาญด้าน AI:** การรวม Codex + ChatGPT Work เป็น "agents" ก้อนเดียวสะท้อน OpenAI internal roadmap — agent เป็น business line ใหญ่พอที่จะ report แยก; แต่ 10M ในเวลา ~2 สัปดาห์หลัง ChatGPT Work launch (9 ก.ค.) บ่งบอก enterprise seat push มากกว่า organic adoption.
+**โปรแกรมเมอร์มืออาชีพ:** ตัวเลขนี้ไม่ใช่ signal ให้ commit vendor lock-in — แต่คือ signal ว่า agent workflow กำลัง cross chasm ในองค์กร; ทีมที่ยังไม่ได้วาง governance (audit log, permission scope, cost cap ต่อ agent-run) ควรวางภายในไตรมาสนี้ก่อน seat expansion จะ outpace controls.
 
-## 2. MCP 2026-07-28 spec update
+## 3. Nvidia Vera Rubin shipping to customers
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างที่สอน distributed-systems 101 — จาก sticky-session ที่ตัดขวาง horizontal scale ไปสู่ stateless HTTP + client-side caching; MCP กำลังทำสิ่งที่ REST เคยทำในยุค 2000s ให้ agent tooling. ใช้เป็นเคสสอน API design + protocol evolution ได้ตรง.
+**อาจารย์ (มหาวิทยาลัย):** เคสสอน supply-chain concentration ระดับ classic — 1 vendor + ~5 hyperscaler customer + สถาปัตยกรรม 1.3M ส่วนประกอบจาก 20 ประเทศ; ใช้เปิดคำถามใน operations/strategy ว่า geopolitical risk บน chip supply chain ใหญ่แค่ไหน.
+**ผู้เชี่ยวชาญด้าน AI:** "10× token throughput ของ NVL72 rack" ต้องอ่านด้วยความระวัง — เป็น CoreWeave-side claim ที่ยังไม่มี independent bench; แต่ถ้าใกล้จริง คือ 1 order of magnitude ใน inference cost ต่อ token ที่จะ compress margin ของทุก inference-heavy startup ในปีหน้า.
+**โปรแกรมเมอร์มืออาชีพ:** ระยะสั้น (Q3-Q4 2026) ควรคาดว่า inference latency + คิว availability บน serverless GPU provider จะดีขึ้นสำหรับ large-context workload; แต่อย่ารีบ redesign architecture จน hyperscaler ปล่อย Rubin-backed instance ราคาจริง — cost curve ต้องเห็นก่อน commit.
 
-**ผู้เชี่ยวชาญด้าน AI:** ประเด็นจริงไม่ใช่ session token — แต่คือ MCP เริ่มยอมรับว่ามันคือ standard ระดับโปรดักชัน ต้องรองรับ OAuth/OIDC, deprecation policy, extensions (Apps, Tasks); เท่ากับปิด gap ให้ enterprise adopt ได้จริงหลังจาก 12 เดือนของการทดลองในสาย OSS.
+## 4. US threatens sanctions on Chinese AI models over IP theft
 
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมรัน MCP server ใน production วางแผน migration ก่อน 28 ก.ค. — plain round-robin load balancer + `Mcp-Method` routing แทน sticky session, `tools/list` cacheable ตาม `ttlMs` ที่ server ส่ง; ประหยัด infra cost + ลด latency แต่ต้องทดสอบ auth flow ใหม่ที่ผูกกับ OAuth resource server.
+**อาจารย์ (มหาวิทยาลัย):** เคสเชื่อม policy + ML — คำถามสอนที่แหลม: "IP theft ของ model weights" หมายถึงอะไร (training data? distilled outputs? architecture?); ต่างจาก IP บน silicon อย่างไร; และ enforceable แค่ไหนเมื่อ weights เป็นไฟล์ที่ mirror ได้ทันที.
+**ผู้เชี่ยวชาญด้าน AI:** สัญญาณสำคัญคือรัฐกำลัง frame open-weight model จีนเป็น national-security asset — ต่อจาก Moonshot K3 wave; ผลจริงต่อ research community คือ US lab จะยิ่งลังเลปล่อย open-weight (fear ของ downstream sanctions), และ community จะแบ่งขั้วเร็วขึ้น.
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าใช้ Kimi K3 หรือ Qwen/GLM ใน production ให้เตรียมนโยบายและ dual-vendor plan วันนี้ — sanctions ยังไม่เกิด แต่ risk ของการ enforce (host takedown, API cut-off, downstream user list requirement) พอที่จะไม่ควรพึ่ง single Chinese provider สำหรับ mission-critical path.
 
-## 3. Moonshot Kimi K3 — winners/losers ในตลาด
+## 5. Jack Dorsey launches Buzz (Block) — chat + AI agents, model-neutral, open-source
 
-**อาจารย์ (มหาวิทยาลัย):** เคสสอน finance + strategy คู่กับ Bloomberg เมื่อวานเรื่อง Moonshot IPO — ตอนนี้เห็น "second-order effect" ของ K3 ผ่าน market repricing: memory-chip vendor (SK Hynix, Samsung) ได้อานิสงส์เพราะการแข่งโมเดลต้อง HBM มากขึ้น, IBM ที่เน้น enterprise software โดน sell-off ตามสมมติฐาน disruption; ให้นักศึกษาลิสต์ transmission channel 3 ชั้น (model → chip demand → equity).
-
-**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข $314B wiped จาก valuation ของสองบริษัท US AI ไม่ใช่ fundamental — เป็น analyst-model repricing บน narrative; แต่การที่ SMIC เด้ง 5.4% ในวันเดียวสะท้อนว่า market เชื่อว่า China frontier lab จะเร่ง localise supply chain แล้วเสริม indigenous foundry — ผลกระทบภูมิรัฐศาสตร์ใหญ่กว่า benchmark.
-
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ evaluate vendor cost ตอนนี้เป็นเวลาที่ Kimi K3 API "ราคาต่อผลลัพธ์" น่าดึงเข้าห้อง lab: benchmark กับ workload จริง (agent, coding, RAG) ก่อนสิ้นเดือน; แต่ระวังว่า Moonshot กำลังชนกำแพง GPU capacity (จากรายงานอื่นวันเดียวกัน) — ถ้าจะพึ่งพา ให้ mux กับ vendor ที่ SLA ยั่งยืน.
-
-## 4. Natural — $30M Series A สำหรับ payment rail ของ AI agent
-
-**อาจารย์ (มหาวิทยาลัย):** เปิดคำถาม "AI agent จะจ่ายเงินอย่างไรโดยไม่ต้องให้มนุษย์เซ็น" — เชื่อมโยงกับ payment law, KYC/AML, principal-agent theory; นักศึกษาที่เรียน fintech ควรอ่านคู่กับ AP2 (Agent Payments Protocol) ที่ Visa/Stripe/Google ประกาศเมื่อ 16 ก.ค. เพื่อเห็น standard war กำลังก่อตัว.
-
-**ผู้เชี่ยวชาญด้าน AI:** เดิมพันของ Natural คือ "reinvent payment rail from scratch for agents" — เป็นเดิมพันสูง เพราะ Stripe ก็ทำอยู่ + Visa/Mastercard มีบัญชีทุกใบในโลก; ข้อได้เปรียบเดียวคือ speed ของ startup 193 วัน แต่ payment rail ที่ scale ต้องผ่าน compliance ที่ startup ไม่มี moat มาก่อน.
-
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมกำลังสร้าง agent ที่ต้องซื้อของ / จ้าง service — วันนี้ยังยากที่จะให้ agent จ่ายเงินโดยไม่ผ่าน human confirmation; ติดตาม Stripe Agent Payments + AP2 protocol ก่อน commit กับ vendor ใหม่ที่ยังไม่มี audit trail; วางสถาปัตยกรรม abstraction ที่แลก payment provider ได้ง่าย เพราะ 12 เดือนข้างหน้าตลาดนี้จะเดือด.
-
-## 5. YouTube ชี้แจงนโยบาย AI slop
-
-**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างสอน content policy + platform governance — YouTube ยืนยัน "tool-agnostic" (ใช้ AI ได้ ไม่ demonetise เพราะเครื่องมือ) แต่ตัดสินที่ "authenticity + original insight"; เปิดคำถามว่าใครเป็นผู้ตัดสินและ criteria วัดอย่างไร ใช้ในคลาส media studies หรือกฎหมายเทคโนโลยีได้.
-
-**ผู้เชี่ยวชาญด้าน AI:** 3 bucket ที่ห้าม monetise (generic/repetitive, unsatisfying/off-putting, AI persona บน health/legal/finance/political) มีแค่ bucket 3 ที่ evaluable แบบ deterministic; bucket 1 และ 2 พึ่ง classifier ที่ subjective — เป็น governance gap ใหญ่ที่ creator กลุ่ม borderline จะโดน false-positive.
-
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทำ product ที่ generate video ให้ creator — เพิ่ม guard rail ตั้งแต่ pipeline: ห้าม deploy AI persona อธิบาย health/finance ไม่ว่ากรณีใด, เพิ่ม "editorial layer" ให้ creator ใส่ voice/insight ก่อน publish; และเก็บ metadata (prompt, model version, edit history) เพื่อ appeal ได้ถ้า channel โดน demonetise พลาด.
+**อาจารย์ (มหาวิทยาลัย):** เคสสอน platform strategy ที่ตรงข้ามกับ vendor-first launch ทั่วไป — "model-neutral, decentralised, self-sovereign, open source" คือการเดินสวนกระแส walled-garden ของ Slack/Teams; ให้นักศึกษาเปรียบเทียบว่า business model ไหน sustainable กว่าใน 3 ปี.
+**ผู้เชี่ยวชาญด้าน AI:** สิ่งที่ใหม่ไม่ใช่ Slack-clone แต่คือ "agents เป็น first-class participant ในห้อง" — เปลี่ยน chat จาก human-to-human channel เป็น multi-agent coordination surface; ถ้า protocol เปิด agent จาก vendor ต่างกันจะเจอกันในห้องเดียวได้ (ใกล้กับที่ MCP กำลังทำใน tool layer).
+**โปรแกรมเมอร์มืออาชีพ:** ยัง "early stage" ตามที่ Buzz เองประกาศ — ยังไม่ควรย้ายทีมจาก Slack วันนี้; แต่ควร clone repo และรันดู UX ว่า agent-in-channel model จะ fit workflow ของทีมไหม; ถ้า Buzz protocol ได้แรง ผู้ชนะจะเป็นทีมที่ push agent-adapter ตัวแรกๆ ให้ครอบคลุม ecosystem ของตัวเอง.
