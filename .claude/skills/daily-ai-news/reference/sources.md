@@ -1,59 +1,59 @@
-# Sources — 2026-07-28
+# Sources — 2026-07-31
 
-Generated: 2026-07-28 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe https://example.com → 403)
+Generated: 2026-07-31 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (example.com probe returned 403 → Tier 2 only)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-07-27-brief.md (5 URLs loaded)
+Dedup against: articles/2026-07-30-brief.md (5 URLs loaded)
 
-1. **Nvidia to Invest $5B in Ilya Sutskever's AI Startup Safe Superintelligence**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-27/nvidia-makes-substantial-investment-in-sutskever-s-ai-startup
-   - Published: 2026-07-27 (per URL slug + Bloomberg article date)
-   - FreshnessCheck: within last 24h — URL slug `2026-07-27` and Nvidia press release dated 2026-07-27 (globenewswire, nvidianews.nvidia.com)
-   - DedupCheck: URL not in YESTERDAYS_URLS — yesterday's Bloomberg items were all `2026-07-26/…`
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Nvidia committed $5B to Ilya Sutskever's Safe Superintelligence Inc. under a long-term strategic partnership; the deal gives SSI access to next-generation Vera Rubin systems and is projected to expand SSI's compute by an order of magnitude.
-
-2. **Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system**
+1. **Reddit reports a solid quarter but shows signs of AI's impact**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/
-   - Published: 2026-07-27 (per URL slug)
-   - FreshnessCheck: within last 24h — URL slug `2026/07/27/` matches TechCrunch's dated permalink convention; corroborated by VentureBeat, SiliconANGLE, GeekWire, Axios, The Register all dated 2026-07-27
-   - DedupCheck: URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/
+   - Published: 2026-07-30 (URL slug + search-result timestamp)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by CNBC `cnbc.com/2026/07/30/reddit-rddt-q2-2026-earnings-report.html` and AdExchanger same-day
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (techcrunch.com appeared yesterday for different slugs)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Microsoft unveiled MAI-Cyber-1-Flash (a code-tuned cybersecurity model) plus "Project Perception," an agentic system that orchestrates red-team, blue-team, and green-team agents. Public preview opens Aug 3; reported 96% on CyberGym benchmark at ~half the cost of frontier competitors.
+   - Summary: Reddit Q2 revenue $805M (+61% YoY), net income $253M (+183% YoY); CEO Steve Huffman told investors "search referrals were choppy in the quarter and traffic was more volatile later in the quarter"; Google AI Overviews cited as peeling audience share; stock down ~13% after-hours.
 
-3. **PSA: Your Claude shared chats and Artifacts may have ended up on Google**
+2. **Google says it fixed more Chrome bugs in June than over the past two years, thanks to AI**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/
-   - Published: 2026-07-27 (per URL slug)
-   - FreshnessCheck: within last 24h — URL slug `2026/07/27/`; corroborated by Fortune (dated 2026-07-27), Decrypt, VentureBeat, cybernews.com all reporting the same weekend Reddit discovery
-   - DedupCheck: URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/
+   - Published: 2026-07-30 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by BleepingComputer and blog.google same-day
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: A Reddit user discovered on 25 Jul that `site:claude.ai/share` returned hundreds of readable Claude conversations on Google — exposing crypto wallet credentials, apparent SSNs, resumes, API keys and clinical records. Root cause: a missing `noindex` meta tag on shared-link pages. Anthropic has since taken steps that appear to have removed most results from Google.
+   - Summary: Chrome 149 + 150 released in June fixed 1,072 security bugs — more than the previous 23 milestones combined. Big Sleep (DeepMind + Project Zero) and CodeMender natively integrated into Chrome CI, running every 24h across all code changes.
 
-4. **Satya Nadella says companies that trust one AI for everything may not survive**
+3. **Judge says Trump admin still lacks evidence for Anthropic 'supply-chain risk' label**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/
-   - Published: 2026-07-27 (per URL slug + Nadella's Sunday 27 Jul CNN appearance)
-   - FreshnessCheck: within last 24h — URL slug `2026/07/27/`; Nadella made the remarks on CNN's Fareed Zakaria GPS Sunday 2026-07-27
-   - DedupCheck: URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/
+   - Published: 2026-07-30 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by Bloomberg `bloomberg.com/news/articles/2026-07-30/…`, MLex, CBS News, Gizmodo same-day
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Microsoft CEO Satya Nadella warned that firms without their own models — or an AI-gateway layer that separates prompts, context, and memory from any single model — risk not surviving long-term. He urged multi-model architectures so any one provider can "go away" without breaking the business.
+   - Summary: U.S. District Judge Rita F. Lin: "I don't see additional evidence from the government really justifying what it did." Origin: stalled Anthropic–DoD contract talks — Anthropic refused mass surveillance and lethal-weapon targeting uses; Pentagon countered its use would be "lawful" and a private company shouldn't dictate military use.
 
-5. **Nvidia's $750 Billion in Deals Reignite Circular AI Fears**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-07-27/nvidia-s-750-billion-deals-revive-fear-of-ai-circular-financing
-   - Published: 2026-07-27 (per URL slug)
-   - FreshnessCheck: within last 24h — URL slug `2026-07-27`; corroborated by Yahoo Finance, Business Post, 24/7 Wall St. all dated 2026-07-27
-   - DedupCheck: URL not in YESTERDAYS_URLS
+4. **Synthetic-user startup Simile raises $200M at $2B valuation, 5 months after $100M Series A**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/30/synthetic-user-startup-simile-raises-200m-at-2b-valuation-5-months-after-100m-series-a/
+   - Published: 2026-07-30 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by Techmeme page `techmeme.com/260730/p27`, Unite.AI, Finsmes, NYT (per Techmeme headline) same-day
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Nvidia is working on a fresh $750B+ round of AI deals (including >$500B with SK Group and up to $250B backstop for OpenAI's compute lease). Critics warn the "you buy from me, I invest in you" pattern across Nvidia–OpenAI–SoftBank–SK forms a fragile circular-financing loop; NVDA fell ~5% on the reports.
+   - Summary: Simile — Palo Alto, founded by Stanford PhD Joon Sung Park (dissertation "Smallville") — closed a $200M Series B at $2B valuation, five months after a $100M Series A led by Index. Series B led by Greenoaks with Index, Bain Capital Ventures, A*, Factory, Definition, CVS Health Ventures. Builds "agentic twins" of real consumers for market research; claims 85–99% accuracy; customers include CVS, Deloitte, Wealthfront.
+
+5. **AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/
+   - Published: 2026-07-30 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/07/30/…`; corroborated by Bloomberg `bloomberg.com/news/articles/2026-07-30/…`, CNBC `cnbc.com/2026/07/30/…`, Seeking Alpha, TechTimes same-day
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Leopold Aschenbrenner's Situational Awareness LP (~$20B AUM, briefly $45B early July) sold the majority of its public equity book to Ken Griffin's Citadel after 4x leverage triggered margin calls from Goldman Sachs, JPMorgan Chase, and Bank of America. The fund retained its Anthropic stake — ~20% of assets, roughly $4B — at Anthropic's ~$965B valuation.
 
 ## Dropped
-- https://www.blognone.com/node/151196 (Moonshot ปิดรับลูกค้าใหม่ Kimi K3) — Filter A: publish timestamp could not be confirmed as within 24h from search snippets (node number ordering suggests it may pre-date node 151208 which appears to be 2026-07-22); dropped rather than guessed.
-- https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/ — deduplicated at TOPIC level (same story as Bloomberg #1); Bloomberg piece chosen because it carries the specific $5B figure.
-- https://www.bloomberg.com/news/articles/2026-07-27/china-s-moonshot-to-release-breakthrough-ai-model-for-download — Kimi K3 was covered as background in yesterday's brief; the news beat is a repeat of yesterday's Kimi angle and other stories are more differentiated.
-- https://techcrunch.com/2026/07/27/openais-hugging-face-breach-has-reignited-the-debate-over-alignment-and-control/ — Filter B (topic-echo of yesterday's Hugging Face breach coverage; skill dedup is URL-level so it technically passes, but the item is commentary on yesterday's news rather than fresh reporting — dropped for lower marginal value).
 
-> Note: 5 items passed both filters this run. Of ~10 candidates, 1 failed Filter A (ambiguous date on Blognone) and 3 were dropped for topic overlap / lower marginal value. No Thai-language source cleared Filter A this run.
+- https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/ — Filter A (>24h): 2026-07-29 URL slug is outside the rolling 24h window as of 2026-07-31 Asia/Bangkok.
+- https://www.blognone.com/node/151235 (Meta Muse Spark 1.1) — Filter A: no verifiable publish timestamp in search results; drop rather than guess.
+- https://www.blognone.com/node/151230 (NVIDIA × SK Hynix $500B) — Filter A: underlying deal announced 2026-07-24/25; even if the Thai piece was posted later, the event itself is >24h old.
+
+> Note: 5 items passed both filters this run. Of ~10 candidates, 3 failed Filter A (older than 24h or unverifiable timestamp); 0 failed Filter B. No Thai-language source had a verifiable 24h-fresh timestamp for today.
