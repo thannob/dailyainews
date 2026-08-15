@@ -1,56 +1,61 @@
-# Sources — 2026-08-14
+# Sources — 2026-08-15
 
-Generated: 2026-08-14 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-08-15 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe on example.com → EGRESS_BLOCKED)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-13-brief.md (5 URLs loaded)
+Dedup against: articles/2026-08-14-brief.md (5 URLs loaded)
 
-1. **Anthropic in Talks to Buy AI Startup Decart for $6 Billion**
+1. **Uber and Pony.ai plan to bring 2,000 robotaxis to Europe**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/
+   - Published: 2026-08-14 (per URL slug + Bloomberg + CNBC + Euronews mirror all dated 2026-08-14)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-14 corroborated by ≥4 same-day trusted mirrors
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host techcrunch.com appears yesterday but on a different Aug-13 slug about Ultrafast + NVIDIA)
+   - Verification: Tier 2 — WebSearch snippet (TechCrunch domain on trusted-sources.md)
+   - Summary: Pony.ai (Guangzhou) will supply autonomous-driving stack, Uber the ride-hailing surface, to deploy 2,000+ robotaxis to four new European cities beyond the existing Zagreb service; cities and timeline undisclosed; expansion also planned in the Middle East.
+
+2. **Google will now allow users to remove visible watermark from its AI generations**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/
+   - Published: 2026-08-14 (per URL slug + Engadget same-day mirror)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-14
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (TechCrunch domain on trusted-sources.md)
+   - Summary: Google's VP for Gemini Josh Woodward said users can now toggle off the visible watermark on generations from Nano Banana, Omni, and Lyria — inside Gemini and video editor Flow, with Search coming soon; invisible SynthID + C2PA metadata still embedded and non-optional; toggle unavailable in the EU per law.
+
+3. **Z.ai to Rival Anthropic, OpenAI in Coding With New AI Model (GLM-5.3)**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion
-   - Published: August 13, 2026 (per URL slug + snippet)
-   - FreshnessCheck: ✅ within last 24h — URL slug "2026-08-13" + snippet "Anthropic PBC is in talks to buy the artificial intelligence startup Decart AI for about $6 billion"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was `2026-08-12/nvidia-calms-credit-markets-with-ai-capital-consortium` — different date, different story)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Anthropic is in talks to acquire Decart AI for ~$6B (its largest known acquisition to date); Decart makes software that reduces the cost of training/operating AI by making chips more efficient — the deal aims to help Anthropic's compute infrastructure absorb surging Claude demand.
+   - URL: https://www.bloomberg.com/news/articles/2026-08-14/z-ai-aims-to-catch-anthropic-openai-in-coding-with-new-ai-model
+   - Published: 2026-08-14 (per URL slug + Caixin + Business Standard same-day mirrors)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-14
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (Bloomberg domain on trusted-sources.md)
+   - Summary: Hong Kong-listed Z.ai released GLM-5.3, built on the same ~700B-param base as GLM-5.2 but with much scaled post-training; claims 50% coding-benchmark uplift over predecessor and 84.5% on CyberGym vs Anthropic's Mythos 5 (83.8%) and OpenAI's GPT-5.6 Sol (83.6%) — self-reported, not independently verified. Weights to be released within two weeks.
 
-2. **OpenAI Introduces Ultrafast Mode — GPT-5.6 Sol at 14× the Speed**
+4. **Alibaba, Baidu, Kuaishou Address Mounting AI Costs as Competition Intensifies**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-08-14/alibaba-baidu-kuaishou-address-mounting-ai-costs-as-competition-intensifies
+   - Published: 2026-08-14 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-14
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (Bloomberg domain on trusted-sources.md)
+   - Summary: China's largest AI-adjacent internet groups — Alibaba, Baidu, Kuaishou — face investor scrutiny over the escalating cost of frontier-model competition as they report earnings; framing echoes Bloomberg's "death zone" analysis, i.e. groups without frontier-pushing tech or market-breaking pricing get squeezed.
+
+5. **Thrive's Joshua Kushner chides Silicon Valley VCs over AI euphoria**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/
-   - Published: August 13, 2026 (URL slug 2026/08/13)
-   - FreshnessCheck: ✅ within last 24h — URL slug "2026/08/13" + snippet "On August 13, 2026, OpenAI unveiled Ultrafast, a new service tier that runs GPT-5.6 Sol up to 14× faster"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host `techcrunch.com` overlaps but this specific slug is not among yesterday's 5 URLs)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI launched Ultrafast, a new API service tier that runs GPT-5.6 Sol up to 14× faster (up to 750 output tokens/second) powered by Cerebras. Initially tested with companies in coding, commerce, financial research, and support workloads in real production.
-
-3. **Testing Ads in ChatGPT — OpenAI expands ad experiments to 5 new markets**
-   - Publisher: OpenAI (primary announcement)
-   - URL: https://openai.com/index/testing-ads-in-chatgpt/
-   - Published: August 13, 2026 (per snippet)
-   - FreshnessCheck: ✅ within last 24h — snippet "on August 13, 2026, OpenAI announced testing ads in ChatGPT. As of August 11, 2026, ChatGPT Ads had launched in the United Kingdom, Mexico, Brazil, Japan, and South Korea"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (openai.com not present in yesterday's 5 URLs)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI publicly confirmed the ChatGPT-ads pilot expansion — ads are live in the UK, Mexico, Brazil, Japan, and South Korea as of Aug 11, with intent to expand further. Marks OpenAI's most explicit monetization pivot beyond subscriptions and API.
-
-4. **NVIDIA's $500B Plan: The Real Play Is a Secondary Market for Aging GPUs**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/
-   - Published: August 13, 2026 (URL slug 2026/08/13)
-   - FreshnessCheck: ✅ within last 24h — URL slug "2026/08/13" + snippet dated to Aug 13 reporting on this week's disclosure
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS. Yesterday covered the MoU structure (Bloomberg 2026-08-12); this is a distinct follow-up analysis of the Nvidia guarantee mechanism + secondary market for aging GPUs used as collateral. Different URL, different publisher, different angle — per SKILL.md's URL-level dedup rule, allowed.
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: The under-reported part of the $500B consortium: Nvidia agreed to guarantee — with its own money — that GPUs used as collateral will retain their value. The bigger goal is creating a functioning secondary market for aging GPUs so financing partners have real recourse and depreciation risk is bounded.
-
-5. **OpenAI เปิดตัวโมเดลยอดนักแฮ็ก GPT-5.6-Cyber ต้องขอใช้ผ่านโครงการ Daybreak**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151365
-   - Published: August 13, 2026 (per snippet content date)
-   - FreshnessCheck: ✅ within last 24h — snippet "On August 13, 2026, OpenAI expanded its Project Daybreak cybersecurity initiative"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (blognone.com not present in yesterday's 5 URLs)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI expanded Project Daybreak — access split into 2 tiers (Daybreak Blue = frontier general models like GPT-5.6 Sol with cyber safeguards; Daybreak Red = purpose-trained GPT-5.6-Cyber for vulnerability research). Demonstration: GPT-5.6-Cyber found two high-severity vulnerabilities in Chrome's V8 engine (CVE-2026-15903), disclosed to Google.
+   - URL: https://techcrunch.com/2026/08/14/thrives-joshua-kushner-chides-silicon-valley-vcs-over-ai-euphoria/
+   - Published: 2026-08-14 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-14
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (TechCrunch domain on trusted-sources.md)
+   - Summary: In Thrive Capital's first-ever investor letter, founder Joshua Kushner directs pointed criticism at West-Coast venture peers over AI euphoria — a shot across the bow of the current AI investment cycle from a mainline growth-stage fund.
 
 ## Dropped
-- https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/ — Filter A (>24h): URL slug 2026/08/09 is 5 days old, even though the feature goes live today Aug 14. Reporting itself pre-dates the 24h window.
-- https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/ — Filter A (>24h): URL slug 2026/08/11 is 3 days old.
-- https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/ — Filter A (>24h): URL slug 2026/08/10 is 4 days old (the Aug 13 Blognone piece above is the fresh follow-up).
+- https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/ — Filter A (>24h): URL slug 2026-08-09 = 6 days old, even though the change fires today
+- https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/ — Filter A (>24h): URL slug 2026-08-11 = 4 days old
+- https://techcrunch.com/2026/08/13/apple-in-talks-to-pay-publishers-to-provide-siri-with-current-news-report/ — Filter A (>24h borderline): URL slug 2026-08-13 = 2 days old, being strict per skill contract
+- Apple trains China-specific AI model with Alibaba — Reuters exclusive, but no direct reuters.com / bloomberg.com / ft.com URL surfaced in search results (only syndicated Yahoo/Investing/MacRumors/Japan Times mirrors, none trusted); dropping to keep trust discipline
+- https://www.buildfastwithai.com/blogs/ai-news-today-august-9-2026 — publisher not on trusted-sources.md
+- https://techstartups.com/2026/08/14/top-tech-news-today-august-14-2026-... — publisher not on trusted-sources.md
+
+> Note: 5 items passed both filters this run. Of ~12 candidates, ~4 failed Filter A (older than 24h), 0 failed Filter B (dedup), and ~3 failed the trusted-source constraint (real story but only non-trusted mirrors visible in search). Zero Thai-language sources cleared both filters + trust today — Blognone / Beartai indexers surfaced older items (Aug 11 / earlier). Shipping 5 international items rather than padding with stale Thai coverage.
