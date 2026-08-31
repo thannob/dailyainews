@@ -1,62 +1,44 @@
-# Sources — 2026-08-28
+# Sources — 2026-08-31
 
-Generated: 2026-08-28 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned EGRESS_BLOCKED — Tier 2 (search snippets from trusted-source domains) used for every story)
+Generated: 2026-08-31 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-08-27-brief.md (5 URLs loaded)
+Dedup against: articles/2026-08-30-brief.md (3 URLs loaded)
 
-1. **OpenAI, Anthropic, Google และอีกกว่า 100 บริษัทลงนามจดหมายเปิดผนึกเตือนภัย rogue AI cyber attack**
+1. **Musk's faster path to more gas turbines comes with pollution problem**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/
-   - Published: 2026-08-27 (per URL slug `/2026/08/27/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/27 (dateline yesterday, inside rolling 24h window)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief covered a different TechCrunch story on the Hugging Face breach report itself, not the follow-on industry letter)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: "Over a hundred tech companies — including OpenAI, Anthropic, Google, and Microsoft — have signed an open letter urging both the private and public sectors to work together to defend themselves from AI-related cyber threats." คำเตือนในจดหมายว่า "AI-enabled cyber attacks will become far more widespread and sophisticated as models around the world become increasingly capable" โดยกลุ่มที่เสี่ยงรวมถึงโรงพยาบาลและระบบบำบัดน้ำ
+   - URL: https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/
+   - Published: 2026-08-30, 9:54 AM PDT (per WebSearch snippet)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/30` and search-surfaced timestamp "9:54 AM PDT" on Aug 30
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch entries were `/2026/08/29/were-not-doing-30-bets...` and `/2026/08/29/at-techbbq-europes-ai-conversations...` — different day, different slugs)
+   - Verification: Tier 2 — WebSearch snippet (trusted domain techcrunch.com; runtime is WEBFETCH_BLOCKED)
+   - Summary: SpaceX has been building a secret foundry on ~830 acres in Bastrop, Texas (purchased March–June) for "blades and vanes" — the casting bottleneck for gas turbines Musk says the AI buildout still needs alongside 100 GW/yr of solar. The move draws on Memphis precedent, where NAACP has accused xAI of running turbines at its Colossus data center since 2024 without required permits or pollution controls, and where University of Memphis researchers reported air pollution had become "somewhat worse" because of the data center.
 
-2. **Nvidia นาทีสุดท้ายก่อน deal — เจรจาซื้อ Hugging Face มูลค่าราว $13B**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-08-27/nvidia-discussed-buying-ai-startup-hugging-face-insider-says
-   - Published: 2026-08-27 (per URL slug `2026-08-27`)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-08-27 (Bloomberg dateline)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief did not include any Nvidia/HF acquisition coverage)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: "Nvidia Corp. is nearing an agreement to acquire Hugging Face in a deal that would value the AI startup at roughly $13 billion. The two sides have held serious conversations about a transaction in recent weeks, while a separate report from the Information said that Nvidia had reached an agreement to buy the business for $12.9 billion." Co-founder Thomas Wolf ปฏิเสธไม่แสดงความเห็น แต่ยอมรับว่า Hugging Face "regularly receives acquisition and investment interest"
-
-3. **Google เพิ่มฟีเจอร์ท่องเที่ยวใน AI Mode — track ราคาตั๋วเครื่องบิน, จองโรงแรม, เทียบ points/miles ในแชตเดียว**
+2. **Caterpillar is bringing to AI deployment what it learned from automating mining**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/
-   - Published: 2026-08-27 (per URL slug `/2026/08/27/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/27
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: "Google is adding new ways for users to plan and book trips through AI Mode, its conversational search experience. Users will now be able to ask AI Mode to track flight prices, book hotels, and see the cost of flights and hotels in points or miles." Google กำลังวาง AI Mode ให้เป็น AI travel agent ที่ทั้งค้นหาข้อมูลและจัดการขั้นตอนการจองจริง
+   - URL: https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/
+   - Published: 2026-08-30, 8:00 AM PDT (per WebSearch snippet)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/30` and search-surfaced timestamp "8:00 AM PDT" on Aug 30
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host matches Aug 29 stories but slug is a new Aug 30 article)
+   - Verification: Tier 2 — WebSearch snippet (trusted domain techcrunch.com)
+   - Summary: Caterpillar is applying its decades of autonomous-mining experience — automated haul trucks, drills, underground loaders, remote-controlled construction gear, plus a software command center and fleet management — to a broader AI push. Its Cat AI Assistant lets field technicians pull up repair procedures and identify parts via voice, drawing on ~1.6 million connected assets and 16+ petabytes of structured data; the company plans to spend $100M over five years training 118,000 employees in AI, autonomy, and robotics.
 
-4. **OpenAI เริ่มแสดงโฆษณาใน ChatGPT tier ฟรีและ Go ในอินเดีย**
+3. **TechCrunch Mobility: The hidden human cost of robotaxis**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/27/openai-to-start-showing-ads-on-chatgpts-free-and-go-tiers-in-india/
-   - Published: 2026-08-27 (per URL slug `/2026/08/27/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/27
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: "OpenAI announced it will start showing ads on its ChatGPT Free and Go subscription tiers in India." เป็นครั้งแรกที่ OpenAI เริ่มใส่โฆษณาเข้าใน ChatGPT (จำกัดตลาดอินเดียในตอนแรก) เพื่อ monetize ผู้ใช้ที่ไม่ได้จ่ายค่าสมาชิก
-
-5. **Hugging Face เปิดตัว Microduck — หุ่นยนต์ open-source ราคา $399 สอนได้ด้วย reinforcement learning**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/
-   - Published: 2026-08-27 (per URL slug `/2026/08/27/`)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/08/27
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: "Hugging Face released the Microduck, an 'open-source robot you can teach new tricks with reinforcement learning.' The launch comes as Hugging Face is reportedly set to be acquired by Nvidia at a $13 billion valuation." Bloomberg รายงานเสริมว่าตัว Microduck สามารถ "walk, talk, and roller-skate" และ Hugging Face ขายได้ราวหนึ่งตัวต่อทุก 4 วินาที
+   - URL: https://techcrunch.com/2026/08/30/techcrunch-mobility-the-hidden-human-cost-of-robotaxis/
+   - Published: 2026-08-30, 9:03 AM PDT (per WebSearch snippet)
+   - FreshnessCheck: ✅ within last 24h via URL slug `2026/08/30` and search-surfaced timestamp "9:03 AM PDT" on Aug 30
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (new slug on a fresh date)
+   - Verification: Tier 2 — WebSearch snippet (trusted domain techcrunch.com)
+   - Summary: The TechCrunch Mobility newsletter foregrounds a review of OSHA filings showing test drivers for Waymo and Zoox sustained more than two dozen injuries in 2024 and 2025 from hard braking or sudden swerving by the autonomous software — sprains, strains, whiplash. Transdev (which manages Waymo's test drivers) reported 16 injuries across three depot cities; Zoox reported as many as eight. One Aug 2025 Los Angeles incident, where a Waymo robotaxi stopped hard after detecting children in its path, kept the worker off the job for 175 days.
 
 ## Dropped
 
-- https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/ — Filter A (>24h): URL slug embeds 2026/08/26 (2 วันก่อน) แม้ story เป็นเรื่องเดียวกับ Bloomberg 2026-08-27 — เลือก Bloomberg เพื่อคง freshness
-- https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/ — Filter A (>24h): URL slug 2026/08/26 (2 วันก่อน)
-- https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/ — Filter A (>24h): URL slug 2026/08/22 (6 วันก่อน)
-- https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/ — Filter A (>24h): URL slug 2026/08/25 (3 วันก่อน)
-- https://www.blognone.com/node/151471 — Dropped for insufficient snippet-visible timestamp; article on Nvidia/HF acquisition but no exact publish date visible in search results (cannot verify 24h freshness). Bloomberg 2026-08-27 covers the same topic with verifiable dateline.
-- https://www.cnbc.com/2026/08/27/ai-cyber-defense-letter.html — CNBC not on trusted-sources.md allow-list. TechCrunch covers the same story.
+- https://www.blognone.com/node/151429 — Filter A (>24h): "Anthropic 30-day log storage" article dates to Aug 21, 2026 per search context — well outside the rolling 24h window
+- https://www.cnbc.com/video/2026/08/26/anthropic-ceo-on-saaspocalypse-were-not-interested-in-destroying-anyone.html — Filter A (>24h): Aug 26 interview; also cnbc.com not on trusted-sources.md
+- https://www.theinformation.com/articles/nvidia-discusses-perplexity-investment-30-billion-plus-valuation-considered-tech-licensing-deal — Filter A (>24h): The Information report dated Aug 23; while The Information is on trusted-sources, the story is outside the 24h window
+- https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/ — Filter A (borderline): Aug 29 publication is ~48h+ ago from current Asia/Bangkok time; erring on the strict side of the 24h rolling window
+- https://www.anthropic.com/news/model-hardware-standard-research-preview — Filter A (>24h): announced Aug 27
+- https://www.thaitv5hd.com/... and https://www.kaohoon.com/... (TH-AI Passport AiPASS launch today) — trusted-sources.md filter: neither publisher is on the allow-list; no coverage found today on Blognone / Beartai / Thairath-Tech / Matichon-IT / Prachachat-ICT / The Standard Tech / NECTEC / depa
 
-> Note: 5 items passed both filters this run. Of ~11 candidates, 4 failed Filter A (>24h), 1 was dropped for un-verifiable Thai-source timestamp, 1 was outside the trusted-sources allow-list. No candidate failed Filter B (no story in today's set was already covered yesterday).
+> Note: 3 items passed both filters this run. Of ~10 candidates evaluated, 6 failed Filter A (older than 24h), 0 failed Filter B, and 1 failed the trusted-domain allow-list (Thai TH-AI Passport coverage was on non-trusted outlets). No Thai-trusted-domain coverage of AI within the 24h window surfaced in this search pass.

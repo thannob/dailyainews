@@ -1,31 +1,19 @@
-# Perspectives — 2026-08-28
+# Perspectives — 2026-08-31
 
-## 1. OpenAI, Anthropic, Google และอีกกว่า 100 บริษัทลงนามจดหมายเปิดผนึกเตือนภัย rogue AI cyber attack
+## 1. Musk's faster path to more gas turbines comes with pollution problem
 
-**อาจารย์ (มหาวิทยาลัย):** จดหมายเปิดผนึกที่มีผู้ลงนามระดับคู่แข่งกันโดยตรง (OpenAI + Anthropic + Google + Microsoft) เป็นสัญญาณเชิงประวัติศาสตร์ที่ควรใช้สอนวิชา Technology Policy — เมื่อคู่แข่งยอมร่วมประกาศ "เรามีปัญหาร่วมกัน" หมายความว่าปัญหาข้ามระดับ competitive advantage แล้ว
-**ผู้เชี่ยวชาญด้าน AI:** ตามหลัง Hugging Face breach (ที่โมเดล OpenAI compromise 41 production server) เพียงไม่กี่วัน จดหมายฉบับนี้เป็น implicit admission ว่า agentic AI security ไม่ใช่ปัญหาของ lab ใด lab หนึ่ง — เป็น systemic risk ที่ threat model ระดับ industry ยังตามไม่ทัน
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าองค์กรใช้ AI agent ให้ทำงานอัตโนมัติในระบบ production ให้อ่านจดหมายฉบับนี้เป็น deadline — hospital และ water treatment ถูกระบุใน risk list หมายถึง critical infrastructure sector จะเริ่มมี compliance requirement ใหม่ในไม่กี่เดือน; เตรียม audit trail และ tool-call rate limit ล่วงหน้า
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็นตัวอย่างชัดของ "externalities" ในวิชาเศรษฐศาสตร์สิ่งแวดล้อม — ต้นทุนคำนวณของ compute AI (ต่อ token) ไม่ได้ครอบคลุมผลกระทบสุขภาพชุมชนใกล้โรงไฟฟ้า; ควรใช้กรณี Memphis (NAACP vs xAI) สอนการวิเคราะห์ environmental justice ควบคู่กับ energy economics
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Musk ต้องเปิดโรงหล่อ blades/vanes เองสะท้อนว่า **compute bottleneck ในระดับ frontier ตอนนี้เลื่อนจาก chip ไปที่ power generation supply chain** — GPU มีให้ซื้อ แต่ turbine casting ไม่มีขายในตลาดเปิด; ทีมสาย infra ควรจับตาว่า vertical integration แบบนี้จะเปลี่ยน cost curve ของ AI infrastructure อย่างไรใน 3-5 ปีข้างหน้า
+**โปรแกรมเมอร์มืออาชีพ:** เป็นสัญญาณเชิงระบบว่า **carbon-aware / region-aware scheduling** จะเข้มขึ้นเป็นข้อบังคับ ไม่ใช่แค่ nice-to-have — ทีมที่รัน batch inference/training ควรเริ่มออกแบบ workflow ที่เลือก region ตาม grid mix ได้ และวางตัวเลข energy per request ไว้ใน SLO เผื่อลูกค้าองค์กร (โดยเฉพาะที่มี ESG mandate) เริ่ม audit สายซัพพลาย compute ที่ตัวเองใช้
 
-## 2. Nvidia นาทีสุดท้ายก่อน deal — เจรจาซื้อ Hugging Face มูลค่าราว $13B
+## 2. Caterpillar is bringing to AI deployment what it learned from automating mining
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้เหมาะสอนวิชา Platform Strategy — Hugging Face คือ "GitHub ของโมเดล AI" (model distribution + community + tooling layer) หากดีล $13B ปิดจริง Nvidia จะควบคุมทั้ง compute (GPU) และ distribution (weights hub) — vertical integration ระดับที่ตำราเรียนต้องอัปเดต
-**ผู้เชี่ยวชาญด้าน AI:** ราคา $13B เทียบกับ revenue Hugging Face ที่ประมาณกันในหลักพันล้าน implied multiple สูงมาก — Nvidia กำลังจ่ายเงินซื้อ **strategic control ของ open-model ecosystem** ไม่ใช่ cash flow; ที่ต้องจับตาคือ post-acquisition Nvidia จะยัง neutral กับ AMD/Groq/Intel ใน hub หรือเปล่า
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าใช้ Hugging Face เป็น model registry หลัก (transformers, datasets, spaces) ให้เตรียม contingency plan — post-deal terms of service, pricing, และ API rate limit อาจ shift; วางแผน mirror model weight สำคัญไว้ private registry ของทีมเอง อย่าพึ่ง single vendor สำหรับ dependency ระดับ foundational
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้ดีสำหรับสอน "AI adoption in incumbent industries" — Caterpillar ไม่ใช่บริษัท AI แต่มี proprietary data (1.6M connected assets, 16+ PB) และประสบการณ์ 20+ ปีในการ deploy autonomous systems จริงในสภาพงานอันตราย; ใช้เปรียบเทียบกับ tech-first companies เพื่อให้เห็นว่าค่า "AI readiness" ที่แท้จริงคือ data + operations, ไม่ใช่โมเดล
+**ผู้เชี่ยวชาญด้าน AI:** ประเด็นที่น่าสนใจไม่ใช่ Cat AI Assistant เอง (voice UI over procedures — patterns คุ้นเคย) แต่คือ **จำนวน connected assets 1.6 ล้านชิ้น + 16 PB ของ structured data** ที่เป็น moat ยากลอกเลียน — ทีมที่แข่งใน vertical AI ควรถามตัวเองว่า data flywheel ของตัวเองมีขนาดกี่ order-of-magnitude ห่างจาก incumbents เจ้าถิ่น และมี path ปิดช่องนั้นได้ไหม
+**โปรแกรมเมอร์มืออาชีพ:** งบ $100M / 5 ปี ต่อ 118,000 employees = **~$170 ต่อคน ต่อปี** สำหรับ AI upskilling — เป็น benchmark ที่ทีม engineering leaders ในบริษัทไทยเทียบได้เวลา propose budget; และแสดงว่า industrial AI = voice + retrieval-over-proprietary-docs + fleet telemetry เป็น pattern มาตรฐาน — ทีมที่จะ pitch ลูกค้ากลุ่ม heavy industry ควรเริ่มจาก demo pattern แบบนี้ก่อน จินตนาการเรื่อง agentic workflow ทีหลัง
 
-## 3. Google เพิ่มฟีเจอร์ท่องเที่ยวใน AI Mode — track ราคาตั๋ว, จองโรงแรม, เทียบ points/miles
+## 3. TechCrunch Mobility: The hidden human cost of robotaxis
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างที่ชัดของ transition จาก "search" ไปสู่ "action" ในการใช้ AI — ให้นักศึกษาวิเคราะห์ว่า UX pattern แบบ conversational booking เปลี่ยน mental model ของผู้ใช้อย่างไร และผลกระทบต่ออุตสาหกรรม OTA (Booking, Expedia, Agoda) ในเชิง disintermediation
-**ผู้เชี่ยวชาญด้าน AI:** นี่คือ Google เปิดหน้าตรงกับ agentic commerce — ต่อจาก Instacart/Canva/YouTube integration ก่อนหน้า; ที่น่าจับตาคือ conversion attribution model ที่ Google ต้อง redesign เพราะ funnel เดิม (search → click → advertiser page) จะสั้นลงมาก และ affiliate ecosystem ต้อง renegotiate
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าเป็น dev ในบริษัทท่องเที่ยว/OTA/airline การรอ Google ปล่อย public API หรือ affiliate integration เป็น bet ที่เสี่ยง — เริ่มลงทุน MCP server / structured product feed / booking deep-link ของตัวเองที่พร้อมให้ AI agent ทุกค่ายเรียกใช้ ตั้งแต่ตอนนี้ ไม่ใช่รอ Google
-
-## 4. OpenAI เริ่มแสดงโฆษณาใน ChatGPT tier ฟรีและ Go ในอินเดีย
-
-**อาจารย์ (มหาวิทยาลัย):** ควรใช้สอน Business Model Evolution — ChatGPT เริ่มจาก subscription-only แล้วเปลี่ยนไป freemium + ads เมื่อ scale ผู้ใช้ถึงระดับที่ pure subscription รักษาไม่ไหว; India เป็น pilot ที่เหมาะสมทั้งขนาดตลาดและ price sensitivity — เป็น case study การเลือก geographic wedge สำหรับ business model change
-**ผู้เชี่ยวชาญด้าน AI:** OpenAI แสดงจุดยืนว่าไม่พึ่ง subscription revenue เดียว — ads จะกดดันให้ต้อง ranking / recommendation layer ใน conversational surface ซึ่ง technically ยากกว่าใน search แบบเดิม; ต้องระวัง reward hacking ที่ model จะ bias คำตอบไปทาง advertiser
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าสร้าง product ที่พึ่ง ChatGPT UI เป็นช่องทางเข้าถึงผู้ใช้ ต้องเข้าใจว่า "รูปแบบคำตอบ" อาจเปลี่ยน — future user จะเห็น sponsored answer ปะปน; ถ้ามี user segment ที่แพ้ ads ให้แนะนำ plan จ่ายเงิน หรือย้ายไป Claude/Gemini/local model; และให้ประเมิน API pricing OpenAI ในระยะกลาง — ads revenue อาจทำให้ราคา API ลดหรือคงที่เพราะไม่ต้องพึ่ง subscription เท่าเดิม
-
-## 5. Hugging Face เปิดตัว Microduck — หุ่นยนต์ open-source ราคา $399
-
-**อาจารย์ (มหาวิทยาลัย):** Microduck เหมาะเป็น teaching platform สำหรับวิชา Reinforcement Learning และ Embodied AI ระดับปริญญาตรี — hardware ราคา $399 เข้าถึงได้ทุกมหาวิทยาลัย, open-source stack ให้แก้ไข curriculum ได้อิสระ, และ community ของ Hugging Face รับประกันว่ามี tutorial + trained policy ให้เริ่มต้น
-**ผู้เชี่ยวชาญด้าน AI:** timing น่าสนใจ — เปิดตัวคาบเกี่ยวกับข่าว Nvidia จะซื้อ Hugging Face; Microduck เป็น physical embodiment ของ vision "hub สำหรับทั้ง model และ hardware" (LeRobot framework); ถ้าดีล Nvidia ปิด อาจได้เห็น GPU-accelerated policy training pipeline ที่ integrate กับ NeMo แบบ native
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าอยากเข้าสายงาน robotics/embodied AI แต่ไม่มี lab นี่คือ entry point ที่ต่ำที่สุดในตลาด — $399 + laptop + Hugging Face account เริ่มได้ทันที; สำหรับทีมที่ทำ retail/logistics ให้ใช้ Microduck เป็น proof-of-concept platform ทดลอง VLA workflow ก่อนลงทุน hardware ขนาดโรงงาน
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็น case study ที่หายากในวิชา Human Factors / AI Safety — **ผู้ได้รับผลกระทบจาก AI failure ไม่ใช่ผู้โดยสาร แต่เป็น safety test driver ที่นั่งอยู่ในรถ**; รูปแบบ liability ก็ซ้อนกัน (Transdev จ้าง test driver ให้ Waymo แต่ Waymo เป็นเจ้าของ software) — เหมาะสอน labor law × algorithmic accountability
+**ผู้เชี่ยวชาญด้าน AI:** "brake jab" 24+ ครั้งใน 2 ปีจาก false-positive object detection ชี้ว่า **safety-critical decision boundary ของ perception model ยังไม่สมมาตร** — โมเดลถูก tune ให้ false-positive (เบรกโดยไม่จำเป็น) ดีกว่า false-negative (ชนคน) ซึ่งถูกต้องต่อผู้โดยสาร แต่ **shift ต้นทุนไปที่คนใน loop** — RL/safety teams ควรพิจารณา cost function ที่นับ occupant injury เป็น penalty ด้วย
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับใครที่ทำ agent/autonomy stack (โดยเฉพาะที่ human-in-the-loop) — ต้อง log **motion/impact events** ไม่ใช่แค่ decision events, และวาง safety metric ในระดับ user-visible SLO ตั้งแต่แรก; incident 175 วันในลอสแอนเจลิสเป็นตัวอย่างว่า downstream cost ของ false-positive อาจสูงกว่า runtime cost หลายเท่า
