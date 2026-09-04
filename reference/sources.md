@@ -1,61 +1,56 @@
-# Sources — 2026-09-02
+# Sources — 2026-09-04
 
-Generated: 2026-09-02 (Asia/Bangkok)
+Generated: 2026-09-04 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-09-01-brief.md (3 URLs loaded)
+Dedup against: articles/2026-09-03-brief.md (4 URLs loaded)
 
-1. **Open AI's Astra model is on the way — and very good at breaking into computer systems**
+1. **OpenAI launches Astra (GPT-6 Astra), its most powerful and 'controversial' new model**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/
-   - Published: 2026-09-01 (per URL slug and search-result grouping "September 1, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/01/` (Asia/Bangkok now = 2026-09-02)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's three URLs were 2026-08-31 TechCrunch items on Pentagon GenAI.mil, a16z PAC, a16z growth fund)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI shared new details on its forthcoming Astra model, which the company said is the first large language model to meet its "critical cybersecurity threshold". The blog says "We plan to make Astra available soon, but access to its most advanced cybersecurity capabilities will be more limited."
+   - URL: https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/
+   - Published: 3 Sep 2026 (URL slug 2026/09/03; cross-confirmed by CNBC, Bloomberg, VentureBeat, Axios same date)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/03 + multiple same-date confirmations
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs are all /2026/09/02/*, and this specific launch article is new)
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: OpenAI released GPT-6 Astra on Thursday 3 Sep 2026 — described as "state-of-the-art on computer use, browsing, software engineering, cybersecurity, science, and professional work"; first model to trigger OpenAI's Critical cybersecurity threshold under its Preparedness Framework; priced at $10/$50 per 1M input/output tokens; rolling out first to Daybreak (cybersecurity program) customers, then Pro/Plus/Business/Enterprise + API + AWS.
 
-2. **Google's answer to Canva is an AI tool where you prompt instead of design**
+2. **Nvidia confirms $12.9B acquisition of Hugging Face**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/
-   - Published: 2026-09-01 (per URL slug and search-result grouping "September 1, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/01/`
+   - URL: https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/
+   - Published: 3 Sep 2026 (URL slug 2026/09/03; cross-confirmed by CNBC, Benzinga, Forbes, CNN Business same date)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/03 + Nvidia's official blog + SEC 8-K same date
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host techcrunch.com matches but path is new; earlier Nvidia coverage in yesterday's brief was for the Adobe/Rilo item, not this)
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Nvidia officially confirmed the $12.93B acquisition of Hugging Face; deal expected to close H1 2027 subject to regulatory approvals; Hugging Face's platform hosts 3M models, 1M apps, 500K datasets used by 18M developers; Nvidia's second-largest purchase ever (after $20B for Groq assets). CEO Jensen Huang said Hugging Face will continue to support open-source and open-weight models.
+
+3. **Google launches AI voice features in Gmail, Docs, and Keep**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/03/google-launches-ai-voice-features-in-gmail-docs-and-keep/
+   - Published: 3 Sep 2026 (URL slug 2026/09/03)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/03
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google is entering the creative design market with a new image-creation and editing tool called Google Pics, which will become part of its Google Workspace suite for business customers and premium Google AI subscribers. Users prompt rather than design.
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Google is launching conversational AI features inside Docs, Gmail, and Keep that let users ask questions about inboxes and documents and perform tasks using natural-language queries and dictation.
 
-3. **AIR raises $50M to help companies vet the skills and add-ons AI agents use**
+4. **Meta pays users to share prompts and outputs from Muse Spark model (≈95% discount)**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/
-   - Published: 2026-09-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/01/`
+   - URL: https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/
+   - Published: 3 Sep 2026 (URL slug 2026/09/03)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/03
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: As companies start giving AI agents access to an increasing portion of their systems, a nascent software supply chain is forming around the new tooling AI agents use — skills, plug-ins, MCP servers, and add-ons that let them interact with the internet. AIR raised $50M to help companies vet that supply chain.
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Meta is offering an explicit discount averaging ~95% to users who "contribute" to future model development by sharing their prompts and model outputs for its new Muse Spark model.
 
-4. **Sequoia-incubated Empirik launches with $21M to predict outages before they happen**
+5. **Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/
-   - Published: 2026-09-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/01/`
+   - URL: https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/
+   - Published: 3 Sep 2026 (URL slug 2026/09/03)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/03
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Empirik, funded by Sequoia Capital, uses AI to autonomously solve infrastructure challenges by tracking system changes and inferring their potential ripple effects across entire infrastructure — a predict-before-outage approach to SRE tooling.
-
-5. **Fambot introduces an 'AI chief of staff' for families**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/01/fambot-introduces-an-ai-chief-of-staff-for-families/
-   - Published: 2026-09-01 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/01/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Fambot is building an AI "chief of staff" to help families manage the emails, calendars, school updates, sports schedules, and other logistics of raising kids.
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Thinking Machines — the AI lab founded early last year by former OpenAI CTO Mira Murati — is in discussions to raise $1B at a valuation of at least $40B, with Accel reportedly leading.
 
 ## Dropped
-
-- Blognone / Beartai candidates (multiple) — Filter A (date ambiguous): search snippets returned Thai-language items but no explicit timestamp resolvable to the last 24h; per skill rule "Date ambiguous / not surfaced → drop, do not guess."
-- https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/ — Filter A (>24h): URL slug 2026-08-27, older than the rolling 24h window.
-- https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/ — Filter A (>24h).
-- https://techcrunch.com/2026/09/01/googles-android-update-tackles-motion-sickness-accessibility-and-more/ — deprioritized: Android accessibility update is only AI-adjacent, five stronger AI-native stories from the same day already selected.
-- https://techcrunch.com/2026/09/01/waymo-goes-on-offense-ahead-of-teslas-cybercab-launch/ — deprioritized: autonomous-vehicle competitive move, AI-adjacent rather than AI-native; five stronger AI-first stories selected.
-
-> Note: 5 items passed both filters this run. Of ~11 candidates, ~4 failed Filter A (>24h or ambiguous), 0 failed Filter B, 2 were deprioritized for topical fit.
+- https://www.blognone.com/node/151311 (Blognone — Google Assistant shutdown 4 Sep) — Filter A (>24h): article predates yesterday (slug 151311 is older than yesterday's 151524; the shutdown event is today but the article itself was published in Aug 2026 per cross-check with 9to5google 4 Aug 2026 announcement)
+- https://x.com/beartai/status/2087026221192241192 — domain x.com is not on trusted-sources.md (Beartai's own site would be, but the tweet URL is not)
+- https://www.blognone.com/node/151471 (Nvidia/HF rumor) — superseded by the confirmed deal today and outside 24h (slug older than 151524 from yesterday)
