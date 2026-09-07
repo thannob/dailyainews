@@ -1,42 +1,62 @@
-# Sources — 2026-09-06
+# Sources — 2026-09-07
 
-Generated: 2026-09-06 (Asia/Bangkok)
+Generated: 2026-09-07 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
-Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-09-05-brief.md (4 URLs loaded)
+Freshness window: rolling 24h (Asia/Bangkok, ณ 07:11 น.)
+Dedup against: articles/2026-09-06-brief.md (0 URLs loaded — เมื่อวานเป็น empty-day stub)
 
-Yesterday's URL set (`YESTERDAYS_URLS`):
-- https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/
-- https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/
-- https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/
-- https://www.blognone.com/node/151543
+1. **Labor Day 2026 Is a Reminder Job Openings Are Scarce for American Workers**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-09-06/labor-day-2026-is-a-reminder-job-openings-are-scarce-for-american-workers
+   - Published: URL slug "2026-09-06"; snippet: "article was published on September 6, 2026"
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-06 + snippet "published on September 6, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday was an empty stub — 0 URLs)
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
+   - Summary: Bloomberg รายงานว่า Labor Day 2026 "แทบไม่มีอะไรให้พนักงานอเมริกันเฉลิมฉลอง" — ค่าจ้างและการเลื่อนตำแหน่งชะลอ, สวัสดิการถูกบีบ, AI disruption looms, ดัชนี Glassdoor employee confidence ตกต่ำสุดเป็นประวัติการณ์ในช่วงฤดูร้อนนี้; "quitting isn't an option" กลายเป็นสภาพความจริงของพนักงานที่ต้องอยู่กับตำแหน่งเดิม.
 
-## Selected
+2. **Authors push back as publishers and agents seek share of Anthropic settlement**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/
+   - Published: URL slug "2026/09/06"; snippet: "one article from TechCrunch published on September 6, 2026 (today's date)"
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/06 + snippet confirmation "September 6, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md)
+   - Summary: ผู้เขียนที่คาดจะรับส่วนแบ่งจาก $1.5B Anthropic copyright settlement ได้อีเมล "surprising" ในสัปดาห์นี้ว่ามีคนอื่น (สำนักพิมพ์/เอเจนต์) ยื่นเคลมสิทธิ์ในเงินก้อนเดียวกัน; สัญญาที่เขียนก่อนยุค AI training ไม่ระบุชัดใครถือสิทธิ์ในปี 2021; เกณฑ์สำคัญคือพิสูจน์ว่าสิทธิ์กลับคืนสู่ผู้เขียนก่อน 10 ส.ค. 2022 หรือไม่เพื่อรับเต็ม $3,000/ผลงาน; งวด November payment เลื่อนไม่มีกำหนดสำหรับงานที่มีข้อพิพาท.
 
-_None._ Zero candidates passed BOTH Filter A (rolling-24h freshness) AND Filter B (URL not in yesterday's brief). The empty-day signal is preserved intentionally — see Step 1b-tris of the skill (never bend Filter A).
+3. **TechCrunch Mobility: Tesla Cybercab hits the road — and a snag**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/06/techcrunch-mobility-tesla-cybercab-hits-the-road-and-a-snag/
+   - Published: URL slug "2026/09/06"; snippet: "From September 6, 2026"
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/06 + snippet "From September 6, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md)
+   - Summary: หลังงานเปิดตัว Cybercab (แท็กซี่ไร้พวงมาลัย-ไร้แป้นเบรก) 3 ก.ย. ที่ Gigafactory Texas Tesla เริ่มให้บริการจริงในออสติน; VP ฝ่าย Autopilot/AI Ashok Elluswamy อ้าง "one million miles of unsupervised Robotaxi operation"; Waymo ตอบโต้ก่อนงานว่า "fully autonomous vehicles aren't possible without a mix of sensors" และ "pure end-to-end AI systems aren't safe enough"; Waymo วิ่งอยู่ ~4,000 คันใน 14 เมือง (500,000 paid trips/สัปดาห์), Tesla ~200 คัน unsupervised.
+
+4. **Travis Kalanick's Atoms might be getting into the robotaxi business**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/
+   - Published: URL slug "2026/09/06"; snippet indicates September 6, 2026
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/06 + snippet confirms Sept 6 publication
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md)
+   - Summary: Atoms (สตาร์ตอัพของ Travis Kalanick, ระดม $1.7B นำโดย a16z เมื่อ ก.ค., ดึง Anthony Levandowski อดีต Waymo/Uber self-driving lead, ซื้อ Pronto มี.ค.) ถูกรายงานว่ากำลังเข้าตลาด robotaxi ผ่านความร่วมมือกับ Uber (ลงทุน $100M) แต่บริษัทปฏิเสธและระบุว่าเป็น "industrial software company" ไม่มีแผนเข้า robotaxi ที่ตลาดแล้วอิ่มตัว.
+
+5. **Traders Flock to Bullish Chinese Stock Bets for AI Alternative**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-09-06/traders-flock-to-bullish-chinese-stock-bets-for-ai-alternative
+   - Published: URL slug "2026-09-06"
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-06
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
+   - Summary: นักลงทุนที่ต้องการกระจายพอร์ตออกจาก AI trades แออัดในตลาดเกาหลี/ญี่ปุ่นกำลังไหลเข้า Chinese equity derivatives; โต๊ะเทรดของ Barclays และ UBS เห็น demand ของ bullish options ในหุ้นจีนเพิ่มขึ้นชัดเจน.
 
 ## Dropped
 
-- https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/ — Filter A (>24h): URL slug `/2026/09/03/…` = ~3 days old
-- https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/ — Filter A (>24h): search snippet dated announcement Sept 2–3, 2026 (~3 days old)
-- https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/ — Filter A (>24h): URL slug `/2026/09/03/…` = ~3 days old
-- https://openai.com/index/gpt-6-astra/ — Filter A (>24h): search snippets confirm Sept 3, 2026 release (~3 days old)
-- https://deepmind.google/science/weathernext/ — Filter A (>24h): TechCrunch launch article `/2026/09/03/…` = ~3 days old
-- https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/ — Filter A (>24h): URL slug `/2026/09/04/…` — outside the strict rolling-24h window from Asia/Bangkok now
-- https://techcrunch.com/2026/09/04/feds-launch-investigation-into-teslas-cybercab-deployment/ — Filter A (>24h): URL slug `/2026/09/04/…` — outside rolling-24h
-- https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/ — Filter A (>24h): URL slug `/2026/09/03/…`
-- https://www.anthropic.com/research/formalizing-fermats-last-theorem — Filter A (>24h): search snippet ("The announcement was published September 4, 2026 and updated September 5, 2026") — original publish is >24h; the Sept 5 update alone does not reset the publish timestamp per the strict rule
-- https://www.blognone.com/node/151533 — Filter A (>24h): node number precedes yesterday's already-covered node 151543 — published before Sept 4
-- https://www.blognone.com/node/151552 — Filter A (ambiguous): no explicit publish timestamp surfaced in search snippet; node-number heuristic ("later than yesterday's 151543") is not proof of within-24h publication → drop per "Date ambiguous / not surfaced ❌ drop (do not guess)"
-- Reuters "Exclusive-Anthropic IPO launch shifts toward mid-October" (Sept 5) — Not selectable: **no reuters.com URL appeared in any WebSearch result** (only aggregators: CNBC, The Star, Japan Times, Investing.com, Seeking Alpha). Skill rule: "Never cite a URL that you could not at least see in a WebSearch result for a trusted-source domain."
-- CNBC / The Motley Fool / Bloomberg-hosted URLs for Anthropic-IPO-shift and AMD-Anthropic-$5B stories — publishers not on `reference/trusted-sources.md` allow-list
+- https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/ — Filter A: URL slug 2026/09/05 อยู่นอกกรอบ 24h (นับจาก 2026-09-07 07:11 BKK; วินโดว์เริ่ม 2026-09-06 07:11)
+- https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/ — Filter A: URL slug 2026/09/05 อยู่นอกกรอบ 24h
+- https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/ — Filter A: URL slug 2026/09/04 อยู่นอกกรอบ 24h
+- https://www.bloomberg.com/news/articles/2026-09-04/what-is-agi-openai-anthropic-race-for-artificial-general-intelligence — Filter A: URL slug 2026-09-04 อยู่นอกกรอบ 24h
+- https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/ — Filter A: URL slug 2026/09/03 อยู่นอกกรอบ 24h (และเป็นข่าวสัปดาห์ก่อน)
+- https://www.blognone.com/node/151533 — Filter A: Blognone GPT-6 Astra ลงวันที่ ~2026-09-04 (จาก snippet) อยู่นอกกรอบ 24h; ไม่พบ Blognone story ใหม่ที่ลงในกรอบ 24h
 
-## Breakdown
-
-- Candidates evaluated (trusted-source URLs seen in WebSearch results): ~12
-- Failed Filter A (>24h publish): ~10
-- Failed URL-not-in-search-results rule (trusted source but URL not surfaced): 1 (Reuters IPO story)
-- Failed "date ambiguous → drop": 1 (Blognone node 151552)
-- Passed both Filter A and Filter B: **0**
-
-> Note: 0 items passed both filters this run. Of ~12 candidates, ~11 failed Filter A (freshness), 0 failed Filter B (dedup) — Filter A alone blocked the day. Runtime was `WEBFETCH_BLOCKED`, so all verification was Tier-2 (WebSearch snippet only); no candidate could be uplifted to Tier 1.
+> Note: 5 items passed both filters this run. Of ~11 candidates ที่พิจารณา, ~6 ตกด้วย Filter A (freshness), 0 ตกด้วย Filter B (yesterday was empty stub).
