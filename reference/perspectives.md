@@ -1,25 +1,31 @@
-# Perspectives — 2026-09-08
+# Perspectives — 2026-09-10
 
-## 1. OpenAI Chief Scientist Urges 'Extreme Caution' With Pace of AI
+## 1. OpenAI แต่งตั้ง Paul Christiano นักวิจัย alignment เข้ากรรมการ Foundation Board
 
-**อาจารย์ (มหาวิทยาลัย):** คำเตือนจาก chief scientist ของ OpenAI คือกรณีศึกษาชั้นดีเรื่อง "self-regulation vs. regulation" — ผู้เรียนควรวิเคราะห์ว่าเหตุใดแล็บ AI ถึงต้องการชะลอโดยสมัครใจ และเปรียบเทียบกับตัวอย่างในประวัติศาสตร์อย่าง Asilomar Conference on Recombinant DNA (1975).
-**ผู้เชี่ยวชาญด้าน AI:** ประเด็นสำคัญที่แตกต่างจากคำเตือนก่อนหน้าคือการยอมรับความเสี่ยง "recursive self-improvement without human intervention" — สัญญาณว่าโมเดลรุ่นใหม่ (Astra, Fable 5.1) เข้าใกล้ระดับที่ interpretability tooling ปัจจุบันตามไม่ทัน; ควรเฝ้าดู evals ที่วัด controllability ไม่ใช่แค่ capability.
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าแล็บชะลอจริง งานเก่ากับ agent framework อาจใช้ได้นานขึ้นก่อนต้อง migrate model; แต่ถ้ามันแค่ signaling ก็ควรเผื่อ budget สำหรับ safety-review ในทุก release cycle ของงาน production ที่ใช้ frontier model.
+**อาจารย์ (มหาวิทยาลัย):** ประเด็นที่ควรชี้ให้นักศึกษาเห็นคือ Christiano พูดชัดว่า "อุตสาหกรรม รวมถึง OpenAI ยัง not on track" — คำพูดของกรรมการใหม่ที่ยอมรับว่าองค์กรของตนไม่พอ เป็น governance signal ที่หายากในบริษัทเอกชน; ให้เอาไปเทียบกับ board dynamics ของ Sam Altman ปี 2023 เพื่อให้เห็นว่ากรรมการฝ่าย safety มี track record แค่ไหนในทางปฏิบัติ.
+**ผู้เชี่ยวชาญด้าน AI:** Christiano เป็นผู้บุกเบิก RLHF (2017 paper) และเป็นคนตั้ง Alignment Research Center เพื่อ evaluate ว่าโมเดล "threaten its human creators" ได้หรือไม่ — การที่เขากลับเข้า OpenAI ผ่านทาง Foundation Board (ไม่ใช่ for-profit board โดยตรง) ทำให้ leverage อยู่ที่ safety committee ซึ่งดูแล governance ของ safety practices ที่ for-profit ส่งข้ามมา; ต้องจับตาว่า committee นี้จะเห็น pre-deployment eval หรือแค่ post-hoc report.
+**โปรแกรมเมอร์มืออาชีพ:** ผลกระทบระยะสั้นต่อทีมงานคือ deployment policy ที่เข้มขึ้น — คาดว่าจะเห็น model card / system card ที่ละเอียดขึ้น และ deprecation timeline ที่ยาวขึ้น (เพราะ safety committee ผลักดันได้); ถ้าใช้ API ใน production ให้เตรียม fallback provider ไว้เผื่อรุ่นใหม่โดน gate นานกว่าคาดจาก internal review.
 
-## 2. AI-Discovered Drug Reverses Aging Markers in Study, Biotech Says
+## 2. Harvey ระดมทุน $550M ที่ $15.5–15.6B — ARR ทะลุ $400M
 
-**อาจารย์ (มหาวิทยาลัย):** ยา rentosertib ของ Insilico Medicine เป็นตัวอย่างจริงของ AI-first drug discovery ในงาน biotech — ผู้สอนสาขาวิทย์ควรใช้เคสนี้อธิบายการเชื่อมโยง target discovery model → clinical candidate → Nature Biotechnology paper แบบ end-to-end.
-**ผู้เชี่ยวชาญด้าน AI:** aging clocks 6 ตัวที่วัด epigenetic/proteomic markers เป็น proxy — ไม่ใช่ผลลัพธ์คลินิกจริง (mortality/morbidity); ควรอ่านตัวเลขเป็น "signal that warrants replication" ไม่ใช่ "AI ค้นพบยาชะลอวัย" ตามที่ headline โฆษณา.
-**โปรแกรมเมอร์มืออาชีพ:** stack ของ Insilico (target ID + generative chemistry + clinical readout) เป็น blueprint สำหรับทีมที่คิดจะสร้าง AI-driven R&D pipeline; งาน engineering ที่ตามมาคือ MLOps สำหรับ wet-lab feedback loop, ไม่ใช่แค่ model training.
+**อาจารย์ (มหาวิทยาลัย):** ตัวเลข "80% ของ top-100 law firm, 20% ของ Fortune 500, ครึ่งหนึ่งของ Fortune 10" คือกรณีศึกษา saturation ของ vertical AI ใน 24 เดือน — ให้นักศึกษา business/law เอาไปเทียบกับ SaaS adoption curve ของ Salesforce/Microsoft ในช่วง 5–10 ปีแรก แล้วตอบว่าอะไรทำให้ speed ต่างกัน (คำใบ้: workflow ที่มี templated output).
+**ผู้เชี่ยวชาญด้าน AI:** Harvey ยังคง narrative "post-trained open-weight model + Legal Agent Benchmark (LAB)" — signal ว่ากลยุทธ์ไม่ใช่แค่ RAG บน foundation model แต่ fine-tune จริงบน corpus กฎหมาย + build eval suite เอง; นี่คือแม่แบบสำหรับ vertical AI ที่เข้ามาแทน ChatGPT-wrapper รุ่นแรก — expect competitor ใน finance/medicine จะโคลนโครงสร้างนี้.
+**โปรแกรมเมอร์มืออาชีพ:** valuation ที่โต 41% ต่อไตรมาสหมายความว่า Harvey จ่าย premium เพื่อ hire ได้ — engineer ที่ทำ legal-tech / doc parsing / retrieval eval มี leverage; ถ้าใช้ Harvey ผ่าน enterprise agreement ให้เจรจา rate lock ตอนนี้ก่อน tier price จะปรับตาม valuation ในอีก 6 เดือน.
 
-## 3. Saudi AI Firm That Bet on Musk Eyes IPO; Abu Dhabi's G42 Weighs US Ownership
+## 3. Suno เปลี่ยนโมเดลใหม่ V6 เทรนบนเพลง licensed จาก Warner/BMG/Believe — ปิดโมเดลเดิม
 
-**อาจารย์ (มหาวิทยาลัย):** สาขา IR/เศรษฐศาสตร์ระหว่างประเทศควรใช้เคสนี้ตั้งคำถาม — เมื่อทุน Gulf ไหลเข้า US via IPO และเจ้าของสัญชาติ, "sovereign AI" ยังคงความหมายเดิมหรือไม่? มีนัยยะต่อ CFIUS review และ dual-use export policy.
-**ผู้เชี่ยวชาญด้าน AI:** Humain กับ G42 คือ two prongs ของ Gulf AI strategy — Humain เดินสาย xAI/consumer, G42 เดินสาย government/enterprise + Microsoft; ทั้งคู่ IPO/US-ownership จะเปลี่ยน supply-side ของ GPU + compute allocation ในช่วง 12-18 เดือนถัดไป.
-**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ deploy AI สำหรับลูกค้าใน Gulf ต้องระวัง data-residency requirement ใหม่ที่อาจตามมากับ IPO listing; option ของ compute regional (Riyadh, Abu Dhabi) จะน่าสนใจขึ้นสำหรับงาน sovereign workload.
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็น teaching moment สำหรับวิชา IP law + AI: เห็น "settle-then-license" pattern ครบวงจร — จำเลย (Suno) → settle → license → build clean-room model → shut down tainted model; ให้นักศึกษาเปรียบเทียบกับ Napster → iTunes ปี 2003 ว่าทำไม music industry ถึงยอมรับ license framework ในรอบนี้ แต่ Sony/UMG ยังฟ้องต่อ.
+**ผู้เชี่ยวชาญด้าน AI:** ประเด็นเทคนิคที่ต้อง audit คือคำว่า "trained from the ground up" — ไม่มี distillation จาก checkpoint เดิม? มี machine unlearning ทดสอบหรือไม่? ถ้ามีเพียงการ retrain data pipeline แต่ยังใช้ tokenizer/embedding จากรุ่นก่อน jury อาจไม่ยอมรับว่าเป็น clean-room; นักวิจัย copyright ML ต้องจับตา technical filing ในคดี Sony/UMG ที่ยังค้าง.
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าใช้ Suno API ใน production — โมเดลรุ่นก่อนจะถูก switch off ทั้งหมด ต้อง re-benchmark output V6 กับ V4.5 ก่อน rollout; ราคาน่าจะปรับ (revenue share = margin กด) และ latency อาจต่างเพราะโมเดลใหม่. ผู้พัฒนาแอปสร้างเพลงในไทยต้องระวังการเรียก API สำหรับเสียงศิลปิน "ในสไตล์" เพราะ V6 มี rights management system กัน mimicry ที่ระดับ inference.
 
-## 4. Opaque recurrence, and other AI terms that you should probably know
+## 4. Instacart เปิดตัว Clementine — AI shopping assistant — Shipt ตามด้วย Ask Shipt
 
-**อาจารย์ (มหาวิทยาลัย):** glossary จาก TechCrunch เป็นเครื่องมือที่ดีสำหรับ syllabus ปี 2026 — คำใหม่อย่าง "opaque recurrence" ควรถูกเพิ่มในหน่วยการเรียน AI safety พร้อมกับ hallucination, jailbreak, และ scheming.
-**ผู้เชี่ยวชาญด้าน AI:** "opaque recurrence" คือความสามารถของโมเดลในการวนคำนวณภายในโดยที่ chain-of-thought (CoT) monitor อ่านไม่ออก — เป็นภัยตรงต่อ interpretability-based safety; ควรอ่านเทียบกับ Astra system card ที่ยอมรับว่า CoT monitorability ลดลง.
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ทำ AI product ที่ต้อง audit reasoning trace (เช่น regulated industry) การมี "opaque recurrence" ในโมเดลตัวใหม่แปลว่า external log ของ CoT อาจไม่พอเป็นหลักฐาน — ต้องออกแบบ observability layer ใหม่ที่ไม่พึ่ง model-emitted trace เพียงอย่างเดียว.
+**อาจารย์ (มหาวิทยาลัย):** ให้นักศึกษา business เอาเคสนี้เทียบ Uber Eats + DoorDash ที่ launch AI assistant ปีนี้ — เห็นว่า grocery e-commerce กำลัง converge เป็น "voice-of-user → cart" UX pattern เดียวกัน; คำถาม classroom: ใครถืออำนาจต่อรอง (differentiation) เมื่อทุก platform ใช้ AI ในลักษณะเดียวกัน — brand หรือ inventory-integration หรือ price?
+**ผู้เชี่ยวชาญด้าน AI:** capability ที่ควรสังเกตคือ "photo of handwritten list → cart" — ต้องมี OCR + intent parsing + inventory matching ที่ทำงานร่วมกัน; scale ปัญหาอยู่ที่ product-catalog disambiguation ("นม" หมายถึง SKU ไหนใน 200 ตัวเลือก) — Clementine ระบุใช้ real-time inventory ของร้านที่ผู้ใช้เลือก ซึ่งเป็นทาง short-cut ที่ pragmatic; retrieval + reranker คือ backbone จริง, ไม่ใช่ LLM ตัวเอก.
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ทำ e-commerce ในไทย (Shopee, Lazada, Grab Mart) — pattern "prompt → cart" นี้จะโดน replicate ในอีก 6 เดือน; งานที่ต้องเตรียมคือ product catalog embedding + real-time inventory API + dietary/allergen metadata; ถ้ายังไม่มี unified product ontology, งานจะติดตรง disambiguation.
+
+## 5. Blognone: Suno V6 — แบ่งรายได้ค่ายเพลง + rights management กัน mimicry เสียงศิลปิน (Thai coverage)
+
+**อาจารย์ (มหาวิทยาลัย):** สื่อไทยเลือกเน้น "rights management system" ที่กัน mimic voice/style ศิลปินโดยตรง — เป็น framing ที่ pragmatic กว่ารายงานตะวันตกที่เน้น settlement/license; ให้ media literacy class ตอบ: ทำไมสื่อไทยเลือก frame ที่ผู้อ่านทั่วไปจับต้องได้ ("มี AI ปลอมเสียงศิลปินไหม") มากกว่า business story (revenue share ก้อนเท่าไหร่).
+**ผู้เชี่ยวชาญด้าน AI:** rights management system ที่ "กัน mimicry ในระดับ inference" น่าสนใจในเชิงเทคนิค — น่าจะทำผ่าน voice/style embedding blacklist + classifier ที่วัด similarity ก่อน sample; ประสิทธิภาพขึ้นอยู่กับ threshold — false positive จะฆ่า creative use case, false negative จะทำให้ค่ายเพลงกลับมาฟ้อง; ต้องจับตา detailed technical disclosure หลังการ deploy.
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับนักพัฒนาไทยที่ใช้ Suno สร้างเพลงประกอบสื่อ/โฆษณา — สั่ง "ในสไตล์ [ชื่อศิลปิน]" ที่เคยได้ผลรุ่นก่อน อาจโดน gate ตั้งแต่ prompt; ให้เตรียม prompt engineering ใหม่ที่บรรยาย mood/genre โดยไม่อ้างศิลปิน + benchmark output สำหรับ commercial deliverable ก่อน integrate เข้า production pipeline.
