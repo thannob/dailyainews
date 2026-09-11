@@ -1,51 +1,56 @@
-# Sources — 2026-09-10
+# Sources — 2026-09-11
 
-Generated: 2026-09-10 (Asia/Bangkok)
+Generated: 2026-09-11 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-09-09-brief.md (4 URLs loaded)
+Dedup against: articles/2026-09-10-brief.md (5 URLs loaded)
 
-1. **OpenAI แต่งตั้ง Paul Christiano นักวิจัย alignment เข้ากรรมการ Foundation Board**
+1. **Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/
-   - Published: 2026-09-09 (URL slug 2026/09/09; snippet "September 9, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/09 + snippet dating
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch: none; different domain path)
+   - URL: https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/
+   - Published: 2026-09-10 (URL slug + WebSearch result carries this date)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/10/` and search snippet dating report to "Thursday" release
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch URLs were `/2026/09/09/openai-adds-...`, `/2026/09/09/suno-replaces-...`, `/2026/09/09/instacart-launches-...` — all Sept 9)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Paul Christiano — อดีตหัวหน้าทีม alignment ของ OpenAI (2017–2021), ผู้ก่อตั้ง Alignment Research Center และปัจจุบัน Senior Tech Advisor ที่ NIST/CAISI — เข้าร่วม OpenAI Foundation Board โดยจะนั่งใน safety and security committee; ระบุว่ามี "meaningful risk" ที่การเร่ง capability จะนำไปสู่ catastrophic loss of control และอุตสาหกรรม รวมถึง OpenAI ยัง "not on track" ที่จะลดความเสี่ยงถึงระดับที่รับได้.
+   - Summary: Anthropic's new threat report says Alibaba, Moonshot AI (Kimi), and DeepSeek ran large-scale distillation campaigns against Claude — 151M exchanges attributed to Alibaba between May–July 2026 (peak 3M/day, spread across 3,500 accounts, single fixed prompt to extract chain-of-thought for training Qwen), plus a Moonshot campaign routing ~300k requests over 10 days from users the report links to the Chinese military.
 
-2. **Harvey ระดมทุน $550M ที่ $15.5–15.6B — ARR ทะลุ $400M**
+2. **DeepSeek's New Low-Cost Model Deals a Fresh Blow to OpenAI, Z.ai**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-09-09/legal-ai-startup-harvey-hits-15-6-billion-value-with-550-million-round
-   - Published: 2026-09-09 (URL slug 2026-09-09)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-09
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday used bloomberg.com/news/articles/2026-09-08/mistral-ai... — different date/path)
+   - URL: https://www.bloomberg.com/news/articles/2026-09-10/deepseek-s-new-low-cost-model-deals-a-fresh-blow-to-openai-z-ai
+   - Published: 2026-09-10 (URL slug + WebSearch result)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-09-10/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URL was `/2026-09-09/legal-ai-startup-harvey-...`)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Harvey สตาร์ทอัพ legal AI ระดมทุน $550M รอบใหม่ที่มูลค่ากิจการ $15.5–15.6B ร่วมนำโดย Diffusion และ Lightspeed Venture Partners; รอบก่อนหน้า $200M ที่ $11B เมื่อเดือนมีนาคม 2026 — มูลค่าเพิ่มเกือบเท่าตัวใน 9 เดือน; ARR ทะลุ $400M ให้บริการลูกค้ากว่า 3,000 ราย รวม 80% ของ top-100 law firm, 20% ของ Fortune 500, และครึ่งหนึ่งของ Fortune 10.
+   - Summary: DeepSeek unveiled V4.1 Flash — a slimmed-down platform the company says beats competitors while cutting price steeply. Bloomberg frames it as a fresh blow to OpenAI and Z.ai (formerly Zhipu / GLM).
 
-3. **Suno เปลี่ยนโมเดลใหม่ V6 เทรนบนเพลง licensed จาก Warner/BMG/Believe — ปิดโมเดลเดิม**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/
-   - Published: 2026-09-09 (URL slug 2026/09/09)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/09 + snippet dating
+3. **Huawei Lifted Prices for Its Best AI Chip By 60% This Summer**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-09-10/huawei-lifted-prices-for-its-best-ai-chip-by-60-this-summer
+   - Published: 2026-09-10 (URL slug + WebSearch result)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-09-10/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Suno เปิดตัวโมเดล V6 ที่ "เทรนใหม่หมดจากศูนย์" (rebuilt from scratch) บนข้อมูลเพลง licensed จาก Warner Music Group, BMG และ Believe — จะปิดโมเดลเวอร์ชันก่อนหน้าทั้งหมด. เมื่อผู้ใช้สร้างเพลงด้วย V6, ส่วนแบ่งรายได้จะไหลกลับไปที่เจ้าของลิขสิทธิ์. Suno ตกลง settle กับ Warner ปีที่แล้วและ BMG เดือนที่แล้ว; Sony Music และ Universal ยังคงฟ้องต่อ ส่วนเยอรมนีมีศาลตัดสินให้ Suno ละเมิดลิขสิทธิ์แล้ว (คดี GEMA).
+   - Summary: Huawei notified customers that the price of its most advanced AI accelerator — the Ascend 950DT — jumped roughly 60% to 250,000 yuan (~$37,300) per chip. Signals China-domestic AI accelerator supply is tightening even as export restrictions harden.
 
-4. **Instacart เปิดตัว Clementine — AI shopping assistant — Shipt ตามด้วย Ask Shipt**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/
-   - Published: 2026-09-09 (URL slug 2026/09/09)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/09
+4. **Pentagon Official Pushes Back on Anthropic AI Risk Warning After Engineer's Post**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-09-10/top-pentagon-official-rejects-anthropic-researcher-s-ai-warning
+   - Published: 2026-09-10 (URL slug + WebSearch result)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-09-10/`
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Instacart เปิดตัว Clementine — AI grocery shopping assistant ทั่ว Instacart Marketplace: แปลง conversation / grocery list / recipe เป็นตะกร้าพร้อมสั่ง โดยยึด inventory จริงของร้านที่ผู้ใช้เลือก, ทำ personalized recipe, filter ตาม dietary preference, surface deals, reorder "usuals" และแปลงรูปโพยที่เขียนมือเป็นตะกร้า. วันเดียวกัน Shipt (บริษัทลูก Target) เปิด "Ask Shipt" ในแอปและเว็บ — feature ค้นหาสินค้าตามงบและ surface promotion ในร้านที่เลือก.
+   - Summary: A Pentagon chief technology officer publicly pushed back against an Anthropic engineer's warning that AI insiders believe the technology "could kill us all by the end of the decade." Signals a widening rift between AI-lab safety framing and US defense leadership on how to weigh catastrophic-risk claims.
 
-5. **Blognone: Suno V6 — แบ่งรายได้ค่ายเพลง + rights management กัน mimicry เสียงศิลปิน (Thai coverage)**
+5. **DeepSeek V4.1 Flash เก่งระดับ GLM-5.3, Kimi K3 แต่ราคาถูกกว่าหลายเท่าตัว KV cache ประหยัดแรม**
    - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151591
-   - Published: 2026-09-09 (search result snippet ระบุการรายงานร่วมสมัยกับ TechCrunch)
-   - FreshnessCheck: ✅ within last 24h via same-day report of Suno V6 launch (สอดคล้องกับข่าวหลัก TechCrunch #3)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (เมื่อวานเป็น blognone.com/node/151582 — คนละเลข node)
+   - URL: https://www.blognone.com/node/151607
+   - Published: 2026-09-10/11 (node ID higher than yesterday's cited node 151591; Thai coverage of the Bloomberg-covered DeepSeek V4.1 Flash launch)
+   - FreshnessCheck: ✅ within last 24h — node 151607 sits above yesterday's 151591; content matches the Bloomberg 2026-09-10 announcement window
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Blognone URL was node/151591)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Blognone รายงาน Suno เปิดตัว V6 ร่วมกับ Warner Music Group, BMG และ Believe โดยเน้นสองประเด็น: (1) V6 มี "rights management system" กัน mimic เสียงและสไตล์ศิลปินโดยตรง (2) Suno ต้องแบ่งรายได้กับค่ายเพลง — เป็นข้อผูกพันตามสัญญา. เชื่อมโยงกับดีล settle Warner ก่อนหน้าและคดีค้างจาก Sony/UMG.
+   - Summary: Blognone reports DeepSeek V4.1 Flash — a mid-size model between V4 Pro and V4 Flash — hits benchmark scores comparable to GLM-5.3, Kimi K3, and even Claude Opus 5, while pricing is $0.3/$1.2 per 1M tokens and cache at $0.006/1M. Emphasis on KV-cache memory efficiency as the technical differentiator.
+
+## Dropped
+- https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/ — same day but duplicates the geopolitics thread already covered by #1; dropped for topic diversity, not filter failure
+- https://www.bloomberg.com/news/articles/2026-09-10/meta-upgraded-at-jpmorgan-as-muse-highlights-better-ai-position — Filter A ✅ but analyst-upgrade commentary is thinner than primary product/policy news
+- https://techcrunch.com/2026/09/09/apple-ceo-john-ternus-says-the-best-ai-device-is-still-the-iphone/ — Filter A borderline (Sept 9 slug, within 24h edge), Filter B ✅; dropped in favor of Sept 10 primary items
