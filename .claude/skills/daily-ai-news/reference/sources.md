@@ -1,56 +1,59 @@
-# Sources — 2026-09-09
+# Sources — 2026-09-14
 
-Generated: 2026-09-09 (Asia/Bangkok)
+Generated: 2026-09-14 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-09-08-brief.md (4 URLs loaded)
+Dedup against: articles/2026-09-13-brief.md (5 URLs loaded)
 
-1. **Mistral AI raises €3B Series D at €21B valuation in Samsung-led round**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-09-08/mistral-ai-raises-at-21-billion-valuation-in-samsung-led-round
-   - Published: URL slug 2026-09-08 (Bloomberg article dated Sept 8, 2026)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-08 (Bloomberg permalink structure encodes publish date); event is same-day (Sept 8) round announcement, corroborated across TechCrunch (2026/09/08 slug), CNBC (2026/09/08 slug), and Euronews (2026/09/08)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Bloomberg URLs were /2026-09-07/... paths; this is a different article at /2026-09-08/...
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime; bloomberg.com is on trusted-sources.md)
-   - Summary: Mistral raised €3 billion in a Series D round led by Samsung Electronics with co-leads EQT-managed Scaleup Europe Fund and existing investor PSG Equity, valuing the French AI firm at €21B+ post-money — the largest equity round ever completed by a European technology company. Mistral says it will use the capital to scale compute, build data centers, and expand internationally, with CFO Johan Bergqvist targeting $1B annual recurring revenue by end-2026.
+1. **Anthropic, OpenAI, และ Google หารือลับตั้งองค์กร AI safety standards ร่วม**
+   - Publisher: The Information
+   - URL: https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police
+   - Published: September 13, 2026 (per search snippet)
+   - FreshnessCheck: ✅ within last 24h via snippet "On September 13, 2026, Anthropic, OpenAI, and Google are in discussions to form an industry standards organization"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (theinformation.com not in yesterday's brief at all)
+   - Verification: Tier 2 — WebSearch snippet (theinformation.com on trusted-sources.md)
+   - Summary: The Information รายงานว่า Anthropic, OpenAI, และ Google กำลังหารือกันเพื่อจัดตั้งองค์กรกลางกำหนด technical testing/auditing standards สำหรับ frontier AI model — นำโดย Amodei และ Altman แสดง support แม้ไม่มี government support โดยตรง
 
-2. **OpenAI expands initiatives to support journalism from classrooms to newsrooms**
-   - Publisher: OpenAI
-   - URL: https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms/
-   - Published: September 8, 2026
-   - FreshnessCheck: ✅ within last 24h via search snippet — corroborated by StartupHub.ai "OpenAI journalism initiative 2026 hits J-schools" and dotnetramblings mirror dated 08_09_2026, both citing the OpenAI blog post as a Sept 8 announcement
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — openai.com domain did not appear in yesterday's brief at all
-   - Verification: Tier 2 — WebSearch snippet (openai.com is on trusted-sources.md as primary vendor blog)
-   - Summary: OpenAI announced expanded journalism partnerships for the 2026–2027 academic year, providing 400+ ChatGPT Edu subscriptions to CUNY's Tow-Knight Center for Journalism Futures (Newmark J-School) and Northwestern's Medill Knight Lab, alongside launching the OpenAI Academy for News Organizations with the American Journalism Project and the Lenfest Institute for Journalism's AI Collaborative — which provides funds for local news orgs to hire AI engineering fellows.
+2. **Obama เรียกร้อง Democrats สร้าง "clear plan" สำหรับ AI safeguards ก่อน midterms**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/
+   - Published: September 13, 2026 (per URL slug 2026/09/13 + snippet "Obama made these comments on Thursday, at Democratic fundraising event")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/13/` and snippet dating
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had no Obama/Democrat AI content)
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: อดีตประธานาธิบดี Obama บอก Democrats ต้องทำ AI เป็น "central agenda" และ "clear plan" — เตือน House Minority Leader Hakeem Jeffries ให้จัด public conversation ถ้าได้ House majority วันที่ 3 พฤศจิกายน; framing AI เป็นทั้ง safety risk และ economic disruption
 
-3. **China's AI computing boom moves far beyond its biggest cities — MIIT sets 9,800 exaflops target for 2030**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/newsletters/2026-09-08/china-s-ai-computing-boom-is-moving-far-beyond-its-biggest-cities
-   - Published: URL slug 2026-09-08
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-08; corroborated by SCMP's Sept 8 report on the MIIT five-year plan and Unite.AI reporting the same MIIT 9,800 eflops target
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Bloomberg newsletter was the Humain/G42 /2026-09-07/ story; this is a distinct newsletter at /2026-09-08/
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
-   - Summary: China's Ministry of Industry and Information Technology released a 2026-2030 five-year plan on Sept 8 targeting more than quadruple national AI computing capacity to 9,800 exaflops by 2030 (from 2,185 eflops in June, up 177% YoY), with ¥3.8 trillion ($532B) in cumulative information infrastructure investment. The plan calls for "orderly deployment" of intelligent computing clusters of 10,000+ GPU cards, with growth explicitly pushed beyond tier-1 cities.
+3. **Y Combinator Demo Day: 9 startup ที่ VC จับตา — เน้น deep tech AI แทน SaaS**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/13/the-9-buzziest-startups-from-y-combinators-latest-demo-day-according-to-vcs/
+   - Published: September 13, 2026 (per URL slug + snippet "A Y Combinator Demo Day took place on Thursday, September 13, 2026")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/13/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (no YC content yesterday)
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: Demo Day รอบล่าสุดของ Y Combinator skewed ไป deep tech: Lamb Labs ทำ Model Processing Units (MPUs) ฝัง model weights ใน silicon, Dipole Labs ทำ optical switch ลด power ของ AI DC, Parasma วิจัย biological neural computing, Praxis AI เก็บ video data ฝึก humanoid robot; valuation "restrained" กว่า cohort ก่อน
 
-4. **Mistral รับทุนรอบ D ได้เงิน 3,000 ล้านยูโร นำโดย Samsung Electronics**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151582
-   - Published: derived Sept 8-9, 2026 (article covers the same-day Sept 8 Mistral funding event)
-   - FreshnessCheck: ✅ within last 24h via content-derived timestamp — the article reports the Sept 8 Mistral €3B Samsung-led round with specific enterprise-customer detail (Airbus, ASML, HSBC), so publish date must be Sept 8+; within rolling 24h of Sept 9 Bangkok
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — blognone.com did not appear in yesterday's brief
-   - Verification: Tier 2 — WebSearch snippet (blognone.com is on trusted-sources.md as primary Thai-language source)
-   - Summary: Blognone's Thai-language coverage of Mistral's Series D — 3,000 ล้านยูโร ที่มูลค่ากิจการ 21,000 ล้านยูโร นำโดย Samsung Electronics — พร้อมรายละเอียดฐานลูกค้าองค์กร 125+ ราย (Airbus, ASML, HSBC) และไลน์อัพผลิตภัณฑ์เฉพาะทาง (Shieldstral guardrails, Mistral OCR).
+4. **Insight Partners ($90B AUM) เลี่ยง bet ก้อนใหญ่ใน OpenAI/Anthropic — Devin Parekh ยืนยัน diversification**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/
+   - Published: September 13, 2026 (per URL slug + snippet quotes)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/13/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: Devin Parekh (Insight Partners, $90B AUM) บอกว่าธุรกิจ VC "always rewarded diversification over long horizon" — ยอม 25% concentration ใน Anthropic ที่จะทำ return ดีกว่าไม่ได้ เพราะบริษัทอยู่ fund 13 และต้องคิดในระดับ 10 fund; วิพากษ์ LP ที่ raise fund โดยระบุ 35–40% จะลง 1 ใน 2 บริษัทนี้; ยอมเสีย Legora ให้ General Catalyst
+
+5. **AI industry ถกกระหึ่มเรื่อง existential risk — reset ครั้งใหม่ของ safety debate**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/
+   - Published: September 13, 2026 (per URL slug + snippet phrasing "The AI industry seems to be having its loudest debate yet")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/13/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (different URL from Amodei "Pacing the Frontier" URL that was in yesterday's brief; this is meta-analysis of the wider debate, not the essay itself)
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
+   - Summary: TechCrunch analysis: Amodei's essay + Coxon resignation + swarm-agent incident รวมกันจุด "loudest debate ever" ในอุตสาหกรรม; Amodei เตือนว่า "6–12 เดือน" AI อาจนำ swarm ยึด internet ได้; Anthropic "unilaterally committing" ต่อ 1 ใน 3 strategies ที่เสนอ, Altman ตกลงตาม
 
 ## Dropped
 
-- Fortune article "OpenAI agents hijack German site message board" (Sept 8) — Filter: publisher not on trusted-sources.md
-- Anthropic Fermat's Last Theorem / Prove2Me announcement — Filter A: announced ~Sept 4-5, >24h old
-- Anthropic Claude Fable 5.1 / Mythos 5.1 launch — Filter A: released Sept 1-2, >24h old
-- NVIDIA acquires Hugging Face — Filter A: Sept 3 announcement, >24h old
-- Google Gemini 3.8 Flash Cyber launch — Filter A: Sept 2 launch, >24h old
-- Xiaomi 18 Fold with XRING O3 (Sept 7-8) — no trusted-sources.md URL surfaced (SCMP, gizmochina, GSMArena all off-list)
-- Sony/Warner Chappell v. Anthropic music-copyright suit — Filter A: filed late August 2026, >24h old
-- ChatGPT Work writing-style feature — Filter A: onboarding screen posted Sept 4, >24h old
-- Gemini multi-step tasks on Android — closest TechCrunch coverage was earlier in 2026 (May/June); no Sept 8 TechCrunch URL surfaced
+- https://www.pymnts.com/cybersecurity/2026/visa-mastercard-team-with-ant-know-your-agent-framework — Filter A (>24h): KYA framework announcement was September 10, 2026, outside 24h window
+- https://www.washingtonpost.com/business/2026/09/09/anthropic-ai-safety-jacob-coxon/... — Filter A (>24h): Coxon resignation was September 9, 2026 (5 days ago), outside 24h window
+- https://www.bloomberg.com/opinion/articles/2026-09-13/amodei-essay-anthropic-ai-apocalypse-warning-is-far-too-weak — DEDUP topic-adjacent to yesterday's Amodei coverage; opted for TechCrunch meta-analysis instead to give a distinctive angle (still trusted, but we picked one and didn't want two overlapping op-eds)
 
-> Note: 4 items passed both filters this run. All 4 use Tier 2 verification because WebFetch is blocked in this runtime. Stories 1 and 4 cover the same underlying Mistral funding event via different publishers and different languages (Bloomberg English + Blognone Thai) — URL-level dedup permits this, and it satisfies the Thai-source preference from the SKILL.
+> Note: 5 items passed both filters this run. Mix skewed international (5 international, 0 Thai) because Thai-source search on Sep 13–14 surfaced only evergreen trend pieces (Thairath 2026 trends, Blognone earlier week's Astra coverage), not fresh 24h reporting. Shipping 5 solid international-source stories rather than padding with stale Thai items, per skill's "aim for ≥1 Thai when supply allows".
