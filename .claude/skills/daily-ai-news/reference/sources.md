@@ -1,59 +1,59 @@
-# Sources — 2026-09-14
+# Sources — 2026-09-16
 
-Generated: 2026-09-14 (Asia/Bangkok)
+Generated: 2026-09-16 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-09-13-brief.md (5 URLs loaded)
+Dedup against: articles/2026-09-15-brief.md (5 URLs loaded)
 
-1. **Anthropic, OpenAI, และ Google หารือลับตั้งองค์กร AI safety standards ร่วม**
-   - Publisher: The Information
-   - URL: https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police
-   - Published: September 13, 2026 (per search snippet)
-   - FreshnessCheck: ✅ within last 24h via snippet "On September 13, 2026, Anthropic, OpenAI, and Google are in discussions to form an industry standards organization"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (theinformation.com not in yesterday's brief at all)
-   - Verification: Tier 2 — WebSearch snippet (theinformation.com on trusted-sources.md)
-   - Summary: The Information รายงานว่า Anthropic, OpenAI, และ Google กำลังหารือกันเพื่อจัดตั้งองค์กรกลางกำหนด technical testing/auditing standards สำหรับ frontier AI model — นำโดย Amodei และ Altman แสดง support แม้ไม่มี government support โดยตรง
-
-2. **Obama เรียกร้อง Democrats สร้าง "clear plan" สำหรับ AI safeguards ก่อน midterms**
+1. **Salesforce and Nvidia's new reasoning model is everything the AI labs should fear**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/
-   - Published: September 13, 2026 (per URL slug 2026/09/13 + snippet "Obama made these comments on Thursday, at Democratic fundraising event")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/13/` and snippet dating
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had no Obama/Democrat AI content)
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: อดีตประธานาธิบดี Obama บอก Democrats ต้องทำ AI เป็น "central agenda" และ "clear plan" — เตือน House Minority Leader Hakeem Jeffries ให้จัด public conversation ถ้าได้ House majority วันที่ 3 พฤศจิกายน; framing AI เป็นทั้ง safety risk และ economic disruption
+   - URL: https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/
+   - Published: 2026-09-15 (URL slug + confirming snippet "Salesforce and NVIDIA on September 15, 2026 announced Koa")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/15/` + snippet "announced on September 15, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TC URLs are `/2026/09/14/` paths)
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Salesforce and Nvidia jointly announced Koa on Sept 15 at Dreamforce — Salesforce's first CRM reasoning model, post-trained on Nvidia's Nemotron 3 Super model using a proprietary synthetic dataset drawn from ~30 years of CRM deployments. No customer data was used. Post-training used Supervised Fine-Tuning + reinforcement learning with GRPO on NeMo RL / NeMo Gym / NeMo AutoModel. Available to select customers in October 2026.
 
-3. **Y Combinator Demo Day: 9 startup ที่ VC จับตา — เน้น deep tech AI แทน SaaS**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/13/the-9-buzziest-startups-from-y-combinators-latest-demo-day-according-to-vcs/
-   - Published: September 13, 2026 (per URL slug + snippet "A Y Combinator Demo Day took place on Thursday, September 13, 2026")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/13/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (no YC content yesterday)
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Demo Day รอบล่าสุดของ Y Combinator skewed ไป deep tech: Lamb Labs ทำ Model Processing Units (MPUs) ฝัง model weights ใน silicon, Dipole Labs ทำ optical switch ลด power ของ AI DC, Parasma วิจัย biological neural computing, Praxis AI เก็บ video data ฝึก humanoid robot; valuation "restrained" กว่า cohort ก่อน
+2. **OpenAI, Anthropic, Google DeepMind Coordinate on AI Safety Measures**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-09-15/openai-says-it-s-working-with-anthropic-google-on-ai-safety
+   - Published: 2026-09-15 (URL slug + snippet "said Tuesday" ⇒ Sep 15)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-09-15/` + snippet "Chris Lehane…said Tuesday"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs are dated `/2026-09-14/`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: OpenAI global policy chief Chris Lehane said Tuesday the company is working with Anthropic and Google DeepMind on AI safety steps, with engagement under way "for several weeks." Lehane said no antitrust waiver is needed for the three firms to coordinate on safety. Bloomberg newsletter separately noted antitrust questions the push raises. Discussions since July 2026 to create an industry-led safety body cover shared technical evaluations, pre-release audits, independent testing frameworks, and standardized safety protocols.
 
-4. **Insight Partners ($90B AUM) เลี่ยง bet ก้อนใหญ่ใน OpenAI/Anthropic — Devin Parekh ยืนยัน diversification**
+3. **New Italian unicorn Exein rides the physical AI wave**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/
-   - Published: September 13, 2026 (per URL slug + snippet quotes)
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/13/`
+   - URL: https://techcrunch.com/2026/09/15/new-italian-unicorn-exein-rides-the-physical-ai-wave/
+   - Published: 2026-09-15 (URL slug + snippet "announced the funding round on September 15, 2026")
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/15/` + snippet date
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: Devin Parekh (Insight Partners, $90B AUM) บอกว่าธุรกิจ VC "always rewarded diversification over long horizon" — ยอม 25% concentration ใน Anthropic ที่จะทำ return ดีกว่าไม่ได้ เพราะบริษัทอยู่ fund 13 และต้องคิดในระดับ 10 fund; วิพากษ์ LP ที่ raise fund โดยระบุ 35–40% จะลง 1 ใน 2 บริษัทนี้; ยอมเสีย Legora ให้ General Catalyst
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Rome-based Exein raised $270M Series C led by Headline at a $1.7B valuation, becoming Europe's most valuable cybersecurity scaleup. Participants: Sofina, Goldman Sachs, EIB via European Tech Champions Initiative, Wachstumsfonds Deutschland (KfW Capital), T.Capital (Deutsche Telekom). Exein secures physical-AI devices — industrial robots, drones, autonomous vehicles, medical equipment, energy and semiconductor infrastructure — by operating at the firmware/runtime layer where code actually executes. Claims deployment on 2B+ connected devices; valuation up 30x in two years; H1 2026 ARR 4x YoY.
 
-5. **AI industry ถกกระหึ่มเรื่อง existential risk — reset ครั้งใหม่ของ safety debate**
+4. **Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/
-   - Published: September 13, 2026 (per URL slug + snippet phrasing "The AI industry seems to be having its loudest debate yet")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/13/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (different URL from Amodei "Pacing the Frontier" URL that was in yesterday's brief; this is meta-analysis of the wider debate, not the essay itself)
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com on trusted-sources.md)
-   - Summary: TechCrunch analysis: Amodei's essay + Coxon resignation + swarm-agent incident รวมกันจุด "loudest debate ever" ในอุตสาหกรรม; Amodei เตือนว่า "6–12 เดือน" AI อาจนำ swarm ยึด internet ได้; Anthropic "unilaterally committing" ต่อ 1 ใน 3 strategies ที่เสนอ, Altman ตกลงตาม
+   - URL: https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/
+   - Published: 2026-09-15 (URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/09/15/`
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Rune Kvist (early Anthropic hire) and Rajiv Dattani (former METR COO, still on METR board) launched **Artificial Intelligence Underwriting Company (AIUC)** — an enterprise-focused startup for AI agent safety. Named customers include Cursor, Lovable, Harvey, ElevenLabs. Timing aligns with Anthropic CEO Dario Amodei's proposal to require frontier labs to use embedded third-party evaluators, with METR mentioned as one possibility.
+
+5. **Salesforce เปิดตัว AIforce รวมชุด MCP/Skill เข้าเป็นชุดบริการ ระบุเป็นโอกาสดีที่จะแทน UI ซอฟต์แวร์องค์กรด้วย AI**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/151647
+   - Published: 2026-09-15 (node number sequence between 151641/Sep-15 iOS 27 and 151649; AIforce launched at Dreamforce Sep 15)
+   - FreshnessCheck: ✅ within last 24h via node-sequence proximity to Sep-15 Blognone posts + Dreamforce Sep-15 event date confirmed across multiple search results
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Blognone URL was `node/151641`)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Salesforce เปิดตัว **AIforce** ที่ Dreamforce 2026 — live interface layer ที่พา Salesforce data / workflow / business logic ไปอยู่ในเครื่องมือ AI ที่ลูกค้าเปิดใช้อยู่แล้ว (Claude, Slack, Agentforce Coworker, Lightning). ประกอบด้วย Headless Toolkit เปิด MCP, API, plugin, skill และ dev tool ให้สร้าง AI experience กำหนดเอง. เปิดตัวคู่กับ **Claudeforce** ที่พา Salesforce เข้าสู่ Claude ผ่าน prebuilt MCP server ไม่ต้อง manual setup. Patrick Stokes (head of applications & marketing) ระบุการแทน UI ซอฟต์แวร์องค์กรด้วย AI เป็น "opportunity to unlock more value from the platform".
 
 ## Dropped
 
-- https://www.pymnts.com/cybersecurity/2026/visa-mastercard-team-with-ant-know-your-agent-framework — Filter A (>24h): KYA framework announcement was September 10, 2026, outside 24h window
-- https://www.washingtonpost.com/business/2026/09/09/anthropic-ai-safety-jacob-coxon/... — Filter A (>24h): Coxon resignation was September 9, 2026 (5 days ago), outside 24h window
-- https://www.bloomberg.com/opinion/articles/2026-09-13/amodei-essay-anthropic-ai-apocalypse-warning-is-far-too-weak — DEDUP topic-adjacent to yesterday's Amodei coverage; opted for TechCrunch meta-analysis instead to give a distinctive angle (still trusted, but we picked one and didn't want two overlapping op-eds)
-
-> Note: 5 items passed both filters this run. Mix skewed international (5 international, 0 Thai) because Thai-source search on Sep 13–14 surfaced only evergreen trend pieces (Thairath 2026 trends, Blognone earlier week's Astra coverage), not fresh 24h reporting. Shipping 5 solid international-source stories rather than padding with stale Thai items, per skill's "aim for ≥1 Thai when supply allows".
+- https://www.bloomberg.com/news/articles/2026-09-14/anthropic-pitches-new-claude-tool-for-financial-advisors — Filter A (>24h): Bloomberg URL slug 2026-09-14 (product launched Sep-15 at Future Proof but Bloomberg dated its embargoed preview Sep-14, outside rolling 24h from Sep-16 Asia/Bangkok evening)
+- https://fortune.com/2026/09/15/sam-altman-says-openai-ipo-window-pushed-2027-but-markets-arent-the-culprit/ — Domain not on trusted-sources.md
+- https://theconversation.com/un-report-warns-ai-could-soon-use-3-of-worlds-electricity-and-more-water-than-we-need-to-drink-284442 — Filter A (>24h): UN report is from June 2026, not fresh
+- https://www.blognone.com/node/151644 (Dario Amodei slowdown Blognone) — Filter A borderline (Sep 15 timing OK), but topic overlaps heavily with yesterday's coverage of Amodei essay; conservative drop to keep news diverse — the underlying story was covered yesterday even though URL differs
+- https://www.blognone.com/node/151649 (Anthropic shareholder cap table Blognone) — Filter A: timestamp could not be surfaced explicitly in search snippets; conservative drop rather than guess
