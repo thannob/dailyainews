@@ -1,61 +1,57 @@
-# Sources — 2026-09-21
+# Sources — 2026-09-22
 
-Generated: 2026-09-21 (Asia/Bangkok)
+Generated: 2026-09-22 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-09-20-brief.md (4 URLs loaded)
+Dedup against: articles/2026-09-21-brief.md (5 URLs loaded)
 
-1. **Is the AI industry really ready to slow down?**
+1. **OpenAI forms math advisory group as its AI resolves more than 100 open problems**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/
-   - Published: 2026-09-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/20 + WebSearch snippet naming Sept 20, 2026
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's TechCrunch links all dated 2026/09/19, different slugs)
+   - URL: https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/
+   - Published: 2026-09-21 (per URL slug + search-result listing)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/21 (site:techcrunch.com AI Sep 21 listing)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday used /2026/09/20/... slugs only)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: TechCrunch's Equity podcast debates whether Anthropic CEO Dario Amodei's "Pace the Frontier" plan — endorsed by Altman, Musk, and Hassabis — is a serious slowdown or PR. Executives say they want to slow the breakneck pace of AI development, but competition, U.S. government reluctance, and geopolitics stand in the way.
+   - Summary: OpenAI announced a new independent Advisory Group on Mathematics and Artificial Intelligence, hosted at the Institute for Advanced Study in Princeton, to give mathematicians more input into the company's math-oriented research. OpenAI also claims an internal model has resolved more than 100 additional open problems across most areas of mathematics.
 
-2. **AI's Wobbly House of Cards Puts Markets and US Economy at Risk**
+2. **OpenAI Urges US to Lead Global Effort on AI Safety Standards**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-09-20/ai-s-wobbly-house-of-cards-puts-markets-and-us-economy-at-risk
-   - Published: 2026-09-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-20 + WebSearch snippet naming Sept 20
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (bloomberg.com host absent yesterday)
+   - URL: https://www.bloomberg.com/news/articles/2026-09-21/openai-pushes-us-to-lead-effort-to-set-global-standards-for-ai
+   - Published: 2026-09-21 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-21 (site:bloomberg.com AI Sep 21 listing)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were both /2026-09-20/)
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Heads of leading AI labs have opened a national conversation about tapping the brakes on the technology, raising concerns about what happens to Wall Street and Main Street if AI does not keep growing at breakneck speed — the assumption underlying trillions of dollars in market cap. ~$33 trillion has been added to the S&P 500 since the AI boom began in late 2022.
+   - Summary: OpenAI is urging the US government to lead an effort with other countries to set standards for cutting-edge AI, in response to mounting concerns about the potential harms of the technology.
 
-3. **Microsoft AI Chief Says China Isn't Excuse to Forego Regulation**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-09-20/microsoft-ai-chief-says-china-isn-t-excuse-to-forego-regulation
-   - Published: 2026-09-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-20 + WebSearch snippet naming Sept 20
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: Microsoft's AI chief said concerns about China's progress on AI should not be used as an argument against putting guardrails around the rapidly advancing technology — a direct counter to the Trump administration line that regulation would cede ground to Beijing.
-
-4. **TechCrunch Mobility: How do we know when an AV is safe enough?**
+3. **Meta's AI agent has been blocked from using Amazon.com**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/20/techcrunch-mobility-how-do-we-know-when-an-av-is-safe-enough/
-   - Published: 2026-09-20 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/20 + WebSearch snippet naming Sept 20
+   - URL: https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/
+   - Published: 2026-09-21 (per URL slug + "5 hours ago" byline hint in TC AI feed listing)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/21 and TC feed listing "hours ago" author byline
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: There is no equivalent of a driver's test for autonomous vehicles. Existing FMVSS rules were not designed for vehicles like the Tesla Cybercab and Zoox robotaxi that lack pedals, steering wheels, and mirrors. NHTSA says it is working on a federal automated-vehicle framework that puts safety first without playing "whack-a-mole".
+   - Summary: Meta's Muse assistant received error messages when users tried to buy goods from Amazon.com through it — Amazon has blocked Meta's AI agent from operating on the site, an early flashpoint in the emerging AI-agent-vs-retailer interoperability fight.
 
-5. **ScrollEd wants to turn textbooks into TikTok**
+4. **Google's $899 Googlebook is a bet that you'll buy a new laptop for Gemini**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/20/scrolled-wants-to-turn-textbooks-into-tiktok/
-   - Published: 2026-09-20 (URL slug — TechCrunch Disrupt Startup Battlefield pitch on Sept 20, 2026)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/20 + WebSearch snippet naming "TechCrunch Disrupt Startup Battlefield on September 20, 2026"
+   - URL: https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/
+   - Published: 2026-09-21 (per URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/21
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Palo Alto startup ScrollEd, founded by student spouses Utsav Gupta (Stanford) and Rebecca Neff (UPenn CS), turns any text file — including PDFs and textbooks — into a vertical feed of AI-generated video, audio, text and quizzes, in the mold of Instagram Reels / TikTok. Pitched at TechCrunch Disrupt Startup Battlefield.
+   - Summary: Google announced its new AI-first laptop, the Googlebook, now available for preorder at $899. The device features an AI-powered cursor, vibe-coded widgets, and AI-enhanced dictation via a feature called Rambler — the first mass-market laptop built around Gemini as the primary interaction model.
+
+5. **Jensen Huang บอกมีโอกาส 0% ที่ AI แซงหน้ามนุษย์จนสิ้นโลกในปี 2030**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/151699
+   - Published: 2026-09-21 (per Blognone listing "AI Sept 21 2026" search bucket)
+   - FreshnessCheck: ✅ within last 24h via Blognone article-listing bucket (Sept 21, 2026)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (blognone.com host not in yesterday's brief at all)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Blognone รายงานว่า Jensen Huang ซีอีโอ Nvidia ให้สัมภาษณ์ CBS ยืนยันว่าโอกาสที่ AI จะทำให้โลกล่มสลายภายในปี 2030 คือ 0% วิจารณ์การใช้ scare tactic ที่ไม่มีหลักฐานทางวิทยาศาสตร์ และย้ำว่ากฎหมายเดิมด้านความปลอดภัยผลิตภัณฑ์กับกฎหมายแฮ็กเกอร์เพียงพอโดยไม่ต้องออกกฎ AI ใหม่.
 
 ## Dropped
-
-- https://techcrunch.com/2026/09/18/world-model-companies-are-keeping-a-lot-of-secrets/ — Filter A (>24h): one search result gave the URL as 2026/09/18 while another gave 2026/09/20; date ambiguity → drop per "never guess" rule
-- Antitrust lawsuit vs Anthropic/OpenAI/Google/SpaceXAI slowdown coordination (filed 2026-09-19) — no trusted-source URL surfaced in search results (CNN, CBS, PBS, Fortune, Yahoo not on trusted-sources.md; Reuters and Bloomberg searches did not return this specific story on 2026-09-20)
-- Financial Times "Clinicians push back on medical AI beyond diagnostics" (Sarah Neville, 2026-09-20) — no direct ft.com URL surfaced in WebSearch results for a trusted-source domain; only aggregator link visible (aiweekly.co) which is not on trusted-sources.md
-- Blognone "TypeSafe AI เปิดตัว Jev" (node/151656) — Filter A (>24h): launch was 2026-09-15
-- Blognone "Microsoft Patch Tuesday September 2026" (node/151674) — Filter A: Patch Tuesday was 2026-09-08; article older than 24h
-
-> Note: 5 items passed both filters this run. Of ~10 candidates evaluated, 2 failed Filter A (>24h), 2 failed the trusted-source URL requirement (no URL on a trusted-sources.md domain surfaced in WebSearch), 1 failed Filter A via date ambiguity.
+- https://www.bloomberg.com/news/articles/2026-09-18/nvidia-ceo-says-there-s-0-chance-that-world-will-end-in-2030 — Filter A (>24h): "URL slug 2026-09-18 is 4 days old"
+- https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/ — Filter A (>24h): "URL slug 2026/09/16 is 6 days old"
+- https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/ — Filter A (>24h): "URL slug 2026/09/17 is 5 days old"
+- https://academy.openai.com/public/blogs/making-more-time-for-teaching-with-chatgpt-work-2026-09-02 — Filter A (>24h): "URL slug ends 2026-09-02, ~20 days old"
