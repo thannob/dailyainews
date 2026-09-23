@@ -1,31 +1,31 @@
-# Perspectives — 2026-09-22
+# Perspectives — 2026-09-23
 
-## 1. OpenAI forms math advisory group as its AI resolves more than 100 open problems
+## 1. Anthropic releases Opus 5.5 with lower prices and Fable-level performance
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้ควรใช้สอนความต่างระหว่าง "แก้โจทย์เปิด" กับ "สร้างทฤษฎีใหม่" — การได้ 100+ open problem น่าตื่นเต้น แต่ต้องดูว่าปัญหาเหล่านั้นเปิดอยู่จริงมานานแค่ไหนและมีการ peer-verify แล้วยัง ก่อนที่จะเข้าคลาสว่ามัน "แก้ได้แล้ว".
-**ผู้เชี่ยวชาญด้าน AI:** การตั้ง advisory group ที่ IAS สะท้อนว่า OpenAI ต้องการ external mathematician หา failure mode ในการอ้าง proof — คำอ้าง "resolved 100 problems" ไม่มีความหมายจนกว่าจะเปิด proof/ledger ให้ตรวจแบบ Lean หรือ Coq; หมั่นถามหา verification pipeline ก่อนเชื่อสถิติ.
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าจะเอา math-capable model นี้ไปใช้จริง ให้แยก use case ระหว่าง "generate candidate solution" กับ "verify solution" — pipeline ที่ต่อ formal-verifier (Lean/Coq/Z3) ต่อจาก LLM output จะปลอดภัยกว่าการเชื่อคำตอบตรงๆ.
+**อาจารย์ (มหาวิทยาลัย):** ควรใช้ Opus 5.5 เป็นเคสสอนความหมายของ "pace the frontier" — เมื่อ CEO ผู้ผลิตประกาศต่อสาธารณะว่าจะชะลอ capability ให้ตรงกับ alignment แล้วยังปล่อยรุ่นใหม่ที่ **ถูกลง 20% เร็วขึ้น 30% ในสองเดือน** สะท้อนว่า "pace" ในทางปฏิบัติหมายถึงอะไร: ราคาต่อ intelligence ต่อเนื่อง หรือ capability ceiling ต่อเนื่อง.
+**ผู้เชี่ยวชาญด้าน AI:** Cache read $0.20/M (ลดลง 60%) คือสัญญาณสำคัญกว่าตัวเลข benchmark — cache-heavy workflow (agent loop, RAG pipeline, long-context editor) จะเห็น TCO เปลี่ยนแบบ step-function, และ external audit โดย Frontier Design + METR ก่อนปล่อยเป็น pattern ที่ควรตั้งเป็น baseline สำหรับทุก frontier release.
+**โปรแกรมเมอร์มืออาชีพ:** ก่อนสลับ default model ให้ทดสอบ input token count ของ workflow จริงก่อน — Opus 5.5 output tokens $20 vs GPT-6 Sol $10 อาจไม่ชนะทุก use case; และเผื่อ prompt regression เมื่อสลับ model รุ่นใหม่แม้ใน family เดียวกันเพราะ tool-calling format กับ system-prompt sensitivity เปลี่ยนได้.
 
-## 2. OpenAI Urges US to Lead Global Effort on AI Safety Standards
+## 2. OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้เป็น case ในคาบ international relations — บริษัทที่ปกติต่อต้าน regulation กลับมาเรียกร้อง global standard เพราะกลัวการแข่งขันจากลาบูรอนาม; ให้นักศึกษาเทียบกับ Basel Accords หรือ Montreal Protocol ว่าทำไม industry sometimes wants regulation.
-**ผู้เชี่ยวชาญด้าน AI:** OpenAI เสนอให้สหรัฐเป็นผู้นำ standard-setting = OpenAI ต้องการ influence เกณฑ์วัดก่อนจีน/EU กำหนดเอง; ต้องดูว่า proposed standard วัด capability หรือวัด process — ถ้าวัดแค่ process เท่ากับ regulatory capture โดย incumbent ที่ผ่าน audit ได้ง่ายกว่า.
-**โปรแกรมเมอร์มืออาชีพ:** ถ้ามาตรฐานออกมาจริง ปีหน้าจะเห็น compliance stack ใหม่ (documentation, model card ที่ audit ได้, third-party eval) — เตรียม tooling ที่ export model metadata + eval logs เป็น format มาตรฐานตั้งแต่วันนี้ อย่ารอ deadline.
+**อาจารย์ (มหาวิทยาลัย):** ในคาบ competitive strategy ใช้ price cut 50% ในวันเดียวกับ Opus 5.5 อธิบาย **coopetition** — ทั้งสองบริษัทลดราคาพร้อมกันไม่ใช่บังเอิญ แต่คือ dynamic pricing ในตลาด oligopoly ที่ marginal cost of inference ลดต่อเนื่องด้วย model distillation + inference-optimization.
+**ผู้เชี่ยวชาญด้าน AI:** OpenAI ยืนยันว่า $2/$10 (Sol) และ $0.10/$0.50 (Luna) เป็น **permanent price ไม่ใช่ intro** — สำคัญเพราะทีมที่วางงบประมาณ 12-เดือนสามารถใช้ตัวเลขนี้ได้จริง, และ Luna ที่ $0.10 input tokens ทำให้ high-volume classifier / router / embed-and-decide use case กลายเป็น commodity workload.
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าคุณยังใช้ GPT-5.6 Sol/Luna ใน production เข้า pipeline evaluation ทันทีคืน — new model version เป็น bug source อันดับหนึ่งของ agent stack (behavior regression, tool schema drift), ยิ่ง OpenAI + Anthropic ปล่อยรุ่นใหม่วันเดียวกันยิ่งต้อง pin version explicitly ใน SDK call.
 
-## 3. Meta's AI agent has been blocked from using Amazon.com
+## 3. Qualcomm launches two new smartphone chips with emphasis on AI
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้เปิดคำถามเรื่อง "AI agent interoperability" ในคาบ digital economics — เมื่อ agent ซื้อของแทนคน ใครเป็นเจ้าของ intent? Amazon ที่บล็อกเพราะเสียโฆษณา หรือ Meta ที่พา user มา checkout? ให้ debate ทั้งมุมกฎหมาย antitrust และผู้บริโภค.
-**ผู้เชี่ยวชาญด้าน AI:** Amazon กำลังส่งสัญญาณว่า "agent-friendly" ไม่ใช่ default — retailer ใหญ่จะบังคับ agent วิ่งผ่าน API ที่จ่าย fee หรือใส่ TOS ห้าม automated purchase; อย่าออกแบบ agent stack ที่ assume open web scraping จะทำงานได้ตลอด.
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าโปรเจกต์ตัวเองพึ่ง browser-automation agent (Playwright + LLM) เข้าเว็บใหญ่ ต้อง plan fallback: (1) official API integration, (2) affiliate partnership, (3) graceful degrade บอกผู้ใช้เมื่อ upstream บล็อก — วิ่งชน 403/CAPTCHA แล้วปล่อย silent failure จะพัง trust.
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เชื่อมเรื่อง Moore's Law, thermal envelope, และ HCI paradigm ได้ทั้งคาบ — chip 2nm ที่รัน model 200M parameters บน sensing hub โดยไม่ทำร้าย battery คือสัญญาณว่า **inference กำลังย้ายจาก cloud มา edge** และเปิดคำถามว่า UX design ต้อง rethink อย่างไรเมื่อ AI พร้อมทำงานตลอดเวลาแบบ passive.
+**ผู้เชี่ยวชาญด้าน AI:** "Agentic AI" branding ของ Qualcomm ควรอ่านคู่กับ hardware spec จริง — reengineered Hexagon NPU + sensing hub 200M param คือ **on-device tool-use loop** ที่ไม่ต้อง round-trip cloud; ผลลัพธ์คือ privacy + latency ดีขึ้น แต่ energy budget ยังจำกัด context ให้เป็น task-specific model ไม่ใช่ general LLM.
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมทำ mobile app ที่มี AI feature ให้เริ่มออกแบบ **cloud-fallback pattern** ทันที — flagship 2027 มี NPU ระดับนี้ แต่ mid-tier ยังต้องพึ่ง cloud; ใช้ QNN SDK ของ Qualcomm หรือ Core ML ของ Apple parallel-path ไปกับ cloud model แล้วให้ device เลือก path ตาม latency budget + connectivity.
 
-## 4. Google's $899 Googlebook is a bet that you'll buy a new laptop for Gemini
+## 4. Meta admits Muse's likeness to OpenClaw isn't a coincidence
 
-**อาจารย์ (มหาวิทยาลัย):** ใช้ในคาบ HCI/product design เทียบ Chromebook เดิม (browser-first) กับ Googlebook (AI-first) — เมื่อ "primary input" เป็น natural language ไม่ใช่ keyboard shortcut, ทั้ง interaction pattern และ mental model ของผู้ใช้จะเปลี่ยนอย่างไร; ให้นักศึกษาออกแบบ heuristic evaluation ใหม่.
-**ผู้เชี่ยวชาญด้าน AI:** AI-powered cursor + vibe-coded widget = Google กำลัง bet ว่า OS layer จะเข้าใจ context ทั้งเครื่องได้ดีกว่า app-level assistant; แต่ประสบการณ์ Apple Intelligence สอนว่า on-device inference latency + battery ยังยากมาก — ต้องรอ benchmark จริงก่อนตัดสิน.
-**โปรแกรมเมอร์มืออาชีพ:** ราคา $899 คือกลุ่ม mid-range Chromebook + iPad — target คือ prosumer/educator ไม่ใช่ developer; ถ้าจะพัฒนา extension บน Googlebook ต้องรอ ChromeOS/Aluminium OS API สำหรับ Gemini action ที่ Google ประกาศตามหลัง อย่ารีบ port app จนกว่าจะเห็น SDK ที่ยั่งยืน.
+**อาจารย์ (มหาวิทยาลัย):** ประเด็นทางจริยธรรม-กฎหมายคลาสสิก: **inspiration vs derivative work** — ในคาบ IP law/software engineering ให้ analyze เคส Nat Friedman ยอมรับว่าตั้งใจทำให้ Muse "เหมือน OpenClaw" รวมถึงชื่อไฟล์ SOUL.md ที่ identical; วิเคราะห์ boundary ระหว่าง `look-and-feel` (มักไม่ได้รับ copyright protection) กับ `verbatim code/config copy` (ได้).
+**ผู้เชี่ยวชาญด้าน AI:** จุดสำคัญคือ agent config file (SOUL.md-style) กำลังจะกลายเป็น **de-facto standard** เหมือน package.json — ถ้า Meta ทำได้ ผู้ผลิต agent ทุกรายจะทำตาม; ผลคือ ecosystem convergence เร็วขึ้น (portability สูง) แต่ innovation surface แคบลง (ทุก agent เริ่มดูเหมือนกัน).
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าคุณเป็น indie dev ที่สร้าง agent stack ของตัวเองแบบ open (OpenClaw-style) ให้เพิ่ม LICENSE clause ที่ชัดเจนใน config file ทุกไฟล์ (SOUL.md, TOOLS.md, ฯลฯ) — เพราะ standard emerging เช่นนี้อาจถูก big tech ผลักเข้า proprietary product โดยไม่ต้องขออนุญาต ถ้าคุณไม่กำหนด attribution rule ล่วงหน้า.
 
-## 5. Jensen Huang บอกมีโอกาส 0% ที่ AI แซงหน้ามนุษย์จนสิ้นโลกในปี 2030
+## 5. Snorkel AI triples valuation to $3.5B as demand for AI training data booms
 
-**อาจารย์ (มหาวิทยาลัย):** เปิดคาบวิทยาศาสตร์กับสังคม — คำว่า "0%" ในบริบททางสถิติแปลว่าอะไร? นักวิทยาศาสตร์ปกติไม่พูด 0% เพราะเป็น absolute claim; ให้นักศึกษาวิเคราะห์คำพูดผู้บริหารเทคที่มี conflict of interest (Nvidia ขาย GPU ให้ทุกคน).
-**ผู้เชี่ยวชาญด้าน AI:** Huang ประกาศ 0% หลังจากเมื่อไม่กี่สัปดาห์ก่อนสนับสนุน "Pace the Frontier" ของ Amodei = position drift ที่สะท้อน incentive มากกว่า evidence; อ่านคู่กับข่าว OpenAI push regulation จะเห็นว่า Big AI split ชัดเจนระหว่าง "safety-first" (Anthropic/OpenAI ที่ตอนนี้) และ "speed-first" (Nvidia).
-**โปรแกรมเมอร์มืออาชีพ:** อย่าเอา existential-risk debate มาปนกับ operational risk วันนี้ — ระบบ production มี concrete risk (prompt injection, hallucination, data leak) ที่ต้อง mitigate ตอนนี้ ไม่ว่า P(doom) จะ 0% หรือ 25%; วาง evaluation harness + guardrail ก่อน แล้วปล่อยให้ CEO ทะเลาะกันเอง.
+**อาจารย์ (มหาวิทยาลัย):** ในคาบ economics-of-AI สอน **complement pricing** — เมื่อ model กลายเป็น commodity (Opus 5.5 + GPT-6 ลดราคาวันเดียวกัน) ค่าอย่างอื่นใน stack จะแพงขึ้น: **training data**, **evaluation infrastructure**, **compute reservation**; valuation 3x ของ Snorkel ในเวลา 17 เดือนคือหลักฐานราคาข้อมูลไม่ได้ลดลงตามราคา inference.
+**ผู้เชี่ยวชาญด้าน AI:** Snorkel เป็น **programmatic labeling** — ใช้ heuristic + weak supervision สร้าง label แทน manual annotation; การที่ตลาดยังเทเงินให้แม้ synthetic data + LLM-as-judge popular ขึ้น สะท้อนว่า enterprise team ต้องการ **human-in-the-loop provenance** เพื่อ audit trail + regulatory compliance (EU AI Act) ที่ synthetic data ยังให้ไม่ได้.
+**โปรแกรมเมอร์มืออาชีพ:** ก่อน buy vs build data pipeline: (1) ประเมินว่า labeled data volume ที่ต้องการต่อเดือน > 100k rows หรือไม่, (2) มี domain expert ที่ให้ label heuristic ได้หรือไม่, (3) requirement compliance ต้องการ audit log ของ label origin หรือไม่; ถ้าตอบ yes ทั้งสามข้อ Snorkel-ระดับ platform คุ้มค่ากว่า in-house — แต่ถ้าปริมาณน้อย ให้ใช้ LLM-as-judge + manual sample audit ก่อน.
