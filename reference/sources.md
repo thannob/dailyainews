@@ -1,57 +1,60 @@
-# Sources — 2026-09-22
+# Sources — 2026-09-23
 
-Generated: 2026-09-22 (Asia/Bangkok)
+Generated: 2026-09-23 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-09-21-brief.md (5 URLs loaded)
+Dedup against: articles/2026-09-22-brief.md (5 URLs loaded)
 
-1. **OpenAI forms math advisory group as its AI resolves more than 100 open problems**
+1. **Anthropic releases Opus 5.5 with lower prices and Fable-level performance**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/
-   - Published: 2026-09-21 (per URL slug + search-result listing)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/21 (site:techcrunch.com AI Sep 21 listing)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday used /2026/09/20/... slugs only)
+   - URL: https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/
+   - Published: 2026-09-22 (TechCrunch slug), corroborated by 9to5Mac / MarkTechPost / SiliconAngle same-date reporting
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/09/22/` and multiple parallel outlets time-stamp "Tuesday, September 22, 2026"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — new article ID; yesterday covered OpenAI math advisory + Bloomberg regulation, no Opus 5.5 story
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI announced a new independent Advisory Group on Mathematics and Artificial Intelligence, hosted at the Institute for Advanced Study in Princeton, to give mathematicians more input into the company's math-oriented research. OpenAI also claims an internal model has resolved more than 100 additional open problems across most areas of mathematics.
+   - Summary: Anthropic released Claude Opus 5.5 on Tuesday, priced at $4/$20 per 1M input/output tokens (down 20% from Opus 5's $5/$25) with cache reads dropping 60% to $0.20. The model reportedly beats Fable 5.1 on many benchmarks, is 30% faster than Opus 5, and is the first release since CEO Dario Amodei publicly embraced "pace the frontier" — matching capability gains to alignment progress. External safety testing was done by Frontier Design and METR before launch.
 
-2. **OpenAI Urges US to Lead Global Effort on AI Safety Standards**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-09-21/openai-pushes-us-to-lead-effort-to-set-global-standards-for-ai
-   - Published: 2026-09-21 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026-09-21 (site:bloomberg.com AI Sep 21 listing)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's Bloomberg URLs were both /2026-09-20/)
-   - Verification: Tier 2 — WebSearch snippet
-   - Summary: OpenAI is urging the US government to lead an effort with other countries to set standards for cutting-edge AI, in response to mounting concerns about the potential harms of the technology.
-
-3. **Meta's AI agent has been blocked from using Amazon.com**
+2. **OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/
-   - Published: 2026-09-21 (per URL slug + "5 hours ago" byline hint in TC AI feed listing)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/21 and TC feed listing "hours ago" author byline
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/
+   - Published: 2026-09-22 (TechCrunch slug), corroborated by VentureBeat / MacRumors / The New Stack same-date reporting
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/09/22/` and OpenAI post-title "Introducing GPT-6 Sol and Luna" dated same day; GitHub Changelog entry also 2026-09-22
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's OpenAI item was the math advisory group at IAS, entirely different story and URL
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Meta's Muse assistant received error messages when users tried to buy goods from Amazon.com through it — Amazon has blocked Meta's AI agent from operating on the site, an early flashpoint in the emerging AI-agent-vs-retailer interoperability fight.
+   - Summary: OpenAI released GPT-6 Sol at $2/$10 per 1M in/out tokens and GPT-6 Luna at $0.10/$0.50 — 50% cheaper than GPT-5.6 promotional rates and confirmed as permanent (not intro) pricing. OpenAI says Sol makes "about half as many mistakes" as GPT-5.6 Sol and both models improve on coding, professional work, computer use, factuality, and agentic tasks. The release landed minutes after Anthropic's Opus 5.5 announcement.
 
-4. **Google's $899 Googlebook is a bet that you'll buy a new laptop for Gemini**
+3. **Qualcomm launches two new smartphone chips with emphasis on AI**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/
-   - Published: 2026-09-21 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/09/21
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - URL: https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/
+   - Published: 2026-09-22 (TechCrunch slug), corroborated by Qualcomm's own press release dated 2026-09 and Android Central / Android Authority same-date reporting
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/09/22/`; press-release URL `/2026/09/` on qualcomm.com
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday had no Qualcomm/Snapdragon story
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Google announced its new AI-first laptop, the Googlebook, now available for preorder at $899. The device features an AI-powered cursor, vibe-coded widgets, and AI-enhanced dictation via a feature called Rambler — the first mass-market laptop built around Gemini as the primary interaction model.
+   - Summary: Qualcomm unveiled the Snapdragon 8 Elite Gen 6 and Snapdragon 8 Elite Extreme Gen 6 on a 2nm process, with a reengineered Hexagon NPU for "agentic AI" and a new sensing hub that can run models up to 200M parameters locally (e.g. an on-device personal scribe with speaker diarization). Adreno GPU gains ~44% performance / 40% efficiency; prime CPU cores reach ~5 GHz. Launch partners include HONOR, iQOO, Motorola, OnePlus, OPPO, REDMI, RedMagic, vivo, and Xiaomi.
 
-5. **Jensen Huang บอกมีโอกาส 0% ที่ AI แซงหน้ามนุษย์จนสิ้นโลกในปี 2030**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/151699
-   - Published: 2026-09-21 (per Blognone listing "AI Sept 21 2026" search bucket)
-   - FreshnessCheck: ✅ within last 24h via Blognone article-listing bucket (Sept 21, 2026)
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (blognone.com host not in yesterday's brief at all)
+4. **Meta admits Muse's likeness to OpenClaw isn't a coincidence**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/
+   - Published: 2026-09-22 (TechCrunch slug), corroborated by TheNextWeb / TrendingTopics same-date reporting
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/09/22/` and Nat Friedman interview references made "on Tuesday"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Meta item was Amazon blocking Muse (different URL, different angle: retailer-vs-agent). Today's story is Meta acknowledging OpenClaw as design inspiration, including identical `SOUL.md` filename and near-identical content.
    - Verification: Tier 2 — WebSearch snippet
-   - Summary: Blognone รายงานว่า Jensen Huang ซีอีโอ Nvidia ให้สัมภาษณ์ CBS ยืนยันว่าโอกาสที่ AI จะทำให้โลกล่มสลายภายในปี 2030 คือ 0% วิจารณ์การใช้ scare tactic ที่ไม่มีหลักฐานทางวิทยาศาสตร์ และย้ำว่ากฎหมายเดิมด้านความปลอดภัยผลิตภัณฑ์กับกฎหมายแฮ็กเกอร์เพียงพอโดยไม่ต้องออกกฎ AI ใหม่.
+   - Summary: Nat Friedman, head of product at Meta's Superintelligence Labs, said Muse was "definitely heavily inspired as a product by OpenClaw" and that the team "wanted Muse to be something like OpenClaw" scaled to billions. When pressed on identical filenames and content in `SOUL.md`, Friedman said "we thought Peter [Steinberger, OpenClaw's creator] got those things exactly right." Meta still maintains Muse itself was built from scratch.
+
+5. **Snorkel AI triples valuation to $3.5B as demand for AI training data booms**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/
+   - Published: 2026-09-22 (TechCrunch slug)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/09/22/` and search snippet identifies the Series E was announced today
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — no Snorkel or training-data-funding story in yesterday's brief
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Snorkel AI raised a $350M Series E at a $3.5B valuation — nearly triple its $1.3B mark from 17 months ago — signaling that demand for programmatic AI-training-data platforms is still accelerating alongside the model-release cadence at OpenAI and Anthropic.
 
 ## Dropped
-- https://www.bloomberg.com/news/articles/2026-09-18/nvidia-ceo-says-there-s-0-chance-that-world-will-end-in-2030 — Filter A (>24h): "URL slug 2026-09-18 is 4 days old"
-- https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/ — Filter A (>24h): "URL slug 2026/09/16 is 6 days old"
-- https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/ — Filter A (>24h): "URL slug 2026/09/17 is 5 days old"
-- https://academy.openai.com/public/blogs/making-more-time-for-teaching-with-chatgpt-work-2026-09-02 — Filter A (>24h): "URL slug ends 2026-09-02, ~20 days old"
+
+- https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/ — passes both filters but bumped to keep the mix at 5; niche vs the model-release news cycle
+- https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/ — passes both filters but overlaps thematically with Snorkel AI funding item
+- https://www.blognone.com/node/151717 (Grok 4.7) — URL slug carries no date; Blognone article looks published on 2026-09-21 based on parallel reporting (the-decoder, techtalkthai), which is on the outer edge of the 24h window and cannot be pinned to today from the snippet alone → drop rather than guess
+- Sam Altman UN Security Council briefing (aiweekly.co, businessworld.in) — event scheduled today but the outlets carrying same-day reporting aren't on trusted-sources.md; drop rather than cite non-listed publishers
+
+> Note: 5 items passed both filters this run. Of ~9 candidates, 1 failed Filter A (Grok 4.7 — timestamp ambiguous), and multiple were dropped for source-list or thematic-diversity reasons rather than filter failures.
