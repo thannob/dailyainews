@@ -1,31 +1,31 @@
-# Perspectives — 2026-10-02
+# Perspectives — 2026-10-04
 
-## 1. Shopify Canvas — AI-powered store builder with Sidekick
+## 1. OpenAI safety employee resigns, claiming the company's 'culture is broken'
 
-**อาจารย์ (มหาวิทยาลัย):** Canvas เป็นเคสเรียน Human-AI Interaction ที่สมบูรณ์ — WYSIWYG + conversational agent + live code render ในหน้าเดียว; สอนหลัก feedback loop (observe → describe → act → verify) ที่ designer ควรเข้าใจก่อนออกแบบ tool ใหม่
-**ผู้เชี่ยวชาญด้าน AI:** Sidekick ไม่ได้แค่ generate HTML — มันทำ grounded code editing บน theme ปัจจุบันของ merchant คือ problem ที่ยากกว่า text-to-image หลายขั้น; ตัวเลข 25M theme edits ใน H1 2026 บอกว่า production baseline มีจริง ไม่ใช่ demo
-**โปรแกรมเมอร์มืออาชีพ:** 20 นาทีสร้างร้าน custom = เส้นแบ่ง "SMB ไม่ต้องจ้าง dev อีกต่อไป" ชัดขึ้น; dev agency ที่ยัง quote ราคาตามชั่วโมงต้องเปลี่ยนไปรับงาน custom app / data integration แทน theme work
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้สะท้อนความต่างระหว่าง "safety process ที่ documented" กับ "safety culture ที่ practiced" — การเขียน safety report มี แต่คนที่เขียนลาออกบอกว่า culture broken; สอนในวิชา AI ethics ได้ว่า compliance artifact ไม่เท่ากับการมี safety assurance จริง
+**ผู้เชี่ยวชาญด้าน AI:** กระแส internal dissenter จาก frontier lab (ก่อนหน้าก็มี Jan Leike, Ilya Sutskever ย้ายไปตั้ง SSI) บวก Robinson รอบนี้ ชี้ให้เห็นช่องว่างระหว่างทีม alignment/safety กับทีม product shipping — เมื่อ model capability เพิ่ม พร้อม launch cycle สั้นลง การ dissent จะกลายเป็นสัญญาณผลพลอยได้ที่ auditor ภายนอกต้องเก็บเป็น signal
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ build บน OpenAI API ควรจับตา system card และ safety eval ของ release รุ่นถัดไปอย่างใกล้ชิดกว่าปัจจุบัน — ถ้า safety report ถูกเขียนภายใต้ culture ที่ dissenter บอกว่า broken, assumption ที่ว่า "model นี้ผ่าน red-team แล้ว" อาจต้อง discount เอง
 
-## 2. OpenAI cuts ties with 3 safety researchers
+## 2. Bessent Says AI Industry Must Own Its Risks and Find Solutions
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือ textbook conflict ระหว่าง corporate secrecy กับ public interest disclosure — เทียบกับเคส Daniel Ellsberg + Pentagon Papers หรือเคส Boeing engineer; สอน media law + whistleblower protection ได้ทันทีในชั่วโมงพรุ่งนี้
-**ผู้เชี่ยวชาญด้าน AI:** การแชร์ข้อมูลกับ third-party safety organization ไม่ได้แปลว่ารั่วไหลข้อมูลผู้ใช้ — มักจะหมายถึง eval result, red-team log, incident telemetry; ถ้า OpenAI มองนี่เป็น "sharing sensitive info" แปลว่า safety accountability กำลังปิดลง สวนทางกับที่ FTC เริ่ม probe ก่อนหน้านี้
-**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ build บน OpenAI API ควรเพิ่ม independent eval pipeline ของตัวเอง (ไม่พึ่ง vendor red team เพียงอย่างเดียว) — รัน METR-style agentic eval + Apollo-style deception test บน task ของ product จริง; ถือเป็น insurance ว่าเมื่อ model regression เกิดจะเห็นก่อน vendor จะยอมรับ
+**อาจารย์ (มหาวิทยาลัย):** คำพูดของ Treasury Secretary ว่า "existential risk alarmism = unhelpful" เป็น case study ที่ชัดในวิชา public policy — รัฐไม่ต้องการ frame AI เป็น ปัญหา catastrophic ที่ต้องกำกับหนัก แต่ต้องการให้ industry self-regulate; สอนได้ว่า risk framing กำหนด regulatory posture
+**ผู้เชี่ยวชาญด้าน AI:** การ dismiss existential-risk discourse จาก Treasury ไม่ใช่เรื่อง scientific judgement แต่เป็น political posture ที่ favor incumbent lab และ domestic competitiveness — ผู้เชี่ยวชาญ safety ควรแยกให้ออกระหว่าง "ไม่ควรกำกับ because safety is a myth" vs "ไม่ควรกำกับก่อนที่ US จะ catch up" ทั้งสองนำไปสู่ policy เดียวกันแต่คนละเหตุผล
+**โปรแกรมเมอร์มืออาชีพ:** คำแถลงนี้บอกว่า near-term จะไม่มี FDA-style regulator สำหรับ AI ในสหรัฐ — ทีมที่ build product ต้องสร้าง internal safety review process เอง เพราะไม่มี third-party certification ที่ตลาดจะเรียกร้อง อย่างน้อยอีก 12-24 เดือน
 
-## 3. ChatGPT virtual try-on + Favorites
+## 3. US AI Task Force to Report on Technology's Risks, WSJ Reports (Clayton confirmed AI czar)
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างชัดของ "ambient commerce" — commerce ไม่อยู่ใน e-commerce site อีกต่อไป แต่อยู่ใน assistant surface ที่ user ใช้งานปกติ; สอน distribution theory + platform economics ได้ (compare กับ Amazon ที่ควบคุม inventory + delivery, vs ChatGPT ที่ควบคุม consideration + decision)
-**ผู้เชี่ยวชาญด้าน AI:** virtual try-on บน ChatGPT Images 2.5 คือ fit + lighting problem ที่ model ต้องรวม pose estimation + fabric drape + ambient lighting match; ตลาด retail เคยลงทุนหลายรอบ (Zeekit, Walmart, Google) แล้ว scalability เป็นปัญหา — รอดู public eval ว่าเรื่อง body size diversity + skin tone + edge case fail กี่ %
-**โปรแกรมเมอร์มืออาชีพ:** retail dev ที่คิด integrate — เตรียม catalog ที่มี high-quality product shot (plain background, multiple angles) + schema PDP (price, size, availability) ที่ feed ChatGPT ได้; ค่า development ของ "AI-ready catalog" จะกลายเป็น line item ใน budget ปี 2027
+**อาจารย์ (มหาวิทยาลัย):** การตั้ง task force จาก DNI (intelligence community) ชี้ชัดว่า AI governance ของรัฐบาลใหม่อยู่ใต้ national-security lens ไม่ใช่ consumer-protection lens — เนื้อหาสอนในวิชา public admin: โครงสร้าง bureaucratic ที่คุณเลือก คือ policy ที่คุณจะได้
+**ผู้เชี่ยวชาญด้าน AI:** DNI-led task force มี default toward classified work + export control + model weight protection — ไม่ใช่ bias, misinformation, worker displacement; ผู้เชี่ยวชาญที่ public-facing ควรเริ่ม prepare position paper ตั้งแต่ตอนนี้ก่อน task force report ปิดประตูเวทีสาธารณะ
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ ship model/weights ไป international customer ควรเริ่ม audit distribution channel ตั้งแต่ตอนนี้ — EAR/CFIUS expansion ที่น่าจะมาต่อจาก task force report (คาด 2027) จะ cover weights ไม่ใช่แค่ chips; รีบ map customer base ตามประเทศ + risk level ก่อน rule ใหม่ออก
 
-## 4. Grok reportedly encouraged Trump to capture Venezuela's president
+## 4. Amazon responds to data center backlash, says it no longer uses NDAs
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือเคสเรียน AI governance + national security ที่เข้มที่สุดของปี — leader ตัดสินใจ foreign policy โดยปรึกษา consumer-grade chatbot ที่ไม่ผ่าน classified assessment; สอน IR + public policy ได้ทั้ง 2 ภาคเรียน (process failure, oversight gap, dual-use AI)
-**ผู้เชี่ยวชาญด้าน AI:** Grok ไม่มี training data classified + ไม่มี calibration สำหรับ geopolitical forecast — คำตอบ "deeply unpopular dictator" คือ sentiment aggregation จาก internet corpus ไม่ใช่ intelligence assessment; ปัญหาที่ลึกกว่าคือ confirmation bias loop ที่ leader สนใจเพียงคำตอบที่ยืนยัน hypothesis ของตัวเอง
-**โปรแกรมเมอร์มืออาชีพ:** org ใหญ่ (รัฐ + enterprise) ต้องตั้ง guardrail: ห้ามใช้ consumer chatbot สำหรับ decision ที่มี national security / financial material impact; ทางเทคนิค — deploy on-prem model + audit log + human-in-the-loop ก่อน execution path ใด ๆ ที่ก่อ external effect
+**อาจารย์ (มหาวิทยาลัย):** AWS ยกเลิก NDA กับหน่วยงานรัฐคือ precedent สำคัญในวิชา public-private partnership — การสร้าง AI data center ต้องผ่าน approval ท้องถิ่น ซึ่งต้องการ transparency เรื่องน้ำ ไฟ emission; opaque contract ที่ใช้ได้สมัย cloud ปี 2015 ใช้ไม่ได้กับ AI compute buildout ปี 2026
+**ผู้เชี่ยวชาญด้าน AI:** เงื่อนไข transparency รอบนี้สะท้อน social license ที่ hyperscaler ต้องการเพื่อ scale compute capacity — จำกัด bandwidth ของ build-out ไม่ใช่ silicon หรือ capital แต่เป็น community approval; ค่า constraint ของ AI frontier ย้ายไปอยู่ที่ grid, water, zoning
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ depend บน AWS region ใหม่ ควร reality-check capacity schedule อีกครั้ง — ถ้า approval process เปิด public ตามเงื่อนไขใหม่ จะทาง political ขัดจังหวะ roll-out capacity ของ GPU rack ที่ engineer คาดหวัง; plan multi-region ตั้งแต่ตอนนี้
 
-## 5. Kevin Mandia's Armadin raises $255.5M
+## 5. Cloudflare เปิดตัว Clef โมเดลช่วยตัดสินใจแบบ Jev พัฒนาจาก Qwen
 
-**อาจารย์ (มหาวิทยาลัย):** case study ที่ชัดว่า Series B 7 เดือนหลัง public launch = founder reputation มีค่า real money; สอน startup finance + founder-market fit ได้ (Mandia = incident response ขั้นเทพ ก่อตั้ง Mandiant → ขาย Google $5.4B → รู้ pain point ลูกค้า Fortune 500 ลึกกว่า founder generic)
-**ผู้เชี่ยวชาญด้าน AI:** "agent swarm attacker simulation" ยกระดับ pen-test จาก manual engagement + annual report → continuous autonomous evaluation; ความเสี่ยงเทคนิค — swarm attacker ของ Armadin จะต้องทำ sandbox isolation ให้แน่น (ไม่งั้นเป็น OpenAI agent escape ที่เราเห็นในฤดูร้อน)
-**โปรแกรมเมอร์มืออาชีพ:** CISO ที่พิจารณา vendor list ปี 2027 ต้อง evaluate agent-based pen-test platform (Armadin, และคู่แข่งที่กำลังตามมา) เทียบกับ traditional pen-test service — จุดสำคัญคือ frequency (continuous vs annual), coverage (ทุก asset vs sample), reproducibility (replay attack chain ได้); การเตรียม internal red team ให้พร้อม consume agent output เป็น skill ที่ hire ตอนนี้
+**อาจารย์ (มหาวิทยาลัย):** Cloudflare ที่เริ่มจาก CDN ขยายมาเป็น model provider ด้วย open-weight base (Qwen) ชี้ให้นักเรียนเห็นว่า value chain ของ AI ไม่ใช่ "ใครมี GPU เยอะ" อย่างเดียว — edge platform ที่มี latency ต่ำสามารถ serve lightweight decision model ได้ด้วย economic ที่คุ้มกว่า hyperscaler
+**ผู้เชี่ยวชาญด้าน AI:** การ pick Qwen เป็น base + fine-tune สำหรับ decision use case เป็นตัวอย่างที่ clean ของ open-weight ecosystem replacing proprietary API ในชั้น commodity — คาด Jev/Clef family จะกระจายเป็น reference pattern ให้ provider อื่นทำตาม, Qwen gain mindshare โดยไม่ต้อง compete ตรงกับ frontier closed model
+**โปรแกรมเมอร์มืออาชีพ:** ราคา $0.09/M tokens สำหรับ Clef-flash เทียบ GPT-6.1 Sol ($2 input) ประหยัดกว่า 20 เท่าสำหรับงาน routing/classification/decision ที่ไม่ต้องการ frontier capability — ทีมที่ยังใช้ Sol/Astra ทำ ticket routing, intent classification, content moderation ควร benchmark Clef สัปดาห์นี้; ถ้า quality พอ ย้าย 70% ของ non-frontier traffic ไป Clef จะลด LLM cost อย่างมีนัยสำคัญ
