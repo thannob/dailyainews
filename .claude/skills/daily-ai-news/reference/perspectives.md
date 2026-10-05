@@ -1,31 +1,31 @@
-# Perspectives — 2026-10-04
+# Perspectives — 2026-10-05
 
-## 1. OpenAI safety employee resigns, claiming the company's 'culture is broken'
+## 1. Trump unveils new Super Intelligence Force
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้สะท้อนความต่างระหว่าง "safety process ที่ documented" กับ "safety culture ที่ practiced" — การเขียน safety report มี แต่คนที่เขียนลาออกบอกว่า culture broken; สอนในวิชา AI ethics ได้ว่า compliance artifact ไม่เท่ากับการมี safety assurance จริง
-**ผู้เชี่ยวชาญด้าน AI:** กระแส internal dissenter จาก frontier lab (ก่อนหน้าก็มี Jan Leike, Ilya Sutskever ย้ายไปตั้ง SSI) บวก Robinson รอบนี้ ชี้ให้เห็นช่องว่างระหว่างทีม alignment/safety กับทีม product shipping — เมื่อ model capability เพิ่ม พร้อม launch cycle สั้นลง การ dissent จะกลายเป็นสัญญาณผลพลอยได้ที่ auditor ภายนอกต้องเก็บเป็น signal
-**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ build บน OpenAI API ควรจับตา system card และ safety eval ของ release รุ่นถัดไปอย่างใกล้ชิดกว่าปัจจุบัน — ถ้า safety report ถูกเขียนภายใต้ culture ที่ dissenter บอกว่า broken, assumption ที่ว่า "model นี้ผ่าน red-team แล้ว" อาจต้อง discount เอง
+**อาจารย์ (มหาวิทยาลัย):** การเลือกใช้คำว่า "Super Intelligence" แทน "AI" ไม่ใช่เรื่องการตลาดเฉย ๆ — เป็นกรณีศึกษาวิชา public communication ว่า "rebranding ของเทคโนโลยีคือ rebranding ของนโยบาย"; เมื่อประธานาธิบดีเปลี่ยนคำเรียก ขอบเขตและ assumption ของการกำกับก็เปลี่ยนตามไปด้วย
+**ผู้เชี่ยวชาญด้าน AI:** องค์ประกอบ task force บอกเจตนาชัด — DNI (Clayton) + FTC Chair (Ferguson) + Undersecretary of War + OPM = frame national-security + consumer-markets ไม่ใช่ frontier-safety; รายงาน 120 วันน่าจะ emphasize race กับจีนและ workforce transition มากกว่า catastrophic-risk mitigation ที่กลุ่มนักวิจัยเรียกร้อง
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ ship AI product ใน US ควร bookmark deadline 120 วันของ report นี้ — recommendation ที่ออกมาจะกำหนด disclosure requirement, export rule, และ procurement standard สำหรับ federal customer ในปี 2027 เริ่มเขียน model card และ supply-chain documentation ให้ครบตั้งแต่ตอนนี้
 
-## 2. Bessent Says AI Industry Must Own Its Risks and Find Solutions
+## 2. Google freezes open source bug bounty due to AI-generated spam
 
-**อาจารย์ (มหาวิทยาลัย):** คำพูดของ Treasury Secretary ว่า "existential risk alarmism = unhelpful" เป็น case study ที่ชัดในวิชา public policy — รัฐไม่ต้องการ frame AI เป็น ปัญหา catastrophic ที่ต้องกำกับหนัก แต่ต้องการให้ industry self-regulate; สอนได้ว่า risk framing กำหนด regulatory posture
-**ผู้เชี่ยวชาญด้าน AI:** การ dismiss existential-risk discourse จาก Treasury ไม่ใช่เรื่อง scientific judgement แต่เป็น political posture ที่ favor incumbent lab และ domestic competitiveness — ผู้เชี่ยวชาญ safety ควรแยกให้ออกระหว่าง "ไม่ควรกำกับ because safety is a myth" vs "ไม่ควรกำกับก่อนที่ US จะ catch up" ทั้งสองนำไปสู่ policy เดียวกันแต่คนละเหตุผล
-**โปรแกรมเมอร์มืออาชีพ:** คำแถลงนี้บอกว่า near-term จะไม่มี FDA-style regulator สำหรับ AI ในสหรัฐ — ทีมที่ build product ต้องสร้าง internal safety review process เอง เพราะไม่มี third-party certification ที่ตลาดจะเรียกร้อง อย่างน้อยอีก 12-24 เดือน
+**อาจารย์ (มหาวิทยาลัย):** เคสนี้เป็นตัวอย่าง "tragedy of the commons" เวอร์ชัน AI ที่สมบูรณ์แบบ — เครื่องมือที่ตั้งใจออกแบบเพื่อ incentivize contributor ที่ตั้งใจดี ถูก flood โดย low-signal AI output จน economic ของ triage พัง; สอน student ว่า bounty program ที่ scale สมมติบน assumption ว่า "cost ของการส่ง report สูงพอ" และ assumption นั้นพังในยุค LLM
+**ผู้เชี่ยวชาญด้าน AI:** นี่คือ real-world case ของ "AI slop in security" ที่ทำนายไว้ตั้งแต่ปี 2024 — LLM สามารถ generate plausible-looking vulnerability report ที่ reviewer ต้องใช้เวลาเท่าของจริง เพื่อแค่ปฏิเสธ; ต้องเริ่ม design triage pipeline ที่ bake-in AI detection + proof-of-work (reproducer จริง) เป็น gate แรก ก่อนที่ human จะดู
+**โปรแกรมเมอร์มืออาชีพ:** maintainer ของ OSS โปรเจกต์ควร review inbox ของตัวเอง — ถ้า bug/security report แปลก ๆ เพิ่มขึ้นในเดือนที่ผ่านมา น่าจะเป็น signal เดียวกัน; ตั้ง template ที่บังคับให้ reporter แนบ reproducible test case + commit SHA ที่ affected ก่อน triage จะเริ่ม ลดเวลา waste 10-20 เท่า
 
-## 3. US AI Task Force to Report on Technology's Risks, WSJ Reports (Clayton confirmed AI czar)
+## 3. AI whistleblowers to face NYC Council alongside Google, OpenAI, Meta
 
-**อาจารย์ (มหาวิทยาลัย):** การตั้ง task force จาก DNI (intelligence community) ชี้ชัดว่า AI governance ของรัฐบาลใหม่อยู่ใต้ national-security lens ไม่ใช่ consumer-protection lens — เนื้อหาสอนในวิชา public admin: โครงสร้าง bureaucratic ที่คุณเลือก คือ policy ที่คุณจะได้
-**ผู้เชี่ยวชาญด้าน AI:** DNI-led task force มี default toward classified work + export control + model weight protection — ไม่ใช่ bias, misinformation, worker displacement; ผู้เชี่ยวชาญที่ public-facing ควรเริ่ม prepare position paper ตั้งแต่ตอนนี้ก่อน task force report ปิดประตูเวทีสาธารณะ
-**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ ship model/weights ไป international customer ควรเริ่ม audit distribution channel ตั้งแต่ตอนนี้ — EAR/CFIUS expansion ที่น่าจะมาต่อจาก task force report (คาด 2027) จะ cover weights ไม่ใช่แค่ chips; รีบ map customer base ตามประเทศ + risk level ก่อน rule ใหม่ออก
+**อาจารย์ (มหาวิทยาลัย):** city council เปิดเวทีให้ whistleblower พูดพร้อมบริษัท — pedagogically น่าสนใจว่า **local-government กลายเป็น venue จริงของการกำกับ frontier AI** ในขณะที่ federal task force (ข่าว 1) ยังเขียน report; สอนวิชา multi-level governance ว่าเมื่อ federal เคลื่อนไหวช้า city/state fills the gap
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Jacob Coxon (อดีต Anthropic) พูดในเวทีเดียวกับ Google/OpenAI/Meta เป็น precedent — ครั้งแรกที่ internal dissent มี institutional platform ที่ไม่ใช่ press หรือ twitter; จับตา line of questioning ของ council member — ถ้า dig เข้าเรื่อง pre-training data หรือ internal red-team suppression จะกลายเป็น discoverable record ใน subsequent litigation
+**โปรแกรมเมอร์มืโออาชีพ:** engineer ที่ทำงานใน frontier lab ควรรู้ว่า whistleblower protection ที่ city/state level กำลังขยาย — ก่อน sign NDA ใหม่ หรือ clause ที่กว้าง ควรปรึกษา employment lawyer เพราะ NYC council อาจออก ordinance ที่ invalidate NDA clause ที่ block safety disclosure หลังจาก hearing นี้
 
-## 4. Amazon responds to data center backlash, says it no longer uses NDAs
+## 4. California SB 1246 — robotaxis must support first responders
 
-**อาจารย์ (มหาวิทยาลัย):** AWS ยกเลิก NDA กับหน่วยงานรัฐคือ precedent สำคัญในวิชา public-private partnership — การสร้าง AI data center ต้องผ่าน approval ท้องถิ่น ซึ่งต้องการ transparency เรื่องน้ำ ไฟ emission; opaque contract ที่ใช้ได้สมัย cloud ปี 2015 ใช้ไม่ได้กับ AI compute buildout ปี 2026
-**ผู้เชี่ยวชาญด้าน AI:** เงื่อนไข transparency รอบนี้สะท้อน social license ที่ hyperscaler ต้องการเพื่อ scale compute capacity — จำกัด bandwidth ของ build-out ไม่ใช่ silicon หรือ capital แต่เป็น community approval; ค่า constraint ของ AI frontier ย้ายไปอยู่ที่ grid, water, zoning
-**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ depend บน AWS region ใหม่ ควร reality-check capacity schedule อีกครั้ง — ถ้า approval process เปิด public ตามเงื่อนไขใหม่ จะทาง political ขัดจังหวะ roll-out capacity ของ GPU rack ที่ engineer คาดหวัง; plan multi-region ตั้งแต่ตอนนี้
+**อาจารย์ (มหาวิทยาลัย):** กฎหมายนี้เป็นหมุดสำคัญในหลักสูตร technology-and-society ว่า **"operational externality" ของ autonomous system กลายเป็นต้นทุนที่ regulate ได้** — ไม่ใช่แค่ aggregate safety stat แต่เป็น incident-level cost (รถบล็อก police > 30 นาที = ปรับ); สอน student ว่าการกำกับ shift จาก probabilistic (คำนวณ safety rate) ไป deterministic (คำนวณ response time)
+**ผู้เชี่ยวชาญด้าน AI:** requirement ที่ remote driver ต้อง US-based + US license ปิดช่องการ offshore operations ที่หลายบริษัทใช้ลด cost — Zoox, Waymo, Tesla จะต้องปรับ staffing model; technically สำคัญคือ incident-escalation path จะต้องมี human-in-the-loop ใน US ที่ serve single-digit minutes SLA ไม่ใช่ overseas call-center
+**โปรแกรมเมอร์มืออาชีพ:** ทีม AV ที่ build system ควรเริ่ม redesign incident-handling API ตั้งแต่ตอนนี้ — effective date ก.ค. 2028 แปลว่า code freeze อยู่ที่ปลายปี 2027 ลด risk ว่า last-minute compliance จะกิน engineering bandwidth; ต้องมี telemetry ที่ confirm "blocked > 30 min" ให้ auditor ได้
 
-## 5. Cloudflare เปิดตัว Clef โมเดลช่วยตัดสินใจแบบ Jev พัฒนาจาก Qwen
+## 5. Hong Kong equity fundraising hits record summer on AI deal frenzy
 
-**อาจารย์ (มหาวิทยาลัย):** Cloudflare ที่เริ่มจาก CDN ขยายมาเป็น model provider ด้วย open-weight base (Qwen) ชี้ให้นักเรียนเห็นว่า value chain ของ AI ไม่ใช่ "ใครมี GPU เยอะ" อย่างเดียว — edge platform ที่มี latency ต่ำสามารถ serve lightweight decision model ได้ด้วย economic ที่คุ้มกว่า hyperscaler
-**ผู้เชี่ยวชาญด้าน AI:** การ pick Qwen เป็น base + fine-tune สำหรับ decision use case เป็นตัวอย่างที่ clean ของ open-weight ecosystem replacing proprietary API ในชั้น commodity — คาด Jev/Clef family จะกระจายเป็น reference pattern ให้ provider อื่นทำตาม, Qwen gain mindshare โดยไม่ต้อง compete ตรงกับ frontier closed model
-**โปรแกรมเมอร์มืออาชีพ:** ราคา $0.09/M tokens สำหรับ Clef-flash เทียบ GPT-6.1 Sol ($2 input) ประหยัดกว่า 20 เท่าสำหรับงาน routing/classification/decision ที่ไม่ต้องการ frontier capability — ทีมที่ยังใช้ Sol/Astra ทำ ticket routing, intent classification, content moderation ควร benchmark Clef สัปดาห์นี้; ถ้า quality พอ ย้าย 70% ของ non-frontier traffic ไป Clef จะลด LLM cost อย่างมีนัยสำคัญ
+**อาจารย์ (มหาวิทยาลัย):** Hong Kong ก้าวขึ้นมาเป็น venue ของ AI capital flow เป็นกรณีศึกษาวิชา international finance ว่า **geopolitical fragmentation สร้าง regional capital hub** — AI company จีน (และบริษัทที่ไม่อยาก list ใน US ด้วยเหตุ regulatory) หาเวที แล้ว HKEX ตอบรับได้; สอน student ว่า "market structure follows political structure"
+**ผู้เชี่ยวชาญด้าน AI:** capital inflow ไปที่ AI listing ใน HK ไม่ได้แปลว่า company พวกนั้น frontier — ส่วนใหญ่น่าจะเป็น application-layer หรือ data center/infrastructure play; ควรแยกให้ชัดระหว่าง "AI narrative lifting valuation" กับ "AI capability driving real revenue" ก่อนประเมินว่า bubble หรือไม่
+**โปรแกรมเมอร์มืออาชีพ:** developer ที่ทำงานใน startup ที่ consider dual-listing หรือ raise จาก HK investor — ควร prepare documentation set สำหรับ HKEX disclosure มาตรฐาน (ต่าง US) โดยเฉพาะ risk factor ด้าน data residency, model-provenance, และ US-sanction exposure ซึ่ง HK diligence เริ่ม query หนักขึ้น
