@@ -1,42 +1,23 @@
-# Sources — 2026-10-06
+# Sources — 2026-10-07
 
-Generated: 2026-10-06 (Asia/Bangkok)
+Generated: 2026-10-07 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-05-brief.md (5 URLs loaded)
+Dedup against: articles/2026-10-06-brief.md (3 URLs loaded)
 
-1. **Reflection AI debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/
-   - Published: 2026-10-05 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/10/05 and WebSearch result naming Reflection AI as debuting Beam open-weight model on this date
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had no Reflection AI entry; host matches but path differs)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED)
-   - Summary: Reflection AI — the US open-weights lab founded by former Google DeepMind researchers Misha Laskin and Ioannis Antonoglou, backed by Nvidia and SpaceX — debuted "Beam", its first open-weight AI model aimed at matching leading Chinese open-source releases like DeepSeek at a lower compute cost. The launch ends months of delay against an "early 2026" original target and plants a US flag on the open-weights side where Chinese labs had been running unopposed.
+## Selected (0)
 
-2. **At 19, Ghost founder raises $11 million to build a $3,499 computer for your personal AI**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/10/05/at-19-ghost-founder-raises-11-million-to-build-a-3499-computer-for-your-personal-ai/
-   - Published: 2026-10-05 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/10/05
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (new story, new path on techcrunch.com)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED)
-   - Summary: Ghost, a startup founded by a 19-year-old, raised $11 million to build a $3,499 dedicated personal-AI computer — a purpose-built local hardware device meant to run personal AI agents without relying on cloud frontier models. The round joins a wave of "personal AI" hardware bets (teen-founder AI desktop assistants, dedicated AI boxes) that argue the next consumer-AI surface is a device, not a browser tab.
-
-3. **Open or closed AI? Learn what to build on at Disrupt 2026**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/
-   - Published: 2026-10-05 (URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug 2026/10/05
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED)
-   - Summary: TechCrunch previewed a session at Disrupt 2026 (Oct 13–15, San Francisco) led by Nvidia's Nader Khalil (Director of Developer Tech) and Sydney Sykes (Global Head of VC Partnerships) titled "The Open vs. Closed AI Debate Is Just Getting Started". The piece frames the live founder decision — proprietary frontier model for speed vs. open model for control — and warns that choosing badly affects cost, infrastructure, margins, differentiation, speed, and control.
+_No story cleared both Filter A (within 24h) and Filter B (not in YESTERDAYS_URLS) with Tier 2 confidence._
 
 ## Dropped
-- https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html — Filter: trusted-sources domain allow-list (cnbc.com NOT on allow-list); topic (NYC Council hearing) was previewed in yesterday's brief via Bloomberg URL, so even if it passed Filter B at URL level, the publisher is off-list.
-- https://fortune.com/2026/10/05/new-york-city-council-hearing-openai-anthropic-ai-safety-google-meta — Filter: trusted-sources domain allow-list (fortune.com NOT on allow-list).
-- https://techcrunch.com/2026/10/05/the-final-disrupt-stage-lineup... — Not dropped by filters; dropped at selection (pure event marketing, redundant with story #3 which already covers Disrupt).
-- https://techcrunch.com/2026/10/05/meet-the-startup-battlefield-200-judges-wholl-decide-the-winner... — Not dropped by filters; dropped at selection (pure event marketing).
-- https://techcrunch.com/2026/10/05/lucid-motors-ev-output-falls... — Filter: not an AI story (EV production).
 
-> Note: 3 items passed both filters this run. Of ~8 TechCrunch URLs with 2026/10/05 slugs plus multiple Oct-5 stories on off-list publishers, 3 trusted-source AI stories were selected; 2 event-marketing TechCrunch pieces and 2 off-list substantive AI stories (CNBC/Fortune on the NYC Council hearing) were dropped. 0 items came from Thai-language sources this run.
+- https://techcrunch.com/?p=3106990 ("The public opposition to AI infrastructure is heating up" — Lucas Ropek) — Filter A ambiguous: search snippet labeled "4 hours ago" / "within the last 24 hours", but cross-referencing the article's described content ("boiling point in early 2026", 70% opposition stat) against other coverage shows the storyline predates the 24h window. In this runtime WebFetch is blocked, so an authoritative publishedTime cannot be read. Timestamp signal insufficient.
+- https://techcrunch.com/?p=3096961 ("The White House wants AI companies to cover rate hikes" — Tim Fernholz) — Filter A fail: a follow-up search surfaced "appears to have been published in February 2026" alongside the Rate Payer Protection Pledge (signed March 6, 2026). Snippet freshness cue proven unreliable for this cluster.
+- https://techcrunch.com/?p=3091795 ("OpenAI policy exec who opposed chatbot's 'adult mode' reportedly fired on discrimination claim") — Filter A fail: WSJ-sourced reporting and multiple confirming outlets (TechSpot, Storyboard18, Newsweek) place the firing in January 2026; snippet "7 hours ago" is clearly stale metadata.
+- Boston Dynamics CEO Robert Playter steps down — Filter A fail: robotics247 and The Robot Report confirm the step-down was announced for February 27, 2026.
+- xAI $20B Series E / $230B valuation — Filter A fail: TheWeek, Techzine, SeekingAlpha date this round to January 2026.
+- Apple Siri AI French/Japanese/Korean/Portuguese/Spanish rollout — Filter A ambiguous: snippets say "October 2026" and "expected to arrive before October ends" — no confirmed launch within the 24h window.
+- Marvell Investor Day (October 6, 2026, NYC) — Scheduled date lands in the window, but no trusted-sources.md domain (TechCrunch, Reuters, Bloomberg, The Verge, FT, Wired, Ars Technica, MIT Tech Review, The Information, Thai outlets) surfaced same-day reporting on the actual presentation; businesswire/01net coverage is on the pre-event announcement, which is not a 24h-fresh news event.
+- Anthropic withholding model from UK testers / Anthropic IPO mid-November shift — Filter A fail: dated Oct 1–2, 2026 (5–6 days ago), outside the 24h rolling window.
+
+> Note: 0 items passed both filters this run. Of ~8 candidates surfaced, all failed Filter A (freshness). Filter B (dedup against YESTERDAYS_URLS) was not the binding constraint — none of the dropped URLs overlapped yesterday's set, but none could satisfy the 24h gate under WEBFETCH_BLOCKED tier-2-only verification either.
