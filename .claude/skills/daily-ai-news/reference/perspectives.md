@@ -1,19 +1,19 @@
-# Perspectives — 2026-10-06
+# Perspectives — 2026-10-08
 
-## 1. Reflection AI debuts Beam, an open-weight model to rival Chinese models at lower compute cost
+## 1. Ray Dalio Warns AI Bubble Is Approaching Burst Point
 
-**อาจารย์ (มหาวิทยาลัย):** นี่คือกรณีศึกษาสด ๆ ของ "เงินทุน vs. การส่งของจริง" — บริษัทที่ระดมทุนไปแล้วหลายพันล้านดอลลาร์ ผูกสัญญา compute $7B+ ก่อนที่จะมีโมเดลออก และวันนี้คือวันที่ promise กลายเป็นของจริง นักเรียนควรเปรียบเทียบ Beam กับ DeepSeek, Qwen และ Llama บน benchmark เดียวกันก่อนเชื่อ marketing material
-**ผู้เชี่ยวชาญด้าน AI:** ประเด็นที่ต้องจับคือ cost-per-token ของ inference และ license จริง (Apache 2.0? MIT? หรือ "open weight" แบบ non-commercial?) — "lower compute cost" เทียบกับ Chinese models ต้องมี ablation ที่ reproducible; ถ้าเทียบที่ 70B active parameter และ MoE routing เท่ากัน ต้องเห็น throughput ต่อ GPU-hour, ไม่ใช่แค่ claim
-**โปรแกรมเมอร์มืออาชีพ:** โค้ด production ที่กำลัง evaluate open model (Qwen, DeepSeek, Llama) ให้เพิ่ม Beam ใน benchmark harness ของตัวเองสัปดาห์นี้ โฟกัสที่ coding tasks, tool use latency, และ context recall ที่ 128k+ — ถ้า Beam จริงถูกกว่าในงานที่ทีมเราใช้ ให้พิจารณา swap ก่อน vendor lock-in กับ frontier closed model จะยากขึ้น
+**อาจารย์ (มหาวิทยาลัย):** การเตือนของ Dalio เหมาะเป็นกรณีศึกษาเรื่อง "เทคโนโลยีจริง แต่ราคาสินทรัพย์ไม่จริง" — นักเรียนควรแยกระหว่างคุณค่าทางเทคนิคระยะยาวของ AI กับการตั้งราคาหุ้นในระยะสั้นให้ชัด แล้วถามว่าอะไรที่สะท้อนในราคาตอนนี้บ้าง
+**ผู้เชี่ยวชาญด้าน AI:** คำว่า "ฟองสบู่คลาสสิก" ของ Dalio เน้นที่พฤติกรรมของนักลงทุน ไม่ได้บอกว่า capability ของโมเดลผิดพลาด — ความเสี่ยงคือ CapEx ของผู้ให้บริการโมเดลและ data center ที่กู้มาแพง หากกระแสเงินสดจากลูกค้าโตช้ากว่าดอกเบี้ย
+**โปรแกรมเมอร์มืออาชีพ:** ผลกระทบตรงที่สุดคือราคาตั๋ว API — ถ้าตลาดกดดันให้ provider ลดการขาดทุน ราคาจะขึ้น quota จะเข้มงวดขึ้น เราควรรีบรันต้นทุน per-call ตอนนี้เลย อย่าออกแบบระบบที่พึ่งโมเดลใหญ่สุดโดยไม่มีทางเลือก fallback
 
-## 2. At 19, Ghost founder raises $11M to build a $3,499 computer for your personal AI
+## 2. Novogratz Joins Crowd Warning of AI Bubble, Says Pile In Anyway
 
-**อาจารย์ (มหาวิทยาลัย):** เคสนี้สอนสองเรื่องพร้อมกัน — (1) consumer hardware category ใหม่กำลังก่อตัว ("personal AI appliance") แยกจาก PC/phone, และ (2) founder อายุ 19 ระดมทุน seed/early $11M ได้ด้วย narrative ที่ชัด ไม่ใช่ด้วยอายุงาน แสดงว่า capital market ตอนนี้ให้ premium กับ "point of view" มากกว่า resume
-**ผู้เชี่ยวชาญด้าน AI:** คำถามใหญ่คือ edge inference stack — $3,499 ซื้ออะไร? เป็น Mac Mini-class ARM + large unified memory, หรือ dedicated NPU + 32GB+ VRAM? ที่สำคัญกว่าราคาคือ model-update story: ถ้าโมเดลเดือนหน้าใหญ่กว่า HW capacity ของ Ghost box ลูกค้าจะเหลืออะไร? Local-first AI ที่ไม่มี upgrade path คือ e-waste รอวัน
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ ship product ที่คิดถึง privacy/latency — Ghost คือ signal ว่า "on-device agent runtime" กำลังเป็น abstraction ใหม่ ต้องเริ่ม design API ของ product ให้ model-location-agnostic ตั้งแต่ตอนนี้ (local LLM, hybrid, หรือ full cloud ควรเป็น config สวิตช์ ไม่ใช่ rewrite) และต้องเริ่มคิดถึง delivery format ของ model (GGUF, MLX, ONNX) ให้พร้อม
+**อาจารย์ (มหาวิทยาลัย):** ความย้อนแย้ง "เป็นฟองสบู่แต่ยังซื้อ" คือตัวอย่างชั้นดีของ game theory ในตลาดฟองสบู่ — ผู้เล่นที่ออกก่อนเสียโอกาส ผู้เล่นที่ออกช้าเสียเงิน ความสามารถในการอยู่กับความไม่แน่นอนนี้คือทักษะที่สอนกันไม่ได้ง่าย
+**ผู้เชี่ยวชาญด้าน AI:** มุมของ Novogratz สะท้อนว่าตลาดกำลังราคาถูกต้องในระดับ "AI มีคุณค่า" แต่ไม่สามารถตั้งราคาถูกเรื่อง "ใครจะชนะ" — การลงทุนในดัชนีกว้างจึงยังคุ้ม ส่วนการเดิมพันบริษัทเดียวยังเสี่ยงเท่าช่วง dot-com
+**โปรแกรมเมอร์มืออาชีพ:** ในมุม builder ไม่ว่าฟองสบู่แตกเมื่อไหร่ก็ไม่ได้แปลว่า Claude หรือ GPT-6 หายไป มันแปลว่า provider จะรวมกิจการ ลดจำนวน พฤติกรรมเลิกคิวตั้งแต่ตอนนี้ — ควรเขียน abstraction layer ที่สลับ provider ได้ ก่อนจะต้องสลับฉุกเฉิน
 
-## 3. Open or closed AI? How founders are choosing at Disrupt 2026
+## 3. GPT-6 Sol and GPT-6 Luna: October 2026 update
 
-**อาจารย์ (มหาวิทยาลัย):** คำถาม open vs. closed ไม่ใช่คำถาม technical ล้วน ๆ แต่เป็นคำถาม strategy + economics — เลือก closed ได้ speed-to-market แต่ margin ของผู้สร้าง application ถูก upstream vendor กินได้ตลอด; เลือก open ได้ control แต่ต้อง own ops ที่ก่อนหน้านี้ไม่เคยทำ สอนให้วิเคราะห์เป็น "value chain positioning" ไม่ใช่ "เราชอบอันไหน"
-**ผู้เชี่ยวชาญด้าน AI:** "โตเลือกไม่ขาด" คือคำตอบที่ใช้ได้จริง — teams จริงใช้ portfolio approach: closed frontier (Claude/GPT) สำหรับงาน reasoning ยาก, open (Llama/Qwen/Beam) สำหรับงาน routine ที่ cost-sensitive และ data-sovereign การ bet แบบ pure play อันเดียวในปี 2026 เป็น red flag ที่ due diligence ควรจับ
-**โปรแกรมเมอร์มืออาชีพ:** ปฏิบัติ: build abstraction layer ที่ swap provider ได้ด้วย config change — LiteLLM, OpenRouter, หรือ custom router — ตั้งแต่ day 1 ของ project; ประเมิน vendor lock-in ที่ซ่อนอยู่ (prompt engineering, tool-schema, structured output format) แล้วเขียน regression test ที่รัน prompt เดิมผ่าน 3 providers ขั้นต่ำ เพื่อให้วันที่ pricing เปลี่ยนหรือ model deprecated จะย้ายได้ใน sprint เดียว
+**อาจารย์ (มหาวิทยาลัย):** การที่โมเดลใหม่ "ถดถอย" ในเกณฑ์ self-harm evaluation แสดงว่าการวัดความปลอดภัยยังไม่ใช่สัญญาณ monotonic ที่ขึ้นเรื่อย ๆ — เป็นประเด็นที่ควรใช้สอนว่าทำไม benchmark เดียวตัดสินโมเดลไม่ได้ และทำไมต้องมีการประเมินแบบหลายชั้น
+**ผู้เชี่ยวชาญด้าน AI:** OpenAI เลือกเปิดเผย regression โดยสมัครใจแทนที่จะซ่อน และระบุชัดว่า system-level safeguards (Trusted Contact, crisis helplines, Parental Controls) ไม่ได้อยู่ในการวัด — เป็นแนวทางรายงาน safety ที่โปร่งใสขึ้น แต่ก็เตือนว่า deployment-level mitigation ยังเป็นด่านสำคัญ
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าแอปเราพึ่ง ChatGPT API แล้วมีผู้ใช้อายุต่ำกว่า 18 ให้ทบทวนทันทีว่า parental controls ของ OpenAI ทำงานในระดับ account หรือ API — ถ้าเป็นระดับ account app เราต้อง gating เอง ไม่ควรถือเอาเองว่าโมเดลใหม่จะปลอดภัยกว่ารุ่นก่อนทุกมิติ
