@@ -1,19 +1,26 @@
-# Sources — 2026-10-14
+# Sources — 2026-10-15
 
-Generated: 2026-10-14 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned ENOTFOUND)
+Generated: 2026-10-15 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-13-brief.md (4 URLs loaded)
+Dedup against: articles/2026-10-14-brief.md (0 URLs loaded — yesterday was itself an empty stub)
 
-No stories passed both filters this run.
+0 stories passed both filters this run.
 
-## Dropped / not found
+## Dropped / not selected
 
-- Multiple broad and site-scoped WebSearch queries were issued against trusted-sources.md domains: TechCrunch, The Verge, Reuters, Bloomberg, Blognone, OpenAI blog, Anthropic news, Google DeepMind, NVIDIA, arXiv, Ars Technica, plus Thai-language queries.
-- Every candidate URL that surfaced either (a) lacked any date hint resolvable to within the last 24h, or (b) carried an explicit date older than 24h (e.g., March, May, July, August, September 2026, with the most recent dated items being Sep 24, 2026 and Oct 6, 2026).
-- No trusted-source URL emerged in a search result with a snippet-resolvable timestamp of 2026-10-13 or 2026-10-14 (Asia/Bangkok).
-- Yesterday's 4 TechCrunch URLs (2026-10-12) were already covered in 2026-10-13-brief.md and would in any case fail Filter A today (>24h old).
+No candidates from trusted-source domains on `reference/trusted-sources.md` surfaced in `WebSearch` with a timestamp resolvable to the last 24h (Asia/Bangkok). Queries attempted:
+- `AI news October 15 2026` — returned low-quality SEO pages dated 2025 or earlier.
+- `ข่าว AI วันนี้ 15 ตุลาคม 2026` — returned events / forecasts, nothing from trusted-sources list.
+- `site:techcrunch.com AI October 15 2026` — only tag/archive pages, no dated article from today.
+- `site:theverge.com AI October 2026` — site-restrict was not honored; only third-party preview blogs returned.
+- `site:reuters.com AI October 15 2026` — site-restrict not honored; results from September 2026 or earlier.
+- `site:blognone.com AI ตุลาคม 2026` — no blognone.com results.
+- `OpenAI Anthropic announcement today` — only aggregator/timeline pages, no fresh trusted-source URL.
+- `site:anthropic.com news` — only crawler snapshots, no dated post today.
+- `site:openai.com blog` — most recent dated items are early October (Oct 6–7), none from 2026-10-15.
+- `AI breakthrough announcement this week` — mix of dates on non-trusted-source domains; cannot verify any to today.
+- `site:techcrunch.com AI`, `site:arstechnica.com AI 2026`, `site:beartai.com AI` — site-restricts not honored.
+- `OpenAI blog post 2026-10-15` — most recent OpenAI Newsroom item in the index is dated Oct 7, 2026.
 
-## Note
-
-0 items passed both filters this run. Of ~15 search sweeps, 0 produced a candidate that could satisfy Filter A (24h freshness). Filter B (dedup) did not contribute to the shortfall because no candidate reached that stage.
+> Note: 0 items passed both filters this run. All candidates failed Filter A (no verifiable timestamp within rolling 24h on a trusted-source domain). Filter B was not reached because no candidate survived Filter A.
