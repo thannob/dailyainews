@@ -1,28 +1,20 @@
-# Sources — 2026-10-16
+# Sources — 2026-10-17
 
-Generated: 2026-10-16 (Asia/Bangkok)
+Generated: 2026-10-17 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-15-brief.md (0 URLs loaded — yesterday was itself an empty stub)
+Dedup against: articles/2026-10-16-brief.md (0 URLs loaded — yesterday was also an empty-day stub)
 
-No stories passed Filter A (24h freshness) via WebSearch snippets on trusted-sources.md domains.
+No stories selected. 0 of ~20 inspected candidates passed Filter A (24h freshness). Filter B was not engaged.
 
-## Dropped
+## Dropped (illustrative — all failed Filter A on timestamp staleness)
 
-Candidates surfaced in search but failed Filter A because their publish timestamps fall outside the rolling 24h window ending 2026-10-16 (Asia/Bangkok). None were on an exact trusted-sources.md domain either; the trusted-domain `site:` queries returned no fresh hits.
+- https://openai.com/... GPT-6 rollout — Filter A (>24h): "search snippet dates the GPT-6 'Intelligent UI' rollout to the week of Oct 7–8, 2026 (~9 days ago)"
+- https://digg.com/... Microsoft Oct 7 Windows+Surface event — Filter A (>24h): "snippet 'Microsoft plans October 7, 2026 event' (~10 days ago)"
+- https://reuters.com/... OpenAI GPT-6.1 Astra non-release — Filter A (>24h): "snippet 'Reuters reported on September 28' (~19 days ago)"
+- https://ft.com/... Anthropic–Pentagon talks — Filter A (>24h): "aggregator stamp Mar 4, 2026 (~7 months ago); same aggregator for the White House data-center pledge"
+- Various Microsoft Build 2026 recaps — Filter A (>24h): "Build was in June 2026; AF.NET recap dated Oct 4"
+- https://thehansindia.com/... "Upcoming AI Updates in October 2026" — Filter A (>24h): "preview piece; event-date previews are not news coverage"
+- Various aiweekly.co editions — Filter A (>24h): "most recent edition dated Thursday Oct 8, 2026 (~9 days ago)"
 
-- Anthropic Claude false homicide tip to Philadelphia police — Filter A (>24h): news dateline Reuters "Oct 9 (Reuters)" per syndicated copies; AP wires dated 2026-10-10. Also no exact trusted-domain URL in results.
-- Character.AI Chapter 11 filing + Disney $20M stalking-horse bid — Filter A (>24h): BNN Bloomberg URL slug `/2026/10/13/`, filing dated 2026-10-12.
-- UK MI5 launches AI Threat Assessment Centre — Filter A (>24h): announced 2026-10-13 per ITV News / Express & Star snippets.
-- HPCwire/AIwire "Future of Enterprise AI" — Filter A (>24h): URL slug `/2026/10/14/`. Also hpcwire.com not in trusted-sources.md.
-- Kyndryl × Toyota agentic AI go-live — Filter A (>24h): dated 2026-10-14 per aggregator roundup; no trusted-domain primary.
-
-## Trusted-domain probes that returned no fresh hit
-
-- `site:techcrunch.com AI` — only old tag pages and an Aug 2026 Micro1 story returned
-- `site:theverge.com AI 2026` — operator ignored; only aggregator reposts
-- `site:reuters.com artificial intelligence` — operator ignored; only third-party coverage of Reuters' own AI tools
-- `site:blognone.com AI 2026` — operator ignored; no Blognone results
-- Thai queries (`ข่าว AI วันนี้ ...`) — mostly 2026-trend-prediction evergreens, no fresh news
-
-> Note: 0 items passed both filters this run. Of ~15 candidates surveyed via 12 search queries, all failed Filter A. Filter B was not applied because 0 reached that stage (and yesterday's URL set was empty regardless).
+> Note: 0 items passed both filters this run. Of ~20 candidates inspected across 11 search queries (English + Thai, broad + per-trusted-source), 0 produced a resolvable Asia/Bangkok timestamp within [now−24h, now]; the Filter B (dedup) stage was never reached. Runtime WEBFETCH_BLOCKED meant Tier 1 verification was unavailable, so stories were graded by search-snippet timestamps only. Shortfall source: Filter A (freshness) — the search index has not surfaced any trusted-source AI reporting from 2026-10-16 or 2026-10-17 as of this run.
