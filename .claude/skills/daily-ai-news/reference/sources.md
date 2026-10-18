@@ -1,20 +1,34 @@
-# Sources — 2026-10-17
+# Sources — 2026-10-18
 
-Generated: 2026-10-17 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-10-18 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned ENOTFOUND)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-16-brief.md (0 URLs loaded — yesterday was also an empty-day stub)
+Dedup against: articles/2026-10-17-brief.md (0 URLs loaded — yesterday's brief was itself a stub)
 
-No stories selected. 0 of ~20 inspected candidates passed Filter A (24h freshness). Filter B was not engaged.
+## Selected
 
-## Dropped (illustrative — all failed Filter A on timestamp staleness)
+_None — 0 stories passed both filters._
 
-- https://openai.com/... GPT-6 rollout — Filter A (>24h): "search snippet dates the GPT-6 'Intelligent UI' rollout to the week of Oct 7–8, 2026 (~9 days ago)"
-- https://digg.com/... Microsoft Oct 7 Windows+Surface event — Filter A (>24h): "snippet 'Microsoft plans October 7, 2026 event' (~10 days ago)"
-- https://reuters.com/... OpenAI GPT-6.1 Astra non-release — Filter A (>24h): "snippet 'Reuters reported on September 28' (~19 days ago)"
-- https://ft.com/... Anthropic–Pentagon talks — Filter A (>24h): "aggregator stamp Mar 4, 2026 (~7 months ago); same aggregator for the White House data-center pledge"
-- Various Microsoft Build 2026 recaps — Filter A (>24h): "Build was in June 2026; AF.NET recap dated Oct 4"
-- https://thehansindia.com/... "Upcoming AI Updates in October 2026" — Filter A (>24h): "preview piece; event-date previews are not news coverage"
-- Various aiweekly.co editions — Filter A (>24h): "most recent edition dated Thursday Oct 8, 2026 (~9 days ago)"
+## Dropped (representative)
 
-> Note: 0 items passed both filters this run. Of ~20 candidates inspected across 11 search queries (English + Thai, broad + per-trusted-source), 0 produced a resolvable Asia/Bangkok timestamp within [now−24h, now]; the Filter B (dedup) stage was never reached. Runtime WEBFETCH_BLOCKED meant Tier 1 verification was unavailable, so stories were graded by search-snippet timestamps only. Shortfall source: Filter A (freshness) — the search index has not surfaced any trusted-source AI reporting from 2026-10-16 or 2026-10-17 as of this run.
+Across many queries targeting the trusted-sources allow-list (TechCrunch, The Verge, Reuters, Bloomberg, Ars Technica, Blognone, etc.), no URL was returned that satisfied **both** of:
+
+- (a) host on `reference/trusted-sources.md`, AND
+- (b) a verifiable timestamp inside `[now − 24h, now]` Asia/Bangkok.
+
+Representative candidates that an aggregator newsletter mentioned but could not be sourced to a trusted-domain URL within 24h:
+
+- DeepSeek V4.1-Flash-1017 release — Filter A: trusted-source confirmation returns 2026-09-10 launch date (>24h); the 2026-10-17 "1017" tag only appears in third-party aggregators (not allow-listed).
+- Google Gemini 4 Argon expanded access — Filter A: original launch 2026-09-30; "around October 13" rollout is >24h.
+- Eight state AGs file consumer-protection suits against OpenAI — Filter A: dated 2026-10-14 (>24h).
+- White House "Super Intelligence Force" first meeting — Filter A: dated 2026-10-15 (>24h) and no trusted-source URL surfaced.
+- Chip-stock selloff coverage — Filter A: core events dated 2026-10-08 and 2026-10-13 (>24h).
+- FTC investigation of OpenAI / Anthropic / METR — Filter A: originally reported 2026-09-30 (>24h).
+
+The `site:` operator did not reliably restrict WebSearch to trusted domains in this runtime, so even when a trusted outlet likely covered a story, no cite-able URL from that domain surfaced in search results.
+
+## Note
+
+> 0 items passed both filters this run.
+> Filter A (24h freshness): blocking.
+> Filter B (dedup vs. yesterday): inapplicable — yesterday's brief had 0 URLs to dedup against.
