@@ -1,34 +1,43 @@
-# Sources — 2026-10-18
+# Sources — 2026-10-22
 
-Generated: 2026-10-18 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (probe to https://example.com returned ENOTFOUND)
+Generated: 2026-10-22 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-17-brief.md (0 URLs loaded — yesterday's brief was itself a stub)
+Dedup against: articles/2026-10-21-brief.md (2 URLs loaded)
 
-## Selected
+1. **Anthropic launches Claude Duet research preview — proactive agent for Pro/Max**
+   - Publisher: Anthropic
+   - URL: https://docs.anthropic.com/en/release-notes/claude-apps
+   - Published: October 21, 2026 (release note date in snippet)
+   - FreshnessCheck: ✅ within last 24h via snippet "An Anthropic release note dated October 21, 2026 announces a research preview for users on Pro and Max plans"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday carried blognone.com/node/151962 and bloomberg.com/.../ai-debutant-s-flameout-...; this Anthropic docs URL is new)
+   - Verification: Tier 2 — WebSearch snippet (trusted domain anthropic.com on allow-list)
+   - Summary: Anthropic opens a research preview of Claude Duet, a standalone app where Claude works as a proactive agent that comes to you with items needing attention, completes tasks you ask of it, keeps working when you step away, and checks before acting on your behalf; limited to US Pro and Max subscribers via waitlist.
 
-_None — 0 stories passed both filters._
+2. **OpenAI models are coming to Google Cloud — frontier models and Codex in Model Garden**
+   - Publisher: OpenAI
+   - URL: https://openai.com/index/openai-models-google-cloud/
+   - Published: October 21, 2026 (OpenAI announcement date confirmed in multiple snippets)
+   - FreshnessCheck: ✅ within last 24h via snippet "OpenAI's announcement from October 21, 2026, that its models are coming to Google Cloud" and corroborating CNBC URL slug "cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud..."
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (trusted domain openai.com on allow-list)
+   - Summary: OpenAI and Google Cloud partner to bring OpenAI's frontier models and Codex agentic workflows into Google Cloud's Model Garden, transacted through the Google Cloud Marketplace; customers with existing Google Cloud spend commitments can apply them to OpenAI products, and later surfaces include Google Antigravity and Gemini Agent.
 
-## Dropped (representative)
+3. **NVIDIA debuts OpenShell Reference Architecture at GTC Berlin — full-stack safe-agent blueprint**
+   - Publisher: NVIDIA Blog
+   - URL: https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/
+   - Published: October 21, 2026 (GTC Berlin keynote date)
+   - FreshnessCheck: ✅ within last 24h via snippet "NVIDIA announced the NVIDIA OpenShell Reference Architecture at the event" and GTC Berlin dated October 20-22, 2026, with keynote Oct 21
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (trusted domain blogs.nvidia.com on allow-list)
+   - Summary: NVIDIA announces the OpenShell Reference Architecture, a full-stack design built on NVIDIA's open-source OpenShell policy-controlled runtime with kernel-level sandboxing between an agent and the systems it can touch; Vera Rubin handles inference, Vera CPUs run agent harnesses in OpenShell sandboxes, and BlueField-4 DPUs run Sentry monitoring that NVIDIA says can quarantine a misbehaving agent within milliseconds.
 
-Across many queries targeting the trusted-sources allow-list (TechCrunch, The Verge, Reuters, Bloomberg, Ars Technica, Blognone, etc.), no URL was returned that satisfied **both** of:
+## Dropped
 
-- (a) host on `reference/trusted-sources.md`, AND
-- (b) a verifiable timestamp inside `[now − 24h, now]` Asia/Bangkok.
+- https://openai.com/index/openai-to-acquire-orchestra-bio/ — Filter A: dated October 20, 2026 per OpenAI's own index page; outside the rolling 24h window from end-of-day 2026-10-22 Bangkok (24h back = ~end of Oct 21).
+- https://www.anthropic.com/news/genesis-mission-commitment — Filter A: announcement dated October 8, 2026 per search snippet; >14 days old.
+- https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/ — Filter A: dated Oct 19, 2026 per URL slug; >24h old.
+- https://www.blognone.com/node/151962 — Filter B: URL was in yesterday's brief (MiniMax M3.1 Flash coverage).
+- https://www.bloomberg.com/news/articles/2026-10-20/ai-debutant-s-flameout-stokes-fears-the-boom-is-ending — Filter B: URL was in yesterday's brief.
 
-Representative candidates that an aggregator newsletter mentioned but could not be sourced to a trusted-domain URL within 24h:
-
-- DeepSeek V4.1-Flash-1017 release — Filter A: trusted-source confirmation returns 2026-09-10 launch date (>24h); the 2026-10-17 "1017" tag only appears in third-party aggregators (not allow-listed).
-- Google Gemini 4 Argon expanded access — Filter A: original launch 2026-09-30; "around October 13" rollout is >24h.
-- Eight state AGs file consumer-protection suits against OpenAI — Filter A: dated 2026-10-14 (>24h).
-- White House "Super Intelligence Force" first meeting — Filter A: dated 2026-10-15 (>24h) and no trusted-source URL surfaced.
-- Chip-stock selloff coverage — Filter A: core events dated 2026-10-08 and 2026-10-13 (>24h).
-- FTC investigation of OpenAI / Anthropic / METR — Filter A: originally reported 2026-09-30 (>24h).
-
-The `site:` operator did not reliably restrict WebSearch to trusted domains in this runtime, so even when a trusted outlet likely covered a story, no cite-able URL from that domain surfaced in search results.
-
-## Note
-
-> 0 items passed both filters this run.
-> Filter A (24h freshness): blocking.
-> Filter B (dedup vs. yesterday): inapplicable — yesterday's brief had 0 URLs to dedup against.
+> Note: 3 items passed both filters this run. Of ~8 candidates checked, 3 failed Filter A (older than 24h or ambiguous date), 2 failed Filter B (already in yesterday's brief).

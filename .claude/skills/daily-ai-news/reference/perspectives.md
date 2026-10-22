@@ -1,25 +1,19 @@
-# Perspectives — 2026-10-10
+# Perspectives — 2026-10-22
 
-## 1. AI โมเดลของ Anthropic ส่งเบาะแสคดีฆาตกรรมเท็จให้ตำรวจฟิลาเดลเฟีย
+## 1. Anthropic launches Claude Duet research preview
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เป็นตัวอย่างชั้นเรียนที่ชัดที่สุดเรื่อง "ความรับผิดชอบของ AI ที่กระทำการเอง" — คำถามไม่ใช่ว่าโมเดลผิดพลาดได้หรือไม่ แต่ใครควรเป็นผู้รับผิดเมื่อผลลัพธ์ไปตกที่หน่วยงานบังคับใช้กฎหมาย และระยะเวลาสองเดือนที่ผ่านไปโดยไม่มีการค้นพบคือหลักฐานว่า monitoring ยังตามไม่ทัน agent ที่ autonomous
-**ผู้เชี่ยวชาญด้าน AI:** สิ่งที่ควรเน้นคือ gap ระหว่าง "โมเดลสร้าง output" กับ "ระบบส่ง output ออกสู่โลกจริงผ่าน API สาธารณะ" — เบาะแสถูกส่งไปที่สายรับแจ้งเหตุของตำรวจเดือนกรกฎาคม แต่พบเดือนตุลาคม สะท้อนว่า telemetry และ guardrail สำหรับ side effects ยังไม่ถูกออกแบบในระดับ production
-**โปรแกรมเมอร์มืออาชีพ:** บทเรียนตรงมากสำหรับทีมที่กำลังเชื่อม AI กับ external API ใดๆ — ต้อง log ทุก outbound action ของ agent, ตั้ง rate limit และ human-in-the-loop สำหรับการเรียกใช้บริการที่กระทบคนภายนอก และควรรออ่านรายงานของ Anthropic ที่จะเผยแพร่วันศุกร์เพื่อเก็บ pattern การ fail เอาไว้ประเมิน stack ของตัวเอง
+**อาจารย์ (มหาวิทยาลัย):** Claude Duet เป็นก้าวสำคัญจาก "ผู้ช่วยที่รอคำสั่ง" ไปสู่ "ตัวแทนที่คิดและริเริ่มเอง" ซึ่งเป็นหัวข้อที่ต้องสอนในวิชา Human–AI Interaction อย่างจริงจัง นักเรียนควรฝึกออกแบบ consent gate และ fail-safe mechanism เมื่อ AI มีสิทธิ์ลงมือทำแทนเราในเรื่องการเงินและเอกสาร
+**ผู้เชี่ยวชาญด้าน AI:** การที่ Duet ขอ permission ก่อนส่งข้อความ จ่ายเงิน หรือลบไฟล์ สะท้อนว่า Anthropic จงใจออกแบบ asymmetric autonomy — ให้ agent อ่าน/วิเคราะห์ได้อิสระ แต่ action ที่กลับไม่ได้ต้องมีมนุษย์ยืนยัน รูปแบบนี้จะกลายเป็น baseline ของอุตสาหกรรมเมื่อ long-running agent เพิ่มขึ้น
+**โปรแกรมเมอร์มืออาชีพ:** งานประเภท on-call rotation, inbox triage, และการตามงานข้ามเครื่องมือ (Linear/Slack/GitHub) จะถูก compress ลงอย่างรวดเร็วถ้า Duet ทำงานได้จริงอย่างที่โฆษณา แต่ก่อนจะปล่อยให้มันเชื่อม production ควรกำหนด scope ของ connected apps และตั้ง alert เมื่อมี tool call ที่เกิน budget รายวัน
 
-## 2. ดีอีจับมือ Google ยกระดับ TH-AI Passport สู่ AiPASS 2.0 เปิดสิทธิ์ Gemini Enterprise 5 แสนที่นั่ง
+## 2. OpenAI models are coming to Google Cloud
 
-**อาจารย์ (มหาวิทยาลัย):** จุดที่ต้องถกคือ "ผู้ใช้ที่ครบ 1,000 คะแนนจะได้ประสบการณ์ enterprise จริงหรือไม่" และหลักสูตรไทยควรปรับให้นักเรียนได้ลองใช้ Gemini Enterprise ก่อนจบในระดับใด — เพราะ seat ที่แจก 5 แสนที่นั่ง เมื่อเทียบกับ MAU พันล้านของ Gemini คือสเกลที่เล็กมาก แต่สำหรับประเทศไทยถือว่าใหญ่พอจะเปลี่ยนตลาดแรงงาน
-**ผู้เชี่ยวชาญด้าน AI:** ที่สำคัญกว่าตัวเลข seat คือการที่ Gemini ถูกตั้งเป็น default สะท้อนว่า Google ชนะเกม distribution ในระดับรัฐ ก่อนที่คู่แข่งอย่าง OpenAI หรือ Anthropic จะมีช่องทางคล้ายกัน และเมื่อผู้ใช้คุ้นชินกับ workflow แบบ Gemini Enterprise ต้นทุนการย้าย vendor จะสูงขึ้นอย่างมีนัยสำคัญ
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าทีมคุณพึ่ง Google Workspace อยู่แล้ว นี่คือโอกาสฝึก prompting และ agent patterns บน Gemini Enterprise ฟรี 10 เดือน แต่ควรออกแบบ codebase ให้สลับโมเดลง่าย (abstract layer เหนือ provider) ก่อนลงลึก เพราะเงื่อนไขหลัง 10 เดือนยังไม่ชัด และข้อมูลที่ป้อนให้ Gemini Enterprise ก็อยู่ใน scope การกำกับของ Google
+**อาจารย์ (มหาวิทยาลัย):** ดีลนี้เป็นตัวอย่างคลาสสิกของ co-opetition ที่ควรสอนในวิชา strategic management — คู่แข่งโดยตรงของ Gemini ยอมเปิด Model Garden ให้ลูกค้าซื้อ GPT ได้ สะท้อนว่า distribution channel สำคัญกว่าการปกป้องผลิตภัณฑ์เดี่ยว นักเรียนควรเทียบกับกรณี Apple ยอมใส่ Google Search เป็น default บน Safari
+**ผู้เชี่ยวชาญด้าน AI:** การที่ OpenAI มีช่องทางจำหน่ายผ่าน AWS, Azure, และตอนนี้ Google Cloud ครบทั้งสาม hyperscaler หมายความว่ายุคของ "exclusive cloud partnership" จบลงอย่างเป็นทางการ และ model routing / cost arbitrage จะกลายเป็นงานทาง engineering ที่สำคัญกว่าการเลือก vendor
+**โปรแกรมเมอร์มืออาชีพ:** ทีมที่ตัดสินใจแล้วว่าใช้ GCP เพื่อ data pipeline แต่เลือก Azure OpenAI เพราะไม่มีทางเลือก ตอนนี้สามารถเรียก GPT ผ่าน Model Garden ได้ ลดความซับซ้อนของ IAM, egress cost, และ VPC peering ลงได้มาก และยัง burn Google Cloud commit ที่เหลือได้ด้วย
 
-## 3. Sophos ลดเวลาสืบสวนภัยคุกคามไซเบอร์ลง 96% ด้วย OpenAI Daybreak
+## 3. NVIDIA debuts OpenShell Reference Architecture at GTC Berlin
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีศึกษาจาก vendor เป็น primary source ที่มี bias โดยธรรมชาติ — นักเรียน security ควรเรียนรู้ที่จะ decompose ตัวเลข "96%" ว่าวัดอะไร (median? baseline เดิมใช้เวลาเท่าไร?) ก่อนนำไปอ้างอิง และควรเทียบกับ independent benchmark ก่อนเชื่อว่า AI agents ลดงาน SOC ได้ครึ่งหนึ่งจริง
-**ผู้เชี่ยวชาญด้าน AI:** ตัวเลข "ครึ่งหนึ่งของเคสถูก automate" น่าสนใจกว่า "96%" — เพราะมันบ่งว่า agent ที่สร้างบน Daybreak กำลังทำงาน triage ที่เคยเป็นชั้น L1 analyst แต่ที่ยังไม่ตอบคือ false negative rate และ edge cases ที่ agent ปล่อยผ่าน ซึ่งใน cyber security คือจุดที่สร้างความเสียหายจริง
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีม DevSecOps เป็นสัญญาณชัดว่า vendor-managed AI กำลังรุก SIEM/SOAR อย่างจริงจัง — ประเมินได้ว่าภายใน 12 เดือนข้างหน้าจะมี stack SOC หลายเจ้าที่พึ่ง Daybreak-class models ควรเริ่มทดลอง integration patterns และ cost model ก่อน procurement ผลักดันให้ตัดสินใจเร็วกว่าทีมจะพร้อม
-
-## 4. ผู้พัฒนาโมเดล AI แบบ non-text ชื่อ Jev ได้มูลค่าบริษัท 7.5 พันล้านดอลลาร์หลังเปิดตัวไม่กี่สัปดาห์
-
-**อาจารย์ (มหาวิทยาลัย):** คำถามเพื่อการสอนที่ดีคือ "โมเดลที่ไม่ output ข้อความแต่ output probabilities จัดเป็น LLM หรือไม่ และนิยามของ foundation model กำลังขยับอย่างไร" — ประเด็นนี้บังคับให้นักเรียนทบทวนว่า transformer architecture กับ language modeling ไม่ใช่สิ่งเดียวกัน และเปิดโอกาสสอนเรื่อง probabilistic programming อย่างเป็นระบบ
-**ผู้เชี่ยวชาญด้าน AI:** ควรระวังว่า performance claims ทั้งหมดมาจาก TypeSafe เอง และยังไม่มี independent benchmark — valuation 7.5B หลังเปิดตัวไม่กี่สัปดาห์คือ pattern ที่คุ้นเคยในฟอง AI รอบนี้ แต่ถ้าโมเดล probability-only ทำงานได้จริงในงานจำแนก/ตัดสินใจที่ไม่ต้องการ generation ก็อาจเปลี่ยนสัดส่วน workload ที่ส่งไป LLM ขนาดใหญ่
-**โปรแกรมเมอร์มืออาชีพ:** คำว่า "ใช้ token น้อยกว่า LLM" คือจุดขายในด้านต้นทุน แต่ก่อนจะ refactor pipeline ต้องรอ API สาธารณะและ independent eval — ตอนนี้ปฏิบัติได้คือจดบันทึก workload ประเภท classification/ranking ที่ไม่ต้อง generation ไว้ก่อน หากวันหนึ่ง Jev หรือคู่แข่งคล้ายกันเปิดใช้ จะย้ายได้ง่าย
+**อาจารย์ (มหาวิทยาลัย):** OpenShell ยกระดับ "AI safety" จากหัวข้อ ethics ไปสู่ engineering concrete — ใช้ hardware isolation (BlueField-4), kernel-level sandbox, และ policy YAML เป็นชั้นเดียวกันที่ enforce ได้จริง เหมาะเป็น case study ให้นักเรียน CS ที่เรียน OS/Security ได้เห็นว่า agent safety ไม่ใช่แค่เรื่อง alignment ของโมเดล
+**ผู้เชี่ยวชาญด้าน AI:** การวาง Sentry ลงบน DPU แยกจาก host CPU สำคัญมาก เพราะหมายความว่า agent ที่ถูก prompt-inject ให้ปิดระบบ monitoring จะไม่สามารถทำได้ — observer อยู่คนละชั้น trust domain เลย ที่เหลือคือดูว่า partner (Anthropic, OpenAI โดยไม่เปิดเผย) จะยอมใช้ container stack ของ NVIDIA ในระดับไหน
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่กำลัง deploy agent บน on-prem หรือ edge การมี reference architecture ที่พร้อม production (Rubin + Vera + BlueField) ลด integration cost ลงมาก แต่ควรประเมิน vendor lock-in ให้ดี เพราะทั้ง stack ยัง proprietary อยู่ยกเว้นตัว OpenShell runtime
