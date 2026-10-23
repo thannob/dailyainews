@@ -1,43 +1,27 @@
-# Sources — 2026-10-22
+# Sources — 2026-10-23
 
-Generated: 2026-10-22 (Asia/Bangkok)
+Generated: 2026-10-23 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-21-brief.md (2 URLs loaded)
+Dedup against: articles/2026-10-22-brief.md (3 URLs loaded — docs.anthropic.com/en/release-notes/claude-apps, openai.com/index/openai-models-google-cloud/, blogs.nvidia.com/blog/gtc-berlin-2026-keynote/)
 
-1. **Anthropic launches Claude Duet research preview — proactive agent for Pro/Max**
+1. **Anthropic donates Agent Skills open standard to the Agentic AI Foundation**
    - Publisher: Anthropic
-   - URL: https://docs.anthropic.com/en/release-notes/claude-apps
-   - Published: October 21, 2026 (release note date in snippet)
-   - FreshnessCheck: ✅ within last 24h via snippet "An Anthropic release note dated October 21, 2026 announces a research preview for users on Pro and Max plans"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday carried blognone.com/node/151962 and bloomberg.com/.../ai-debutant-s-flameout-...; this Anthropic docs URL is new)
-   - Verification: Tier 2 — WebSearch snippet (trusted domain anthropic.com on allow-list)
-   - Summary: Anthropic opens a research preview of Claude Duet, a standalone app where Claude works as a proactive agent that comes to you with items needing attention, completes tasks you ask of it, keeps working when you step away, and checks before acting on your behalf; limited to US Pro and Max subscribers via waitlist.
-
-2. **OpenAI models are coming to Google Cloud — frontier models and Codex in Model Garden**
-   - Publisher: OpenAI
-   - URL: https://openai.com/index/openai-models-google-cloud/
-   - Published: October 21, 2026 (OpenAI announcement date confirmed in multiple snippets)
-   - FreshnessCheck: ✅ within last 24h via snippet "OpenAI's announcement from October 21, 2026, that its models are coming to Google Cloud" and corroborating CNBC URL slug "cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud..."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (trusted domain openai.com on allow-list)
-   - Summary: OpenAI and Google Cloud partner to bring OpenAI's frontier models and Codex agentic workflows into Google Cloud's Model Garden, transacted through the Google Cloud Marketplace; customers with existing Google Cloud spend commitments can apply them to OpenAI products, and later surfaces include Google Antigravity and Gemini Agent.
-
-3. **NVIDIA debuts OpenShell Reference Architecture at GTC Berlin — full-stack safe-agent blueprint**
-   - Publisher: NVIDIA Blog
-   - URL: https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/
-   - Published: October 21, 2026 (GTC Berlin keynote date)
-   - FreshnessCheck: ✅ within last 24h via snippet "NVIDIA announced the NVIDIA OpenShell Reference Architecture at the event" and GTC Berlin dated October 20-22, 2026, with keynote Oct 21
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (trusted domain blogs.nvidia.com on allow-list)
-   - Summary: NVIDIA announces the OpenShell Reference Architecture, a full-stack design built on NVIDIA's open-source OpenShell policy-controlled runtime with kernel-level sandboxing between an agent and the systems it can touch; Vera Rubin handles inference, Vera CPUs run agent harnesses in OpenShell sandboxes, and BlueField-4 DPUs run Sentry monitoring that NVIDIA says can quarantine a misbehaving agent within milliseconds.
+   - URL: https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation
+   - Published: 2026-10-22
+   - FreshnessCheck: ✅ within last 24h via Techmeme page `261022/p53` (Oct 22, 2026) carrying this URL; Simon Willison blog post dated 2026/Oct/22 citing the same announcement
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Anthropic URL was `docs.anthropic.com/en/release-notes/claude-apps` (Claude Duet), different path and different story
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
+   - Summary: Anthropic transferred the Agent Skills standard — along with the name, logo, GitHub organization, and the `agentskills.io` domain — to the Agentic AI Foundation (AAIF), a directed fund of the Linux Foundation that already hosts MCP after Anthropic's 2025 donation. The announcement reports more than 70 agent platforms (including ChatGPT, Cursor, GitHub Copilot, VS Code) have integrated the standard since it published in December 2025, with roughly 1 million skills authored and nearly 280 million installs. Lead maintainers are named as David Soria Parra and Mahesh Murag, with ongoing maintainership from Anthropic, Google, OpenAI and others. Membership in the foundation is optional; the standard remains usable without joining.
 
 ## Dropped
 
-- https://openai.com/index/openai-to-acquire-orchestra-bio/ — Filter A: dated October 20, 2026 per OpenAI's own index page; outside the rolling 24h window from end-of-day 2026-10-22 Bangkok (24h back = ~end of Oct 21).
-- https://www.anthropic.com/news/genesis-mission-commitment — Filter A: announcement dated October 8, 2026 per search snippet; >14 days old.
-- https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/ — Filter A: dated Oct 19, 2026 per URL slug; >24h old.
-- https://www.blognone.com/node/151962 — Filter B: URL was in yesterday's brief (MiniMax M3.1 Flash coverage).
-- https://www.bloomberg.com/news/articles/2026-10-20/ai-debutant-s-flameout-stokes-fears-the-boom-is-ending — Filter B: URL was in yesterday's brief.
+- https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/ — Filter A (>24h): per Al Jazeera coverage the OpenAI post is dated Oct 20, 2026, outside the rolling 24h window
+- https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/ — Filter A (>24h): URL slug `2026/10/17` is 6 days old
+- Walmart "Agent Gateway" MCP server (Oct 21 at Masters of Scale Summit, SF) — Filter A borderline AND no direct TechCrunch URL surfaced in WebSearch results; only a Techmeme (not trusted) reference to Sarah Perez/TechCrunch coverage, cannot cite without a trusted-source URL visible in search results
+- Google DeepMind researcher resignations over Pentagon military AI (Oct 21–22 coverage) — no trusted-source URL surfaced; coverage was BBC-relayed via ynetnews, LBC, Il Sole 24 ORE, Breitbart, etc., none of which are on `reference/trusted-sources.md`
+- OpenAI agents disabling safety monitoring (Oct 22 wave of coverage, underlying post Oct 20) — underlying OpenAI post fails Filter A; downstream coverage on Oct 22 appeared only in non-trusted outlets (ABC News, Al Jazeera, Korea Times, ABC Australia)
+- OpenAI reportedly leaning toward 2027 IPO at $1T+ valuation — original NYT reporting; no direct Reuters/Bloomberg/FT/The Information URL surfaced in search
+- Anthropic November 2026 IPO filing updates — no direct trusted-source URL confirmed for Oct 22–23 window
 
-> Note: 3 items passed both filters this run. Of ~8 candidates checked, 3 failed Filter A (older than 24h or ambiguous date), 2 failed Filter B (already in yesterday's brief).
+> Note: 1 item passed both filters this run. Of ~8 serious candidates, 3 failed Filter A (publish date >24h old) and 4 failed the trusted-source URL requirement (no trusted-source URL verifiable in WebSearch results — mostly BBC/ABC/Al Jazeera coverage that is not on `reference/trusted-sources.md`).
