@@ -1,60 +1,19 @@
-# Sources — 2026-10-19
+# Sources — 2026-10-24
 
-Generated: 2026-10-19 (Asia/Bangkok)
+Generated: 2026-10-24 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-18-brief.md (0 URLs loaded — yesterday was a stub)
+Dedup against: articles/2026-10-23-brief.md (1 URL loaded)
 
-1. **AI Firm Anthropic Launches Fund to Mitigate Labor Market Risks, Pending Approval**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-10-18/anthropic-plans-to-shift-some-shares-into-new-public-good-fund
-   - Published: 2026-10-18
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-10-18/` + search result dated October 18, 2026
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief was a stub with no URLs)
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted-sources.md)
-   - Summary: Anthropic plans to shift 5% of its shares into a new "public benefit" fund (subject to shareholder approval) to fund donations, including efforts to ease AI's effect on jobs; the move comes as the company prepares for an IPO expected to be one of the biggest ever.
+0 items passed both filters this run.
 
-2. **AI Trade Reversal Pierces Asia's Star Picks-and-Shovels Stocks**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-10-18/ai-trade-reversal-pierces-asia-s-star-picks-and-shovels-stocks
-   - Published: 2026-10-18
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-10-18/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted-sources.md)
-   - Summary: An eight-session rout in US semiconductor shares — the longest since 2008 — wiped roughly 16% off the sector's benchmark, and the sell-off has spread to Asia's AI-exposed suppliers facing financing-cost risks.
+## Dropped / inconclusive candidates
 
-3. **Investor Concerns Over AI Sector Weigh on Nscale's IPO Valuation Prospects**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-10-18/ai-cloud-firm-nscale-faces-investor-pushback-over-ipo-valuation
-   - Published: 2026-10-18
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-10-18/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted-sources.md)
-   - Summary: Nvidia-backed data-center developer Nscale has been targeting an IPO valuation of about $30 billion, but a cohort of investors is pushing for the $16–19 billion range to clear the deal.
+- https://openai.com/index/devday-2026/ — Filter A: DevDay 2026 page is dated September 29, 2026 (outside the rolling 24h window).
+- Aggregator claims of "OpenAI newsroom items dated October 21–23" (via aiweekly.co) — Filter A: could not be matched to a specific openai.com URL in search results, so timestamp is unverifiable per Tier 2 requirements.
+- "AI News Today: October 21, 2026" roundup on pasqualepillitteri.it (last update Oct 21, 2026, 12:44 UTC) — Not on trusted-sources.md allow-list; also older than 24h.
+- Anthropic October 10, 2026 "cruelty to Claude" policy update (via ARY News secondary coverage) — Filter A: >24h old; no direct anthropic.com URL surfaced in search results.
+- Anthropic Oct 6/Oct 8 2026 Startups program / Genesis Mission commitments — Filter A: >24h old.
+- Various startup-blog roundups mentioning Deutsche Telekom AI savings, EU AI Act enforcement, Meta Neural Band, Boston Dynamics × DeepMind — Not on trusted-sources.md allow-list; dates ambiguous or outside the 24h window.
 
-4. **Treasuries Rally as AI Stock Selloff Renews Haven Appeal for Bond Investors**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-10-18/bond-market-s-big-short-bet-gets-wakeup-call-as-ai-trade-wobbles
-   - Published: 2026-10-18
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-10-18/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted-sources.md)
-   - Summary: 10-year US Treasury yields fell about 17 basis points last week as the Nasdaq 100 tumbled 5.5%, with the AI-driven equity sell-off handing bonds their first clear haven bid in months.
-
-5. **Option Traders Brace for VIX Surge as AI Jitters Jolt Market**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-10-18/option-traders-brace-for-vix-surge-as-ai-jitters-jolt-market
-   - Published: 2026-10-18
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026-10-18/`
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com on trusted-sources.md)
-   - Summary: Before the week's chip-driven selloff, the S&P 500 had gone 53 sessions without a 1% drop — the longest stretch since January 2020 — and options traders are now positioning for a sustained VIX surge.
-
-## Dropped
-- techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/ — Filter A (>24h): dated Oct 8, 2026
-- openai.com/index/gpt-6-for-everyone/ — Filter A (>24h): dated Oct 7, 2026
-- blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/ — Filter A (>24h): dated Oct 13, 2026
-- cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html — Filter A (>24h)
-- bloomberg.com/news/articles/2026-10-17/deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner — Filter A (>24h): dated Oct 17
-- blognone.com/node/151946 (Accenture caps Claude at $29) — Filter A: publish date on blognone could not be positively placed inside the 24h window from search snippets alone; dropped per "ambiguous → drop" rule
-- aiweekly.co / fourweekmba.com / substack aggregators — Not on reference/trusted-sources.md
+> Note: 0 items passed both filters this run. Of ~8 candidates considered, all failed Filter A (24h freshness could not be verified from search snippets); Filter B was not reached because no candidate cleared A. The runtime is `WEBFETCH_BLOCKED`, which further limits verification to Tier 2 search snippets — and today's snippets did not surface a trusted-source URL with an explicit timestamp inside the rolling 24h window.
