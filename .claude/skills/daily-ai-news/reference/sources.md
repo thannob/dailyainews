@@ -1,25 +1,22 @@
-# Sources — 2026-10-25
+# Sources — 2026-10-27
 
-Generated: 2026-10-25 (Asia/Bangkok)
+Generated: 2026-10-27 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-24-brief.md (0 URLs loaded — yesterday was a 0-story stub)
+Dedup against: articles/2026-10-26-brief.md (5 URLs loaded)
 
-No stories passed both filters this run.
+0 items passed both filters.
 
-## Dropped
+## Dropped (sample — Tier-2 verification could not confirm 24h-fresh timestamps on trusted-source URLs)
 
-- https://techcrunch.com/category/artificial-intelligence/ — Filter A: trusted-source index page, no snippet with a timestamp within the last 24h (Asia/Bangkok)
-- https://www.theverge.com/ai-artificial-intelligence — Filter A: hub page, no article-level timestamp within 24h surfaced
-- https://aiweekly.co/ai-news-today — Filter A: snippet dated "October 23" (Microsoft MAI-DxO roundup) — >24h old at the Asia/Bangkok rolling window; also aiweekly.co is not on `reference/trusted-sources.md`
-- OpenAI DNS-bypass pause coverage (multiple syndicators) — Filter A: all datelines resolve to September 27–28, 2026 (>24h old); none of the carrying domains (yourstory.com, telanganatoday.com, propakistani.pk, newkerala.com, vktr.com) are on `reference/trusted-sources.md`
-- GPT-6 "Intelligent UI" / GPT-6 Sol & Luna rollout — Filter A: announcement dated October 7, 2026 (>24h old)
-- Anthropic usage-policy and IPO leak (mind-verse.de aggregator) — Filter A: October 14, 2026 (>24h old); also publisher not on trusted-sources list
-- Claude Opus 5.5 index-topping result — Filter A: September 26, 2026 (>24h old)
-- NVIDIA RTX Spark Windows PCs (IFA 2026 coverage) — Filter A: September 4, 2026 (>24h old)
-- Agentic AI Foundation adds four projects (AGNTCon, Oct 22) — Filter A: >24h old; also carrying coverage not on trusted-sources list
-- SoundHound AI acquires LivePerson — Filter A: no fresh (24h) timestamp surfaced; publisher not on trusted-sources list
-- Siriraj x MIT Hacking Medicine 2026 — Filter A: event scheduled October 20, 2026 (>24h old)
-- Multiple SEO-aggregator pages ("AI News Today Oct 25 2025", "AI News Today Oct 25 2026", "Ai News Today Oct 25 2025 — …") — Filter A: either wrong year (2025) or no verifiable timestamp; publishers not on trusted-sources list
+- https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/ — Filter A (>24h): URL slug 2026/10/20 is ~7 days old
+- https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/ — Filter A (>24h): URL slug 2026/06/01 is from June
+- https://techcrunch.com/2026/03/31/salesforce-announces-an-ai-heavy-makeover-for-slack-with-30-new-features/ — Filter A (>24h): URL slug 2026/03/31
+- https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/ — Filter A (>24h): URL slug 2026/03/29
+- https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai — Filter A (>24h): URL slug 2026/01/14
 
-> Note: 0 items passed both filters this run. Of ~12 candidates surveyed across trusted-sources and broader web queries, all failed Filter A (freshness within last 24h Asia/Bangkok). Filter B (dedup) did not engage because yesterday's brief was itself a 0-story stub with no URLs to dedupe against.
+## Note on candidates that WERE 24h-fresh but failed trusted-source URL rule
+
+Multiple WebSearch results surfaced an Anthropic public S-1 IPO filing dated 2026-10-26 (ticker ANT on Nasdaq; H1 2026 revenue $16.3B; $80.7B net loss). The story is real and 24h-fresh, but no URL from a domain in `reference/trusted-sources.md` appeared in WebSearch results for it — only CNN, CNBC, Yahoo Finance, NPR affiliates, and SEC EDGAR, none of which are on the trusted-sources list. Per Step 1b hard rule ("Never cite a URL that you could not at least see in a WebSearch result for a trusted-source domain"), this story is dropped.
+
+> Note: 0 items passed both filters this run. Of ~40 candidates examined, ~35 failed Filter A (>24h stale on trusted-source URLs surfaced by WebSearch) and ~5 failed the trusted-source URL rule (fresh story but no trusted-source URL in search results). Filter B (dedup against yesterday) was never the binding constraint — most candidates were blocked at Filter A first.
