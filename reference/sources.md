@@ -1,19 +1,21 @@
-# Sources — 2026-10-24
+# Sources — 2026-10-29
 
-Generated: 2026-10-24 (Asia/Bangkok)
+Generated: 2026-10-29 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-23-brief.md (1 URL loaded)
+Dedup against: articles/2026-10-28-brief.md (0 URLs loaded — yesterday was a stub)
 
-0 items passed both filters this run.
+**ไม่มีข่าวที่ผ่านทั้งสองตัวกรองในรอบนี้**
 
-## Dropped / inconclusive candidates
+- Filter A (รอบ 24h) — เป็นตัวบล็อกหลัก: WebSearch ในรอบนี้ไม่สามารถคืน URL จากโดเมนใน `reference/trusted-sources.md` ที่มี timestamp อยู่ในช่วง 2026-10-28/29 (Asia/Bangkok) ได้
+- Filter B (dedup) — ไม่ใช่ตัวบล็อกในรอบนี้ (ฉบับ 2026-10-28 เป็น stub ว่าง, มี 0 URLs ให้เทียบ)
 
-- https://openai.com/index/devday-2026/ — Filter A: DevDay 2026 page is dated September 29, 2026 (outside the rolling 24h window).
-- Aggregator claims of "OpenAI newsroom items dated October 21–23" (via aiweekly.co) — Filter A: could not be matched to a specific openai.com URL in search results, so timestamp is unverifiable per Tier 2 requirements.
-- "AI News Today: October 21, 2026" roundup on pasqualepillitteri.it (last update Oct 21, 2026, 12:44 UTC) — Not on trusted-sources.md allow-list; also older than 24h.
-- Anthropic October 10, 2026 "cruelty to Claude" policy update (via ARY News secondary coverage) — Filter A: >24h old; no direct anthropic.com URL surfaced in search results.
-- Anthropic Oct 6/Oct 8 2026 Startups program / Genesis Mission commitments — Filter A: >24h old.
-- Various startup-blog roundups mentioning Deutsche Telekom AI savings, EU AI Act enforcement, Meta Neural Band, Boston Dynamics × DeepMind — Not on trusted-sources.md allow-list; dates ambiguous or outside the 24h window.
+## Dropped (candidates seen in search snippets but could not satisfy Tier 2 verification)
 
-> Note: 0 items passed both filters this run. Of ~8 candidates considered, all failed Filter A (24h freshness could not be verified from search snippets); Filter B was not reached because no candidate cleared A. The runtime is `WEBFETCH_BLOCKED`, which further limits verification to Tier 2 search snippets — and today's snippets did not surface a trusted-source URL with an explicit timestamp inside the rolling 24h window.
+- OpenAI math/physics "3 discoveries" follow-up — snippets อ้างถึง `openai.com/index/...` แต่ URL เฉพาะหน้าเรื่องนั้นไม่ปรากฏใน search results ของรอบนี้ มีแต่สำเนาจาก `foxnews.com`, `enoumen.substack.com`, `theirishchannel.com` ซึ่งไม่อยู่ใน trusted-sources.md
+- Anthropic IPO filing (security breaches, training halt, $650B compute commitments) — ปรากฏใน `foxnews.com/live-news/...` และ `zerohedge.com/...` และ `venturedailydigest.com/...` ซึ่งไม่อยู่ใน allow-list; URL ของ Bloomberg Technology (ซึ่งอยู่ใน allow-list) ไม่ปรากฏใน search results ของรอบนี้ มีแต่สำเนาบน subdomain `news.bloomberglaw.com` ซึ่งถือว่าเป็นคนละ domain
+- OpenAI–Google TPU deal reports — ปรากฏใน `zerohedge.com` และ `venturedailydigest.com` เท่านั้น ไม่ปรากฏใน `reuters.com`, `bloomberg.com`, `theverge.com`, `techcrunch.com` ซึ่งอยู่ใน allow-list
+- Google DeepMind Genie 4 — snippet อ้างแต่ไม่มี primary URL จาก `deepmind.google` หรือ `research.google` ปรากฏในผลค้นหา
+- Anthropic government deals / 40% discount Claude Enterprise — ปรากฏในสรุปรายวันของ aiweekly.co และ theneuron.ai เท่านั้น ไม่มี URL จาก anthropic.com, reuters.com, bloomberg.com
+
+> Note: 0 items passed both filters this run. Of ~5 candidate stories surfaced in searches, 5 failed Filter A because the only URLs surfaced for them came from non-allow-listed domains (aggregator/syndicator copies). 0 failed Filter B.
