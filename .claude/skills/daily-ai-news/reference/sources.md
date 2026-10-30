@@ -1,25 +1,34 @@
-# Sources — 2026-10-25
+# Sources — 2026-10-30
 
-Generated: 2026-10-25 (Asia/Bangkok)
+Generated: 2026-10-30 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-24-brief.md (0 URLs loaded — yesterday was a 0-story stub)
+Dedup against: articles/2026-10-29-brief.md (0 URLs loaded — yesterday was also an empty-day stub)
 
-No stories passed both filters this run.
+## Selected stories
 
-## Dropped
+_None._ 0 candidates passed both Filter A (24h fresh) and Filter B (not in YESTERDAYS_URLS).
 
-- https://techcrunch.com/category/artificial-intelligence/ — Filter A: trusted-source index page, no snippet with a timestamp within the last 24h (Asia/Bangkok)
-- https://www.theverge.com/ai-artificial-intelligence — Filter A: hub page, no article-level timestamp within 24h surfaced
-- https://aiweekly.co/ai-news-today — Filter A: snippet dated "October 23" (Microsoft MAI-DxO roundup) — >24h old at the Asia/Bangkok rolling window; also aiweekly.co is not on `reference/trusted-sources.md`
-- OpenAI DNS-bypass pause coverage (multiple syndicators) — Filter A: all datelines resolve to September 27–28, 2026 (>24h old); none of the carrying domains (yourstory.com, telanganatoday.com, propakistani.pk, newkerala.com, vktr.com) are on `reference/trusted-sources.md`
-- GPT-6 "Intelligent UI" / GPT-6 Sol & Luna rollout — Filter A: announcement dated October 7, 2026 (>24h old)
-- Anthropic usage-policy and IPO leak (mind-verse.de aggregator) — Filter A: October 14, 2026 (>24h old); also publisher not on trusted-sources list
-- Claude Opus 5.5 index-topping result — Filter A: September 26, 2026 (>24h old)
-- NVIDIA RTX Spark Windows PCs (IFA 2026 coverage) — Filter A: September 4, 2026 (>24h old)
-- Agentic AI Foundation adds four projects (AGNTCon, Oct 22) — Filter A: >24h old; also carrying coverage not on trusted-sources list
-- SoundHound AI acquires LivePerson — Filter A: no fresh (24h) timestamp surfaced; publisher not on trusted-sources list
-- Siriraj x MIT Hacking Medicine 2026 — Filter A: event scheduled October 20, 2026 (>24h old)
-- Multiple SEO-aggregator pages ("AI News Today Oct 25 2025", "AI News Today Oct 25 2026", "Ai News Today Oct 25 2025 — …") — Filter A: either wrong year (2025) or no verifiable timestamp; publishers not on trusted-sources list
+## Dropped (candidate rationale)
 
-> Note: 0 items passed both filters this run. Of ~12 candidates surveyed across trusted-sources and broader web queries, all failed Filter A (freshness within last 24h Asia/Bangkok). Filter B (dedup) did not engage because yesterday's brief was itself a 0-story stub with no URLs to dedupe against.
+- https://cryptobriefing.com/openai-highlights-ai-milestone-stresses-urgency-with-gpt-6-astra-launch/ — Filter A (domain not on `trusted-sources.md` allow-list) AND no verifiable 24h timestamp.
+- https://emergent.sh/news/anthropic-google-openai-prepare-new-ai-models — Filter A: dated "October 19, 2026" per snippet (>10 days old); also non-trusted domain.
+- https://www.bloomberg.com/news/videos/2026-03-27/anthropic-could-go-public-by-october-video — Filter A: dated March 27, 2026 (>7 months old). Trusted domain but far outside 24h window.
+- https://www.bloomberg.com/news/articles/2026-01-06/nvidia-cfo-says-revenue-forecast-has-only-gotten-more-bullish — Filter A: January 6, 2026 (>9 months old).
+- https://www.bloomberg.com/opinion/articles/2026-02-26/nvidia-earnings-75-margin-gives-ai-rivals-something-to-aim-for — Filter A: February 26, 2026 (>8 months old).
+- https://pasqualepillitteri.it/ai-news-today — Non-trusted domain (SEO aggregator); last-update marker reads "October 21, 2026" (>9 days old).
+- https://blog.mean.ceo/?p=11383 — Non-trusted domain.
+- https://www.technobezz.com/news/anthropic-and-openai-launch-competing-joint-ventures-with-wall-street-firms-for-enterprise-ai — Non-trusted domain; snippet references early-May 2026 reporting.
+- https://technewsday.com/openai-and-anthropic-go-head-to-head-with-same-day-ai-model-launches — Non-trusted domain.
+- https://www.infoquest.co.th/?p=553163 — Non-trusted domain (infoquest.co.th not on allow-list); snippet references GPT-5.6 announcement already in prior briefs.
+- https://www.thansettakij.com/technology/ai/* — Non-trusted domain (not on allow-list).
+- https://notebookspec.com/web/topics/openai — Non-trusted domain.
+- https://blogs.nvidia.com/blog/tag/artificial-intelligence/page/27 — Trusted domain but tag-listing page, not a dated article; no snippet timestamp.
+
+## Diagnosis
+
+- **Filter A (24h freshness) was the blocking filter for every candidate.**
+- Filter B (dedup) was not reached because yesterday's brief itself was an empty-day stub (0 URLs).
+- WebFetch is blocked at the runtime level (probe to `example.com` returned `getaddrinfo ENOTFOUND`), forcing Tier 2 (WebSearch snippet) for all verification. WebSearch index did not surface any trusted-sources.md article with an explicit "today" or "N hours ago" timestamp.
+
+> Note: 0 items passed both filters this run. Of ~13 candidates considered, all 13 failed Filter A (either non-trusted domain or timestamp >24h old). 0 reached Filter B.
