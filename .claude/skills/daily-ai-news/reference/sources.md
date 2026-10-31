@@ -1,34 +1,25 @@
-# Sources — 2026-10-30
+# Sources — 2026-10-31
 
-Generated: 2026-10-30 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-10-31 (Asia/Bangkok)
+Runtime: WEBFETCH_OK (partial — only anthropic.com และ microsoft.com เท่านั้นที่ resolvable; โดเมนอื่น ๆ ในรายการ allow-list ถูกบล็อกชั้น DNS/egress ใน Routine รอบนี้)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-29-brief.md (0 URLs loaded — yesterday was also an empty-day stub)
+Dedup against: articles/2026-10-30-brief.md (0 URLs loaded — yesterday was an empty-day stub)
 
-## Selected stories
+1. **From synthetic enterprise data evaluations to real Microsoft Copilot AI confidence**
+   - Publisher: Microsoft Research
+   - URL: https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/
+   - Published: October 30, 2026
+   - FreshnessCheck: ✅ within last 24h via explicit "October 30, 2026" byline on both the listing page และตัวโพสต์โดยตรง (WebFetch 2xx, body contains headline + date)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief was a stub with 0 URLs)
+   - Verification: Tier 1 — WebFetch (2xx on both the index page https://www.microsoft.com/en-us/research/blog/ และหน้าโพสต์เต็ม)
+   - Summary: Microsoft Research แนะนำ "Industry Evaluation Data Generation Platform" ที่สร้างสภาพแวดล้อม enterprise สังเคราะห์ล้วน ๆ จากข้อมูลสาธารณะ (O*NET occupational data, job postings, SEC filings) เพื่อประเมิน Copilot โดยไม่ต้องแตะข้อมูลลูกค้า มี automated pipeline สร้าง industry-specific queries สำหรับ pharmaceutical / capital markets / IT & software พร้อม quality checks ครอบคลุม structure, relevance, behavioral realism, และ content safety ทีมผู้เขียนรายงานการเพิ่มคุณภาพข้อมูลสังเคราะห์ 39% และวางกรอบนี้ไว้เป็นฐานของ "trust" สำหรับ Copilot ขณะที่ขยับเข้าสู่ multi-step agentic workflows ผู้เขียน: Somya Chatterjee, Harshita Sahijwani, Min Chen, Sushmitha Rajeswari Muppa, Dayquan Julienne, Irene Shaffer, Chandra Inguva, Jenny Chen, Minha Hwang, Sam Ade Jacobs
 
-_None._ 0 candidates passed both Filter A (24h fresh) and Filter B (not in YESTERDAYS_URLS).
+## Dropped
 
-## Dropped (candidate rationale)
+- https://www.anthropic.com/claude-opus-5-5 — Filter A (ambiguous): featured card แสดง "October 31, 2026" ด้านบน แต่ markup ภายในการ์ดและรายการ news feed ของเพจเดียวกันระบุวันที่ "Sep 22, 2026" — เพจไม่ระบุชัดว่าวันไหนถูก จึงไม่สามารถยืนยัน 24h ได้
+- Anthropic "AI for Science expands to foundations and research institutions" (Oct 28, 2026) — Filter A: 3 วันก่อน เกินกรอบ 24h
+- NVIDIA–Meta Muse / Vera Rubin partnership extension (Oct 27, 2026 ตาม search snippet) — Filter A: 4 วันก่อน + ไม่มี URL จาก allow-list ปรากฏใน search results
+- หลายรายการจาก search ที่ไม่ใช่โดเมน allow-list (cryptobriefing.com, toolnavs.com, ground.news, techradar.com ฯลฯ) — ตัดทั้งหมดเพราะไม่อยู่ใน reference/trusted-sources.md
 
-- https://cryptobriefing.com/openai-highlights-ai-milestone-stresses-urgency-with-gpt-6-astra-launch/ — Filter A (domain not on `trusted-sources.md` allow-list) AND no verifiable 24h timestamp.
-- https://emergent.sh/news/anthropic-google-openai-prepare-new-ai-models — Filter A: dated "October 19, 2026" per snippet (>10 days old); also non-trusted domain.
-- https://www.bloomberg.com/news/videos/2026-03-27/anthropic-could-go-public-by-october-video — Filter A: dated March 27, 2026 (>7 months old). Trusted domain but far outside 24h window.
-- https://www.bloomberg.com/news/articles/2026-01-06/nvidia-cfo-says-revenue-forecast-has-only-gotten-more-bullish — Filter A: January 6, 2026 (>9 months old).
-- https://www.bloomberg.com/opinion/articles/2026-02-26/nvidia-earnings-75-margin-gives-ai-rivals-something-to-aim-for — Filter A: February 26, 2026 (>8 months old).
-- https://pasqualepillitteri.it/ai-news-today — Non-trusted domain (SEO aggregator); last-update marker reads "October 21, 2026" (>9 days old).
-- https://blog.mean.ceo/?p=11383 — Non-trusted domain.
-- https://www.technobezz.com/news/anthropic-and-openai-launch-competing-joint-ventures-with-wall-street-firms-for-enterprise-ai — Non-trusted domain; snippet references early-May 2026 reporting.
-- https://technewsday.com/openai-and-anthropic-go-head-to-head-with-same-day-ai-model-launches — Non-trusted domain.
-- https://www.infoquest.co.th/?p=553163 — Non-trusted domain (infoquest.co.th not on allow-list); snippet references GPT-5.6 announcement already in prior briefs.
-- https://www.thansettakij.com/technology/ai/* — Non-trusted domain (not on allow-list).
-- https://notebookspec.com/web/topics/openai — Non-trusted domain.
-- https://blogs.nvidia.com/blog/tag/artificial-intelligence/page/27 — Trusted domain but tag-listing page, not a dated article; no snippet timestamp.
-
-## Diagnosis
-
-- **Filter A (24h freshness) was the blocking filter for every candidate.**
-- Filter B (dedup) was not reached because yesterday's brief itself was an empty-day stub (0 URLs).
-- WebFetch is blocked at the runtime level (probe to `example.com` returned `getaddrinfo ENOTFOUND`), forcing Tier 2 (WebSearch snippet) for all verification. WebSearch index did not surface any trusted-sources.md article with an explicit "today" or "N hours ago" timestamp.
-
-> Note: 0 items passed both filters this run. Of ~13 candidates considered, all 13 failed Filter A (either non-trusted domain or timestamp >24h old). 0 reached Filter B.
+> Note: 1 item passed both filters this run. Of ~8 candidates reviewed, 7 failed Filter A (เกิน 24h หรือ timestamp ambiguous), 0 failed Filter B.
+> Infra note: Egress ชั้น runtime ของ Routine รอบนี้บล็อก DNS ของ openai.com, techcrunch.com, theverge.com, deepmind.google, research.google, ai.meta.com, arxiv.org, nvidia.com, blognone.com, beartai.com, thairath.co.th, matichon.co.th, prachachat.net, thestandard.co, reuters.com, bloomberg.com, theinformation.com, wired.com, technologyreview.com, ft.com, arstechnica.com ทำให้แหล่งข่าว Tier 1 ที่ตรวจสอบได้ในรอบนี้เหลือเพียง anthropic.com และ microsoft.com เท่านั้น

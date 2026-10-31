@@ -1,3 +1,9 @@
-# Perspectives — 2026-10-30
+# Perspectives — 2026-10-31
 
-_No stories passed both Filter A (24h fresh) and Filter B (dedup) this run, so there are no per-story perspectives to render. See `reference/sources.md` for the dropped-candidate rationale._
+## 1. From synthetic enterprise data evaluations to real Microsoft Copilot AI confidence
+
+**อาจารย์ (มหาวิทยาลัย):** การใช้ข้อมูลสาธารณะ (O*NET, job postings, SEC filings) สังเคราะห์เป็น "องค์กรจำลอง" เพื่อทดสอบ LLM คือกรณีศึกษาที่ดีให้นักเรียนเห็นว่า **evaluation design** สำคัญไม่น้อยกว่า model training เอง — เมื่อข้อมูลลูกค้าจริงเข้าถึงไม่ได้ด้วยเหตุผล privacy/compliance วิศวกรต้องสร้าง "stand-in" ที่คงลักษณะเชิงโครงสร้างและพฤติกรรมของต้นฉบับไว้พอให้ผลประเมินมีความหมาย; วิชา software testing และ research methods สามารถหยิบ pipeline นี้มาถกเรื่อง validity ของ synthetic benchmarks ได้ตรง ๆ
+
+**ผู้เชี่ยวชาญด้าน AI:** จุดสำคัญทางเทคนิคคือ Microsoft ไม่ได้พูดเพียง "accuracy %" แต่ยกเกณฑ์ 4 ด้าน — structure, relevance, behavioral realism, content safety — ซึ่งสอดคล้องกับทิศทางของ enterprise LLM evaluation ปี 2026 ที่ให้น้ำหนัก **realism ของ workload** พอ ๆ กับความถูกต้องของคำตอบ ตัวเลข 39% improvement ควรอ่านอย่างระวังเพราะเป็น "คุณภาพของ synthetic data" ไม่ใช่ end-task accuracy; ที่น่าสังเกตอีกจุดคือการเจาะ 3 industry verticals (pharma, capital markets, IT/software) สะท้อนว่า generic benchmark เริ่มหมดประโยชน์เมื่อ agent ขยับไป multi-step workflow ที่ขึ้นกับ domain mental model
+
+**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่สร้างระบบ RAG หรือ agent ภายในองค์กร pipeline นี้มีสองบทเรียนที่หยิบไปใช้ได้ทันที — (1) ลงทุนกับ **evaluation harness** ที่ทำซ้ำได้โดยไม่ต้องแตะ production data เพราะทุกครั้งที่ test case ขึ้นกับข้อมูลจริงหมายถึง approval flow ด้าน legal/security ที่ชะลอ release cycle; (2) **แยก quality dimension ของ synthetic data ออกจาก task performance** — ถ้าทีมวัดแค่ end-to-end accuracy จะไม่รู้ว่าปัญหามาจาก model หรือจาก benchmark ที่ไม่สะท้อน workload จริง การมี 4-axis quality score ให้ตัดสินใจได้ว่าควรปรับ prompt, retrain, หรือซ่อม evaluation set
