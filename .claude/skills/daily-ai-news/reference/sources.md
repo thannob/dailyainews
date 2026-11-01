@@ -1,34 +1,28 @@
-# Sources — 2026-10-30
+# Sources — 2026-11-01
 
-Generated: 2026-10-30 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-11-01 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (anthropic.com reachable, but its most-recent post is Oct 28 — outside 24h window; openai.com, techcrunch.com, blognone.com, theverge.com, arstechnica.com all failed DNS/fetch)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-29-brief.md (0 URLs loaded — yesterday was also an empty-day stub)
+Dedup against: articles/2026-10-31-brief.md (1 URL loaded)
 
-## Selected stories
+1. **Alphabet, Amazon, Meta Report Negative Free Cash Flow After Heavy AI Investment**
+   - Publisher: Bloomberg
+   - URL: https://bloomberg.com/news/articles/2026-10-31/ai-enthusiasm-is-collapsing-and-tech-earnings-just-made-it-worse
+   - Published: 2026-10-31 (date embedded in canonical URL path `/news/articles/2026-10-31/`)
+   - FreshnessCheck: ✅ within last 24h — URL slug `/news/articles/2026-10-31/...` is a Bloomberg date-pinned permalink; Bloomberg's permalink scheme pins the publish date in the path. Oct 31 (BKK) sits inside the rolling 24h window relative to Nov 1 07:09 BKK.
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's brief carried only one URL on microsoft.com/en-us/research; bloomberg.com did not appear in that set.
+   - Verification: Tier 2 — WebSearch snippet (Bloomberg domain on trusted-sources.md as "Bloomberg Technology")
+   - Summary: Bloomberg reports that Alphabet, Amazon, and Meta posted negative free cash flow after heavy AI spending, framing the result as an escalation of investor unease about the AI capex boom. The accompanying commentary says pessimism has reached a point where even companies with stable free cash flow are getting hit, with the URL slug characterising the moment as "AI enthusiasm is collapsing and tech earnings just made it worse."
 
-_None._ 0 candidates passed both Filter A (24h fresh) and Filter B (not in YESTERDAYS_URLS).
+## Dropped
 
-## Dropped (candidate rationale)
+- https://www.anthropic.com/news/ai-for-science-expands-to-foundations-and-research-institutions — Filter A (>24h): Anthropic's own newsroom lists it as Oct 28, 2026 — 4 days old.
+- https://www.anthropic.com/news/early-progress-on-accelerating-drug-development-with-claude — Filter A (>24h): Oct 27, 2026 — 5 days old.
+- https://www.anthropic.com/news/anthropic-s-1 (Anthropic S-1 IPO filing) — Filter A (>24h): Oct 26, 2026 — 6 days old.
+- https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/ — Filter B (dedup): already shipped in articles/2026-10-31-brief.md yesterday.
+- Candidate: Reuters / CNBC-reported OpenAI funding round at ~$1.25T — DROP: no trusted-source URL surfaced; aggregator-only coverage. Primary Reuters/CNBC URL not visible in search snippets for a trusted domain.
+- Candidate: Reddit Q4 miss blaming Google AI Overviews — DROP: no trusted-source URL surfaced; all hits were aggregators and the earnings-date premise did not match a Q4 release (Q4 reports typically come in February).
+- Candidate: UBS "12,700 personal AI agents" — DROP: only surfaced in aggregator (aiagentsdirectory.com), not a trusted-sources domain.
+- Candidate: Dailynews.co.th report on AI financial-system attacks — DROP: dailynews.co.th is not on trusted-sources.md.
 
-- https://cryptobriefing.com/openai-highlights-ai-milestone-stresses-urgency-with-gpt-6-astra-launch/ — Filter A (domain not on `trusted-sources.md` allow-list) AND no verifiable 24h timestamp.
-- https://emergent.sh/news/anthropic-google-openai-prepare-new-ai-models — Filter A: dated "October 19, 2026" per snippet (>10 days old); also non-trusted domain.
-- https://www.bloomberg.com/news/videos/2026-03-27/anthropic-could-go-public-by-october-video — Filter A: dated March 27, 2026 (>7 months old). Trusted domain but far outside 24h window.
-- https://www.bloomberg.com/news/articles/2026-01-06/nvidia-cfo-says-revenue-forecast-has-only-gotten-more-bullish — Filter A: January 6, 2026 (>9 months old).
-- https://www.bloomberg.com/opinion/articles/2026-02-26/nvidia-earnings-75-margin-gives-ai-rivals-something-to-aim-for — Filter A: February 26, 2026 (>8 months old).
-- https://pasqualepillitteri.it/ai-news-today — Non-trusted domain (SEO aggregator); last-update marker reads "October 21, 2026" (>9 days old).
-- https://blog.mean.ceo/?p=11383 — Non-trusted domain.
-- https://www.technobezz.com/news/anthropic-and-openai-launch-competing-joint-ventures-with-wall-street-firms-for-enterprise-ai — Non-trusted domain; snippet references early-May 2026 reporting.
-- https://technewsday.com/openai-and-anthropic-go-head-to-head-with-same-day-ai-model-launches — Non-trusted domain.
-- https://www.infoquest.co.th/?p=553163 — Non-trusted domain (infoquest.co.th not on allow-list); snippet references GPT-5.6 announcement already in prior briefs.
-- https://www.thansettakij.com/technology/ai/* — Non-trusted domain (not on allow-list).
-- https://notebookspec.com/web/topics/openai — Non-trusted domain.
-- https://blogs.nvidia.com/blog/tag/artificial-intelligence/page/27 — Trusted domain but tag-listing page, not a dated article; no snippet timestamp.
-
-## Diagnosis
-
-- **Filter A (24h freshness) was the blocking filter for every candidate.**
-- Filter B (dedup) was not reached because yesterday's brief itself was an empty-day stub (0 URLs).
-- WebFetch is blocked at the runtime level (probe to `example.com` returned `getaddrinfo ENOTFOUND`), forcing Tier 2 (WebSearch snippet) for all verification. WebSearch index did not surface any trusted-sources.md article with an explicit "today" or "N hours ago" timestamp.
-
-> Note: 0 items passed both filters this run. Of ~13 candidates considered, all 13 failed Filter A (either non-trusted domain or timestamp >24h old). 0 reached Filter B.
+> Note: 1 item passed both filters this run. Of 8 candidates, 4 failed Filter A (>24h), 1 failed Filter B (dedup), and 3 failed the trusted-sources allow-list (not an eligibility filter in the main table but a hard precondition from trusted-sources.md).
