@@ -1,3 +1,5 @@
-# Perspectives — 2026-10-30
+# Perspectives — 2026-11-02
 
-_No stories passed both Filter A (24h fresh) and Filter B (dedup) this run, so there are no per-story perspectives to render. See `reference/sources.md` for the dropped-candidate rationale._
+0 stories selected this run — no perspectives to generate.
+
+See `sources.md` for the breakdown of why Filter A left nothing to work with.

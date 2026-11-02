@@ -1,34 +1,24 @@
-# Sources — 2026-10-30
+# Sources — 2026-11-02
 
-Generated: 2026-10-30 (Asia/Bangkok)
+Generated: 2026-11-02 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-29-brief.md (0 URLs loaded — yesterday was also an empty-day stub)
+Dedup against: articles/2026-11-01-brief.md (1 URL loaded)
 
-## Selected stories
+0 items passed both filters this run.
 
-_None._ 0 candidates passed both Filter A (24h fresh) and Filter B (not in YESTERDAYS_URLS).
+## Dropped
 
-## Dropped (candidate rationale)
+- https://cnn.com/2026/10/26/tech/anthropic-files-ipo — Filter A (>24h): "URL slug 2026/10/26 is >6 days old"
+- https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26 — Filter A (>24h): "URL slug 10-27-26 is ~6 days old" (also: foxnews.com not on trusted-sources.md)
+- https://www.foxnews.com/live-news/ai-news-anthropic-openai-october-28 — Filter A (>24h): "URL slug october-28 is ~5 days old" (also: foxnews.com not on trusted-sources.md)
+- https://videocardz.com/newz/anthropic-restricts-claude-code-from-recreating-existing-games-developers-report-blocked-projects — Filter A (ambiguous — snippet referenced Nov 1 but publisher videocardz.com is not on trusted-sources.md; no trusted-source URL for the story appeared in search results)
+- https://aiweekly.co/ai-news-today/anthropic-news — Filter A (>24h): "titled 'Anthropic News Today, October 30'" (also: aggregator, not on trusted-sources.md)
+- https://cryptobriefing.com/anthropic-claude-code-blocks-video-game-clones/ — publisher not on trusted-sources.md; story originated ~Oct 27
+- https://news.bloomberglaw.com/artificial-intelligence/netflix-acquires-ben-affleck-founded-ai-moviemaking-business — Filter A (>24h): "Bloomberg Law dates announcement to March 5, 2026"; follow-on SEC-filing confirmation dates to July 17, 2026 — both well outside 24h
+- https://techcrunch.com/?p=3144113 (Ben Affleck, TechCrunch) — Filter A (>24h): same Netflix/InterPositive story, March/July 2026 dates
+- https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html — Filter A (>24h): "URL slug 2026/10/26" (also: cnbc.com not on trusted-sources.md)
+- https://buttondown.com/ai-digest-en/archive/openai-quietly-gates-gpt-55-cyber-after-pledging/ — publisher not on trusted-sources.md; aggregator with no clear timestamp
+- https://www.cnn.com/2026/10/26/tech/anthropic-files-ipo — Filter A (>24h); also cnn.com not on trusted-sources.md
 
-- https://cryptobriefing.com/openai-highlights-ai-milestone-stresses-urgency-with-gpt-6-astra-launch/ — Filter A (domain not on `trusted-sources.md` allow-list) AND no verifiable 24h timestamp.
-- https://emergent.sh/news/anthropic-google-openai-prepare-new-ai-models — Filter A: dated "October 19, 2026" per snippet (>10 days old); also non-trusted domain.
-- https://www.bloomberg.com/news/videos/2026-03-27/anthropic-could-go-public-by-october-video — Filter A: dated March 27, 2026 (>7 months old). Trusted domain but far outside 24h window.
-- https://www.bloomberg.com/news/articles/2026-01-06/nvidia-cfo-says-revenue-forecast-has-only-gotten-more-bullish — Filter A: January 6, 2026 (>9 months old).
-- https://www.bloomberg.com/opinion/articles/2026-02-26/nvidia-earnings-75-margin-gives-ai-rivals-something-to-aim-for — Filter A: February 26, 2026 (>8 months old).
-- https://pasqualepillitteri.it/ai-news-today — Non-trusted domain (SEO aggregator); last-update marker reads "October 21, 2026" (>9 days old).
-- https://blog.mean.ceo/?p=11383 — Non-trusted domain.
-- https://www.technobezz.com/news/anthropic-and-openai-launch-competing-joint-ventures-with-wall-street-firms-for-enterprise-ai — Non-trusted domain; snippet references early-May 2026 reporting.
-- https://technewsday.com/openai-and-anthropic-go-head-to-head-with-same-day-ai-model-launches — Non-trusted domain.
-- https://www.infoquest.co.th/?p=553163 — Non-trusted domain (infoquest.co.th not on allow-list); snippet references GPT-5.6 announcement already in prior briefs.
-- https://www.thansettakij.com/technology/ai/* — Non-trusted domain (not on allow-list).
-- https://notebookspec.com/web/topics/openai — Non-trusted domain.
-- https://blogs.nvidia.com/blog/tag/artificial-intelligence/page/27 — Trusted domain but tag-listing page, not a dated article; no snippet timestamp.
-
-## Diagnosis
-
-- **Filter A (24h freshness) was the blocking filter for every candidate.**
-- Filter B (dedup) was not reached because yesterday's brief itself was an empty-day stub (0 URLs).
-- WebFetch is blocked at the runtime level (probe to `example.com` returned `getaddrinfo ENOTFOUND`), forcing Tier 2 (WebSearch snippet) for all verification. WebSearch index did not surface any trusted-sources.md article with an explicit "today" or "N hours ago" timestamp.
-
-> Note: 0 items passed both filters this run. Of ~13 candidates considered, all 13 failed Filter A (either non-trusted domain or timestamp >24h old). 0 reached Filter B.
+> Note: 0 items passed both filters this run. Of 11+ candidates considered, 11+ failed Filter A (none produced a trusted-source URL with a clearly dated-within-24h timestamp in search snippets); Filter B was not reached because the Filter A pool was empty. Runtime label WEBFETCH_BLOCKED meant Tier 1 (full fetch + timestamp from page body) was unavailable for any URL — only Tier 2 (WebSearch snippet from a trusted-sources.md domain) was in play, and no such snippet surfaced a story with a confirmable 24h-fresh timestamp.
