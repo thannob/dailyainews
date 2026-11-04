@@ -1,5 +1,5 @@
-# Perspectives — 2026-11-02
+# Perspectives — 2026-11-04
 
-0 stories selected this run — no perspectives to generate.
+_No stories passed Filter A (rolling 24h) this run, so there is nothing to react to._
 
-See `sources.md` for the breakdown of why Filter A left nothing to work with.
+See `reference/sources.md` for the breakdown of dropped candidates and the DNS-reachability notes. The next run will try again.
