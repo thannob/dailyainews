@@ -1,46 +1,26 @@
-# Sources — 2026-11-05
+# Sources — 2026-11-06
 
-Generated: 2026-11-05 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (effective — only anthropic.com and microsoft.com/en-us/research resolve in this session; all press/analysis trusted domains and all Thai trusted domains fail `getaddrinfo ENOTFOUND`)
-Freshness window: rolling 24h (Asia/Bangkok) → [2026-11-04 ~midday Asia/Bangkok, 2026-11-05 now]
-Dedup against: articles/2026-11-04-brief.md (0 URLs loaded — yesterday was also a 0-story stub, no citations)
+Generated: 2026-11-06 (Asia/Bangkok)
+Runtime: WEBFETCH mixed — most trusted-source domains DNS-blocked (techcrunch, theverge, openai, blognone, beartai, thairath, matichon, prachachat, thestandard, nectec, depa, deepmind, meta, nvidia, research.google, arxiv, wired, technologyreview, reuters, bloomberg, ft, theinformation). Reachable: microsoft.com, anthropic.com.
+Freshness window: rolling 24h (Asia/Bangkok), i.e. 2026-11-05 ~ 2026-11-06
+Dedup against: articles/2026-11-05-brief.md (0 URLs loaded — yesterday was a stub)
 
-## Selected
-_None._ Zero stories passed both filters this run.
+1. **Formally verifying agent-written full-stack web apps with PDD Kit**
+   - Publisher: Microsoft Research
+   - URL: https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/
+   - Published: November 5, 2026
+   - FreshnessCheck: ✅ within last 24h — publication date "November 5, 2026" surfaced in the fetched article body and listing page; 1 day before today 2026-11-06 Asia/Bangkok.
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday was a stub with zero URLs; host microsoft.com did not appear).
+   - Verification: Tier 1 — WebFetch (microsoft.com responded 2xx; fetched headline, authors, body, and technical claims matched the research-blog listing page).
+   - Summary: Microsoft Research introduces PDD Kit, a research-preview toolkit for "Proof-Driven Development" that turns a developer's intent into formal Verus specifications, has a coding agent produce Rust code plus proof annotations, and runs the proofs in CI. A 5,000-line case study on a Rust storefront (Axum/SQLite backend, Leptos/WebAssembly frontend) formally verified login logic with eight `ensures` clauses on `login_flow` and surfaced existing bugs. The authors flag it as a research prototype — Rust-only, proofs still take effort — and position it as a shift of review focus toward intent rather than a replacement for human review.
 
 ## Dropped
+- Anthropic news index — latest post "AI for Science expands to foundations and research institutions" dated Oct 28, 2026 → Filter A (>24h, 9 days old).
+- Microsoft Research — "From synthetic enterprise data evaluations to real Microsoft Copilot AI confidence" dated Oct 30, 2026 → Filter A (>24h, 7 days old).
+- Catherine Wu moves from Anthropic to OpenAI (Nov 5) — surfaced only on newsbytesapp.com, which is NOT in `trusted-sources.md` → cannot cite.
+- Fox News live blog "Anthropic IPO filing reveals AI security breaches, training halt" (10-27-26) — foxnews.com not in `trusted-sources.md`; and it is also Filter-A-aged (10 days).
+- Yahoo Finance live Anthropic-IPO page — finance.yahoo.com not in `trusted-sources.md`.
+- PDD Kit coverage on alphasignal.ai / hermes-ai.net / aiposthub.com — secondary blogs, not in `trusted-sources.md`. (Primary microsoft.com URL used instead.)
+- Various "cheaper models" / Claude Opus 5.5 / GPT-6 rumours surfaced by cryptobriefing.com / kucoin.com / thejoai.com — none in `trusted-sources.md`.
 
-### Tier 1 attempt — WebFetch succeeded (but index is stale)
-- `https://www.anthropic.com/news` — newest post 2026-10-28 "AI for Science expands to foundations and research institutions" — Filter A fail: 8 days old.
-- `https://www.microsoft.com/en-us/research/blog/` — newest post 2026-10-30 "From synthetic enterprise data evaluations to real Microsoft Copilot AI confidence" — Filter A fail: 6 days old.
-
-### Tier 1 attempt — WebFetch DNS-blocked this session
-`getaddrinfo ENOTFOUND` for every one of these, so no Tier 1 was possible:
-- International press/analysis: techcrunch.com, theverge.com, reuters.com, bloomberg.com, ft.com, theinformation.com, arstechnica.com, wired.com, technologyreview.com
-- Primary / research: openai.com, deepmind.google, research.google, ai.meta.com, blogs.nvidia.com, arxiv.org
-- Thai sources: blognone.com, beartai.com, thairath.co.th, matichon.co.th, prachachat.net, thestandard.co, nectec.or.th, depa.or.th
-
-### Tier 2 attempts — WebSearch snippets (no trusted-source URL met the bar)
-Index returned SEO-spam aggregator pages and off-allow-list outlets. Nothing surfaced as a URL on a `trusted-sources.md` domain carrying a Nov 4 or Nov 5, 2026 timestamp.
-
-Candidates seen as Nov 4, 2026 events in aggregator snippets (theneuron.ai, aiweekly.co, aiagentsdirectory.com, samonai.substack.com, riorundown.substack.com) — none of these outlets are on the allow-list, and no trusted-source URL for the same stories appeared in search results:
-
-- "Anthropic warns RSI very close / Jack Clark pulls full RSI timeline to 2027" — only on aiweekly.co, besthub.dev, cryptobriefing.com, rootdata.com. Primary Anthropic blog has no Nov-dated post on this.
-- "Anthropic 3.5GW → 7GW compute expansion" — sourced to NYT (not on allow-list). No TechCrunch/Reuters/Verge mirror URL surfaced.
-- "Claude Code product leader Cat Wu left Anthropic" — unverified; competing search results still list her as Head of Product, Claude Code (May 2026 interview).
-- "AMD acquires Taalas $2.9B" — turns out this was announced Aug 6, 2026 per sdxcentral.com / AMD IR, not Nov 4. Would fail Filter A even if trusted URL existed.
-- "Meta acquires Conductor (AI coding agents)" — no trusted-source URL in search; closest real Meta acquisitions are Manus (Dec 2025) and Moltbook (Mar 2026), both unrelated.
-- "Apple opens Siri AI integration via iOS 27.3 beta" — cited to CNBC (not on allow-list); no Verge/TechCrunch mirror URL in results.
-- "Google K-12 Search off by default until admin enables" — actual trusted-source coverage dates to Jul–Aug 2026. Filter A fail.
-- "CrowdStrike acquires Fiddler AI + Dreadnode $495M" — no trusted-source URL in search results.
-- "Nvidia asks cloud providers to limit Chinese customers to 49%" — no trusted-source URL in search results.
-- "Time.com — How AI Backlash Shaped the 2026 Midterms" — URL has /2026/11/04/ slug but time.com is not on the allow-list.
-
-### Tier 2 attempts — Thai queries
-- `ข่าว AI วันนี้ ปัญญาประดิษฐ์` → general evergreen articles and 2024-era pieces, no 24h-fresh trusted-source URL
-- `blognone AI ปัญญาประดิษฐ์ พฤศจิกายน 2569` → zero blognone.com hits
-- `blognone ข่าวใหม่ล่าสุด เมื่อวาน AI OpenAI` → zero blognone.com hits; mostly OpenAI developer blog + unrelated pages
-
-> Note: 0 items passed both filters this run. Of ~20 unique candidates considered (both Tier 1 and Tier 2 attempts), every one failed Filter A — either the publish timestamp was outside the rolling 24h window, or the only domains carrying the story were off the allow-list. Filter B was never reached (yesterday's brief was itself a 0-story stub, so YESTERDAYS_URLS was empty).
-
-Operator note: the DNS block on press/analysis hosts (techcrunch, theverge, reuters, bloomberg, ft, arstechnica, theinformation) and on every Thai outlet is severe enough that Tier 1 is only available for primary research blogs. Consider widening the session's network allow-list or adding more primary research blogs (which are already allow-listed but don't publish daily) to the trusted sources, or accept that stub-days are the norm under these constraints.
+> Note: 1 item passed both filters this run. Of ~15+ candidates surfaced by WebSearch/WebFetch probes, most failed Filter A (outside 24h window) and the remainder were on non-trusted-source domains. No Thai-language trusted source could be reached today — every allow-listed Thai domain (blognone, beartai, thairath, matichon, prachachat, thestandard, nectec, depa) returned DNS ENOTFOUND, and WebSearch did not surface any 24h-fresh article URL from those domains.

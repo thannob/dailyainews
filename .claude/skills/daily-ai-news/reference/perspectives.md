@@ -1,5 +1,9 @@
-# Perspectives — 2026-11-04
+# Perspectives — 2026-11-06
 
-_No stories passed Filter A (rolling 24h) this run, so there is nothing to react to._
+## 1. Formally verifying agent-written full-stack web apps with PDD Kit
 
-See `reference/sources.md` for the breakdown of dropped candidates and the DNS-reachability notes. The next run will try again.
+**อาจารย์ (มหาวิทยาลัย):** งานชิ้นนี้ทำให้ Formal Methods ซึ่งเคยถูกจำกัดอยู่ในห้องวิจัยกลับมาสู่โลกของนักพัฒนาผ่านเวิร์กโฟลว์ที่ใช้เอเจนต์เขียนโค้ดและเขียน spec ควบคู่กัน — เป็นโอกาสดีที่จะใช้สอน "ความต่างระหว่างการตรวจว่าโค้ดดูถูก (review)" กับ "การพิสูจน์ว่าโค้ดถูกต้องตาม specification (proof)" ให้นักศึกษาวิศวกรรมซอฟต์แวร์เข้าใจทั้งขอบเขตและข้อจำกัดของแต่ละวิธี โดยเฉพาะแนวคิด Trusted Computing Base ที่ยังต้องอาศัย assumption เช่น bcrypt กับ clock
+
+**ผู้เชี่ยวชาญด้าน AI:** PDD Kit สะท้อนความเป็นจริงของยุค coding agent: โค้ดถูกผลิตเร็วเกินที่มนุษย์จะ review ได้ทันบรรทัดต่อบรรทัด และเทสต์ที่เอเจนต์เขียนเองก็ validate implementation ของตัวเองซึ่งเสี่ยงต่อ "ความครอบคลุมปลอม" สิ่งที่ใหม่จริงคือ workflow สามขั้น (plan → prove → ship) กับการใช้ reviewer-agent สอง instance ตรวจ spec และการทำ mutation check เพื่อยืนยันว่า spec clause แต่ละข้อ "กินงาน" จริง ส่วนข้อจำกัดใหญ่คือ Verus ยังรองรับเฉพาะ Rust และการพิสูจน์ยังใช้แรงคนเยอะ
+
+**โปรแกรมเมอร์มืออาชีพ:** ถ้าคุณดูแลโค้ดที่ความถูกต้องสำคัญ (auth, payments, token signing) การ "กดดันเอเจนต์ให้ทำ proof แทน test" คือทิศทางที่น่าทดลอง แม้ของจริงจะยังเป็น research prototype — แต่ให้ระวังว่า proof ครอบคลุมแค่ส่วนที่ Verus เอื้อถึงเท่านั้น งาน I/O, crypto, DB lookup ยังต้องใช้สัญญา (contract) + เทสต์ประกอบ และต้นทุนด้านเวลาในการเขียน spec กับพิสูจน์ยังเทียบกับการเขียนเทสต์แบบเดิมไม่ได้ง่าย ๆ ควรใช้กับส่วนเล็ก ๆ ที่มีมูลค่าสูงก่อน ไม่ใช่ทั้ง codebase
