@@ -1,21 +1,34 @@
-# Sources — 2026-10-29
+# Sources — 2026-11-08
 
-Generated: 2026-10-29 (Asia/Bangkok)
+Generated: 2026-11-08 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-10-28-brief.md (0 URLs loaded — yesterday was a stub)
+Dedup against: articles/2026-11-07-brief.md (3 URLs loaded)
 
-**ไม่มีข่าวที่ผ่านทั้งสองตัวกรองในรอบนี้**
+## Summary
 
-- Filter A (รอบ 24h) — เป็นตัวบล็อกหลัก: WebSearch ในรอบนี้ไม่สามารถคืน URL จากโดเมนใน `reference/trusted-sources.md` ที่มี timestamp อยู่ในช่วง 2026-10-28/29 (Asia/Bangkok) ได้
-- Filter B (dedup) — ไม่ใช่ตัวบล็อกในรอบนี้ (ฉบับ 2026-10-28 เป็น stub ว่าง, มี 0 URLs ให้เทียบ)
+0 stories passed both Filter A (24h freshness) and Filter B (not in yesterday's brief).
 
-## Dropped (candidates seen in search snippets but could not satisfy Tier 2 verification)
+The shortfall came primarily from **Filter A (no fresh 24h news on trusted-source domains)**.
+Secondary cause: **Filter B** caught three TechCrunch/Blognone candidates that TechCrunch/Blognone
+returned as top results, because those exact URLs appeared in yesterday's brief.
 
-- OpenAI math/physics "3 discoveries" follow-up — snippets อ้างถึง `openai.com/index/...` แต่ URL เฉพาะหน้าเรื่องนั้นไม่ปรากฏใน search results ของรอบนี้ มีแต่สำเนาจาก `foxnews.com`, `enoumen.substack.com`, `theirishchannel.com` ซึ่งไม่อยู่ใน trusted-sources.md
-- Anthropic IPO filing (security breaches, training halt, $650B compute commitments) — ปรากฏใน `foxnews.com/live-news/...` และ `zerohedge.com/...` และ `venturedailydigest.com/...` ซึ่งไม่อยู่ใน allow-list; URL ของ Bloomberg Technology (ซึ่งอยู่ใน allow-list) ไม่ปรากฏใน search results ของรอบนี้ มีแต่สำเนาบน subdomain `news.bloomberglaw.com` ซึ่งถือว่าเป็นคนละ domain
-- OpenAI–Google TPU deal reports — ปรากฏใน `zerohedge.com` และ `venturedailydigest.com` เท่านั้น ไม่ปรากฏใน `reuters.com`, `bloomberg.com`, `theverge.com`, `techcrunch.com` ซึ่งอยู่ใน allow-list
-- Google DeepMind Genie 4 — snippet อ้างแต่ไม่มี primary URL จาก `deepmind.google` หรือ `research.google` ปรากฏในผลค้นหา
-- Anthropic government deals / 40% discount Claude Enterprise — ปรากฏในสรุปรายวันของ aiweekly.co และ theneuron.ai เท่านั้น ไม่มี URL จาก anthropic.com, reuters.com, bloomberg.com
+The runtime was WEBFETCH_BLOCKED (example.com and techcrunch.com both returned ENOTFOUND on the
+WebFetch probe), so every candidate had to be verified via WebSearch snippet (Tier 2) against
+the trusted-source allow-list. No candidate cleared both filters.
 
-> Note: 0 items passed both filters this run. Of ~5 candidate stories surfaced in searches, 5 failed Filter A because the only URLs surfaced for them came from non-allow-listed domains (aggregator/syndicator copies). 0 failed Filter B.
+## Dropped
+
+- https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/ — Filter B (dedup): already in articles/2026-11-07-brief.md
+- https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/ — Filter B (dedup): already in articles/2026-11-07-brief.md
+- https://www.blognone.com/node/152112 — Filter B (dedup): already in articles/2026-11-07-brief.md
+- https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/ — Filter A (>24h): published 2026-11-05 per URL slug, 3 days before now
+- https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/ — Filter A (>24h): published 2026-11-05 per URL slug, 3 days before now
+- https://engadget.com/2234335/openai-daybreak-model-less-likely-to-refuse-higher-risk-tasks — Not on trusted-sources.md (engadget.com not in allow-list)
+- https://cyberscoop.com/openai-daybreak-expansion-specialized-cyber-services/ — Not on trusted-sources.md (cyberscoop.com not in allow-list)
+- https://www.itpro.com/security/openai-expands-daybreak-cyber-program-new-tools-partnerships-and-a-cyber-focused-gpt-5-5-aim-to-help-patch-the-world — Not on trusted-sources.md (itpro.com not in allow-list)
+- https://forbes.com/sites/johnwerner/2026/11/06/dont-be-mean-to-claude-and-other-new-rules-from-anthropic — Not on trusted-sources.md (forbes.com not in allow-list)
+- https://aiweekly.co/ai-news-today — Not on trusted-sources.md (aiweekly.co is an aggregator, not in allow-list)
+- https://dev.to/hiroki-ii-ai/ai-daily-digest-november-8-2026-openai-taps-hacktron-for-bug-hunts-muse-wonder-for-everyone-gin — Not on trusted-sources.md; aggregator with unverifiable primary source
+
+> Note: 0 items passed both filters this run. Of ~10 inspected candidates: 3 failed Filter B (already in yesterday's brief), 2 failed Filter A (>24h old), 5 failed the trusted-sources allow-list.
