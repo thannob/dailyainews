@@ -1,30 +1,27 @@
-# Sources — 2026-11-09
+# Sources — 2026-11-11
 
-Generated: 2026-11-09 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-11-11 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (example.com and techcrunch.com both returned ENOTFOUND in probes; no site resolved)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-11-08-brief.md (0 URLs loaded — yesterday was an empty-day stub)
+Dedup against: articles/2026-11-10-brief.md (1 URL loaded — https://www.anthropic.com/claude/fable)
 
-1. **Nvidia will investigate CEO Jensen Huang's relationship with possible Chinese spy**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/
-   - Published: Sunday, November 8, 2026 (URL slug /2026/11/08/; snippet: "Nvidia's board of directors announced Sunday...")
-   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/11/08/` and snippet phrase "announced Sunday"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday's brief was an empty-day stub with 0 cited URLs)
-   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime)
-   - Summary: Nvidia's board announced on Sunday, November 8, 2026 an independent investigation following reports that CEO Jensen Huang was targeted by a Chinese spy operation. The probe — overseen by a committee of independent directors with outside independent counsel — follows reporting by The New York Times and the Financial Times about his relationship with Alice Huang, a former Megaspeed executive. Huang acknowledged an affair in an internal memo and said he will cooperate with the investigation; the board said it has "no reason to believe that either national security or NVIDIA secrets were compromised."
+1. **Anthropic launches IPO roadshow with $70-$78 price range and 825M shares, ticker ANT on Nasdaq**
+   - Publisher: Anthropic (primary announcement)
+   - URL: https://www.anthropic.com/news/roadshow-launch
+   - Published: "Today" (announcement snippet: "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.") — corroborated by SiliconANGLE dated-URL `/2026/11/10/anthropic-launches-ipo-roadshow-with-64b-fundraising-goal/` and KuCoin flash "Anthropic Plans IPO Roadshow, Scheduled for November 10"
+   - FreshnessCheck: ✅ within last 24h via SiliconANGLE URL slug `/2026/11/10/` + primary snippet "Today Anthropic, PBC launched the roadshow" (today = Nov 10 BKK-adjacent; publication less than 24h before this run)
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS — yesterday's Anthropic URL was `anthropic.com/claude/fable`; today's is `anthropic.com/news/roadshow-launch`, a different path reporting a genuinely different event (IPO roadshow launch, not a model release)
+   - Verification: Tier 2 — WebSearch snippet (WEBFETCH_BLOCKED runtime; anthropic.com is on trusted-sources.md allow-list; URL appeared in multiple independent search results)
+   - Summary: Anthropic, PBC launched the roadshow for its proposed IPO of Class A common stock on Nov 10, 2026. The offering is for 825,000,000 shares at an expected price range of $70.00–$78.00 per share, to be listed on the Nasdaq Global Select Market under the symbol "ANT." No pricing date or first trading day has been announced; the Wall Street Journal reported a possible Nov 19–20 trading window.
 
 ## Dropped
 
-- https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/ — Filter A (>24h): URL slug 2026/11/06 is 3 days old
-- https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/ — Filter A (>24h): URL slug 2026/11/04 is 5 days old
-- https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/ — Filter A (>24h): Nov 4, outside window
-- https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/ — Filter A (>24h): Nov 5, outside window
-- https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/ — Filter A (>24h): Nov 2, outside window
-- Anthropic $3.4B / 1.7GW gas generators deal — FT reported Nov 8 but no direct ft.com URL surfaced in search results; only secondhand coverage from non-trusted outlets. Tier 2 requires the URL itself to be on a trusted domain and visible in search results.
-- Apple agentic Siri (Gurman Power On, Nov 8) — primary is Bloomberg, but no direct bloomberg.com URL surfaced in search results (only MacRumors, 9to5Mac, etc., which are not on the trusted-sources.md allow-list).
-- DOJ Super Intelligence Task Force — launched Nov 5, outside 24h window.
-- OpenAI cybersecurity model / Daybreak Red updates — Nov 5, outside 24h window.
-- Bloomberg's Nvidia-probe URL (https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity) — same core story as the selected TechCrunch item; one slot = one story.
+- https://aiweekly.co/ai-news-today/openai-news — Filter A (>24h): page indexed dates Nov 4-5 (OpenAI community commitments, Pierre Computer acquisition); too old
+- Multiple Nov 6-8 Anthropic IPO commentary pieces (Reuters "investor doubt," FourWeekMBA, ifre.com) — Filter A (>24h): dated Nov 5-8, older than 24h window
+- https://thursdai.news/releases/2026-11 (Kimi K3.1 Pro, Ripple-65B) — Filter A (>24h): release roundup is cumulative across the week of Nov 5; no explicit Nov 10-11 timestamp
+- https://aiproductivity.ai/... Meta Muse Wonder rollout — Filter A (>24h): Nov 6
+- https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote — Filter A (>24h): Oct 21
+- https://ai.meta.com/blog/ posts — Filter A (>24h): most recent posts are October 2026
+- https://deepmind.google/discover/blog/ agentic cheminformatics — Filter A (>24h): Nov 3
 
-> Note: 1 item passed both filters this run. Of ~12 candidates examined, ~10 failed Filter A (outside 24h window), 0 failed Filter B (yesterday's brief had no cited URLs — empty-day stub), and ~2 failed the Tier 2 trusted-URL requirement (story real but no trusted-domain URL surfaced in search results).
+> Note: 1 item passed both filters this run. Of ~15 candidates examined, 14 failed Filter A (not within 24h — most were dated Nov 3-8, 2026, which is 3-8 days outside the rolling 24h window), and 0 failed Filter B.
