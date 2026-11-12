@@ -1,7 +1,3 @@
-# Perspectives — 2026-11-10
+# Perspectives — 2026-11-12
 
-## 1. Anthropic เปิดตัว Claude Fable 5.2 และ Mythos 5.2 ก่อนเข้าตลาดหลักทรัพย์
-
-**อาจารย์ (มหาวิทยาลัย):** จังหวะเปิดตัวรุ่น 5.2 ก่อนสัปดาห์เปิด IPO marketing ของ Anthropic เป็นกรณีศึกษาสำคัญเรื่องเศรษฐศาสตร์การเมืองของการปล่อยโมเดล — ให้นักเรียนวิเคราะห์ว่าทำไมบริษัทที่ซีอีโอเพิ่งเรียกร้องให้ "ชะลอการพัฒนา AI" จึงเร่งออกรุ่นใหม่ที่ "เร็วขึ้น 30% ถูกลง 20%" ภายในสองเดือนจาก 5.1 และมันบ่งบอกอะไรเกี่ยวกับความตึงเครียดระหว่างการ์ดความปลอดภัยกับแรงกดดันจากตลาด
-**ผู้เชี่ยวชาญด้าน AI:** จุดเทคนิคที่น่าสนใจคือการแยกชัดระหว่าง Fable 5.2 (general availability, มี safety classifiers routing ไป Opus เมื่อเจอ risk category) กับ Mythos 5.2 ที่จำกัดเฉพาะ Life Sciences และ Cyber Verification Programs — เป็นการต่อยอดโมเดลการกำกับที่ Anthropic เปิดไว้ตั้งแต่ Mythos 5 แต่ยังไม่มีข้อมูลเชิงลึกเรื่อง evals ใหม่ใน system card (ยังไม่เผยแพร่ ณ วันที่สรุป) จึงยังประเมินไม่ได้ว่า capability jump 30% มาจาก post-training อะไรแน่
-**โปรแกรมเมอร์มืออาชีพ:** $8 / $40 ต่อล้าน token เป็นจุดราคาที่กดดัน OpenAI GPT-6 Astra ประมาณ 20% และทำให้ workflow ที่ใช้ coding agent ระดับ production (เช่น CI review, autonomous refactoring) คุ้มทุนได้เร็วขึ้นชัดเจน — ทีมที่ล็อค prompt กับ Fable 5.1 ไว้ควรทดสอบ prompt compat กับ 5.2 แล้วค่อยตัดสินใจย้าย เพราะ Anthropic เคยเจอกรณี classifier เคร่งเกินไปใน 5.0 ที่กระทบ production traffic
+No stories passed today's two filters, so there are no per-story perspectives to record. See `reference/sources.md` for the full drop list and `articles/2026-11-12-brief.md` for the empty-day article.
