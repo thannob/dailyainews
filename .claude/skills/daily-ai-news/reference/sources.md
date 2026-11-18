@@ -1,27 +1,33 @@
-# Sources — 2026-11-17
+# Sources — 2026-11-18
 
-Generated: 2026-11-17 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (example.com probe → ENOTFOUND; same for every trusted domain)
-Freshness window: rolling 24h (Asia/Bangkok) — i.e. 2026-11-16 ~00:00 to 2026-11-17 current time
-Dedup against: articles/2026-11-16-brief.md (0 URLs loaded — yesterday was also an empty-day stub)
+Generated: 2026-11-18 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED
+Freshness window: rolling 24h (Asia/Bangkok)
+Dedup against: articles/2026-11-17-brief.md (0 URLs loaded — ไฟล์ของเมื่อวานเป็น stub ว่าง)
 
-## No items selected
+1. **Anthropic กำหนดราคา IPO ที่ระดับบนของกรอบ $70–78 หรือสูงกว่า**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-11-17/anthropic-is-said-to-guide-ipo-price-to-top-of-range-or-above
+   - Published: 2026-11-17 (ตาม URL slug)
+   - FreshnessCheck: ✅ within last 24h via "URL slug /2026-11-17/"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (ไฟล์เมื่อวานเป็น stub ว่าง, YESTERDAYS_URLS = {})
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com อยู่ใน trusted-sources.md)
+   - Summary: Bloomberg รายงานว่า Anthropic จะทำการตลาด 825 ล้านหุ้น และหากกำหนดราคาที่ระดับบนของกรอบ $70–78 บวก private placement $26B รวมยอดระดมอาจแตะราว $90.4B; แหล่งข่าวบอก CNBC/Bloomberg ว่าดีลนี้มีแนวโน้มกำหนดราคาสูงกว่ากรอบ
 
-Zero candidates passed both filters this run. Filter A (24h freshness evidence from a trusted-source domain) blocked every candidate; Filter B (URL-level dedup) was never reached.
+2. **Amazon และ Google จะถือหุ้น Anthropic รวมประมาณ 28% หลัง IPO**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-11-17/amazon-google-to-have-about-28-of-anthropic-stock-after-ipo
+   - Published: 2026-11-17 (ตาม URL slug)
+   - FreshnessCheck: ✅ within last 24h via "URL slug /2026-11-17/"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com อยู่ใน trusted-sources.md)
+   - Summary: เอกสารยื่น SEC ระบุว่า Amazon.com จะถือหุ้นของ Anthropic ราว 15% และ Alphabet (Google) ราว 14% ของทุนจดทะเบียน หลัง IPO และ private placement เสร็จสิ้น
 
-## Dropped (candidates seen in search, dropped at Filter A)
+## Dropped
+- https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027 — ตกเกณฑ์โดเมน: trusted-sources.md ระบุ "NVIDIA Blog — https://blogs.nvidia.com/" เท่านั้น ไม่รวม newsroom subdomain แม้ว่าจะเป็น primary source ของ NVIDIA เองก็ตาม
+- https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html — Filter: cnbc.com ไม่อยู่ใน trusted-sources.md allow-list
+- https://techcrunch.com/?p=3186876 (Anthropic Claude Meetings) — Filter A (>24h): เปิดตัว ~10 พ.ย. 2026 เกิน 24 ชั่วโมง
+- https://www.theneuron.ai/digest/... (daily digest) — ไม่อยู่ใน allow-list; aggregator
+- https://finance.yahoo.com/... — ไม่อยู่ใน allow-list; aggregator
 
-Candidate stories with real signal for 2026-11-16 (Asia/Bangkok) existed in search snippets, but all surfacing URLs belong to domains **not** on `reference/trusted-sources.md`. The trusted-domain URLs that would be needed to cite these stories did not appear in search results.
-
-- **US tightens remote-access rule on advanced AI chips** — snippet dated 2026-11-16, URL surfaced only on `npr.org/2026/11/16/nx-s1-6042883/...` — NPR is not on the allow-list; no matching reuters.com / bloomberg.com / ft.com / techcrunch.com URL in results.
-- **Stocks tumble; Nvidia leads AI sell-off** — snippet dated 2026-11-16, URL on `bnnbloomberg.ca/...` — BNN Bloomberg (Canada) ≠ bloomberg.com; not on allow-list.
-- **Anthropic IPO lands this week (pricing expected 2026-11-18)** — only CNBC + aggregator (`fourweekmba.com`, `thenextweb.com`, `renaissancecapital.com`) coverage visible; no reuters.com / bloomberg.com / ft.com URL in results (Bloomberg video URLs in results are all 2025-11-12 / 2025-11-18, off window).
-- **OpenAI "ChatGPT Wallet"** — remains an unannounced / leaked product per every snippet; no official OpenAI blog URL in results and no trusted-press URL carries a 2026-11-16 timestamp.
-- **FAA SMART AI tool / airspace disruptions** — all coverage dated 2026-09, not in window.
-- **Zoox-Uber Las Vegas launch** — `techcrunch.com/?p=3101220` appears in results but with no visible timestamp; underlying content refers to the March 2026 partnership announcement, which is far outside the 24h window.
-
-## Dropped (Filter B)
-
-None — Filter B was never reached because no candidate passed Filter A.
-
-> Note: 0 items passed both filters this run. Of ~6 substantive candidates, 6 failed Filter A (none supplied a trusted-source URL with a timestamp resolvable to the last 24h), 0 failed Filter B.
+> Note: 2 items passed both filters this run. จาก candidates ~10 ราย ~5 รายตก Filter A (>24h, ส่วนใหญ่เป็นข่าววันที่ 10–13 พ.ย.), ~3 รายตกเพราะไม่อยู่ใน allow-list (CNBC, Yahoo Finance, Neuron, Fortune ฯลฯ), เหลือ 2 Bloomberg items ผ่านครบ
