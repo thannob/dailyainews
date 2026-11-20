@@ -1,33 +1,58 @@
-# Sources — 2026-11-18
+# Sources — 2026-11-20
 
-Generated: 2026-11-18 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED
+Generated: 2026-11-20 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (example.com probe failed with ENOTFOUND; forced to Tier 2 for every story)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-11-17-brief.md (0 URLs loaded — ไฟล์ของเมื่อวานเป็น stub ว่าง)
+Dedup against: articles/2026-11-19-brief.md (5 URLs loaded)
 
-1. **Anthropic กำหนดราคา IPO ที่ระดับบนของกรอบ $70–78 หรือสูงกว่า**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-11-17/anthropic-is-said-to-guide-ipo-price-to-top-of-range-or-above
-   - Published: 2026-11-17 (ตาม URL slug)
-   - FreshnessCheck: ✅ within last 24h via "URL slug /2026-11-17/"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (ไฟล์เมื่อวานเป็น stub ว่าง, YESTERDAYS_URLS = {})
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com อยู่ใน trusted-sources.md)
-   - Summary: Bloomberg รายงานว่า Anthropic จะทำการตลาด 825 ล้านหุ้น และหากกำหนดราคาที่ระดับบนของกรอบ $70–78 บวก private placement $26B รวมยอดระดมอาจแตะราว $90.4B; แหล่งข่าวบอก CNBC/Bloomberg ว่าดีลนี้มีแนวโน้มกำหนดราคาสูงกว่ากรอบ
+1. **Anthropic ขายหุ้น IPO วันแรก ราคา +17%, ขึ้นเป็นบริษัทใหญ่อันดับ 12 ของโลก**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/152212
+   - Published: 2026-11-19 (ตามผลค้นหา — ปิดตลาดวันแรก)
+   - FreshnessCheck: ✅ within last 24h via snippet "Anthropic ขายหุ้น IPO วันแรก ราคา +17%" referring to Nov 19 close at $97.17
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had blognone.com/node/152199 — different node)
+   - Verification: Tier 2 — WebSearch snippet (blognone.com is on trusted-sources.md)
+   - Summary: หุ้น Anthropic (ANT) ปิดการซื้อขายวันแรกบน Nasdaq ที่ $97.17 เพิ่มขึ้น 17% จากราคา IPO $83 ทำให้มูลค่าบริษัทตามราคาตลาดอยู่ที่ราว $1.27 ล้านล้านดอลลาร์ ขึ้นเป็นบริษัทใหญ่อันดับ 12 ของโลก
 
-2. **Amazon และ Google จะถือหุ้น Anthropic รวมประมาณ 28% หลัง IPO**
-   - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-11-17/amazon-google-to-have-about-28-of-anthropic-stock-after-ipo
-   - Published: 2026-11-17 (ตาม URL slug)
-   - FreshnessCheck: ✅ within last 24h via "URL slug /2026-11-17/"
+2. **กูเกิลเปิดตัว Gemini 4 Neon โมเดลรุ่นกลาง คุณภาพใกล้เคียง Carbon ในราคาถูกกว่า**
+   - Publisher: Blognone
+   - URL: https://www.blognone.com/node/152208
+   - Published: 2026-11-19 20:22 (ตามผลค้นหา)
+   - FreshnessCheck: ✅ within last 24h via snippet "On November 19 at 20:22, Blognone reported Google's launch of Gemini 4 Neon"
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com อยู่ใน trusted-sources.md)
-   - Summary: เอกสารยื่น SEC ระบุว่า Amazon.com จะถือหุ้นของ Anthropic ราว 15% และ Alphabet (Google) ราว 14% ของทุนจดทะเบียน หลัง IPO และ private placement เสร็จสิ้น
+   - Verification: Tier 2 — WebSearch snippet (blognone.com is on trusted-sources.md)
+   - Summary: Google เปิดตัว Gemini 4 Neon โมเดลรุ่นกลางของตระกูล Gemini 4 คุณภาพใกล้เคียง Carbon แต่ราคาต่ำกว่า เริ่มทยอยปล่อยผ่าน Gemini API และ Google AI Studio สำหรับสมาชิก Google AI Pro และ Ultra
+
+3. **Google gives Gemini the ability to use your Mac for you**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/
+   - Published: 2026-11-19 (ตาม URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug /2026/11/19/ และ snippet "Google is adding computer use to its Gemini desktop app on macOS"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had two techcrunch /2026/11/18/ slugs — different day)
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md)
+   - Summary: Google เพิ่มความสามารถ computer use ให้ Gemini บน macOS ให้ผู้ช่วยคลิก พิมพ์ นำทางเมนู และกรอกฟอร์มแทนผู้ใช้ รองรับเฉพาะแอป Gemini for Mac และต้องใช้ Google AI subscription
+
+4. **Meta's AI agent Muse is mixing up conversations and could be exposing private data, report says**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/
+   - Published: 2026-11-19 (ตาม URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug /2026/11/19/ และ snippet "A Reuters report says Meta employees flagged that the Muse agent has been mixing up conversations across different accounts"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md)
+   - Summary: มีรายงาน Reuters อ้างพนักงาน Meta ว่า AI agent "Muse" สลับบทสนทนาข้ามบัญชี ทำข้อมูลส่วนตัวของผู้ใช้หลุดระหว่างทดสอบภายใน Meta ตอบกลับว่าการทดสอบโดยพนักงานเป็นส่วนหนึ่งของการพัฒนา
+
+5. **Jensen Huang Foundation Pledges $350 Million for CoreWeave Computing Initiative**
+   - Publisher: Bloomberg
+   - URL: https://www.bloomberg.com/news/articles/2026-11-19/jensen-huang-s-charity-committed-350-million-to-coreweave
+   - Published: 2026-11-19 (ตาม URL slug)
+   - FreshnessCheck: ✅ within last 24h via URL slug /2026-11-19/ และ snippet "A Jensen Huang foundation plans to spend $350 million renting computer time from CoreWeave Inc."
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had bloomberg.com/news/articles/2026-11-18/... — different day)
+   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
+   - Summary: มูลนิธิของ Jensen Huang (CEO Nvidia) ประกาศทุ่ม $350 ล้าน เพื่อเช่า compute จาก CoreWeave สำหรับโครงการวิจัยด้าน AI ที่มูลนิธิให้การสนับสนุน
 
 ## Dropped
-- https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027 — ตกเกณฑ์โดเมน: trusted-sources.md ระบุ "NVIDIA Blog — https://blogs.nvidia.com/" เท่านั้น ไม่รวม newsroom subdomain แม้ว่าจะเป็น primary source ของ NVIDIA เองก็ตาม
-- https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html — Filter: cnbc.com ไม่อยู่ใน trusted-sources.md allow-list
-- https://techcrunch.com/?p=3186876 (Anthropic Claude Meetings) — Filter A (>24h): เปิดตัว ~10 พ.ย. 2026 เกิน 24 ชั่วโมง
-- https://www.theneuron.ai/digest/... (daily digest) — ไม่อยู่ใน allow-list; aggregator
-- https://finance.yahoo.com/... — ไม่อยู่ใน allow-list; aggregator
+- https://www.blognone.com/node/152210 (Project Genie — Google AI Ultra) — passed both filters แต่คัดออกเพื่อไม่ให้มีข่าว Google มากเกินไปในวันเดียวกัน; ยังใช้ Gemini 4 Neon และ Gemini-on-Mac แทน
+- https://www.bloomberg.com/news/articles/2026-11-19/stock-market-today-dow-s-p-live-updates — live blog ซ้ำประเด็นกับเรื่อง Anthropic IPO
+- https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/ — Filter A: /2026/11/17/ slug เกิน 24 ชั่วโมง
 
-> Note: 2 items passed both filters this run. จาก candidates ~10 ราย ~5 รายตก Filter A (>24h, ส่วนใหญ่เป็นข่าววันที่ 10–13 พ.ย.), ~3 รายตกเพราะไม่อยู่ใน allow-list (CNBC, Yahoo Finance, Neuron, Fortune ฯลฯ), เหลือ 2 Bloomberg items ผ่านครบ
+> Note: 5 items passed both filters this run. Multiple additional candidates on Bloomberg/TechCrunch/Blognone also passed but were pruned for topical diversity.
