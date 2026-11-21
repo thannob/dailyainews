@@ -1,31 +1,31 @@
-# Perspectives — 2026-11-20
+# Perspectives — 2026-11-21
 
-## 1. Anthropic ขายหุ้น IPO วันแรก ราคา +17%, ขึ้นเป็นบริษัทใหญ่อันดับ 12 ของโลก
+## 1. ทรัมป์ขู่เก็บภาษีบริษัทสหรัฐฯ ที่สร้างศูนย์ข้อมูล AI ในต่างประเทศ
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวเลข +17% ในวันแรกเป็นโจทย์คลาสสิกของ "IPO underpricing" — นักเรียนด้านการเงินควรถามว่า underwriter ตั้งราคาต่ำโดยตั้งใจเพื่อให้ pop หรือ demand สูงเกินคาด และเปรียบเทียบกับ pop ของ Google/Facebook ตอนเข้าตลาด
-**ผู้เชี่ยวชาญด้าน AI:** valuation $1.27T จาก revenue runway ปัจจุบันเป็นสัญญาณว่าตลาดราคาสมมติฐาน "winner-take-most" ของ frontier labs ค่อนข้างแน่น — ความเสี่ยงหลักคือถ้า compute cost ไม่ลดเร็วตามคาด margin assumptions ต้อง revisit
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับทีมที่ใช้ Claude API เป็น core dependency ต้องเตรียมแผน multi-provider จริงจัง — หลัง IPO Anthropic จะต้อง optimize for shareholder และ pricing tier อาจขยับ; วางสถาปัตยกรรม abstraction layer ที่สลับ provider ได้โดยไม่ต้องรื้อ
+**อาจารย์ (มหาวิทยาลัย):** เหมาะเป็นเคสในชั้นเรียน IR / นโยบายสาธารณะ เรื่อง "techno-nationalism" — ให้นักเรียนเปรียบเทียบกับ chip export control ปี 2022 และถามว่ามาตรการภาษีศูนย์ข้อมูลครั้งนี้ตั้งอยู่บนฐานอำนาจกฎหมายฉบับใด (IEEPA, Section 232, กฎหมายใหม่) และ enforcement จะทำได้จริงหรือไม่ในยุคที่ hyperscaler กระจาย capacity ข้ามภูมิภาค
+**ผู้เชี่ยวชาญด้าน AI:** ถ้า compute ต้อง onshore ทั้งหมด latency และต้นทุนพลังงานจะพุ่งขึ้น — ประเด็นเปิดคือมาตรการจะครอบคลุมเฉพาะ training หรือรวม inference ด้วย ผลกระทบต่อ edge inference ที่ serve user EU/APAC จะต่างกันสุดขั้ว ขึ้นกับคำจำกัดความนี้
+**โปรแกรมเมอร์มืออาชีพ:** ตรวจสัญญา cloud ปัจจุบันเรื่อง force majeure และ data residency clause ทันที วาง dual-vendor plan สำหรับ workload sensitive ด้านเวลา และเตรียม failover ไปยัง provider ที่ไม่ใช่สหรัฐฯ ถ้า user base อยู่นอกสหรัฐฯ
 
-## 2. กูเกิลเปิดตัว Gemini 4 Neon โมเดลรุ่นกลาง คุณภาพใกล้เคียง Carbon ในราคาถูกกว่า
+## 2. Anthropic หุ้นร่วง 8.5%, Nasdaq เข้า correction
 
-**อาจารย์ (มหาวิทยาลัย):** รูปแบบ "flagship → mid-tier ราคาลด" เป็น pricing strategy ที่น่าใช้ในห้องเรียน economics — ให้นักเรียนอภิปรายว่าทำไมผู้ขายโมเดลถึงทยอยเปิดรุ่นกลางแทนลดราคารุ่น flagship ตรงๆ
-**ผู้เชี่ยวชาญด้าน AI:** "คุณภาพใกล้เคียง Carbon" ในข่าวประชาสัมพันธ์ต้องอ่านอย่างระมัดระวังจนกว่าจะมี benchmark จากบุคคลที่สาม — และควรดูว่า Neon ใช้สถาปัตยกรรมเดียวกับ Carbon หรือเป็น distilled variant ซึ่งมีผลต่อ generalization
-**โปรแกรมเมอร์มืออาชีพ:** $3/$15 ต่อล้านโทเค็น ถ้าแตกต่างจาก Carbon ($2/$10 ช่วง intro) อย่างมีนัยสำคัญ ต้องชั่งน้ำหนักว่า workload ใด latency-sensitive จนคุ้มกับการจ่ายเพิ่ม — benchmark บน test suite ของตัวเองก่อนย้าย production
+**อาจารย์ (มหาวิทยาลัย):** กรณีคลาสสิก post-IPO mean reversion (+17% วันแรก → -8.5% วันถัดไป) ใช้สอน behavioral finance ได้ทันที — ให้นักเรียนคำนวณ loss ของ buy-at-pop investor และเปรียบเทียบกับ Facebook, Rivian, Snowflake post-IPO
+**ผู้เชี่ยวชาญด้าน AI:** สัญญาณที่น่ากังวลกว่าหุ้น Anthropic คือ Nasdaq เข้า correction + ชิปร่วง >13% ถ้า hyperscaler capex ชะลอตัว (free cash flow Amazon/Alphabet ติดลบติดต่อกัน) การเทรน frontier model รุ่นถัดไปอาจ delay 6–12 เดือน
+**โปรแกรมเมอร์มืออาชีพ:** Anthropic หลัง IPO + หุ้นร่วงจะต้องโชว์ margin ให้ WS — pricing tier อาจขยับในสัปดาห์หน้า เตรียม abstraction layer สลับ provider (OpenAI, Google, open weights) ให้พร้อม ถ้ายังไม่ได้ทำก็ไม่ใช่ premature optimization แล้ว — เป็น insurance
 
-## 3. Google gives Gemini the ability to use your Mac for you
+## 3. AI + Claude อ้างพิสูจน์สมมติฐานรีมันน์ด้วย Lean
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีนี้เหมาะใช้สอนเรื่อง "computer use" ว่ามันเป็น UX paradigm ใหม่หรือเป็นแค่ wrapper บน screen scraping + API — นักเรียนด้าน HCI ควรประเมินว่า affordance ของ agent ควรแสดงให้ผู้ใช้เห็นอะไรบ้าง
-**ผู้เชี่ยวชาญด้าน AI:** computer-use บน Mac (desktop OS) ท้าทายกว่าบนเบราว์เซอร์เพราะ heterogeneous UI ทุกแอป — ต้องดูว่า Gemini ใช้ accessibility API ของ macOS หรือ vision-based grounding และ error rate เป็นอย่างไรเมื่อ UI เปลี่ยน
-**โปรแกรมเมอร์มืออาชีพ:** เตรียม audit permission ของ agent ให้แน่น — ถ้ามันคลิกและพิมพ์ในแอปใดก็ได้ ต้องมี policy ว่าห้ามแตะ password manager, 1Password, keychain, และ sandbox ให้ทำงานใน user session แยก
+**อาจารย์ (มหาวิทยาลัย):** โอกาสดีสอนเรื่อง formal verification ให้ปริญญาตรี — เปรียบเทียบกับ Fermat's Last Theorem ปี 1993 (ใช้เวลา peer review หลายเดือน) กับกรณีนี้ที่ Lean file ตรวจได้อัตโนมัติ เน้นว่า "โพสต์ Lean file" ≠ "proof ได้รับการยอมรับ"
+**ผู้เชี่ยวชาญด้าน AI:** ไม่ใช่ "Claude พิสูจน์เอง" แต่คือ human-in-the-loop workflow — ต้องรู้สัดส่วน scaffolding ของมนุษย์ vs. machine ประเด็นสำคัญคือ generalize ไป GRH ได้จริงหรือเป็น corollary ที่คนรู้อยู่แล้ว ต้องรอ community mathematicians review Lean file (อาจใช้สัปดาห์ถึงเดือน)
+**โปรแกรมเมอร์มืออาชีพ:** pattern "LLM proposes, compiler disposes" เริ่มใช้ได้ระดับ bounded task — น่าสนใจสำหรับทีมที่สร้าง critical software (crypto library, verification kernel) economics ยังเป็นคำถาม: Claude Opus หลายวันต่อหนึ่ง proof อาจแพงกว่า dedicated AlphaProof instance
 
-## 4. Meta's AI agent Muse is mixing up conversations and could be exposing private data, report says
+## 4. OpenAI เตือนพนักงานเรื่อง honey-trap espionage
 
-**อาจารย์ (มหาวิทยาลัย):** ตัวอย่างที่ชัดเจนของความเสี่ยงด้าน data isolation ในระบบ multi-tenant AI — ใช้ในวิชา security/privacy สอนว่า tenant leakage ไม่จำเป็นต้องเกิดจาก attack แต่เกิดจาก session/cache design ที่ไม่ดี
-**ผู้เชี่ยวชาญด้าน AI:** "conversations mixing across accounts" ส่วนมากเกิดจาก shared state ใน retrieval-augmented pipeline หรือ cache layer ที่ไม่ได้ partition ตาม tenant ID — เป็น bug ประเภทที่ unit test จับได้ยาก ต้องมี integration test ที่สุ่ม cross-tenant query
-**โปรแกรมเมอร์มืออาชีพ:** ถ้าคุณกำลังสร้าง RAG หรือ agent ที่เสิร์ฟหลาย user ตรวจสอบ tenant boundary ทุกชั้น — vector DB, cache, tool state, prompt context, memory store; ทำ fuzz test ด้วยบัญชี 2 ชุดที่ถามคำถามคล้ายกันพร้อมกัน
+**อาจารย์ (มหาวิทยาลัย):** เคสคลาสสิกสำหรับ security studies — เปรียบเทียบ Robert Hanssen, Aldrich Ames กับยุค AI frontier labs ให้นักเรียนออกแบบ counterintelligence program สำหรับบริษัท 2,500 คน (training cadence, access tier, travel/device policy)
+**ผู้เชี่ยวชาญด้าน AI:** attack asymmetry หนักขึ้นเพราะ attacker ใช้ AI สร้าง fake profile และ voice call เร็วกว่า defender ตรวจของปลอม การเตือนพนักงานเป็น social engineering defense ขั้นต่ำ แต่ไม่พอ — model weights ต้องการ technical control ชั้น compute cluster (hardware-backed access, audit log, offline air-gap)
+**โปรแกรมเมอร์มืออาชีพ:** แม้ทีมเล็กก็โดนเป้า ถ้ามี API key หรือ fine-tune pipeline — บังคับ phishing-resistant 2FA (Yubikey/passkey), ห้าม commit secret ลง repo, offboarding checklist เพิกถอน access ภายใน 1 ชั่วโมง, ขยาย security awareness ไปครอบคลุม social engineering นอก email
 
-## 5. Jensen Huang Foundation Pledges $350 Million for CoreWeave Computing Initiative
+## 5. หลัง Jensen Huang ออกจาก Nvidia — คำถามสไตล์การบริหาร
 
-**อาจารย์ (มหาวิทยาลัย):** กรณีศึกษาที่น่าสนใจของ philanthropic capital ไหลเข้า AI infrastructure — นักเรียนด้าน policy ควรถามว่าการบริจาคเพื่อ "ซื้อ compute จากบริษัทที่ผู้บริจาคมีผลประโยชน์" (CoreWeave เป็นลูกค้าใหญ่ของ Nvidia) เข้าเกณฑ์ conflict of interest หรือไม่
-**ผู้เชี่ยวชาญด้าน AI:** $350M นั้นเทียบเท่าการ pretrain โมเดลระดับกลางถึงใหญ่หนึ่งรอบ — สำคัญคือ allocation ของมูลนิธิ: ให้ academic lab โดยตรง หรือใช้เองในโครงการวิจัย และมี governance รับ data/model ที่ผลิตได้หรือไม่
-**โปรแกรมเมอร์มืออาชีพ:** สำหรับ freelance/startup ที่พิจารณา CoreWeave vs AWS/Azure/GCP — ดีลระดับนี้สะท้อนว่า CoreWeave กำลังสะสม demand ก้อนใหญ่ ความจุที่เหลืออาจแน่นขึ้น ควร lock capacity ล่วงหน้าหรือกระจายข้าม provider
+**อาจารย์ (มหาวิทยาลัย):** กรณี founder-CEO exit ระดับ market cap หลายล้านล้านเทียบได้กับ Steve Jobs (Apple 1985), Travis Kalanick (Uber), Jack Dorsey (Twitter) ใช้สอน leadership transition / organizational culture
+**ผู้เชี่ยวชาญด้าน AI:** Nvidia คือ stack ทั้งหมด — CUDA + cuDNN + TensorRT + NeMo + NIM + ความสัมพันธ์ส่วนตัวกับ hyperscaler ผูกกับ Huang มายาวนาน timing เปลี่ยน CEO ตรงกับ AMD MI350 + Google TPU v7 ที่ไล่ตาม — ถ้า execution ตก Nvidia เสี่ยงเสีย narrative leadership
+**โปรแกรมเมอร์มืออาชีพ:** CUDA roadmap ไม่หยุดในระยะสั้น แต่ควรเริ่ม evaluate backend alternative (ROCm, PyTorch XLA, MLX) สำหรับ workload ที่ portable ได้ ใน 18 เดือนข้างหน้าถ้า developer relations ของ Nvidia แผ่วลง ecosystem alternative อาจได้ที่ยืนขึ้น

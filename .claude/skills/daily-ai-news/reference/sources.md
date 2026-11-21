@@ -1,58 +1,59 @@
-# Sources — 2026-11-20
+# Sources — 2026-11-21
 
-Generated: 2026-11-20 (Asia/Bangkok)
-Runtime: WEBFETCH_BLOCKED (example.com probe failed with ENOTFOUND; forced to Tier 2 for every story)
+Generated: 2026-11-21 (Asia/Bangkok)
+Runtime: WEBFETCH_BLOCKED (example.com probe → ENOTFOUND)
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-11-19-brief.md (5 URLs loaded)
+Dedup against: articles/2026-11-20-brief.md (5 URLs loaded)
 
-1. **Anthropic ขายหุ้น IPO วันแรก ราคา +17%, ขึ้นเป็นบริษัทใหญ่อันดับ 12 ของโลก**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/152212
-   - Published: 2026-11-19 (ตามผลค้นหา — ปิดตลาดวันแรก)
-   - FreshnessCheck: ✅ within last 24h via snippet "Anthropic ขายหุ้น IPO วันแรก ราคา +17%" referring to Nov 19 close at $97.17
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had blognone.com/node/152199 — different node)
-   - Verification: Tier 2 — WebSearch snippet (blognone.com is on trusted-sources.md)
-   - Summary: หุ้น Anthropic (ANT) ปิดการซื้อขายวันแรกบน Nasdaq ที่ $97.17 เพิ่มขึ้น 17% จากราคา IPO $83 ทำให้มูลค่าบริษัทตามราคาตลาดอยู่ที่ราว $1.27 ล้านล้านดอลลาร์ ขึ้นเป็นบริษัทใหญ่อันดับ 12 ของโลก
+1. **ทรัมป์ขู่เก็บภาษีบริษัทสหรัฐฯ ที่สร้างศูนย์ข้อมูล AI ในต่างประเทศ**
+   - Publisher: Thairath
+   - URL: https://www.thairath.co.th/news/foreign/2973752
+   - Published: 05:55 น. 21 พ.ย. 2569 (Asia/Bangkok) — รายงานการแถลงที่ทำเนียบขาวของทรัมป์เมื่อวันศุกร์ 20 พ.ย. ตามเวลาสหรัฐฯ
+   - FreshnessCheck: ✅ within last 24h via snippet "ข่าวระบุวันที่เป็น 21 พฤศจิกายน 2569 (ตรงกับ ค.ศ. 2026)" และ "หน้าข่าวของไทยรัฐแสดงหัวข้อเดียวกันนี้ในเวลา 05:55 น. ของวันที่ 21 พ.ย."
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (host thairath.co.th ไม่ปรากฏในสรุปเมื่อวาน)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: ทรัมป์ประกาศเตรียมสกัดบริษัทอเมริกันไม่ให้ไปสร้างศูนย์ข้อมูล AI ในต่างประเทศ ขู่ใช้ "ภาษีในอัตราสูงมาก" หรือกระทั่งแบน อ้างการแข่งขันกับจีน ยกตัวอย่าง Google Finland ยังไม่มีการระบุฐานอำนาจกฎหมาย
 
-2. **กูเกิลเปิดตัว Gemini 4 Neon โมเดลรุ่นกลาง คุณภาพใกล้เคียง Carbon ในราคาถูกกว่า**
-   - Publisher: Blognone
-   - URL: https://www.blognone.com/node/152208
-   - Published: 2026-11-19 20:22 (ตามผลค้นหา)
-   - FreshnessCheck: ✅ within last 24h via snippet "On November 19 at 20:22, Blognone reported Google's launch of Gemini 4 Neon"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (blognone.com is on trusted-sources.md)
-   - Summary: Google เปิดตัว Gemini 4 Neon โมเดลรุ่นกลางของตระกูล Gemini 4 คุณภาพใกล้เคียง Carbon แต่ราคาต่ำกว่า เริ่มทยอยปล่อยผ่าน Gemini API และ Google AI Studio สำหรับสมาชิก Google AI Pro และ Ultra
-
-3. **Google gives Gemini the ability to use your Mac for you**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/
-   - Published: 2026-11-19 (ตาม URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug /2026/11/19/ และ snippet "Google is adding computer use to its Gemini desktop app on macOS"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had two techcrunch /2026/11/18/ slugs — different day)
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md)
-   - Summary: Google เพิ่มความสามารถ computer use ให้ Gemini บน macOS ให้ผู้ช่วยคลิก พิมพ์ นำทางเมนู และกรอกฟอร์มแทนผู้ใช้ รองรับเฉพาะแอป Gemini for Mac และต้องใช้ Google AI subscription
-
-4. **Meta's AI agent Muse is mixing up conversations and could be exposing private data, report says**
-   - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/
-   - Published: 2026-11-19 (ตาม URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug /2026/11/19/ และ snippet "A Reuters report says Meta employees flagged that the Muse agent has been mixing up conversations across different accounts"
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (techcrunch.com is on trusted-sources.md)
-   - Summary: มีรายงาน Reuters อ้างพนักงาน Meta ว่า AI agent "Muse" สลับบทสนทนาข้ามบัญชี ทำข้อมูลส่วนตัวของผู้ใช้หลุดระหว่างทดสอบภายใน Meta ตอบกลับว่าการทดสอบโดยพนักงานเป็นส่วนหนึ่งของการพัฒนา
-
-5. **Jensen Huang Foundation Pledges $350 Million for CoreWeave Computing Initiative**
+2. **Anthropic หุ้นร่วง 8.5% เหลือ $88.91, Nasdaq เข้าสู่ภาวะ correction**
    - Publisher: Bloomberg
-   - URL: https://www.bloomberg.com/news/articles/2026-11-19/jensen-huang-s-charity-committed-350-million-to-coreweave
-   - Published: 2026-11-19 (ตาม URL slug)
-   - FreshnessCheck: ✅ within last 24h via URL slug /2026-11-19/ และ snippet "A Jensen Huang foundation plans to spend $350 million renting computer time from CoreWeave Inc."
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had bloomberg.com/news/articles/2026-11-18/... — different day)
-   - Verification: Tier 2 — WebSearch snippet (bloomberg.com is on trusted-sources.md)
-   - Summary: มูลนิธิของ Jensen Huang (CEO Nvidia) ประกาศทุ่ม $350 ล้าน เพื่อเช่า compute จาก CoreWeave สำหรับโครงการวิจัยด้าน AI ที่มูลนิธิให้การสนับสนุน
+   - URL: https://www.bloomberg.com/news/articles/2026-11-20/anthropic-shares-drop-post-market-on-apple-s-ai-agent-plans
+   - Published: November 20, 2026
+   - FreshnessCheck: ✅ within last 24h via URL slug "/2026-11-20/" และ snippet CNBC ที่ยืนยัน "Anthropic stock falls amid AI sell-off as Nvidia, AMD also sink" ลงวันที่ 20 พ.ย. 2026
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (bloomberg path เมื่อวานคือ /2026-11-19/jensen-huang-s-charity-... ต่างกัน)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: Anthropic (ANT) ปิดลบ 8.5% ที่ $88.91 — สูงกว่า IPO price $83 เพียงเล็กน้อย Nasdaq ร่วง 5.28% เข้า correction (>10% จากจุดสูงสุด) Nvidia และ AMD ร่วง >13% ต่อ สาเหตุ: AI bubble fears + fallout หลัง Huang ouster + กังวล hyperscaler capex
+
+3. **นักคณิตศาสตร์ Anthropic อ้างใช้ Claude พิสูจน์สมมติฐานรีมันน์ (167 ปี) ด้วย Lean**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/
+   - Published: November 20, 2026
+   - FreshnessCheck: ✅ within last 24h via URL slug "/2026/11/20/" ตรงกับ TODAY−1
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (techcrunch path เมื่อวานคือ /2026/11/19/... ต่างกัน)
+   - Verification: Tier 2 — WebSearch snippet (cross-check Washington Post, IBM, AFP ยืนยันวันที่เดียวกัน)
+   - Summary: Levent Alpöge นักคณิตศาสตร์ของ Anthropic ประกาศบนเว็บไซต์ส่วนตัวว่าทำงานกับ Claude ค้นพบ proof ของ Riemann Hypothesis โพสต์ใน Lean (formal verification) อ้างครอบคลุม Generalized RH ด้วย Clay Mathematics Institute ยังจัดเป็นปัญหาที่ไม่ได้พิสูจน์ ยังไม่มีผู้เชี่ยวชาญนอกยืนยัน
+
+4. **OpenAI เตือนพนักงานเรื่อง "honey trap" espionage — ผู้โจมตีใช้ AI สร้าง fake profile/voice call**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/
+   - Published: November 20, 2026
+   - FreshnessCheck: ✅ within last 24h via URL slug "/2026/11/20/"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (คนละ path กับรายการเมื่อวาน)
+   - Verification: Tier 2 — WebSearch snippet
+   - Summary: OpenAI เทรนพนักงานเรื่อง espionage scenarios รวม honey trap, bribery, casual encounter — จุดเริ่มคือกรณีวิศวกรซาอุดีถูกจับฝัง recording device ในห้องประชุมผู้บริหาร Anthropic/Google ก็เตือนลักษณะเดียวกัน Aaron Brown (อดีต CIA) ระบุผู้โจมตีใช้ AI research เป้าหมาย, สร้าง fake profile, และ voice call ปลอม
+
+5. **หลัง Jensen Huang ออกจาก Nvidia — รายงานตั้งคำถามสไตล์การบริหาร "ขับเคลื่อนด้วยความกลัว"**
+   - Publisher: TechCrunch
+   - URL: https://techcrunch.com/2026/11/20/behind-jensen-huangs-exit-questions-about-a-management-style-reportedly-built-on-fear/
+   - Published: November 20, 2026
+   - FreshnessCheck: ✅ within last 24h via URL slug "/2026/11/20/"
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (เมื่อวานรายงานเรื่องมูลนิธิ Huang ไม่ใช่การลาออก — คนละเรื่องแม้ชื่อคล้าย)
+   - Verification: Tier 2 — WebSearch snippet (cross-check CNBC, CBS, SEC 8-K ยืนยัน Huang ลาออก 12 พ.ย. 2026, CFO Colette Kress รักษาการ)
+   - Summary: บทวิเคราะห์ follow-up การลาออกของ Huang (12 พ.ย.) อ้าง The Times รายงานวัฒนธรรมการบริหาร "ขับเคลื่อนด้วยความกลัว" คำถามต่อเนื่อง: Colette Kress จะรักษา execution culture ของ Nvidia ได้หรือไม่ ท่ามกลาง AMD MI350 + Google TPU v7 ที่ไล่ตาม
 
 ## Dropped
-- https://www.blognone.com/node/152210 (Project Genie — Google AI Ultra) — passed both filters แต่คัดออกเพื่อไม่ให้มีข่าว Google มากเกินไปในวันเดียวกัน; ยังใช้ Gemini 4 Neon และ Gemini-on-Mac แทน
-- https://www.bloomberg.com/news/articles/2026-11-19/stock-market-today-dow-s-p-live-updates — live blog ซ้ำประเด็นกับเรื่อง Anthropic IPO
-- https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/ — Filter A: /2026/11/17/ slug เกิน 24 ชั่วโมง
+- https://techcrunch.com/2026/11/20/the-u-s-national-cyber-director-is-stepping-down/ — AI angle too tangential (เป็นข่าว cybersecurity leadership change ไม่ใช่ AI story)
+- https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/ — Feature/shopping roundup ไม่ใช่ news
+- https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/ — fusion story; AI angle เป็นแค่ background ของผู้ก่อตั้ง
+- https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/ — M&A ของ marketing SaaS ไม่ใช่ AI news
 
-> Note: 5 items passed both filters this run. Multiple additional candidates on Bloomberg/TechCrunch/Blognone also passed but were pruned for topical diversity.
+> Note: 5 items passed both filters this run. Of ~9 TechCrunch Nov-20 candidates + 1 Bloomberg + 1 Thairath considered, 4 failed Filter A (not strictly within 24h / low AI relevance treated as drop), 0 failed Filter B.
