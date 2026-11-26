@@ -1,43 +1,62 @@
-# Sources — 2026-11-25
+# Sources — 2026-11-26
 
-Generated: 2026-11-25 (Asia/Bangkok)
+Generated: 2026-11-26 (Asia/Bangkok)
 Runtime: WEBFETCH_BLOCKED
 Freshness window: rolling 24h (Asia/Bangkok)
-Dedup against: articles/2026-11-24-brief.md (5 URLs loaded)
+Dedup against: articles/2026-11-25-brief.md (3 URLs loaded)
 
-1. **Even the best AI agents struggle with everyday life**
+1. **OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/
-   - Published: November 24, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/11/24/` is day − 1 of today's rolling window
-   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday had three TechCrunch 2026-11-23 URLs; this is a new slug on 2026-11-24)
-   - Verification: Tier 2 — WebSearch snippet (TechCrunch domain on trusted-sources.md)
-   - Summary: A new benchmark tests personal AI assistants, and the article says the most advanced models still struggle to finish everyday tasks reliably and safely.
+   - URL: https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/
+   - Published: 2026-11-25
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/11/25/` + corroborating coverage (bleepingcomputer, betanews) describing the same merge rolled out this week
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS (yesterday cited only `/2026/11/24/...` TechCrunch slugs)
+   - Verification: Tier 2 — WebSearch snippet from techcrunch.com (trusted-sources)
+   - Summary: OpenAI is folding the standalone "Work" experience back into ChatGPT, pooling Chat + Work + Codex usage onto a single token allowance starting December. Pro tiers see doubled allowances; the previously announced Pro 200 cut is reversed. Heavy users on lower tiers may hit limits sooner under the combined pool.
 
-2. **UK warns AI-driven cyberattacks are exposing years of weak security**
+2. **FCC approves SpaceX plan to put AI data centers in space**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/
-   - Published: November 24, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/11/24/`
+   - URL: https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/
+   - Published: 2026-11-25
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/11/25/` + aggregator roundup referencing today's "FCC gave conditional approval to SpaceX's plan for orbital AI data centers"
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (TechCrunch domain on trusted-sources.md)
-   - Summary: The UK's cybersecurity unit reports a rise in attacks that use autonomous hacking tools to exploit basic security weaknesses.
+   - Verification: Tier 2 — WebSearch snippet from techcrunch.com (trusted-sources)
+   - Summary: The FCC granted SpaceX's application (filed Jan 2026, up to ~1M satellite data-center nodes) conditional approval. Earlier reporting covered filing + comment period; this is the decision. Concerns over orbital debris and astronomy interference remain outstanding.
 
-3. **Why a Crusoe investor is betting on solar and batteries to power future AI data centers**
+3. **Anthropic's Dario Amodei calls accusations of surrendering human control to AI 'absurd'**
    - Publisher: TechCrunch
-   - URL: https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/
-   - Published: November 24, 2026 (per URL slug)
-   - FreshnessCheck: ✅ within last 24h — URL slug `/2026/11/24/`
+   - URL: https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/
+   - Published: 2026-11-25
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/11/25/` + direct confirmation in TechCrunch search result
    - DedupCheck: ✅ URL not in YESTERDAYS_URLS
-   - Verification: Tier 2 — WebSearch snippet (TechCrunch domain on trusted-sources.md)
-   - Summary: An investor in Crusoe argues that solar paired with energy storage is a practical way to power future AI data centers.
+   - Verification: Tier 2 — WebSearch snippet from techcrunch.com (trusted-sources)
+   - Summary: In a long X post, Amodei pushed back on OpenAI's Altman and Meta's Alexandr Wang after both accused Anthropic of wanting humans to cede control to AI. Amodei called the accusation absurd, flagged "vibes-based political positioning" from rivals, and drew a safety line at recursive self-improvement.
+
+4. **AI is straining America's open records systems**
+   - Publisher: MIT Technology Review
+   - URL: https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/
+   - Published: 2026-11-25
+   - FreshnessCheck: ✅ within last 24h via URL slug `/2026/11/25/` + corroborating "The Download" roundup on the same day
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet from technologyreview.com (trusted-sources)
+   - Summary: Venture-backed firms using AI to file public-records requests have pushed federal volumes to a record 1.7M requests. One firm sent up to 2,000 requests/day while building its dataset. California, Indiana, and Pennsylvania have moved to restrict bulk/scripted requests, risking collateral damage for journalists and researchers.
+
+5. **EA ใช้ AI คืนเสียง 'จอห์น มอตสัน' ตำนานผู้บรรยายผู้ล่วงลับ กลับสู่เกม FC 27**
+   - Publisher: The Standard
+   - URL: https://thestandard.co/ea-used-ai-to-bring-back-the-voice/
+   - Published: 2026-11-25
+   - FreshnessCheck: ✅ within last 24h — Thai search result explicitly dates the article "ข่าวลงวันที่ 25 พ.ย.", and EA's in-game Title Update 1.3.0 ships 26 พ.ย. 2026
+   - DedupCheck: ✅ URL not in YESTERDAYS_URLS
+   - Verification: Tier 2 — WebSearch snippet from thestandard.co (trusted-sources)
+   - Summary: EA SPORTS จะคืนเสียงบรรยายของ จอห์น มอตสัน ผู้บรรยาย BBC ที่เสียชีวิตปี 2023 กลับเข้าเกม FC 27 โดยผสมไฟล์เสียงเก่า ~10 ปีกับเสียงที่สร้างใหม่ด้วย Generative AI ครอบครัวมอตสัน (ภรรยาและลูกชาย) ให้อนุญาตเรียบร้อย อัปเดต Title Update 1.3.0 เปิดใช้ 26 พ.ย.
 
 ## Dropped
 
-- Nvidia / Jensen Huang reinstatement coverage — Filter B (dedup): yesterday's brief already covered the reinstatement via Blognone node/152243 and TechCrunch's Megaspeed piece. Any new reporting at the same URLs would dedup out; no new trusted-domain URL on this topic for 2026-11-24 surfaced in search results.
-- Senate Banking hearing scheduled Dec 3, 2026 (covered by The Hill / CNBC / Yahoo / ABC) — publisher not on `reference/trusted-sources.md`. Dropped.
-- Jensen Huang all-hands / "thanks White House" (aitoolly 2026-11-25) — publisher not on trusted-sources.md.
-- Reuters-attributed items on Apex Enterprise Entity-List and Microsoft "Code Red" overhaul — no direct `reuters.com` URL surfaced in search results; cannot cite per hard rule "never cite a URL that's not in search results for a trusted domain."
-- Blognone homepage snapshot mentioning Z.ai GLM-5.4 "Loop Transformer" (24 Nov 2026) — specific article URL (`blognone.com/node/...`) did not appear in search results, and separate searches found no primary Z.ai release notes confirming the model. Dropped per the same hard rule.
-
-> Note: 3 items passed both filters this run. All international (TechCrunch). Of ~10 candidates examined, ~2 failed Filter A (>24h old), ~1 failed Filter B (dedup against 2026-11-24 brief), and the rest failed the "URL present in search results for a trusted domain" gate under WEBFETCH_BLOCKED. No Thai-language source cleared both filters today — supply did not permit mixing.
+- https://thestandard.co/jensen-huang-returns-nvidia-ceo/ — Filter A (>24h): main NVIDIA board announcement dated 2026-11-23, outside rolling 24h window
+- https://www.blognone.com/node/152246 — Filter A (>24h): Jensen Huang return-to-HQ story dated 2026-11-24
+- https://thestandard.co/bot-warns-ai-agent-cyber-attacks/ — Filter A (>24h): BOT Governor's warning dated 2026-11-19
+- https://thestandard.co/nsc-thailand-cyber-attacks-ai/ — Filter A (>24h): NSC briefing dated 2026-11-09
+- https://www.matichon.co.th/economy/news_5970978 — Filter A (>24h): Finance Permanent Secretary cyber-defense order dated ~2026-11-11
+- https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/ — Filter A (>24h): URL slug 2026-11-24
+- https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/ — Filter A (>24h): URL slug 2026-11-24
+- https://thestandard.co/anthropic-mythos-us-ban-ai/ — Filter A (>24h): underlying Mythos/Fable ban event dated June 2026; this page is a context piece, no fresh news hook in last 24h
